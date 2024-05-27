@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="1097-2954-52c0-21a1" name="Pachacho" hidden="false" collective="false" import="true" targetId="87e7-b9a0-a2ba-70d9" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="87e7-b9a0-a2ba-70d9" name="Pachacho" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="93ee-5bb0-c424-a19d" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2b7b-5888-55fc-ec2d" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
