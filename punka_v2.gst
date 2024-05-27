@@ -165,9 +165,31 @@
         <categoryLink id="1a89-87d4-bc28-883a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="false"/>
         <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
+        <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="73b3-c6f6-a32c-664b" name="Gato parameño" publicationId="6699-072c-136a-7d30" page="35" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1670-5352-9a39-6925" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="05b8-98d6-2974-2ccf" name="Gato parameño" hidden="false" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Cualquier banda puede equiparse con UNO y solo uno de estos gatos. Para ello tendrá que disponer de algunas de las miniaturas de gatos exclusivas que hemos hecho a lo largo de los años.
+Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tiradas u obligar al rival a repetir una de las suyas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ee3e-9af9-047a-c9d0" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="34b3-8c91-7e61-40ce" name="Pistola" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
