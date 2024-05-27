@@ -8,9 +8,18 @@
       <categoryLinks>
         <categoryLink id="93ee-5bb0-c424-a19d" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="2b7b-5888-55fc-ec2d" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="821f-f347-db4d-b15c" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d2-fcba-a8e7-8d8f" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c48f-acc6-d029-472d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f061-d478-ef21-3864" name="Balas" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
+            <entryLink id="090e-26f0-2e80-e63f" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
       </costs>
