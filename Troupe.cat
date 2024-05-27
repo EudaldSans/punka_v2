@@ -54,6 +54,7 @@
             <entryLink id="89f5-51d6-08e2-8c02" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
             <entryLink id="70b9-cc1d-d39b-a4e4" name="Cañón de confeti" hidden="false" collective="false" import="true" targetId="289c-5da0-d8ad-f6b7" type="selectionEntry"/>
             <entryLink id="fff5-0dff-abbb-c0ae" name="Escopeta" hidden="false" collective="false" import="true" targetId="265c-2979-056d-1a06" type="selectionEntry"/>
+            <entryLink id="7026-3ae3-a9fb-860c" name="Guante de boxeo extensible" hidden="false" collective="false" import="true" targetId="4c92-ac20-c805-f270" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6ffa-a482-0321-5bf1" name="Blindaje" hidden="false" collective="false" import="true" defaultSelectionEntryId="a16f-161b-c877-28fa">
@@ -67,7 +68,11 @@
                 <modifier type="set" field="e515-0c5b-47aa-1328" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="e681-e520-a8ce-b004" name="Cuero endurecido" hidden="false" collective="false" import="true" targetId="ff92-8214-bc9a-f318" type="selectionEntry"/>
+            <entryLink id="e681-e520-a8ce-b004" name="Cuero endurecido" hidden="false" collective="false" import="true" targetId="ff92-8214-bc9a-f318" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -138,6 +143,10 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="246d-9640-9c7e-5978" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df3-e550-334e-d2d3" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b682-16d0-4df5-0f33" type="max"/>
+          </constraints>
           <entryLinks>
             <entryLink id="405b-1509-bc6c-c718" name="Látigo" hidden="false" collective="false" import="true" targetId="1f7f-c5df-1420-185d" type="selectionEntry"/>
             <entryLink id="f657-8dcf-ac1f-4f93" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
@@ -249,7 +258,11 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
           </constraints>
         </entryLink>
         <entryLink id="bbe6-2346-6634-67ca" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
-        <entryLink id="844b-3755-2159-700f" name="Ropa resistente" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry"/>
+        <entryLink id="5333-44cd-4c2e-0e2e" name="Ropas resistentes" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
@@ -297,6 +310,14 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="047f-4a48-8468-6ea6" name="Balas" hidden="false" collective="false" import="true" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
+        <entryLink id="2f16-1957-c6ca-e528" name="Ropas resistentes" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="50.0"/>
       </costs>
@@ -572,7 +593,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
