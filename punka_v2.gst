@@ -61,7 +61,11 @@
       </constraints>
     </categoryEntry>
     <categoryEntry id="297e-53dd-3c0d-5c82" name="Banda: Troupe" hidden="false"/>
-    <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false"/>
+    <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a383-ec01-ef67-0b16" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="84b7-6828-dd10-0280" name="Miembros de la banda" hidden="false"/>
     <categoryEntry id="501b-9657-19ab-7b5d" name="Escasa" hidden="false">
       <constraints>
@@ -147,6 +151,11 @@
     <categoryEntry id="62c5-8d0d-3637-d0c2" name="Raudo" hidden="false">
       <infoLinks>
         <infoLink id="5700-e257-70e8-1175" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="39d0-f2ac-33e2-a0f0" name="Retraso (3)" hidden="false">
+      <infoLinks>
+        <infoLink id="e873-8a1f-9b28-45a9" name="Retraso (X)" hidden="false" targetId="1d8a-9fa1-9a2d-eeb7" type="rule"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
