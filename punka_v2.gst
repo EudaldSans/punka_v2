@@ -4,7 +4,7 @@
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
   </publications>
   <costTypes>
-    <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="e515-0c5b-47aa-1328" name=" Puntos" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="65f8-965a-8432-c96b" name="Miniatura">
@@ -129,6 +129,26 @@
         <infoLink id="47a0-6f58-c3ba-5dd0" name="Electrificación" hidden="false" targetId="6240-90ca-56c3-21e2" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="5078-3252-77fa-daa5" name="Bestia" hidden="false">
+      <infoLinks>
+        <infoLink id="bf77-5105-d940-c4f1" name="Bestia" hidden="false" targetId="e9cf-fed3-0a23-ac43" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="711d-4b08-5e28-64ec" name="Escurridizo" hidden="false">
+      <infoLinks>
+        <infoLink id="73fc-7df6-4e59-2de6" name="Escurridizo" hidden="false" targetId="59a0-f60d-aa37-f759" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="74c1-62fa-d920-7331" name="Todoterreno" hidden="false">
+      <infoLinks>
+        <infoLink id="dc51-94e3-3545-2d0a" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="62c5-8d0d-3637-d0c2" name="Raudo" hidden="false">
+      <infoLinks>
+        <infoLink id="5700-e257-70e8-1175" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -155,7 +175,7 @@
         <categoryLink id="a00f-d743-3463-7d32" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Balas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -170,7 +190,7 @@
         <categoryLink id="8794-6523-2486-374c" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="265c-2979-056d-1a06" name="Escopeta" hidden="false" collective="false" import="true" type="upgrade">
@@ -190,7 +210,7 @@
         <categoryLink id="5a1e-8928-84fd-f9c7" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80e1-add6-3e45-0b6a" name="Desarmado" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -203,8 +223,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="0145-b7a9-24a2-9dd4" name="Arma improvisada" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="0145-b7a9-24a2-9dd4" name="Arma improvisada" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca27-523e-0b5e-115b" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="f83c-ca91-70cb-4742" name="Garras y dientes" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="0e73-7847-c89a-96f4" name="Garras y dientes" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
@@ -215,13 +245,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ba9b-1c69-5fbe-8bc2" name="Maza Ligera" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8f26-7d48-8d7b-1fe9" name="Maza Ligera" hidden="false" targetId="a2dc-97f0-a0fa-9e8c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -235,7 +268,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -249,7 +282,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -266,7 +299,7 @@
         <categoryLink id="d071-13e6-118d-685d" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4cff-c4a3-65b5-c719" name="Filo Pesado" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -284,7 +317,7 @@
         <categoryLink id="3709-4673-7b92-a394" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d385-422c-97e9-fd5f" name="Filo Medio" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -302,7 +335,7 @@
         <categoryLink id="b3b5-4598-8785-7461" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -316,7 +349,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="485b-43b5-f9fe-c240" name="Ballesta" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -334,7 +367,7 @@
         <categoryLink id="f864-9ce6-7302-573a" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dad1-9f6c-5b63-0763" name="Rifle" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -353,7 +386,7 @@
         <categoryLink id="8013-edb1-c48f-16f8" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -371,7 +404,7 @@
         <categoryLink id="1301-64f3-b970-4a65" name="Dificil de usar" hidden="false" targetId="d8db-3ff3-4fb4-d828" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -392,10 +425,13 @@
         <categoryLink id="6561-a101-84b6-6062" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropa resistente" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0b3-af4d-a298-c57d" type="max"/>
+      </constraints>
       <profiles>
         <profile id="276c-4b99-bb41-f975" name="Ropa resistente" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
@@ -404,10 +440,13 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="1.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff92-8214-bc9a-f318" name="Cuero endurecido" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-6325-0679-6e5c" type="max"/>
+      </constraints>
       <profiles>
         <profile id="3296-2f9f-73bf-0a3e" name="Cuero endurecido" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
@@ -416,10 +455,13 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5851-f953-bcb7-91a6" name="Pura chapa" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0f-652f-55fb-d64d" type="max"/>
+      </constraints>
       <profiles>
         <profile id="8b75-5cc9-8719-7994" name="Pura chapa" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
@@ -431,11 +473,14 @@
         <categoryLink id="b86f-508c-aaf0-e3c7" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c7ab-bf22-707b-5b89" name="Chaleco antibalas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <comment>No cost?</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="752c-d1e9-8140-e899" type="max"/>
+      </constraints>
       <profiles>
         <profile id="2712-40ca-58c1-1536" name="Chaleco antibalas" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
@@ -443,6 +488,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="572b-74b1-e518-e12c" name="Bayoneta" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -453,10 +501,13 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d761-5553-4adf-c294" name="Armadura metálica" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd6-58f6-05ad-98b0" type="max"/>
+      </constraints>
       <profiles>
         <profile id="f47e-966a-7114-de10" name="Armadura metálica" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
@@ -465,7 +516,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="496a-3c88-4eb3-fd08" name="Escudo" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -477,10 +528,13 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19f2-5137-907f-980b" name="Protección contra la contaminación" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b398-2971-e16f-e527" type="max"/>
+      </constraints>
       <profiles>
         <profile id="57ae-5bba-e051-7e1b" name="Protección contra la contaminación" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
           <characteristics>
@@ -489,7 +543,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -631,7 +685,7 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
     <profile id="a2dc-97f0-a0fa-9e8c" name="Maza Ligera" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
       <characteristics>
         <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
-        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">1</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
         <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
       </characteristics>
     </profile>

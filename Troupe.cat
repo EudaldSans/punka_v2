@@ -37,7 +37,7 @@
             </rule>
           </rules>
           <costs>
-            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+            <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -53,6 +53,7 @@
             <entryLink id="993e-ae2e-9438-cdf5" name="Maza Ligera" hidden="false" collective="false" import="true" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
             <entryLink id="89f5-51d6-08e2-8c02" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
             <entryLink id="70b9-cc1d-d39b-a4e4" name="Cañón de confeti" hidden="false" collective="false" import="true" targetId="289c-5da0-d8ad-f6b7" type="selectionEntry"/>
+            <entryLink id="fff5-0dff-abbb-c0ae" name="Escopeta" hidden="false" collective="false" import="true" targetId="265c-2979-056d-1a06" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6ffa-a482-0321-5bf1" name="Blindaje" hidden="false" collective="false" import="true" defaultSelectionEntryId="a16f-161b-c877-28fa">
@@ -71,11 +72,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1478-c671-d01e-ba7d" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3faa-4be9-3072-adea" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="1478-c671-d01e-ba7d" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
         <entryLink id="d302-668b-98df-27df" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ad6-091e-34fa-453e" type="max"/>
@@ -84,7 +81,127 @@
         <entryLink id="4aa2-f601-1113-bca7" name="Balas" hidden="false" collective="false" import="true" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33fc-b625-188c-08b5" name="Domador" publicationId="6699-072c-136a-7d30" page="98" hidden="false" collective="false" import="true" type="model">
+      <rules>
+        <rule id="bf3f-0d54-0551-1321" name="Avivar" hidden="false">
+          <description>Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</description>
+        </rule>
+        <rule id="d4a1-648b-95a5-7c5a" name="Señor de las bestias" hidden="false">
+          <description>Un Domador puede adquirir hasta 2 fieras por +12 puntos cada una. Estas fieras, aunque de diferentes formas y tamaños, deben ir siempre en peana de 40 mm, están armadas con garras y dientes y, chorprecha, tienen la Regla especial Bestia.
+Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no pudiendo alejarse más voluntariamente. Si no estuvieran a esa distancia, cuando sea el momento de actuar de las fieras deben usar todas las Acciones necesarias en Mover para cumplir esto. Si su Domador resulta Abatido, antes de comenzar la Fase de activación de las fieras debes tirar 1d10 por cada una en la siguiente tabla para ver cómo actúan ese Turno.
+1 - La fiera intentará Asaltar a la miniatura de su propia banda a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.
+2-3 - La fiera tratará de huir, avanzando lo máximo posible hacia el borde del tablero más cercano.
+4-6 - La fiera se quedará en el sitio atontada.
+7 o más - La fiera intentará Asaltar a la miniatura de la banda rival a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bbef-e16e-3676-45f7" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="045f-37f4-2f8f-05be" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d82-f0e3-fabd-899c" name="Bestia" publicationId="6699-072c-136a-7d30" page="98" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9d-022b-021a-f335" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0a5c-a182-a7c5-8f96" name="Bestia" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+              <characteristics>
+                <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+                <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+                <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+                <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+                <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+                <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+                <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="7981-8cc5-103b-d19e" name="Bestia" hidden="false" targetId="5078-3252-77fa-daa5" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="99d5-887b-792d-cc4f" name="Garras y dientes" hidden="false" collective="false" import="true" targetId="f83c-ca91-70cb-4742" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11d-e2f0-90ee-affe" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1b8-3f2c-568a-8a9a" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="12.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="246d-9640-9c7e-5978" name="Armas" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="405b-1509-bc6c-c718" name="Látigo" hidden="false" collective="false" import="true" targetId="1f7f-c5df-1420-185d" type="selectionEntry"/>
+            <entryLink id="f657-8dcf-ac1f-4f93" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2d07-3734-72c6-fcf2" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="22.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b99-d4be-4cdc-ddbf" name="Acróbata" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8040-bc15-ec51-d022" name="Acróbata" publicationId="6699-072c-136a-7d30" page="99" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="90b6-b73e-b67d-aadc" name="Catapulta infernal" publicationId="6699-072c-136a-7d30" page="99" hidden="false">
+          <description>Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
+Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="06f9-cf95-d1b1-d3a7" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="45c3-ab26-84eb-6720" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink id="bfd3-a353-349a-b47c" name="Raudo" hidden="false" targetId="62c5-8d0d-3637-d0c2" primary="false"/>
+        <categoryLink id="3fdb-108d-3d61-421f" name="Escurridizo" hidden="false" targetId="711d-4b08-5e28-64ec" primary="false"/>
+        <categoryLink id="fb1f-0905-8afc-4e1d" name="Todoterreno" hidden="false" targetId="74c1-62fa-d920-7331" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a1ed-e644-c823-057b" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="644e-32da-94c7-4e52" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36c2-c48d-78db-9a55" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9f35-061e-9831-e0b3" name="Maza Ligera" hidden="false" collective="false" import="true" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
+            <entryLink id="e7b1-6545-bd69-6ea6" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
+            <entryLink id="e8fe-ac72-8405-27f4" name="Filo Medio" hidden="false" collective="false" import="true" targetId="d385-422c-97e9-fd5f" type="selectionEntry"/>
+            <entryLink id="164e-dcde-3e5c-2d98" name="Cuchillos arrojadizos" hidden="false" collective="false" import="true" targetId="f19a-c771-9682-f4c5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f350-51c3-abab-06da" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+        <entryLink id="18bd-32e2-c2e6-bac5" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d972-aaf1-16bd-0dcb" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -104,7 +221,7 @@
         <categoryLink id="3dfb-70de-f3a2-e6c9" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
@@ -123,7 +240,7 @@
         <categoryLink id="0b9a-eb9c-7ca4-74df" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -139,7 +256,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80d4-f0bc-e827-feba" name="Bomba fétida" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -155,7 +272,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a82b-b25f-ef11-1633" name="Cojín de pedos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -171,7 +288,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2bab-d8ee-71e9-fa8f" name="Flor escupe agua" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -187,7 +304,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10b9-0730-a404-4d10" name="Globo que flota" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -203,7 +320,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cae-77fe-946f-ff88" name="Guante con descarga" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -222,7 +339,7 @@
         <categoryLink id="9dab-cf05-7a8c-cee6" name="Electrificación" hidden="false" targetId="d2e4-5cf9-58c2-565b" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -238,7 +355,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1157-b977-dba1-42f8" name="Zurullo" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
@@ -254,7 +371,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f7f-c5df-1420-185d" name="Látigo" hidden="false" collective="false" import="true" type="upgrade">
@@ -268,7 +385,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
