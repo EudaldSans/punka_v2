@@ -217,9 +217,6 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="8794-6523-2486-374c" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="15.0"/>
       </costs>
@@ -249,8 +246,8 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <profile id="7de1-4cd7-726a-c66a" name="Desarmado" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-2</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">0</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -270,9 +267,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <profiles>
         <profile id="0e73-7847-c89a-96f4" name="Garras y dientes" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">0</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -292,9 +289,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <profiles>
         <profile id="5b4b-6e8c-d054-89a0" name="Filo Pequeño" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">1</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -306,9 +303,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <profiles>
         <profile id="5f7a-14f0-0f0f-5999" name="Maza" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">2</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -318,11 +315,11 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4d4f-983e-4fd4-90dd" name="Maza Ligera" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
+        <profile id="4d4f-983e-4fd4-90dd" name="Maza Pesada" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">4</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -337,9 +334,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <profiles>
         <profile id="3177-64d7-f8d5-73e7" name="Filo Pesado" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">3</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">4</characteristic>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -355,16 +352,12 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <profiles>
         <profile id="b4b1-c92d-ceb8-efb8" name="Filo Medio" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
           <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">1</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">2</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">3</characteristic>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+3</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="d11b-d25f-92b5-dfb3" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink id="b3b5-4598-8785-7461" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
       </costs>
@@ -459,7 +452,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropa resistente" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropas resistentes" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0b3-af4d-a298-c57d" type="max"/>
       </constraints>
@@ -709,15 +702,15 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
     <profile id="2067-39d5-d837-94c3" name="Arma improvisada" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
       <characteristics>
         <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
-        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">0</characteristic>
-        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
       </characteristics>
     </profile>
     <profile id="a2dc-97f0-a0fa-9e8c" name="Maza Ligera" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
       <characteristics>
-        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">0</characteristic>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
         <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
-        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
