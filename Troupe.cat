@@ -1,28 +1,289 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <entryLinks>
-    <entryLink id="1097-2954-52c0-21a1" name="Pachacho" hidden="false" collective="false" import="true" targetId="87e7-b9a0-a2ba-70d9" type="selectionEntry"/>
-  </entryLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="87e7-b9a0-a2ba-70d9" name="Pachacho" hidden="false" collective="false" import="true" type="model">
+  <selectionEntries>
+    <selectionEntry id="3a98-6dc4-91e7-cc07" name="Pachacho" publicationId="6699-072c-136a-7d30" page="97" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="68da-50b2-ed47-247f" name="Pachacho" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f9e0-0a3f-f942-253c" name="Risa difícil" publicationId="6699-072c-136a-7d30" page="97" hidden="false">
+          <description>Al igual que los típicos payasos de toda la vida, los Pachachos de la Hermandad de la Risa Floja suelen causar emociones polarizadas, o te hacen mucha gracia o los odias a muerte. Luchar contra Pachachos es como tirar una moneda. Cuando una miniatura Dispare o Combata contra un Pachacho tendrá que ver si su tirada de Precisión o Combate (lo que tenga que utilizar) es par o impar. Si fuera par se sumará 2 a la tirada (hasta un resultado máximo de 10) pero con un resultado impar se restará 2 (hasta un mínimo de 1).</description>
+        </rule>
+        <rule id="aac6-88c9-30c4-be0b" name="Zapatones" publicationId="6699-072c-136a-7d30" page="97" hidden="false">
+          <description>Si un Pachacho desea Asaltar a una miniatura enemiga y no llega por una distancia de 2,5 cm o menos, gracias a los zapatones podrá adelantarse esa distancia de manera automática y por tanto podrá Asaltar. Pero cuidado, eso mismo sucederá si le Asaltan a él.</description>
+        </rule>
+      </rules>
       <categoryLinks>
-        <categoryLink id="93ee-5bb0-c424-a19d" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink id="bb55-9999-aea1-a4fd" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="821f-f347-db4d-b15c" name="Armas" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="8dca-dfe3-791a-1386" name="Chismeciclo" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d2-fcba-a8e7-8d8f" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c48f-acc6-d029-472d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f46-30ba-39bb-8a5d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="57ae-2395-54a3-288e" name="Chismeciclo" hidden="false">
+              <description>Una vez por Fase de activación y siempre que vaya por Terreno chachi pasará a tener la Regla especial Raudo durante una Acción de Movimiento. Un Pachacho en chismeciclo ganará la Regla especial Montada y perderá su Regla especial Zapatones.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6ce1-5b1f-c282-56e0" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118b-c93e-a156-3426" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db58-80c3-49d6-e4d9" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f061-d478-ef21-3864" name="Balas" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
-            <entryLink id="090e-26f0-2e80-e63f" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+            <entryLink id="7e96-362d-3126-fe5d" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+            <entryLink id="4b10-f57b-100f-436d" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
+            <entryLink id="993e-ae2e-9438-cdf5" name="Maza Ligera" hidden="false" collective="false" import="true" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
+            <entryLink id="89f5-51d6-08e2-8c02" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
+            <entryLink id="70b9-cc1d-d39b-a4e4" name="Cañón de confeti" hidden="false" collective="false" import="true" targetId="289c-5da0-d8ad-f6b7" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6ffa-a482-0321-5bf1" name="Blindaje" hidden="false" collective="false" import="true" defaultSelectionEntryId="a16f-161b-c877-28fa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c669-1d81-12f4-4a13" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca5-3a88-589b-e775" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a16f-161b-c877-28fa" name="Ropa resistente" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="e515-0c5b-47aa-1328" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e681-e520-a8ce-b004" name="Cuero endurecido" hidden="false" collective="false" import="true" targetId="ff92-8214-bc9a-f318" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1478-c671-d01e-ba7d" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3faa-4be9-3072-adea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d302-668b-98df-27df" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ad6-091e-34fa-453e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4aa2-f601-1113-bca7" name="Balas" hidden="false" collective="false" import="true" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
       </costs>
     </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="4c92-ac20-c805-f270" name="Guante de boxeo extensible" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0d56-ce61-e8e1-6038" name="Guante de boxeo extensible" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3ce7-b4df-b02b-1395" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink id="3dfb-70de-f3a2-e6c9" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a4ff-3c11-bea1-3d5e" name="Cañón de confeti" hidden="false" typeId="6023-c682-4678-9510" typeName="Arma a distancia">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">1d10 x 5 cm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2292-699f-2018-cc73" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink id="07d9-757c-55d9-f54e" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
+        <categoryLink id="0b9a-eb9c-7ca4-74df" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d502-d06d-86ba-9035" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-a950-5880-3cac" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="55f2-b8de-e579-a075" name="Bocina" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si la miniatura es Asaltada podrá pegarle un bocinazo al rival que hará que pierda todos los bonificadores del Asalto por el susto.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80d4-f0bc-e827-feba" name="Bomba fétida" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d8-e586-2c0a-62f0" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d4b-c1e6-65a7-ffe4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fc06-5475-efc0-e0d8" name="Bomba fétida" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Puedes lanzar la bomba fétida a tus pies dejando un marcador permanente de 5 cm de radio. Cualquier miniatura en contacto que haga una tirada de Técnica tendrá un penalizador de -3.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a82b-b25f-ef11-1633" name="Cojín de pedos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e8-4b0f-0777-a0a5" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd70-ddf8-8669-7ce7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1c0b-feda-9e1a-1539" name="Cojín de pedos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Una miniatura equipada con el cojín será capaz de sobrevivir al disparo del cañón lanzador con un resultado en la tirada de Precisión de 1-2 en lugar de 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bab-d8ee-71e9-fa8f" name="Flor escupe agua" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e01-a7d7-189e-1bca" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c83-fe96-c9bf-7209" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="91dc-cd3e-b532-fd4c" name="Flor escupe agua" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si la miniatura ya está trabada en Combate puede usar la flor para causar un penalizador de -2 al Combate a su rival a la hora de Combatir (ya sea su Fase de activación o la del rival).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10b9-0730-a404-4d10" name="Globo que flota" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fdb-c2b0-6613-fc6a" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ad-20b4-29fe-feb3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4d5f-e130-83b0-d1c9" name="Globo que flota" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si la miniatura equipada resulta Abatida el globo producirá una deflagración impactando a todas las miniaturas a 5 cm con Fuerza 2 y Penetración 2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0cae-77fe-946f-ff88" name="Guante con descarga" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f4-54da-23ba-909a" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a501-1615-ece4-3c96" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0e31-1eea-8ce6-c539" name="Guante con descarga" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si la miniatura es impactada en Combate puede decidir tener la Regla especial Electrificación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9dab-cf05-7a8c-cee6" name="Electrificación" hidden="false" targetId="d2e4-5cf9-58c2-565b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c1-c597-d539-e054" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-d608-6d66-f611" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e995-92fa-b9d5-a632" name="Pañuelos infinitos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si la miniatura va a ser el objetivo de un disparo puede usar los pañuelos para despistar y que el atacante sufra un penalizador de -2 a la Precisión.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1157-b977-dba1-42f8" name="Zurullo" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ad-3c3e-5f4e-d0ec" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7b-5cf6-826d-1a4a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="943d-9e09-383a-2600" name="Zurullo" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">¿Zurullo de coña? No trabajamos ese artículo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f7f-c5df-1420-185d" name="Látigo" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="dbd1-e449-8fb0-db91" name="Látigo" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="cbf9-9153-7f30-9704" name="Articulos de coña" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9e5a-46dc-606f-9e1f" name="Bocina" hidden="false" collective="false" import="true" targetId="ee3d-6737-8a3a-0ded" type="selectionEntry"/>
+        <entryLink id="8986-b7a9-2f8a-2cc0" name="Bomba fétida" hidden="false" collective="false" import="true" targetId="80d4-f0bc-e827-feba" type="selectionEntry"/>
+        <entryLink id="6c27-5e4e-60df-f39c" name="Cojín de pedos" hidden="false" collective="false" import="true" targetId="a82b-b25f-ef11-1633" type="selectionEntry"/>
+        <entryLink id="6777-d0fe-1416-2475" name="Flor escupe agua" hidden="false" collective="false" import="true" targetId="2bab-d8ee-71e9-fa8f" type="selectionEntry"/>
+        <entryLink id="ee88-0122-60a0-5a17" name="Globo que flota" hidden="false" collective="false" import="true" targetId="10b9-0730-a404-4d10" type="selectionEntry"/>
+        <entryLink id="d081-f3df-264b-9501" name="Guante con descarga" hidden="false" collective="false" import="true" targetId="0cae-77fe-946f-ff88" type="selectionEntry"/>
+        <entryLink id="6cc0-234b-272b-9578" name="Pañuelos infinitos" hidden="false" collective="false" import="true" targetId="47f1-c9c2-81c9-4f89" type="selectionEntry"/>
+        <entryLink id="8894-dcea-883a-2322" name="Zurullo" hidden="false" collective="false" import="true" targetId="1157-b977-dba1-42f8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
