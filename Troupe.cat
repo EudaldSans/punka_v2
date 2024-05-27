@@ -204,6 +204,193 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d4ab-e726-8812-6dcb" name="Forzudo" publicationId="6699-072c-136a-7d30" page="100" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bf8c-df3e-b60c-f7f9" name="Forzudo" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4a30-71c3-f067-f12a" name="Bestia parda" publicationId="6699-072c-136a-7d30" page="100" hidden="false">
+          <description> El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</description>
+        </rule>
+        <rule id="face-3dd4-853b-72e5" name="Lucimiento" publicationId="6699-072c-136a-7d30" page="100" hidden="false">
+          <description>El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="62c3-16e8-0f12-ee72" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="0cd3-6104-1dfc-a06a" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f240-8c64-1ccf-beac" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7595-9b1d-8734-88ba" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6fad-fb22-06ec-0b28" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
+            <entryLink id="a233-df3f-d612-ae89" name="Maza Pesada" hidden="false" collective="false" import="true" targetId="5424-01db-ff0c-e13a" type="selectionEntry"/>
+            <entryLink id="a74d-24c1-d199-f491" name="Filo Pesado" hidden="false" collective="false" import="true" targetId="4cff-c4a3-65b5-c719" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="62d5-83a1-c6a3-e669" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="617b-4b2e-771c-f95e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bbe6-2346-6634-67ca" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+        <entryLink id="844b-3755-2159-700f" name="Ropa resistente" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3092-b1ed-b961-7988" name="Jefe de pista" publicationId="6699-072c-136a-7d30" page="101" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="430b-74d4-469b-273d" name="Jefe de pista" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="eb8f-dc60-f378-1b54" name="El mayor espectaculo del mundo" hidden="false">
+          <description>El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Pachachos: durante este Turno de juego, la Regla especial Risa difícil de los Pachachos restará o sumará 4 en lugar de 2.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+• Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
+• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b487-eadf-9967-752f" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="57ec-fc46-ffa2-488a" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c08f-2b02-76fa-87e1" name="Armas" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b0-4e47-4665-cbd3" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62d-7e26-89a2-60ee" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d768-5916-31b3-6bb4" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
+            <entryLink id="edc2-8dbd-db30-b0e9" name="Filo Medio" hidden="false" collective="false" import="true" targetId="d385-422c-97e9-fd5f" type="selectionEntry"/>
+            <entryLink id="bebe-5d80-5ed5-10f8" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e5b-8dda-560e-8d63" name="François el mimo" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="32b8-b752-3fe0-045b" name="François el mimo" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a3b6-8cbf-ef30-d221" name="¡Matad a eso!" publicationId="6699-072c-136a-7d30" page="102" hidden="false">
+          <description>Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</description>
+        </rule>
+        <rule id="ae50-8ea0-721d-794e" name="Muro imaginario" publicationId="6699-072c-136a-7d30" page="102" hidden="false">
+          <description>A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</description>
+        </rule>
+        <rule id="81b4-ca62-9032-0314" name="Mimo" publicationId="6699-072c-136a-7d30" page="102" hidden="false">
+          <description>François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="61f6-eec2-e7fd-30df" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="9eb1-e586-6ef3-3e7a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c393-5bf3-c9fc-6622" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="543e-e475-5ac6-bbea" name="Madame destino" publicationId="6699-072c-136a-7d30" page="103" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2bb1-f54e-059a-6ae5" name="Madame destino" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6"/>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8"/>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8"/>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d"/>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589"/>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c"/>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="70a0-a53d-f619-af2d" name="Levitación" publicationId="6699-072c-136a-7d30" page="103" hidden="false">
+          <description>A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</description>
+        </rule>
+        <rule id="2d42-8a7b-01d6-3104" name="Vidente" publicationId="6699-072c-136a-7d30" page="103" hidden="false">
+          <description>Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
+
+• 1 El Masca. La miniatura tiene un +1 a su Atributo de Acciones (hasta un máximo de 3).
+• 2 El Pirao. Desaparece un arma al azar de la miniatura.
+• 3 El Sol. La miniatura tiene un -2 a su Atributo de Precisión (hasta un mínimo de 1).
+• 4 La Luna. La miniatura tiene un -2 a su Atributo de Combate (hasta un mínimo de 1).
+• 5 El Buga. La miniatura obtiene la Regla especial Raudo.
+• 6 El Engranaje. La miniatura tiene un -2 a su Atributo de Dureza (hasta un mínimo de 1).
+• 7 El Páramo. La miniatura tiene un -2 a su Atributo de Agilidad (hasta un mínimo de 1).
+• 8 La Torre. La miniatura tiene un +2 a su Atributo de Dureza.
+• 9 El Memonio. La miniatura tiene un -1 a su Atributo de Acciones (hasta un mínimo de 1).
+• 10 La Muerte. La miniatura debe superar una tirada de Dureza o resultar Abatida.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d06f-fa90-dbe7-b858" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink id="3efd-ef0d-a88f-5818" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink id="bf1d-6feb-e052-70d8" name="Retraso (3)" hidden="false" targetId="39d0-f2ac-33e2-a0f0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8bb2-b0b7-ad53-58f0" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+        <entryLink id="2a18-3816-9bf4-175c" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125e-7d07-2119-bf41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ae-14ab-685f-e705" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4c92-ac20-c805-f270" name="Guante de boxeo extensible" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
