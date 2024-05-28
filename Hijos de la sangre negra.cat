@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="82fd-14e9-7e70-88e2" name="Hijos de la sangre negra" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Motosierra" hidden="false" id="d03b-2867-177f-b0db" publicationId="6699-072c-136a-7d30" page="54">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="543-cca5-79bc-2f67" primary="false" name="A dos manos"/>
+        <categoryLink targetId="c14e-1660-fbd2-5927" id="6c02-b6f3-ba0-e0e4" primary="false" name="Armatoste"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="9550-fcba-87ed-41c0" primary="false" name="Escasa"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
