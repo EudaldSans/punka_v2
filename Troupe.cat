@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com">
   <selectionEntries>
     <selectionEntry id="3a98-6dc4-91e7-cc07" name="Pachacho" publicationId="6699-072c-136a-7d30" page="97" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -25,7 +25,6 @@
       </rules>
       <categoryLinks>
         <categoryLink id="bb55-9999-aea1-a4fd" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
-        <categoryLink targetId="6659-5ef7-facd-fab1" id="cedf-b1ac-e7a9-533d" primary="false" name="Mercenarios y personalidades de la banda"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8dca-dfe3-791a-1386" name="Chismeciclo" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
@@ -474,6 +473,7 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">Escasa, Lentorra (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -495,6 +495,7 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">1d10 x 5 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Escasa, postas, lentorra (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
