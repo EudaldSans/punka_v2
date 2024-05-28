@@ -240,9 +240,10 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <categoryLink id="0cd3-6104-1dfc-a06a" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f240-8c64-1ccf-beac" name="Armas" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f240-8c64-1ccf-beac" name="Armas" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fad-fb22-06ec-0b28">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7595-9b1d-8734-88ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b0-0298-175e-7d56" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6fad-fb22-06ec-0b28" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
