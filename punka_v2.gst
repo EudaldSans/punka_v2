@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="0853-e2c8-30ee-34a3" name="punka_v2" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="0853-e2c8-30ee-34a3" name="punka_v2" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com">
   <publications>
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
     <publication name="GitHub" id="bbc5-28b8-67b7-3c23" hidden="false" publisherUrl="git@github.com:EudaldSans/punka_v2.git"/>
@@ -24,6 +24,7 @@
         <characteristicType id="8a4a-b45a-10a3-0c7a" name="Fuerza"/>
         <characteristicType id="5980-44ca-27d3-5a03" name="Penetración"/>
         <characteristicType id="9f41-1f3c-dd68-ea0d" name="Distancia"/>
+        <characteristicType id="2ecc-3ee3-2a21-1e6" name="Reglas"/>
       </characteristicTypes>
     </profileType>
     <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo">
@@ -31,12 +32,14 @@
         <characteristicType id="7192-0144-704a-b3e6" name="Combate"/>
         <characteristicType id="fa8e-4d55-0d97-e892" name="Fuerza"/>
         <characteristicType id="2c81-28ec-adf8-2c60" name="Penetración"/>
+        <characteristicType id="c498-c631-f4c5-160a" name="Reglas"/>
       </characteristicTypes>
     </profileType>
     <profileType id="8d36-94cc-6c74-8857" name="Habilidad"/>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
+        <characteristicType id="d8ba-fec3-89d1-9634" name="Reglas"/>
       </characteristicTypes>
     </profileType>
     <profileType id="7cc9-89fb-d9b6-2f1a" name="Equipo especial">
@@ -163,6 +166,26 @@
         <infoLink name="Retraso (2)" id="be23-bf00-6417-6a03" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Lentorra (2)" id="801d-3953-5099-5510" hidden="true">
+      <infoLinks>
+        <infoLink name="Lentorra (2)" id="2913-df9a-38eb-f87" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Incendiaria (2)" id="115-e012-3d9f-32c8" hidden="false">
+      <infoLinks>
+        <infoLink name="Incendiaria (2)" id="ac71-c77b-54d7-4147" hidden="false" type="rule" targetId="8837-2aa8-e20e-0ed5"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="¡¡¡CATAPUM!!!" id="dfe1-2d4c-57ce-2fd3" hidden="false">
+      <infoLinks>
+        <infoLink name="¡¡¡CATAPUM!!!" id="deac-dc72-6e97-d9cc" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Plantilla" id="cdcc-e0e5-4a0e-f174" hidden="false">
+      <infoLinks>
+        <infoLink name="Plantilla" id="c498-7645-48f0-7622" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -200,7 +223,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <profile name="El viejo sajarratas" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="614b-1c0a-b885-e4c9">
           <characteristics>
             <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3 (1)</characteristic>
             <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">1</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
@@ -277,7 +300,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
             <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
           </characteristics>
@@ -300,7 +323,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mongodrilo Dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
+    <selectionEntry type="model" import="true" name="Mongodrilo Dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
       </costs>
@@ -383,6 +406,29 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
           <description>El enorme ojo de Mongodrilo es bueno para apuntar, pero a veces le juega malas pasadas cuando se concentra demasiado y se le va para sitios nada previstos. Si gastas una Acción en Apuntar con Mongodrilo, debes tirar 1d10. Con un resultado de 1-2 en lugar del bonificador de +3 a la Precisión, tendrá un penalizador de -2.</description>
         </rule>
       </rules>
+      <profiles>
+        <profile name="Mongodrilo Dundee" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="2c0f-79ab-9028-954">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7e-88c-1505-844b"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="bd7e-88c-1505-844b">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Crazy Mel" hidden="false" id="54ea-104-aa9c-6c89">
       <entryLinks>
@@ -421,10 +467,10 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <profile name="Crazy Mel" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="9735-98cd-492e-c55f">
           <characteristics>
             <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">7</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5 (6)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">7 (8)</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
           </characteristics>
@@ -454,7 +500,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
             <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
           </characteristics>
@@ -547,10 +593,10 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <profile name="Lizzy Deville" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="20fc-bd9-3be6-ae6c">
           <characteristics>
             <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (5)</characteristic>
             <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
           </characteristics>
@@ -559,6 +605,105 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <rules>
         <rule name="Charlatana" id="ae01-b26b-20da-83c1" hidden="false" publicationId="6699-072c-136a-7d30" page="121">
           <description>Lizzy tiene un pico de oro que la ayuda a salir de las situaciones más inverosímiles. Lizzy podrá Separarse del Combate automáticamente como si tuviera la Regla especial Escurridizo, pero no podrá emplear esta jugada con la misma miniatura enemiga más de una vez en la misma partida.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ochodedos" hidden="false" id="64fb-6fb0-75ea-c8b8" publicationId="6699-072c-136a-7d30" page="122">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="88"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="399e-eb54-6074-2883" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="8af-ad7d-f2dd-374a" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ochodedos" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="572b-4ec8-e1cd-8b44">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5 (6/4)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="625c-9d15-9ac8-925d" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="af2d-4717-eed8-c758" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="92e4-c556-3c9b-f6f7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="El baile de San Vito" id="1628-aca7-e469-623b" hidden="false" publicationId="6699-072c-136a-7d30" page="122">
+          <description>Ochodedos parece no empezar a emplearse a fondo en combate hasta que recibe una buena cantidad de daño. Entonces mueve todo su cuerpo como si realizara una especie de baile, y con una mirada de locura, se abalanza sobre sus enemigos. En el momento en el que Ochodedos resulte Abatido por primera vez, en lugar de ser sustituido por un marcador de Abatido y considerado fuera de la partida, ignorará este resultado y además obtendrá un bonificador de +2 a sus Atributos de Agilidad, Fuerza y Dureza. Si a lo largo de la partida volviera a resultar Abatido, se considerará fuera de la partida de la manera habitual.</description>
+        </rule>
+        <rule name="Doble dolor" id="59ed-328-890b-d869" hidden="false" publicationId="6699-072c-136a-7d30" page="122">
+          <description>Ochodedos ha perfeccionado el combate con dos armas de tal manera que es capaz de coordinar sus ataques con ellas a la vez, aunque a riesgo de perder algo de habilidad. Cuando Ochodedos está en una Acción de Combate puede, o bien atacar normalmente con una de sus armas, o bien utilizar las dos, lo que le da la posibilidad de tirar un dado más, pudiendo elegir el que obtenga un resultado más alto de los dos, pero a costa de un penalizador de -2 al Atributo de Combate.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Irina" hidden="false" id="80d3-4417-e002-6458">
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="28c5-5e8d-4e69-3569" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="d242-fe35-cd3-f261" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="5d79-1a4e-5d4-60e7" id="82d5-d4b0-c39d-f7c9" primary="false" name="Retraso (3)"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Irina" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="f5a7-3f08-5f70-4383">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="90"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Ropas resistentes" hidden="false" id="1ea5-3291-5cf3-b359" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e0c-993d-e363-4294" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Utacël" hidden="false" id="58f1-3597-9be0-b75c">
+          <profiles>
+            <profile name="Utacël" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="18a1-bd23-45f7-fad6">
+              <characteristics>
+                <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1/-1</characteristic>
+                <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3/+2</characteristic>
+                <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">5/3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Utacël" id="9ffe-bb61-68fe-b06f" hidden="false" publicationId="6699-072c-136a-7d30" page="123">
+              <description>Irina va equipada con un gran arma de asta acabada en un filo y adornada con cabezas de muñecas al que llama por el extraño nombre de Utacël, que al parecer en su idioma significa Destino. En una Acción de Asaltar, este arma tiene unas estadísticas de Combate +1, Fuerza +3 y Penetración 5. Durante el resto de Acciones en que Combata tendrá unas estadísticas de Combate -1, Fuerza +2 y Penetración 3.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Halálkarma" id="6a35-14be-95d1-eb7" hidden="false" publicationId="6699-072c-136a-7d30" page="123">
+          <description>Irina va montada en un enorme felino al que llama Halálkarma. Es una criatura impresionante a la que nadie excepto Irina puede acercarse sin correr el riesgo de quedarse sin algún miembro.
+Halálkarma le confiere a Irina las Reglas especiales Montada, Raudo y Todoterreno. Además, su enorme cuerpo lleno de piezas blindadas otorga a Irina una Cobertura de Blindaje +3.
+Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus enemigos, aunque llevar a Irina y un montón de trastos encima hace que le resulte bastante agotador. En lugar de Combatir con Irina, puedes decidir que lo haga Halálkarma usando estas estadísticas: Combate 7, Fuerza 8 y Penetración 5. Sin embargo, deberá descansar para volver a atacar, lo que a efectos prácticos es como si tuviera la Regla especial Lentorra (2).</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -571,6 +716,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -601,6 +747,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7/6/5</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, a dos manos, escasa, postas</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -621,6 +768,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -643,6 +791,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -665,6 +814,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -679,6 +829,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -693,6 +844,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -710,6 +862,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+4</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos, armatoste</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -728,6 +881,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+3</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -742,6 +896,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">F del lanzador / F del lanzador - 1 / F del lanzador - 2</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">2/1/0</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -756,6 +911,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">4</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Lentorra</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -777,6 +933,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">30/60/90 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -796,6 +953,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cmc</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Difñícil de usar</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -814,6 +972,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">30/60/90 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, automática, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -836,6 +995,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <profile id="276c-4b99-bb41-f975" name="Ropa resistente" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
             <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">1</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -866,6 +1026,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <profile id="8b75-5cc9-8719-7994" name="Pura chapa" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
             <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -885,6 +1046,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <profile id="2712-40ca-58c1-1536" name="Chaleco antibalas" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
             <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3, 5/6/7 contra armas con la Regla especial Arma de fuego</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -912,6 +1074,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <profile id="f47e-966a-7114-de10" name="Armadura metálica" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
           <characteristics>
             <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">4</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -930,6 +1093,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="a57d-ab20-45e5-fe33" primary="false" name="A dos manos"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="19f2-5137-907f-980b" name="Protección contra la contaminación" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1080,7 +1246,7 @@ No es posible Apuntar ni Evitar Cobertura con un Tiro parabólico.</description>
     <rule id="77ee-07d8-dd91-def2" name="Ímpetu (X)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Obtiene un bonificador a la Penetración y a la Fuerza igual al número entre paréntesis por cada bonificador de +1 al Combate recibido por el Movimiento del Asalto.</description>
     </rule>
-    <rule id="8837-2aa8-e20e-0ed5" name="Incendiaria (X)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="8837-2aa8-e20e-0ed5" name="Incendiaria (2)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
 Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
 Cualquier miniatura que durante el transcurso de una Acción
@@ -1138,6 +1304,10 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
       <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
 A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
+    <rule name="Lentorra (2)" id="83d4-6391-9ff1-8fa1" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
+      <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
+En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2067-39d5-d837-94c3" name="Arma improvisada" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
@@ -1152,6 +1322,7 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
         <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
         <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
         <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
+        <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
