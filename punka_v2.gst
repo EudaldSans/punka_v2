@@ -110,6 +110,7 @@
       <infoLinks>
         <infoLink id="feff-8b4e-5113-af10" name="Tiro parabólico" hidden="false" targetId="734f-df5a-7f49-3a9f" type="rule"/>
         <infoLink id="3558-60e8-2427-5b3f" name="Usar y tirar" hidden="false" targetId="9931-0e0e-fa4f-17d8" type="rule"/>
+        <infoLink id="072d-37d1-12fd-0b7c" name="Bomba" hidden="false" targetId="d4d7-8245-ed66-4269" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="9284-8095-71fd-9e1e" name="Lentorra (1)" hidden="false"/>
