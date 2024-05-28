@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="0853-e2c8-30ee-34a3" name="punka_v2" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="0853-e2c8-30ee-34a3" name="punka_v2" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
   </publications>
   <costTypes>
-    <costType id="e515-0c5b-47aa-1328" name=" Puntos" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="65f8-965a-8432-c96b" name="Miniatura">
@@ -52,24 +52,24 @@
   <categoryEntries>
     <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dc2c-2771-080d-c458" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dc2c-2771-080d-c458" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="cd25-e09a-4ac6-8cdc" name="Gato parameño" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f31c-9ca6-2476-d7c8" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f31c-9ca6-2476-d7c8" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="297e-53dd-3c0d-5c82" name="Banda: Troupe" hidden="false"/>
     <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a383-ec01-ef67-0b16" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a383-ec01-ef67-0b16" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="84b7-6828-dd10-0280" name="Miembros de la banda" hidden="false"/>
     <categoryEntry id="501b-9657-19ab-7b5d" name="Escasa" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c597-8eff-461a-ac94" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c597-8eff-461a-ac94" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d790-84b8-cfb1-b9d7" name="Escasa" hidden="false" targetId="cc87-2fc3-e766-7629" type="rule"/>
@@ -77,7 +77,7 @@
     </categoryEntry>
     <categoryEntry id="e24d-662f-94ca-ccbe" name="A dos manos" hidden="false">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7031-f8e4-1b9f-1bbb" type="max"/>
+        <constraint field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7031-f8e4-1b9f-1bbb" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5fde-e1f8-d6fa-9eb6" name="A dos manos" hidden="false" targetId="3cc2-57bc-f5a7-acbb" type="rule"/>
@@ -85,7 +85,7 @@
     </categoryEntry>
     <categoryEntry id="c14e-1660-fbd2-5927" name="Armatoste" publicationId="6699-072c-136a-7d30" page="30" hidden="false">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6dc4-05b7-003f-04bd" type="max"/>
+        <constraint field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6dc4-05b7-003f-04bd" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="61b8-e009-6f7c-09e1" name="Armatoste" hidden="false" targetId="e424-ab96-2797-07e5" type="rule"/>
@@ -173,7 +173,7 @@
   <selectionEntries>
     <selectionEntry id="73b3-c6f6-a32c-664b" name="Gato parameño" publicationId="6699-072c-136a-7d30" page="35" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1670-5352-9a39-6925" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1670-5352-9a39-6925" type="max"/>
       </constraints>
       <profiles>
         <profile id="05b8-98d6-2974-2ccf" name="Gato parameño" hidden="false" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial">
@@ -187,7 +187,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="ee3e-9af9-047a-c9d0" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -207,7 +207,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="a00f-d743-3463-7d32" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Balas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -219,7 +219,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="15.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="265c-2979-056d-1a06" name="Escopeta" hidden="false" collective="false" import="true" type="upgrade">
@@ -239,7 +239,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="5a1e-8928-84fd-f9c7" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80e1-add6-3e45-0b6a" name="Desarmado" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -253,15 +253,15 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0145-b7a9-24a2-9dd4" name="Arma improvisada" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca27-523e-0b5e-115b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca27-523e-0b5e-115b" type="max"/>
       </constraints>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f83c-ca91-70cb-4742" name="Garras y dientes" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -275,7 +275,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba9b-1c69-5fbe-8bc2" name="Maza Ligera" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -283,7 +283,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <infoLink id="8f26-7d48-8d7b-1fe9" name="Maza Ligera" hidden="false" targetId="a2dc-97f0-a0fa-9e8c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -297,7 +297,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -311,7 +311,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -328,7 +328,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="d071-13e6-118d-685d" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4cff-c4a3-65b5-c719" name="Filo Pesado" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -346,7 +346,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="3709-4673-7b92-a394" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d385-422c-97e9-fd5f" name="Filo Medio" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -360,7 +360,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -374,7 +374,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="485b-43b5-f9fe-c240" name="Ballesta" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -392,7 +392,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="f864-9ce6-7302-573a" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dad1-9f6c-5b63-0763" name="Rifle" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -411,7 +411,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="8013-edb1-c48f-16f8" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -429,7 +429,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="1301-64f3-b970-4a65" name="Dificil de usar" hidden="false" targetId="d8db-3ff3-4fb4-d828" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -450,12 +450,12 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="6561-a101-84b6-6062" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="10.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropas resistentes" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0b3-af4d-a298-c57d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0b3-af4d-a298-c57d" type="max"/>
       </constraints>
       <profiles>
         <profile id="276c-4b99-bb41-f975" name="Ropa resistente" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
@@ -465,12 +465,12 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="1.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff92-8214-bc9a-f318" name="Cuero endurecido" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-6325-0679-6e5c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-6325-0679-6e5c" type="max"/>
       </constraints>
       <profiles>
         <profile id="3296-2f9f-73bf-0a3e" name="Cuero endurecido" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
@@ -480,12 +480,12 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5851-f953-bcb7-91a6" name="Pura chapa" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0f-652f-55fb-d64d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0f-652f-55fb-d64d" type="max"/>
       </constraints>
       <profiles>
         <profile id="8b75-5cc9-8719-7994" name="Pura chapa" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
@@ -498,13 +498,13 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <categoryLink id="b86f-508c-aaf0-e3c7" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c7ab-bf22-707b-5b89" name="Chaleco antibalas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <comment>No cost?</comment>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="752c-d1e9-8140-e899" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="752c-d1e9-8140-e899" type="max"/>
       </constraints>
       <profiles>
         <profile id="2712-40ca-58c1-1536" name="Chaleco antibalas" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
@@ -514,24 +514,24 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="572b-74b1-e518-e12c" name="Bayoneta" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7e13-d8a2-7a5b-8c88" name="Bayoneta" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
           <characteristics>
-            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Puede acoplarse una bayoneta a cualquier arma con la Regla especial Arma de fuego. Esto le concederá un bonificador de +2 la Penetración cuando sea utilizada para Combatir en cuerpo a cuerpo. </characteristic>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Puede acoplarse una bayoneta a cualquier arma con la Regla especial Arma de fuego. Esto le concederá un bonificador de +2 la Penetración cuando sea utilizada para Combatir en cuerpo a cuerpo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="3.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d761-5553-4adf-c294" name="Armadura metálica" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd6-58f6-05ad-98b0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd6-58f6-05ad-98b0" type="max"/>
       </constraints>
       <profiles>
         <profile id="f47e-966a-7114-de10" name="Armadura metálica" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
@@ -541,7 +541,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="496a-3c88-4eb3-fd08" name="Escudo" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -553,12 +553,12 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19f2-5137-907f-980b" name="Protección contra la contaminación" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b398-2971-e16f-e527" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b398-2971-e16f-e527" type="max"/>
       </constraints>
       <profiles>
         <profile id="57ae-5bba-e051-7e1b" name="Protección contra la contaminación" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -568,7 +568,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

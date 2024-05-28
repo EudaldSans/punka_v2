@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2e39-db91-d813-6cef" name="Troupe" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="3a98-6dc4-91e7-cc07" name="Pachacho" publicationId="6699-072c-136a-7d30" page="97" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -29,7 +29,7 @@
       <selectionEntries>
         <selectionEntry id="8dca-dfe3-791a-1386" name="Chismeciclo" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f46-30ba-39bb-8a5d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f46-30ba-39bb-8a5d" type="max"/>
           </constraints>
           <rules>
             <rule id="57ae-2395-54a3-288e" name="Chismeciclo" hidden="false">
@@ -37,15 +37,15 @@
             </rule>
           </rules>
           <costs>
-            <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="8.0"/>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6ce1-5b1f-c282-56e0" name="Armas" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118b-c93e-a156-3426" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db58-80c3-49d6-e4d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118b-c93e-a156-3426" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db58-80c3-49d6-e4d9" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="7e96-362d-3126-fe5d" name="Pistola" hidden="false" collective="false" import="true" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
@@ -59,18 +59,18 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="6ffa-a482-0321-5bf1" name="Blindaje" hidden="false" collective="false" import="true" defaultSelectionEntryId="a16f-161b-c877-28fa">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c669-1d81-12f4-4a13" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca5-3a88-589b-e775" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c669-1d81-12f4-4a13" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca5-3a88-589b-e775" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a16f-161b-c877-28fa" name="Ropa resistente" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
+            <entryLink id="a16f-161b-c877-28fa" name="Ropas resistentes" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="e515-0c5b-47aa-1328" value="0.0"/>
+                <modifier type="set" field="e515-0c5b-47aa-1328" value="0"/>
               </modifiers>
             </entryLink>
             <entryLink id="e681-e520-a8ce-b004" name="Cuero endurecido" hidden="false" collective="false" import="true" targetId="ff92-8214-bc9a-f318" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+                <modifier type="set" field="e515-0c5b-47aa-1328" value="5"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -80,13 +80,13 @@
         <entryLink id="1478-c671-d01e-ba7d" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
         <entryLink id="d302-668b-98df-27df" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ad6-091e-34fa-453e" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ad6-091e-34fa-453e" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="4aa2-f601-1113-bca7" name="Balas" hidden="false" collective="false" import="true" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="18.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="33fc-b625-188c-08b5" name="Domador" publicationId="6699-072c-136a-7d30" page="98" hidden="false" collective="false" import="true" type="model">
@@ -110,7 +110,7 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
       <selectionEntries>
         <selectionEntry id="9d82-f0e3-fabd-899c" name="Bestia" publicationId="6699-072c-136a-7d30" page="98" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9d-022b-021a-f335" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9d-022b-021a-f335" type="max"/>
           </constraints>
           <profiles>
             <profile id="0a5c-a182-a7c5-8f96" name="Bestia" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
@@ -131,21 +131,21 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
           <entryLinks>
             <entryLink id="99d5-887b-792d-cc4f" name="Garras y dientes" hidden="false" collective="false" import="true" targetId="f83c-ca91-70cb-4742" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11d-e2f0-90ee-affe" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1b8-3f2c-568a-8a9a" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11d-e2f0-90ee-affe" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1b8-3f2c-568a-8a9a" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="12.0"/>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="246d-9640-9c7e-5978" name="Armas" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df3-e550-334e-d2d3" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b682-16d0-4df5-0f33" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df3-e550-334e-d2d3" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b682-16d0-4df5-0f33" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="405b-1509-bc6c-c718" name="Látigo" hidden="false" collective="false" import="true" targetId="1f7f-c5df-1420-185d" type="selectionEntry"/>
@@ -157,7 +157,7 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
         <entryLink id="2d07-3734-72c6-fcf2" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="22.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="22"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b99-d4be-4cdc-ddbf" name="Acróbata" hidden="false" collective="false" import="true" type="model">
@@ -190,8 +190,8 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <selectionEntryGroups>
         <selectionEntryGroup id="a1ed-e644-c823-057b" name="Armas" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="644e-32da-94c7-4e52" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36c2-c48d-78db-9a55" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="644e-32da-94c7-4e52" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36c2-c48d-78db-9a55" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="9f35-061e-9831-e0b3" name="Maza Ligera" hidden="false" collective="false" import="true" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
@@ -205,12 +205,12 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <entryLink id="f350-51c3-abab-06da" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
         <entryLink id="18bd-32e2-c2e6-bac5" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d972-aaf1-16bd-0dcb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d972-aaf1-16bd-0dcb" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d4ab-e726-8812-6dcb" name="Forzudo" publicationId="6699-072c-136a-7d30" page="100" hidden="false" collective="false" import="true" type="model">
@@ -229,7 +229,7 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       </profiles>
       <rules>
         <rule id="4a30-71c3-f067-f12a" name="Bestia parda" publicationId="6699-072c-136a-7d30" page="100" hidden="false">
-          <description> El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</description>
+          <description>El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</description>
         </rule>
         <rule id="face-3dd4-853b-72e5" name="Lucimiento" publicationId="6699-072c-136a-7d30" page="100" hidden="false">
           <description>El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</description>
@@ -242,8 +242,8 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <selectionEntryGroups>
         <selectionEntryGroup id="f240-8c64-1ccf-beac" name="Armas" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fad-fb22-06ec-0b28">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7595-9b1d-8734-88ba" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b0-0298-175e-7d56" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7595-9b1d-8734-88ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b0-0298-175e-7d56" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6fad-fb22-06ec-0b28" name="Maza" hidden="false" collective="false" import="true" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
@@ -255,18 +255,18 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <entryLinks>
         <entryLink id="62d5-83a1-c6a3-e669" name="Articulos de coña" hidden="false" collective="false" import="true" targetId="cbf9-9153-7f30-9704" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="617b-4b2e-771c-f95e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="617b-4b2e-771c-f95e" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="bbe6-2346-6634-67ca" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
         <entryLink id="5333-44cd-4c2e-0e2e" name="Ropas resistentes" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="5"/>
           </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="40.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3092-b1ed-b961-7988" name="Jefe de pista" publicationId="6699-072c-136a-7d30" page="101" hidden="false" collective="false" import="true" type="model">
@@ -301,8 +301,8 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <selectionEntryGroups>
         <selectionEntryGroup id="c08f-2b02-76fa-87e1" name="Armas" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b0-4e47-4665-cbd3" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62d-7e26-89a2-60ee" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b0-4e47-4665-cbd3" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62d-7e26-89a2-60ee" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d768-5916-31b3-6bb4" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
@@ -315,12 +315,12 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <entryLink id="047f-4a48-8468-6ea6" name="Balas" hidden="false" collective="false" import="true" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
         <entryLink id="2f16-1957-c6ca-e528" name="Ropas resistentes" hidden="false" collective="false" import="true" targetId="1a91-4787-fe3b-51fd" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="e515-0c5b-47aa-1328" value="5.0"/>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="5"/>
           </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="50.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e5b-8dda-560e-8d63" name="François el mimo" hidden="false" collective="false" import="true" type="model">
@@ -356,7 +356,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <entryLink id="c393-5bf3-c9fc-6622" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="30.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="543e-e475-5ac6-bbea" name="Madame destino" publicationId="6699-072c-136a-7d30" page="103" hidden="false" collective="false" import="true" type="model">
@@ -401,16 +401,16 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <entryLink id="8bb2-b0b7-ad53-58f0" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
         <entryLink id="2a18-3816-9bf4-175c" name="Filo Pequeño" hidden="false" collective="false" import="true" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="e515-0c5b-47aa-1328" value="0.0"/>
+            <modifier type="set" field="e515-0c5b-47aa-1328" value="0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125e-7d07-2119-bf41" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ae-14ab-685f-e705" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125e-7d07-2119-bf41" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ae-14ab-685f-e705" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="50.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -430,7 +430,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <categoryLink id="3dfb-70de-f3a2-e6c9" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
@@ -449,13 +449,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <categoryLink id="0b9a-eb9c-7ca4-74df" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d502-d06d-86ba-9035" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-a950-5880-3cac" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d502-d06d-86ba-9035" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-a950-5880-3cac" type="max"/>
       </constraints>
       <profiles>
         <profile id="55f2-b8de-e579-a075" name="Bocina" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -465,13 +465,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="6.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80d4-f0bc-e827-feba" name="Bomba fétida" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d8-e586-2c0a-62f0" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d4b-c1e6-65a7-ffe4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d8-e586-2c0a-62f0" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d4b-c1e6-65a7-ffe4" type="max"/>
       </constraints>
       <profiles>
         <profile id="fc06-5475-efc0-e0d8" name="Bomba fétida" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -481,13 +481,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a82b-b25f-ef11-1633" name="Cojín de pedos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e8-4b0f-0777-a0a5" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd70-ddf8-8669-7ce7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e8-4b0f-0777-a0a5" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd70-ddf8-8669-7ce7" type="max"/>
       </constraints>
       <profiles>
         <profile id="1c0b-feda-9e1a-1539" name="Cojín de pedos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -497,13 +497,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2bab-d8ee-71e9-fa8f" name="Flor escupe agua" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e01-a7d7-189e-1bca" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c83-fe96-c9bf-7209" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e01-a7d7-189e-1bca" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c83-fe96-c9bf-7209" type="max"/>
       </constraints>
       <profiles>
         <profile id="91dc-cd3e-b532-fd4c" name="Flor escupe agua" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -513,13 +513,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10b9-0730-a404-4d10" name="Globo que flota" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fdb-c2b0-6613-fc6a" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ad-20b4-29fe-feb3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fdb-c2b0-6613-fc6a" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ad-20b4-29fe-feb3" type="max"/>
       </constraints>
       <profiles>
         <profile id="4d5f-e130-83b0-d1c9" name="Globo que flota" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -529,13 +529,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cae-77fe-946f-ff88" name="Guante con descarga" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f4-54da-23ba-909a" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a501-1615-ece4-3c96" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f4-54da-23ba-909a" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a501-1615-ece4-3c96" type="max"/>
       </constraints>
       <profiles>
         <profile id="0e31-1eea-8ce6-c539" name="Guante con descarga" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -548,13 +548,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <categoryLink id="9dab-cf05-7a8c-cee6" name="Electrificación" hidden="false" targetId="d2e4-5cf9-58c2-565b" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c1-c597-d539-e054" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-d608-6d66-f611" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c1-c597-d539-e054" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-d608-6d66-f611" type="max"/>
       </constraints>
       <profiles>
         <profile id="e995-92fa-b9d5-a632" name="Pañuelos infinitos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -564,13 +564,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="5.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1157-b977-dba1-42f8" name="Zurullo" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ad-3c3e-5f4e-d0ec" type="max"/>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7b-5cf6-826d-1a4a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ad-3c3e-5f4e-d0ec" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7b-5cf6-826d-1a4a" type="max"/>
       </constraints>
       <profiles>
         <profile id="943d-9e09-383a-2600" name="Zurullo" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -580,7 +580,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="0.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f7f-c5df-1420-185d" name="Látigo" hidden="false" collective="false" import="true" type="upgrade">
@@ -594,7 +594,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
       </profiles>
       <costs>
-        <cost name=" Puntos" typeId="e515-0c5b-47aa-1328" value="4.0"/>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
