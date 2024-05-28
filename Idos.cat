@@ -532,5 +532,19 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f311-cd92-33b4-f7bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Incluir reglas de Ambrosia" hidden="false" id="38f9-9051-16b8-7d27">
+      <categoryLinks>
+        <categoryLink targetId="b19d-7b9-3085-7fd4" id="3d77-93a9-971c-7724" primary="false" name="Reglas de la banda"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5001-4f54-5b0a-b42b" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ambrosía" id="353a-cf75-9e64-70ec" hidden="false" type="rule" targetId="8c10-1203-2c2e-cbef"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Ambrosia" id="d538-fbd2-5071-5f18" hidden="false"/>
+  </forceEntries>
 </catalogue>

@@ -235,6 +235,7 @@
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Banda: Idos" id="af76-5143-157c-3a3f" hidden="false"/>
+    <categoryEntry name="Reglas de la banda" id="b19d-7b9-3085-7fd4" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -244,6 +245,7 @@
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
         <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4" type="category"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
