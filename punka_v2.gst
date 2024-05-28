@@ -234,6 +234,7 @@
         <infoLink name="Montada" id="459-c32b-fd24-380a" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Banda: Idos" id="af76-5143-157c-3a3f" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
