@@ -1194,6 +1194,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="1040-f4bf-3eb8-3f33" id="555b-4979-48ce-593" primary="false" name="Munición"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Munición irradiada" hidden="false" id="b4e3-934f-601-8801" publicationId="6699-072c-136a-7d30" page="74">
       <profiles>
@@ -1241,9 +1244,6 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="b51c-8a97-965e-4caf" includeChildSelections="true"/>
-          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
