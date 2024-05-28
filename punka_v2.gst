@@ -171,7 +171,7 @@
         <infoLink name="Lentorra (2)" id="2913-df9a-38eb-f87" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Incendiaria (2)" id="115-e012-3d9f-32c8" hidden="false">
+    <categoryEntry name="Incendiaria (2)" id="115-e012-3d9f-32c8" hidden="true">
       <infoLinks>
         <infoLink name="Incendiaria (2)" id="ac71-c77b-54d7-4147" hidden="false" type="rule" targetId="8837-2aa8-e20e-0ed5"/>
       </infoLinks>
@@ -206,6 +206,32 @@
     <categoryEntry name="Infiltración" id="fb9d-dbc3-6ee9-76d1" hidden="true">
       <infoLinks>
         <infoLink name="Infiltración" id="f174-c563-20ca-76e0" hidden="false" type="rule" targetId="3de3-35e0-04fc-ec2a"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Combustible - (5)" id="5369-73e0-135d-2fae" hidden="true">
+      <infoLinks>
+        <infoLink name="Combustible - (5)" id="d4b8-d597-1dcd-931f" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Combustible - (10)" id="adfd-7ae5-1bc0-8650" hidden="true">
+      <infoLinks>
+        <infoLink name="Combustible - (10)" id="9b56-9f9a-e052-1e29" hidden="false" type="rule" targetId="acbf-a551-1e92-4dba"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Incendiaria (3)" id="b037-8e50-6206-169d" hidden="true">
+      <infoLinks>
+        <infoLink name="Incendiaria (3)" id="c6da-61fb-ed5e-d7a5" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Banda: Hijos de la sangre negra" id="73ff-a5cb-afba-6105" hidden="false"/>
+    <categoryEntry name="Combustible - (2)" id="e18d-f12e-2b25-c6e7" hidden="true">
+      <infoLinks>
+        <infoLink name="Combustible - (2)" id="27c4-e0f0-6ca7-a780" hidden="false" type="rule" targetId="fecc-30e-9355-c512"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Montada" id="8d8f-3827-c013-19f" hidden="false">
+      <infoLinks>
+        <infoLink name="Montada" id="459-c32b-fd24-380a" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
@@ -1272,7 +1298,7 @@ Las bombas suelen tirarse con el brazo y se destruyen al impactar, por lo que ti
     <rule id="232d-9375-2e3c-b51c" name="¡¡¡CATAPUM!!!" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>A la hora de Disparar, un arma o munición con esta regla que saque un resultado de 9 o 10 en la tirada de Impactar sufrirá una explosión interna: el Disparo fallará automáticamente y el arma quedará inutilizada durante el resto de la partida. Si por alguna razón el Impacto fuese automático (por tener una Precisión de 10 gracias a modificadores, por ejemplo), habrá que realizar igualmente la tirada de 1d10 para ver si se aplica esta regla. Con el resto de resultados funcionará normalmente, independientemente de que consiga Impactar o no.</description>
     </rule>
-    <rule id="586b-7fa4-82ed-58d7" name="Combustible - (X)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
+    <rule id="586b-7fa4-82ed-58d7" name="Combustible - (5)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
@@ -1359,6 +1385,21 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
     <rule name="Lentorra (2)" id="83d4-6391-9ff1-8fa1" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
       <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
 En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
+    </rule>
+    <rule name="Combustible - (10)" id="acbf-a551-1e92-4dba" hidden="false">
+      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
+Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
+    </rule>
+    <rule name="Incendiaria (3)" id="1874-350f-4460-c2c8" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
+      <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
+Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
+Cualquier miniatura que durante el transcurso de una Acción
+contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
+Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
+    </rule>
+    <rule name="Combustible - (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
+      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
+Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
