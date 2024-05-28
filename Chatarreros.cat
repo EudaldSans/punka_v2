@@ -37,6 +37,9 @@
         <categoryLink targetId="501b-9657-19ab-7b5d" id="897c-862d-7b15-aac6" primary="false" name="Escasa"/>
         <categoryLink targetId="801d-3953-5099-5510" id="3772-bb42-f087-c62" primary="false" name="Lentorra (2)"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa8-c54b-befa-22b6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bombas de humo" hidden="false" id="f855-3153-f205-53df" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -90,6 +93,9 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e67-607c-b01-c1d1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzaarpones" hidden="false" id="8faa-1a92-57f3-a4fe" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -113,6 +119,9 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b68-ec67-200c-aeb5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bombas incendiarias" hidden="false" id="62d3-9592-5791-75e8" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -134,7 +143,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Bomba incendiarias" hidden="false" id="6b0c-4cde-e677-12ce" type="selectionEntry" targetId="b44d-5cc7-268f-1612"/>
+        <entryLink import="true" name="Bomba incendiaria" hidden="false" id="6b0c-4cde-e677-12ce" type="selectionEntry" targetId="b44d-5cc7-268f-1612"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trabuco" hidden="false" id="a5f0-d0ff-ae29-49bc" publicationId="6699-072c-136a-7d30" page="45">
@@ -157,6 +166,9 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2295-5719-182a-5b9c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vaporeta" hidden="false" id="a94f-6fec-c421-f6c9" publicationId="6699-072c-136a-7d30" page="45">
       <costs>
@@ -171,6 +183,10 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <infoLinks>
         <infoLink name="Vaporeta" id="9c57-c9c3-fde1-7691" hidden="false" type="infoGroup" targetId="6e43-5974-f2cd-456e"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43dc-126d-59e5-431a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6418-a4cd-e9f1-8941" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Traje voltaico" hidden="false" id="b6b6-9ea3-ad4d-9730" publicationId="6699-072c-136a-7d30" page="45">
       <profiles>
@@ -197,6 +213,9 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e3-cedf-6515-a290" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chasqueador y traje voltaico" hidden="false" id="d1ed-258e-366-d63b">
       <entryLinks>

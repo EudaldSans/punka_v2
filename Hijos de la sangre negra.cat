@@ -26,6 +26,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="319e-c15c-590a-5fbc" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cócteles Molotov" hidden="false" id="bd62-7744-2142-5e84" publicationId="6699-072c-136a-7d30" page="54">
       <entryLinks>
@@ -88,6 +91,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3983-cc54-82d-c86e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -243,6 +249,13 @@
           </categoryLinks>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="7b04-a96-8b58-2d58">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b0d-557f-2e75-7296" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Quemado" hidden="false" id="1f6f-29f8-539d-d9c3">
       <costs>
@@ -623,6 +636,24 @@
         <categoryLink targetId="6659-5ef7-facd-fab1" id="bdd3-e90a-3308-43a6" primary="false" name="Mercenarios y personalidades de la banda"/>
         <categoryLink targetId="d1a7-5f24-003f-6400" id="2dff-c169-b87a-2407" primary="true" name="Personalidades de la banda"/>
       </categoryLinks>
+      <rules>
+        <rule name="Por el Sumo Guardián" id="ae5e-6680-67e2-8d53" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
+          <description>Los Quemados son aún más fanáticos en su defensa de Cunnilingus. Podrán usar su regla ¡Por la Sangre Negra! con Cunnilingus estando hasta 10 cm de él, en lugar de los 5 cm habituales.</description>
+        </rule>
+        <rule name="Sumo Guardián de la Llama" id="ac38-ff31-111a-9d2c" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
+          <description>Cunnilingus actúa como un Guardián de la Llama, por lo que podrá usar la Regla especial Mirada llameante sobre sus hombres. Además, su presencia es tan imponente, que las miniaturas no tendrán que estar en su Línea de visión, y se beneficiarán de la regla hasta que Cunnilingus sea Abatido. Por otra parte, puesto que sólo puede haber un Guardián de la Llama en la banda, si incluyes a Cunnilingus no podrás incluir a otro.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="5d86-5721-981c-f7a0">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a2d7-ff55-be87-8d82" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d86-5721-981c-f7a0" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

@@ -323,7 +323,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="5fbd-e187-3a22-54c2" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5fbd-e187-3a22-54c2" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="2e5b-8dda-560e-8d63" name="François el mimo" hidden="false" collective="false" import="true" type="model">
@@ -367,13 +367,13 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <profiles>
         <profile id="2bb1-f54e-059a-6ae5" name="Madame destino" hidden="false" typeId="65f8-965a-8432-c96b" typeName="Miniatura">
           <characteristics>
-            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6"/>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8"/>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8"/>
-            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d"/>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589"/>
-            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c"/>
-            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f"/>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -487,6 +487,9 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <infoLinks>
         <infoLink name="Lentorra (1)" id="8876-c25a-44f0-2315" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b231-e56d-773a-a3ed" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -507,6 +510,9 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4500-82eb-ab8b-fc0d" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -652,6 +658,9 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb91-fc72-835b-4dce" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
