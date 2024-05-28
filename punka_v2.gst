@@ -17,6 +17,7 @@
         <characteristicType id="2d74-3b7d-9026-8589" name="Fuerza"/>
         <characteristicType id="4d6d-8434-a7e9-b05c" name="Dureza"/>
         <characteristicType id="fd4f-5253-7b3f-737f" name="Técnica"/>
+        <characteristicType id="5bd3-a6df-6f70-6df7" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="6023-c682-4678-9510" name="Arma a distancia">
@@ -24,7 +25,7 @@
         <characteristicType id="8a4a-b45a-10a3-0c7a" name="Fuerza"/>
         <characteristicType id="5980-44ca-27d3-5a03" name="Penetración"/>
         <characteristicType id="9f41-1f3c-dd68-ea0d" name="Distancia"/>
-        <characteristicType id="2ecc-3ee3-2a21-1e6" name="Reglas"/>
+        <characteristicType id="2ecc-3ee3-2a21-1e6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo">
@@ -32,7 +33,7 @@
         <characteristicType id="7192-0144-704a-b3e6" name="Combate"/>
         <characteristicType id="fa8e-4d55-0d97-e892" name="Fuerza"/>
         <characteristicType id="2c81-28ec-adf8-2c60" name="Penetración"/>
-        <characteristicType id="c498-c631-f4c5-160a" name="Reglas"/>
+        <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="8d36-94cc-6c74-8857" name="Habilidad"/>
@@ -67,17 +68,11 @@
       <constraints>
         <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c597-8eff-461a-ac94" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="d790-84b8-cfb1-b9d7" name="Escasa" hidden="false" targetId="cc87-2fc3-e766-7629" type="rule"/>
-      </infoLinks>
     </categoryEntry>
     <categoryEntry id="e24d-662f-94ca-ccbe" name="A dos manos" hidden="true">
       <constraints>
         <constraint field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7031-f8e4-1b9f-1bbb" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="5fde-e1f8-d6fa-9eb6" name="A dos manos" hidden="false" targetId="3cc2-57bc-f5a7-acbb" type="rule"/>
-      </infoLinks>
     </categoryEntry>
     <categoryEntry id="c14e-1660-fbd2-5927" name="Armatoste" publicationId="6699-072c-136a-7d30" page="30" hidden="true">
       <constraints>
@@ -87,153 +82,16 @@
         <infoLink id="61b8-e009-6f7c-09e1" name="Armatoste" hidden="false" targetId="e424-ab96-2797-07e5" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="51e9-6840-7830-c2ba" name="Postas" hidden="true">
-      <infoLinks>
-        <infoLink id="87ea-cdc1-e6b8-9b71" name="Postas" hidden="false" targetId="f977-1a8f-2209-a20e" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="3b9e-677b-f025-e73c" name="Bomba" hidden="true">
-      <infoLinks>
-        <infoLink id="feff-8b4e-5113-af10" name="Tiro parabólico" hidden="false" targetId="734f-df5a-7f49-3a9f" type="rule"/>
-        <infoLink id="3558-60e8-2427-5b3f" name="Usar y tirar" hidden="false" targetId="9931-0e0e-fa4f-17d8" type="rule"/>
-        <infoLink id="072d-37d1-12fd-0b7c" name="Bomba" hidden="false" targetId="d4d7-8245-ed66-4269" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="d4c9-5168-4884-56ad" name="Arma de fuego" hidden="true">
-      <infoLinks>
-        <infoLink id="173c-20ab-24f1-8ce3" name="Arma de fuego" hidden="false" targetId="967b-e5a1-f60c-8b02" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="d8db-3ff3-4fb4-d828" name="Dificil de usar" hidden="true">
-      <infoLinks>
-        <infoLink id="221b-1d51-f760-3509" name="Difícil de usar" hidden="false" targetId="ed27-30aa-1dca-2614" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="10e2-873b-46fd-b19a" name="Automático" hidden="true">
-      <infoLinks>
-        <infoLink id="dc35-fed4-c5c0-6aac" name="Automático" hidden="false" targetId="5e01-e63a-dcb6-e890" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="d2e4-5cf9-58c2-565b" name="Electrificación" hidden="true">
-      <infoLinks>
-        <infoLink id="47a0-6f58-c3ba-5dd0" name="Electrificación" hidden="false" targetId="6240-90ca-56c3-21e2" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="5078-3252-77fa-daa5" name="Bestia" hidden="true">
-      <infoLinks>
-        <infoLink id="bf77-5105-d940-c4f1" name="Bestia" hidden="false" targetId="e9cf-fed3-0a23-ac43" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="711d-4b08-5e28-64ec" name="Escurridizo" hidden="false">
-      <infoLinks>
-        <infoLink id="73fc-7df6-4e59-2de6" name="Escurridizo" hidden="false" targetId="59a0-f60d-aa37-f759" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="74c1-62fa-d920-7331" name="Todoterreno" hidden="false">
-      <infoLinks>
-        <infoLink id="dc51-94e3-3545-2d0a" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="62c5-8d0d-3637-d0c2" name="Raudo" hidden="true">
-      <infoLinks>
-        <infoLink id="5700-e257-70e8-1175" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
     <categoryEntry name="Equipo de la banda" id="4af8-4d51-42ab-8460" hidden="false"/>
     <categoryEntry name="Mercenarios y personalidades de la banda" id="6659-5ef7-facd-fab1" hidden="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Mónguer" id="4abc-6abf-1f79-21a1" hidden="true">
-      <infoLinks>
-        <infoLink name="Mónguer" id="dc97-885c-bbca-71a8" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
-      </infoLinks>
-    </categoryEntry>
     <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="false"/>
-    <categoryEntry name="Lentorra (1)" id="9cc3-e56a-ca24-3543" hidden="true">
-      <infoLinks>
-        <infoLink name="Lentorra (1)" id="371e-6260-fabe-b3a" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Retraso (3)" id="5d79-1a4e-5d4-60e7" hidden="true">
-      <infoLinks>
-        <infoLink name="Retraso (3)" id="8696-b0ed-d91-3ca5" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Retraso (2)" id="149c-4fbb-4c1b-abe1" hidden="true">
-      <infoLinks>
-        <infoLink name="Retraso (2)" id="be23-bf00-6417-6a03" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Lentorra (2)" id="801d-3953-5099-5510" hidden="true">
-      <infoLinks>
-        <infoLink name="Lentorra (2)" id="2913-df9a-38eb-f87" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Incendiaria (2)" id="115-e012-3d9f-32c8" hidden="true">
-      <infoLinks>
-        <infoLink name="Incendiaria (2)" id="ac71-c77b-54d7-4147" hidden="false" type="rule" targetId="8837-2aa8-e20e-0ed5"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="¡¡¡CATAPUM!!!" id="dfe1-2d4c-57ce-2fd3" hidden="false">
-      <infoLinks>
-        <infoLink name="¡¡¡CATAPUM!!!" id="deac-dc72-6e97-d9cc" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Plantilla" id="cdcc-e0e5-4a0e-f174" hidden="false">
-      <infoLinks>
-        <infoLink name="Plantilla" id="c498-7645-48f0-7622" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Mamotreto" id="5097-728d-527e-143e" hidden="false">
-      <infoLinks>
-        <infoLink name="Mamotreto" id="b2cc-dcb5-fc60-50ab" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Ignífugo" id="ee1a-1896-583c-4b02" hidden="false">
-      <infoLinks>
-        <infoLink name="Ignífugo" id="bc88-ae26-79a-5cfe" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
-      </infoLinks>
-    </categoryEntry>
     <categoryEntry name="Banda: Chatarreros" id="476f-664f-cf39-efa5" hidden="false"/>
     <categoryEntry name="Banda: V Reich" id="da8-49dd-4793-c495" hidden="false"/>
-    <categoryEntry name="Camuflaje" id="e286-5398-341a-df82" hidden="true">
-      <infoLinks>
-        <infoLink name="Camuflaje" id="e752-d5f0-6a66-3bde" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Infiltración" id="fb9d-dbc3-6ee9-76d1" hidden="true">
-      <infoLinks>
-        <infoLink name="Infiltración" id="f174-c563-20ca-76e0" hidden="false" type="rule" targetId="3de3-35e0-04fc-ec2a"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Combustible - (5)" id="5369-73e0-135d-2fae" hidden="true">
-      <infoLinks>
-        <infoLink name="Combustible - (5)" id="d4b8-d597-1dcd-931f" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Combustible - (10)" id="adfd-7ae5-1bc0-8650" hidden="true">
-      <infoLinks>
-        <infoLink name="Combustible - (10)" id="9b56-9f9a-e052-1e29" hidden="false" type="rule" targetId="acbf-a551-1e92-4dba"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Incendiaria (3)" id="b037-8e50-6206-169d" hidden="true">
-      <infoLinks>
-        <infoLink name="Incendiaria (3)" id="c6da-61fb-ed5e-d7a5" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
-      </infoLinks>
-    </categoryEntry>
     <categoryEntry name="Banda: Hijos de la sangre negra" id="73ff-a5cb-afba-6105" hidden="false"/>
-    <categoryEntry name="Combustible - (2)" id="e18d-f12e-2b25-c6e7" hidden="true">
-      <infoLinks>
-        <infoLink name="Combustible - (2)" id="27c4-e0f0-6ca7-a780" hidden="false" type="rule" targetId="fecc-30e-9355-c512"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Montada" id="8d8f-3827-c013-19f" hidden="false">
-      <infoLinks>
-        <infoLink name="Montada" id="459-c32b-fd24-380a" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
-      </infoLinks>
-    </categoryEntry>
     <categoryEntry name="Banda: Idos" id="af76-5143-157c-3a3f" hidden="false"/>
     <categoryEntry name="Reglas de la banda" id="b19d-7b9-3085-7fd4" hidden="false"/>
     <categoryEntry name="Banda: Irradiados" id="71ce-1b00-66d0-dfd9" hidden="false"/>
@@ -299,9 +157,6 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <modifier type="set" value="Capa de ratas" field="name"/>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
-          <categoryLinks>
-            <categoryLink targetId="4abc-6abf-1f79-21a1" id="33bb-acbc-694f-5188" primary="false" name="Mónguer"/>
-          </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c889-a75d-5f3e-8115" includeChildSelections="false"/>
           </constraints>
@@ -321,6 +176,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Mónguer" id="425b-4128-b8b5-ae78" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Imperatrix Rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
       <entryLinks>
@@ -370,7 +228,6 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="e48c-7109-5774-1617" primary="true" name="Mercenarios"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="663c-e542-16bb-1d62" primary="false" name="Mercenarios y personalidades de la banda"/>
-        <categoryLink targetId="149c-4fbb-4c1b-abe1" id="31a4-6151-c88f-b442" primary="false" name="Retraso (2)"/>
       </categoryLinks>
       <rules>
         <rule name="Me quedo con tu cara" id="b702-a3d2-e892-434a" hidden="false" publicationId="6699-072c-136a-7d30" page="117">
@@ -383,6 +240,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Retraso (2)" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mongodrilo Dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
       <costs>
@@ -650,7 +510,6 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="85c1-af91-5b8b-10" primary="true" name="Mercenarios"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="d70c-ff3d-dafb-aa5d" primary="false" name="Mercenarios y personalidades de la banda"/>
-        <categoryLink targetId="149c-4fbb-4c1b-abe1" id="af2f-b733-5574-321d" primary="false" name="Retraso (2)"/>
       </categoryLinks>
       <profiles>
         <profile name="Lizzy Deville" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="20fc-bd9-3be6-ae6c">
@@ -670,6 +529,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
           <description>Lizzy tiene un pico de oro que la ayuda a salir de las situaciones más inverosímiles. Lizzy podrá Separarse del Combate automáticamente como si tuviera la Regla especial Escurridizo, pero no podrá emplear esta jugada con la misma miniatura enemiga más de una vez en la misma partida.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Retraso (2)" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ochodedos" hidden="false" id="64fb-6fb0-75ea-c8b8" publicationId="6699-072c-136a-7d30" page="122">
       <costs>
@@ -716,7 +578,6 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="28c5-5e8d-4e69-3569" primary="true" name="Mercenarios"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="d242-fe35-cd3-f261" primary="false" name="Mercenarios y personalidades de la banda"/>
-        <categoryLink targetId="5d79-1a4e-5d4-60e7" id="82d5-d4b0-c39d-f7c9" primary="false" name="Retraso (3)"/>
       </categoryLinks>
       <profiles>
         <profile name="Irina" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="f5a7-3f08-5f70-4383">
@@ -769,6 +630,9 @@ Halálkarma le confiere a Irina las Reglas especiales Montada, Raudo y Todoterre
 Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus enemigos, aunque llevar a Irina y un montón de trastos encima hace que le resulte bastante agotador. En lugar de Combatir con Irina, puedes decidir que lo haga Halálkarma usando estas estadísticas: Combate 7, Fuerza 8 y Penetración 5. Sin embargo, deberá descansar para volver a atacar, lo que a efectos prácticos es como si tuviera la Regla especial Lentorra (2).</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Retraso (3)" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -779,13 +643,12 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="73e4-7c4f-a1cc-944e" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-        <categoryLink id="a00f-d743-3463-7d32" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
@@ -793,6 +656,10 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cd-b6c1-602c-8008" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Escasa" id="14db-bae9-db58-223c" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Arma de fuego" id="1a0-8c5-5b30-86d3" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -813,15 +680,13 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7/6/5</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, a dos manos, escasa, postas</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, a dos manos, escasa, postas</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="98ed-cb21-851f-8e2a" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink id="daec-eb43-4fb8-8938" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink id="a6d7-b6ca-efb9-203a" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
-        <categoryLink id="5a1e-8928-84fd-f9c7" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
@@ -829,6 +694,10 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa85-4298-c5c8-a69f" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Arma de fuego" id="c4a-6777-e22f-ceda" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+        <infoLink name="Postas" id="7c4c-c3c2-ae22-5481" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="80e1-add6-3e45-0b6a" name="Desarmado" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -837,7 +706,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -860,7 +729,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -872,15 +741,22 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </constraints>
     </selectionEntry>
     <selectionEntry id="ba9b-1c69-5fbe-8bc2" name="Maza Ligera" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8f26-7d48-8d7b-1fe9" name="Maza Ligera" hidden="false" targetId="a2dc-97f0-a0fa-9e8c" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-a28b-5464-caf1" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Maza Ligera" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="8a2b-644f-f363-8c13" publicationId="6699-072c-136a-7d30" page="132">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -889,7 +765,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -907,7 +783,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -925,7 +801,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">A dos manos</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -946,7 +822,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+4</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos, armatoste</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">A dos manos, armatoste</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -968,7 +844,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+3</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -986,7 +862,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">F del lanzador / F del lanzador - 1 / F del lanzador - 2</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">2/1/0</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1004,13 +880,12 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">4</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Lentorra</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Lentorra</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="f864-9ce6-7302-573a" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink targetId="9cc3-e56a-ca24-3543" id="98ca-d2-d09f-478a" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -1029,13 +904,12 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">30/60/90 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, escasa</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="aba5-f0ba-d4b1-6a1b" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink id="c6ee-b6cf-4854-1070" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
         <categoryLink id="8013-edb1-c48f-16f8" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
@@ -1044,6 +918,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c664-9230-6987-e38c" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Arma de fuego" id="b47a-92e4-f094-2e77" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1052,13 +929,12 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cmc</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Difñícil de usar</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Difñícil de usar</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8ff4-6aeb-2170-e54b" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink id="1301-64f3-b970-4a65" name="Dificil de usar" hidden="false" targetId="d8db-3ff3-4fb4-d828" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
@@ -1066,6 +942,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-aa9c-51ab-c737" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Difícil de usar" id="4e4c-deee-b504-a8ee" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1074,15 +953,13 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">30/60/90 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, automática, escasa</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, automática, escasa</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="b111-77cf-fbc4-cd84" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="ad88-efd4-b69d-3a04" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-        <categoryLink id="2814-927b-8ceb-8f18" name="Arma de fuego" hidden="false" targetId="d4c9-5168-4884-56ad" primary="false"/>
-        <categoryLink id="34bf-11bf-7eae-588b" name="Automático" hidden="false" targetId="10e2-873b-46fd-b19a" primary="false"/>
         <categoryLink id="6561-a101-84b6-6062" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
       </categoryLinks>
       <costs>
@@ -1091,6 +968,10 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f5-f3d6-702b-64ca" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Arma de fuego" id="aa6-3fbb-baaa-26a3" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+        <infoLink name="Automático" id="2899-c504-17cd-3849" hidden="false" type="rule" targetId="5e01-e63a-dcb6-e890"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropas resistentes" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1291,9 +1172,6 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="dfe1-2d4c-57ce-2fd3" id="6d5c-b390-776d-5f65" primary="false" name="¡¡¡CATAPUM!!!"/>
-      </categoryLinks>
       <profiles>
         <profile name="Bala apañada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="9d0b-c2cb-1ca3-7dc8">
           <characteristics>
@@ -1301,6 +1179,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="¡¡¡CATAPUM!!!" id="9c86-9a10-341-eead" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Munición contaminada" hidden="false" id="5344-f1f1-232b-6a3e" publicationId="6699-072c-136a-7d30" page="74">
       <costs>
@@ -1510,21 +1391,4 @@ Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abat
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
   </sharedRules>
-  <sharedProfiles>
-    <profile id="2067-39d5-d837-94c3" name="Arma improvisada" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-      <characteristics>
-        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
-        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
-        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="a2dc-97f0-a0fa-9e8c" name="Maza Ligera" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-      <characteristics>
-        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
-        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+0</characteristic>
-        <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
 </gameSystem>

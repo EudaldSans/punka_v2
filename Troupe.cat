@@ -125,9 +125,6 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="7981-8cc5-103b-d19e" name="Bestia" hidden="false" targetId="5078-3252-77fa-daa5" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="99d5-887b-792d-cc4f" name="Garras y dientes" hidden="false" collective="false" import="true" targetId="f83c-ca91-70cb-4742" type="selectionEntry">
               <constraints>
@@ -139,6 +136,9 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
           <costs>
             <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Bestia" id="13d7-36d1-8731-ec27" hidden="false" type="rule" targetId="e9cf-fed3-0a23-ac43"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -183,9 +183,6 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <categoryLinks>
         <categoryLink id="06f9-cf95-d1b1-d3a7" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink id="45c3-ab26-84eb-6720" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="true"/>
-        <categoryLink id="bfd3-a353-349a-b47c" name="Raudo" hidden="false" targetId="62c5-8d0d-3637-d0c2" primary="false"/>
-        <categoryLink id="3fdb-108d-3d61-421f" name="Escurridizo" hidden="false" targetId="711d-4b08-5e28-64ec" primary="false"/>
-        <categoryLink id="fb1f-0905-8afc-4e1d" name="Todoterreno" hidden="false" targetId="74c1-62fa-d920-7331" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a1ed-e644-c823-057b" name="Armas" hidden="false" collective="false" import="true">
@@ -212,6 +209,11 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Raudo" id="d367-f51f-53d6-663d" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Escurridizo" id="c167-4d7-bbc2-26f6" hidden="false" type="rule" targetId="59a0-f60d-aa37-f759"/>
+        <infoLink name="Todoterreno" id="1b9d-272b-170a-1cd0" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="d4ab-e726-8812-6dcb" name="Forzudo" publicationId="6699-072c-136a-7d30" page="100" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -400,7 +402,6 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <categoryLink id="d06f-fa90-dbe7-b858" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink id="3efd-ef0d-a88f-5818" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="true"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="f846-f496-57fe-d738" primary="false" name="Mercenarios y personalidades de la banda"/>
-        <categoryLink targetId="5d79-1a4e-5d4-60e7" id="a0ea-a8cb-ae27-fd82" primary="false" name="Retraso (3)"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8bb2-b0b7-ad53-58f0" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
@@ -417,6 +418,9 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Retraso (3)" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Coche de pachachos" hidden="false" id="9e0d-5257-f4c4-6acb" publicationId="6699-072c-136a-7d30" page="104">
       <categoryLinks>
@@ -479,13 +483,12 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       </profiles>
       <categoryLinks>
         <categoryLink id="3ce7-b4df-b02b-1395" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-        <categoryLink targetId="9cc3-e56a-ca24-3543" id="2f17-53c8-3cd8-a7cf" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
       <infoLinks>
-        <infoLink name="Lentorra (1)" id="8876-c25a-44f0-2315" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra (1)" id="fb5b-d50d-dda2-aeb4" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b231-e56d-773a-a3ed" includeChildSelections="false"/>
@@ -504,8 +507,6 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       </profiles>
       <categoryLinks>
         <categoryLink id="2292-699f-2018-cc73" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-        <categoryLink id="0b9a-eb9c-7ca4-74df" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
-        <categoryLink targetId="9cc3-e56a-ca24-3543" id="13a4-f3be-37a-9433" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
@@ -513,6 +514,10 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4500-82eb-ab8b-fc0d" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Lentorra (1)" id="8ce0-7876-636f-2bd0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Postas" id="f7e0-6a90-dc29-99fe" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -606,12 +611,12 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="9dab-cf05-7a8c-cee6" name="Electrificación" hidden="false" targetId="d2e4-5cf9-58c2-565b" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Electrificación" id="3eef-5529-74c8-d7a0" hidden="false" type="rule" targetId="6240-90ca-56c3-21e2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>

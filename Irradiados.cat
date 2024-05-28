@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="17f7-92d1-9c1b-40e8" name="Irradiados" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Contaminante" id="e7ff-583d-8b15-8027" hidden="false" publicationId="6699-072c-136a-7d30" page="66">
+      <description>Toda miniatura Abatida por un arma con esta regla se considerará una fuente de Radiación para las reglas de Radiación.</description>
+    </rule>
+    <rule name="Contenedor radiactivo" id="77bd-cff6-3501-a2db" hidden="false" publicationId="6699-072c-136a-7d30" page="66">
+      <description>La mayoría de los Irradiados tienen en sus cuerpos una cantidad de radiación que mataría a la mayor parte de las criaturas. Aunque durante cortos periodos de tiempo el contacto con ellos puede ser inocuo, cuando un Irradiado con esta regla es Abatido esa radiación deja de estar contenida. Todo Irradiado con esta regla que resulte Abatido contará como una fuente de Radiación. Además, cualquier miniatura que interaccione de alguna forma con los Irradiados Abatidos (devorando, cosechando, rapiñando, etc.) deberá hacer en ese momento una tirada de Radiación.</description>
+    </rule>
+    <rule name="Radiación" id="c49-f99d-87a8-bdbf" hidden="false" publicationId="6699-072c-136a-7d30" page="66">
+      <description>Toda miniatura que se encuentre a 20 cm o menos de una o más fuentes de Radiación, medido desde el centro de estas, al finalizar su Fase de activación, o en ocasiones indicadas en las reglas, deberá realizar una tirada de 1d10 aplicando los modificadores que se muestran bajo la tabla para ver si ve afectada por la Radiación.
+
+• 1 o menos  - La miniatura resultará inmediatamente Abatida.
+• 2-3              - La miniatura perderá 1 punto de Dureza permanentemente.
+• 4-6              - La miniatura perderá 1 punto de Dureza hasta la finalización de su siguiente Fase de activación.
+• 7 o más      - La miniatura no sufrirá ningún efecto.
+
+
+Modificadores
++ 2 si la miniatura es un Mutardo o lleva protección contra la contaminación.
++ valor de Dureza de la miniatura.
+- 1 por cada fuente de Radiación a 20 cm o menos por encima de la primera.</description>
+    </rule>
+    <rule name="Radioinmune" id="fcaf-7b15-a1ed-a03c" hidden="false" publicationId="6699-072c-136a-7d30" page="66">
+      <description>Debido a su tolerancia natural a la radiación, una miniatura con esta regla es inmune a los efectos del Terreno contaminado y la Radiación.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Botafumeiro tóxico" hidden="false" id="8bd4-de56-c4d5-a349" publicationId="6699-072c-136a-7d30" page="74">
+      <profiles>
+        <profile name="Botafumeiro tóxico" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="a41f-9351-7e6f-a8a1">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-1</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos, armatoste, contaminante, escasa</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="b77b-ac4c-b8a4-c38a" primary="false" name="A dos manos"/>
+        <categoryLink targetId="c14e-1660-fbd2-5927" id="2ae2-7fc6-5473-2716" primary="false" name="Armatoste"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="6338-2e33-4a6b-db97" primary="false" name="Escasa"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c6-a319-1cc3-5c4f" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Contaminante" id="dc2e-4efc-8b45-d0f3" hidden="false" type="rule" targetId="e7ff-583d-8b15-8027"/>
+        <infoLink name="Escasa" id="b0c0-1794-3d-8f3" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="A dos manos" id="3137-78d0-f7a-17c" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
+        <infoLink name="Armatoste" id="9f14-db4f-65f5-b42e" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanzaresiduos" hidden="false" id="b028-9962-4f41-ea7f" publicationId="6699-072c-136a-7d30" page="74">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="b4ff-8e22-7e4e-5802" primary="false" name="A dos manos"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="d386-f353-88b5-5e60" primary="false" name="Escasa"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lanzaresiduos" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="2cf3-70e4-6615-c00f">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">7</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">Plantilla lágrima</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Contaminante, Escasa, Lentorra (2), Mamotreto, Plantilla</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lentorra (2)" id="33ba-58f3-959d-503c" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+        <infoLink name="Mamotreto" id="5742-b90b-78b3-faef" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
+        <infoLink name="Plantilla" id="e56d-f905-cabd-93c1" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
+        <infoLink name="Escasa" id="e985-e8c8-5a42-58dd" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="A dos manos" id="3ff9-e180-aa0-d5d" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
+        <infoLink name="Contaminante" id="c5eb-beaa-7393-5602" hidden="false" type="rule" targetId="e7ff-583d-8b15-8027"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Granada santa" hidden="false" id="e04a-d803-de33-f967" publicationId="6699-072c-136a-7d30" page="74">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Granada santa" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9c22-c8ad-5180-a513">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">F del lanzador x 5 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Bomba, escasa</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Granada santa" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="390f-96a3-128b-effe">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Las granadas santas cubren de elementos radiactivos la zona allí donde impactan. Las granadas santas explotan al impactar, dejando un marcador permanente de Radiación. Toda miniatura impactada por una granada santa deberá realizar inmediatamente una tirada de Radiación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="6c69-de49-7e05-4369" primary="false" name="Escasa"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Bomba" id="19c9-790c-89af-3ea1" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Granadas santas" hidden="false" id="3e58-a78a-6e92-c6a3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c429-bfa5-f6aa-5262" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Granada santa" hidden="false" id="4be9-3a54-f93a-8af7" type="selectionEntry" targetId="e04a-d803-de33-f967">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50fb-e602-70f5-7d0" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5783-f9dd-9632-6631" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Mártir" hidden="false" id="7e56-ffc7-ba4e-67b1" publicationId="6699-072c-136a-7d30" page="67">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="294e-d692-7a2d-fb24" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="71ce-1b00-66d0-dfd9" id="7963-cd77-3de1-c1ee" primary="false" name="Banda: Irradiados"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="f6ce-778c-8c8c-179c" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ece-6a7c-6e38-473c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6995-287c-94ba-1837" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="2f89-5431-13c9-5e3b" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="eeb-a2e4-c707-138" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Mártir" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="7d1f-8565-22f5-4172">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">1</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">1</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Radiado" id="6d23-e321-76be-ec3" hidden="false">
+          <description>Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Discípulo" hidden="false" id="5e69-fdda-8b7a-a952" publicationId="6699-072c-136a-7d30" page="68">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="3805-ad5b-283a-1443" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="71ce-1b00-66d0-dfd9" id="4a-87c5-6acc-e897" primary="false" name="Banda: Irradiados"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Radioinmune" id="6ad6-8bc8-3e1-6e3c" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
+        <infoLink name="Contenedor radiactivo" id="594b-bbe7-5d92-848c" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

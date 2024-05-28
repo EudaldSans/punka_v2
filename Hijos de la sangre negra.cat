@@ -9,7 +9,6 @@
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="543-cca5-79bc-2f67" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="6c02-b6f3-ba0-e0e4" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="9550-fcba-87ed-41c0" primary="false" name="Escasa"/>
-        <categoryLink targetId="5369-73e0-135d-2fae" id="cb64-c04f-bd0d-d06d" primary="false" name="Combustible - (5)"/>
       </categoryLinks>
       <profiles>
         <profile name="Motosierra" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5adb-3465-26ff-dbcc">
@@ -29,6 +28,12 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="319e-c15c-590a-5fbc" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="A dos manos" id="cf28-bd71-482-965f" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
+        <infoLink name="Escasa" id="6671-c1d-435-354d" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Armatoste" id="886e-8c0f-b7a0-42ae" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+        <infoLink name="Combustible - (5)" id="ceac-ea7c-4a93-3047" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cócteles Molotov" hidden="false" id="bd62-7744-2142-5e84" publicationId="6699-072c-136a-7d30" page="54">
       <entryLinks>
@@ -45,12 +50,11 @@
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="6c28-a46-dd7f-a657" primary="false" name="Escasa"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Escasa" id="c9ad-8e15-b6f4-2b07" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cóctel Molotov" hidden="false" id="de0e-8100-1f61-f8ee">
-      <categoryLinks>
-        <categoryLink targetId="3b9e-677b-f025-e73c" id="5af0-6566-5b5d-1ddc" primary="false" name="Bomba"/>
-        <categoryLink targetId="b037-8e50-6206-169d" id="c211-d023-cb2c-67bf" primary="false" name="Incendiaria (3)"/>
-      </categoryLinks>
       <profiles>
         <profile name="Cóctel Molotov" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="94dd-958c-759a-afcc">
           <characteristics>
@@ -64,6 +68,10 @@
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Bomba" id="898e-5369-622b-a6cd" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
+        <infoLink name="Incendiaria (3)" id="b344-3672-9cb3-940f" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzallamas" hidden="false" id="1859-e45e-f44f-1868" publicationId="6699-072c-136a-7d30" page="54">
       <costs>
@@ -72,9 +80,7 @@
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="fc3-d993-92a0-c21c" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="a5e5-5d93-7c0-8f2" primary="false" name="Armatoste"/>
-        <categoryLink targetId="adfd-7ae5-1bc0-8650" id="8123-1141-bf9-4d5" primary="false" name="Combustible - (10)"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="9b07-c6c-2c96-49da" primary="false" name="Escasa"/>
-        <categoryLink targetId="cdcc-e0e5-4a0e-f174" id="3cbf-6d02-b9c5-9911" primary="false" name="Plantilla"/>
       </categoryLinks>
       <profiles>
         <profile name="Lanzallamas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="3b57-68f6-f81-ed35">
@@ -94,6 +100,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3983-cc54-82d-c86e" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Escasa" id="7f55-10e1-bbd8-6cd8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="A dos manos" id="6110-cf04-b108-56ac" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
+        <infoLink name="Armatoste" id="82a9-22c8-8936-a877" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+        <infoLink name="Combustible - (10)" id="5039-fff4-22a1-c527" hidden="false" type="rule" targetId="acbf-a551-1e92-4dba"/>
+        <infoLink name="Plantilla" id="aae3-1a64-fc2d-66c2" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -287,7 +300,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="4abc-6abf-1f79-21a1" id="9bab-71e8-3a5f-16fb" primary="false" name="Mónguer"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="f103-89b6-2063-e10b" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="73ff-a5cb-afba-6105" id="7636-7e31-596a-1834" primary="false" name="Banda: Hijos de la sangre negra"/>
       </categoryLinks>
@@ -320,6 +332,9 @@
           </categoryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Mónguer" id="3ff7-5689-3757-1e37" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ascua" hidden="false" id="861f-1eab-c0bc-237e" publicationId="6699-072c-136a-7d30" page="50">
       <costs>
@@ -415,7 +430,6 @@
       <categoryLinks>
         <categoryLink targetId="84b7-6828-dd10-0280" id="ca58-e4e8-8356-cbea" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="73ff-a5cb-afba-6105" id="dacb-8f75-acc3-eb20" primary="false" name="Banda: Hijos de la sangre negra"/>
-        <categoryLink targetId="62c5-8d0d-3637-d0c2" id="28a-c5d1-8b06-4237" primary="false" name="Raudo"/>
       </categoryLinks>
       <profiles>
         <profile name="Chispa" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="cfb5-144f-f87d-4f11" publicationId="6699-072c-136a-7d30" page="51">
@@ -494,6 +508,9 @@
 • Cagando leches: si el Chispa está trabado</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Raudo" id="4ffd-89d0-62-c0ad" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Momma Nutritora" hidden="false" id="7ccc-552e-30c5-54db" publicationId="6699-072c-136a-7d30" page="52">
       <profiles>
@@ -596,14 +613,17 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="b037-8e50-6206-169d" id="dc51-19e5-294e-b9c1" primary="false" name="Incendiaria (3)"/>
-            <categoryLink targetId="d4c9-5168-4884-56ad" id="bc2c-69cf-53b8-1631" primary="false" name="Arma de fuego"/>
             <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24b-a311-e00c-5ca" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6697-6883-510f-fb94" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Escasa" id="bfaa-b967-3ee7-2b34" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+            <infoLink name="Arma de fuego" id="8053-116d-ea29-c5be" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+            <infoLink name="Incendiaria (3)" id="546d-c941-8cf3-7992" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Chorrazo" hidden="false" id="d11a-6d24-262b-79ad">
           <profiles>
@@ -621,14 +641,13 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink targetId="5369-73e0-135d-2fae" id="b951-2583-71ad-bdae" primary="false" name="Combustible - (5)"/>
-            <categoryLink targetId="501b-9657-19ab-7b5d" id="431f-69b3-e1a0-a88c" primary="false" name="Escasa"/>
-          </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c32-4a30-f7c4-2deb" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4757-39ff-27b4-f0cf" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Combustible - (5)" id="fbd6-4fca-326b-5770" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>

@@ -177,8 +177,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <categoryLinks>
         <categoryLink targetId="af76-5143-157c-3a3f" id="88e1-4377-d4dd-f4bb" primary="false" name="Banda: Idos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="242a-594d-1714-a0bb" primary="true" name="Miembros de la banda"/>
-        <categoryLink targetId="4abc-6abf-1f79-21a1" id="4ab0-c33e-d4de-113d" primary="false" name="Mónguer"/>
-        <categoryLink targetId="62c5-8d0d-3637-d0c2" id="469b-14ce-a068-14d6" primary="false" name="Raudo"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="35"/>
@@ -219,6 +217,10 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <description>La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Mónguer" id="eeda-e537-b44f-45d5" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+        <infoLink name="Raudo" id="2b22-506d-659a-8eb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cosechador" hidden="false" id="184e-83db-c249-9124" publicationId="6699-072c-136a-7d30" page="59">
       <costs>
