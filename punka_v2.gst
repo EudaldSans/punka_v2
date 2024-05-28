@@ -198,6 +198,16 @@
     </categoryEntry>
     <categoryEntry name="Banda: Chatarreros" id="476f-664f-cf39-efa5" hidden="false"/>
     <categoryEntry name="Banda: V Reich" id="da8-49dd-4793-c495" hidden="false"/>
+    <categoryEntry name="Camuflaje" id="e286-5398-341a-df82" hidden="true">
+      <infoLinks>
+        <infoLink name="Camuflaje" id="e752-d5f0-6a66-3bde" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Infiltración" id="fb9d-dbc3-6ee9-76d1" hidden="true">
+      <infoLinks>
+        <infoLink name="Infiltración" id="f174-c563-20ca-76e0" hidden="false" type="rule" targetId="3de3-35e0-04fc-ec2a"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
