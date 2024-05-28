@@ -2,6 +2,7 @@
 <gameSystem id="0853-e2c8-30ee-34a3" name="punka_v2" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
+    <publication name="GitHub" id="bbc5-28b8-67b7-3c23" hidden="false" publisherUrl="git@github.com:EudaldSans/punka_v2.git"/>
   </publications>
   <costTypes>
     <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
@@ -50,22 +51,14 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dc2c-2771-080d-c458" type="max"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false"/>
     <categoryEntry id="cd25-e09a-4ac6-8cdc" name="Gato parameño" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f31c-9ca6-2476-d7c8" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="297e-53dd-3c0d-5c82" name="Banda: Troupe" hidden="false"/>
-    <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a383-ec01-ef67-0b16" type="max"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false"/>
     <categoryEntry id="84b7-6828-dd10-0280" name="Miembros de la banda" hidden="false"/>
     <categoryEntry id="501b-9657-19ab-7b5d" name="Escasa" hidden="false">
       <constraints>
@@ -160,6 +153,11 @@
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Equipo de la banda" id="4af8-4d51-42ab-8460" hidden="false"/>
+    <categoryEntry name="Mercenarios y personalidades de la banda" id="6659-5ef7-facd-fab1" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -191,6 +189,32 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="El viejo sajarratas" hidden="false" id="8846-7aee-8d93-7867">
+      <profiles>
+        <profile name="El viejo sajarratas" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="614b-1c0a-b885-e4c9">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">1</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="ae2f-9364-ce66-9242" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="310e-5690-bdd1-852b" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="1876-b2c8-1379-98d6" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <modifiers>
+            <modifier type="set" value="Capa de ratas" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
