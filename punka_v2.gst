@@ -236,6 +236,12 @@
     </categoryEntry>
     <categoryEntry name="Banda: Idos" id="af76-5143-157c-3a3f" hidden="false"/>
     <categoryEntry name="Reglas de la banda" id="b19d-7b9-3085-7fd4" hidden="false"/>
+    <categoryEntry name="Banda: Irradiados" id="71ce-1b00-66d0-dfd9" hidden="false"/>
+    <categoryEntry name="Munición" id="1040-f4bf-3eb8-3f33" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="model" shared="true" id="9ae9-7f06-925c-51a6" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -245,7 +251,7 @@
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
         <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
-        <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4" type="category"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1296,6 +1302,33 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Munición contaminada" hidden="false" id="5344-f1f1-232b-6a3e" publicationId="6699-072c-136a-7d30" page="74">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Munición contaminada" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="6d1a-e60c-17b-2dcf">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">La munición tiene la Regla especial Contaminante, pero al Disparar este arma se sufrirá un penalizador de -1 a la Precisión.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Munición irradiada" hidden="false" id="b4e3-934f-601-8801" publicationId="6699-072c-136a-7d30" page="74">
+      <profiles>
+        <profile name="Munición irradiada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="a5bf-2588-2313-7fe2">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Toda miniatura sufrirá un penalizador de -3 en las tiradas de la regla Radiación por cada vez que haya sido impactada por un arma usando esta munición, pero el arma sufrirá un penalizador de -1 a su Fuerza y Penetración.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="1040-f4bf-3eb8-3f33" id="84f6-52fb-3107-a968" primary="false" name="Munición"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
@@ -1309,6 +1342,27 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Munición contaminada" hidden="true" id="414a-1e77-d15f-abf8" type="selectionEntry" targetId="5344-f1f1-232b-6a3e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Munición irradiada" hidden="true" id="14cb-c41d-5725-feb4" type="selectionEntry" targetId="b4e3-934f-601-8801">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="b51c-8a97-965e-4caf" includeChildSelections="true"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
