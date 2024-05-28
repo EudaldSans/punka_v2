@@ -355,6 +355,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <categoryLinks>
         <categoryLink id="61f6-eec2-e7fd-30df" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink id="9eb1-e586-6ef3-3e7a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="c24f-8960-d5a5-624" primary="false" name="Mercenarios y personalidades de la banda"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c393-5bf3-c9fc-6622" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
@@ -399,8 +400,8 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <categoryLinks>
         <categoryLink id="d06f-fa90-dbe7-b858" name="Banda: Troupe" hidden="false" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink id="3efd-ef0d-a88f-5818" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="true"/>
-        <categoryLink id="bf1d-6feb-e052-70d8" name="Retraso (3)" hidden="false" targetId="39d0-f2ac-33e2-a0f0" primary="false"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="f846-f496-57fe-d738" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="5d79-1a4e-5d4-60e7" id="a0ea-a8cb-ae27-fd82" primary="false" name="Retraso (3)"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8bb2-b0b7-ad53-58f0" name="Protección contra la contaminación" hidden="false" collective="false" import="true" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
@@ -478,11 +479,14 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       </profiles>
       <categoryLinks>
         <categoryLink id="3ce7-b4df-b02b-1395" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-        <categoryLink id="3dfb-70de-f3a2-e6c9" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
+        <categoryLink targetId="9cc3-e56a-ca24-3543" id="2f17-53c8-3cd8-a7cf" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Lentorra (1)" id="8876-c25a-44f0-2315" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -496,8 +500,8 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       </profiles>
       <categoryLinks>
         <categoryLink id="2292-699f-2018-cc73" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-        <categoryLink id="07d9-757c-55d9-f54e" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
         <categoryLink id="0b9a-eb9c-7ca4-74df" name="Postas" hidden="false" targetId="51e9-6840-7830-c2ba" primary="false"/>
+        <categoryLink targetId="9cc3-e56a-ca24-3543" id="13a4-f3be-37a-9433" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>

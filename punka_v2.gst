@@ -60,7 +60,7 @@
     <categoryEntry id="297e-53dd-3c0d-5c82" name="Banda: Troupe" hidden="false"/>
     <categoryEntry id="d1a7-5f24-003f-6400" name="Personalidades de la banda" hidden="false"/>
     <categoryEntry id="84b7-6828-dd10-0280" name="Miembros de la banda" hidden="false"/>
-    <categoryEntry id="501b-9657-19ab-7b5d" name="Escasa" hidden="false">
+    <categoryEntry id="501b-9657-19ab-7b5d" name="Escasa" hidden="true">
       <constraints>
         <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c597-8eff-461a-ac94" type="max"/>
       </constraints>
@@ -68,7 +68,7 @@
         <infoLink id="d790-84b8-cfb1-b9d7" name="Escasa" hidden="false" targetId="cc87-2fc3-e766-7629" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="e24d-662f-94ca-ccbe" name="A dos manos" hidden="false">
+    <categoryEntry id="e24d-662f-94ca-ccbe" name="A dos manos" hidden="true">
       <constraints>
         <constraint field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7031-f8e4-1b9f-1bbb" type="max"/>
       </constraints>
@@ -76,7 +76,7 @@
         <infoLink id="5fde-e1f8-d6fa-9eb6" name="A dos manos" hidden="false" targetId="3cc2-57bc-f5a7-acbb" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="c14e-1660-fbd2-5927" name="Armatoste" publicationId="6699-072c-136a-7d30" page="30" hidden="false">
+    <categoryEntry id="c14e-1660-fbd2-5927" name="Armatoste" publicationId="6699-072c-136a-7d30" page="30" hidden="true">
       <constraints>
         <constraint field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6dc4-05b7-003f-04bd" type="max"/>
       </constraints>
@@ -84,50 +84,39 @@
         <infoLink id="61b8-e009-6f7c-09e1" name="Armatoste" hidden="false" targetId="e424-ab96-2797-07e5" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="51e9-6840-7830-c2ba" name="Postas" hidden="false">
+    <categoryEntry id="51e9-6840-7830-c2ba" name="Postas" hidden="true">
       <infoLinks>
         <infoLink id="87ea-cdc1-e6b8-9b71" name="Postas" hidden="false" targetId="f977-1a8f-2209-a20e" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="870a-b5fb-193d-a00e" name="Maza Ligera" hidden="false">
-      <infoLinks>
-        <infoLink id="0fb2-0c08-b0d4-b8a5" name="Arma improvisada" hidden="false" targetId="2067-39d5-d837-94c3" type="profile"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="4a11-0ad8-212b-1ff8" name="Arma improvisada" hidden="false">
-      <infoLinks>
-        <infoLink id="b62d-fd1a-801d-3ccb" name="Arma improvisada" hidden="false" targetId="2067-39d5-d837-94c3" type="profile"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="3b9e-677b-f025-e73c" name="Bomba" hidden="false">
+    <categoryEntry id="3b9e-677b-f025-e73c" name="Bomba" hidden="true">
       <infoLinks>
         <infoLink id="feff-8b4e-5113-af10" name="Tiro parabólico" hidden="false" targetId="734f-df5a-7f49-3a9f" type="rule"/>
         <infoLink id="3558-60e8-2427-5b3f" name="Usar y tirar" hidden="false" targetId="9931-0e0e-fa4f-17d8" type="rule"/>
         <infoLink id="072d-37d1-12fd-0b7c" name="Bomba" hidden="false" targetId="d4d7-8245-ed66-4269" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="9284-8095-71fd-9e1e" name="Lentorra (1)" hidden="false"/>
-    <categoryEntry id="d4c9-5168-4884-56ad" name="Arma de fuego" hidden="false">
+    <categoryEntry id="d4c9-5168-4884-56ad" name="Arma de fuego" hidden="true">
       <infoLinks>
         <infoLink id="173c-20ab-24f1-8ce3" name="Arma de fuego" hidden="false" targetId="967b-e5a1-f60c-8b02" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="d8db-3ff3-4fb4-d828" name="Dificil de usar" hidden="false">
+    <categoryEntry id="d8db-3ff3-4fb4-d828" name="Dificil de usar" hidden="true">
       <infoLinks>
         <infoLink id="221b-1d51-f760-3509" name="Difícil de usar" hidden="false" targetId="ed27-30aa-1dca-2614" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="10e2-873b-46fd-b19a" name="Automático" hidden="false">
+    <categoryEntry id="10e2-873b-46fd-b19a" name="Automático" hidden="true">
       <infoLinks>
         <infoLink id="dc35-fed4-c5c0-6aac" name="Automático" hidden="false" targetId="5e01-e63a-dcb6-e890" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="d2e4-5cf9-58c2-565b" name="Electrificación" hidden="false">
+    <categoryEntry id="d2e4-5cf9-58c2-565b" name="Electrificación" hidden="true">
       <infoLinks>
         <infoLink id="47a0-6f58-c3ba-5dd0" name="Electrificación" hidden="false" targetId="6240-90ca-56c3-21e2" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="5078-3252-77fa-daa5" name="Bestia" hidden="false">
+    <categoryEntry id="5078-3252-77fa-daa5" name="Bestia" hidden="true">
       <infoLinks>
         <infoLink id="bf77-5105-d940-c4f1" name="Bestia" hidden="false" targetId="e9cf-fed3-0a23-ac43" type="rule"/>
       </infoLinks>
@@ -142,14 +131,9 @@
         <infoLink id="dc51-94e3-3545-2d0a" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="62c5-8d0d-3637-d0c2" name="Raudo" hidden="false">
+    <categoryEntry id="62c5-8d0d-3637-d0c2" name="Raudo" hidden="true">
       <infoLinks>
         <infoLink id="5700-e257-70e8-1175" name="Todoterreno" hidden="false" targetId="09af-565c-8edf-ab67" type="rule"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry id="39d0-f2ac-33e2-a0f0" name="Retraso (3)" hidden="false">
-      <infoLinks>
-        <infoLink id="e873-8a1f-9b28-45a9" name="Retraso (X)" hidden="false" targetId="1d8a-9fa1-9a2d-eeb7" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Equipo de la banda" id="4af8-4d51-42ab-8460" hidden="false"/>
@@ -158,20 +142,25 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Mónguer" id="4abc-6abf-1f79-21a1" hidden="false">
+    <categoryEntry name="Mónguer" id="4abc-6abf-1f79-21a1" hidden="true">
       <infoLinks>
         <infoLink name="Mónguer" id="dc97-885c-bbca-71a8" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Retraso (2)" id="cdf3-f61-9168-6640" hidden="false">
+    <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="false"/>
+    <categoryEntry name="Lentorra (1)" id="9cc3-e56a-ca24-3543" hidden="true">
       <infoLinks>
-        <infoLink name="Retraso (X)" id="47f5-3f1a-88e0-6e41" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Lentorra (1)" id="371e-6260-fabe-b3a" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="false"/>
-    <categoryEntry name="Veneno (4)" id="3145-4b39-bfc8-4a22" hidden="false">
+    <categoryEntry name="Retraso (3)" id="5d79-1a4e-5d4-60e7" hidden="true">
       <infoLinks>
-        <infoLink name="Veneno (X)" id="3dfc-2530-2a7a-7a76" hidden="false" type="rule" targetId="c1f4-2a2c-c27b-84bc"/>
+        <infoLink name="Retraso (3)" id="8696-b0ed-d91-3ca5" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Retraso (2)" id="149c-4fbb-4c1b-abe1" hidden="true">
+      <infoLinks>
+        <infoLink name="Retraso (2)" id="be23-bf00-6417-6a03" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
@@ -206,7 +195,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="El viejo sajarratas" hidden="false" id="8846-7aee-8d93-7867" publicationId="6699-072c-136a-7d30" page="116">
+    <selectionEntry type="model" import="true" name="El viejo Sajarratas" hidden="false" id="8846-7aee-8d93-7867" publicationId="6699-072c-136a-7d30" page="116">
       <profiles>
         <profile name="El viejo sajarratas" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="614b-1c0a-b885-e4c9">
           <characteristics>
@@ -253,7 +242,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Imperatrix rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
+    <selectionEntry type="model" import="true" name="Imperatrix Rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
       <entryLinks>
         <entryLink import="true" name="Rifle" hidden="false" id="e9ff-ef9b-5a53-2c3" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
           <entryLinks>
@@ -279,6 +268,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="5163-179-152a-d2d3" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <profiles>
         <profile name="Imperatrix rabiosa" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="2e74-1a19-84d8-8eb3">
@@ -296,7 +286,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="e48c-7109-5774-1617" primary="true" name="Mercenarios"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="663c-e542-16bb-1d62" primary="false" name="Mercenarios y personalidades de la banda"/>
-        <categoryLink targetId="cdf3-f61-9168-6640" id="d65-b6c8-57a1-353f" primary="false" name="Retraso (2)"/>
+        <categoryLink targetId="149c-4fbb-4c1b-abe1" id="31a4-6151-c88f-b442" primary="false" name="Retraso (2)"/>
       </categoryLinks>
       <rules>
         <rule name="Me quedo con tu cara" id="b702-a3d2-e892-434a" hidden="false" publicationId="6699-072c-136a-7d30" page="117">
@@ -310,7 +300,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mongodrilo dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
+    <selectionEntry type="upgrade" import="true" name="Mongodrilo Dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
       </costs>
@@ -391,6 +381,184 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </rule>
         <rule name="Ojo loco" id="4fab-362e-dc17-a877" hidden="false" publicationId="6699-072c-136a-7d30" page="118">
           <description>El enorme ojo de Mongodrilo es bueno para apuntar, pero a veces le juega malas pasadas cuando se concentra demasiado y se le va para sitios nada previstos. Si gastas una Acción en Apuntar con Mongodrilo, debes tirar 1d10. Con un resultado de 1-2 en lugar del bonificador de +3 a la Precisión, tendrá un penalizador de -2.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Crazy Mel" hidden="false" id="54ea-104-aa9c-6c89">
+      <entryLinks>
+        <entryLink import="true" name="Escopeta" hidden="false" id="5988-a357-3715-abb4" type="selectionEntry" targetId="265c-2979-056d-1a06">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b78c-5725-e768-c87f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="904e-e55-6d06-ca15" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="8fb6-6d9a-f1e2-e797" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24e2-ad2c-6e9d-ab7b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40d4-64f1-8553-5f7b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armadura metálica" hidden="false" id="b4fa-d14e-1585-94ae" type="selectionEntry" targetId="d761-5553-4adf-c294">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27dd-bbe2-ece4-1deb" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="bbda-d5ca-2b18-d3a5" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="7c5-ee74-6843-3abf" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Crazy Mel" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="9735-98cd-492e-c55f">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">7</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="En el momento menos oportuno" id="b039-eb42-8e58-935c" hidden="false" publicationId="6699-072c-136a-7d30" page="119">
+          <description>La escopeta de Crazy Mel tiene la terrible manía de fallar en los momentos de más necesidad. No habrá que comprar balas para esta escopeta. En su lugar, cuando se efectúe la tirada de Precisión al efectuar un disparo, deberá comprobarse si el resultado es par o impar. En el caso de ser impar, se podrá Disparar sin ningún problema. Sin embargo, en el caso de ser par, la escopeta se estropeará de alguna manera quedando inutilizada, por lo que no disparará en esa Acción de Disparo (que habrá perdido) ni en el resto de la partida.</description>
+        </rule>
+        <rule name="Albóndiga" id="ac82-ff02-d68c-4582" hidden="false" publicationId="6699-072c-136a-7d30" page="119">
+          <description>Crazy Mel siempre va acompañado por su fiel perro Albóndiga. Este lo avisa de los enemigos cercanos, por lo que Crazy Mel podrá utilizar todos los bonificadores de haber movido para Asaltar, incluso aunque al principio de algún Movimiento no tuviera Línea de visión sobre su enemigo.
+Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo que cuando esté en Combate podrá eliminar el bonificador de apoyo de UNA miniatura enemiga a su elección.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="75"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Capitán Hammerica" hidden="false" id="f082-43a7-7d70-546c" publicationId="6699-072c-136a-7d30" page="120">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="80"/>
+      </costs>
+      <profiles>
+        <profile name="Capitán Hammerica" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="fec-cd34-11ea-9e71">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Maza" hidden="false" id="f3cd-5e1e-2fa6-7612" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fb5-b6fb-c59d-2460" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b86-ead-f690-5d1c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pistola" hidden="false" id="d32f-d443-46a5-df1b" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f733-9f02-7908-10af" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="827c-76f7-4211-22db" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Escudo reforzado" id="d71c-3505-1d36-b206" hidden="false" publicationId="6699-072c-136a-7d30" page="120">
+          <description>El Capitán Hammerica tiene un escudo muy fardón, de aspecto corriente pero fabricado según él con una aleación de vibra...noséquépollas. La verdad es que aguanta más de lo normal, por lo que concede una bonificación al Blindaje de +3 en lugar de +2. Y como el Capi está tan entrenado en su uso, no sufre el penalizador de -1 al Combate por usarlo en cuerpo a cuerpo. También probó a lanzarlo contra los enemigos, pero no es nada aerodinámico y no da una, así que no lo usa así.</description>
+        </rule>
+        <rule name="Hammer time" id="9a9f-3026-81f9-d8fb" hidden="false" publicationId="6699-072c-136a-7d30" page="120">
+          <description>Pocas cosas le gustan tanto a Hammerica como abrir cabezas de villanos con su fiel martillo. Si es abatido en un Combate disfrutará de los beneficios de la regla especial Bersérker, por lo que aunque caiga peleando podrá llevarse por delante a su enemigo.</description>
+        </rule>
+        <rule name="Odio a Casco Rojo" id="ea40-69b8-8bd7-6c0f" hidden="false" publicationId="6699-072c-136a-7d30" page="120">
+          <description>El líder de Kraken, Casco Rojo (ver el suplemento de El ascenso del V Reich), mató al científico que se había convertido en su amigo delante de él, y fíjate tú que el Capi no se lo ha tomado nada bien. Si el Capi se enfrenta una banda del V Reich con Casco Rojo y consigue Abatirlo, conseguirá 3 puntos de victoria extra para su banda.</description>
+        </rule>
+        <rule name="Capitán Fascio" id="7c5a-2cc3-beef-304" hidden="false" publicationId="6699-072c-136a-7d30" page="120">
+          <description>Al ser mercenario y de acuerdo a las reglas, el Capitán Hammerica podría jugar con la facción del V Reich. Si es así, supondremos que se ha revelado realmente como el Capitán Fascio, un traidor a las cosas guays y molonas</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="Capitán Fascio" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="3150-832-b614-2fe9" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="54f7-30a7-e32e-3bf9" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lizzy Deville" hidden="false" id="6859-599a-6415-dbcd" publicationId="6699-072c-136a-7d30" page="121">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="80"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Pistola" hidden="false" id="718c-45fb-c90-2c0f" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c921-dbfb-d73b-ce7b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0b-71b3-b196-e07e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="5df-e595-27b-ec16" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="521e-67db-4957-26ad" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f49a-2ebb-650c-7280" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Ropas resistentes" hidden="false" id="2d15-5883-70b3-502" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d1e-a86f-e97f-75cd" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="85c1-af91-5b8b-10" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="d70c-ff3d-dafb-aa5d" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="149c-4fbb-4c1b-abe1" id="af2f-b733-5574-321d" primary="false" name="Retraso (2)"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lizzy Deville" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="20fc-bd9-3be6-ae6c">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Charlatana" id="ae01-b26b-20da-83c1" hidden="false" publicationId="6699-072c-136a-7d30" page="121">
+          <description>Lizzy tiene un pico de oro que la ayuda a salir de las situaciones más inverosímiles. Lizzy podrá Separarse del Combate automáticamente como si tuviera la Regla especial Escurridizo, pero no podrá emplear esta jugada con la misma miniatura enemiga más de una vez en la misma partida.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -592,12 +760,15 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="8a32-9b1c-ebe7-453e" name="Lentorra (1)" hidden="false" targetId="9284-8095-71fd-9e1e" primary="false"/>
         <categoryLink id="f864-9ce6-7302-573a" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink targetId="9cc3-e56a-ca24-3543" id="98ca-d2-d09f-478a" primary="false" name="Lentorra (1)"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Lentorra (1)" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="dad1-9f6c-5b63-0763" name="Rifle" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -920,7 +1091,7 @@ Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abat
       <description>Una miniatura con esta regla, no tiene por qué ser desplegada en la zona de despliegue con el resto de miniaturas. En su lugar puedes decidir que avanza secretamente 10 cm por Turno de juego desde el borde de la zona de despliegue propia más cercano al centro de la mesa, pudiendo aparecer en cualquier Turno posterior al primero hasta un máximo del cuarto Turno. Desplegará dentro de esa distancia en cualquier lugar de la mesa, a no menos de 15 cm de cualquier miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.
 En el Turno en que se quiera desplegar la miniatura, debe indicársele al rival al principio de la Ronda de Agilidad que le corresponda y actuará de la misma manera que el resto de miniaturas de esa Ronda de Agilidad.</description>
     </rule>
-    <rule id="ab59-d932-816d-d561" name="Lentorra" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="ab59-d932-816d-d561" name="Lentorra (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
 En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
     </rule>
@@ -941,7 +1112,7 @@ No podrá usarse Fuego defensivo con un arma con esta regla. Por otra parte, si 
     <rule id="339a-709e-0f9b-718f" name="Raudo" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Hay criaturas más rápidas de lo habitual. Una miniatura con esta regla puede Mover 15 cm en lugar de 10 cm por Acción de Movimiento.</description>
     </rule>
-    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso (X)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
+    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso (2)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
 A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
@@ -959,9 +1130,13 @@ Pueden combinarse varias Acciones de Movimiento seguidas en una misma Fase de ac
     <rule id="37eb-d074-791e-032f" name="Trepador" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede Trepar como si fuera por Terreno chachi.</description>
     </rule>
-    <rule id="c1f4-2a2c-c27b-84bc" name="Veneno (X)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
+    <rule id="c1f4-2a2c-c27b-84bc" name="Veneno (4)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
 En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
+    </rule>
+    <rule name="Retraso (3)" id="7f50-dcfe-b5d4-5916" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
+      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
+A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
