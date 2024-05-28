@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1dde-4fe6-a131-8b45" name="Chatarreros" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Chasqueador y traje voltaico" hidden="false" id="e19f-5bc9-b421-60a6" publicationId="6699-072c-136a-7d30" page="44">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+      </costs>
+      <profiles>
+        <profile name="Chasqueador y traje voltaico" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="84b9-93c2-37d2-453b">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">6</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">-</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">Ignora Blindajes</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="c579-83d-18cc-a418" primary="false" name="Escasa"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Puño balístico" hidden="false" id="c903-18c3-3e9a-6519" publicationId="6699-072c-136a-7d30" page="44">
+      <profiles>
+        <profile name="Puño balístico" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="2468-239f-e70b-7bdc">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+5</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="897c-862d-7b15-aac6" primary="false" name="Escasa"/>
+        <categoryLink targetId="801d-3953-5099-5510" id="3772-bb42-f087-c62" primary="false" name="Lentorra (2)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bombas de humo" hidden="false" id="f855-3153-f205-53df" publicationId="6699-072c-136a-7d30" page="44">
+      <categoryLinks>
+        <categoryLink targetId="3b9e-677b-f025-e73c" id="a858-2613-a605-596" primary="false" name="Bomba"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="4068-5964-d967-e169" primary="false" name="Escasa"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bomba de humo" hidden="false" id="69f-1a5a-6cf5-1d00">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d662-41ed-e70e-747f" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="645e-cd86-6994-8d57" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a418-342-2907-95a7" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Bombas de humo" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9078-9ee9-d8c1-36a9">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">F del lanzador x 5</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Bomba, escasa</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bombas de humo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="9b5-9790-a54-1113">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Cuando Impacta, dejará un marcador permanente de humo de 5 cm de radio, medido desde el punto de impacto.
+Los disparos cuya Línea de visión pasen sobre este marcador (se seguirían las reglas utilizadas en las Coberturas para determinarlo) sufrirán un penalizador acumulable de -2 a la tirada de Precisión. Además, toda miniatura que llegue a ponerse en contacto con un marcador de humo durante su Fase de activación perderá todos los bonificadores al Combate derivados del Asalto</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bombeadora" hidden="false" id="8e97-dbed-8671-64b2" publicationId="6699-072c-136a-7d30" page="44">
+      <profiles>
+        <profile name="Bombeadora" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="8771-a9a9-cb32-bf79">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">1</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">1</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, escasa</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bombeadora" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="427e-f1f3-6cd6-7c5">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Una miniatura con este arma puede gastar Acciones “bombeándola”. Por cada Acción empleada, el jugador coloca hasta tres marcadores de +1 a Fuerza, +1 a Penetración o +10 cm de distancia a todos sus rangos de alcance. No tienen por qué ser tres marcadores iguales. Cuando la miniatura dispare, estos marcadores se gastarán y modificarán el perfil del arma.
+Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del mismo tipo (distancia, Fuerza o Penetración). Sin embargo bombearla tanto la vuelve inestable: si es disparada utilizando más de dos marcadores del mismo tipo, seguirá la Regla especial ¡¡¡CATAPUM!!!.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="9f78-58a7-64e2-1404" primary="false" name="A dos manos"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="3e34-672f-de2b-f7fb" primary="false" name="Escasa"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanzaarpones" hidden="false" id="8faa-1a92-57f3-a4fe" publicationId="6699-072c-136a-7d30" page="44">
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="f5ea-ee18-d639-55fd" primary="false" name="A dos manos"/>
+        <categoryLink targetId="c14e-1660-fbd2-5927" id="10e7-4f38-c2d2-8863" primary="false" name="Armatoste"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="4f4e-25d0-f82d-8b7d" primary="false" name="Escasa"/>
+        <categoryLink targetId="801d-3953-5099-5510" id="e1a0-a50a-d517-f290" primary="false" name="Lentorra (2)"/>
+        <categoryLink targetId="dfe1-2d4c-57ce-2fd3" id="7c25-ad8f-5aaf-2626" primary="false" name="¡¡¡CATAPUM!!!"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lanzaarpones" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9f44-6032-16e7-561">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Armatoste, ¡¡¡CATAPUM!!!, Escasa, Lentorra (2), Mamotreto.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bombas incendiarias" hidden="false" id="62d3-9592-5791-75e8" publicationId="6699-072c-136a-7d30" page="44">
+      <categoryLinks>
+        <categoryLink name="Bomba" hidden="false" id="5521-e1cc-680a-e1c2" targetId="3b9e-677b-f025-e73c" primary="false"/>
+        <categoryLink name="Escasa" hidden="false" id="7fbf-d30f-b859-eeb0" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink targetId="115-e012-3d9f-32c8" id="b9a2-102e-2be5-58c5" primary="false" name="Incendiaria (2)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bombas incendiarias" hidden="false" id="b44d-5cc7-268f-1612">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7e6-9469-3601-d3da" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="6fa9-5816-51a3-f278" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="7"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19f2-932d-28be-87b4" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Bombas incendiarias" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="779b-867f-f808-c89c">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">F del lanzador x 5</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Bomba, escasa, incendiaria (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trabuco" hidden="false" id="a5f0-d0ff-ae29-49bc" publicationId="6699-072c-136a-7d30" page="45">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="63e0-f557-b548-b630" primary="false" name="A dos manos"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="34d0-1b60-5aa-c587" primary="false" name="Escasa"/>
+        <categoryLink targetId="9cc3-e56a-ca24-3543" id="4d73-5a61-76cc-324f" primary="false" name="Lentorra (1)"/>
+        <categoryLink targetId="51e9-6840-7830-c2ba" id="b19e-b28-91b6-bba2" primary="false" name="Postas"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Trabuco" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="35c7-2d5d-a0d1-7ea5">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5/4/3</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">2</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/15/20</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Escasa, Lentorra (1), Postas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vaporeta" hidden="false" id="a94f-6fec-c421-f6c9" publicationId="6699-072c-136a-7d30" page="45">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="8464-6770-654e-2f30" primary="false" name="A dos manos"/>
+        <categoryLink targetId="c14e-1660-fbd2-5927" id="fe10-1c99-7014-2a61" primary="false" name="Armatoste"/>
+        <categoryLink targetId="501b-9657-19ab-7b5d" id="7300-c538-5e7f-911a" primary="false" name="Escasa"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="b6b6-9ea3-ad4d-9730" publicationId="6699-072c-136a-7d30" page="45"/>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="513f-6564-7d2c-ba5c" publicationId="6699-072c-136a-7d30" page="45"/>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="82cc-581b-c16b-22e4" publicationId="6699-072c-136a-7d30" page="45"/>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="5254-4892-2f27-bba7" publicationId="6699-072c-136a-7d30" page="45"/>
+  </sharedSelectionEntries>
+</catalogue>
