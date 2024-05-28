@@ -413,6 +413,52 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Coche de pachachos" hidden="false" id="9e0d-5257-f4c4-6acb" publicationId="6699-072c-136a-7d30" page="104">
+      <categoryLinks>
+        <categoryLink targetId="4af8-4d51-42ab-8460" id="b18d-7f72-6529-8e49" primary="true" name="Equipo de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Coche de pachachos" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="84e4-10a6-dc5e-5e2a">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Antes de comenzar la partida y de que ninguna miniatura sea desplegada puedes colocar el coche de pachachos en cualquier lugar de la mesa fuera de las zonas de despliegue. Cuando sea el momento de desplegar tus Pachachos puedes decidir si quieres que cada uno lo haga desde el coche. Antes de desplegar una miniatura deberás ver a qué distancia de tu zona de despliegue está el coche y hacer una tirada. Si consigues el resultado indicado en la tabla posterior podrás desplegar un Pachacho pegado al coche, si no desplegará normalmente. Podrás seguir intentando desplegar Pachachos hasta que falles una tirada, momento en el que deberán desplegar de la manera habitual. El coche seguirá en la mesa como un elemento de escenografía de tamaño 1 y grado de protección pesado.
+
+
+Resultado necesario:
+0 a 10 cm 2+
++10 a 20 cm 4+
++20 a 30 cm 6+
++30 a 40 cm 7+
++40 a 50 cm 8+
++50 a 60 cm 9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d92e-8ccc-e737-d6c4" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cañón lanzador" hidden="false" id="58ad-d371-aa8b-a05d" publicationId="6699-072c-136a-7d30" page="104">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Cañón lanzador" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="28aa-6976-3ed3-951c">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Debe desplegarse el cañón en la zona de despliegue de la banda, sobre una peana de 40 mm, antes de comenzar a desplegar las miniaturas.
+Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar una Acción en autodispararse hacia un enemigo en Línea de visión a una distancia máxima de 90 cm, utilizando su propio Atributo de Precisión (no tiene modificadores por rangos de distancia ni se puede Apuntar). En caso de impactar lo hará con Fuerza 7 y Penetración 10. Si no impacta, la miniatura lanzada saldrá despedida fuera de la mesa y se considerará Abatida (aunque no podrá ser Rapiñada). Si la miniatura consigue Impactar quedará en contacto con la miniatura objetivo, pero resultará Abatida al instante salvo que saque un 1 en la tirada de Precisión. Si la miniatura objetivo no ha quedado Abatida, pasarán a estar trabadas en Combate, pero sin que se haya producido ningún Asalto.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8728-a5d8-d083-66e1" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4af8-4d51-42ab-8460" id="bed8-e109-5138-dcc9" primary="true" name="Equipo de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4c92-ac20-c805-f270" name="Guante de boxeo extensible" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
