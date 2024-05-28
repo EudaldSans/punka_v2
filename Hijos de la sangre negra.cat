@@ -514,6 +514,11 @@
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="715d-40a2-1336-430a" type="selectionEntry" targetId="19f2-5137-907f-980b">
+          <categoryLinks>
+            <categoryLink name="A dos manos" hidden="false" id="b6e8-b873-b1c4-2040" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="3231-cf3-dc71-4b81" primary="false" name="Mercenarios y personalidades de la banda"/>
@@ -558,6 +563,11 @@
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b67c-b864-965-cfbf" type="selectionEntry" targetId="19f2-5137-907f-980b">
+          <categoryLinks>
+            <categoryLink name="A dos manos" hidden="false" id="e925-276f-a439-a207" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <selectionEntries>
