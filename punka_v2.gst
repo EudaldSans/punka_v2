@@ -688,10 +688,10 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <entryLink import="true" name="Filo Medio" hidden="false" id="625c-9d15-9ac8-925d" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+            <modifier type="set" value="2" field="77af-fb06-b4cc-c018"/>
           </modifiers>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="af2d-4717-eed8-c758" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="92e4-c556-3c9b-f6f7" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -782,6 +782,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cd-b6c1-602c-8008" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -815,6 +818,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa85-4298-c5c8-a69f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="80e1-add6-3e45-0b6a" name="Desarmado" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -853,6 +859,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0e-d231-83b0-b0ef" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="ba9b-1c69-5fbe-8bc2" name="Maza Ligera" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -861,6 +870,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-a28b-5464-caf1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -876,6 +888,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5365-ffdc-d686-f5a4" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -891,6 +906,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb-cb0e-6a26-c9d1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -909,6 +927,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9270-c283-a1e0-d8ed" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="4cff-c4a3-65b5-c719" name="Filo Pesado" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -928,6 +949,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9227-de5-700a-16a2" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="d385-422c-97e9-fd5f" name="Filo Medio" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -943,6 +967,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77af-fb06-b4cc-c018" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -958,6 +985,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dbc-d786-c89c-4924" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="485b-43b5-f9fe-c240" name="Ballesta" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -980,6 +1010,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <infoLinks>
         <infoLink name="Lentorra (1)" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a66-28a4-ed7a-8d81" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="dad1-9f6c-5b63-0763" name="Rifle" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1000,6 +1033,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c664-9230-6987-e38c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1019,6 +1055,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-aa9c-51ab-c737" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1041,6 +1080,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f5-f3d6-702b-64ca" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="1a91-4787-fe3b-51fd" name="Ropas resistentes" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1120,6 +1162,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5663-5ec9-554a-6e62" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="d761-5553-4adf-c294" name="Armadura metálica" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1151,6 +1196,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="a57d-ab20-45e5-fe33" primary="false" name="A dos manos"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf4-6a0-a27-424a" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="19f2-5137-907f-980b" name="Protección contra la contaminación" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1180,6 +1228,9 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b85-ee0f-2914-5f28" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sónar" hidden="false" id="a0d1-a53c-c996-b5ac" publicationId="6699-072c-136a-7d30" page="85">
       <costs>
