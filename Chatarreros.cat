@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="1dde-4fe6-a131-8b45" name="Chatarreros" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Chasqueador y traje voltaico" hidden="false" id="e19f-5bc9-b421-60a6" publicationId="6699-072c-136a-7d30" page="44">
+    <selectionEntry type="upgrade" import="true" name="Chasqueador" hidden="false" id="e19f-5bc9-b421-60a6" publicationId="6699-072c-136a-7d30" page="44">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
       </costs>
@@ -106,6 +106,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <categoryLink targetId="501b-9657-19ab-7b5d" id="4f4e-25d0-f82d-8b7d" primary="false" name="Escasa"/>
         <categoryLink targetId="801d-3953-5099-5510" id="e1a0-a50a-d517-f290" primary="false" name="Lentorra (2)"/>
         <categoryLink targetId="dfe1-2d4c-57ce-2fd3" id="7c25-ad8f-5aaf-2626" primary="false" name="¡¡¡CATAPUM!!!"/>
+        <categoryLink targetId="5097-728d-527e-143e" id="5435-17de-e416-675c" primary="false" name="Mamotreto"/>
       </categoryLinks>
       <profiles>
         <profile name="Lanzaarpones" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9f44-6032-16e7-561">
@@ -181,11 +182,73 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="8464-6770-654e-2f30" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="fe10-1c99-7014-2a61" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="7300-c538-5e7f-911a" primary="false" name="Escasa"/>
+        <categoryLink targetId="cdcc-e0e5-4a0e-f174" id="ba0a-210c-a442-4b56" primary="false" name="Plantilla"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Vaporeta" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="dc1e-c1-b654-f072">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20 cm</characteristic>
+            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Armatoste, Escasa, Plantilla</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vaporeta" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="7cb8-a7e9-7bd4-745">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">La vaporeta funciona de manera diferente al resto de armas. Para Impactar no será necesaria una tirada de Precisión, sino que todo aquel en una línea recta imaginaria de 20 cm de longitud, será automáticamente Impactado siempre que el arma funcione correctamente.
+Para disparar habrá que realizar una tirada de Técnica. Siempre que se supere la tirada, impactará a las miniaturas que toque esa línea recta imaginaria, con una Fuerza igual a la diferencia por la que haya superado la tirada +1.
+Sin embargo, si no se supera la tirada, la vaporeta funciona incorrectamente sufriendo una fuga de vapor, y será el propietario del arma quien sufra el Impacto. En esta ocasión, la Fuerza del arma vendrá indicada por la diferencia por la que haya fallado la tirada. 
+La vaporeta ignora totalmente los Blindajes y Coberturas parciales.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Traje voltaico" hidden="false" id="b6b6-9ea3-ad4d-9730" publicationId="6699-072c-136a-7d30" page="45">
+      <profiles>
+        <profile name="Traje voltaico" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="1656-68fd-e53c-57a2">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">2</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste, Electrificación, Ignífugo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c14e-1660-fbd2-5927" id="3e74-3085-d76e-e39e" primary="false" name="Armatoste"/>
+        <categoryLink targetId="d2e4-5cf9-58c2-565b" id="b657-dde3-ab1c-e376" primary="false" name="Electrificación"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="b6b6-9ea3-ad4d-9730" publicationId="6699-072c-136a-7d30" page="45"/>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="513f-6564-7d2c-ba5c" publicationId="6699-072c-136a-7d30" page="45"/>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="82cc-581b-c16b-22e4" publicationId="6699-072c-136a-7d30" page="45"/>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="5254-4892-2f27-bba7" publicationId="6699-072c-136a-7d30" page="45"/>
+    <selectionEntry type="upgrade" import="true" name="Cacharras del oficio" hidden="false" id="82cc-581b-c16b-22e4" publicationId="6699-072c-136a-7d30" page="45">
+      <profiles>
+        <profile name="Cacharras del oficio" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="f693-6dae-385b-8121">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Una miniatura equipada con estos cachivaches podrá intentar reparar un arma que haya quedado inutilizada tras sufrir un resultado de ¡¡¡CATAPUM!!!, superando una tirada de Técnica.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Chasqueador y traje voltaico" id="ebb9-d5b5-a31f-aec4" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Chasqueador" hidden="false" id="49d3-57c-a089-aa39" type="selectionEntry" targetId="e19f-5bc9-b421-60a6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef-f69d-64f5-c936" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="130f-9113-154d-e7ac" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Traje voltaico" hidden="false" id="8b1b-c946-f3f0-dbee" type="selectionEntry" targetId="b6b6-9ea3-ad4d-9730">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1e2-d7bd-af14-af26" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d20-4a62-c586-6b90" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f745-f072-a802-82e4" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

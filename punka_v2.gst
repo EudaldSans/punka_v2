@@ -186,6 +186,18 @@
         <infoLink name="Plantilla" id="c498-7645-48f0-7622" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Mamotreto" id="5097-728d-527e-143e" hidden="false">
+      <infoLinks>
+        <infoLink name="Mamotreto" id="b2cc-dcb5-fc60-50ab" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Ignífugo" id="ee1a-1896-583c-4b02" hidden="false">
+      <infoLinks>
+        <infoLink name="Ignífugo" id="bc88-ae26-79a-5cfe" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Banda: Chatarreros" id="476f-664f-cf39-efa5" hidden="false"/>
+    <categoryEntry name="Banda: V Reich" id="da8-49dd-4793-c495" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -728,7 +740,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b7b7-d0a9-69b8-c008" name="Balas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9f8f-e6c9-cad9-386e" name="Balas" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
           <characteristics>
@@ -1173,11 +1185,35 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
         <infoLink name="Raudo" id="490-96a-4ab7-2dd" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bala apañada" hidden="false" id="9aa3-b5a1-c176-a5e" publicationId="6699-072c-136a-7d30" page="45">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="dfe1-2d4c-57ce-2fd3" id="6d5c-b390-776d-5f65" primary="false" name="¡¡¡CATAPUM!!!"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bala apañada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="9d0b-c2cb-1ca3-7dc8">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">¡¡¡CATAPUM!!!</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="1cdd-1929-bb46-a022" name="Balas" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
+        <entryLink import="true" name="Bala apañada" hidden="false" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
