@@ -447,6 +447,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="827c-76f7-4211-22db" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="875d-5979-6ea7-bbdd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <rules>
         <rule name="Escudo reforzado" id="d71c-3505-1d36-b206" hidden="false" publicationId="6699-072c-136a-7d30" page="120">
