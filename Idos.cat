@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5f14-305f-99b6-1077" name="Idos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Ambrosía" id="8c10-1203-2c2e-cbef" hidden="false" publicationId="6699-072c-136a-7d30" page="56">
+      <description>Las bandas de Idos combaten bajo el efecto de la droga conocida como Ambrosía. Toda banda comienza la partida con una dosis de Ambrosía por cada fracción de 100 puntos. Estas dosis les permitirán realizar proezas extraordinarias, pero a riesgo de tener un mal viaje. Los Cosechadores pueden obtener dosis extra de Ambrosía durante la partida (ver más adelante).
+Antes de que una miniatura comience su Fase de activación, puedes decidir darle UNA dosis de Ambrosía y elegir entre los siguientes efectos, que serán efectivos únicamente durante esa Fase de activación, siempre que la Ambrosía funcione perfectamente:
+• +10 cm al Movimiento durante un solo Asalto.
+• +2 a la Fuerza.
+• +2 a la Dureza.
+• +2 a la Técnica.
+• Obtendrá la Regla especial Todoterreno.
+• Vencerá la Furia psicópata (ignoras esa Regla especial durante esta Fase de activación)
+
+
+Deberás tirar 1d10 para comprobar si la droga funciona como quieres y consultar la siguiente tabla:
+• 1 o menos  - El colocón es muy, muy malo y la miniatura pasa a tener 1 Acción menos durante el resto de la partida. Si las Acciones llegan a 0 la miniatura se consideraría Abatida. Además la droga no tendrá ningún efecto.
+• 2-3              - La Ambrosía afecta a cada tipo de tropa siguiendo sus reglas de Mal viaje durante esa Fase de activación. En caso de estar en Combate, seguirán combatiendo.
+• 4-10            - La Ambrosía funciona perfectamente.
+
+
+Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada dosis de Ambrosía que haya consumido anteriormente.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="10e3-42f-6178-d1ac" publicationId="6699-072c-136a-7d30" page="64">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Hoz" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ba6-75c6-378d-b7d5">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">3</characteristic>
+            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cuero humano" hidden="false" id="d01b-ea85-f31c-ed31" publicationId="6699-072c-136a-7d30" page="64">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
+      </costs>
+      <profiles>
+        <profile name="Cuero humano" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="3e53-5840-ec19-be0d">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Los disparos realizados sobre miniaturas con este Blindaje, sufren un penalizador de -1 a la Precisión por Disparar a distancia corta.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a592-6337-3e7d-233f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arma incrustada" hidden="false" id="4e37-d54e-a829-6cea" publicationId="6699-072c-136a-7d30" page="64">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Arma incrustada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="61a9-712c-bac3-3f57">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Un Ido puede incrustarse una hoz, un filo pequeño o un filo medio que haya adquirido incrementando su valor en 10 puntos. A cambio, obtendrá un bonificador de +1 a Combate, no podrá Rapiñar equipo, no podrá desarmarse de ninguna manera y el arma no podrá ser Rapiñada.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f49a-49ac-2d0b-6b4c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="a6f0-7184-a73a-86d">
+      <entryLinks>
+        <entryLink import="true" name="Hoz" hidden="false" id="258b-29e7-ed22-49ca" type="selectionEntry" targetId="10e3-42f-6178-d1ac">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b93-827c-3032-973b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db5-254d-b7f2-86b3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Arma incrustada" hidden="false" id="74ff-c6c0-c1ed-9200" type="selectionEntry" targetId="4e37-d54e-a829-6cea"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35f4-e208-59b1-cd5c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Filo pequeño" hidden="false" id="d0e9-b698-5bbf-178c">
+      <entryLinks>
+        <entryLink import="true" name="Filo Pequeño" hidden="false" id="9e27-70c3-c7b5-51e0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7273-8a59-5349-dbab" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a059-5e8-ce5d-e803" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Arma incrustada" hidden="false" id="4f84-c544-2da6-4093" type="selectionEntry" targetId="4e37-d54e-a829-6cea"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1f1-ea15-49d7-ac85" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Filo medio" hidden="false" id="6398-5711-7901-62bb">
+      <entryLinks>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="113f-a2b1-b127-93f2" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aded-ddcc-b0ec-8830" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c54f-44ff-db7e-373b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Arma incrustada" hidden="false" id="9bc1-2bc8-637-2402" type="selectionEntry" targetId="4e37-d54e-a829-6cea"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="114b-c54c-48f6-a1f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Despojo" hidden="false" id="4007-565c-10ec-4a8a" publicationId="6699-072c-136a-7d30" page="57">
+      <categoryLinks>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="52ef-33d8-a3bc-c43" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="9b46-56d-66c3-2dba" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Despojo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="8cdf-52c-214c-938" publicationId="6699-072c-136a-7d30" page="57">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="81c5-e90-48a-d162" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="a148-4593-5e8-306d" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="3280-c1db-3134-8ad3" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="ebf0-d762-90ad-67cb" type="selectionEntry" targetId="10e3-42f-6178-d1ac"/>
+            <entryLink import="true" name="Maza" hidden="false" id="8fba-365c-e329-71cb" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b53-fc4d-6ff-fa7f" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1b02-def9-a1da-85df" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="a211-16ad-d179-1c92" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="551d-2d4-cdf1-dab2" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero humano" hidden="false" id="6295-fdc7-9978-a8a8" type="selectionEntry" targetId="d01b-ea85-f31c-ed31">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ed9-8fd2-eee7-8f31" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Escoria" id="2ec0-afa8-36de-5980" hidden="false" publicationId="6699-072c-136a-7d30" page="57">
+              <description>Los Despojos no pueden utilizar dosis de Ambrosía ni utilizar armas incrustadas.</description>
+            </rule>
+          </rules>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="df7a-aa81-8ee8-49f1" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aberración" hidden="false" id="16ad-7776-78da-499e">
+      <categoryLinks>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="88e1-4377-d4dd-f4bb" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="242a-594d-1714-a0bb" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4abc-6abf-1f79-21a1" id="4ab0-c33e-d4de-113d" primary="false" name="Mónguer"/>
+        <categoryLink targetId="62c5-8d0d-3637-d0c2" id="469b-14ce-a068-14d6" primary="false" name="Raudo"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="35"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="2bcf-87a0-9752-9244" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d6e-8d1a-20c4-1b13" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db15-c9fe-c18a-27ae" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="9805-b074-945a-c53" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Aberración" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="630d-ec80-486-fac">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Locura" id="d909-16bd-72df-8b2f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
+          <description>Mirar a la cara de las Aberraciones es mirar a una locura más allá de la humanidad, que difícilmente no te puede afectar. Las miniaturas que las Asalten perderán todos sus bonificadores por el Asalto.</description>
+        </rule>
+        <rule name="Sobredosis" id="e8ea-975b-d835-bc8f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
+          <description>Las Aberraciones tienen más problemas para tolerar la Ambrosía y parten con un -2 en la tirada para ver si la droga hace efecto.</description>
+        </rule>
+        <rule name="Mal viaje" id="eb09-44a0-8b92-141c" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
+          <description>La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cosechador" hidden="false" id="184e-83db-c249-9124" publicationId="6699-072c-136a-7d30" page="59">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="b07c-a747-a1ad-93c4" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="5bb-c3e4-3019-8041" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="596e-cbb-7c4e-d587" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="e57f-7620-116c-dd" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="108c-df55-7de7-bf35" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Filo pequeño" hidden="false" id="b217-ad27-7ea1-52cb" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="540c-8b0-ed23-4dcd" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="540e-9078-1ad0-9b85" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b19d-926a-ab68-33b1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="32c9-63c7-32b5-bc1e" hidden="false" defaultSelectionEntryId="cf1f-50a1-bf40-447f">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="cf1f-50a1-bf40-447f" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero humano" hidden="false" id="7b6b-c32c-3125-8f43" type="selectionEntry" targetId="d01b-ea85-f31c-ed31">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="178b-445f-66ff-4a56" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Mal viaje" id="a780-e522-ceae-a174" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
+          <description>El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</description>
+        </rule>
+        <rule name="Cosecha" id="f5e7-99da-517a-b7fe" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
+          <description>Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
+•  1    - Ninguna
+•  2-5 - 1
+•  6-9 - 2
+•  10  - 3</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="54f3-4751-27ab-9cba" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Cosechador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="63ee-7993-4ab3-7921">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Desgarrador" hidden="false" id="54cc-a06d-d984-aec3" publicationId="6699-072c-136a-7d30" page="60">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="c4e1-ddcd-6c71-c933" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="d303-cb82-d02f-c31" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Desgarrador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="df5d-f80e-5c77-cec7">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="92d8-a345-aab1-dbee" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hoz" hidden="false" id="9e5d-9f84-e4a8-81f4" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Filo medio" hidden="false" id="dbef-82b7-cae8-2017" type="selectionEntry" targetId="6398-5711-7901-62bb"/>
+            <entryLink import="true" name="Filo pequeño" hidden="false" id="ad82-b376-2abb-a36c" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e1-11ef-99c1-63ce" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc9-c81f-ed02-1885" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="764d-ceba-90f4-b1b3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="9333-39fa-dc7b-f378" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero humano" hidden="false" id="a89d-36ab-3458-45a8" type="selectionEntry" targetId="d01b-ea85-f31c-ed31">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e9-c652-95bb-9e6e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="c828-1d43-e704-5e8e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <rules>
+        <rule name="Furia psicópata" id="598f-c0d1-9fa4-2153" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
+          <description>Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</description>
+        </rule>
+        <rule name="Mal viaje" id="df26-270c-ad71-303a" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
+          <description>En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Glotón" hidden="false" id="1b24-94-efcb-a387" publicationId="6699-072c-136a-7d30" page="61">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="45"/>
+      </costs>
+      <profiles>
+        <profile name="Glotón" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="6749-466-4ac1-c76e">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="b0d9-7f0e-1f0-9d63" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="e945-a0f1-da9f-dfce" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="4b3c-4693-578a-b484" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="cc91-498a-eb7f-1a1f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="31a0-53e9-68ca-16cb" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero humano" hidden="false" id="d134-7bd-1af0-5f5d" type="selectionEntry" targetId="d01b-ea85-f31c-ed31">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a253-1bbc-2fb0-5031" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5353-b33a-56f4-4829" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="9d81-3a2f-ac50-bb1f" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <rules>
+        <rule name="Devorador" id="56c8-d1ae-d3c6-fa44" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
+          <description>Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</description>
+        </rule>
+        <rule name="Mal viaje" id="b54c-ac57-13a2-c2d6" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
+          <description>El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="56e6-4f17-fb64-8856" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="e802-505f-c1e5-a9d3" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tio" hidden="false" id="e115-5524-7171-f76e" publicationId="6699-072c-136a-7d30" page="62">
+      <categoryLinks>
+        <categoryLink name="Banda: Idos" hidden="false" id="e9a1-cbc2-eb42-d42c" targetId="af76-5143-157c-3a3f" primary="false"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="b0a4-4d44-ada9-7969" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="bf2a-8a01-ac76-e060" targetId="d1a7-5f24-003f-6400" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Torbellino" hidden="false" id="95a7-6a97-c16c-290">
+          <profiles>
+            <profile name="Torbellino" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="1946-897d-dcbc-6267">
+              <characteristics>
+                <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+                <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
+                <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+                <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos, incrustada</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Torbellino" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8a67-783c-3fc1-f462">
+              <characteristics>
+                <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A la hora de atacar, puede hacerlo normalmente, o gastar una Fase de activación completa (usar sus 2 Acciones) en hacer un ataque Torbellino. Puede realizarlo incluso estando trabado en Combate. Si hace esto, toda miniatura en un radio de 5 cm de distancia (amiga o enemiga) deberá superar una tirada de Agilidad o resultará impactada automáticamente (como si lo hubiera sido en Combate).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d95c-92a2-f20-1712" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d5-29d6-6870-c2a5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Tio" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="cf89-8b1b-a0b9-be84">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (9)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Mal viaje" id="bb44-3669-492e-f39c" hidden="false">
+          <description>Tío pierde el impulso para utilizar Torbellino y no podrá utilizarlo durante esta Fase de activación.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="64f9-84aa-f04e-baed" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Madre" hidden="false" id="edb6-24fd-19e1-820" publicationId="6699-072c-136a-7d30" page="63">
+      <categoryLinks>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="3f69-839e-148-3738" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="f0b4-5710-9719-15e4" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="523b-a1e6-f4f8-d20e" primary="false" name="Banda: Idos"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="90"/>
+      </costs>
+      <profiles>
+        <profile name="Madre" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="bb15-74e4-f05c-65c4">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (2)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Cosechadora" id="6de0-3672-ef1e-a7ea" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
+          <description>Madre puede cosechar al igual que un Cosechador. Hay que tener en cuenta que Madre contará como un Cosechador más para las restricciones de creación de la banda.</description>
+        </rule>
+        <rule name="Presencia perturbadora" id="623e-6abb-8849-8c12" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
+          <description>Es difícil explicar la sensación de ver a Madre. Es como contemplar a una diosa oscura caminando entre nosotros. Cualquier miniatura enemiga que desee Disparar, Asaltar o utilizar cualquier tipo de Acción que pueda dañar a Madre, o a cualquiera de sus miniaturas aliadas a 15 cm o menos de ella, deberá realizar una tirada de Dureza y en caso de fallarla perderá esa Acción.</description>
+        </rule>
+        <rule name="Lucidez" id="2f7a-bfa9-8f26-2dc9" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
+          <description>Cualquier Ido de su banda que consuma Ambrosía a 20 cm o menos de Madre no deberá tirar en la Tabla de efecto, consiguiendo siempre que funcione perfectamente. Sin embargo la propia Madre no podrá utilizar nunca Ambrosía.</description>
+        </rule>
+        <rule name="Mascota" id="ea03-9dd-68a5-a598" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
+          <description>Madre siempre lleva a alguna de sus mascotas a la batalla. Antiguos enemigos a los que ha torturado física y mentalmente hasta convertirlos en perturbadas criaturas sumisas. La mascota no actúa de manera individual, sino que se mueve siempre con Madre. Hasta que la mascota sea Abatida, será esta la que Combata y reciba los impactos de disparos, utilizando sus Atributos. Está armada con garras y dientes.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mascota" hidden="false" id="d122-2092-7418-15fc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90e1-243e-f230-e004" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e6c-4461-1b93-1e06" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mascota" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="24e6-9c16-3604-bf2">
+              <characteristics>
+                <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">-</characteristic>
+                <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+                <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+                <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">-</characteristic>
+                <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+                <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+                <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="a0c9-1d29-8657-6698" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4526-1ca0-8f70-1905" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f311-cd92-33b4-f7bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
