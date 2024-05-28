@@ -229,26 +229,141 @@ La vaporeta ignora totalmente los Blindajes y Coberturas parciales.</characteri
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Chasqueador y traje voltaico" id="ebb9-d5b5-a31f-aec4" hidden="false">
+    <selectionEntry type="upgrade" import="true" name="Chasqueador y traje voltaico" hidden="false" id="d1ed-258e-366-d63b">
       <entryLinks>
-        <entryLink import="true" name="Chasqueador" hidden="false" id="49d3-57c-a089-aa39" type="selectionEntry" targetId="e19f-5bc9-b421-60a6">
+        <entryLink import="true" name="Chasqueador" hidden="false" id="b9b6-1153-7c46-c04f" type="selectionEntry" targetId="e19f-5bc9-b421-60a6">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef-f69d-64f5-c936" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="130f-9113-154d-e7ac" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7529-9ee1-620d-207d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="933a-13c9-d349-b8cd" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Traje voltaico" hidden="false" id="8b1b-c946-f3f0-dbee" type="selectionEntry" targetId="b6b6-9ea3-ad4d-9730">
+        <entryLink import="true" name="Traje voltaico" hidden="false" id="f825-2ce7-de5f-f538" type="selectionEntry" targetId="b6b6-9ea3-ad4d-9730">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1e2-d7bd-af14-af26" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d20-4a62-c586-6b90" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4841-92ca-8c42-eaa7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d1a-6de6-ea6a-850b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f745-f072-a802-82e4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a6c-266-a0d-4ab6" includeChildSelections="false"/>
       </constraints>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Dinamo" hidden="false" id="ea3b-14d3-df9-a3a0" publicationId="6699-072c-136a-7d30" page="38">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="476f-664f-cf39-efa5" id="2cea-3668-f83d-1009" primary="false" name="Banda: Chatarreros"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="d6ea-d3b5-38e7-95e5" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ropas resistentes" hidden="false" id="83fb-38c1-955a-44da" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8c5-e09a-6d9e-bf99" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cacharras del oficio" hidden="false" id="a956-91bd-7ff2-4450" type="selectionEntry" targetId="82cc-581b-c16b-22e4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a94a-8b77-7980-94" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="b69a-6da7-b6d3-7d8d" hidden="false" defaultSelectionEntryId="bad8-8f81-a14-4f93">
+          <entryLinks>
+            <entryLink import="true" name="Bombas de humo" hidden="false" id="bad8-8f81-a14-4f93" type="selectionEntry" targetId="f855-3153-f205-53df"/>
+            <entryLink import="true" name="Bombas incendiarias" hidden="false" id="5af9-8574-e6e2-caef" type="selectionEntry" targetId="62d3-9592-5791-75e8"/>
+            <entryLink import="true" name="Vaporeta" hidden="false" id="633-378c-8f21-e750" type="selectionEntry" targetId="a94f-6fec-c421-f6c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d92f-b7f5-5c1b-ae03"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chasqueador y traje voltaico" hidden="false" id="ad31-64d7-c4f3-7cd7" type="selectionEntry" targetId="d1ed-258e-366-d63b"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="732-408d-f260-ac66" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a0-d138-91c-2f9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Dinamo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="5d28-1c88-ef70-f842">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Engranaje" hidden="false" id="c27c-fefc-3a05-ac58" publicationId="6699-072c-136a-7d30" page="39">
+      <categoryLinks>
+        <categoryLink targetId="476f-664f-cf39-efa5" id="f3f2-34ca-4a35-764e" primary="false" name="Banda: Chatarreros"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="3407-fbad-d7d9-834c" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Engranaje" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="36a7-4840-88-40a3">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blindaje" id="7969-399b-3be3-cf99" hidden="false" defaultSelectionEntryId="deed-d666-3313-19b6">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="9e77-8921-2803-5848" type="selectionEntry" targetId="ff92-8214-bc9a-f318"/>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="deed-d666-3313-19b6" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7511-1ae1-ce42-63dc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="951d-22b7-8876-fec7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aec2-c185-178e-8728" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="d611-8c-d8d1-cc8d" hidden="false" defaultSelectionEntryId="a770-e03b-4351-26ec">
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="a770-e03b-4351-26ec" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="afc-b293-228b-82f0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Maza" hidden="false" id="bf19-a60e-fc73-8b04" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="c2eb-ade-c6da-31c3" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+            <entryLink import="true" name="Trabuco" hidden="false" id="a029-9f05-f3b1-2bb8" type="selectionEntry" targetId="a5f0-d0ff-ae29-49bc"/>
+            <entryLink import="true" name="Bombeadora" hidden="false" id="a7c4-7e81-3f7d-d83a" type="selectionEntry" targetId="8e97-dbed-8671-64b2"/>
+            <entryLink import="true" name="Rifle" hidden="false" id="8f00-6547-8966-93fa" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="96b3-6cdd-69bc-4e79" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33b7-c695-88a3-c2c8" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5dad-dcdc-5d2b-3539" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Balas" hidden="false" id="b771-903e-f734-7209" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
