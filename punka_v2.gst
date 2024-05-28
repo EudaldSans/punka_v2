@@ -285,6 +285,10 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
               </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef6d-2e19-706a-f033" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb7-614c-89ba-903c" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <modifiers>
@@ -470,6 +474,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="2bee-4158-379-262" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="bbda-d5ca-2b18-d3a5" primary="true" name="Mercenarios"/>
@@ -595,6 +600,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="a353-f705-ca9c-cb51" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="85c1-af91-5b8b-10" primary="true" name="Mercenarios"/>
@@ -1204,10 +1210,10 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="1cdd-1929-bb46-a022" name="Balas" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
-        <entryLink import="true" name="Bala apañada" hidden="false" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
+        <entryLink id="1cdd-1929-bb46-a022" name="Bala" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
+        <entryLink import="true" name="Bala apañada" hidden="true" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
               </conditions>
