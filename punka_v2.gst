@@ -159,6 +159,7 @@
         <infoLink id="e873-8a1f-9b28-45a9" name="Retraso (X)" hidden="false" targetId="1d8a-9fa1-9a2d-eeb7" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Equipo de la banda" id="4af8-4d51-42ab-8460" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -167,6 +168,7 @@
         <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
+        <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460" type="category"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
