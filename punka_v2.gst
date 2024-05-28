@@ -158,6 +158,22 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Mónguer" id="4abc-6abf-1f79-21a1" hidden="false">
+      <infoLinks>
+        <infoLink name="Mónguer" id="dc97-885c-bbca-71a8" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Retraso (2)" id="cdf3-f61-9168-6640" hidden="false">
+      <infoLinks>
+        <infoLink name="Retraso (X)" id="47f5-3f1a-88e0-6e41" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="false"/>
+    <categoryEntry name="Veneno (4)" id="3145-4b39-bfc8-4a22" hidden="false">
+      <infoLinks>
+        <infoLink name="Veneno (X)" id="3dfc-2530-2a7a-7a76" hidden="false" type="rule" targetId="c1f4-2a2c-c27b-84bc"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -166,7 +182,7 @@
         <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
-        <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460" type="category"/>
+        <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -190,7 +206,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="El viejo sajarratas" hidden="false" id="8846-7aee-8d93-7867">
+    <selectionEntry type="upgrade" import="true" name="El viejo sajarratas" hidden="false" id="8846-7aee-8d93-7867" publicationId="6699-072c-136a-7d30" page="116">
       <profiles>
         <profile name="El viejo sajarratas" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="614b-1c0a-b885-e4c9">
           <characteristics>
@@ -212,9 +228,171 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <entryLink import="true" name="Cuero endurecido" hidden="false" id="1876-b2c8-1379-98d6" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
           <modifiers>
             <modifier type="set" value="Capa de ratas" field="name"/>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="4abc-6abf-1f79-21a1" id="33bb-acbc-694f-5188" primary="false" name="Mónguer"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c889-a75d-5f3e-8115" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="5 duros pa’l bus" id="f763-eea0-c9d5-29dc" hidden="false" publicationId="6699-072c-136a-7d30" page="116">
+          <description>Sajarratas es un auténtico plasta cuando se pone a pedir pelas. Te soba, te llora, te amenaza, te suplica... Quitárselo de encima es imposible sin emplear la violencia. Si durante sus Acciones Sajarratas entra en contacto con una miniatura enemiga se quedará ahí pegada sin que haya Combate, simplemente siendo plasta. La única Acción que podrá usar una vez en contacto es Chorimangui. Si una miniatura enemiga está en contacto con Sajarratas durante sus Acciones deberá Combatir contra él para Abatirlo y quitárselo de encima. Si Sajarratas gana el Combate simplemente seguirá ahí pegado dando la vara.</description>
+        </rule>
+        <rule name="Chorimangui" id="ffd5-408f-256e-5140" hidden="false" publicationId="6699-072c-136a-7d30" page="116">
+          <description>Sajarratas huele las balas a leguas, y a veces pedir sólo es una distracción para mangar. Mientras está en contacto con una miniatura enemiga, puede realizar una tirada de Técnica, y robarle 1 bala si esta poseía alguna.</description>
+        </rule>
+        <rule name="Cansino" id="dcaa-b391-c673-ff6" hidden="false" publicationId="6699-072c-136a-7d30" page="116">
+          <description>Nadie sabe cómo puede ser que Sajarratas aún siga vivo. Es una piltrafa humana a la que le ha pasado de todo, pero aún así, cuando parecía que la había diñado va y vuelve a andar por ahí. Si Sajarratas es Abatido, gastará sus siguientes 2 Acciones en recuperarse, para luego volver a estar ahí listo para incordiar al enemigo.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Imperatrix rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
+      <entryLinks>
+        <entryLink import="true" name="Rifle" hidden="false" id="e9ff-ef9b-5a53-2c3" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+          <entryLinks>
+            <entryLink import="true" name="Mira telescópica" hidden="false" id="c2d3-ad13-c62a-bf07" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff72-eb84-c03d-8513" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fce-c011-39c2-4169" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="889c-2de-145c-230c" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4773-9ea0-d0cd-40ab" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
       </entryLinks>
+      <profiles>
+        <profile name="Imperatrix rabiosa" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="2e74-1a19-84d8-8eb3">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="e48c-7109-5774-1617" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="663c-e542-16bb-1d62" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="cdf3-f61-9168-6640" id="d65-b6c8-57a1-353f" primary="false" name="Retraso (2)"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Me quedo con tu cara" id="b702-a3d2-e892-434a" hidden="false" publicationId="6699-072c-136a-7d30" page="117">
+          <description>A Rabiosa le dará especial tiña una miniatura de la banda rival. El jugador deberá apuntar en secreto antes de comenzar la partida cuál es esa miniatura. Al final de la partida lo mostrará, y si ha conseguido abatirla, su banda conseguirá 1 punto adicional en el escenario, pero si no lo ha conseguido, será el rival el que tenga 1 punto más.</description>
+        </rule>
+        <rule name="Brazo mecánico" id="d440-b1a2-764c-fbc9" hidden="false" publicationId="6699-072c-136a-7d30" page="117">
+          <description>Rabiosa puede utilizar su brazo mecánico para protegerse de los ataques cuerpo a cuerpo. En Combate, Rabiosa obtendrá un bonificador de +2 al Blindaje.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mongodrilo dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a4c2-f028-f3ac-8b88" id="3f98-d51c-dcf6-661b" primary="true" name="Mercenarios"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="d32d-280f-eed6-c4b4" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Corredor" hidden="false" id="f9a6-78c4-bd75-1b7c" type="selectionEntry" targetId="d93c-da49-e038-4a80">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df4d-4b9e-65e-6bf1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ddf-6478-a1b2-fef7" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Mimetismo" hidden="false" id="8b8c-95a7-4da8-927" type="selectionEntry" targetId="d370-d789-b8d7-7f83">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f87-1c5-5c77-bc26" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389c-ee5e-891c-4faa" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Sónar" hidden="false" id="da7c-84c2-e8df-785f" type="selectionEntry" targetId="a0d1-a53c-c996-b5ac">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90a5-8f08-995b-e736" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b409-dacb-78c7-26d2" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Ballesta" hidden="false" id="ac59-e4c2-4838-500d" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d60c-3d5-ebb2-eab2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b24-a7e1-3c5-bc3" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Garrapata" field="name"/>
+          </modifiers>
+          <profiles>
+            <profile name="Virotes" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="efad-baff-4286-3c51">
+              <characteristics>
+                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Cuando comienza la batalla, y cada vez que recargue la ballesta, Mongodrilo debe elegir entre los siguientes virotes:
+• Envenenado: la punta del virote se ha untado con una mezcla de semen de mongolongo y glándula de psicosapo. Los virotes tienen la Regla especial Veneno (4).
+• Volador: el virote lleva unas plumas de halcón cafetero que hace que la distancia del arma aumente 15 cm en todos sus rangos.
+• Penetrador: la punta del virote está hecha con dientes de terraburón, capaz de penetrar en los mejores blindajes. Los virotes tienen Penetración 5.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Piel de mongolongo" hidden="false" id="e587-84f0-ee38-8473">
+          <profiles>
+            <profile name="Piel de mongolongo" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="377b-79d-b6c2-feb2" publicationId="6699-072c-136a-7d30" page="118">
+              <characteristics>
+                <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">2 contra disparos, 5 contra ataques cuerpo a cuerpo</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b154-a232-9173-d48e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99af-4888-d86b-484f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Inmune al Veneno y Terreno contaminado" id="3c6f-a72d-a13e-ff9e" hidden="false"/>
+        <rule name="Trampero" id="f31b-fbfa-4fb2-1b76" hidden="false" publicationId="6699-072c-136a-7d30" page="118">
+          <description>Mongodrilo es un experto en crear cepos trampa para capturar a sus presas. En el momento en el que se despliega Mongodrilo, el jugador debe colocar 6 marcadores de 25 mm en cualquier lugar de la mesa excepto la zona de despliegue del rival y a una distancia mínima de 20 cm entre ellos. Sin que el jugador rival lo sepa, tres de estos marcadores contendrán una trampa y otros tres no. Puedes apuntarlo en una hoja, o que los marcadores se den la vuelta para revelar si tienen trampa. Cualquier miniatura excepto Mongodrilo (amiga o enemiga) que pase a una distancia de 2,5 cm o menos de un marcador hará que se descubra. Si este tenía trampa, la miniatura habrá caído en ella, y sufrirá un impacto de Fuerza 2 y Penetración 3. Además, si no resulta Abatida, no podrá realizar Acciones de Movimiento, incluido Separarse del Combate, y deberá gastar su siguiente Acción únicamente en librarse del cepo, cuando no esté trabado en Combate cuerpo a cuerpo.</description>
+        </rule>
+        <rule name="Escoria mutarda" id="79de-4781-c71b-4217" hidden="false" publicationId="6699-072c-136a-7d30" page="118">
+          <description>Mongodrilo no puede unirse a ninguna banda del V Reich, ya que con su mutardofobia sería complicado</description>
+        </rule>
+        <rule name="Ojo loco" id="4fab-362e-dc17-a877" hidden="false" publicationId="6699-072c-136a-7d30" page="118">
+          <description>El enorme ojo de Mongodrilo es bueno para apuntar, pero a veces le juega malas pasadas cuando se concentra demasiado y se le va para sitios nada previstos. Si gastas una Acción en Apuntar con Mongodrilo, debes tirar 1d10. Con un resultado de 1-2 en lugar del bonificador de +3 a la Precisión, tendrá un penalizador de -2.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -596,6 +774,67 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mira telescópica" hidden="false" id="e215-f5e2-840d-637d">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Mira telescópica" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="637a-93b4-cd8c-9f7a" publicationId="6699-072c-136a-7d30" page="45">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Puede aplicarse una mira telescópica a un rifle o una
+pistola. Esta cambia los modificadores del arma debido a los
+rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sónar" hidden="false" id="a0d1-a53c-c996-b5ac" publicationId="6699-072c-136a-7d30" page="85">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6337-d3da-3855-7b50" id="dc4f-b44b-2e2c-acb3" primary="false" name="Mutación"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Sónar" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="ceb3-f342-5d3-b417">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. 
+El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mimetismo" hidden="false" id="d370-d789-b8d7-7f83" publicationId="6699-072c-136a-7d30" page="85">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mutación" hidden="false" id="cdc4-10f4-564f-9b5c" targetId="6337-d3da-3855-7b50" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mimetismo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="3a85-2a9f-d35f-8382">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo puede camuflarse de manera asombrosa. Obtiene la Regla especial Camuflaje.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Camuflaje" id="f0c-7d57-91f7-6d64" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Corredor" hidden="false" id="d93c-da49-e038-4a80" publicationId="6699-072c-136a-7d30" page="84">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+      </costs>
+      <rules>
+        <rule name="Corredor" id="eeed-daa-356-2440" hidden="false">
+          <description>El Mutardo tiene unas piernas que le permiten alcanzar mayores velocidades. Obtiene la Regla especial Raudo</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Raudo" id="490-96a-4ab7-2dd" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
