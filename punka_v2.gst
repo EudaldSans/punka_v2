@@ -53,6 +53,11 @@
         <characteristicType id="f7a5-6337-8cb7-0631" name="Reglas"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Mutación" id="6863-db9a-9cab-eabc" hidden="false">
+      <characteristicTypes>
+        <characteristicType id="fb87-d2c2-bb7e-f5ce" name="Reglas"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false"/>
@@ -1122,53 +1127,6 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b85-ee0f-2914-5f28" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sónar" hidden="false" id="a0d1-a53c-c996-b5ac" publicationId="6699-072c-136a-7d30" page="85">
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="6337-d3da-3855-7b50" id="dc4f-b44b-2e2c-acb3" primary="false" name="Mutación"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Sónar" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="ceb3-f342-5d3-b417">
-          <characteristics>
-            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. 
-El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mimetismo" hidden="false" id="d370-d789-b8d7-7f83" publicationId="6699-072c-136a-7d30" page="85">
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Mutación" hidden="false" id="cdc4-10f4-564f-9b5c" targetId="6337-d3da-3855-7b50" primary="false"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Mimetismo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="3a85-2a9f-d35f-8382">
-          <characteristics>
-            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo puede camuflarse de manera asombrosa. Obtiene la Regla especial Camuflaje.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Camuflaje" id="f0c-7d57-91f7-6d64" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Corredor" hidden="false" id="d93c-da49-e038-4a80" publicationId="6699-072c-136a-7d30" page="84">
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
-      </costs>
-      <rules>
-        <rule name="Corredor" id="eeed-daa-356-2440" hidden="false">
-          <description>El Mutardo tiene unas piernas que le permiten alcanzar mayores velocidades. Obtiene la Regla especial Raudo</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Raudo" id="490-96a-4ab7-2dd" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bala apañada" hidden="false" id="9aa3-b5a1-c176-a5e" publicationId="6699-072c-136a-7d30" page="45">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
@@ -1214,6 +1172,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="6b9e-ef75-6f7f-9178"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
@@ -1247,6 +1206,123 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </modifiers>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mutaciones" id="a8d4-6a28-ce9b-4038" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sónar" hidden="false" id="a0d1-a53c-c996-b5ac" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Mutación" hidden="false" id="dc4f-b44b-2e2c-acb3" targetId="6337-d3da-3855-7b50" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Sónar" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="ceb3-f342-5d3-b417">
+              <characteristics>
+                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. 
+El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.El Mutardo posee la capacidad de situar a sus enemigos en el espacio aunque no tenga Línea de visión hacia ellos. Ya sea por un olfato hiperdesarrollado, emisión de ultrasonidos que capta a través de unas grandes orejas membranosas, una gran cabeza abovedada sensible a cambios de presión y humedad imperceptibles o todo junto. La cuestión es que prácticamente pueden ver a través de las paredes y nada puede pillarlo por la espalda. El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180° frontales habituales), por lo que se tendrá en cuenta cualquier parte de su peana para calcular Coberturas. Además, a la hora de realizar un Asalto, el Mutardo contará como que siempre tiene Línea de visión hacia su objetivo al comienzo de todas sus Acciones.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="403f-3347-ae44-aabd" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mimetismo" hidden="false" id="d370-d789-b8d7-7f83" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Mutación" hidden="false" id="cdc4-10f4-564f-9b5c" targetId="6337-d3da-3855-7b50" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mimetismo" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="3a85-2a9f-d35f-8382">
+              <characteristics>
+                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Mutardo puede camuflarse de manera asombrosa. Obtiene la Regla especial Camuflaje.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Camuflaje" id="f0c-7d57-91f7-6d64" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="925f-7791-bdc5-19db" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Corredor" hidden="false" id="d93c-da49-e038-4a80" publicationId="6699-072c-136a-7d30" page="84">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Raudo" id="490-96a-4ab7-2dd" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Corredor" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="9894-7c18-c79f-b327">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene unas piernas que le permiten alcanzar mayores velocidades. Obtiene la Regla especial Raudo</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="39e3-4c5a-e015-4853" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carga brutal" hidden="false" id="b2a2-2d91-379-e2ee">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Carga brutal" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="7ec8-7fec-1810-e69c">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo es capaz de embestir de manera salvaje a la hora de Asaltar. Obtiene la Regla especial Ímpetu (1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Impetu (1)" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Capacitado" hidden="false" id="4f7e-d6f9-32ae-9ffc">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+          </costs>
+          <profiles>
+            <profile name="Capacitado" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="b0c4-f8c4-3c84-78f8">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo es más capaz que la mayoría. Obtiene un bonificador de +1 al Atributo de Acciones.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cachas" hidden="false" id="e8de-ce-8096-f027">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Cachas" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="1ed7-f753-c911-dcfe">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una fortaleza superior a la normal. Obtiene un bonificador de +2 a su Atributo de Fuerza.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cola afilada" hidden="false" id="4ca4-fc23-a038-6df7">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Cola afilada" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="23cc-b46d-fcc8-332f">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo posee una cola prensil con la que es capaz de fustigar a su enemigo.
+Si lo desea, el Mutardo puede lanzar UN dado adicional por Fase de activación en una Acción de Combate, que será
+considerado un ataque con las estadísticas de un filo pequeño (sin que esto cuente como un arma para los límites de equipo), con un penalizador de -1 al Atributo de Combate en el ataque realizado con la cola. 
+Deberá elegir el resultado que más le convenga para su tirada enfrentada de Combate.
+Al suponerse que este ataque se realiza simultáneamente al normal del Mutardo, una miniatura que realice un ataque con bonificadores por Asalto o Potenciación, podrá beneficiarse de estos en su ataque normal y el realizado con la cola.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1311,7 +1387,7 @@ No es posible Apuntar ni Evitar Cobertura con un Tiro parabólico.</description>
     <rule id="9931-0e0e-fa4f-17d8" name="Usar y tirar" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Un arma con esta regla, sólo podrá utilizarse en una única ocasión durante toda la partida.</description>
     </rule>
-    <rule id="77ee-07d8-dd91-def2" name="Ímpetu (X)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="77ee-07d8-dd91-def2" name="Impetu (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Obtiene un bonificador a la Penetración y a la Fuerza igual al número entre paréntesis por cada bonificador de +1 al Combate recibido por el Movimiento del Asalto.</description>
     </rule>
     <rule id="8837-2aa8-e20e-0ed5" name="Incendiaria (2)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
