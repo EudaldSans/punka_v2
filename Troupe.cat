@@ -169,6 +169,20 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
           </repeats>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Domador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1ae0-350-470b-37a5">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Avivar, Señor de las bestias</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="1b99-d4be-4cdc-ddbf" name="Acróbata" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -181,6 +195,7 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Catapulta infernal, Escurridizo, Raudo, Todoterreno</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -246,6 +261,7 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia parda, Lucimiento</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -312,6 +328,7 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">El mayor espectaculo del mundo</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -369,6 +386,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">¡Matad a eso!, Mimo, Muro imaginario</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -406,6 +424,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Levitación, Retraso (3), Vidente</characteristic>
           </characteristics>
         </profile>
       </profiles>
