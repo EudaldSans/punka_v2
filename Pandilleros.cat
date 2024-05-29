@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="25d3-2bc1-a365-d5de" name="Pandilleros" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Piltrafa" hidden="false" id="cfb8-4558-acab-480d" publicationId="6699-072c-136a-7d30">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="64b7-daa3-7fd2-f182" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="ad57-fab4-75a9-3a52" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Piltrafa" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="154a-8aae-b053-ab85">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blindaje" id="2d8a-2980-d23a-5c1" hidden="false" defaultSelectionEntryId="77d3-a222-3cf-51eb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c160-29-de99-e7e3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c160-29-de99-e7e3-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="77d3-a222-3cf-51eb" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="41dc-5a46-8cd4-a0c2" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="5c97-91a3-f38e-e28c" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="e780-dbd0-5b31-b7b6" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f438-fe2b-ba27-56fa" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d9e8-7dcc-2067-fa17" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="5621-bccf-6250-61e5" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="73ff-499d-fe2b-9ef2" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="5cf4-cdef-aa7f-7c71" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="1a06-e70-fdd0-24aa" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Arco" hidden="false" id="39a6-c21-9bb5-5d70" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="a6c1-c55a-6bcf-c65f" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="66a6-b4f4-c644-c51" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Machaca" hidden="false" id="3eca-a5cc-961-8004">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="55a-a4bc-2fd8-2cf1" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="a345-b71d-228b-6548" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Machaca" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1aae-5f71-8f61-f009">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Retraso (1)" id="3b55-be8f-4d5e-8456" hidden="false" type="rule" targetId="515b-e451-e3f5-14d0"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blindaje" id="8b1-22bc-fbc9-d63f" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ae0-8051-3001-1913" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="103b-d25c-e26e-e067" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="e5cb-fca6-f5c4-bc25" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="ef0e-496a-4442-a14b" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="2708-cfec-f288-1ac9" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="26e-7732-b0bd-b967" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c92-17d5-ee-8e46" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa57-d587-cb90-fd1c" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="1aaa-11c8-1a62-ef26" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="a235-97a5-2b48-5dfe" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="79ee-8f75-6330-5c2e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="6e26-8c34-fff5-63e7" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Arco" hidden="false" id="1800-24ba-6060-88ea" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
+                <entryLink import="true" name="Maza" hidden="false" id="2e90-73d2-8b99-ebfd" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="f63d-dbf5-d8f7-5813" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="ea86-d08c-53a9-3fda" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="41b7-205d-9913-8c34" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="3ec4-24de-cafc-19dc" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4cc-7962-594b-b38e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bruto" hidden="false" id="3325-84b3-9584-e201">
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="7a8d-cc06-7ea3-4251" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="cd5a-4560-a0cf-e021" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bruto" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="4f6e-5c32-d178-2652">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="bcbc-b5cd-b107-696c" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="c8ef-25a1-e591-693b" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Maza" hidden="false" id="425a-b548-a217-694f" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="9e32-b812-84f8-14c" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Maza Pesada" hidden="false" id="9fb-6aee-2ebc-c44" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+                <entryLink import="true" name="Filo Pesado" hidden="false" id="6c0b-eaa-413e-8264" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="278b-1225-380a-4fe2" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5438-aa86-474d-e3a7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="9051-b90a-ea8b-9ba2" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="d404-b2e3-a557-bd0" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b44-1080-ddf8-fa8d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b44-1080-ddf8-fa8d-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="6e18-cdea-53b7-899f" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="4431-9522-fecc-7725" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pura chapa" hidden="false" id="87d9-3779-3acd-a496" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+              <modifiers>
+                <modifier type="set" value="15" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Escudo" hidden="false" id="8918-fafd-e0e5-fd66" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4311-d9bb-fbac-d3a5" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Curtido" hidden="false" id="fc29-4f2e-1c68-867c">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="1032-cfec-eef-ca45" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="93ab-afb9-7a3f-3d89" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Curtido" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="2795-d975-a405-5205">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d10a-3aa1-6a34-e3cb" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Retraso (2)" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="f06-f8e0-3a86-ae6b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="d6db-d6fb-db4c-3f31" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c246-aecd-16bb-4caf" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ed57-1807-136-6e4b" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Pistola" hidden="false" id="ae85-8237-82de-94d9" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Maza" hidden="false" id="8bd8-5ad9-4098-92d4" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="f590-91f8-9992-ff38" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="611e-a9ff-4997-d049" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="e11a-2a53-f78e-48e5" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="31e1-1f58-220f-d915" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="d2b-36a0-4fb1-b3b3" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="18e8-8f52-9bfb-4bf0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="f3f4-61db-924d-adb4" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3e-2f2b-763-22cc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3e-2f2b-763-22cc-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="dffc-d41d-d6d8-a526" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="1629-c1ee-88d4-fcd3" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="8cb8-74cf-b24f-da8f" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="15" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Jefe" hidden="false" id="8b63-c265-21db-352f">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="935e-3197-91a6-78b1" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="31e8-5fb-abad-bc9c" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Jefe" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="4776-697e-3124-2d39">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Retraso (3)" id="9e56-125c-7665-7dac" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="dbea-c46e-cc1c-1ae9" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="eb19-1506-b52b-dfe" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c938-4097-8fe3-b0cf" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4082-74b2-3771-6e8b" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Pistola" hidden="false" id="93ae-59ac-2935-69f0" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Maza" hidden="false" id="1b12-7a20-a019-e792" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="9ca2-bc64-9bc1-371f" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="8ab-f068-e155-739f" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="2421-5b3b-5582-e3b7" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="5831-389-8c37-2da6" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="58d5-bf94-9ae1-4432" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="d133-390e-2ad2-e564" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="e15-64ce-5ef3-76b8" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6f2-e6eb-bfb8-6b21-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f2-e6eb-bfb8-6b21-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="ea63-67bc-3ae3-ea2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="399e-34fd-476c-b364" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chaleco antibalas" hidden="false" id="c307-f25f-5f8f-7313" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f6b5-6b5d-6f1b-ce93" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8eb0-60f8-3b59-c10a" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Clint Tirofijo" hidden="false" id="57a1-482e-1e5f-62a4">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="6b4a-d7f7-b4fd-f924" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="9279-8ea5-faa0-e7bd" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="6017-6fe4-f8ed-25a4" primary="false" name="Banda: Pandilleros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Clint Tirofijo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="ba44-e35c-9b06-e348">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (3)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">7</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Por un puñado de balas, Imperdonable, Alégrame el dia, El Jinete Paliducho, Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pistola" hidden="false" id="b8cc-a7c3-e183-95b6" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="Lucy" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be87-1829-a22d-eddb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be87-1829-a22d-eddb-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="4d69-2359-d0dd-9c2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Por un puñado de balas" id="773-4055-f252-e9ea" hidden="false">
+          <description>Siempre que falle un disparo, el honor de Clint quedará tan tocado que cambiará de bando al principio del siguiente Turno de juego. Esto podrá suceder de nuevo durante la partida.</description>
+        </rule>
+        <rule name="Imperdonable" id="844b-9878-78bf-3d02" hidden="false">
+          <description>A Clint no le gusta que Lucy tenga competencia. Si llevas a Clint, ninguna otra miniatura de la banda puede estar equipada con un arma con la Regla especial Arma de fuego.</description>
+        </rule>
+        <rule name="Alégrame el día" id="af49-43c1-2fa6-ca82" hidden="false">
+          <description>Cuando Clint se haya quedado sin balas puede intentar una Acción de Disparo de manera normal. Si el resultado en la tirada de Precisión es par, Clint aún tendrá una última bala en el tambor que podrá utilizar normalmente. En caso de ser impar, mala suerte, definitivamente no hay balas. Solo podrá realizar esto una vez durante la partida.</description>
+        </rule>
+        <rule name="El Jinete Paliducho" id="c2e0-a5de-6e0a-4d07" hidden="false">
+          <description>Las miniaturas que disparen a Clint, sufrirán un penalizador de -1 a la Precisión.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac9-5714-79c8-f794"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7ac9-5714-79c8-f794">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9e40-76e9-2e11-5819" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lord Homoeroticus" hidden="false" id="297e-8b5e-d845-999a"/>
+  </selectionEntries>
+</catalogue>
