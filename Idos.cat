@@ -172,6 +172,20 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b71b-7b9e-75ea-73b0"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="b71b-7b9e-75ea-73b0">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="16ad-7776-78da-499e" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="184e-83db-c249-9124" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="54cc-a06d-d984-aec3" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="1b24-94-efcb-a387" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Aberración" hidden="false" id="16ad-7776-78da-499e">
       <categoryLinks>
@@ -229,6 +243,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <categoryLinks>
         <categoryLink targetId="af76-5143-157c-3a3f" id="b07c-a747-a1ad-93c4" primary="false" name="Banda: Idos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="5bb-c3e4-3019-8041" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="519d-1f4f-ea5a-45f6" id="2183-afc-3d0c-ef7" primary="false" name="Cosechador"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="596e-cbb-7c4e-d587" hidden="false">
@@ -471,6 +486,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <categoryLink targetId="6659-5ef7-facd-fab1" id="3f69-839e-148-3738" primary="false" name="Mercenarios y personalidades de la banda"/>
         <categoryLink targetId="d1a7-5f24-003f-6400" id="f0b4-5710-9719-15e4" primary="true" name="Personalidades de la banda"/>
         <categoryLink targetId="af76-5143-157c-3a3f" id="523b-a1e6-f4f8-d20e" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="519d-1f4f-ea5a-45f6" id="7759-fc74-39a2-7841" primary="false" name="Cosechador"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="90"/>
@@ -549,4 +565,18 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
   <forceEntries>
     <forceEntry name="Ambrosia" id="d538-fbd2-5071-5f18" hidden="false"/>
   </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Cosechador" id="519d-1f4f-ea5a-45f6" hidden="true">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="b10-bf53-b9d6-c482"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="b10-bf53-b9d6-c482">
+          <repeats>
+            <repeat value="200" repeats="1" field="e515-0c5b-47aa-1328" scope="6bd2-44d1-840b-4257" childId="any" shared="true" roundUp="true" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>
