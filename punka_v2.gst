@@ -1385,6 +1385,13 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         <categoryLink name="Mutación" hidden="false" id="c0f1-c23a-d48d-deae" targetId="6337-d3da-3855-7b50" primary="false"/>
         <categoryLink targetId="b9ac-7089-9933-c74b" id="fe35-9feb-8517-222a" primary="false" name="Garras"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Garras envenenadas" hidden="false" id="3b97-85f8-81f6-870b">
       <costs>
@@ -1413,6 +1420,13 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         <categoryLink name="Mutación" hidden="false" id="921c-a4d2-2296-55a5" targetId="6337-d3da-3855-7b50" primary="false"/>
         <categoryLink targetId="b9ac-7089-9933-c74b" id="8471-d0c6-a315-9e87" primary="false" name="Garras"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Miembros extra" hidden="false" id="a4ad-9205-fdd1-8994" publicationId="6699-072c-136a-7d30" page="85">
       <costs>
