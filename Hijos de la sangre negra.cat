@@ -124,6 +124,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -194,6 +195,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mirada llameante</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -284,6 +286,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">¡Por la Sangre Negra!, Bajo la mirada llameante, Mónguer</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -350,6 +353,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bajo la mirada llameante</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -441,6 +445,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bajo la mirada llameante, Darle caña, Raudo</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -523,6 +528,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bomba andante, Nutritora</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -581,6 +587,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">por el Sumo Guardián, Sumo Guardián de la Llama</characteristic>
           </characteristics>
         </profile>
       </profiles>
