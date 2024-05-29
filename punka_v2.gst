@@ -105,6 +105,12 @@
         <constraint type="max" value="1" field="selections" scope="model" shared="true" id="9ae9-7f06-925c-51a6" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Piel dura (X)" id="da38-73fd-d05d-1a39" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f64-26d6-4d69-bfa3"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Arma" id="6582-5e09-b30b-db5a" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -655,6 +661,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </profiles>
       <categoryLinks>
         <categoryLink id="73e4-7c4f-a1cc-944e" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="6f49-b204-2c3e-460b" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
@@ -693,6 +700,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink id="98ed-cb21-851f-8e2a" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink id="daec-eb43-4fb8-8938" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="4ac6-c502-5aa6-47d1" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
@@ -729,22 +737,18 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </costs>
     </selectionEntry>
     <selectionEntry id="f83c-ca91-70cb-4742" name="Garras y dientes" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0e73-7847-c89a-96f4" name="Garras y dientes" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0e-d231-83b0-b0ef" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Garras y dientes" id="890-cf0f-210-f172" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="d5e1-efc4-f4db-6c64" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="ba9b-1c69-5fbe-8bc2" name="Maza Ligera" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -763,6 +767,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="9e73-9c97-c0fe-e459" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -781,6 +788,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5365-ffdc-d686-f5a4" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="3371-b95e-17fb-e08b" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -799,6 +809,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb-cb0e-6a26-c9d1" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="1c8d-a2ec-680b-e6ae" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -813,6 +826,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </profiles>
       <categoryLinks>
         <categoryLink id="d071-13e6-118d-685d" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="8d9e-ffed-63d3-836e" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
@@ -835,6 +849,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink id="7b24-0df3-b921-4e0d" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="3709-4673-7b92-a394" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="ffb4-c5db-b6cc-4b87" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -860,6 +875,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77af-fb06-b4cc-c018" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="81c-378f-98d2-dba8" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -892,6 +910,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </profiles>
       <categoryLinks>
         <categoryLink id="f864-9ce6-7302-573a" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="30cf-ef25-14d4-901f" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -917,6 +936,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink id="aba5-f0ba-d4b1-6a1b" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="8013-edb1-c48f-16f8" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="3cb3-ffde-1b5f-c2f8" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -941,6 +961,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </profiles>
       <categoryLinks>
         <categoryLink id="8ff4-6aeb-2170-e54b" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="f934-7c63-32ee-e86b" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
@@ -967,6 +988,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink id="b111-77cf-fbc4-cd84" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="ad88-efd4-b69d-3a04" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="6561-a101-84b6-6062" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="49d3-a55-9f1a-5ded" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
@@ -1172,7 +1194,6 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="6b9e-ef75-6f7f-9178"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
@@ -1226,6 +1247,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </profiles>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="403f-3347-ae44-aabd" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6da4-bce3-88cf-3911" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mimetismo" hidden="false" id="d370-d789-b8d7-7f83" publicationId="6699-072c-136a-7d30" page="85">
@@ -1247,6 +1269,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </infoLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="925f-7791-bdc5-19db" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e52-7a61-e10d-e4be" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Corredor" hidden="false" id="d93c-da49-e038-4a80" publicationId="6699-072c-136a-7d30" page="84">
@@ -1265,9 +1288,10 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </profiles>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="39e3-4c5a-e015-4853" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b568-976c-b1a9-3fa0" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Carga brutal" hidden="false" id="b2a2-2d91-379-e2ee">
+        <selectionEntry type="upgrade" import="true" name="Carga brutal" hidden="false" id="b2a2-2d91-379-e2ee" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
             <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
           </costs>
@@ -1281,8 +1305,12 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           <infoLinks>
             <infoLink name="Impetu (1)" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e3-9f69-56d3-969e" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8e6c-bd4e-8e75-113c" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Capacitado" hidden="false" id="4f7e-d6f9-32ae-9ffc">
+        <selectionEntry type="upgrade" import="true" name="Capacitado" hidden="false" id="4f7e-d6f9-32ae-9ffc" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
             <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
           </costs>
@@ -1293,8 +1321,12 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc0-6bc-8255-3ee2" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="51cb-ae24-ae0f-1652" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cachas" hidden="false" id="e8de-ce-8096-f027">
+        <selectionEntry type="upgrade" import="true" name="Cachas" hidden="false" id="e8de-ce-8096-f027" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
             <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
           </costs>
@@ -1305,8 +1337,12 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b0-bf2a-1a39-6247" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9737-e0e3-cb35-3e12" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cola afilada" hidden="false" id="4ca4-fc23-a038-6df7">
+        <selectionEntry type="upgrade" import="true" name="Cola afilada" hidden="false" id="4ca4-fc23-a038-6df7" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
             <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
           </costs>
@@ -1321,6 +1357,78 @@ Al suponerse que este ataque se realiza simultáneamente al normal del Mutardo,
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1473-c24b-164-1299" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f0f0-dd8e-888b-985a" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Espinas" hidden="false" id="7e7b-807a-28ad-30bf" publicationId="6699-072c-136a-7d30" page="84">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+          </costs>
+          <profiles>
+            <profile name="Espinas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="dc4d-c975-b449-9928">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">2</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3/2/1</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30 cm</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c7-8dfc-6665-782d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8db5-adba-c68e-d396" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Esputo ácido" hidden="false" id="3941-f852-37ea-685b" publicationId="6699-072c-136a-7d30" page="84">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+          </costs>
+          <profiles>
+            <profile name="Esputo ácido" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="4c69-e962-4410-8292">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo es capaz de escupir una saliva altamente corrosiva. Al Asaltar o ser Asaltada, una miniatura con Esputo ácido que no se encuentre ya trabada en Combate, puede realizar una Acción de disparo gratuita con el siguiente perfil: Fuerza 1 y Penetración 3.
+Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si esta se debe a algún tipo de equipo del rival (como un escudo por ejemplo).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b03-6d0f-2144-84fa" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="766c-9a83-de13-c2f3" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extremidad prensil" hidden="false" id="cbda-380a-4e58-ee65" publicationId="6699-072c-136a-7d30" page="84">
+          <profiles>
+            <profile name="Extremidad prensil" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="98dd-3e40-c287-4bc8">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo posee una extremidad con una fuerza extraordinaria o ventosas de algún tipo. Una única miniatura enemiga trabada en Combate con esta miniatura sufrirá un penalizador de -1 a sus tiradas de Combate. Además, si esa misma miniatura rival intenta Separarse del Combate sufrirá un penalizador de -1 a su tirada de Agilidad.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1fc-bcd-c3bd-aaab" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a0b0-d227-8e6b-57d0" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Garras" hidden="false" id="89ac-b813-922c-11a8">
+          <infoLinks>
+            <infoLink name="Garras y dientes" id="bbab-498f-fabb-2010" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d246-5a46-904-3e51"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b5b7-4fbc-ce37-94ee" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d246-5a46-904-3e51">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1468,4 +1576,14 @@ Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abat
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Garras y dientes" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="0e73-7847-c89a-96f4">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
