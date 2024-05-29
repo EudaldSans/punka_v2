@@ -127,6 +127,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Escoria</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -186,6 +187,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           </repeats>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Escoria" id="9838-c45d-c0bb-ec3a" hidden="false">
+          <description>Los despojos no pueden usar dosis de Ambrosia ni usar armas incrustadas</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Aberración" hidden="false" id="16ad-7776-78da-499e">
       <categoryLinks>
@@ -217,6 +223,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Locura, Mal viaje, Mónguer, Raudo, Sobredosis</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -301,6 +308,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cosecha, Mal viaje</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -323,6 +331,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Furia psicópata, Mal viaje</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -382,6 +391,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Devorador, Mal viaje</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -466,6 +476,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (9)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal viaje</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -501,6 +512,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cosechadora, Lucidez, Mascota, Presencia perturbadora</characteristic>
           </characteristics>
         </profile>
       </profiles>
