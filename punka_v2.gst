@@ -112,6 +112,12 @@
     </categoryEntry>
     <categoryEntry name="Arma" id="6582-5e09-b30b-db5a" hidden="true"/>
     <categoryEntry name="Banda: Mutardos" id="baef-b3fd-e022-e917" hidden="false"/>
+    <categoryEntry name="Garras" id="b9ac-7089-9933-c74b" hidden="true">
+      <comment>Mutación</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fd8-8762-3a84-86c5"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -1372,23 +1378,12 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d246-5a46-904-3e51"/>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b5b7-4fbc-ce37-94ee" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="0" field="d246-5a46-904-3e51">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3b97-85f8-81f6-870b" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="2"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Mutación" hidden="false" id="c0f1-c23a-d48d-deae" targetId="6337-d3da-3855-7b50" primary="false"/>
+        <categoryLink targetId="b9ac-7089-9933-c74b" id="fe35-9feb-8517-222a" primary="false" name="Garras"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Garras envenenadas" hidden="false" id="3b97-85f8-81f6-870b">
@@ -1403,26 +1398,20 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Garras y dientes" id="7115-c0f5-ee06-3b0b" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4"/>
+        <infoLink name="Garras y dientes" id="7115-c0f5-ee06-3b0b" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4">
+          <modifiers>
+            <modifier type="set" value="Veneno (2)" field="c498-c631-f4c5-160a"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Veneno (2)" id="d187-d803-86d-6620" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="89ac-b813-922c-11a8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b582-3e3a-7d55-ca8c"/>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="48c5-244e-a242-43cc" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Mutación" hidden="false" id="921c-a4d2-2296-55a5" targetId="6337-d3da-3855-7b50" primary="false"/>
+        <categoryLink targetId="b9ac-7089-9933-c74b" id="8471-d0c6-a315-9e87" primary="false" name="Garras"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Miembros extra" hidden="false" id="a4ad-9205-fdd1-8994" publicationId="6699-072c-136a-7d30" page="85">
@@ -1867,6 +1856,10 @@ Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abat
     <rule name="Combustible - (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
+    </rule>
+    <rule name="Veneno (2)" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
+      <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
+En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
