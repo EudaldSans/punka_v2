@@ -36,6 +36,10 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="68aa-87d3-1537-b69a" primary="false" name="Arma"/>
+      </categoryLinks>
+      <comment>Arma generica</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cuero humano" hidden="false" id="d01b-ea85-f31c-ed31" publicationId="6699-072c-136a-7d30" page="64">
       <costs>
@@ -81,6 +85,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35f4-e208-59b1-cd5c" includeChildSelections="false"/>
       </constraints>
+      <comment>Arma con incrustada</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Filo pequeño" hidden="false" id="d0e9-b698-5bbf-178c">
       <entryLinks>

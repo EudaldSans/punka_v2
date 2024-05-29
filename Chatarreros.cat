@@ -17,6 +17,7 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="c579-83d-18cc-a418" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="dcfa-bce4-a64-9a25" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Escasa" id="2f67-7ffb-fa75-2044" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
@@ -39,6 +40,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="897c-862d-7b15-aac6" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="7a7c-f5da-712f-123a" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa8-c54b-befa-22b6" includeChildSelections="false"/>
@@ -51,6 +53,7 @@
     <selectionEntry type="upgrade" import="true" name="Bombas de humo" hidden="false" id="f855-3153-f205-53df" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="4068-5964-d967-e169" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="a83c-f984-e6c4-eaba" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a418-342-2907-95a7" includeChildSelections="false"/>
@@ -99,6 +102,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="9f78-58a7-64e2-1404" primary="false" name="A dos manos"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="3e34-672f-de2b-f7fb" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="a642-68a0-b777-43cb" primary="false" name="Arma"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -116,6 +120,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="f5ea-ee18-d639-55fd" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="10e7-4f38-c2d2-8863" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="4f4e-25d0-f82d-8b7d" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="4976-7f87-724f-4fc2" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
         <profile name="Lanzaarpones" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9f44-6032-16e7-561">
@@ -145,6 +150,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
     <selectionEntry type="upgrade" import="true" name="Bombas incendiarias" hidden="false" id="62d3-9592-5791-75e8" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
         <categoryLink name="Escasa" hidden="false" id="7fbf-d30f-b859-eeb0" targetId="501b-9657-19ab-7b5d" primary="false"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="9a0a-8ff6-13c1-35ac" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19f2-932d-28be-87b4" includeChildSelections="false"/>
@@ -175,6 +181,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="63e0-f557-b548-b630" primary="false" name="A dos manos"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="34d0-1b60-5aa-c587" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="e20f-c45d-2d75-73d3" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
         <profile name="Trabuco" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="35c7-2d5d-a0d1-7ea5">
@@ -204,6 +211,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="8464-6770-654e-2f30" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="fe10-1c99-7014-2a61" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="7300-c538-5e7f-911a" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="8fa8-1e79-8f0e-e65e" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Vaporeta" id="9c57-c9c3-fde1-7691" hidden="false" type="infoGroup" targetId="6e43-5974-f2cd-456e"/>
@@ -604,6 +612,9 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="c073-8e4d-6808-f2d0" primary="false" name="Arma"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Carcasa" hidden="false" id="8c87-dbbc-280e-44cc">
           <profiles>
@@ -691,6 +702,9 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <infoLink name="Postas" id="7046-3bb3-e34a-b8da" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
             <infoLink name="Difícil de usar" id="a584-a89a-8aeb-fe77" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="8ed5-1ce1-36ce-1321" primary="false" name="Arma"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <rules>

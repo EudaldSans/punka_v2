@@ -666,6 +666,9 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <infoLinks>
         <infoLink name="Electrificación" id="3eef-5529-74c8-d7a0" hidden="false" type="rule" targetId="6240-90ca-56c3-21e2"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="2eff-d43e-b9bf-ab77" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -715,6 +718,9 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb91-fc72-835b-4dce" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="ead5-1329-cefe-3d29" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

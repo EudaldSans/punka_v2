@@ -44,6 +44,7 @@ Modificadores
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="b77b-ac4c-b8a4-c38a" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="2ae2-7fc6-5473-2716" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="6338-2e33-4a6b-db97" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="79cb-5f0e-d1f5-4bf2" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c6-a319-1cc3-5c4f" includeChildSelections="false"/>
@@ -62,6 +63,7 @@ Modificadores
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="b4ff-8e22-7e4e-5802" primary="false" name="A dos manos"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="d386-f353-88b5-5e60" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="616-94ef-fb8-d86b" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
         <profile name="Lanzaresiduos" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="2cf3-70e4-6615-c00f">
@@ -121,6 +123,9 @@ Modificadores
           </constraints>
         </entryLink>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="c9d9-4f-1108-1108" primary="false" name="Arma"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>

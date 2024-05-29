@@ -9,6 +9,7 @@
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="543-cca5-79bc-2f67" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="6c02-b6f3-ba0-e0e4" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="9550-fcba-87ed-41c0" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="9470-8498-10a5-2344" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
         <profile name="Motosierra" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5adb-3465-26ff-dbcc">
@@ -49,6 +50,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="6c28-a46-dd7f-a657" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="5e62-f21a-655b-d28e" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Escasa" id="c9ad-8e15-b6f4-2b07" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
@@ -81,6 +83,7 @@
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="fc3-d993-92a0-c21c" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="a5e5-5d93-7c0-8f2" primary="false" name="Armatoste"/>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="9b07-c6c-2c96-49da" primary="false" name="Escasa"/>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="495-7790-91db-1b6" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
         <profile name="Lanzallamas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="3b57-68f6-f81-ed35">
@@ -621,6 +624,7 @@
           </profiles>
           <categoryLinks>
             <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="9f32-4db-b252-82a7" primary="false" name="Arma"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24b-a311-e00c-5ca" includeChildSelections="false"/>
@@ -655,6 +659,9 @@
           <infoLinks>
             <infoLink name="Combustible - (5)" id="fbd6-4fca-326b-5770" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="27a6-ea8d-b2dd-9046" primary="false" name="Arma"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
