@@ -38,9 +38,21 @@
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="41dc-5a46-8cd4-a0c2" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="41dc-5a46-8cd4-a0c2" field="defaultSelectionEntryId">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armas" id="5c97-91a3-f38e-e28c" hidden="false">
           <selectionEntryGroups>
@@ -107,9 +119,21 @@
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="ef0e-496a-4442-a14b" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="ef0e-496a-4442-a14b" field="defaultSelectionEntryId">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armas" id="2708-cfec-f288-1ac9" hidden="false">
           <selectionEntryGroups>
@@ -179,7 +203,7 @@
             <entryLink import="true" name="Balas" hidden="false" id="9051-b90a-ea8b-9ba2" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Blindaje" id="d404-b2e3-a557-bd0" hidden="false">
+        <selectionEntryGroup name="Blindaje" id="d404-b2e3-a557-bd0" hidden="false" defaultSelectionEntryId="6e18-cdea-53b7-899f">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b44-1080-ddf8-fa8d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b44-1080-ddf8-fa8d-max" includeChildSelections="false"/>
@@ -276,6 +300,11 @@
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="1629-c1ee-88d4-fcd3" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Armadura metálica" hidden="false" id="8cb8-74cf-b24f-da8f" type="selectionEntry" targetId="d761-5553-4adf-c294">
@@ -284,6 +313,13 @@
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="6e18-cdea-53b7-899f" field="defaultSelectionEntryId">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -294,6 +330,7 @@
       <categoryLinks>
         <categoryLink targetId="84b7-6828-dd10-0280" id="935e-3197-91a6-78b1" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="4349-95e9-393e-d308" id="31e8-5fb-abad-bc9c" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="ce1e-6710-6c1-5bca" id="80f2-1a6-1714-dccd" primary="false" name="Jefe"/>
       </categoryLinks>
       <profiles>
         <profile name="Jefe" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="4776-697e-3124-2d39">
@@ -390,16 +427,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Pistola" hidden="false" id="b8cc-a7c3-e183-95b6" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden"/>
-            <modifier type="set" value="Lucy" field="name"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be87-1829-a22d-eddb-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be87-1829-a22d-eddb-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Cuero endurecido" hidden="false" id="4d69-2359-d0dd-9c2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-min" includeChildSelections="false"/>
@@ -409,6 +436,7 @@
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <rules>
         <rule name="Por un puñado de balas" id="773-4055-f252-e9ea" hidden="false">
@@ -430,11 +458,119 @@
       <modifiers>
         <modifier type="set" value="0" field="7ac9-5714-79c8-f794">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9e40-76e9-2e11-5819" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9e40-76e9-2e11-5819" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lucy" hidden="false" id="6ba-8515-9aff-c644">
+          <infoLinks>
+            <infoLink name="Pistola" id="958c-edc5-9858-4dde" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+              <modifiers>
+                <modifier type="set" value="Lucy" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Arma de fuego" id="9bab-bd42-905-381e" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+            <infoLink name="Escasa" id="7b6c-f879-db6b-8085" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-max" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="501b-9657-19ab-7b5d" id="9de-b171-68f2-fa01" primary="false" name="Escasa"/>
+          </categoryLinks>
+          <comment>No tiene categoria &quot;arma de fuego&quot; para que funcione su límite</comment>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lord Homoeroticus" hidden="false" id="297e-8b5e-d845-999a"/>
+    <selectionEntry type="model" import="true" name="Lord Homoeroticus" hidden="false" id="297e-8b5e-d845-999a" publicationId="6699-072c-136a-7d30" page="95">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="b620-47fe-2e5f-f6d4" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="e544-5fba-f40b-b066" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="d082-38-58e4-8564" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="ce1e-6710-6c1-5bca" id="6322-58a4-663c-25d7" primary="false" name="Jefes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lord Homoeroticus" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="77bf-4424-5783-d73f">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6 (5)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3), Jefe, Nos mola el cuero, Discursitos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Discursitos" id="8a45-2b01-be6b-fae0" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
+          <description>Lord Homoeroticus tiene una cierta manía a coger un altavoz y soltar discursos bastante insufribles antes de entablar combate. Posiblemente sea que le guste su propia voz, o crea que así es más molón, pero es un auténtico plasta. Los discursos son variados, desde su decepción por el rival, hasta sus habilidades como tapicero. El caso es que a veces hacen mella en el enemigo, a veces todo lo contrario. Justo antes de comenzar el primer Turno de juego debes hacer una tirada en la siguiente tabla para averiguar el efecto que tienen.
+
+
+• 1     - El enemigo no piensa aguantar a ese payaso ni un momento más. Todas las miniaturas de la banda rival tienen la Regla especial Bersérker.
+• 2-4  - Sus hombres se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura en su Fase de activación.
+• 5-6  - Ambos bandos prefieren matarse que tener que aguantar más esto. En caso de empate en las tiradas enfrentadas de Fuerza contra Dureza, la Fuerza tendrá siempre un bonificador de +1.
+• 7-9  - Los enemigos se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura con la Fase de activación.
+• 10   - Mira tú que hoy ha estado fino e inspirador. Todas las miniaturas de su banda tienen la Regla especial Bersérker.</description>
+        </rule>
+        <rule name="Nos mola el cuero" id="86f7-8612-75fc-f59" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
+          <description>La banda de la Ostra Azul tiene una obsesión por el cuero que salta a la vista, siendo sin lugar a dudas uno de sus rasgos más distintivos. Los Piltrafas, Machacas y los Curtidos de la banda llevan cuero endurecido por defecto en lugar de ropas resistentes, sin coste adicional.</description>
+        </rule>
+        <rule name="Jefe" id="7775-421-1183-d891" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
+          <description>Lord Homoeroticus es un Jefe Pandillero, por lo que no podrás tener otro en tu banda</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="861f-197f-1f54-8578" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Alegradias" hidden="false" id="2ab6-2020-d6f7-ade7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e329-609a-54f2-7df6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ef-b4c3-68f0-4814" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Pistola" id="fb86-b68e-7500-c7b9" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+              <modifiers>
+                <modifier type="set" value="Alegradias" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Arma de fuego" id="f562-2671-d785-c04a" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+            <infoLink name="Escasa" id="a2a2-968c-d051-8ff4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="9e40-76e9-2e11-5819" id="c342-7605-2924-6dd8" primary="false" name="Arma de fuego"/>
+            <categoryLink targetId="501b-9657-19ab-7b5d" id="5089-d97d-f171-b15c" primary="false" name="Escasa"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Mira telescópica" hidden="false" id="4107-22ed-c230-db58" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18bb-cbee-9ba9-2b01" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Jefe" id="ce1e-6710-6c1-5bca" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f4c-9dc1-bafe-58fa" includeChildSelections="false"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>

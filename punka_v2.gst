@@ -661,16 +661,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="34b3-8c91-7e61-40ce" name="Pistola" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="5e81-f39a-7dbd-a31b" name="Pistola" hidden="false" typeId="6023-c682-4678-9510" typeName="Arma a distancia">
-          <characteristics>
-            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
-            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
-            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
-            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="73e4-7c4f-a1cc-944e" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="6f49-b204-2c3e-460b" primary="false" name="Arma"/>
@@ -685,6 +675,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <infoLinks>
         <infoLink name="Escasa" id="14db-bae9-db58-223c" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="Arma de fuego" id="1a0-8c5-5b30-86d3" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+        <infoLink name="Pistola" id="8748-8df4-a492-a8d1" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -1740,8 +1731,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       <description>Un arma a distancia con esta regla, concederá un bonificador de +1 a la Precisión a los disparos que se realicen con ella. Debido a la dispersión de sus disparos, no es posible Evitar Cobertura al Disparar, ni intentar elegir como blanco a una miniatura en particular en un Combate, al que se disparará sin penalizadores, pero siendo impactadas todas las miniaturas involucradas en caso de éxito.</description>
     </rule>
     <rule id="967b-e5a1-f60c-8b02" name="Arma de fuego" publicationId="6699-072c-136a-7d30" page="30" hidden="false">
-      <description>El arma no lleva incluida la munición. Las balas han de ser
-adquiridas aparte.</description>
+      <description>El arma no lleva incluida la munición. Las balas han de ser adquiridas aparte.</description>
     </rule>
     <rule id="3cc2-57bc-f5a7-acbb" name="A dos manos" publicationId="6699-072c-136a-7d30" page="30" hidden="false">
       <description>Algunas armas necesitan de ambas manos para ser utilizadas. No es posible estar equipado con más de un objeto con esta Regla especial.</description>
@@ -1750,8 +1740,7 @@ adquiridas aparte.</description>
       <description>El objeto es aparatoso de llevar y no es fácil moverse con él. Otorga un penalizador de -1 a la Agilidad de la miniatura. No es posible estar equipado con más de un objeto con esta regla</description>
     </rule>
     <rule id="cc87-2fc3-e766-7629" name="Escasa" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
-      <description>Un arma con esta regla sólo puede
-repetirse un máximo de 3 veces en una misma banda.</description>
+      <description>Un arma con esta regla sólo puede repetirse un máximo de 3 veces en una misma banda.</description>
     </rule>
     <rule id="5e01-e63a-dcb6-e890" name="Automático" publicationId="6699-072c-136a-7d30" page="30" hidden="false">
       <description>Antes de Disparar con este arma se debe declarar si se va a usar el modo habitual o el automático. Disparar en modo automático implica no solo el disparo, sino también dos Acciones de Disparo adicionales inmediatas, gratuitas y obligatorias (siempre que el arma tenga la suficiente munición). Estas dos Acciones gratuitas de Disparo se pueden realizar contra la misma miniatura rival o contra otra a un máximo de 10 cm del anterior objetivo</description>
@@ -1893,6 +1882,14 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
         <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+0</characteristic>
         <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
         <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="5e81-f39a-7dbd-a31b">
+      <characteristics>
+        <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
+        <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
+        <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
+        <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
