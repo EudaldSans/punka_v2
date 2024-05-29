@@ -163,6 +163,20 @@ Modificadores
           <description>Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2385-d56f-c5a3-1e4a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="2385-d56f-c5a3-1e4a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="dadb-a803-f739-452f" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="5e69-fdda-8b7a-a952" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ce3e-c487-ade6-ce36" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="4b1-2801-cb86-24bd" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Discípulo" hidden="false" id="5e69-fdda-8b7a-a952" publicationId="6699-072c-136a-7d30" page="68">
       <costs>
