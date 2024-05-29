@@ -1552,10 +1552,10 @@ contacto peana con peana con ella que trate de Separarse del Combate sufrirá u
             <categoryLink targetId="da38-73fd-d05d-1a39" id="a294-8bc-5578-2c0e" primary="false" name="Piel dura (X)"/>
           </categoryLinks>
           <profiles>
-            <profile name="Piel dura 1" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="508a-dd63-7202-8cf5">
+            <profile name="Piel dura 1" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="508a-dd63-7202-8cf5">
               <characteristics>
-                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 1.
-No puede acumularse con más mutaciones de Piel dura.</characteristic>
+                <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">1</characteristic>
+                <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">No puede acumularse con más mutaciones de Piel dura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1573,10 +1573,10 @@ No puede acumularse con más mutaciones de Piel dura.</characteristic>
             <categoryLink name="Piel dura (X)" hidden="false" id="d807-141a-f6bf-694a" targetId="da38-73fd-d05d-1a39" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile name="Piel dura 3" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="e95f-28ae-8ecb-8e94">
+            <profile name="Piel dura 3" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="e95f-28ae-8ecb-8e94">
               <characteristics>
-                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 3.
-No puede acumularse con más mutaciones de Piel dura.</characteristic>
+                <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+                <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">No puede acumularse con más mutaciones de Piel dura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1594,10 +1594,10 @@ No puede acumularse con más mutaciones de Piel dura.</characteristic>
             <categoryLink name="Piel dura (X)" hidden="false" id="2fac-f675-b13f-387c" targetId="da38-73fd-d05d-1a39" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile name="Piel dura 5" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="af08-8458-7f1-bd1">
+            <profile name="Piel dura 5" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="af08-8458-7f1-bd1">
               <characteristics>
-                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 5.
-No puede acumularse con más mutaciones de Piel dura.</characteristic>
+                <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
+                <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">No puede acumularse con más mutaciones de Piel dura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
