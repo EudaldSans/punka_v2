@@ -93,7 +93,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="false"/>
+    <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="true"/>
     <categoryEntry name="Banda: Chatarreros" id="476f-664f-cf39-efa5" hidden="false"/>
     <categoryEntry name="Banda: V Reich" id="da8-49dd-4793-c495" hidden="false"/>
     <categoryEntry name="Banda: Hijos de la sangre negra" id="73ff-a5cb-afba-6105" hidden="false"/>
@@ -633,6 +633,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
               <description>Irina va equipada con un gran arma de asta acabada en un filo y adornada con cabezas de muñecas al que llama por el extraño nombre de Utacël, que al parecer en su idioma significa Destino. En una Acción de Asaltar, este arma tiene unas estadísticas de Combate +1, Fuerza +3 y Penetración 5. Durante el resto de Acciones en que Combata tendrá unas estadísticas de Combate -1, Fuerza +2 y Penetración 3.</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="150c-171a-8145-a0dc" primary="false" name="Arma"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <rules>
@@ -1290,6 +1293,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="39e3-4c5a-e015-4853" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b568-976c-b1a9-3fa0" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="a3-807e-3b11-f01d" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Carga brutal" hidden="false" id="b2a2-2d91-379-e2ee" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1309,6 +1315,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e3-9f69-56d3-969e" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8e6c-bd4e-8e75-113c" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="a0f7-7dfb-5349-1e36" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Capacitado" hidden="false" id="4f7e-d6f9-32ae-9ffc" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1325,6 +1334,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc0-6bc-8255-3ee2" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="51cb-ae24-ae0f-1652" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="edeb-6dbf-f145-4ba2" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cachas" hidden="false" id="e8de-ce-8096-f027" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1341,6 +1353,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b0-bf2a-1a39-6247" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9737-e0e3-cb35-3e12" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="7ec6-a69f-9f44-9a5f" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cola afilada" hidden="false" id="4ca4-fc23-a038-6df7" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1361,6 +1376,9 @@ Al suponerse que este ataque se realiza simultáneamente al normal del Mutardo,
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1473-c24b-164-1299" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f0f0-dd8e-888b-985a" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="2f11-5a0a-2db6-9033" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Espinas" hidden="false" id="7e7b-807a-28ad-30bf" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1380,6 +1398,9 @@ Al suponerse que este ataque se realiza simultáneamente al normal del Mutardo,
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c7-8dfc-6665-782d" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8db5-adba-c68e-d396" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="6369-361e-b7af-2eb3" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Esputo ácido" hidden="false" id="3941-f852-37ea-685b" publicationId="6699-072c-136a-7d30" page="84">
           <costs>
@@ -1397,6 +1418,9 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b03-6d0f-2144-84fa" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="766c-9a83-de13-c2f3" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="5af9-4631-d2b2-1d51" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Extremidad prensil" hidden="false" id="cbda-380a-4e58-ee65" publicationId="6699-072c-136a-7d30" page="84">
           <profiles>
@@ -1413,8 +1437,11 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1fc-bcd-c3bd-aaab" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a0b0-d227-8e6b-57d0" includeChildSelections="true"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="ec4b-9565-15e3-662a" primary="false" name="Mutación"/>
+          </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Garras" hidden="false" id="89ac-b813-922c-11a8">
+        <selectionEntry type="upgrade" import="true" name="Garras" hidden="false" id="89ac-b813-922c-11a8" page="85" publicationId="6699-072c-136a-7d30">
           <infoLinks>
             <infoLink name="Garras y dientes" id="bbab-498f-fabb-2010" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4"/>
           </infoLinks>
@@ -1424,11 +1451,280 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="d246-5a46-904-3e51">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3b97-85f8-81f6-870b" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="2"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="c0f1-c23a-d48d-deae" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Garras envenenadas" hidden="false" id="3b97-85f8-81f6-870b">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+          </costs>
+          <profiles>
+            <profile name="Garras envenenadas" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="53ce-5d80-f68b-132a">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo posee un veneno altamente nocivo. Es igual a la mutación Garras, excepto que los ataques que realice con estas tienen la Regla especial Veneno (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Garras y dientes" id="7115-c0f5-ee06-3b0b" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="89ac-b813-922c-11a8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b582-3e3a-7d55-ca8c"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="48c5-244e-a242-43cc" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="921c-a4d2-2296-55a5" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Miembros extra" hidden="false" id="a4ad-9205-fdd1-8994" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Miembros extra" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="7f5-cd22-33e9-2578">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene algún miembro extra que le permite luchar de manera más precisa. Obtiene un bonificador de +2 a su Atributo de Combate.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-6136-a78d-54a7"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e93-2322-5c63-85bf" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="35c6-3261-9ad3-2541" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pegajoso" hidden="false" id="258f-5e74-27c-5f8b" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
+          </costs>
+          <profiles>
+            <profile name="Pegajoso" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="3b0b-cca6-64f3-ee9a">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Este Mutardo segrega una sustancia adhesiva por todo su
+cuerpo. Obtiene la Regla especial Trepador y todo rival en
+contacto peana con peana con ella que trate de Separarse del Combate sufrirá un penalizador de -3 a su tirada de Agilidad.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c229-b638-d549-68f4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1679-c9a7-edc9-f1e6"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="9b56-f19a-b72d-851e" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Piel dura 1" hidden="false" id="4916-1692-b826-c903" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="9da7-c5b4-ef5-3e33" primary="false" name="Mutación"/>
+            <categoryLink targetId="da38-73fd-d05d-1a39" id="a294-8bc-5578-2c0e" primary="false" name="Piel dura (X)"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Piel dura 1" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="508a-dd63-7202-8cf5">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 1.
+No puede acumularse con más mutaciones de Piel dura.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cefe-d3bf-b069-e65b"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="54c5-69a3-e370-bcd1" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Piel dura 3" hidden="false" id="7eca-4fd0-5454-975f" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Mutación" hidden="false" id="2172-9edf-ff53-ec89" targetId="6337-d3da-3855-7b50" primary="false"/>
+            <categoryLink name="Piel dura (X)" hidden="false" id="d807-141a-f6bf-694a" targetId="da38-73fd-d05d-1a39" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Piel dura 3" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="e95f-28ae-8ecb-8e94">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 3.
+No puede acumularse con más mutaciones de Piel dura.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cf9-c40f-55f3-7c77"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f94d-225a-551c-ac49" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Piel dura 5" hidden="false" id="423e-a45a-fef-29a3" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Mutación" hidden="false" id="693-55-292a-1bb6" targetId="6337-d3da-3855-7b50" primary="false"/>
+            <categoryLink name="Piel dura (X)" hidden="false" id="2fac-f675-b13f-387c" targetId="da38-73fd-d05d-1a39" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Piel dura 5" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="af08-8458-7f1-bd1">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una piel correosa o un pelaje frondoso. Obtiene Blindaje 5.
+No puede acumularse con más mutaciones de Piel dura.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4e2-5cf1-44f9-e727"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e8b4-b7bb-c1e7-7c8c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Piernas seguras" hidden="false" id="b12e-ad7f-e2ce-61bb" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+          </costs>
+          <profiles>
+            <profile name="Piernas seguras" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="bb5d-adff-8756-114a">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene alguna pierna extra, o son anormalmente anchas, o tienen garras para fijarse al suelo, o igual ventosas… Obtiene la Regla especial Todoterreno.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="51de-4d89-a3b0-4d5e" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c-f4ee-382f-3c64"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="875-7e64-3ba-eb2a" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Proyectil orgánico" hidden="false" id="d2e5-1f34-4675-9b90" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="888c-d21-f763-8e17"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="abb5-3d4d-2868-89c1" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Proyectil orgánico" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="1503-9a2d-a439-b83f">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/-</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Postas, ¡¡¡CATAPUM!!!</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Postas" id="91ed-60b0-c345-6382" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+            <infoLink name="¡¡¡CATAPUM!!!" id="bc6-2e2-671f-a1d6" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="167c-2cca-c4d3-5ac6" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rana" hidden="false" id="2859-b06f-6ebb-573" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="89be-9ec9-fd87-69b5" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e542-1e22-45c9-5597"/>
+          </constraints>
+          <profiles>
+            <profile name="Rana" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="f5c2-386e-b75a-253d">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo posee unas piernas especialmente potentes que le permiten dar unos saltos enormes. Obtiene la Regla especial Salto.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="4bc0-a60f-130e-3133" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Resonancia psíquica" hidden="false" id="ada2-bc43-71c5-6428" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Resonancia psíquica" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="4b05-3063-be68-a639">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Un Cabezón podrá lanzar cualquiera de sus Poderes psíquicos (salvo Barrera psíquica) sobre un Mutardo con Resonancia psíquica. El poder podrá ser redirigido inmediatamente, y sin ningún gasto adicional de Acciones hacia otro objetivo, siempre que este esté dentro de las limitaciones de distancia y Línea de visión del poder desde el Mutardo con Resonancia psíquica. A efectos prácticos es como si el Mutardo con Resonancia psíquica pasase a ser la fuente del Poder en lugar del Cabezón.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d05e-8242-29da-15c1"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7743-1d62-2874-d124" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="74b7-f21a-6dd9-119d" primary="false" name="Mutación"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Resistente" hidden="false" id="275c-4612-4b78-8b82" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Resistente" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="a8a8-cb58-f638-aa11">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo tiene una resistencia superior a la normal. Obtiene un bonificador de +2 a su Atributo de Dureza.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="b75b-1228-b1d2-d01c" primary="false" name="Mutación"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94f5-d06d-6a5d-7d52"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="58c0-4df3-cfef-fbf2" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sentidos aguzados" hidden="false" id="44c1-a042-3be4-e331" publicationId="6699-072c-136a-7d30" page="85">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="61e7-cd80-d630-df6e" primary="false" name="Mutación"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f446-760d-c4aa-bf6b" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d30-5aa4-8b0f-9a36"/>
+          </constraints>
+          <profiles>
+            <profile name="Sentidos aguzados" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="7cd4-e28c-e28a-832e">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">El Mutardo posee unos sentidos casi sobrenaturales que le permiten moverse de manera más precisa. Obtiene un bonificador de +2 a su Atributo de Agilidad.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
