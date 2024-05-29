@@ -119,17 +119,6 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb69-1760-23f8-c1bc" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="741c-aca9-a9a1-8592" includeChildSelections="false"/>
       </constraints>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8f2e-323-f3e3-a300" shared="true" includeChildSelections="false"/>
-          </conditions>
-          <modifiers>
-            <modifier type="set" value="0" field="5908-5581-3816-13e2"/>
-            <modifier type="set" value="0" field="90-3911-fa0-38d6"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Desarme" hidden="false" id="8f39-9f74-ba43-f579" publicationId="6699-072c-136a-7d30" page="86">
       <categoryLinks>
@@ -199,6 +188,17 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         <categoryLink targetId="84b7-6828-dd10-0280" id="dcd-9caf-9577-5460" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="baef-b3fd-e022-e917" id="691d-2d35-5b9e-242" primary="false" name="Banda: Mutardos"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7367-4309-5249-864"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="2" field="7367-4309-5249-864">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6ec3-8616-70a-e889" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="8f2e-323-f3e3-a300" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mutante" hidden="false" id="5f32-627d-f830-989c">
       <costs>
