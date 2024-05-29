@@ -625,6 +625,7 @@
           <categoryLinks>
             <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="9f32-4db-b252-82a7" primary="false" name="Arma"/>
+            <categoryLink targetId="9e40-76e9-2e11-5819" id="3870-40ec-7c91-cd7c" primary="false" name="Arma de fuego"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24b-a311-e00c-5ca" includeChildSelections="false"/>

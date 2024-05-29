@@ -118,6 +118,8 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fd8-8762-3a84-86c5"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Banda: Pandilleros" id="4349-95e9-393e-d308" hidden="false"/>
+    <categoryEntry name="Arma de fuego" id="9e40-76e9-2e11-5819" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -672,6 +674,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink id="73e4-7c4f-a1cc-944e" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="6f49-b204-2c3e-460b" primary="false" name="Arma"/>
+        <categoryLink targetId="9e40-76e9-2e11-5819" id="bb93-c1a0-b696-2a5" primary="false" name="Arma de fuego"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
@@ -711,6 +714,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink id="98ed-cb21-851f-8e2a" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink id="daec-eb43-4fb8-8938" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="4ac6-c502-5aa6-47d1" primary="false" name="Arma"/>
+        <categoryLink targetId="9e40-76e9-2e11-5819" id="a385-2e63-2d2a-9932" primary="false" name="Arma de fuego"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
@@ -947,6 +951,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink id="aba5-f0ba-d4b1-6a1b" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="8013-edb1-c48f-16f8" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="3cb3-ffde-1b5f-c2f8" primary="false" name="Arma"/>
+        <categoryLink targetId="9e40-76e9-2e11-5819" id="714f-5624-e1d6-872e" primary="false" name="Arma de fuego"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
@@ -999,6 +1004,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink id="ad88-efd4-b69d-3a04" name="A dos manos" hidden="false" targetId="e24d-662f-94ca-ccbe" primary="false"/>
         <categoryLink id="6561-a101-84b6-6062" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="49d3-a55-9f1a-5ded" primary="false" name="Arma"/>
+        <categoryLink targetId="9e40-76e9-2e11-5819" id="c223-13eb-b1f8-43a5" primary="false" name="Arma de fuego"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
@@ -1874,6 +1880,10 @@ Pero llevar ese combustible es peligroso, así que si una miniatura con un equip
     <rule name="Veneno (2)" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
       <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
 En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
+    </rule>
+    <rule name="Retraso (1)" id="515b-e451-e3f5-14d0" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
+      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
+A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
