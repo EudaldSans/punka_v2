@@ -159,6 +159,16 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="22"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6b42-4f06-87ff-70ad"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="6b42-4f06-87ff-70ad">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1b99-d4be-4cdc-ddbf" name="Acróbata" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -214,6 +224,16 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <infoLink name="Escurridizo" id="c167-4d7-bbc2-26f6" hidden="false" type="rule" targetId="59a0-f60d-aa37-f759"/>
         <infoLink name="Todoterreno" id="1b9d-272b-170a-1cd0" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad84-af0a-21ca-f24a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="ad84-af0a-21ca-f24a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d4ab-e726-8812-6dcb" name="Forzudo" publicationId="6699-072c-136a-7d30" page="100" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -270,6 +290,16 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="858b-386a-ad81-5d03"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="858b-386a-ad81-5d03">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3092-b1ed-b961-7988" name="Jefe de pista" publicationId="6699-072c-136a-7d30" page="101" hidden="false" collective="false" import="true" type="model">
       <profiles>
