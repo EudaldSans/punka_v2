@@ -9,82 +9,7 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Poderes psíquicos" id="2fee-6eb7-1fae-5e9e" hidden="false">
-      <rules>
-        <rule name="Poderes psíquicos" id="7040-45ec-f66d-28db" hidden="false">
-          <description>Un Cabezón puede gastar una Acción para usar un Poder psíquico de manera automática. Ningún Poder psíquico podrá lanzarse dos veces sobre la misma miniatura en el mismo Turno de juego. Los Poderes psíquicos tienen una distancia máxima de alcance sobre su objetivo, más allá no pueden usarse. Si no se indica lo contrario, no necesitan Línea de visión sobre su objetivo.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Potenciación" hidden="false" id="377e-aa6c-54a0-e678" publicationId="6699-072c-136a-7d30" page="86">
-          <categoryLinks>
-            <categoryLink targetId="d652-cee5-9d2d-70f9" id="eef0-2a1e-e12c-e8ac" primary="false" name="Poder psíquico"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Potenciación" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="1dd9-6b93-c64-79e0">
-              <characteristics>
-                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
-                <characteristic name="Regla" typeId="742a-9af9-288f-176c">A base de energía psíquica, puede potenciar a otras miniaturas amigas. Podrá usar una de sus Acciones para otorgar un +3 a Combate, Precisión o Técnica a una miniatura amiga. Esta miniatura disfrutará de este bonificador hasta que sea utilizado por primera vez, momento en el que perderá la Potenciación. Hasta que esto ocurra, la miniatura no podrá volver a beneficiarse de este poder una segunda vez, ni siquiera aplicado a un Atributo diferente.
-Los Pochos tienen una mente más débil y más fácilmente influenciable, el uso de este poder psíquico por parte de un Cabezón permite que un grupo completo de Pochos disfrute de la Potenciación.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Choque mental" hidden="false" id="fc4e-7d9d-ff7f-c3d" publicationId="6699-072c-136a-7d30" page="86">
-          <categoryLinks>
-            <categoryLink name="Poder psíquico" hidden="false" id="84fd-a364-def2-8ad2" targetId="d652-cee5-9d2d-70f9" primary="false"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Choque mental" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e6a-f41a-bb38-6a92">
-              <characteristics>
-                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">15 cm</characteristic>
-                <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede lanzar una onda psíquica que intenta freír el cerebro de un enemigo. Podrá gastar una Acción para intentar acabar con una miniatura enemiga en Línea de visión, que no esté combatiendo. Deberá hacer una tirada enfrentada de su Fuerza contra la Dureza del objetivo. Si iguala o supera al rival, la miniatura objetivo habrá sido abatida.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Desarme" hidden="false" id="8f39-9f74-ba43-f579" publicationId="6699-072c-136a-7d30" page="86">
-          <categoryLinks>
-            <categoryLink name="Poder psíquico" hidden="false" id="3575-c9b9-3baa-1269" targetId="d652-cee5-9d2d-70f9" primary="false"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Desarme" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="4e66-d187-7df0-3c10">
-              <characteristics>
-                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
-                <characteristic name="Regla" typeId="742a-9af9-288f-176c">Gracias a la telequinesis, el Cabezón puede intentar desarmar a una miniatura enemiga. Podrá gastar una Acción en intentar desarmar a una miniatura enemiga en Línea de visión, que no esté combatiendo. Para evitar ser desarmada, la miniatura afectada deberá superar una tirada de Fuerza. Si la falla, una de sus armas (a elección del Cabezón) caerá al suelo, y deberá gastar una Acción si quiere recogerla.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Barrera psíquica" hidden="false" id="f09c-7802-581b-8c7a" publicationId="6699-072c-136a-7d30" page="86">
-          <categoryLinks>
-            <categoryLink name="Poder psíquico" hidden="false" id="d6e1-39c8-1266-b286" targetId="d652-cee5-9d2d-70f9" primary="false"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Barrera psíquica" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e1-e669-de15-bb">
-              <characteristics>
-                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
-                <characteristic name="Regla" typeId="742a-9af9-288f-176c">Este poder le brinda una barrera de pura energía psíquica que le concede Blindaje 5 al propio Cabezón que lo lanza. Para usarlo tiene que gastar una Acción, y a partir de ese momento permanecerá activo, debiendo mantener una Acción cada Fase de activación posterior para mantenerlo, de manera que sólo dispondría de 2 Acciones libres. Al principio de las Fases de activación posteriores, puede decidir desactivarlo, no pudiendo volver a activarlo hasta el Turno siguiente.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Titiritero" hidden="false" id="7372-283d-9bea-df09" publicationId="6699-072c-136a-7d30" page="86">
-          <categoryLinks>
-            <categoryLink name="Poder psíquico" hidden="false" id="76dd-4881-acf7-c186" targetId="d652-cee5-9d2d-70f9" primary="false"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Titiritero" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="a564-22c8-5e9f-7e26">
-              <characteristics>
-                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
-                <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede meterse en la mente de otros Mutardos, realizando actos diversos a través de ellos. Puede gastar una de sus Acciones para que otra miniatura de su banda realice una Acción gratuita inmediatamente.
-Los Pochos tienen una mente más débil y más fácilmente influenciable, el gasto de una Acción por parte de un Cabezón permite que un grupo completo de Pochos se vea afectado por Titiritero.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Mutaciones" id="68df-a190-7184-371e" hidden="false"/>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Poder psíquico" id="d652-cee5-9d2d-70f9" hidden="true"/>
@@ -126,6 +51,138 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
           </modifiers>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Absorción vital" hidden="false" id="c086-ba61-cd1c-d4ad">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="6c9-a0e5-82bc-a51e" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Absorción vital" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="940a-a6ac-968d-5eae">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">Kim no tiene reparos en ganar a cualquier coste, incluso absorbiendo la vitalidad de una miniatura aliada, para dale una porción a otra que la necesite. Puede sustraer 2 puntos de Dureza permanentes de una miniatura o grupo completo de Pochos de su banda, para incrementar en 1 punto la Dureza de otra miniatura de manera permanente. Ambas miniaturas deben estar a un máximo de 30 cm de Kim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5908-5581-3816-13e2" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90-3911-fa0-38d6" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barrera psíquica" hidden="false" id="f09c-7802-581b-8c7a" publicationId="6699-072c-136a-7d30" page="86">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="d6e1-39c8-1266-b286" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Barrera psíquica" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e1-e669-de15-bb">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">Este poder le brinda una barrera de pura energía psíquica que le concede Blindaje 5 al propio Cabezón que lo lanza. Para usarlo tiene que gastar una Acción, y a partir de ese momento permanecerá activo, debiendo mantener una Acción cada Fase de activación posterior para mantenerlo, de manera que sólo dispondría de 2 Acciones libres. Al principio de las Fases de activación posteriores, puede decidir desactivarlo, no pudiendo volver a activarlo hasta el Turno siguiente.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="115-8b33-9ecc-a29" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b103-8994-b83e-5931" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Choque mental" hidden="false" id="fc4e-7d9d-ff7f-c3d" publicationId="6699-072c-136a-7d30" page="86">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="84fd-a364-def2-8ad2" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Choque mental" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e6a-f41a-bb38-6a92">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">15 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede lanzar una onda psíquica que intenta freír el cerebro de un enemigo. Podrá gastar una Acción para intentar acabar con una miniatura enemiga en Línea de visión, que no esté combatiendo. Deberá hacer una tirada enfrentada de su Fuerza contra la Dureza del objetivo. Si iguala o supera al rival, la miniatura objetivo habrá sido abatida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5743-76a6-e8f9-4fdc" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c6b-d609-62be-ed0e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Confusión" hidden="false" id="f88e-122e-bf-43db">
+      <profiles>
+        <profile name="Confusión" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="98a0-3e3b-2edb-74fd">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">Kim puede entrar en la mente de un enemigo hasta 30 cm de distancia y en Línea de visión, excepto aquellos con la Regla especial Bestia o Monguer, y confundirla con pensamientos perturbadores. Esa miniatura actuará en una Ronda de Agilidad 3 veces inferior a la marcada por su Agilidad en el siguiente Turno de juego, hasta un mínimo de 1. Por ejemplo, una miniatura de Agilidad 5, pasaría a actuar ese Turno en la Ronda de Agilidad 2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb69-1760-23f8-c1bc" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="741c-aca9-a9a1-8592" includeChildSelections="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8f2e-323-f3e3-a300" shared="true" includeChildSelections="false"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="0" field="5908-5581-3816-13e2"/>
+            <modifier type="set" value="0" field="90-3911-fa0-38d6"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Desarme" hidden="false" id="8f39-9f74-ba43-f579" publicationId="6699-072c-136a-7d30" page="86">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="3575-c9b9-3baa-1269" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Desarme" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="4e66-d187-7df0-3c10">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">Gracias a la telequinesis, el Cabezón puede intentar desarmar a una miniatura enemiga. Podrá gastar una Acción en intentar desarmar a una miniatura enemiga en Línea de visión, que no esté combatiendo. Para evitar ser desarmada, la miniatura afectada deberá superar una tirada de Fuerza. Si la falla, una de sus armas (a elección del Cabezón) caerá al suelo, y deberá gastar una Acción si quiere recogerla.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ca8-7c1b-ab7-604f" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2834-fc36-e64a-9900" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Potenciación" hidden="false" id="377e-aa6c-54a0-e678" publicationId="6699-072c-136a-7d30" page="86">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="eef0-2a1e-e12c-e8ac" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Potenciación" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="1dd9-6b93-c64-79e0">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">A base de energía psíquica, puede potenciar a otras miniaturas amigas. Podrá usar una de sus Acciones para otorgar un +3 a Combate, Precisión o Técnica a una miniatura amiga. Esta miniatura disfrutará de este bonificador hasta que sea utilizado por primera vez, momento en el que perderá la Potenciación. Hasta que esto ocurra, la miniatura no podrá volver a beneficiarse de este poder una segunda vez, ni siquiera aplicado a un Atributo diferente.
+Los Pochos tienen una mente más débil y más fácilmente influenciable, el uso de este poder psíquico por parte de un Cabezón permite que un grupo completo de Pochos disfrute de la Potenciación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6592-2e22-719c-2572" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1158-704e-74db-68c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titiritero" hidden="false" id="7372-283d-9bea-df09" publicationId="6699-072c-136a-7d30" page="86">
+      <categoryLinks>
+        <categoryLink name="Poder psíquico" hidden="false" id="76dd-4881-acf7-c186" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Titiritero" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="a564-22c8-5e9f-7e26">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede meterse en la mente de otros Mutardos, realizando actos diversos a través de ellos. Puede gastar una de sus Acciones para que otra miniatura de su banda realice una Acción gratuita inmediatamente.
+Los Pochos tienen una mente más débil y más fácilmente influenciable, el gasto de una Acción por parte de un Cabezón permite que un grupo completo de Pochos se vea afectado por Titiritero.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ad-5d55-20f8-84b9" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5bf-2ccc-8c13-f6d7" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -143,5 +200,411 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         <categoryLink targetId="baef-b3fd-e022-e917" id="691d-2d35-5b9e-242" primary="false" name="Banda: Mutardos"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mutante" hidden="false" id="5f32-627d-f830-989c">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+      </costs>
+      <profiles>
+        <profile name="Mutante" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="7c4a-fb04-9893-aec0">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="2f48-c0de-96c1-ecc" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bd8-d30e-8bf6-c5b8" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="9e7d-79cd-e44c-91f8" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
+              <entryLinks>
+                <entryLink import="true" name="Maza" hidden="false" id="4a90-d29b-f602-e43" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="1004-6ec3-d63-c590" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="574-d0ff-21d1-11c9" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="8c33-b9b6-7f84-266f" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Maza" hidden="false" id="d26b-f845-c3fa-d738" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="c7cd-35d1-2c6f-bb7c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cachas" hidden="false" id="94ce-b5a6-44cb-b1b4" type="selectionEntry" targetId="e8de-ce-8096-f027"/>
+            <entryLink import="true" name="Capacitado" hidden="false" id="6593-ac92-fa58-f89a" type="selectionEntry" targetId="4f7e-d6f9-32ae-9ffc"/>
+            <entryLink import="true" name="Carga brutal" hidden="false" id="64d3-3352-520-8999" type="selectionEntry" targetId="b2a2-2d91-379-e2ee"/>
+            <entryLink import="true" name="Cola afilada" hidden="false" id="ebd9-c0bd-d09d-95ec" type="selectionEntry" targetId="4ca4-fc23-a038-6df7"/>
+            <entryLink import="true" name="Corredor" hidden="false" id="ebe7-bfe9-2eaa-5fbb" type="selectionEntry" targetId="d93c-da49-e038-4a80"/>
+            <entryLink import="true" name="Espinas" hidden="false" id="7cd4-5a95-cffc-d86e" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
+            <entryLink import="true" name="Esputo ácido" hidden="false" id="3378-97df-7b9e-4601" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
+            <entryLink import="true" name="Extremidad prensil" hidden="false" id="5a21-8bb3-9dbe-6c51" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
+            <entryLink import="true" name="Garras" hidden="false" id="ec9a-5b84-7bba-3ad0" type="selectionEntry" targetId="89ac-b813-922c-11a8"/>
+            <entryLink import="true" name="Garras envenenadas" hidden="false" id="92cc-d549-7959-3b32" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
+            <entryLink import="true" name="Miembros extra" hidden="false" id="44ff-30ce-d0e7-904f" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
+            <entryLink import="true" name="Mimetismo" hidden="false" id="2dc0-207e-33c1-9d9f" type="selectionEntry" targetId="d370-d789-b8d7-7f83"/>
+            <entryLink import="true" name="Pegajoso" hidden="false" id="8c89-85c8-6ce2-af69" type="selectionEntry" targetId="258f-5e74-27c-5f8b"/>
+            <entryLink import="true" name="Piel dura 1" hidden="false" id="c88d-8e8b-7fe2-9512" type="selectionEntry" targetId="4916-1692-b826-c903"/>
+            <entryLink import="true" name="Piel dura 3" hidden="false" id="eb81-2763-d598-af5b" type="selectionEntry" targetId="7eca-4fd0-5454-975f"/>
+            <entryLink import="true" name="Piel dura 5" hidden="false" id="2d52-2a77-d78d-674b" type="selectionEntry" targetId="423e-a45a-fef-29a3"/>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="12f7-4951-9de4-4945" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb"/>
+            <entryLink import="true" name="Proyectil orgánico" hidden="false" id="a117-729d-f7c7-3c5" type="selectionEntry" targetId="d2e5-1f34-4675-9b90"/>
+            <entryLink import="true" name="Rana" hidden="false" id="661c-38a1-3d26-6290" type="selectionEntry" targetId="2859-b06f-6ebb-573"/>
+            <entryLink import="true" name="Resistente" hidden="false" id="446d-2699-5448-c52f" type="selectionEntry" targetId="275c-4612-4b78-8b82"/>
+            <entryLink import="true" name="Resonancia psíquica" hidden="false" id="60c2-9e1d-5c42-d411" type="selectionEntry" targetId="ada2-bc43-71c5-6428"/>
+            <entryLink import="true" name="Sentidos aguzados" hidden="false" id="46cf-7623-67c5-b6e" type="selectionEntry" targetId="44c1-a042-3be4-e331"/>
+            <entryLink import="true" name="Sónar" hidden="false" id="3060-98b4-7ba9-2c4e" type="selectionEntry" targetId="a0d1-a53c-c996-b5ac"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc02-b77a-dc99-c1f3" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92a8-1b84-5e0d-3e23" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="c818-9bd6-fd62-e100" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="4fa-3448-4d58-4441" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Perromorfo" hidden="false" id="bf46-846b-7e5f-553f">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <profiles>
+        <profile name="Perromorfo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a872-ab5b-7bf7-8a06">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">7</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia, Raudo, Perrete tontico</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Perrete tontico" id="a38a-acdd-41c4-773e" hidden="false">
+          <description>Las mentes de los Perromorfos son demasiado primitivas. Un Cabezón no podrá usar ningún Poder psíquico sobre un Perromorfo.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="1968-990-39b5-829a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="265a-e0ba-8070-e1a0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Raudo" id="1774-93b3-7473-112b" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Bestia" id="9c79-62e7-f9be-8ba9" hidden="false" type="rule" targetId="e9cf-fed3-0a23-ac43"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="a316-307a-4d24-b32" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="9d6d-92ed-cfb9-2463" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bestia del Pozo" hidden="false" id="ddcc-d70b-6ef0-8b20">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Bestia del Pozo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="82b8-f76d-828c-de5f">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Berséker, Mónguer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mónguer" id="a14c-a2b2-2ef6-c034" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+        <infoLink name="Bersérker" id="4693-4bbc-9f5b-e064" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="bfaf-7f9a-4e47-6802" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="882b-50c8-7503-e12" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="e8e5-b687-2ad-f419" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="496-6576-a597-4ca1" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="51d7-5ff-ca59-508f" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="d8bd-179a-7495-9033" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Carga brutal" hidden="false" id="ceb5-d101-58ee-fc4c" type="selectionEntry" targetId="b2a2-2d91-379-e2ee"/>
+            <entryLink import="true" name="Espinas" hidden="false" id="42d9-55bb-5ad6-aa17" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
+            <entryLink import="true" name="Esputo ácido" hidden="false" id="68a2-9a67-40f7-e672" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
+            <entryLink import="true" name="Garras envenenadas" hidden="false" id="2ebb-1785-32cc-9ec5" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
+            <entryLink import="true" name="Miembros extra" hidden="false" id="a65d-ba1d-d138-1619" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="3993-e23-ed03-99cc" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb"/>
+            <entryLink import="true" name="Cola afilada" hidden="false" id="b1c0-21fe-2a70-d4ae" type="selectionEntry" targetId="4ca4-fc23-a038-6df7"/>
+            <entryLink import="true" name="Extremidad prensil" hidden="false" id="12cc-f4d4-ac6e-2531" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e929-efae-8d2a-5e24" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f9-b222-ff16-4b97" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Piel dura 3" hidden="false" id="5474-9e0-6a1c-73b8" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f01-a7fb-3961-5052" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cachas" hidden="false" id="9864-313b-b036-53dd" type="selectionEntry" targetId="e8de-ce-8096-f027">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba3f-60a7-b6f5-bf9e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Resistente" hidden="false" id="514b-78a1-b94c-8d91" type="selectionEntry" targetId="275c-4612-4b78-8b82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0eb-3843-fc9a-9a30" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="f788-b6de-5703-3573" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="469-8c21-9640-6f19" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cabezón" hidden="false" id="6ec3-8616-70a-e889">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="721f-ac9-7fcb-f144" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="43f5-d392-8661-57ca" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="1951-fa08-eac3-c8b" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6352-afa5-68cd-f811" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="807e-36f3-45e6-d246" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="a092-f1ab-1af6-c416" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="d52c-407f-8dbf-e03b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="dd93-9508-a28c-2690" type="selectionEntry" targetId="f09c-7802-581b-8c7a"/>
+            <entryLink import="true" name="Choque mental" hidden="false" id="2b0d-465f-db75-12ef" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
+            <entryLink import="true" name="Desarme" hidden="false" id="323b-f97-2c09-9d72" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
+            <entryLink import="true" name="Potenciación" hidden="false" id="7860-94ea-b48a-6686" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
+            <entryLink import="true" name="Titiritero" hidden="false" id="604a-d54b-98b3-871c" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Cabezón" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="53a5-cca9-b82a-b948">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">1</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Poderes psíquicos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Magmador" hidden="false" id="b00b-91e-3c77-acc9">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="3316-aa9c-f880-b39c" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="d6f2-663a-2c0c-85a5" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="e268-93b9-7352-f1cf" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Magmador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="bba0-21ed-84ef-d608">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Ignífugo, Cuerpo ardiente, Charco de magma, ¡Que se me quema!</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignífugo" id="9af6-39b8-7baf-e54d" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
+      </infoLinks>
+      <rules>
+        <rule name="Cuerpo ardiente" id="d534-4f19-7337-7162" hidden="false">
+          <description>Si Magmador es Impactado por un arma en cuerpo a cuerpo, deberá tirarse 1d10. Con un resultado de 6+ el arma habrá quedado destruida, aunque se seguirá produciendo el Impacto normalmente.</description>
+        </rule>
+        <rule name="Charco de magma" id="3431-c4bb-4464-4463" hidden="false">
+          <description>Una vez por partida, Magmador es capaz de expulsar magma de su cuerpo hasta convertir el terreno en un infierno de lava. Si gasta 2 Acciones seguidas (no necesariamente en la misma Fase de activación) Magmador podrá crear un charco de lava de 10x10 cm, que se considerará un zona de Terreno impasable. Debe crearse con un borde tocando su peana, en un espacio a ras de suelo y despejado de cualquier elemento, incluidos objetivos o miniaturas.</description>
+        </rule>
+        <rule name="¡Que se me quema!" id="a638-57c7-3c66-7b71" hidden="false">
+          <description>Aunque a pesar de su aspecto pudiera parecer lo contrario, Magmador es un mutardo bastante listo. Sin embargo le es muy complicado interactuar con las cosas... porque se le queman. En los escenarios puede controlar objetivos, pero no interactuar con ellos.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="a60d-4aa5-1c41-65af" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c9-d240-1b9b-642a" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Piel dura 5" hidden="false" id="1b04-9011-efeb-81cb" type="selectionEntry" targetId="423e-a45a-fef-29a3">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-97d5-708a-e77" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kim y Fostiador" hidden="false" id="8f2e-323-f3e3-a300">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="483c-c3ee-32f2-3ca6" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="f0b-4a5f-bed5-f705" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="c372-6c83-3e5c-d289" primary="false" name="Banda: Mutardos"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kim y Fostiador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="6a19-3038-7dc-8f0f">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6 (5)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2 (1)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6 (10)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Zasca, Mente ocupada, Odio puro</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Zasca" hidden="false" id="1fae-1487-535c-8e5d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ad-cd83-6a0f-7da3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bba-1f08-fd5a-d3b5" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Zasca" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="50c0-6a85-9b09-8a73">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">9</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Armatoste, Mamotreto</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armatoste" id="3eef-7b72-1c2d-291d" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+            <infoLink name="Mamotreto" id="38f3-7812-2025-ef6d" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Cachas" hidden="false" id="1ed5-2076-f665-49b5" type="selectionEntry" targetId="e8de-ce-8096-f027">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-927d-1369-ddc4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Piel dura 3" hidden="false" id="2fa4-b9db-dc0c-b29e" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee48-77b4-cc2c-dbd0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Resistente" hidden="false" id="2d53-53d5-28df-5ee1" type="selectionEntry" targetId="275c-4612-4b78-8b82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2956-926e-4108-2531" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Piernas seguras" hidden="false" id="da22-9e4d-f677-1148" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3b-77f1-b5ca-6c69" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Zasca" id="3dd5-9277-c2b5-8f58" hidden="false">
+          <description>Se trata de una de las armas defensivas del asentamiento donde Kim y Fostiador estuvieron como esclavos, que la bestia arrancó y se llevó. Fostiador usa como proyectil lo primero que arranca por ahí, pero una vez lanzado, debe encontrar algo que usar como munición para recargarlo. Antes de desplegar se colocarán de manera aleatoria 3 marcadores (de la misma manera que se hace con los objetivos). Estos representan algún poste, farola o similar que hay en el suelo. Si está en contactocon uno, Fostiador puede usar 1 Acción para hacerse con él y pasará a tener un nuevo proyectil.</description>
+        </rule>
+        <rule name="Mente ocupada" id="c788-3e27-31df-fc64" hidden="false">
+          <description>El esfuerzo continuo de Kim controlando a Fostiador, hace que la mente de la Bestia del pozo esté demasiado ocupada como para que ningún poder extra le afecte. No podrá lanzarse ningún Poder psíquico sobre Kim y Fostiador.</description>
+        </rule>
+        <rule name="Odio puro" id="a837-8fea-6f39-bfb1" hidden="false">
+          <description>El tiempo pasado esclavizada, las vejaciones sufridas... todo eso está dentro de Kim siempre a punto de explotar. Si resulta Abatida, todo ese odio estallará en una onda de energía psíquica. Tira 1d10 para ves las consecuencias:
+
+
+• 1-3   - Todas las miniaturas de la mesa sufren un golpe psíquico tan potente que les hace perder 1 punto de Dureza.
+• 4-7   - Su gente se hace partícipe de su odio. Se considerará como si se hubiera lanzado sobre todas las miniaturas de su banda el Poder psíquico Potenciación al Combate, siguiendo sus mismas reglas y restricciones.
+• 8-10 - La confusión invade todo. Todas las miniaturas de la mesa tendrán 1 Acción menos en su siguiente Fase de activación.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Poderes psíquicos" id="e182-ba3a-c273-4167" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Desarme" hidden="false" id="821b-d99d-f6ac-8d09" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
+            <entryLink import="true" name="Potenciación" hidden="false" id="bfd8-99af-4c06-6a99" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
+            <entryLink import="true" name="Titiritero" hidden="false" id="4a95-7154-29bd-edb4" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+            <entryLink import="true" name="Absorción vital" hidden="false" id="d5fe-7f44-3431-b2c0" type="selectionEntry" targetId="c086-ba61-cd1c-d4ad"/>
+            <entryLink import="true" name="Confusión" hidden="false" id="df07-fa42-4b94-6686" type="selectionEntry" targetId="f88e-122e-bf-43db"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
+  <sharedRules>
+    <rule name="Poderes psíquicos" id="7040-45ec-f66d-28db" hidden="false">
+      <description>Un Cabezón puede gastar una Acción para usar un Poder psíquico de manera automática. Ningún Poder psíquico podrá lanzarse dos veces sobre la misma miniatura en el mismo Turno de juego. Los Poderes psíquicos tienen una distancia máxima de alcance sobre su objetivo, más allá no pueden usarse. Si no se indica lo contrario, no necesitan Línea de visión sobre su objetivo.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
