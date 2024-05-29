@@ -1,2 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54e-2410-ba49-c376" name="Mutardos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.snas@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="d54e-2410-ba49-c376" name="Mutardos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.snas@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType name="Poder psíquico" id="2fda-a429-1c7b-b02c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Distancia" id="f4dd-af6f-cf42-c54" hidden="false"/>
+        <characteristicType name="Regla" id="742a-9af9-288f-176c" hidden="false"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Poderes psíquicos" id="2fee-6eb7-1fae-5e9e" hidden="false">
+      <rules>
+        <rule name="Poderes psíquicos" id="7040-45ec-f66d-28db" hidden="false">
+          <description>Un Cabezón puede gastar una Acción para usar un Poder psíquico de manera automática. Ningún Poder psíquico podrá lanzarse dos veces sobre la misma miniatura en el mismo Turno de juego. Los Poderes psíquicos tienen una distancia máxima de alcance sobre su objetivo, más allá no pueden usarse. Si no se indica lo contrario, no necesitan Línea de visión sobre su objetivo.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Potenciación" hidden="false" id="377e-aa6c-54a0-e678" publicationId="6699-072c-136a-7d30" page="86">
+          <categoryLinks>
+            <categoryLink targetId="d652-cee5-9d2d-70f9" id="eef0-2a1e-e12c-e8ac" primary="false" name="Poder psíquico"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Potenciación" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="1dd9-6b93-c64-79e0">
+              <characteristics>
+                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+                <characteristic name="Regla" typeId="742a-9af9-288f-176c">A base de energía psíquica, puede potenciar a otras miniaturas amigas. Podrá usar una de sus Acciones para otorgar un +3 a Combate, Precisión o Técnica a una miniatura amiga. Esta miniatura disfrutará de este bonificador hasta que sea utilizado por primera vez, momento en el que perderá la Potenciación. Hasta que esto ocurra, la miniatura no podrá volver a beneficiarse de este poder una segunda vez, ni siquiera aplicado a un Atributo diferente.
+Los Pochos tienen una mente más débil y más fácilmente influenciable, el uso de este poder psíquico por parte de un Cabezón permite que un grupo completo de Pochos disfrute de la Potenciación.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Choque mental" hidden="false" id="fc4e-7d9d-ff7f-c3d" publicationId="6699-072c-136a-7d30" page="86">
+          <categoryLinks>
+            <categoryLink name="Poder psíquico" hidden="false" id="84fd-a364-def2-8ad2" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Choque mental" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e6a-f41a-bb38-6a92">
+              <characteristics>
+                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">15 cm</characteristic>
+                <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede lanzar una onda psíquica que intenta freír el cerebro de un enemigo. Podrá gastar una Acción para intentar acabar con una miniatura enemiga en Línea de visión, que no esté combatiendo. Deberá hacer una tirada enfrentada de su Fuerza contra la Dureza del objetivo. Si iguala o supera al rival, la miniatura objetivo habrá sido abatida.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Desarme" hidden="false" id="8f39-9f74-ba43-f579" publicationId="6699-072c-136a-7d30" page="86">
+          <categoryLinks>
+            <categoryLink name="Poder psíquico" hidden="false" id="3575-c9b9-3baa-1269" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Desarme" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="4e66-d187-7df0-3c10">
+              <characteristics>
+                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+                <characteristic name="Regla" typeId="742a-9af9-288f-176c">Gracias a la telequinesis, el Cabezón puede intentar desarmar a una miniatura enemiga. Podrá gastar una Acción en intentar desarmar a una miniatura enemiga en Línea de visión, que no esté combatiendo. Para evitar ser desarmada, la miniatura afectada deberá superar una tirada de Fuerza. Si la falla, una de sus armas (a elección del Cabezón) caerá al suelo, y deberá gastar una Acción si quiere recogerla.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Barrera psíquica" hidden="false" id="f09c-7802-581b-8c7a" publicationId="6699-072c-136a-7d30" page="86">
+          <categoryLinks>
+            <categoryLink name="Poder psíquico" hidden="false" id="d6e1-39c8-1266-b286" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Barrera psíquica" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="6e1-e669-de15-bb">
+              <characteristics>
+                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+                <characteristic name="Regla" typeId="742a-9af9-288f-176c">Este poder le brinda una barrera de pura energía psíquica que le concede Blindaje 5 al propio Cabezón que lo lanza. Para usarlo tiene que gastar una Acción, y a partir de ese momento permanecerá activo, debiendo mantener una Acción cada Fase de activación posterior para mantenerlo, de manera que sólo dispondría de 2 Acciones libres. Al principio de las Fases de activación posteriores, puede decidir desactivarlo, no pudiendo volver a activarlo hasta el Turno siguiente.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Titiritero" hidden="false" id="7372-283d-9bea-df09" publicationId="6699-072c-136a-7d30" page="86">
+          <categoryLinks>
+            <categoryLink name="Poder psíquico" hidden="false" id="76dd-4881-acf7-c186" targetId="d652-cee5-9d2d-70f9" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Titiritero" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="a564-22c8-5e9f-7e26">
+              <characteristics>
+                <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+                <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede meterse en la mente de otros Mutardos, realizando actos diversos a través de ellos. Puede gastar una de sus Acciones para que otra miniatura de su banda realice una Acción gratuita inmediatamente.
+Los Pochos tienen una mente más débil y más fácilmente influenciable, el gasto de una Acción por parte de un Cabezón permite que un grupo completo de Pochos se vea afectado por Titiritero.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <categoryEntries>
+    <categoryEntry name="Poder psíquico" id="d652-cee5-9d2d-70f9" hidden="true"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Pocho" hidden="false" id="3aa9-c684-5d3f-7732">
+      <profiles>
+        <profile name="Pocho" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="3c8e-ae7e-932e-2bdf">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">1</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">X</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">1</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer, Cuerpo escombro, Grupal</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Cuerpo escombro" id="8561-3c8b-9faa-347d" hidden="false">
+          <description>Los pochos están tan hechos polvo que no dejan marcador al ser Abatidos, es como si no hubieran existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo.</description>
+        </rule>
+        <rule name="Grupal" id="db73-70df-99a3-680c" hidden="false">
+          <description>Los Pochos tienen cierta mentalidad colectiva que les hace ir en grupo siempre que pueden. Los Pochos deben ir unidos hasta formar un grupo mínimo de 2 y máximo de 5. Por encima de este número formarán otro grupo, y así sucesivamente.
+Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
+
+Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todos los Pochos de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si un Pocho del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de Pochos solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 Pochos su Atributo de Combate será 3. Sin embargo, solo se Abatirá un Pocho por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="a1c6-2692-821c-c89a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86a-1d51-ed28-bef1" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Grupo de Pochos" hidden="false" id="2745-1277-71a6-df58">
+      <entryLinks>
+        <entryLink import="true" name="Pocho" hidden="false" id="e2f5-1bc-4113-1698" type="selectionEntry" targetId="3aa9-c684-5d3f-7732">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e55-3cfc-7a15-7bf0" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a140-22e3-f5e5-aef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="dcd-9caf-9577-5460" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="691d-2d35-5b9e-242" primary="false" name="Banda: Mutardos"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

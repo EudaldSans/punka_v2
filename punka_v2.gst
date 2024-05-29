@@ -111,6 +111,7 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Arma" id="6582-5e09-b30b-db5a" hidden="true"/>
+    <categoryEntry name="Banda: Mutardos" id="baef-b3fd-e022-e917" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
