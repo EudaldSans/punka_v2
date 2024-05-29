@@ -340,6 +340,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -372,6 +373,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -489,6 +491,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -542,6 +545,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Camuflaje, Infiltración, Raudo, Todoterreno</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -566,6 +570,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -638,6 +643,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Maestra armera</characteristic>
           </characteristics>
         </profile>
       </profiles>
