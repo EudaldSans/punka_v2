@@ -132,13 +132,15 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a54f-b624-486-83ff" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Configuración" id="9e25-aa8a-c426-a886" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
       <categoryLinks>
+        <categoryLink name="Configuración" hidden="false" id="1138-ba4c-1116-58b3" targetId="9e25-aa8a-c426-a886"/>
         <categoryLink id="1a89-87d4-bc28-883a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="false"/>
-        <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
+        <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
         <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
         <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4"/>
@@ -1100,14 +1102,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0f-652f-55fb-d64d" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="8b75-5cc9-8719-7994" name="Pura chapa" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
-          <characteristics>
-            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
-            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="b86f-508c-aaf0-e3c7" name="Armatoste" hidden="false" targetId="c14e-1660-fbd2-5927" primary="false"/>
       </categoryLinks>
@@ -1116,6 +1110,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </costs>
       <infoLinks>
         <infoLink name="Armatoste" id="d634-52da-881-7f23" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+        <infoLink name="Pura chapa" id="8fee-8061-baf0-90f4" hidden="false" type="profile" targetId="62c5-97f6-7701-fece"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="c7ab-bf22-707b-5b89" name="Chaleco antibalas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
@@ -2020,6 +2015,12 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
       <characteristics>
         <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">4</characteristic>
         <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pura chapa" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="62c5-97f6-7701-fece">
+      <characteristics>
+        <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
+        <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

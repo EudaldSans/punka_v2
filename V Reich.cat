@@ -10,14 +10,13 @@
         <categoryLink targetId="84b7-6828-dd10-0280" id="325c-e674-6ba2-4e9e" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Bersérker" id="1cf2-3c7f-869b-fb3b" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
-        <infoLink name="Mónguer" id="ef58-9bfe-da41-158e" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+        <infoLink name="Subhumano" id="328-5a0d-5c06-17bb" hidden="false" type="infoGroup" targetId="cfb7-8c0b-6a61-80de"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Pura chapa" hidden="false" id="4f99-15ef-6f3c-41a7" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43d3-48b-c619-1594-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43d3-48b-c619-1594-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-max" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
@@ -33,21 +32,14 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <profiles>
-        <profile name="Subhumano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="357a-7ee0-13b5-de54"/>
-        <profile name="Subhumano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e8a9-8ca4-5211-e881">
-          <characteristics>
-            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
-            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2 (1)</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
-            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
-            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Berséker, Monguer</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Base</comment>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sanitario" hidden="false" id="ae9a-f2f7-2d42-3ed9" publicationId="6699-072c-136a-7d30" page="35">
       <costs>
@@ -124,6 +116,20 @@
 • 9-10 - La miniatura Abatida podrá volver a entrar en juego en su siguiente Fase de activación con sus Atributos intactos.</description>
         </rule>
       </rules>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="5bd2-5daa-aa82-86bb"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5bd2-5daa-aa82-86bb" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Soldat" hidden="false" id="df29-dae1-4e59-bea1" publicationId="6699-072c-136a-7d30" page="109">
       <costs>
@@ -183,6 +189,20 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="64e3-fa2d-6bcf-d41f" includeChildSelections="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="64e3-fa2d-6bcf-d41f"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Übersoldat" hidden="false" id="fb46-f755-64af-1c67" publicationId="6699-072c-136a-7d30" page="110">
       <costs>
@@ -563,6 +583,276 @@
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subfacción" hidden="false" id="9481-e0f0-b549-7aa4">
+      <categoryLinks>
+        <categoryLink targetId="9e25-aa8a-c426-a886" id="300e-9a63-2ef7-aeb2" primary="true" name="Configuración"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-max" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Subfacciones" id="38a9-80f8-2bcf-71bb" hidden="false" defaultSelectionEntryId="dfcc-94a2-2634-5d3f">
+          <entryLinks>
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="dfcc-94a2-2634-5d3f" type="selectionEntry" targetId="8308-8bf5-c617-6dfe" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e7-44ae-2fa2-3871" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="División cientifica" hidden="false" id="80a1-3e9f-765d-b5b" type="selectionEntry" targetId="620f-6156-2c08-115b" sortIndex="2"/>
+            <entryLink import="true" name="Fuerte Thule" hidden="false" id="defe-ade2-9132-d00a" type="selectionEntry" targetId="d8ef-8dda-a0ea-68dd" sortIndex="3"/>
+            <entryLink import="true" name="Organización Kraken" hidden="false" id="fa14-4452-fea8-bf61" type="selectionEntry" targetId="a7d7-5934-ab89-8517" sortIndex="4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef94-3ea1-7a79-72d3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d56-7eb5-3576-766f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Engendro" hidden="false" id="8890-d182-1335-6d0a" publicationId="5478-7d5e-bc66-ffc" page="2">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="4c0e-5ef3-7289-10c6" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="7ccb-5a2f-10dc-6f94" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Engendro" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="4c37-d890-85db-a4cb">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">8</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer Desmadrado</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="9289-fd69-9ab8-b997" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Armadura metálica" hidden="false" id="831a-1278-343d-1528" type="selectionEntry" targetId="d761-5553-4adf-c294">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Mónguer" id="f27e-c88f-9bd6-4fda" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
+      <rules>
+        <rule name="Desmadrado" id="ed7-f596-acf0-90d5" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="2">
+          <description>Al principio de su Fase de activación, si está a 15 cm o menos de un Tierdoktor actuará de manera normal. En caso contrario se desmadrará y si tiene a una miniatura amiga o enemiga con las que se cumplan las condiciones para poder Asaltarla deberá hacerlo, o directamente atacarla si ya estuviera en contacto con ella. Además, como es lógico, no pueden utilizar Walkie-talkie.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a9a9-1fc1-5e0a-91ac"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="a9a9-1fc1-5e0a-91ac"/>
+          </modifiers>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Subhumano" hidden="false" id="52ac-6bc6-747-802d" publicationId="6699-072c-136a-7d30" page="107">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: V Reich" hidden="false" id="e8c9-6bea-e1bb-93e" targetId="da8-49dd-4793-c495" primary="false"/>
+        <categoryLink name="Miembros de la banda" hidden="false" id="ed6d-888d-92b1-18b8" targetId="84b7-6828-dd10-0280" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Subhumano" id="5754-3ca0-d3fd-47dd" hidden="false" type="infoGroup" targetId="cfb7-8c0b-6a61-80de"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>División cientifica</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Modificaciones" id="a0c1-5d27-d261-ac10" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chapa Soldada" hidden="false" id="2446-d046-d197-aa1a" publicationId="5478-7d5e-bc66-ffc" page="3">
+              <infoLinks>
+                <infoLink name="Pura chapa" id="6902-5203-8749-f5e1" hidden="false" type="profile" targetId="62c5-97f6-7701-fece"/>
+                <infoLink name="Armatoste" id="21b4-9af0-d766-ddec" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="21f1-6770-3f4-9286" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Explosivos" hidden="false" id="a25-9a7d-2f0b-c3b" publicationId="5478-7d5e-bc66-ffc" page="3">
+              <profiles>
+                <profile name="Explosivos" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="28b-214c-f438-d614">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Cuando se coloque en contacto a una miniatura enemiga, explotará automáticamente. Causará un impacto de Fuerza 4 y Penetración 4 en un radio de 5 cm. Si el Subhumano es impactado por un arma de proyectiles o de plantilla también explotará automáticamente. Tras explotar se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mandíbula cepo" hidden="false" id="e03b-153d-4db8-d8bc" publicationId="5478-7d5e-bc66-ffc" page="3">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+              </costs>
+              <profiles>
+                <profile name="Mandíbula cepo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="e100-90e3-6d93-c39">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">En el momento en que entra en contacto con una miniatura enemiga el cepo se activa. Antes de que las miniaturas efectúen sus tiradas de ataque, la miniatura enemiga deberá superar una tirada de Agilidad, y en caso de fallarla sufrirá un penalizador de -2 a la Dureza durante el resto de la partida. Tras su uso el cepo queda inutilizado y no puede volver a usarse.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Zancos" hidden="false" id="b156-76aa-4141-e391" publicationId="5478-7d5e-bc66-ffc" page="3">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Zancos" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="7bf8-6a2d-ec93-2ffa">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Sus extremidades son sustituidas por una especie de pinzas o similar de gran tamaño que le permiten desplazarse rápidamente obteniendo la Regla especial Raudo, pero debido a su complicado equilibrio consideran cualquier Terreno atravesable que no sea chachi como Terreno pila chungo.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Raudo" id="b2b6-d8a6-25e9-ca08" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Manostijeras" hidden="false" id="815b-21d8-326a-32c7" type="selectionEntry" targetId="59a1-9871-cf6e-3147"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5583-9e19-1181-b682-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5583-9e19-1181-b682-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armas" hidden="false" id="da12-c415-7db1-ddce">
+          <infoLinks>
+            <infoLink name="Garras y dientes" id="643-ff8a-dee2-6f5d" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Filo Pequeño" id="dc86-665a-d5cf-d400" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Filo Pequeño" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Garras y dientes" field="name">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tierdoktor" hidden="false" id="1231-5391-d4ab-ec28">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="22"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="7759-79e3-1e51-dc9e" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="7bce-1d64-d1a-ba8e" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Azuzador" hidden="false" id="daf3-7a-4bb4-b3a2" type="selectionEntry" targetId="c1e9-8851-aead-66d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7860-7e20-8db8-ed99-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7860-7e20-8db8-ed99-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Walkie-talkie" hidden="false" id="5a3d-dbcf-46d9-2213" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
+          <modifiers>
+            <modifier type="set" value="7" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Pistola" hidden="false" id="31e7-c200-70bf-a127" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Tierdoktor" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="61cc-22cb-4929-4460">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Azuzar</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Azuzar" id="a66a-228f-9332-dd31" hidden="false">
+          <description>Un Tierdoktor que se encuentre en contacto con un Subhumano o un Engendro puede gastar una Acción en azuzar a esa criatura. Deberás tirar 1d10 en la siguiente tabla y aplicar el resultado.
+
+
+• 1    - La criatura no se lo toma demasiado bien y se revuelve contra el Tierkdoktor realizando un Ataque gratuito contra él de manera inmediata.
+• 2-5 - La criatura simplemente nota unas ligeras cosquillas y no sucede nada.
+• 6-9 - La criatura espabila repentinamente y puede realizar una Acción gratuita de manera inmediata.
+• 10  - La criatura se vuelve aún más furiosa y obtiene un bonificador de +2 a los Atributos de Fuerza y Combate que duran hasta que finalice su siguiente Fase de activación.</description>
+        </rule>
+      </rules>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="50f6-5bb3-1678-77e9"/>
+          </modifiers>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="50f6-5bb3-1678-77e9"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Walkie-talkie" hidden="false" id="31a3-d917-dc7b-edae">
@@ -576,6 +866,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce62-2c63-2a2f-f086" includeChildSelections="false"/>
       </constraints>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="7"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mastín" hidden="false" id="36c6-ca67-49c1-40ec">
       <costs>
@@ -592,6 +885,53 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636d-a752-a81f-f245" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37b2-1120-c9d2-19cc" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ada-4019-799e-6e53" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="8308-8bf5-c617-6dfe">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f479-a253-66b4-143b" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Manostijeras" hidden="false" id="59a1-9871-cf6e-3147" publicationId="5478-7d5e-bc66-ffc" page="3">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Manostijeras" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="4da2-6c18-6ca6-94b9">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Las garras se consideran un filo pequeño, pero además el Subhumano podrá repetir si lo desea su tirada de Impactar cuando se encuentre en un Combate cuerpo a cuerpo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Azuzador" hidden="false" id="c1e9-8851-aead-66d">
+      <profiles>
+        <profile name="Azuzador" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ea97-2641-55d1-38cd" publicationId="5478-7d5e-bc66-ffc" page="5">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Si una ataque con este arma consigue impactar, la miniatura impactada sufrirá la Regla especial Electrificación. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Electrificación" id="aa4d-1937-2cc3-bc6" hidden="false" type="rule" targetId="6240-90ca-56c3-21e2"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Cadena de mando" id="171a-5fbc-2f0d-4312" hidden="false">
@@ -605,4 +945,29 @@
       </constraints>
     </categoryEntry>
   </categoryEntries>
+  <publications>
+    <publication name="Subfacciones V Reich" id="5478-7d5e-bc66-ffc" hidden="false" shortName="Subfacciones V Reich" publisher="Subfacciones V Reich" publisherUrl="https://www.badrollgames.com/V2/SubfaccionesVReich.pdf"/>
+  </publications>
+  <sharedInfoGroups>
+    <infoGroup name="Subhumano" id="cfb7-8c0b-6a61-80de" hidden="false">
+      <profiles>
+        <profile name="Subhumano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e8a9-8ca4-5211-e881">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2 (1)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Berséker, Monguer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bersérker" id="1cf2-3c7f-869b-fb3b" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
+        <infoLink name="Mónguer" id="ef58-9bfe-da41-158e" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
