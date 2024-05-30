@@ -913,6 +913,12 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="defe-ade2-9132-d00a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="b8bb-117a-5a66-bdb8">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="df29-dae1-4e59-bea1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fb46-f755-64af-1c67" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <rules>
         <rule name="Inexperto" id="531e-7079-24ca-b1ee" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="7">
@@ -958,6 +964,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b8bb-117a-5a66-bdb8"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eva y Uno" hidden="false" id="f307-8d45-b1b4-4fd8" publicationId="5478-7d5e-bc66-ffc" page="8">
       <costs>
