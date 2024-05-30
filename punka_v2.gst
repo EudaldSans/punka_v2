@@ -713,7 +713,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7/6/5</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
-            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, a dos manos, escasa, postas</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, A dos manos, escasa, postas</characteristic>
           </characteristics>
         </profile>
       </profiles>
