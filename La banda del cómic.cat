@@ -16,7 +16,11 @@
     </entryLink>
   </entryLinks>
   <categoryEntries>
-    <categoryEntry name="Dan" id="cc6c-5681-4836-f20a" hidden="true"/>
+    <categoryEntry name="Dan" id="cc6c-5681-4836-f20a" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58e-d898-11b9-9d32" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Paul" hidden="false" id="95fd-becd-7d78-6820" publicationId="6699-072c-136a-7d30" page="125">
@@ -141,6 +145,14 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c3d2-f7ab-4326-e6e4" includeChildSelections="true"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Compañerismo" id="3605-7768-c8f3-1025" hidden="false" type="rule" targetId="e882-2fd4-4805-ef66"/>
+      </infoLinks>
+      <rules>
+        <rule name="Demasiado honorable" id="8133-e0a4-b605-ae7a" hidden="false" publicationId="6699-072c-136a-7d30" page="126">
+          <description>Dan nunca atacará a alguien que no tenga Línea de visión sobre él. Por lo tanto, no podrá Disparar a nadie que no tenga Línea de visión sobre el propio Dan. Y para Asaltar a un enemigo, el rival asaltado tendrá que tener Línea de visión sobre Dan como mínimo en la última Acción del Asalto de este, y Dan solo obtendrá bonificadores extra por cada Acción donde no solo él estuviera viendo al asaltado, sino también el asaltado a Dan.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nicole" hidden="false" id="8b24-4b85-a366-f237" publicationId="6699-072c-136a-7d30" page="127">
       <categoryLinks>
@@ -167,8 +179,8 @@
       <entryLinks>
         <entryLink import="true" name="Escopeta" hidden="false" id="d0cc-f77c-178-a383" type="selectionEntry" targetId="265c-2979-056d-1a06">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae99-2a7e-d30c-f18b-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae99-2a7e-d30c-f18b-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-max" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
@@ -176,13 +188,14 @@
         </entryLink>
         <entryLink import="true" name="Ropas resistentes" hidden="false" id="be6f-3932-efc0-614c" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da4e-524e-655f-eec8-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da4e-524e-655f-eec8-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-max" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="6a14-a80f-f006-76a6" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <rules>
         <rule name="Voluntariosa" id="a49f-cf38-e9a5-c319" hidden="false" publicationId="6699-072c-136a-7d30" page="127">
@@ -196,5 +209,185 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aea7-dd23-e34e-8861" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Markus" hidden="false" id="9ed7-ab9f-dad8-2c6b" publicationId="6699-072c-136a-7d30" page="128">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="6d23-c570-9aae-5a72" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="b905-98fb-6417-728e" primary="false" name="Banda: La banda del Cómic"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Markus" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="92b8-c58b-c139-3274">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5 (6)</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal encarado, Trucos sucios</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Mal encarado" id="68a1-cd57-3ffe-6a9c" hidden="false" publicationId="6699-072c-136a-7d30" page="128">
+          <description>Markus no destaca por su buen carácter y es capaz de insultarte de mil maneras con o sin palabras. Puede decidir gastar una Acción en provocar a una miniatura rival que esté a un máximo de 30 cm de distancia y con Línea de visión sobre él. Esa miniatura estará tan fuera de sí que contará como si tuviese la Regla especial Mónguer hasta final de ese Turno de juego.</description>
+        </rule>
+        <rule name="Trucos sucios" id="73ca-b892-d470-d604" hidden="false" publicationId="6699-072c-136a-7d30" page="128">
+          <description>Markus no desaprovecha cualquier medio para ganar. Cuando dispare a una miniatura sin Línea de visión hacia el propio Markus obtendrá un bonificador de +1 adicional a la Precisión en ese disparo y cuando Asalte a una miniatura sin línea de visión hacia él obtendrá un bonificador de +1 adicional al Combate en ese Asalto.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Escopeta" hidden="false" id="131a-db6e-cff5-d57b" type="selectionEntry" targetId="265c-2979-056d-1a06">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="9935-f2d0-b194-cb49" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vale" hidden="false" id="555-b3fe-e4b8-95f4" publicationId="6699-072c-136a-7d30" page="129">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="4e15-addd-f45a-11bd" primary="false" name="Banda: La banda del Cómic"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="e73a-f45c-21de-2244" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Vale" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="fb31-4b8b-6a30-bbc7">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Le tengo, Ocultación, Camuflaje</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Le tengo" id="c3b-b387-39e-fe1c" hidden="false">
+          <description>Una vez que Vale fija el ojo sobre un objetivo, no lo pierde. Vale puede decidir gastar una Acción de Apuntar a un enemigo concreto, y no perderá el bonificador a la Precisión hasta que no lo Abata, independientemente del Turno de juego que sea. No podrá volver a Apuntar o usar esta regla con otra miniatura hasta que su objetivo seleccionado no haya sido Abatido (por cualquier circunstancia). Al igual que con la regla de Apuntar habitual, no podrá utilizarse ese bonificador durante el Fuego defensivo.</description>
+        </rule>
+        <rule name="Ocultación" id="8c0c-5105-9f95-d0f9" hidden="false" publicationId="6699-072c-136a-7d30" page="129">
+          <description>Vale es una experta en disparar sin ser detectada. Obtiene la Regla especial Camuflaje y un bonificador de +1 adicional al Blindaje de una Cobertura tras la que esté (si está tras más de una lo aplicará a la de mayor grado).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Camuflaje" id="2a83-4c9d-a207-b76f" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rifle" hidden="false" id="d376-cfcf-97cc-325e" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+          <entryLinks>
+            <entryLink import="true" name="Mira telescópica" hidden="false" id="af90-36fa-bb1c-c095" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ropas resistentes" hidden="false" id="201a-e836-a85f-b73e" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b331-619-b2b4-f83d" type="selectionEntry" targetId="19f2-5137-907f-980b">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dan" hidden="false" id="1bab-6dea-7c0d-9748" publicationId="6699-072c-136a-7d30" page="130">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="d0aa-b38a-cef0-6e75" primary="false" name="Banda: La banda del Cómic"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="28ac-b3-1687-f26f" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="cc6c-5681-4836-f20a" id="1905-1f52-31f-8129" primary="false" name="Dan"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dan" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="386c-eca9-d337-dc60">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5 (4)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Reteraso (2), Ensalada de tiros, Compañerismo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pistola" hidden="false" id="36bc-6049-f0bc-8be" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+            <modifier type="set" value="2" field="c1cd-b6c1-602c-8008"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Compañerismo" id="aa2a-b23b-c95c-2192" hidden="false" type="rule" targetId="e882-2fd4-4805-ef66"/>
+      </infoLinks>
+      <rules>
+        <rule name="Ensalada de tiros" id="3d27-4bcd-37ed-8d24" hidden="false">
+          <description>Dan puede disparar usando una sola Acción a dos miniaturas distintas (una con cada pistola). Sin embargo, estos disparos tendrán un -1 a Precisión y al hacer esto no se beneficiará de Apuntar ni podrá usarlo en Fuego defensivo.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rita" hidden="false" id="645a-56d7-2389-9a8" publicationId="6699-072c-136a-7d30" page="80"/>
   </selectionEntries>
+  <sharedRules>
+    <rule name="Compañerismo" id="e882-2fd4-4805-ef66" hidden="false" publicationId="6699-072c-136a-7d30" page="130">
+      <description>Dan es muy amigo de sus amigos y como algún compañero sufra daño sacará fuerzas de flaqueza. Tendrá los siguientes bonificadores acumulativos por cada miniatura de la propia banda que haya sido Abatida:
+
+• 1   -&gt; +1 Precisión
+• 2   -&gt; +1 Combate
+• 3   -&gt; +1 Dureza
+• 4+ -&gt; +1 Acciones</description>
+    </rule>
+  </sharedRules>
 </catalogue>
