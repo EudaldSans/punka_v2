@@ -812,6 +812,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Pistola" hidden="false" id="31e7-c200-70bf-a127" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="7cd1-ece2-e47-71ba" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <profiles>
         <profile name="Tierdoktor" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="61cc-22cb-4929-4460">
