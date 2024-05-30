@@ -1351,6 +1351,126 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Die Glocke (La campana)" hidden="false" id="770c-aa65-c501-d747" publicationId="5478-7d5e-bc66-ffc" page="14">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="Die Glocke (La campana)" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="36a1-669f-da98-1f50">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Debes desplegar la Campana en tu zona de despliegue justo antes de que se desplieguen las miniaturas. Una vez cada Turno de juego una miniatura de Kraken que esté en contacto con el artefacto puede gastar 1 Acción para realizar una tirada de Técnica. Si la supera, podrá colocar la Campana junto con la miniatura (deberá ponerse en contacto con cualquier borde de la campana) a una distancia mínima de 30 cm en cualquier lugar del campo de batalla donde quepa físicamente y la escenografía o miniaturas lo permitan. Si la falla por cualquier tirada hasta 9 no funcionará y no se moverá. Si saca un 10, tanto la Campana como la miniatura con todo su equipo serán retiradas de la mesa para no volver.
+En cualquiera de los casos, independientemente del resultado de la Tirada de Técnica, todas las miniaturas en un radio de 10 cm de los bordes de la Campana perderá de manera permanente 1 punto de Dureza. La miniatura que la utiliza sólo lo perderá si la Campana no se mueve. 
+La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4af8-4d51-42ab-8460" id="c72b-9ab8-602-f4ba" primary="true" name="Equipo de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="6b7b-dab0-79d1-7b99" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Casco Rojo" hidden="false" id="887a-d5fb-9b47-44bd" publicationId="5478-7d5e-bc66-ffc" page="13">
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="86a0-80ab-edfc-c651" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="7a0c-516c-8bbe-15b9" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c7de-ae3e-bbf-e032" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="9834-483c-499a-be17" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b9e-6a50-a248-8be3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9e-6a50-a248-8be3-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pistola" hidden="false" id="c6cf-e6cc-7823-57ae" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83b-32fe-21c2-510f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83b-32fe-21c2-510f-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="7b10-53f2-38bb-8b80" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="67c2-4df8-eff0-37d0" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74f-1a3d-fece-adf5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74f-1a3d-fece-adf5-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="3da7-5668-fc11-2a37" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="4e44-a134-c04a-2d23" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d4-8bd7-b123-e463-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67d4-8bd7-b123-e463-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="126b-841-ae0-7c96" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Casco Rojo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="54b1-d7d7-d770-acdd">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5 (6)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Casco Rojo, Liberad al Kraken, Odio al Capitán Hammerica</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Casco Rojo" id="b03e-cd2b-1b42-ed67" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
+          <description>Casco Rojo no se quita la protección que le da su apodo en ningún momento. Hay rumores de que la lleva fusionada de alguna forma con su propio cráneo y forma parte de su ser, mientras algunos dicen haber visto arder llamas infernales en las oscuras cuencas de su máscara. Sea como sea estar cerca de este fanático imponente le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de Casco Rojo y con Línea de visión hacia él.</description>
+        </rule>
+        <rule name="Liberad al Kraken" id="a39e-3f2d-1add-8cd4" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
+          <description>Casco Rojo puede gastar 1 Acción en arengar a sus tropas de élite. Si hace esto, aquellos Golems que actúen en ese mismo Turno de juego, obtendrán un bonificador de +1 al Combate y la Precisión. Esta regla puede usarse una sola vez durante toda la partida.</description>
+        </rule>
+        <rule name="Odio al Capitán Hammerica" id="a8d-57b2-177f-3e81" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
+          <description>El Capitán Hammerica es la única prueba válida del suero de los Übersoldats que robó uno de sus científicos y que iba a ser destinado a Casco Rojo, y encima anda por ahí luciéndolo. Si Casco Rojo se enfrenta una banda con el Capitán Hammerica y consigue Abatirlo, conseguirá 3 puntos de victoria extra para su banda.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Cadena de mando" id="6372-89ae-c809-51ce" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Walkie-talkie" hidden="false" id="31a3-d917-dc7b-edae">
