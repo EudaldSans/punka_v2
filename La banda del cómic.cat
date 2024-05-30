@@ -49,16 +49,28 @@
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Miembros extra" hidden="false" id="588d-e191-f096-ff15" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Filo Pequeño" hidden="false" id="32ff-e147-ed3a-2aa7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <selectionEntries>
@@ -73,6 +85,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <rules>
@@ -105,14 +121,80 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Chaleco antibalas" hidden="false" id="a3be-203f-a282-233e" type="selectionEntry" targetId="c7ab-bf22-707b-5b89"/>
+        <entryLink import="true" name="Chaleco antibalas" hidden="false" id="a3be-203f-a282-233e" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Escopeta" hidden="false" id="3448-d5a0-832b-c0aa" type="selectionEntry" targetId="265c-2979-056d-1a06">
           <modifiers>
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="824b-1e6d-ae12-ca52" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c3d2-f7ab-4326-e6e4" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Nicole" hidden="false" id="8b24-4b85-a366-f237" publicationId="6699-072c-136a-7d30" page="127">
+      <categoryLinks>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="d777-b0b0-fe94-d41a" primary="false" name="Banda: La banda del Cómic"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="13b9-f46f-54a4-2bfd" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="45"/>
+      </costs>
+      <profiles>
+        <profile name="Nicole" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="af65-3173-f15a-b155">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Voluntariosa, Fuego malo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Escopeta" hidden="false" id="d0cc-f77c-178-a383" type="selectionEntry" targetId="265c-2979-056d-1a06">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae99-2a7e-d30c-f18b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae99-2a7e-d30c-f18b-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Ropas resistentes" hidden="false" id="be6f-3932-efc0-614c" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da4e-524e-655f-eec8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da4e-524e-655f-eec8-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Voluntariosa" id="a49f-cf38-e9a5-c319" hidden="false" publicationId="6699-072c-136a-7d30" page="127">
+          <description>Nicole ha vivido muchas desgracias y ha sobrevivido a todas ellas con una voluntad inquebrantable. Puede decidir gastar una Acción y obtener un bonificador de +1 a la Dureza. Podrá hacer esto durante más Acciones hasta conseguir un máximo de +3. Tras la primera ocasión en que tenga que realizar una Tirada de su Dureza contra la Fuerza de algún ataque, el bonificador total que tuviera en ese momento se perderá. Después de esto, si lo desea, puede volver a repetir el proceso.</description>
+        </rule>
+        <rule name="Fuego malo" id="788a-555b-5db7-b159" hidden="false" publicationId="6699-072c-136a-7d30" page="127">
+          <description>Nicole tiene malas experiencias con el fuego y le afecta especialmente. Nunca atravesará voluntariamente un marcador de Fuego.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aea7-dd23-e34e-8861" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
