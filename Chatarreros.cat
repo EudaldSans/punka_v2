@@ -344,6 +344,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
           </profiles>
           <categoryLinks>
             <categoryLink name="Arma" hidden="false" id="c073-8e4d-6808-f2d0" targetId="6582-5e09-b30b-db5a" primary="false"/>
+            <categoryLink targetId="501b-9657-19ab-7b5d" id="ab40-cb74-5476-e3e7" primary="false" name="Escasa"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Carcasa" hidden="false" id="8c87-dbbc-280e-44cc">
