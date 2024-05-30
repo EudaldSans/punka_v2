@@ -60,7 +60,11 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false"/>
+    <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d12a-f092-5bf5-54f2"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="cd25-e09a-4ac6-8cdc" name="Gato parameño" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f31c-9ca6-2476-d7c8" type="max"/>
@@ -120,6 +124,7 @@
     </categoryEntry>
     <categoryEntry name="Banda: Pandilleros" id="4349-95e9-393e-d308" hidden="false"/>
     <categoryEntry name="Arma de fuego" id="9e40-76e9-2e11-5819" hidden="true"/>
+    <categoryEntry name="Banda: La banda del Cómic" id="662c-1d4a-4875-99a6" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -1713,6 +1718,13 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           </modifiers>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9e40-76e9-2e11-5819" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
