@@ -572,7 +572,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sonda" hidden="false" id="7ea6-da1d-747f-db4" publicationId="6699-072c-136a-7d30" page="41">
+    <selectionEntry type="model" import="true" name="Sonda" hidden="false" id="7ea6-da1d-747f-db4" publicationId="6699-072c-136a-7d30" page="41">
       <categoryLinks>
         <categoryLink targetId="476f-664f-cf39-efa5" id="d781-ce0e-5456-29e9" primary="false" name="Banda: Chatarreros"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="6180-b84e-9777-18b" primary="true" name="Miembros de la banda"/>

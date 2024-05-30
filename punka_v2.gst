@@ -699,7 +699,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           <modifiers>
             <modifier type="set" value="Pistola con mira telescópica" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -719,7 +719,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <modifiers>
         <modifier type="set" value="Pistola con mira telescópica" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -978,7 +978,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           <modifiers>
             <modifier type="set" value="Rifle con mira telescópica" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1003,7 +1003,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <modifiers>
         <modifier type="set" value="Rifle con mira telescópica" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
