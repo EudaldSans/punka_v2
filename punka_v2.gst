@@ -961,7 +961,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cmc</characteristic>
-            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Difñícil de usar</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Difícil de usar</characteristic>
           </characteristics>
         </profile>
       </profiles>

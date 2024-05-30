@@ -78,6 +78,20 @@
       <entryLinks>
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="66a6-b4f4-c644-c51" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1327-eccd-baa1-3255" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="1327-eccd-baa1-3255">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3325-84b3-9584-e201" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8b63-c265-21db-352f" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Machaca" hidden="false" id="3eca-a5cc-961-8004">
       <costs>
@@ -492,7 +506,7 @@
         <categoryLink targetId="d1a7-5f24-003f-6400" id="b620-47fe-2e5f-f6d4" primary="true" name="Personalidades de la banda"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="e544-5fba-f40b-b066" primary="false" name="Mercenarios y personalidades de la banda"/>
         <categoryLink targetId="4349-95e9-393e-d308" id="d082-38-58e4-8564" primary="false" name="Banda: Pandilleros"/>
-        <categoryLink targetId="ce1e-6710-6c1-5bca" id="6322-58a4-663c-25d7" primary="false" name="Jefes"/>
+        <categoryLink targetId="ce1e-6710-6c1-5bca" id="6322-58a4-663c-25d7" primary="false" name="Jefe"/>
       </categoryLinks>
       <profiles>
         <profile name="Lord Homoeroticus" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="77bf-4424-5783-d73f">
@@ -532,6 +546,7 @@
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="6e36-eafe-9b57-62d0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Alegradias" hidden="false" id="2ab6-2020-d6f7-ade7">
