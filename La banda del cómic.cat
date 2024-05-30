@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e9e-15f2-e0bf-3559" name="La banda del cómic" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Chatarreros" id="39d1-dcdc-23cc-bd86" targetId="1dde-4fe6-a131-8b45" importRootEntries="false"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Caronte" hidden="false" id="fb64-32b7-cf14-a85f" type="selectionEntry" targetId="3ca9-c94c-5bf-b11e">
+      <modifiers>
+        <modifier type="remove" value="d1a7-5f24-003f-6400" field="category"/>
+        <modifier type="add" value="84b7-6828-dd10-0280" field="category"/>
+        <modifier type="set-primary" value="84b7-6828-dd10-0280" field="category"/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c0b-acb9-9559-56f7" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Dan" id="cc6c-5681-4836-f20a" hidden="true"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Paul" hidden="false" id="95fd-becd-7d78-6820" publicationId="6699-072c-136a-7d30" page="125">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="cc69-878-6a8c-19b6" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="f383-f56f-89b2-21a0" primary="false" name="Banda: La banda del Cómic"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5623-94fa-dc18-3723" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Paul" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="ba3b-9a37-99ce-2eed">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Chorrazo de tinta,  Extremidad prensil, Miembros extra, Asco de vida</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Extremidad prensil" hidden="false" id="57e6-7095-1c00-8384" type="selectionEntry" targetId="cbda-380a-4e58-ee65">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Miembros extra" hidden="false" id="588d-e191-f096-ff15" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Filo Pequeño" hidden="false" id="32ff-e147-ed3a-2aa7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Chorrazo de tinta" hidden="false" id="cb54-dcc2-51b1-19fd">
+          <categoryLinks>
+            <categoryLink targetId="6337-d3da-3855-7b50" id="f452-78d5-f03f-520b" primary="false" name="Mutación"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Chorrazo de tinta" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="8d1d-79c3-a9b-bdb3">
+              <characteristics>
+                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Paul es capaz de lanzar un potente chorro de tinta a través de su ojete con el objetivo de incapacitar a sus enemigos. Puede gastar una Acción en lanzar el chorro, para lo que deberá colocarse la plantilla de lágrima. Toda miniatura tocada por la plantilla sufrirá un penalizador de -2 a las tiradas de Combate, Precisión y Agilidad. Las miniaturas podrán gastar Acciones en limpiarse la tinta, quitando un penalizador de -1 por cada Acción que gasten.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="New Rule" id="cf26-9261-4a4f-514b" hidden="false">
+          <description>La vida de Paul ha sido una puta mierda, así de sencillo. Está tan acostumbrado a perder que un empate ya es una victoria. Paul ganará cualquier tirada enfrentada que acabe en empate y que habitualmente ganaría la miniatura en su Fase de activación.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dan novato" hidden="false" id="5263-d238-6298-bb48">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cc6c-5681-4836-f20a" id="4b52-865a-d87b-f138" primary="false" name="Dan"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="5e67-abae-b176-4853" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="57c9-16b2-f5cb-d2e8" primary="false" name="Banda: La banda del Cómic"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dan novato" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="295a-762-b1b9-f8dc" publicationId="6699-072c-136a-7d30" page="126">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4 (5)</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Demasiado honorable, Compañerismo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Chaleco antibalas" hidden="false" id="a3be-203f-a282-233e" type="selectionEntry" targetId="c7ab-bf22-707b-5b89"/>
+        <entryLink import="true" name="Escopeta" hidden="false" id="3448-d5a0-832b-c0aa" type="selectionEntry" targetId="265c-2979-056d-1a06">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="824b-1e6d-ae12-ca52" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
