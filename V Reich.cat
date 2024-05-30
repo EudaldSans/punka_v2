@@ -91,15 +91,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="59cc-cd6f-6418-3d9b" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="59cc-cd6f-6418-3d9b" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Blindaje" id="cec3-5bbc-59db-ab89" hidden="false" sortIndex="2" defaultSelectionEntryId="ff4a-36b6-844a-fc42">
@@ -187,15 +179,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="fb71-eabf-b242-e877" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="fb71-eabf-b242-e877" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -242,15 +226,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="e875-fe0e-70de-f003" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="e875-fe0e-70de-f003" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Blindaje" id="38b0-cefa-c6bd-aa4a" hidden="false" defaultSelectionEntryId="2e02-8302-da47-2ef2">
@@ -340,15 +316,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="8733-8843-77c6-e4d" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="8733-8843-77c6-e4d" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Blindaje" id="7b11-6562-671b-2002" hidden="false" defaultSelectionEntryId="2e02-8302-da47-2ef2" sortIndex="2">
@@ -436,7 +404,7 @@
       </selectionEntries>
       <rules>
         <rule name="Cazadora de Mutardos" id="323d-fb9b-bc02-fc2f" hidden="false">
-          <description>La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre. </description>
+          <description>La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -526,7 +494,7 @@
             <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3 (6)</characteristic>
             <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
             <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5 (4)</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6) </characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Táctico, Bombona de butano</characteristic>
