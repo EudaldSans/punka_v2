@@ -335,6 +335,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a322-1d48-df6d-79bb" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dan" hidden="false" id="1bab-6dea-7c0d-9748" publicationId="6699-072c-136a-7d30" page="130">
       <costs>
