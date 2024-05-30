@@ -451,6 +451,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="af23-1ddc-1825-5ffe" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <rules>
         <rule name="Por un puñado de balas" id="773-4055-f252-e9ea" hidden="false">
@@ -547,6 +548,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="6e36-eafe-9b57-62d0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="da61-b165-a67c-7f13" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Alegradias" hidden="false" id="2ab6-2020-d6f7-ade7">
