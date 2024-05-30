@@ -15,13 +15,6 @@
       </constraints>
     </entryLink>
   </entryLinks>
-  <categoryEntries>
-    <categoryEntry name="Dan" id="cc6c-5681-4836-f20a" hidden="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58e-d898-11b9-9d32" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-  </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Paul" hidden="false" id="95fd-becd-7d78-6820" publicationId="6699-072c-136a-7d30" page="125">
       <costs>
@@ -106,7 +99,6 @@
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cc6c-5681-4836-f20a" id="4b52-865a-d87b-f138" primary="false" name="Dan"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="5e67-abae-b176-4853" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="662c-1d4a-4875-99a6" id="57c9-16b2-f5cb-d2e8" primary="false" name="Banda: La banda del Cómic"/>
       </categoryLinks>
@@ -143,7 +135,7 @@
         <entryLink import="true" name="Balas" hidden="false" id="824b-1e6d-ae12-ca52" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c3d2-f7ab-4326-e6e4" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b3c-124d-3993-1862" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Compañerismo" id="3605-7768-c8f3-1025" hidden="false" type="rule" targetId="e882-2fd4-4805-ef66"/>
@@ -153,6 +145,13 @@
           <description>Dan nunca atacará a alguien que no tenga Línea de visión sobre él. Por lo tanto, no podrá Disparar a nadie que no tenga Línea de visión sobre el propio Dan. Y para Asaltar a un enemigo, el rival asaltado tendrá que tener Línea de visión sobre Dan como mínimo en la última Acción del Asalto de este, y Dan solo obtendrá bonificadores extra por cada Acción donde no solo él estuviera viendo al asaltado, sino también el asaltado a Dan.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="b3c-124d-3993-1862">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bab-6dea-7c0d-9748" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nicole" hidden="false" id="8b24-4b85-a366-f237" publicationId="6699-072c-136a-7d30" page="127">
       <categoryLinks>
@@ -259,6 +258,9 @@
           </modifiers>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcd4-c4-f126-357d" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vale" hidden="false" id="555-b3fe-e4b8-95f4" publicationId="6699-072c-136a-7d30" page="129">
       <costs>
@@ -341,7 +343,6 @@
       <categoryLinks>
         <categoryLink targetId="662c-1d4a-4875-99a6" id="d0aa-b38a-cef0-6e75" primary="false" name="Banda: La banda del Cómic"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="28ac-b3-1687-f26f" primary="true" name="Miembros de la banda"/>
-        <categoryLink targetId="cc6c-5681-4836-f20a" id="1905-1f52-31f-8129" primary="false" name="Dan"/>
       </categoryLinks>
       <profiles>
         <profile name="Dan" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="386c-eca9-d337-dc60">
@@ -377,8 +378,80 @@
           <description>Dan puede disparar usando una sola Acción a dos miniaturas distintas (una con cada pistola). Sin embargo, estos disparos tendrán un -1 a Precisión y al hacer esto no se beneficiará de Apuntar ni podrá usarlo en Fuego defensivo.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2980-463f-6b3a-2568" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="2980-463f-6b3a-2568">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5263-d238-6298-bb48" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rita" hidden="false" id="645a-56d7-2389-9a8" publicationId="6699-072c-136a-7d30" page="80"/>
+    <selectionEntry type="model" import="true" name="Rita" hidden="false" id="645a-56d7-2389-9a8" publicationId="6699-072c-136a-7d30" page="131">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="e6fe-b352-9f7c-2bf9" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="662c-1d4a-4875-99a6" id="975f-1c68-958b-56e9" primary="false" name="Banda: La banda del Cómic"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ballesta" hidden="false" id="13d1-87c9-9829-e3ca" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="82b6-80fb-8a4a-6538" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="6a94-73f6-8ac1-ef9f" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Retraso (2)" id="b38e-14fc-b315-ae4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+      </infoLinks>
+      <rules>
+        <rule name="Recarga en movimiento" id="f665-3879-d323-1f77" hidden="false" publicationId="6699-072c-136a-7d30" page="131">
+          <description>Rita domina el arte de moverse y recargar. Cuando realice una Acción de Movimiento puede realizar gratuitamente una Acción de recargar sobre su ballesta.</description>
+        </rule>
+        <rule name="Molonidad" id="748a-d5c0-3e67-71e5" hidden="false" publicationId="6699-072c-136a-7d30" page="131">
+          <description>Rita desprende molonidad por todos sus poros. De esas cosas que se tienen o no y que dejan a la gente boquiabierta mirando para ella. Si un enemigo se encuentra a 30 cm de Rita cuando ésta haya Abatido a alguien en cuerpo a cuerpo, quedará tan afectado que tendrá un penalizador de -1 a la Precisión y Combate durante su siguiente Fase de activación.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Rita" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="ce1b-1e21-8e3d-2796">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6 (7)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2), Molonidad, Recarga en movimiento</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="972-f0f5-ca27-a78c" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedRules>
     <rule name="Compañerismo" id="e882-2fd4-4805-ef66" hidden="false" publicationId="6699-072c-136a-7d30" page="130">
