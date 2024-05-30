@@ -530,17 +530,16 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="3ce7-b4df-b02b-1395" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
       <infoLinks>
         <infoLink name="Lentorra (1)" id="fb5b-d50d-dda2-aeb4" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Escasa" id="cac3-b48e-c819-dc67" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b231-e56d-773a-a3ed" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bd08-3564-3db8-ca76" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="289c-5da0-d8ad-f6b7" name="Cañón de confeti" publicationId="6699-072c-136a-7d30" page="104" hidden="false" collective="false" import="true" type="upgrade">
@@ -554,18 +553,17 @@ Cualquier Pachacho o Acróbata en contacto con el cañón lanzador puede gastar
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="2292-699f-2018-cc73" name="Escasa" hidden="false" targetId="501b-9657-19ab-7b5d" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4500-82eb-ab8b-fc0d" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7146-82d1-a156-dae1" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Lentorra (1)" id="8ce0-7876-636f-2bd0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Postas" id="f7e0-6a90-dc29-99fe" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+        <infoLink name="Escasa" id="7142-9106-6a8-cba1" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">

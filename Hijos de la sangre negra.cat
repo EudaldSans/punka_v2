@@ -28,6 +28,7 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="319e-c15c-590a-5fbc" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="619c-425b-3cb-4655" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="A dos manos" id="cf28-bd71-482-965f" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
@@ -46,14 +47,15 @@
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd1-be26-9a74-45b6" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80cb-179e-8402-887d" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2bb-6445-bb2e-2433" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="501b-9657-19ab-7b5d" id="6c28-a46-dd7f-a657" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="5e62-f21a-655b-d28e" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Escasa" id="c9ad-8e15-b6f4-2b07" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Escasa" id="dadd-6a51-bdb0-409b" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cóctel Molotov" hidden="false" id="de0e-8100-1f61-f8ee">
@@ -102,6 +104,7 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3983-cc54-82d-c86e" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="afa6-f841-a98f-d24" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Escasa" id="7f55-10e1-bbd8-6cd8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
@@ -617,6 +620,7 @@
             <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="9f32-4db-b252-82a7" primary="false" name="Arma"/>
             <categoryLink targetId="9e40-76e9-2e11-5819" id="3870-40ec-7c91-cd7c" primary="false" name="Arma de fuego"/>
+            <categoryLink targetId="928d-1317-e533-3df" id="94d-63fa-3edc-b1b1" primary="false" name="Pistola"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24b-a311-e00c-5ca" includeChildSelections="false"/>

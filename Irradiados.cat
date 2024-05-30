@@ -48,6 +48,7 @@ Modificadores
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c6-a319-1cc3-5c4f" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ea10-2f7e-7431-86ec" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Contaminante" id="dc2e-4efc-8b45-d0f3" hidden="false" type="rule" targetId="e7ff-583d-8b15-8027"/>
@@ -83,6 +84,9 @@ Modificadores
         <infoLink name="A dos manos" id="3ff9-e180-aa0-d5d" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
         <infoLink name="Contaminante" id="c5eb-beaa-7393-5602" hidden="false" type="rule" targetId="e7ff-583d-8b15-8027"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="13ca-c4ea-422-b6fd" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Granada santa" hidden="false" id="e04a-d803-de33-f967" publicationId="6699-072c-136a-7d30" page="74">
       <costs>
@@ -110,6 +114,9 @@ Modificadores
         <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="Bomba" id="19c9-790c-89af-3ea1" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d9f2-e49d-e760-4c90" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Granadas santas" hidden="false" id="3e58-a78a-6e92-c6a3">
       <constraints>
