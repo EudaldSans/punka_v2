@@ -64,6 +64,17 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d12a-f092-5bf5-54f2"/>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="d12a-f092-5bf5-54f2"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e9e-15f2-e0bf-3559" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </categoryEntry>
     <categoryEntry id="cd25-e09a-4ac6-8cdc" name="Gato parameño" hidden="false">
       <constraints>
