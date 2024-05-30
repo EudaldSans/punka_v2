@@ -110,11 +110,7 @@
     <categoryEntry name="Banda: Idos" id="af76-5143-157c-3a3f" hidden="false"/>
     <categoryEntry name="Reglas de la banda" id="b19d-7b9-3085-7fd4" hidden="false"/>
     <categoryEntry name="Banda: Irradiados" id="71ce-1b00-66d0-dfd9" hidden="false"/>
-    <categoryEntry name="Munición" id="1040-f4bf-3eb8-3f33" hidden="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="model" shared="true" id="9ae9-7f06-925c-51a6" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Munición" id="1040-f4bf-3eb8-3f33" hidden="true"/>
     <categoryEntry name="Piel dura (X)" id="da38-73fd-d05d-1a39" hidden="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f64-26d6-4d69-bfa3"/>
@@ -1229,6 +1225,16 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
       <categoryLinks>
         <categoryLink targetId="1040-f4bf-3eb8-3f33" id="555b-4979-48ce-593" primary="false" name="Munición"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="34f0-388b-fd54-17c1"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="34f0-388b-fd54-17c1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b4e3-934f-601-8801" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Munición irradiada" hidden="false" id="b4e3-934f-601-8801" publicationId="6699-072c-136a-7d30" page="74">
       <profiles>
@@ -1244,6 +1250,16 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7858-6209-61a3-6fe"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7858-6209-61a3-6fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5344-f1f1-232b-6a3e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cachas" hidden="false" id="e8de-ce-8096-f027" publicationId="6699-072c-136a-7d30" page="84">
       <costs>
