@@ -777,16 +777,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="5b4b-6e8c-d054-89a0" name="Filo Pequeño" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
       </costs>
@@ -796,6 +786,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="3371-b95e-17fb-e08b" primary="false" name="Arma"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -864,16 +857,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </constraints>
     </selectionEntry>
     <selectionEntry id="d385-422c-97e9-fd5f" name="Filo Medio" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="b4b1-c92d-ceb8-efb8" name="Filo Medio" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+3</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
@@ -883,6 +866,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="81c-378f-98d2-dba8" primary="false" name="Arma"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1057,6 +1043,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Armatoste" id="d634-52da-881-7f23" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="c7ab-bf22-707b-5b89" name="Chaleco antibalas" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <comment>No cost?</comment>
@@ -1890,6 +1879,22 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
         <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
         <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
         <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Filo Pequeño" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5b4b-6e8c-d054-89a0">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Filo Medio" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="b4b1-c92d-ceb8-efb8">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+1</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+3</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
