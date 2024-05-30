@@ -450,7 +450,11 @@
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="af23-1ddc-1825-5ffe" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <rules>
