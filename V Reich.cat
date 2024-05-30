@@ -12,26 +12,6 @@
       <infoLinks>
         <infoLink name="Subhumano" id="328-5a0d-5c06-17bb" hidden="false" type="infoGroup" targetId="cfb7-8c0b-6a61-80de"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Pura chapa" hidden="false" id="4f99-15ef-6f3c-41a7" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="ddda-1fe5-f3d3-1b35" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -45,6 +25,34 @@
         </modifier>
       </modifiers>
       <comment>Base</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="6533-e2e0-a9a-873f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="ddda-1fe5-f3d3-1b35" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="b093-5d6c-5440-66b8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pura chapa" hidden="false" id="4f99-15ef-6f3c-41a7" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef2-71f5-f973-2e5c-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sanitario" hidden="false" id="ae9a-f2f7-2d42-3ed9" publicationId="6699-072c-136a-7d30" page="35">
       <costs>
@@ -68,9 +76,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="bbcc-c88-4c8f-e05b" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="3"/>
-      </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="c8b3-9112-4c78-a2b8" hidden="false" sortIndex="1">
           <selectionEntryGroups>
@@ -108,6 +113,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ba3-67d6-f54d-5f0d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="409c-f35d-151c-2597" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="377e-b516-6ed5-d8c3" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="bbcc-c88-4c8f-e05b" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
@@ -158,30 +168,16 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33f5-17a6-9db4-b55" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="4"/>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="12ca-a342-3da4-856" type="selectionEntry" targetId="ff92-8214-bc9a-f318" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Walkie-talkie" hidden="false" id="d6d0-1f3d-5bdc-25f" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="5"/>
-        <entryLink import="true" name="Mastín" hidden="false" id="2876-e070-62ed-d618" type="selectionEntry" targetId="36c6-ca67-49c1-40ec"/>
-      </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="c09-70a4-df6e-798b" hidden="false" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armas" id="1e97-7329-92b4-d881" hidden="false">
+            <selectionEntryGroup name="Armas" id="1e97-7329-92b4-d881" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="b11f-5805-8896-3ec8" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
-                <entryLink import="true" name="Escopeta" hidden="false" id="b239-cc9a-8cb8-86a9" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
-                <entryLink import="true" name="Filo Pequeño" hidden="false" id="746b-3a61-3788-591e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="897e-93a9-cebd-65b5" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
-                <entryLink import="true" name="Rifle" hidden="false" id="bee2-c40b-2f4f-18be" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="b11f-5805-8896-3ec8" type="selectionEntry" targetId="f19a-c771-9682-f4c5" sortIndex="1"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="b239-cc9a-8cb8-86a9" type="selectionEntry" targetId="265c-2979-056d-1a06" sortIndex="2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="746b-3a61-3788-591e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe" sortIndex="3"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="897e-93a9-cebd-65b5" type="selectionEntry" targetId="34b3-8c91-7e61-40ce" sortIndex="4"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="bee2-c40b-2f4f-18be" type="selectionEntry" targetId="dad1-9f6c-5b63-0763" sortIndex="5"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23f8-d16b-e204-d90d" includeChildSelections="false"/>
@@ -190,7 +186,27 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="fb71-eabf-b242-e877" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+            <entryLink import="true" name="Balas" hidden="false" id="fb71-eabf-b242-e877" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="1ce-a55a-19d1-7123" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="12ca-a342-3da4-856" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="1a4e-f05e-d219-aa0c" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Mastín" hidden="false" id="2876-e070-62ed-d618" type="selectionEntry" targetId="36c6-ca67-49c1-40ec"/>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33f5-17a6-9db4-b55" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="d6d0-1f3d-5bdc-25f" type="selectionEntry" targetId="31a3-d917-dc7b-edae"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -303,7 +319,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fa14-4452-fea8-bf61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -334,19 +350,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Walkie-talkie" hidden="false" id="63e9-f660-cb19-8b36" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="5">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Mastín" hidden="false" id="e500-f4a6-b483-b842" type="selectionEntry" targetId="36c6-ca67-49c1-40ec" sortIndex="3"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="965a-8047-6968-f970" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="4"/>
-      </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="63f8-324e-6477-89c3" hidden="false" sortIndex="1">
           <selectionEntryGroups>
@@ -389,6 +392,21 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="ac0e-e82-c3c5-6e53" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="63e9-f660-cb19-8b36" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mastín" hidden="false" id="e500-f4a6-b483-b842" type="selectionEntry" targetId="36c6-ca67-49c1-40ec"/>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="965a-8047-6968-f970" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Cadena de mando" id="d998-556e-5f05-f01d" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
@@ -417,47 +435,64 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Pistola" hidden="false" id="26c1-cd04-b239-1b95" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="ade1-6b2b-4c1e-7be0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="3fab-d055-3cd4-2c1a" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Fusta" hidden="false" id="14ed-4062-fc2c-ec83">
-          <infoLinks>
-            <infoLink name="Filo Pequeño" id="b6ee-c3d1-c428-d4db" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
-              <modifiers>
-                <modifier type="set" value="Fusta" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <rules>
-            <rule name="Fusta" id="bd51-fd63-d490-9150" hidden="false">
-              <description>Ilse siempre lleva consigo una fusta de montar, que utiliza en combate para humillar y sacar de sus casillas a los rivales más que para eliminarlos. Tiene las estadísticas de un filo pequeño, pero por cada vez que impacte y no consiga Abatir al rival éste perderá 1 punto a Combate de forma acumulativa, ya que la ira y la vergüenza de ser fustigado en público lo harán perder los estribos.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink targetId="6582-5e09-b30b-db5a" id="1a14-9763-44d9-20f0" primary="false" name="Arma"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <rules>
         <rule name="Cazadora de Mutardos" id="323d-fb9b-bc02-fc2f" hidden="false">
           <description>La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="e23c-6b35-3522-bbe4" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fusta" hidden="false" id="14ed-4062-fc2c-ec83">
+              <infoLinks>
+                <infoLink name="Filo Pequeño" id="b6ee-c3d1-c428-d4db" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+                  <modifiers>
+                    <modifier type="set" value="Fusta" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <rules>
+                <rule name="Fusta" id="bd51-fd63-d490-9150" hidden="false">
+                  <description>Ilse siempre lleva consigo una fusta de montar, que utiliza en combate para humillar y sacar de sus casillas a los rivales más que para eliminarlos. Tiene las estadísticas de un filo pequeño, pero por cada vez que impacte y no consiga Abatir al rival éste perderá 1 punto a Combate de forma acumulativa, ya que la ira y la vergüenza de ser fustigado en público lo harán perder los estribos.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Arma" hidden="false" id="1a14-9763-44d9-20f0" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Pistola" hidden="false" id="26c1-cd04-b239-1b95" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="b792-4286-f6e3-a1f" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="3f08-1d5-f0b9-9c29" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d73-e283-ce91-c26b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d73-e283-ce91-c26b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="8aab-64a7-34c2-9b4c" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="3fab-d055-3cd4-2c1a" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Aaron Swartzmann" hidden="false" id="aa27-5c7-f1b0-f6cd" publicationId="6699-072c-136a-7d30">
       <costs>
@@ -483,37 +518,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Filo Medio" hidden="false" id="9b74-9cc2-b11d-e4a1" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Pistola" hidden="false" id="6584-fa62-d91a-55ff" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Walkie-talkie" hidden="false" id="5950-2073-7fd2-8e99" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="c5d6-c95b-da33-ce70" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4c5e-dc00-c1e4-44ac" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <rules>
         <rule name="Maestro estratega" id="6b18-a9d5-2211-7698" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
           <description>Aaron no sólo se considera Mariscal en su banda del V Reich, por lo que podrá usar la regla especial Cadena de Mando, si no que además, una vez por Turno de juego, una de sus órdenes a través del Walkie-talkie servirá para que la miniatura receptora pueda utilizar dos Acciones en lugar de una.</description>
@@ -527,6 +531,55 @@
         <infoLink name="Montada" id="3fbc-b027-f5ec-94f7" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
         <infoLink name="Raudo" id="2a10-c71d-ed57-6218" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="5711-6e96-f39e-ac4b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pistola" hidden="false" id="6584-fa62-d91a-55ff" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="9b74-9cc2-b11d-e4a1" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="c5d6-c95b-da33-ce70" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="49a5-db52-7c6-37f7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="8da8-29b8-6503-7b90" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9e6-6cf2-bbb5-b7c5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9e6-6cf2-bbb5-b7c5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="d002-5371-405f-2c20" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4c5e-dc00-c1e4-44ac" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="5950-2073-7fd2-8e99" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Edward Berhart" hidden="false" id="89cc-ab13-b5f1-ba17" publicationId="6699-072c-136a-7d30" page="114">
       <costs>
@@ -552,56 +605,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Rifle automàtico" hidden="false" id="2c76-1121-1961-be61" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="263b-5045-de73-47dd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33c6-a14e-d7b1-c2bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Podadora eléctrica" hidden="false" id="25eb-6123-ba3e-bf5f">
-          <infoLinks>
-            <infoLink name="Filo Medio" id="bc2c-6ad4-203c-d941" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
-              <modifiers>
-                <modifier type="set" value="Podadora eléctrica" field="name"/>
-                <modifier type="set" value="Podadora eléctrica" field="c498-c631-f4c5-160a"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink targetId="6582-5e09-b30b-db5a" id="aef5-85f2-3458-d2e0" primary="false" name="Arma"/>
-          </categoryLinks>
-          <rules>
-            <rule name="Podadora eléctrica" id="810f-33f1-4c11-9907" hidden="false">
-              <description>Si se emplea al menos dos veces en el mismo Turno de juego, la batería que lo alimenta se descargará momentáneamente, con lo que pasará reducir su bonificador de Fuerza a +1 durante el Turno de juego posterior mientras se recarga.</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ragnar" hidden="false" id="bf81-8691-de00-4561">
-          <profiles>
-            <profile name="Ragnar" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="76ce-a999-d1a8-5c62">
-              <characteristics>
-                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El gran danés completamente loco que lo acompaña permanentemente actúa como un mastín normal, salvo que el bonificador al Combate pasa a ser de +2. En caso de que Edward participara en un Combate múltiple con presencia de alguna miniatura del V Reich en él, antes de resolver el combate, tira 1d10. Con 1-2 Ragnar atacará a la miniatura de su propio bando, con lo que los ataques se realizarán contra ella. Si hay más de una, será a elección del jugador propio contra qué miniatura serán los ataques.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Cadena de mando" id="74ab-2550-524d-b973" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
       </infoLinks>
@@ -613,6 +616,79 @@
           <description>Edward lleva a su espalda una bombona de butano para poder respirar, debido a sus lesiones del sistema respiratorio. Si Berhart resulta Abatido, la bombona estallará. Pon una plantilla circular de 5 cm de radio centrada en la posición de la miniatura Abatida. Todas las miniaturas tocadas aunque sea parcialmente por la plantilla, sufren un impacto de Penetración 3 y Fuerza 3 de inmediato, sin bonificaciones por Cobertura.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="65ca-6eae-284b-43d8" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="263b-5045-de73-47dd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399" sortIndex="3"/>
+            <entryLink import="true" name="Rifle automàtico" hidden="false" id="2c76-1121-1961-be61" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Podadora eléctrica" hidden="false" id="25eb-6123-ba3e-bf5f" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Filo Medio" id="bc2c-6ad4-203c-d941" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
+                  <modifiers>
+                    <modifier type="set" value="Podadora eléctrica" field="name"/>
+                    <modifier type="set" value="Podadora eléctrica" field="c498-c631-f4c5-160a"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Arma" hidden="false" id="aef5-85f2-3458-d2e0" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
+              <rules>
+                <rule name="Podadora eléctrica" id="810f-33f1-4c11-9907" hidden="false">
+                  <description>Si se emplea al menos dos veces en el mismo Turno de juego, la batería que lo alimenta se descargará momentáneamente, con lo que pasará reducir su bonificador de Fuerza a +1 durante el Turno de juego posterior mientras se recarga.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="c362-f4ef-a74c-c5ad" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Pura chapa" hidden="false" id="325c-1e1a-107c-2e16" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9cd-cd3-9f0e-d10b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9cd-cd3-9f0e-d10b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="ec03-ebda-540a-f65c" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ragnar" hidden="false" id="bf81-8691-de00-4561">
+              <profiles>
+                <profile name="Ragnar" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="76ce-a999-d1a8-5c62">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El gran danés completamente loco que lo acompaña permanentemente actúa como un mastín normal, salvo que el bonificador al Combate pasa a ser de +2. En caso de que Edward participara en un Combate múltiple con presencia de alguna miniatura del V Reich en él, antes de resolver el combate, tira 1d10. Con 1-2 Ragnar atacará a la miniatura de su propio bando, con lo que los ataques se realizarán contra ella. Si hay más de una, será a elección del jugador propio contra qué miniatura serán los ataques.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33c6-a14e-d7b1-c2bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Subfacción" hidden="false" id="9481-e0f0-b549-7aa4">
       <categoryLinks>
@@ -663,18 +739,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="9289-fd69-9ab8-b997" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Armadura metálica" hidden="false" id="831a-1278-343d-1528" type="selectionEntry" targetId="d761-5553-4adf-c294">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Mónguer" id="f27e-c88f-9bd6-4fda" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
@@ -697,6 +761,35 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="7a4f-cea3-8492-1e4d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="9289-fd69-9ab8-b997" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e3-e75b-4c8c-9b66-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e3-e75b-4c8c-9b66-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="269f-5542-eadc-e9ce" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="831a-1278-343d-1528" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff83-5d0a-8feb-b43b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff83-5d0a-8feb-b43b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="8327-b964-dfe0-fe1f" hidden="false"/>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Subhumano" hidden="false" id="52ac-6bc6-747-802d" publicationId="6699-072c-136a-7d30" page="107">
       <costs>
@@ -780,47 +873,49 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5583-9e19-1181-b682-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="c44f-305-53f5-bf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Arma" hidden="false" id="da12-c415-7db1-ddce">
+              <infoLinks>
+                <infoLink name="Garras y dientes" id="643-ff8a-dee2-6f5d" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Filo Pequeño" id="dc86-665a-d5cf-d400" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="Filo Pequeño" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Garras y dientes" field="name">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Armas" hidden="false" id="da12-c415-7db1-ddce">
-          <infoLinks>
-            <infoLink name="Garras y dientes" id="643-ff8a-dee2-6f5d" hidden="false" type="profile" targetId="0e73-7847-c89a-96f4">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Filo Pequeño" id="dc86-665a-d5cf-d400" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="Filo Pequeño" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Garras y dientes" field="name">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model" childId="59a1-9871-cf6e-3147" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb8-ded5-5394-b52a-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tierdoktor" hidden="false" id="1231-5391-d4ab-ec28">
       <costs>
@@ -910,7 +1005,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="defe-ade2-9132-d00a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="b8bb-117a-5a66-bdb8">
@@ -1009,38 +1104,54 @@
               <description>Sin que nadie lo sepa (bueno, vosotros sí porque ya os lo hemos contado en el libro de El Ascenso del V Reich), Eva es en realidad un Cabezón con apariencia totalmente humana. Puede usar los Poderes Choque mental y Desarme de la página 86 del Reglamento. Además puede influir de manera sutil y sin tener que gastar ninguna Acción para insuflar una buena dosis de confianza directamente en la mente de los Reclutas, de tal manera que cualquier Recluta a 15 cm de ella no sufrirá la Regla especial Inexperto.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="a99-357b-fa16-63d3" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3d-d1f2-9536-d82-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3d-d1f2-9536-d82-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Cuero endurecido" hidden="false" id="51ab-31d4-6196-d015" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="277a-a76a-d77f-7f3f-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="277a-a76a-d77f-7f3f-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Choque mental" hidden="false" id="d539-dfba-70cf-ddc7" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
-            <entryLink import="true" name="Desarme" hidden="false" id="332b-9628-4e6c-7eb0" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
-            <entryLink import="true" name="Pistola" hidden="false" id="2a3-6ff-75f9-6379" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="218e-72d2-4328-5f2c-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="218e-72d2-4328-5f2c-max" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="482a-87a3-24c2-8dae" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="7f1d-d66c-8acd-e57f" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="a99-357b-fa16-63d3" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3d-d1f2-9536-d82-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3d-d1f2-9536-d82-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Pistola" hidden="false" id="2a3-6ff-75f9-6379" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="218e-72d2-4328-5f2c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="218e-72d2-4328-5f2c-max" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Blindaje" id="5321-ae39-31c8-1a5b" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Cuero endurecido" hidden="false" id="51ab-31d4-6196-d015" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="277a-a76a-d77f-7f3f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="277a-a76a-d77f-7f3f-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Equipo" id="bfa0-4f59-dee0-83bd" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="482a-87a3-24c2-8dae" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Poderes psíquicos" id="8ad4-ac9e-a33a-ce5e" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Choque mental" hidden="false" id="d539-dfba-70cf-ddc7" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
+                <entryLink import="true" name="Desarme" hidden="false" id="332b-9628-4e6c-7eb0" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Uno" hidden="false" id="5080-e70-6925-f17d">
           <constraints>
@@ -1069,45 +1180,176 @@
               <description>La finalidad de UNO es proteger a Eva y siempre debe tratar de estar a un máximo de 10 cm de ella. Cuando sea el momento de actuar de UNO debe usar todas las Acciones necesarias en Mover para cumplir esto. Si estuviera trabado en Combate deberá obligatoriamente tratar de Separse del Combate para intentar llegar a la distancia máxima de 10 cm de Eva. Además, si se encuentra a 5 cm o menos de Eva y ella resulta Impactada por una miniatura enemiga (tanto en Disparo como en Combate), UNO debe usar su cuerpo para salvarla, siempre que no esté trabado en Combate. En ese momento se colocará en contacto con Eva justo antes de que ella tuviera que realizar la tirada enfrentada de Fuerza contra Dureza (este Movimiento es gratuito). Será UNO quien usé su Dureza y Blindaje para esta tirada, y obviamente, sería la miniatura que resultaría Abatida en caso de perder la tirada enfrentada.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink import="true" name="Maza" hidden="false" id="33d6-9a44-5ca-7814" type="selectionEntry" targetId="407f-7985-410e-2a9f">
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8bf-d6f6-c877-1830-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8bf-d6f6-c877-1830-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Pura chapa" hidden="false" id="dd82-aeb3-718e-c5a6" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="147b-6561-c111-380c-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147b-6561-c111-380c-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Escudo" hidden="false" id="52d6-220-d8ce-207c" type="selectionEntry" targetId="496a-3c88-4eb3-fd08">
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f4-710e-9d43-c09a-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f4-710e-9d43-c09a-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="a16e-de42-4370-79d5" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="e812-b0ac-5240-6d4a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Maza" hidden="false" id="33d6-9a44-5ca-7814" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8bf-d6f6-c877-1830-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8bf-d6f6-c877-1830-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Blindaje" id="ba56-5e3c-1c5e-57e0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Pura chapa" hidden="false" id="dd82-aeb3-718e-c5a6" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="147b-6561-c111-380c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147b-6561-c111-380c-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Equipo" id="daf5-522e-e762-4784" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Escudo" hidden="false" id="52d6-220-d8ce-207c" type="selectionEntry" targetId="496a-3c88-4eb3-fd08">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f4-710e-9d43-c09a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f4-710e-9d43-c09a-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="a16e-de42-4370-79d5" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="defe-ade2-9132-d00a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ingeniero" hidden="false" id="52c2-7507-a146-7b66" publicationId="5478-7d5e-bc66-ffc" page="11">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="de4e-46f6-434c-dccc" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="d2d9-f94d-7c62-32d4" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="4d2-cbd9-8a5a-bd01" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Sable de Xerum" hidden="false" id="ccb-a034-5099-d88f" type="selectionEntry" targetId="6374-3784-d7e3-55d9" sortIndex="2"/>
+            <entryLink import="true" name="Cañón de Xerum" hidden="false" id="b421-45ff-5ae3-f4c6" type="selectionEntry" targetId="277e-851e-bd67-5c93" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="591d-2178-ff3a-1611" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="285c-ef0d-9168-b9b2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="5c36-52d6-8522-513b" hidden="false" defaultSelectionEntryId="956e-6507-8529-4935" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="956e-6507-8529-4935" type="selectionEntry" targetId="1a91-4787-fe3b-51fd" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="a1cc-33dc-49b-b10a" type="selectionEntry" targetId="ff92-8214-bc9a-f318" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c48-1e80-535-5065-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c48-1e80-535-5065-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="1a3d-c3a6-d544-6648" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="480b-331-3d9b-b1f4" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="2"/>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="5cd-d6ce-d0e3-3b1e" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gólem" hidden="false" id="84a2-23cb-44e3-5553" publicationId="5478-7d5e-bc66-ffc" page="12">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="99ea-5562-7bb3-251d" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="f093-c9e6-974d-4a07" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="a6c5-71f5-657-7e12" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="4e5f-2f39-3a44-b7f9" type="selectionEntry" targetId="407f-7985-410e-2a9f" sortIndex="2"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="224b-1647-3a86-e350" type="selectionEntry" targetId="34b3-8c91-7e61-40ce" sortIndex="3"/>
+            <entryLink import="true" name="Escopeta" hidden="false" id="6272-ef1d-16f7-d9da" type="selectionEntry" targetId="265c-2979-056d-1a06" sortIndex="1"/>
+            <entryLink import="true" name="Rifle" hidden="false" id="f68e-bc6d-5fc0-bc1c" type="selectionEntry" targetId="dad1-9f6c-5b63-0763" sortIndex="4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5d0-c962-4e3b-5ef8" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e3c-4c42-c7aa-9cec" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="f333-51a-8261-26ae" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="dd45-ebe3-41c8-7285" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6d-987b-d1ea-73af-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc6d-987b-d1ea-73af-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8a7-6c1e-6ad8-5e2f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a7-6c1e-6ad8-5e2f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="757d-6eb9-3e10-b0f0" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Walkie-talkie" hidden="false" id="8268-10a1-c63b-321c" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="2"/>
+            <entryLink import="true" name="Escudo" hidden="false" id="50b3-93b9-8869-f2dc" type="selectionEntry" targetId="496a-3c88-4eb3-fd08" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gólem" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="458d-f453-5cd5-21b5">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1186,6 +1428,62 @@
       </profiles>
       <infoLinks>
         <infoLink name="Electrificación" id="aa4d-1937-2cc3-bc6" hidden="false" type="rule" targetId="6240-90ca-56c3-21e2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cañón de Xerum" hidden="false" id="277e-851e-bd67-5c93" publicationId="5478-7d5e-bc66-ffc" page="14">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="9e5b-b309-1760-95fc" primary="false" name="Arma"/>
+        <categoryLink targetId="e24d-662f-94ca-ccbe" id="57e7-13bc-e6d8-a15b" primary="false" name="A dos manos"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="A dos manos" id="1589-780-771d-b7ed" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
+        <infoLink name="Escasa" id="6c8f-26be-9edd-9380" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="6099-d930-6680-5804" includeChildSelections="true">
+          <comment>Escasa</comment>
+        </constraint>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4a-9761-899f-5def" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Cañón de Xerum" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="b406-6b0c-1ba8-547b">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">Ver reglas</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Antes de utilizar un cañón de Xerum, se podrá ajustar la potencia, de tal manera que el jugador elegirá la Fuerza del arma. Si consigue Impactar, deberá tirarse 1d10. Si la tirada es superior a la Fuerza seleccionada el arma funcionará sin problemas. Si es igual o inferior, el arma no funcionará y no tendrá posibilidad de hacer daño (eso significa que pierdes automáticamente la Tirada enfrentada de Fuerza contra Dureza, sin necesidad de lanzarla).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sable de Xerum" hidden="false" id="6374-3784-d7e3-55d9">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2abe-ec37-ab1c-7d4f">
+          <comment>Escasa</comment>
+        </constraint>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d618-bdf-d238-2458" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Sable de Xerum" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="853-7beb-c0cd-b20f">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">Ver reglas</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Si un ataque con este arma consigue Impactar, deberá tirarse 1d10. El resultado será la Fuerza del ataque, que habrá que sumar a la tirada enfrentada contra la Dureza del objetivo (no deberá sumarse el propio Atributo de Fuerza de la miniatura).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="53a1-ace3-2b66-e3a1" primary="false" name="Arma"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Escasa" id="66e9-a910-7e3b-53d5" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
