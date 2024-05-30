@@ -218,15 +218,15 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Imperatrix Rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
       <entryLinks>
-        <entryLink import="true" name="Rifle" hidden="false" id="e9ff-ef9b-5a53-2c3" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+        <entryLink import="true" name="Rifle" hidden="false" id="e9ff-ef9b-5a53-2c3" type="selectionEntry" targetId="dad1-9f6c-5b63-0763" flatten="false">
           <entryLinks>
             <entryLink import="true" name="Mira telescópica" hidden="false" id="c2d3-ad13-c62a-bf07" type="selectionEntry" targetId="e215-f5e2-840d-637d">
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef6d-2e19-706a-f033" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb7-614c-89ba-903c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bcd1-8138-82b2-9319-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcd1-8138-82b2-9319-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -234,11 +234,10 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff72-eb84-c03d-8513" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fce-c011-39c2-4169" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c205-a6e7-2aee-ce3a" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="889c-2de-145c-230c" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="889c-2de-145c-230c" type="selectionEntry" targetId="ff92-8214-bc9a-f318" flatten="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4773-9ea0-d0cd-40ab" includeChildSelections="false"/>
           </constraints>
@@ -700,8 +699,34 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <infoLinks>
         <infoLink name="Escasa" id="14db-bae9-db58-223c" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="Arma de fuego" id="1a0-8c5-5b30-86d3" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
-        <infoLink name="Pistola" id="8748-8df4-a492-a8d1" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b"/>
+        <infoLink name="Pistola" id="8748-8df4-a492-a8d1" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+          <modifiers>
+            <modifier type="set" value="Pistola con mira telescópica" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Mira telescópica" hidden="true" id="f0c9-8521-7010-e375" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="476f-664f-cf39-efa5" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Pistola con mira telescópica" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -939,6 +964,13 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">30/60/90 cm</characteristic>
             <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">A dos manos, arma de fuego, escasa</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Rifle con mira telescópica" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -957,6 +989,24 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <infoLink name="Arma de fuego" id="b47a-92e4-f094-2e77" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
         <infoLink name="Escasa" id="fe78-22af-c363-1acf" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Rifle con mira telescópica" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Mira telescópica" hidden="true" id="735c-760-7c82-9de6" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="476f-664f-cf39-efa5" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1890,7 +1940,7 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
         <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
         <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
         <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">15/30/45 cm</characteristic>
-        <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, escasa</characteristic>
+        <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego escasa</characteristic>
       </characteristics>
     </profile>
     <profile name="Filo Pequeño" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5b4b-6e8c-d054-89a0">

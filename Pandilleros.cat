@@ -532,7 +532,6 @@
         <rule name="Discursitos" id="8a45-2b01-be6b-fae0" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
           <description>Lord Homoeroticus tiene una cierta manía a coger un altavoz y soltar discursos bastante insufribles antes de entablar combate. Posiblemente sea que le guste su propia voz, o crea que así es más molón, pero es un auténtico plasta. Los discursos son variados, desde su decepción por el rival, hasta sus habilidades como tapicero. El caso es que a veces hacen mella en el enemigo, a veces todo lo contrario. Justo antes de comenzar el primer Turno de juego debes hacer una tirada en la siguiente tabla para averiguar el efecto que tienen.
 
-
 • 1     - El enemigo no piensa aguantar a ese payaso ni un momento más. Todas las miniaturas de la banda rival tienen la Regla especial Bersérker.
 • 2-4  - Sus hombres se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura en su Fase de activación.
 • 5-6  - Ambos bandos prefieren matarse que tener que aguantar más esto. En caso de empate en las tiradas enfrentadas de Fuerza contra Dureza, la Fuerza tendrá siempre un bonificador de +1.
@@ -565,6 +564,7 @@
             <infoLink name="Pistola" id="fb86-b68e-7500-c7b9" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
               <modifiers>
                 <modifier type="set" value="Alegradias" field="name"/>
+                <modifier type="append" value="Mira telescópica" field="2ecc-3ee3-2a21-1e6"/>
               </modifiers>
             </infoLink>
             <infoLink name="Arma de fuego" id="f562-2671-d785-c04a" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
