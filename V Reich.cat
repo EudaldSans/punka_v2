@@ -1,2 +1,637 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1f71-a07f-828e-4c18" name="V Reich" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com"/>
+<catalogue library="false" id="1f71-a07f-828e-4c18" name="V Reich" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Subhumano" hidden="false" id="278c-65e4-d7c6-8bfc" publicationId="6699-072c-136a-7d30" page="107">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="6efd-9bd1-16b7-12d8" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="325c-e674-6ba2-4e9e" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bersérker" id="1cf2-3c7f-869b-fb3b" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
+        <infoLink name="Mónguer" id="ef58-9bfe-da41-158e" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pura chapa" hidden="false" id="4f99-15ef-6f3c-41a7" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43d3-48b-c619-1594-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43d3-48b-c619-1594-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Garras y dientes" hidden="false" id="ddda-1fe5-f3d3-1b35" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e87-d1fc-3229-9e9f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Subhumano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="357a-7ee0-13b5-de54"/>
+        <profile name="Subhumano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e8a9-8ca4-5211-e881">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2 (1)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Berséker, Monguer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sanitario" hidden="false" id="ae9a-f2f7-2d42-3ed9" publicationId="6699-072c-136a-7d30" page="35">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="35"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="1405-cf38-b871-e0bd" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="daf8-44cb-94a8-d245" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Sanitario" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="27a8-bfd8-3e72-1f80">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Primeros auxilios</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="bbcc-c88-4c8f-e05b" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c8b3-9112-4c78-a2b8" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="6d66-ccd7-866e-8c8f" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Escopeta" hidden="false" id="d5b-bde1-c4de-1634" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="5b1a-19e9-7f88-d858" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="d6fa-69c0-83df-9650" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="a9cc-96a5-91c1-f28f" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4d2-35d0-c1dd-3114" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bce9-746f-9dc9-b623" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="59cc-cd6f-6418-3d9b" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="cec3-5bbc-59db-ab89" hidden="false" sortIndex="2" defaultSelectionEntryId="ff4a-36b6-844a-fc42">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="a802-5afa-26e2-2a5d" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="ff4a-36b6-844a-fc42" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ba3-67d6-f54d-5f0d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="409c-f35d-151c-2597" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Primeros auxilios" id="ad94-f068-69bb-ec46" hidden="false">
+          <description>Un Sanitario puede intentar parchear a una miniatura Abatida aliada, para que siga luchando un poco más. Tendrá que ponerse en contacto con la miniatura Abatida, gastar una Acción para curarle las heridas más graves y tirar en la siguiente tabla. No puede volver a usarse Primeros auxilios en una miniatura que ya hubiera sido parcheada.
+
+
+• 1      - La miniatura está más allá de toda recuperación y no solo no se recupera sino que no podrá volver a intentar recuperarse en toda la partida.
+• 2-3   - La miniatura no consigue reanimarse, pero podrás volver a intentarlo.
+• 4-8   - La miniatura Abatida podrá volver a entrar en juego a partir de su Fase de activación siguiente, pero aplicando un penalizador -1 a sus Atributos físicos (Agilidad, Fuerza y Dureza) por el trauma sufrido y la debilidad causada por sus heridas, golpes o pérdida de sangre.
+• 9-10 - La miniatura Abatida podrá volver a entrar en juego en su siguiente Fase de activación con sus Atributos intactos.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Soldat" hidden="false" id="df29-dae1-4e59-bea1" publicationId="6699-072c-136a-7d30" page="109">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="9bd5-ccbb-87d1-8083" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="27fa-cef7-8759-4f3a" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Soldat" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="aa16-5db1-fe6f-1336">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mastín</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33f5-17a6-9db4-b55" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="4"/>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="12ca-a342-3da4-856" type="selectionEntry" targetId="ff92-8214-bc9a-f318" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cae-939d-10af-7655-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Walkie-talkie" hidden="false" id="d6d0-1f3d-5bdc-25f" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="5"/>
+        <entryLink import="true" name="Mastín" hidden="false" id="2876-e070-62ed-d618" type="selectionEntry" targetId="36c6-ca67-49c1-40ec"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c09-70a4-df6e-798b" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="1e97-7329-92b4-d881" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="b11f-5805-8896-3ec8" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Escopeta" hidden="false" id="b239-cc9a-8cb8-86a9" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="746b-3a61-3788-591e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="897e-93a9-cebd-65b5" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="bee2-c40b-2f4f-18be" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23f8-d16b-e204-d90d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cfce-c424-54a0-de5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="fb71-eabf-b242-e877" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Übersoldat" hidden="false" id="fb46-f755-64af-1c67" publicationId="6699-072c-136a-7d30" page="110">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="e882-bd3-ad50-9369" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="eee4-7bdf-8f37-ddc6" primary="true" name="Miembros de la banda"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Übersoldat" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="cc18-717c-77f6-59b6">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="10c7-8897-a87b-4abe" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="9fb1-1139-e74e-21cf" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Escopeta" hidden="false" id="ccf1-3f0d-9e85-4253" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="9c20-abc5-5117-e1d8" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Maza" hidden="false" id="8134-4551-c6fa-7bd0" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Maza Pesada" hidden="false" id="940a-9cb6-78d4-cac2" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+                <entryLink import="true" name="Filo Pesado" hidden="false" id="5c07-7b98-cd58-41ba" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="578-28cd-77ba-1e0d" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="ded1-f8da-97b8-a68f" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f15-24ea-6e31-1524" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ef3f-9ed5-be1e-8de" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="e875-fe0e-70de-f003" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="38b0-cefa-c6bd-aa4a" hidden="false" defaultSelectionEntryId="2e02-8302-da47-2ef2">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="2e02-8302-da47-2ef2" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="73cf-c85-e70a-2b6" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pura chapa" hidden="false" id="f6da-6a62-f3c8-e7ca" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+              <modifiers>
+                <modifier type="set" value="15" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b7b-a81d-a8a3-18c8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b89c-2dcc-e6ea-5782" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+        <entryLink import="true" name="Walkie-talkie" hidden="false" id="9fc8-1b7c-e8e4-4031" type="selectionEntry" targetId="31a3-d917-dc7b-edae"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mariscal" hidden="false" id="dfa9-38d6-4365-4786" publicationId="6699-072c-136a-7d30" page="111">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="fd20-b510-6d7a-594e" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="374-36e3-c846-fa5d" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="63f7-3830-be2f-5337" id="f5ba-bd3d-f819-f3dc" primary="false" name="Mariscal"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3193-9cd2-a3b-67ab" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Mariscal" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="12d4-5e34-6aff-d9c">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Walkie-talkie" hidden="false" id="63e9-f660-cb19-8b36" type="selectionEntry" targetId="31a3-d917-dc7b-edae" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3718-956d-b467-5c4e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mastín" hidden="false" id="e500-f4a6-b483-b842" type="selectionEntry" targetId="36c6-ca67-49c1-40ec" sortIndex="3"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="965a-8047-6968-f970" type="selectionEntry" targetId="19f2-5137-907f-980b" sortIndex="4"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="63f8-324e-6477-89c3" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="2d59-734c-8525-7e36" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Escopeta" hidden="false" id="33c3-10fd-63fb-2727" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="6862-1df0-2203-9bdd" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Maza" hidden="false" id="116e-6756-45cb-2c6f" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="95a0-7176-5ae1-5290" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="8535-c1ea-4a89-c6af" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="d7b7-32a6-302b-a5b9" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="37a3-750d-982c-9578" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcd2-d0b4-d604-dd0d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f89-bbb5-10ed-41c8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="8733-8843-77c6-e4d" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="7b11-6562-671b-2002" hidden="false" defaultSelectionEntryId="2e02-8302-da47-2ef2" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="8146-6934-d9bb-594a" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Armadura metálica" hidden="false" id="9e3f-a8a5-caf4-97ea" type="selectionEntry" targetId="d761-5553-4adf-c294">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chaleco antibalas" hidden="false" id="1fe2-5ef6-2060-beda" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Cadena de mando" id="d998-556e-5f05-f01d" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ilse, la loba del V Reich" hidden="false" id="8a55-436f-b441-1800" publicationId="6699-072c-136a-7d30" page="112">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="45"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="3ab7-5eeb-d47e-f721" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="c639-23b8-8e8e-f403" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="f53a-7804-b741-64aa" primary="false" name="Banda: V Reich"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ilse, la loba del V Reich" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="f783-3a63-ab37-1688">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cazadora de Mutardos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pistola" hidden="false" id="26c1-cd04-b239-1b95" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1f5-d860-1c5b-2f11-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="ade1-6b2b-4c1e-7be0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusta" hidden="false" id="14ed-4062-fc2c-ec83">
+          <infoLinks>
+            <infoLink name="Filo Pequeño" id="b6ee-c3d1-c428-d4db" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+              <modifiers>
+                <modifier type="set" value="Fusta" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Fusta" id="bd51-fd63-d490-9150" hidden="false">
+              <description>Ilse siempre lleva consigo una fusta de montar, que utiliza en combate para humillar y sacar de sus casillas a los rivales más que para eliminarlos. Tiene las estadísticas de un filo pequeño, pero por cada vez que impacte y no consiga Abatir al rival éste perderá 1 punto a Combate de forma acumulativa, ya que la ira y la vergüenza de ser fustigado en público lo harán perder los estribos.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="1a14-9763-44d9-20f0" primary="false" name="Arma"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ad2-9b7d-f0b1-ef9f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Cazadora de Mutardos" id="323d-fb9b-bc02-fc2f" hidden="false">
+          <description>La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aaron Swartzmann" hidden="false" id="aa27-5c7-f1b0-f6cd" publicationId="6699-072c-136a-7d30">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="da8-49dd-4793-c495" id="a379-26e7-9715-b1c9" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="f14-7c75-63d9-e507" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="951a-d373-ca70-e3c1" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="63f7-3830-be2f-5337" id="8582-36e1-2b52-5a9" primary="false" name="Mariscal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Aaron Swartzmann" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="d1d3-eaa0-877a-181c">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (5)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">5 (4)</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Montada, Raudo, Cadena de mando, Maestro estratega, Amado líder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Filo Medio" hidden="false" id="9b74-9cc2-b11d-e4a1" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4e-d575-9252-d1b5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pistola" hidden="false" id="6584-fa62-d91a-55ff" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="844d-1842-d1f9-a928-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Walkie-talkie" hidden="false" id="5950-2073-7fd2-8e99" type="selectionEntry" targetId="31a3-d917-dc7b-edae">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3707-fecc-f50-f21f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="c5d6-c95b-da33-ce70" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+      <rules>
+        <rule name="Maestro estratega" id="6b18-a9d5-2211-7698" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
+          <description>Aaron no sólo se considera Mariscal en su banda del V Reich, por lo que podrá usar la regla especial Cadena de Mando, si no que además, una vez por Turno de juego, una de sus órdenes a través del Walkie-talkie servirá para que la miniatura receptora pueda utilizar dos Acciones en lugar de una.</description>
+        </rule>
+        <rule name="Amado líder" id="354c-ee9f-4e99-a21f" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
+          <description>Aaron es el líder del V Reich y defraudarlo es algo impensable. Si Aaron es Abatido y un Sanitario intenta usar su Regla especial Primeros auxilios sobre él tendrá un bonificador de +3 en la tirada de la tabla.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Cadena de mando" id="71b2-3019-4252-b66e" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+        <infoLink name="Montada" id="3fbc-b027-f5ec-94f7" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Raudo" id="2a10-c71d-ed57-6218" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Edward Berhart" hidden="false" id="89cc-ab13-b5f1-ba17" publicationId="6699-072c-136a-7d30" page="114">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="1080-f07c-e14d-8665" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="f589-f7b0-fcf0-bfb6" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="da8-49dd-4793-c495" id="2a42-32ee-138e-b46b" primary="false" name="Banda: V Reich"/>
+        <categoryLink targetId="63f7-3830-be2f-5337" id="3e4c-6607-a626-f243" primary="false" name="Mariscal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Edward Berhart" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="b208-bb97-3b46-52f3">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3 (6)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5 (4)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6) </characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Táctico, Bombona de butano</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Rifle automàtico" hidden="false" id="2c76-1121-1961-be61" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b-b297-2ac2-6469-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="263b-5045-de73-47dd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Podadora eléctrica" hidden="false" id="25eb-6123-ba3e-bf5f">
+          <infoLinks>
+            <infoLink name="Filo Medio" id="bc2c-6ad4-203c-d941" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
+              <modifiers>
+                <modifier type="set" value="Podadora eléctrica" field="name"/>
+                <modifier type="set" value="Podadora eléctrica" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="6582-5e09-b30b-db5a" id="aef5-85f2-3458-d2e0" primary="false" name="Arma"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Podadora eléctrica" id="810f-33f1-4c11-9907" hidden="false">
+              <description>Si se emplea al menos dos veces en el mismo Turno de juego, la batería que lo alimenta se descargará momentáneamente, con lo que pasará reducir su bonificador de Fuerza a +1 durante el Turno de juego posterior mientras se recarga.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-fe63-b930-ed50-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ragnar" hidden="false" id="bf81-8691-de00-4561">
+          <profiles>
+            <profile name="Ragnar" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="76ce-a999-d1a8-5c62">
+              <characteristics>
+                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El gran danés completamente loco que lo acompaña permanentemente actúa como un mastín normal, salvo que el bonificador al Combate pasa a ser de +2. En caso de que Edward participara en un Combate múltiple con presencia de alguna miniatura del V Reich en él, antes de resolver el combate, tira 1d10. Con 1-2 Ragnar atacará a la miniatura de su propio bando, con lo que los ataques se realizarán contra ella. Si hay más de una, será a elección del jugador propio contra qué miniatura serán los ataques.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b83-b0f-90c9-a9d1-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Cadena de mando" id="74ab-2550-524d-b973" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+      </infoLinks>
+      <rules>
+        <rule name="Táctico" id="6258-95d8-d1c5-f8d6" hidden="false" publicationId="6699-072c-136a-7d30" page="114">
+          <description>Edward Berhart tiene una gran memoria sobre los combates de la Segunda Guerra Mundial que tanto estudió en su anterior vida. Por ello tiene unos conocimientos de táctica militar por encima de la media, que emplea con sus hombres en el campo de batalla. Una vez terminados los despliegues de los dos jugadores, puede recolocar hasta dos miniaturas de su banda, siempre dentro de su zona de despliegue.</description>
+        </rule>
+        <rule name="Bombona de butano" id="7c00-bddd-56ab-87f8" hidden="false" publicationId="6699-072c-136a-7d30" page="114">
+          <description>Edward lleva a su espalda una bombona de butano para poder respirar, debido a sus lesiones del sistema respiratorio. Si Berhart resulta Abatido, la bombona estallará. Pon una plantilla circular de 5 cm de radio centrada en la posición de la miniatura Abatida. Todas las miniaturas tocadas aunque sea parcialmente por la plantilla, sufren un impacto de Penetración 3 y Fuerza 3 de inmediato, sin bonificaciones por Cobertura.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Walkie-talkie" hidden="false" id="31a3-d917-dc7b-edae">
+      <profiles>
+        <profile name="Walkie-talkie" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="fad9-f63b-27ea-8b89">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Walkie-talkie</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce62-2c63-2a2f-f086" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mastín" hidden="false" id="36c6-ca67-49c1-40ec">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="9"/>
+      </costs>
+      <profiles>
+        <profile name="Mastín" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="4e2a-dc08-5bfd-9aec">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El mastín otorga un bonificador de +1 al Combate. Además si la miniatura resulta Abatida, el mastín vigilará, evitando que cualquier miniatura enemiga pueda Rapiñar el cadáver del Soldat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636d-a752-a81f-f245" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Cadena de mando" id="171a-5fbc-2f0d-4312" hidden="false">
+      <description>El Mariscal puede impartir órdenes con su walkie-talkie a cualquier otra miniatura de su banda que esté equipada también con uno de estos artilugios y no esté trabada en Combate. Al hacerlo, le cederá una de sus Acciones para esa Fase de activación, que esa miniatura deberá realizar de inmediato nada más recibir la orden. La Acción de activar el walkietalkie es la misma que se cede a la otra miniatura, por lo que el Mariscal podrá utilizar esta Regla especial hasta tres veces en su Fase de activación. No se pueden dar dos órdenes a la misma miniatura en la misma Fase de activación.</description>
+    </rule>
+  </sharedRules>
+  <categoryEntries>
+    <categoryEntry name="Mariscal" id="63f7-3830-be2f-5337" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="528f-f09e-53b4-656f"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
+</catalogue>
