@@ -409,6 +409,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="ade1-6b2b-4c1e-7be0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="3fab-d055-3cd4-2c1a" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fusta" hidden="false" id="14ed-4062-fc2c-ec83">
@@ -492,6 +493,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="c5d6-c95b-da33-ce70" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4c5e-dc00-c1e4-44ac" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <rules>
         <rule name="Maestro estratega" id="6b18-a9d5-2211-7698" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
@@ -542,6 +544,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Balas" hidden="false" id="263b-5045-de73-47dd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="33c6-a14e-d7b1-c2bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Podadora eléctrica" hidden="false" id="25eb-6123-ba3e-bf5f">
