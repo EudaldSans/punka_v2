@@ -1721,7 +1721,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9e40-76e9-2e11-5819" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
