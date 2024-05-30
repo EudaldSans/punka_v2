@@ -316,7 +316,6 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Ballesta" hidden="false" id="ac59-e4c2-4838-500d" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Piel de mongolongo" hidden="false" id="e587-84f0-ee38-8473">

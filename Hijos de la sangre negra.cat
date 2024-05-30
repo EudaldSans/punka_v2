@@ -8,7 +8,6 @@
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="543-cca5-79bc-2f67" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="6c02-b6f3-ba0-e0e4" primary="false" name="Armatoste"/>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="9550-fcba-87ed-41c0" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="9470-8498-10a5-2344" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
@@ -51,7 +50,6 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2bb-6445-bb2e-2433" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="6c28-a46-dd7f-a657" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="5e62-f21a-655b-d28e" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
@@ -84,7 +82,6 @@
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="fc3-d993-92a0-c21c" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="a5e5-5d93-7c0-8f2" primary="false" name="Armatoste"/>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="9b07-c6c-2c96-49da" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="495-7790-91db-1b6" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
@@ -617,7 +614,6 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Lechazo" hidden="false" id="1614-1dfa-b995-da00">
           <categoryLinks>
-            <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="9f32-4db-b252-82a7" primary="false" name="Arma"/>
             <categoryLink targetId="9e40-76e9-2e11-5819" id="3870-40ec-7c91-cd7c" primary="false" name="Arma de fuego"/>
             <categoryLink targetId="928d-1317-e533-3df" id="94d-63fa-3edc-b1b1" primary="false" name="Pistola"/>

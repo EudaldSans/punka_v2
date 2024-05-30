@@ -43,7 +43,6 @@ Modificadores
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="b77b-ac4c-b8a4-c38a" primary="false" name="A dos manos"/>
         <categoryLink targetId="c14e-1660-fbd2-5927" id="2ae2-7fc6-5473-2716" primary="false" name="Armatoste"/>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="6338-2e33-4a6b-db97" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="79cb-5f0e-d1f5-4bf2" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
@@ -63,7 +62,6 @@ Modificadores
       </costs>
       <categoryLinks>
         <categoryLink targetId="e24d-662f-94ca-ccbe" id="b4ff-8e22-7e4e-5802" primary="false" name="A dos manos"/>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="d386-f353-88b5-5e60" primary="false" name="Escasa"/>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="616-94ef-fb8-d86b" primary="false" name="Arma"/>
       </categoryLinks>
       <profiles>
@@ -107,20 +105,15 @@ Modificadores
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink targetId="501b-9657-19ab-7b5d" id="6c69-de49-7e05-4369" primary="false" name="Escasa"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="Bomba" id="19c9-790c-89af-3ea1" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
       </infoLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d9f2-e49d-e760-4c90" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Granadas santas" hidden="false" id="3e58-a78a-6e92-c6a3">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c429-bfa5-f6aa-5262" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d9f2-e49d-e760-4c90" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Granada santa" hidden="false" id="4be9-3a54-f93a-8af7" type="selectionEntry" targetId="e04a-d803-de33-f967">

@@ -497,7 +497,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-max" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="501b-9657-19ab-7b5d" id="9de-b171-68f2-fa01" primary="false" name="Escasa"/>
             <categoryLink targetId="928d-1317-e533-3df" id="9527-b977-2821-4a22" primary="false" name="Pistola"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="622b-3d50-a5b5-7b7a" primary="false" name="Arma"/>
           </categoryLinks>
@@ -573,7 +572,6 @@
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="9e40-76e9-2e11-5819" id="c342-7605-2924-6dd8" primary="false" name="Arma de fuego"/>
-            <categoryLink targetId="501b-9657-19ab-7b5d" id="5089-d97d-f171-b15c" primary="false" name="Escasa"/>
             <categoryLink targetId="928d-1317-e533-3df" id="c59c-61b4-37bf-a7a9" primary="false" name="Pistola"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="c141-7f26-ccfc-81d8" primary="false" name="Arma"/>
           </categoryLinks>
