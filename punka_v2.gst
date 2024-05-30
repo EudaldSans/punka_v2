@@ -707,17 +707,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           </modifiers>
         </infoLink>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Mira telescópica" hidden="true" id="f0c9-8521-7010-e375" type="selectionEntry" targetId="e215-f5e2-840d-637d">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="476f-664f-cf39-efa5" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="Pistola con mira telescópica" field="name">
           <conditions>
@@ -1009,17 +998,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           </conditions>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Mira telescópica" hidden="true" id="735c-760-7c82-9de6" type="selectionEntry" targetId="e215-f5e2-840d-637d">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="476f-664f-cf39-efa5" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>

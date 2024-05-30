@@ -479,10 +479,18 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
                 <entryLink import="true" name="Maza Ligera" hidden="false" id="a770-e03b-4351-26ec" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="afc-b293-228b-82f0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
                 <entryLink import="true" name="Maza" hidden="false" id="bf19-a60e-fc73-8b04" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="c2eb-ade-c6da-31c3" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="c2eb-ade-c6da-31c3" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <entryLinks>
+                    <entryLink import="true" name="Mira telescópica" hidden="false" id="aec0-8b4e-9a6d-6583" type="selectionEntry" targetId="e215-f5e2-840d-637d"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Trabuco" hidden="false" id="a029-9f05-f3b1-2bb8" type="selectionEntry" targetId="a5f0-d0ff-ae29-49bc"/>
                 <entryLink import="true" name="Bombeadora" hidden="false" id="a7c4-7e81-3f7d-d83a" type="selectionEntry" targetId="8e97-dbed-8671-64b2"/>
-                <entryLink import="true" name="Rifle" hidden="false" id="8f00-6547-8966-93fa" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="8f00-6547-8966-93fa" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+                  <entryLinks>
+                    <entryLink import="true" name="Mira telescópica" hidden="false" id="7026-eabd-8321-4dee" type="selectionEntry" targetId="e215-f5e2-840d-637d"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Filo Medio" hidden="false" id="96b3-6cdd-69bc-4e79" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
               </entryLinks>
               <constraints>
@@ -539,7 +547,11 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Maza" hidden="false" id="29b9-375b-da51-9e64" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="354a-d318-9fbd-e420" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="354a-d318-9fbd-e420" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <entryLinks>
+                    <entryLink import="true" name="Mira telescópica" hidden="false" id="8b33-4431-7a14-7f65" type="selectionEntry" targetId="e215-f5e2-840d-637d"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Escopeta" hidden="false" id="a0ea-dc51-43de-2aae" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
                 <entryLink import="true" name="Maza Pesada" hidden="false" id="a695-4c50-4fca-a3f0" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
                 <entryLink import="true" name="Puño balístico" hidden="false" id="e8e6-e74b-65d6-4502" type="selectionEntry" targetId="c903-18c3-3e9a-6519"/>
@@ -605,7 +617,11 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               <entryLinks>
                 <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="ba4e-2331-d522-6b84" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="7b79-66b3-870d-3164" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="fd89-a689-372-d484" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="fd89-a689-372-d484" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <entryLinks>
+                    <entryLink import="true" name="Mira telescópica" hidden="false" id="9052-ad24-8252-c980" type="selectionEntry" targetId="e215-f5e2-840d-637d"/>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
