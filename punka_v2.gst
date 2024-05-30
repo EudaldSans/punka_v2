@@ -735,6 +735,21 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c19c-cb0c-9dbb-b78d"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="c19c-cb0c-9dbb-b78d">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5344-f1f1-232b-6a3e" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="14cb-c41d-5725-feb4" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="265c-2979-056d-1a06" name="Escopeta" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1230,9 +1245,14 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="34f0-388b-fd54-17c1">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b4e3-934f-601-8801" shared="true" includeChildSelections="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b4e3-934f-601-8801" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1cdd-1929-bb46-a022" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1255,9 +1275,14 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="7858-6209-61a3-6fe">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5344-f1f1-232b-6a3e" shared="true" includeChildSelections="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5344-f1f1-232b-6a3e" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1cdd-1929-bb46-a022" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
