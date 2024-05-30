@@ -609,19 +609,10 @@
             <categoryLink name="A dos manos" hidden="false" id="e925-276f-a439-a207" targetId="e24d-662f-94ca-ccbe" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="c1d0-e603-1641-e2a7" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Lechazo" hidden="false" id="1614-1dfa-b995-da00">
-          <profiles>
-            <profile name="Lechazo" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="52ba-e81c-eb34-2750">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">4</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/30/45 cm</characteristic>
-                <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego, Escasa, Incendiaria (3)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <categoryLinks>
             <categoryLink targetId="501b-9657-19ab-7b5d" id="62a-b201-6108-2151" primary="false" name="Escasa"/>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="9f32-4db-b252-82a7" primary="false" name="Arma"/>
@@ -635,6 +626,12 @@
             <infoLink name="Escasa" id="bfaa-b967-3ee7-2b34" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
             <infoLink name="Arma de fuego" id="8053-116d-ea29-c5be" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
             <infoLink name="Incendiaria (3)" id="546d-c941-8cf3-7992" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+            <infoLink name="Pistola" id="14ae-f146-7c30-decf" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+              <modifiers>
+                <modifier type="set" value="Arma de fuego, Escasa, Incendiaria (3)" field="2ecc-3ee3-2a21-1e6"/>
+                <modifier type="set" value="Lechazo" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Chorrazo" hidden="false" id="d11a-6d24-262b-79ad">
@@ -644,12 +641,7 @@
                 <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
                 <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
                 <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">5</characteristic>
-                <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">Combustible (5)</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Chorrazo sin combustible" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8966-e5d7-7b11-dc33">
-              <characteristics>
-                <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">La motosierra gasta 1 carga de Combustible por cada Acción en que esté encendida y por tanto se utilice con sus estadísticas. Una vez agotada , o si no desean utilizarse cargas, se considera un filo pequeño.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Chorrazo sin combustible</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -663,6 +655,11 @@
           <categoryLinks>
             <categoryLink targetId="6582-5e09-b30b-db5a" id="27a6-ea8d-b2dd-9046" primary="false" name="Arma"/>
           </categoryLinks>
+          <rules>
+            <rule name="Chorrazo sin combustible" id="4857-2009-4855-3bf8" hidden="false">
+              <description>La motosierra gasta 1 carga de Combustible por cada Acción en que esté encendida y por tanto se utilice con sus estadísticas. Una vez agotada , o si no desean utilizarse cargas, se considera un filo pequeño.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
