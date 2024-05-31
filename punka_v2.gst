@@ -80,12 +80,19 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e9e-15f2-e0bf-3559" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="733d-faaa-4448-fa3f" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="2" field="d12a-f092-5bf5-54f2">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="cd25-e09a-4ac6-8cdc" name="Gato parameño" hidden="false">
       <constraints>
@@ -116,7 +123,7 @@
       <modifiers>
         <modifier type="set" value="2" field="d4c7-31b2-c171-867c">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5880-23b-4948-8766" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -151,6 +158,12 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Configuración" id="9e25-aa8a-c426-a886" hidden="false"/>
+    <categoryEntry name="Nuevos Hijos" id="debf-2887-31ab-af12" hidden="false">
+      <comment>Subfacción de la Sangre negra</comment>
+    </categoryEntry>
+    <categoryEntry name="Rugientes" id="2aa0-728b-e07f-69b" hidden="false">
+      <comment>Subfacción de la Sangre negra</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -231,6 +244,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <infoLinks>
         <infoLink name="Mónguer" id="425b-4128-b8b5-ae78" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7863-5b58-58cf-d2f2" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Imperatrix Rabiosa" hidden="false" id="4a58-c92b-ecc3-ab34" publicationId="6699-072c-136a-7d30" page="117">
       <entryLinks>
@@ -294,6 +310,9 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       <infoLinks>
         <infoLink name="Retraso (2)" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9466-3762-b617-4536" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mongodrilo Dundee" hidden="false" id="55a2-310f-3e99-58dd" publicationId="6699-072c-136a-7d30" page="118">
       <costs>
@@ -401,6 +420,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7e-88c-1505-844b"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dcc0-e93a-a556-584e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="bd7e-88c-1505-844b">
@@ -469,6 +489,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="75"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5433-b46f-d2d4-493c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Capitán Hammerica" hidden="false" id="f082-43a7-7d70-546c" publicationId="6699-072c-136a-7d30" page="120">
       <costs>
@@ -533,6 +556,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         <categoryLink targetId="a4c2-f028-f3ac-8b88" id="3150-832-b614-2fe9" primary="true" name="Mercenarios"/>
         <categoryLink targetId="6659-5ef7-facd-fab1" id="54f7-30a7-e32e-3bf9" primary="false" name="Mercenarios y personalidades de la banda"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4402-4e63-da30-7754" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lizzy Deville" hidden="false" id="6859-599a-6415-dbcd" publicationId="6699-072c-136a-7d30" page="121">
       <costs>
@@ -592,6 +618,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
       <infoLinks>
         <infoLink name="Retraso (2)" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8cd-bcd8-3943-64f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ochodedos" hidden="false" id="64fb-6fb0-75ea-c8b8" publicationId="6699-072c-136a-7d30" page="122">
       <costs>
@@ -633,6 +662,9 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
           <description>Ochodedos ha perfeccionado el combate con dos armas de tal manera que es capaz de coordinar sus ataques con ellas a la vez, aunque a riesgo de perder algo de habilidad. Cuando Ochodedos está en una Acción de Combate puede, o bien atacar normalmente con una de sus armas, o bien utilizar las dos, lo que le da la posibilidad de tirar un dado más, pudiendo elegir el que obtenga un resultado más alto de los dos, pero a costa de un penalizador de -2 al Atributo de Combate.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1b1-7c02-d272-ca4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Irina" hidden="false" id="80d3-4417-e002-6458">
       <categoryLinks>
@@ -696,6 +728,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <infoLinks>
         <infoLink name="Retraso (3)" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a145-1737-3aed-5ffb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1767,13 +1802,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nuevos Hijos" hidden="false" id="5880-23b-4948-8766" publicationId="1e5a-2394-b910-b6ad" page="4">
-      <comment>Subfacción sangre negra</comment>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="9b04-3087-ac5c-b3ff"/>
-    <selectionEntry type="upgrade" import="true" name="Rugientes" hidden="false" id="733d-faaa-4448-fa3f" publicationId="1e5a-2394-b910-b6ad" page="6">
-      <comment>Subfacción sangre negra</comment>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
