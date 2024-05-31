@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="82fd-14e9-7e70-88e2" name="Hijos de la sangre negra - Library" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="82fd-14e9-7e70-88e2" name="Hijos de la sangre negra" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Motosierra" hidden="false" id="d03b-2867-177f-b0db" publicationId="6699-072c-136a-7d30" page="54">
       <costs>
@@ -58,7 +58,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -120,7 +120,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -139,7 +139,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -151,7 +151,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -186,6 +186,138 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac2-c281-b95-6381" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arma Flamígera" hidden="false" id="e4bd-5f5-f8d-cf5">
+      <profiles>
+        <profile name="Arma Flamígera" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="bac2-ef57-6359-b892">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Piel quemada" hidden="false" id="ce7b-2b98-4276-9744" publicationId="1e5a-2394-b910-b6ad" page="3">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Piel quemada" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="a852-d9b-26d6-9fba">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">2</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Ignífugo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignífugo" id="d92f-1a56-b712-d1bf" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Sierra de mano" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="bfe6-735d-3077-a3b0">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">5</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Combustible (5), Escasa, Sierra de mano</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="Sierra de mano" id="35da-fe3f-90b5-69b1" hidden="false">
+      <infoLinks>
+        <infoLink name="Combustible (5)" id="fbd6-4fca-326b-5770" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
+        <infoLink name="Escasa" id="5c9e-b319-1bdf-2c31" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+      </infoLinks>
+      <rules>
+        <rule name="Sierra de mano" id="22d8-a17f-da92-32ef" hidden="false">
+          <description>La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté encendida y por tanto se utilice con susestadísticas. Una vez agotada, o si no desean utilizarse cargas, se considera un filo pequeño.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Ceniza" hidden="false" id="b81f-51d6-1884-8994">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+      </costs>
+      <profiles>
+        <profile name="Ceniza" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="99ae-a03b-d4a5-ba4a">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="E95 (Ceniza)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="3023-834e-4b78-505f" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="af37-1ba0-88ab-e3f0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="6688-119e-5225-10f3" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="37e4-9910-b2e9-9e07" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Maza" hidden="false" id="b3b8-960-508-d87d" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="752f-f0b9-388a-bf6e" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="935f-594a-891b-1552" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40ad-3e97-bd9c-628f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="b714-e886-45c6-7b87" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="1520-d634-7aa5-758b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="22e-3515-9d38-da07" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="940f-dc60-2f0e-80f4" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44d5-22e9-3687-a6ef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="a07e-b39a-6629-551" type="selectionEntry" targetId="19f2-5137-907f-980b">
+          <categoryLinks>
+            <categoryLink name="A dos manos" hidden="false" id="4cc5-9fcc-1ccd-a5d" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="ff93-4a52-4a4a-19da" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="253-84b0-e824-f042" targetId="73ff-a5cb-afba-6105" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="E95 (Ceniza)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
     <selectionEntry type="model" import="true" name="Ascua" hidden="false" id="861f-1eab-c0bc-237e" publicationId="6699-072c-136a-7d30" page="50">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
@@ -205,7 +337,12 @@
           <modifiers>
             <modifier type="set" value="E98 (Ascua)" field="name">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Ascua" field="name">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -287,89 +424,17 @@
       <modifiers>
         <modifier type="set" value="E98 (Ascua)" field="name">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Ceniza" hidden="false" id="b81f-51d6-1884-8994">
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
-      </costs>
-      <profiles>
-        <profile name="Ceniza" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="99ae-a03b-d4a5-ba4a">
-          <characteristics>
-            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
-            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
-            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
-            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="E95 (Ceniza)" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="3023-834e-4b78-505f" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Armas" id="af37-1ba0-88ab-e3f0" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Maza Ligera" hidden="false" id="6688-119e-5225-10f3" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-                <entryLink import="true" name="Filo Pequeño" hidden="false" id="37e4-9910-b2e9-9e07" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Maza" hidden="false" id="b3b8-960-508-d87d" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="752f-f0b9-388a-bf6e" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="935f-594a-891b-1552" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40ad-3e97-bd9c-628f" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="b714-e886-45c6-7b87" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Blindaje" id="1520-d634-7aa5-758b" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Ropas resistentes" hidden="false" id="22e-3515-9d38-da07" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
-              <modifiers>
-                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Cuero endurecido" hidden="false" id="940f-dc60-2f0e-80f4" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-              <modifiers>
-                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44d5-22e9-3687-a6ef" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="a07e-b39a-6629-551" type="selectionEntry" targetId="19f2-5137-907f-980b">
-          <categoryLinks>
-            <categoryLink name="A dos manos" hidden="false" id="4cc5-9fcc-1ccd-a5d" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Miembros de la banda" hidden="false" id="ff93-4a52-4a4a-19da" targetId="84b7-6828-dd10-0280" primary="true"/>
-        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="253-84b0-e824-f042" targetId="73ff-a5cb-afba-6105" primary="false"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="E95 (Ceniza)" field="name">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="568a-d00e-ea5a-efdf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Ascua" field="name">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -397,7 +462,7 @@
           <modifiers>
             <modifier type="set" value="Diesel (Chispa)" field="name">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -473,110 +538,15 @@
       <modifiers>
         <modifier type="set" value="Diesel (Chispa)" field="name">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Cunnilingus Igni" hidden="false" id="9b0d-557f-2e75-7296">
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
-      </costs>
-      <profiles>
-        <profile name="Cunnilingus Igni" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="625b-ed2a-8243-e83f">
-          <characteristics>
-            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
-            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5 (4)</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
-            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
-            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">por el Sumo Guardián, Sumo Guardián de la Llama</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Pura chapa" hidden="false" id="a020-dadc-d4e7-900f" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="504-6f9e-25e4-70" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1479-f4e9-c1f0-1f21" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b67c-b864-965-cfbf" type="selectionEntry" targetId="19f2-5137-907f-980b">
-          <categoryLinks>
-            <categoryLink name="A dos manos" hidden="false" id="e925-276f-a439-a207" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="c1d0-e603-1641-e2a7" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lechazo" hidden="false" id="1614-1dfa-b995-da00">
-          <categoryLinks>
-            <categoryLink name="Arma" hidden="false" id="9f32-4db-b252-82a7" targetId="6582-5e09-b30b-db5a" primary="false"/>
-            <categoryLink name="Arma de fuego" hidden="false" id="3870-40ec-7c91-cd7c" targetId="9e40-76e9-2e11-5819" primary="false"/>
-            <categoryLink name="Pistola" hidden="false" id="94d-63fa-3edc-b1b1" targetId="928d-1317-e533-3df" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24b-a311-e00c-5ca" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6697-6883-510f-fb94" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Escasa" id="bfaa-b967-3ee7-2b34" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-            <infoLink name="Arma de fuego" id="8053-116d-ea29-c5be" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
-            <infoLink name="Incendiaria (3)" id="546d-c941-8cf3-7992" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
-            <infoLink name="Pistola" id="14ae-f146-7c30-decf" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
-              <modifiers>
-                <modifier type="set" value="Arma de fuego, Escasa, Incendiaria (3)" field="2ecc-3ee3-2a21-1e6"/>
-                <modifier type="set" value="Lechazo" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chorrazo" hidden="false" id="d11a-6d24-262b-79ad">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c32-4a30-f7c4-2deb" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4757-39ff-27b4-f0cf" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Sierra de mano" id="aa2f-5d4f-cdf-c911" hidden="false" type="profile" targetId="bfe6-735d-3077-a3b0">
-              <modifiers>
-                <modifier type="set" value="Chorrazo" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Sierra de mano" id="b5fc-671d-30b8-5a3b" hidden="false" type="infoGroup" targetId="35da-fe3f-90b5-69b1"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink name="Arma" hidden="false" id="27a6-ea8d-b2dd-9046" targetId="6582-5e09-b30b-db5a" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="9f84-6a9-8c86-d5b2" targetId="73ff-a5cb-afba-6105" primary="false"/>
-        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="bdd3-e90a-3308-43a6" targetId="6659-5ef7-facd-fab1" primary="false"/>
-        <categoryLink name="Personalidades de la banda" hidden="false" id="2dff-c169-b87a-2407" targetId="d1a7-5f24-003f-6400" primary="true"/>
-      </categoryLinks>
-      <rules>
-        <rule name="Por el Sumo Guardián" id="ae5e-6680-67e2-8d53" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
-          <description>Los Quemados son aún más fanáticos en su defensa de Cunnilingus. Podrán usar su regla ¡Por la Sangre Negra! con Cunnilingus estando hasta 10 cm de él, en lugar de los 5 cm habituales.</description>
-        </rule>
-        <rule name="Sumo Guardián de la Llama" id="ac38-ff31-111a-9d2c" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
-          <description>Cunnilingus actúa como un Guardián de la Llama, por lo que podrá usar la Regla especial Mirada llameante sobre sus hombres. Además, su presencia es tan imponente, que las miniaturas no tendrán que estar en su Línea de visión, y se beneficiarán de la regla hasta que Cunnilingus sea Abatido. Por otra parte, puesto que sólo puede haber un Guardián de la Llama en la banda, si incluyes a Cunnilingus no podrás incluir a otro.</description>
-        </rule>
-      </rules>
-      <modifiers>
-        <modifier type="set" value="0" field="5d86-5721-981c-f7a0">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a2d7-ff55-be87-8d82" shared="true" includeChildSelections="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="568a-d00e-ea5a-efdf" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d86-5721-981c-f7a0" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Guardian de la llama" hidden="false" id="a2d7-ff55-be87-8d82" publicationId="6699-072c-136a-7d30" page="49">
       <constraints>
@@ -600,7 +570,7 @@
           <modifiers>
             <modifier type="set" value="Surtidor (Guardián)" field="name">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -679,10 +649,115 @@
         </modifier>
         <modifier type="set" value="Surtidor (Guardián)" field="name">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="de6c-ea36-a30c-741e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cunnilingus Igni" hidden="false" id="9b0d-557f-2e75-7296">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <profiles>
+        <profile name="Cunnilingus Igni" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="c567-55a6-f402-8279">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5 (4)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">por el Sumo Guardián, Sumo Guardián de la Llama</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pura chapa" hidden="false" id="d9ca-1c5d-64cd-6e4" type="selectionEntry" targetId="5851-f953-bcb7-91a6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49f3-c174-556e-1e38" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2cc-7ec8-53ea-d06e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="5e44-bb5b-319a-8fb9" type="selectionEntry" targetId="19f2-5137-907f-980b">
+          <categoryLinks>
+            <categoryLink name="A dos manos" hidden="false" id="8f8f-c14d-f313-d88d" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Balas" hidden="false" id="e123-c02e-7026-2d3f" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lechazo" hidden="false" id="6dd3-8734-67c-f07a">
+          <categoryLinks>
+            <categoryLink name="Arma" hidden="false" id="bbf-ef9a-213b-5dae" targetId="6582-5e09-b30b-db5a" primary="false"/>
+            <categoryLink name="Arma de fuego" hidden="false" id="93e7-4f0-f151-c308" targetId="9e40-76e9-2e11-5819" primary="false"/>
+            <categoryLink name="Pistola" hidden="false" id="1f78-8613-376b-668d" targetId="928d-1317-e533-3df" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cce4-4759-cc33-b52c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef3-862d-91f0-88f0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Escasa" id="c84d-b4f1-72e5-1bed" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+            <infoLink name="Arma de fuego" id="5eeb-a109-53c4-d794" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+            <infoLink name="Incendiaria (3)" id="1661-ca2c-b33b-933e" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+            <infoLink name="Pistola" id="c143-488f-6300-b472" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+              <modifiers>
+                <modifier type="set" value="Arma de fuego, Escasa, Incendiaria (3)" field="2ecc-3ee3-2a21-1e6"/>
+                <modifier type="set" value="Lechazo" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chorrazo" hidden="false" id="7c14-72a3-c904-a25a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fff-4752-335a-8612" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b2c-cebc-aa81-7de1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sierra de mano" id="ec96-37ee-85f4-9842" hidden="false" type="profile" targetId="bfe6-735d-3077-a3b0">
+              <modifiers>
+                <modifier type="set" value="Chorrazo" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Sierra de mano" id="a757-87a4-ae9a-7f61" hidden="false" type="infoGroup" targetId="35da-fe3f-90b5-69b1"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Arma" hidden="false" id="62b-4195-d1fd-b5b9" targetId="6582-5e09-b30b-db5a" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="a0c0-5bcc-bdcf-7a8d" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="a7cd-175-e48b-d394" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="3343-a707-1adb-6857" targetId="d1a7-5f24-003f-6400" primary="true"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Por el Sumo Guardián" id="dd-4d06-7c9f-3245" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
+          <description>Los Quemados son aún más fanáticos en su defensa de Cunnilingus. Podrán usar su regla ¡Por la Sangre Negra! con Cunnilingus estando hasta 10 cm de él, en lugar de los 5 cm habituales.</description>
+        </rule>
+        <rule name="Sumo Guardián de la Llama" id="ad92-c11-24b4-2081" hidden="false" publicationId="6699-072c-136a-7d30" page="53">
+          <description>Cunnilingus actúa como un Guardián de la Llama, por lo que podrá usar la Regla especial Mirada llameante sobre sus hombres. Además, su presencia es tan imponente, que las miniaturas no tendrán que estar en su Línea de visión, y se beneficiarán de la regla hasta que Cunnilingus sea Abatido. Por otra parte, puesto que sólo puede haber un Guardián de la Llama en la banda, si incluyes a Cunnilingus no podrás incluir a otro.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="950e-b9cf-b243-d11f">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a2d7-ff55-be87-8d82" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fd07-4092-4530-9da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="950e-b9cf-b243-d11f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Momma Nutritora" hidden="false" id="72cd-6ddf-cbe2-5003" publicationId="6699-072c-136a-7d30" page="52">
       <profiles>
@@ -742,6 +817,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d72-cf5a-a114-29fb" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fd07-4092-4530-9da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Quemado" hidden="false" id="8dce-ed5f-5381-650c">
       <costs>
@@ -762,7 +844,7 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="951b-bc5a-4e8-4c29" hidden="false">
+        <selectionEntryGroup name="Armas" id="951b-bc5a-4e8-4c29" hidden="false" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2347-8b90-4ef6-eb1e" includeChildSelections="false"/>
           </constraints>
@@ -771,6 +853,29 @@
             <entryLink import="true" name="Maza Ligera" hidden="false" id="c03f-bc6b-60c4-a1a5" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
             <entryLink import="true" name="Filo Pequeño" hidden="false" id="45ce-6111-cf76-8282" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="653-9d22-bb64-5455" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d35e-e77c-de9e-adcf" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <categoryLinks>
+                <categoryLink name="A dos manos" hidden="false" id="df3e-166b-c85c-2cf3" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bonzo" hidden="false" id="f575-3e52-25a6-4a8f">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Bonzo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="9028-86ae-5d9e-baae">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si un Quemado con el bidón queda en contacto peana con peana con un enemigo se prenderá fuego inmediatamente, resultando Abatido al inmolarse y causando un impacto de Fuerza 5 y Penetración 5. Si hubiera quedado en contacto con varias figuras, o un Combate múltiple, todas las miniaturas implicadas sufrirán ese impacto. Tras inmolarse se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -785,62 +890,176 @@
           <description>Siempre que el Quemado esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con la Regla especial Todoterreno.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bonzo" hidden="false" id="f575-3e52-25a6-4a8f">
-          <costs>
-            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
-          </costs>
-          <profiles>
-            <profile name="Bonzo" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="9028-86ae-5d9e-baae">
-              <characteristics>
-                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Si un Quemado con el bidón queda en contacto peana con peana con un enemigo se prenderá fuego inmediatamente, resultando Abatido al inmolarse y causando un impacto de Fuerza 5 y Penetración 5. Si hubiera quedado en contacto con varias figuras, o un Combate múltiple, todas las miniaturas implicadas sufrirán ese impacto. Tras inmolarse se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d35e-e77c-de9e-adcf" type="selectionEntry" targetId="19f2-5137-907f-980b">
-          <categoryLinks>
-            <categoryLink name="A dos manos" hidden="false" id="df3e-166b-c85c-2cf3" targetId="e24d-662f-94ca-ccbe" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Mónguer" id="3362-499-a363-ff94" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Arma Flamígera" hidden="false" id="e4bd-5f5-f8d-cf5">
+    <selectionEntry type="model" import="true" name="Pirómano" hidden="false" id="5130-d601-6eec-d157">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="8c4a-3791-4e59-d3bc" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="f7a8-1ed8-53e0-b659" targetId="73ff-a5cb-afba-6105" primary="false"/>
+      </categoryLinks>
       <profiles>
-        <profile name="Arma Flamígera" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="bac2-ef57-6359-b892">
+        <profile name="Pirómano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="b36e-e4b7-41b0-74a5">
           <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</characteristic>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Bajo la mirada llameante, Dale calor</characteristic>
           </characteristics>
         </profile>
       </profiles>
-    </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile name="Sierra de mano" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="bfe6-735d-3077-a3b0">
-      <characteristics>
-        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
-        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
-        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">5</characteristic>
-        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Combustible (5), Escasa, Sierra de mano</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
-  <sharedInfoGroups>
-    <infoGroup name="Sierra de mano" id="35da-fe3f-90b5-69b1" hidden="false">
-      <infoLinks>
-        <infoLink name="Combustible (5)" id="fbd6-4fca-326b-5770" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
-        <infoLink name="Escasa" id="5c9e-b319-1bdf-2c31" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-      </infoLinks>
       <rules>
-        <rule name="Sierra de mano" id="22d8-a17f-da92-32ef" hidden="false">
-          <description>La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté encendida y por tanto se utilice con susestadísticas. Una vez agotada, o si no desean utilizarse cargas, se considera un filo pequeño.</description>
+        <rule name="Bajo la mirada llameante (Pirómano)" id="32df-e7a4-2bb9-e0aa" hidden="false" publicationId="1e5a-2394-b910-b6ad" page="2">
+          <description>Siempre que el Pirómano esté en la Línea de visión de su Guardián de la Llama, su banda obtendrá 2 marcadores de Churruscado en lugar de 1 si este Abate a una miniatura enemiga mediante llamas.</description>
+        </rule>
+        <rule name="Dale calor" id="6cb6-65c-90d-3ccd" hidden="false" publicationId="1e5a-2394-b910-b6ad" page="2">
+          <description>Un Pirómano puede decidir gastar 1 Acción en prenderse fuego. Al hacerlo perderá 1 punto de Dureza y ganará 1 punto de Combate, de manera permanente. Puede repetir esto hasta que obviamente se quede sin Dureza.</description>
         </rule>
       </rules>
-    </infoGroup>
-  </sharedInfoGroups>
+      <infoLinks>
+        <infoLink name="Bersérker" id="8833-507c-3fe8-7292" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="a629-2cec-cbf3-4b42" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f8d-11ec-7379-804f" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9f9-c72e-d192-b168" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="ad90-63f9-290a-9e58" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="d9f9-5438-f191-d2d9" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="6d9-5951-4bc0-6df0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Cócteles Molotov" hidden="false" id="b955-21e7-c518-ce98" type="selectionEntry" targetId="bd62-7744-2142-5e84"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="3d34-b88c-6c92-9202" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Lanzallamas" hidden="false" id="af4a-4245-4dc5-91f8" type="selectionEntry" targetId="1859-e45e-f44f-1868"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="ecae-84ec-fb27-48b9" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f13d-6a4d-f230-768" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Piel quemada" hidden="false" id="f72e-e725-5bc8-6dc5" type="selectionEntry" targetId="ce7b-2b98-4276-9744">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="1d96-b0b0-534-1010" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b25f-a6a2-bc1f-7b12" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd07-4092-4530-9da8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="507c-48dd-9c79-aea1">
+      <categoryLinks>
+        <categoryLink targetId="9e25-aa8a-c426-a886" id="b0a8-de63-d50e-918f" primary="true" name="Configuración"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="7e6e-9c2b-c0d1-c9c1">
+              <categoryLinks>
+                <categoryLink targetId="f379-822c-2bc8-527e" id="c33e-b76a-a71d-959e" primary="false" name="Subfacción: Sin subfacción"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crematorio" hidden="false" id="568a-d00e-ea5a-efdf">
+              <categoryLinks>
+                <categoryLink targetId="fd07-4092-4530-9da8" id="c211-7607-f05a-8225" primary="false" name="Subfacción: Crematorio"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="El poder del fuego" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="1e56-a0ae-b8e-cb82">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Ya lo hemos mencionado, pero a esta gente les pone mazo el olor a carne churruscada. Tanto que cuanto más gente muera así (da igual si son enemigos o de su propia banda), más se motivan. Cada vez que durante la partida una miniatura resulte Abatida a causa de las llamas (por un lanzallamas, un cóctel Molotov, un arma flamígera, un marcador de Fuego, etc...) la banda de Crematorio obtendrá un marcador de Churruscado.
+Al principio del Turno de juego puedes utilizar marcadores de Churruscado para adelantar la Ronda de Agilidad en que actúe una miniatura. Por cada marcador que utilices en una miniatura, este podrá actuar en una Ronda de Agilidad superior a la que le corresponde. Puedes repartir los marcadores a tu gusto entre las miniaturas o no utilizar alguno si lo prefieres.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nuevos Hijos" hidden="false" id="a840-e780-8c20-3ae4">
+              <categoryLinks>
+                <categoryLink targetId="debf-2887-31ab-af12" id="a6ee-a988-e55-adbd" primary="false" name="Subfacción: Nuevos Hijos"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Será por perres" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="5a60-f042-2544-dd85">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Nuevos Hijos se están forrando cosa fina. Todo el mundo se pone palote con la idea de conseguir combustible y son la única opción disponible. Sus líderes han descubierto que como sustituto de la amenaza de ser quemados vivos, tan típica de Cunnilingus, funciona perfectamente la prima el ofrecer un extra de balas para motivar a sus tropas. A la hora de hacer la banda puedes reserva un máximo de 50 puntos sin gastar, pero que podrás utilizar durante la partida. Al principio de la Fase de activación de una miniatura, puedes decidir gastar parte de estos puntos en ella en un máximo de dos de estos beneficios, que sólo tendrá durante esa Fase de activación. 
+
+PUNTOS - EFECTO
+•    5         - La miniatura obtiene la Regla especial Raudo.
+•    5         - La miniatura obtiene la Regla especial Todoterreno.
+•    8         - La miniatura obtiene un bonificador de +2 al Combate.
+•    8         - La miniatura obtiene un bonificador de +2 a la Fuerza.
+•    8         - La miniatura obtiene un bonificador de +2 a la Dureza.
+•    15       - La miniatura obtiene un bonificador de +1 a las Acciones.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rugientes" hidden="false" id="e94a-c248-365d-82eb">
+              <categoryLinks>
+                <categoryLink targetId="2aa0-728b-e07f-69b" id="3008-d8fc-4638-95d0" primary="false" name="Subfacción: Rugientes"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Motorizados" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="7bcb-a4fd-65df-396a">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="De paquete" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="36f4-e10a-76e5-41e6">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Chispas de los Rugientes pueden llevar de paquete a un Ceniza. Mientras esté de paquete, un Ceniza no puede hacer nada, excepto usar una lanzatrueno (ver Equipo de los Rugientes), hasta que se baje.
+Durante su Fase de activación, un Ceniza de paquete puede gastar una Acción en bajarse, colocándose en contacto con cualquier parte de la peana del Chispa. Si el Chispa estuviera trabado en Combate, un Ceniza que baje sólo podrá ponerse en contacto con una de las miniaturas enemigas que estén Combatiendo con el Chispa. Sin embargo, si el Chispa ha movido durante ese Turno de juego, esto puede no resultar tan sencillo, por lo que deberá seguirse la siguiente tabla:
+
+MOVIMIENTO
+DEL CHISPA          -         EFECTO PARA EL CENIZA
+• No ha movido         -         El Ceniza baja sin problemas.
+• Hasta 15 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 2.
+• Hasta 30 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 4.
+• Más de 30 cm        -          El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 6.
+
+Sin embargo, el Ceniza puede decidir utilizar una Acción más, y entonces mover una fila hacia arriba en la tabla.
+Si un Chispa es Abatido llevando a un Ceniza de paquete, se considerará que el Ceniza ha bajado inmediatamente, siguiendo las reglas anteriores, pero lógicamente sin poder gastar ninguna Acción extra, ya que no está en su Fase de activación.
+Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete si está en contacto con un Chispa que no estétrabado en Combate y que tenga el hueco libre.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

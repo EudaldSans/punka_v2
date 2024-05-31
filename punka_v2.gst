@@ -158,12 +158,16 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Configuración" id="9e25-aa8a-c426-a886" hidden="false"/>
-    <categoryEntry name="Nuevos Hijos" id="debf-2887-31ab-af12" hidden="false">
-      <comment>Subfacción de la Sangre negra</comment>
+    <categoryEntry name="Subfacción: Nuevos Hijos" id="debf-2887-31ab-af12" hidden="false">
+      <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
-    <categoryEntry name="Rugientes" id="2aa0-728b-e07f-69b" hidden="false">
-      <comment>Subfacción de la Sangre negra</comment>
+    <categoryEntry name="Subfacción: Rugientes" id="2aa0-728b-e07f-69b" hidden="false">
+      <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
+    <categoryEntry name="Subfacción: Crematorio" id="fd07-4092-4530-9da8" hidden="false">
+      <comment>Hijos de la sangre negra</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
