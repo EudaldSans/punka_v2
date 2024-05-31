@@ -59,6 +59,11 @@
         <characteristicType id="fb87-d2c2-bb7e-f5ce" name="Reglas"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Reglas de la banda" id="64d2-5b8c-4718-2aad" hidden="false">
+      <characteristicTypes>
+        <characteristicType id="b86f-94a8-ecaa-691b" name="Reglas"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="a4c2-f028-f3ac-8b88" name="Mercenarios" hidden="false">
@@ -71,9 +76,14 @@
             <modifier type="set" value="true" field="hidden"/>
             <modifier type="set" value="0" field="d12a-f092-5bf5-54f2"/>
           </modifiers>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e9e-15f2-e0bf-3559" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e9e-15f2-e0bf-3559" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="733d-faaa-4448-fa3f" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
     </categoryEntry>
@@ -1761,6 +1771,9 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       <comment>Subfacción sangre negra</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="9b04-3087-ac5c-b3ff"/>
+    <selectionEntry type="upgrade" import="true" name="Rugientes" hidden="false" id="733d-faaa-4448-fa3f" publicationId="1e5a-2394-b910-b6ad" page="6">
+      <comment>Subfacción sangre negra</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
