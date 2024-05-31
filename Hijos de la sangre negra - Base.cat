@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="47ef-c3fb-ae40-fe32" name="Hijos de la sangre negra - Base" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="ecfa-2b68-3ef9-d843" targetId="82fd-14e9-7e70-88e2"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Ceniza" hidden="false" id="96f6-9393-217c-a9e5" type="selectionEntry" targetId="b81f-51d6-1884-8994"/>
+    <entryLink import="true" name="Ascua" hidden="false" id="89b1-f048-81f-d6d3" type="selectionEntry" targetId="861f-1eab-c0bc-237e"/>
+    <entryLink import="true" name="Quemado" hidden="false" id="e439-78f3-fd7f-73cd" type="selectionEntry" targetId="8dce-ed5f-5381-650c"/>
+    <entryLink import="true" name="Cunnilingus Igni" hidden="false" id="20a2-2632-19aa-d31e" type="selectionEntry" targetId="9b0d-557f-2e75-7296"/>
+    <entryLink import="true" name="Chispa" hidden="false" id="c71c-3ecc-883c-cfc1" type="selectionEntry" targetId="8efb-7132-b084-71e9"/>
+    <entryLink import="true" name="Guardian de la llama" hidden="false" id="a285-6674-6aa5-80f6" type="selectionEntry" targetId="a2d7-ff55-be87-8d82"/>
+    <entryLink import="true" name="Momma Nutritora" hidden="false" id="86a9-23b7-dda5-6bde" type="selectionEntry" targetId="72cd-6ddf-cbe2-5003"/>
+  </entryLinks>
+</catalogue>
