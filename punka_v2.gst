@@ -3,6 +3,7 @@
   <publications>
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
     <publication name="GitHub" id="bbc5-28b8-67b7-3c23" hidden="false" publisherUrl="git@github.com:EudaldSans/punka_v2.git"/>
+    <publication name="Subfacciones Sangre Negra" id="1e5a-2394-b910-b6ad" hidden="false" publisherUrl="https://www.badrollgames.com/V2/SubfaccionesSangreNegra.pdf" shortName="Subfacciones Sangre Negra" publisher="Subfacciones Sangre Negra"/>
   </publications>
   <costTypes>
     <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
@@ -102,6 +103,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c7-31b2-c171-867c"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="d4c7-31b2-c171-867c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5880-23b-4948-8766" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry name="Mutación" id="6337-d3da-3855-7b50" hidden="true"/>
     <categoryEntry name="Banda: Chatarreros" id="476f-664f-cf39-efa5" hidden="false"/>
@@ -1749,6 +1757,10 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nuevos Hijos" hidden="false" id="5880-23b-4948-8766" publicationId="1e5a-2394-b910-b6ad" page="4">
+      <comment>Subfacción sangre negra</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="9b04-3087-ac5c-b3ff"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
@@ -1828,7 +1840,7 @@ Las bombas suelen tirarse con el brazo y se destruyen al impactar, por lo que ti
     <rule id="232d-9375-2e3c-b51c" name="¡¡¡CATAPUM!!!" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>A la hora de Disparar, un arma o munición con esta regla que saque un resultado de 9 o 10 en la tirada de Impactar sufrirá una explosión interna: el Disparo fallará automáticamente y el arma quedará inutilizada durante el resto de la partida. Si por alguna razón el Impacto fuese automático (por tener una Precisión de 10 gracias a modificadores, por ejemplo), habrá que realizar igualmente la tirada de 1d10 para ver si se aplica esta regla. Con el resto de resultados funcionará normalmente, independientemente de que consiga Impactar o no.</description>
     </rule>
-    <rule id="586b-7fa4-82ed-58d7" name="Combustible - (5)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
+    <rule id="586b-7fa4-82ed-58d7" name="Combustible (5)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
@@ -1916,7 +1928,7 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
       <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
 En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
     </rule>
-    <rule name="Combustible - (10)" id="acbf-a551-1e92-4dba" hidden="false">
+    <rule name="Combustible (10)" id="acbf-a551-1e92-4dba" hidden="false">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
@@ -1927,7 +1939,7 @@ Cualquier miniatura que durante el transcurso de una Acción
 contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
 Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
     </rule>
-    <rule name="Combustible - (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
+    <rule name="Combustible (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>

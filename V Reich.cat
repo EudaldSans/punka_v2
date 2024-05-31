@@ -701,7 +701,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Subfacciones" id="38a9-80f8-2bcf-71bb" hidden="false" defaultSelectionEntryId="dfcc-94a2-2634-5d3f">
           <entryLinks>
-            <entryLink import="true" name="Sin subfacción" hidden="false" id="dfcc-94a2-2634-5d3f" type="selectionEntry" targetId="8308-8bf5-c617-6dfe" sortIndex="1">
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="dfcc-94a2-2634-5d3f" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e7-44ae-2fa2-3871" includeChildSelections="false"/>
               </constraints>
@@ -1516,11 +1516,6 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
     <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="8308-8bf5-c617-6dfe">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f479-a253-66b4-143b" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Manostijeras" hidden="false" id="59a1-9871-cf6e-3147" publicationId="5478-7d5e-bc66-ffc" page="3">
