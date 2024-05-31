@@ -339,7 +339,7 @@
         <rule name="¡Por la Sangre Negra!" id="143f-9dd3-7b65-2264" hidden="false" publicationId="6699-072c-136a-7d30" page="48">
           <description>Siempre que esté a 5 cm o menos de una miniatura aliada, un Quemado puede usar su cuerpo para salvarlo cuando haya sido impactado. Se colocará en contacto con la miniatura aliada impactada justo antes de que este tuviera que realizar la tirada enfrentada de Fuerza contra Dureza. Será el Quemado quien use su Dureza para esta tirada, y obviamente, será la miniatura retirada como baja si resulta Abatida. Si el impacto proviniese de un arma de Plantilla o que no necesite tirada para Impactar el Quemado no podrá aplicar esta regla. Si el impacto llega de un Combate cuerpo a cuerpo y el Quemado sobrevive, se considerará en contacto con la miniatura atacante como si hubiera sufrido el Asalto de esta.</description>
         </rule>
-        <rule name="Bajo la mirada llameante" id="5bd8-2754-d75a-5237" hidden="false" publicationId="6699-072c-136a-7d30" page="48">
+        <rule name="Bajo la mirada llameante (Quemado)" id="5bd8-2754-d75a-5237" hidden="false" publicationId="6699-072c-136a-7d30" page="48">
           <description>Siempre que el Quemado esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con la Regla especial Todoterreno.</description>
         </rule>
       </rules>
@@ -451,7 +451,7 @@
         <categoryLink targetId="84b7-6828-dd10-0280" id="2102-82e4-c7ab-d934" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
       <rules>
-        <rule name="Bajo la mirada llameante" id="bf92-6ed2-1243-7e99" hidden="false" publicationId="6699-072c-136a-7d30" page="50">
+        <rule name="Bajo la mirada llameante (Ascua)" id="bf92-6ed2-1243-7e99" hidden="false" publicationId="6699-072c-136a-7d30" page="50">
           <description>Siempre que el Ascua esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con un bonificador de +1 a la Dureza.</description>
         </rule>
       </rules>
@@ -531,7 +531,7 @@
         </entryLink>
       </entryLinks>
       <rules>
-        <rule name="Bajo la mirada llameante" id="85a3-c67b-4206-7473" hidden="false" publicationId="6699-072c-136a-7d30" page="51">
+        <rule name="Bajo la mirada llameante (Chispa)" id="85a3-c67b-4206-7473" hidden="false" publicationId="6699-072c-136a-7d30" page="51">
           <description>Una vez durante la partida, si el Chispa está en la Línea de visión de su Guardián de la Llama, la miniatura podrá utilizar 1 carga de Combustible extra. Debe decirse claramente que se ha utilizado la carga que le proporciona Bajo la mirada llameante.</description>
         </rule>
         <rule name="Darle caña" id="5547-9e02-4695-7624" hidden="false" publicationId="6699-072c-136a-7d30" page="51">
