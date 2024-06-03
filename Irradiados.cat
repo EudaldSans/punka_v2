@@ -851,12 +851,18 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ab-f1c1-1bfe-d6af-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ab-f1c1-1bfe-d6af-max" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Filo Pequeño" hidden="false" id="dc1b-c3f4-7bf9-ea30" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3a3-1ff3-59f6-863f-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3a3-1ff3-59f6-863f-max" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntries>
@@ -872,6 +878,9 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f715-dcab-9e4e-dc74" includeChildSelections="false"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f1d6-3ee5-4219-8f60" includeChildSelections="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <categoryLinks>
