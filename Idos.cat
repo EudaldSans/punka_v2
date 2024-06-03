@@ -20,6 +20,9 @@ Deberás tirar 1d10 para comprobar si la droga funciona como quieres y consultar
 
 Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada dosis de Ambrosía que haya consumido anteriormente.</description>
     </rule>
+    <rule name="Mal viaje" id="db46-2596-6cbb-9bb9" hidden="false">
+      <description/>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="10e3-42f-6178-d1ac" publicationId="6699-072c-136a-7d30" page="64">
@@ -240,6 +243,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Locura, Mal viaje, Mónguer, Raudo, Sobredosis</characteristic>
           </characteristics>
         </profile>
+        <profile name="Aberración" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="4413-ef26-214b-f7c8">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Locura" id="d909-16bd-72df-8b2f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
@@ -247,9 +255,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         </rule>
         <rule name="Sobredosis" id="e8ea-975b-d835-bc8f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
           <description>Las Aberraciones tienen más problemas para tolerar la Ambrosía y parten con un -2 en la tirada para ver si la droga hace efecto.</description>
-        </rule>
-        <rule name="Mal viaje" id="eb09-44a0-8b92-141c" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
-          <description>La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</description>
         </rule>
       </rules>
       <infoLinks>
@@ -318,9 +323,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
-        <rule name="Mal viaje" id="a780-e522-ceae-a174" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
-          <description>El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</description>
-        </rule>
         <rule name="Cosecha" id="f5e7-99da-517a-b7fe" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
           <description>Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
 •  1    - Ninguna
@@ -340,6 +342,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cosecha, Mal viaje</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cosechador" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="4e7d-5e8a-38cd-9b0a">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -363,6 +370,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Furia psicópata, Mal viaje</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Desgarrador" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="aa7d-e908-b395-5f1">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -405,9 +417,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <rule name="Furia psicópata" id="598f-c0d1-9fa4-2153" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
           <description>Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</description>
         </rule>
-        <rule name="Mal viaje" id="df26-270c-ad71-303a" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
-          <description>En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</description>
-        </rule>
       </rules>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -432,6 +441,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Devorador, Mal viaje</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Glotón" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="298d-4807-669c-3e44">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -469,9 +483,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <rules>
         <rule name="Devorador" id="56c8-d1ae-d3c6-fa44" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
           <description>Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</description>
-        </rule>
-        <rule name="Mal viaje" id="b54c-ac57-13a2-c2d6" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
-          <description>El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -651,11 +662,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Todoterreno, Sin prisa, Ahora estoy aquí, Mal viaje</characteristic>
           </characteristics>
         </profile>
+        <profile name="Psycho killer" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="1138-820c-d59-494e">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">Una de las miniaturas enemigas se convertirá en la final girl (o final boy, aunque sea más extraño) de este Psycokiller. Ya sabéis, generalmente la chica que sobrevive a la película y cuenta la historia. El jugador rival elige una de sus miniaturas, que tendrá un +1 al Combate y la Precisión contra este Psycho-killer hasta el final de la partida. Si vuelve a salir el Mal viaje en la misma miniatura, el jugador rival puede decidir cambiar su final girl por otra (perdiendo la primera los bonificadores) o mantener la que tenía. Una misma miniatura puede ser la final girl de distintos Psycho-killers si se diera el caso y el jugador rival así lo quisiera.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
-        <rule name="Mal viaje" id="f756-d31b-746b-5d42" hidden="false">
-          <description>Una de las miniaturas enemigas se convertirá en la final girl (o final boy, aunque sea más extraño) de este Psycokiller. Ya sabéis, generalmente la chica que sobrevive a la película y cuenta la historia. El jugador rival elige una de sus miniaturas, que tendrá un +1 al Combate y la Precisión contra este Psycho-killer hasta el final de la partida. Si vuelve a salir el Mal viaje en la misma miniatura, el jugador rival puede decidir cambiar su final girl por otra (perdiendo la primera los bonificadores) o mantener la que tenía. Una misma miniatura puede ser la final girl de distintos Psycho-killers si se diera el caso y el jugador rival así lo quisiera.</description>
-        </rule>
         <rule name="Ahora estoy aquí" id="12a8-4527-802-e693" hidden="false">
           <description>Aunque un Psycho-killer parece que no avanza y se queda atrás, de repente suele aparecer justo al lado de su víctima. Una vez por Fase de activación, un Psycho-killer puede gastar una Acción para aparecer automáticamente a una distancia máxima de 30 cm en cualquier lugar de la mesa, a no más de 10 cm de una miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.</description>
         </rule>
@@ -707,6 +720,9 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <profiles>
+            <profile name="Papel" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="5341-4ff5-9952-a671"/>
+          </profiles>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armas" id="2fe0-f10b-2c37-88bf" hidden="false">
           <entryLinks>
@@ -766,4 +782,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
   <catalogueLinks>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="e208-3db1-6833-bf05" targetId="82fd-14e9-7e70-88e2"/>
   </catalogueLinks>
+  <profileTypes>
+    <profileType name="Mal viaje" id="5737-7d8d-3ead-133c" hidden="false">
+      <characteristicTypes>
+        <characteristicType id="e6f4-7d31-54b3-4815" name="Efectos"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
