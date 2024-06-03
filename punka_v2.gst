@@ -172,6 +172,15 @@
     <categoryEntry name="Subfacción: Inquisición atómica" id="8056-4585-d83b-1f6" hidden="false">
       <comment>Irradiados</comment>
     </categoryEntry>
+    <categoryEntry name="Subfacción: Organización Kraken" id="a617-344c-8601-e6a1" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: División cientifica" id="996-60f7-312d-f9f5" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fuerte Thule" id="aef4-7192-8994-977d" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -738,6 +747,155 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a145-1737-3aed-5ffb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="507c-48dd-9c79-aea1">
+      <categoryLinks>
+        <categoryLink name="Configuración" hidden="false" id="b0a8-de63-d50e-918f" targetId="9e25-aa8a-c426-a886" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false" defaultSelectionEntryId="1838-6e0d-1473-1f3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crematorio" hidden="false" id="568a-d00e-ea5a-efdf" sortIndex="2">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Crematorio" hidden="false" id="c211-7607-f05a-8225" targetId="fd07-4092-4530-9da8" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="El poder del fuego" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="1e56-a0ae-b8e-cb82">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Ya lo hemos mencionado, pero a esta gente les pone mazo el olor a carne churruscada. Tanto que cuanto más gente muera así (da igual si son enemigos o de su propia banda), más se motivan. Cada vez que durante la partida una miniatura resulte Abatida a causa de las llamas (por un lanzallamas, un cóctel Molotov, un arma flamígera, un marcador de Fuego, etc...) la banda de Crematorio obtendrá un marcador de Churruscado.
+Al principio del Turno de juego puedes utilizar marcadores de Churruscado para adelantar la Ronda de Agilidad en que actúe una miniatura. Por cada marcador que utilices en una miniatura, este podrá actuar en una Ronda de Agilidad superior a la que le corresponde. Puedes repartir los marcadores a tu gusto entre las miniaturas o no utilizar alguno si lo prefieres.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nuevos Hijos" hidden="false" id="a840-e780-8c20-3ae4" sortIndex="3">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Nuevos Hijos" hidden="false" id="a6ee-a988-e55-adbd" targetId="debf-2887-31ab-af12" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Será por perres" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="5a60-f042-2544-dd85">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Nuevos Hijos se están forrando cosa fina. Todo el mundo se pone palote con la idea de conseguir combustible y son la única opción disponible. Sus líderes han descubierto que como sustituto de la amenaza de ser quemados vivos, tan típica de Cunnilingus, funciona perfectamente la prima el ofrecer un extra de balas para motivar a sus tropas. A la hora de hacer la banda puedes reserva un máximo de 50 puntos sin gastar, pero que podrás utilizar durante la partida. Al principio de la Fase de activación de una miniatura, puedes decidir gastar parte de estos puntos en ella en un máximo de dos de estos beneficios, que sólo tendrá durante esa Fase de activación. 
+
+PUNTOS - EFECTO
+•    5         - La miniatura obtiene la Regla especial Raudo.
+•    5         - La miniatura obtiene la Regla especial Todoterreno.
+•    8         - La miniatura obtiene un bonificador de +2 al Combate.
+•    8         - La miniatura obtiene un bonificador de +2 a la Fuerza.
+•    8         - La miniatura obtiene un bonificador de +2 a la Dureza.
+•    15       - La miniatura obtiene un bonificador de +1 a las Acciones.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rugientes" hidden="false" id="e94a-c248-365d-82eb" sortIndex="4">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Rugientes" hidden="false" id="3008-d8fc-4638-95d0" targetId="2aa0-728b-e07f-69b" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Motorizados" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="7bcb-a4fd-65df-396a">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="De paquete" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="36f4-e10a-76e5-41e6">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Chispas de los Rugientes pueden llevar de paquete a un Ceniza. Mientras esté de paquete, un Ceniza no puede hacer nada, excepto usar una lanzatrueno (ver Equipo de los Rugientes), hasta que se baje.
+Durante su Fase de activación, un Ceniza de paquete puede gastar una Acción en bajarse, colocándose en contacto con cualquier parte de la peana del Chispa. Si el Chispa estuviera trabado en Combate, un Ceniza que baje sólo podrá ponerse en contacto con una de las miniaturas enemigas que estén Combatiendo con el Chispa. Sin embargo, si el Chispa ha movido durante ese Turno de juego, esto puede no resultar tan sencillo, por lo que deberá seguirse la siguiente tabla:
+
+MOVIMIENTO          -         EFECTO PARA EL CENIZA
+• No ha movido         -         El Ceniza baja sin problemas.
+• Hasta 15 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 2.
+• Hasta 30 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 4.
+• Más de 30 cm        -          El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 6.
+
+Sin embargo, el Ceniza puede decidir utilizar una Acción más, y entonces mover una fila hacia arriba en la tabla.
+Si un Chispa es Abatido llevando a un Ceniza de paquete, se considerará que el Ceniza ha bajado inmediatamente, siguiendo las reglas anteriores, pero lógicamente sin poder gastar ninguna Acción extra, ya que no está en su Fase de activación.
+Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete si está en contacto con un Chispa que no estétrabado en Combate y que tenga el hueco libre.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6" sortIndex="7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ada-4019-799e-6e53" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="aef4-7192-8994-977d" id="913e-4d3-9e0b-15c5" primary="false" name="Subfacción: Fuerte Thule"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37b2-1120-c9d2-19cc" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="996-60f7-312d-f9f5" id="2fa4-966e-9537-a321" primary="false" name="Subfacción: División cientifica"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="a617-344c-8601-e6a1" id="a92d-9247-db3d-77c3" primary="false" name="Subfacción: Organización Kraken"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>

@@ -17,8 +17,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -134,7 +134,7 @@
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <modifiers>
             <modifier type="set" value="true" field="hidden"/>
@@ -216,7 +216,7 @@
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <modifiers>
             <modifier type="set" value="true" field="hidden"/>
@@ -306,7 +306,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -319,7 +319,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -690,33 +690,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacción" hidden="false" id="9481-e0f0-b549-7aa4">
-      <categoryLinks>
-        <categoryLink targetId="9e25-aa8a-c426-a886" id="300e-9a63-2ef7-aeb2" primary="true" name="Configuración"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-max" includeChildSelections="true"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Subfacciones" id="38a9-80f8-2bcf-71bb" hidden="false" defaultSelectionEntryId="dfcc-94a2-2634-5d3f">
-          <entryLinks>
-            <entryLink import="true" name="Sin subfacción" hidden="false" id="dfcc-94a2-2634-5d3f" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e7-44ae-2fa2-3871" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="División cientifica" hidden="false" id="80a1-3e9f-765d-b5b" type="selectionEntry" targetId="620f-6156-2c08-115b" sortIndex="2"/>
-            <entryLink import="true" name="Fuerte Thule" hidden="false" id="defe-ade2-9132-d00a" type="selectionEntry" targetId="d8ef-8dda-a0ea-68dd" sortIndex="3"/>
-            <entryLink import="true" name="Organización Kraken" hidden="false" id="fa14-4452-fea8-bf61" type="selectionEntry" targetId="a7d7-5934-ab89-8517" sortIndex="4"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef94-3ea1-7a79-72d3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d56-7eb5-3576-766f" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Engendro" hidden="false" id="8890-d182-1335-6d0a" publicationId="5478-7d5e-bc66-ffc" page="2">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
@@ -757,7 +730,7 @@
             <modifier type="set" value="0" field="a9a9-1fc1-5e0a-91ac"/>
           </modifiers>
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -805,7 +778,9 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>División científica</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -972,7 +947,7 @@
             <modifier type="set" value="0" field="50f6-5bb3-1678-77e9"/>
           </modifiers>
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -1005,7 +980,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="b8bb-117a-5a66-bdb8">
@@ -1227,7 +1202,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1279,7 +1254,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1332,7 +1307,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1371,7 +1346,7 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1466,7 +1441,7 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1501,21 +1476,6 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636d-a752-a81f-f245" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37b2-1120-c9d2-19cc" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ada-4019-799e-6e53" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Manostijeras" hidden="false" id="59a1-9871-cf6e-3147" publicationId="5478-7d5e-bc66-ffc" page="3">
