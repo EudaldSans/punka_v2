@@ -81,8 +81,8 @@ Los disparos cuya Línea de visión pasen sobre este marcador (se seguirían la
         <entryLink import="true" name="Bomba de humo" hidden="false" id="96b1-8731-a8c4-ce9a" type="selectionEntry" targetId="69f-1a5a-6cf5-1d00"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Bomba" id="df52-d5fa-4928-beff" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
         <infoLink name="Escasa" id="42b8-6aff-4715-8fcd" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Bomba" id="e601-d8fd-36f1-d5c" hidden="false" type="infoGroup" targetId="c02c-e834-3f2b-6982"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bombeadora" hidden="false" id="8e97-dbed-8671-64b2" publicationId="6699-072c-136a-7d30" page="44">
@@ -172,8 +172,8 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       </entryLinks>
       <infoLinks>
         <infoLink name="Escasa" id="e569-e644-34ea-fc33" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-        <infoLink name="Bomba" id="c83a-9118-367c-d2f" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
         <infoLink name="Incendiaria" id="9151-c03f-8297-d212" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+        <infoLink name="Bomba" id="98fe-1907-ef50-a7e1" hidden="false" type="infoGroup" targetId="c02c-e834-3f2b-6982"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trabuco" hidden="false" id="a5f0-d0ff-ae29-49bc" publicationId="6699-072c-136a-7d30" page="45">

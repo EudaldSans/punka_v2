@@ -74,8 +74,8 @@ La motosierra gasta 1 carga de Combustible por cada Acción en que esté encend
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
       <infoLinks>
-        <infoLink name="Bomba" id="898e-5369-622b-a6cd" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
         <infoLink name="Incendiaria" id="b344-3672-9cb3-940f" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+        <infoLink name="Bomba" id="1f9-91dc-3770-e567" hidden="false" type="infoGroup" targetId="c02c-e834-3f2b-6982"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzallamas" hidden="false" id="1859-e45e-f44f-1868" publicationId="6699-072c-136a-7d30" page="54">

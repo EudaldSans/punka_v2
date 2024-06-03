@@ -169,6 +169,9 @@
     </categoryEntry>
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
     <categoryEntry name="Arma flamígera" id="601e-6a87-2e5d-284a" hidden="false"/>
+    <categoryEntry name="Subfacción: Inquisición atómica" id="8056-4585-d83b-1f6" hidden="false">
+      <comment>Irradiados</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -2126,5 +2129,12 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
   <sharedInfoGroups>
     <infoGroup name="Arco" id="3dde-d497-4bc9-2c08" hidden="false"/>
     <infoGroup name="Ballesta" id="fa25-237c-d4a6-c35e" hidden="false"/>
+    <infoGroup name="Bomba" id="c02c-e834-3f2b-6982" hidden="false">
+      <infoLinks>
+        <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Usar y tirar" id="939-ff44-83b1-6abf" hidden="false" type="rule" targetId="9931-0e0e-fa4f-17d8"/>
+        <infoLink name="Bomba" id="232a-c8d4-c397-2933" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
+      </infoLinks>
+    </infoGroup>
   </sharedInfoGroups>
 </gameSystem>
