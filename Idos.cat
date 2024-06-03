@@ -20,9 +20,6 @@ Deberás tirar 1d10 para comprobar si la droga funciona como quieres y consultar
 
 Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada dosis de Ambrosía que haya consumido anteriormente.</description>
     </rule>
-    <rule name="Mal viaje" id="db46-2596-6cbb-9bb9" hidden="false">
-      <description/>
-    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="10e3-42f-6178-d1ac" publicationId="6699-072c-136a-7d30" page="64">
@@ -509,12 +506,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal viaje</characteristic>
           </characteristics>
         </profile>
+        <profile name="Tio" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="f612-2b94-32ff-9afb">
+          <characteristics>
+            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">Tío pierde el impulso para utilizar Torbellino y no podrá utilizarlo durante esta Fase de activación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Mal viaje" id="bb44-3669-492e-f39c" hidden="false">
-          <description>Tío pierde el impulso para utilizar Torbellino y no podrá utilizarlo durante esta Fase de activación.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
       </costs>
@@ -628,6 +625,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
     <selectionEntry type="upgrade" import="true" name="Incluir reglas de Ambrosia" hidden="false" id="38f9-9051-16b8-7d27">
       <categoryLinks>
         <categoryLink targetId="b19d-7b9-3085-7fd4" id="3d77-93a9-971c-7724" primary="false" name="Reglas de la banda"/>
+        <categoryLink targetId="9e25-aa8a-c426-a886" id="b152-acf2-a9cd-4ec0" primary="false" name="Configuración"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5001-4f54-5b0a-b42b" includeChildSelections="false"/>
@@ -647,7 +645,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       <categoryLinks>
         <categoryLink targetId="84b7-6828-dd10-0280" id="8c53-d573-49a5-d89c" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="af76-5143-157c-3a3f" id="28cf-4760-22ce-78b7" primary="false" name="Banda: Idos"/>
-        <categoryLink targetId="12ff-b619-49d-ef01" id="763-a7fd-82e8-b8bc" primary="false" name="Subfaction: Slashers"/>
+        <categoryLink targetId="12ff-b619-49d-ef01" id="763-a7fd-82e8-b8bc" primary="false" name="Subfacción: Slashers"/>
       </categoryLinks>
       <profiles>
         <profile name="Psycho killer" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="17-b3d2-31d9-d3f5">

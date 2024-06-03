@@ -158,7 +158,7 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a54f-b624-486-83ff" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Configuración" id="9e25-aa8a-c426-a886" hidden="false"/>
+    <categoryEntry name="Configuración" id="9e25-aa8a-c426-a886" hidden="true"/>
     <categoryEntry name="Subfacción: Nuevos Hijos" id="debf-2887-31ab-af12" hidden="false">
       <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
@@ -182,18 +182,18 @@
     <categoryEntry name="Subfacción: Fuerte Thule" id="aef4-7192-8994-977d" hidden="false">
       <comment>V Reich</comment>
     </categoryEntry>
-    <categoryEntry name="Subfaction: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1"/>
+    <categoryEntry name="Subfacción: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuración" hidden="false" id="1138-ba4c-1116-58b3" targetId="9e25-aa8a-c426-a886"/>
         <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4"/>
         <categoryLink id="1a89-87d4-bc28-883a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
         <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
         <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
+        <categoryLink name="Configuración" hidden="false" id="90b4-87b0-4e48-1e86" targetId="9e25-aa8a-c426-a886" type="category"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -751,9 +751,9 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a145-1737-3aed-5ffb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="507c-48dd-9c79-aea1">
+    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="507c-48dd-9c79-aea1" flatten="false">
       <categoryLinks>
-        <categoryLink name="Configuración" hidden="false" id="b0a8-de63-d50e-918f" targetId="9e25-aa8a-c426-a886" primary="true"/>
+        <categoryLink name="Configuración" hidden="false" id="b0a8-de63-d50e-918f" targetId="9e25-aa8a-c426-a886" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false" defaultSelectionEntryId="1838-6e0d-1473-1f3">
@@ -882,7 +882,7 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashers" hidden="false" id="6948-6d75-7cd1-25e5" sortIndex="8">
               <categoryLinks>
-                <categoryLink targetId="12ff-b619-49d-ef01" id="da62-d44d-32a5-dcc6" primary="false" name="Subfaction: Slashers"/>
+                <categoryLink targetId="12ff-b619-49d-ef01" id="da62-d44d-32a5-dcc6" primary="false" name="Subfacción: Slashers"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -894,8 +894,15 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1"/>
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">
+              <categoryLinks>
+                <categoryLink targetId="f379-822c-2bc8-527e" id="2aca-db06-3bfe-a13c" primary="false" name="Subfacción: Sin subfacción"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="9e25-aa8a-c426-a886" id="409f-41f-3f92-241f" primary="true" name="Configuración"/>
+          </categoryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
