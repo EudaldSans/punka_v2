@@ -49,7 +49,7 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e928-7359-e519-fb70" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Lentorra (2)" id="4771-be20-4b4c-4c1c" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+        <infoLink name="Lentorra" id="4771-be20-4b4c-4c1c" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Escasa" id="d078-17aa-810-eda8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
     </selectionEntry>
@@ -142,7 +142,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="691f-11b6-bdc8-47d2" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Lentorra (2)" id="9a28-68a5-4e1-b198" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+        <infoLink name="Lentorra" id="9a28-68a5-4e1-b198" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="¡¡¡CATAPUM!!!" id="9976-9917-bf-a57d" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
         <infoLink name="Mamotreto" id="f6d-77a2-a86b-8cff" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
         <infoLink name="Escasa" id="52fe-ecf6-cb88-d5c6" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
@@ -173,7 +173,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
       <infoLinks>
         <infoLink name="Escasa" id="e569-e644-34ea-fc33" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="Bomba" id="c83a-9118-367c-d2f" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
-        <infoLink name="Incendiaria (2)" id="9151-c03f-8297-d212" hidden="false" type="rule" targetId="8837-2aa8-e20e-0ed5"/>
+        <infoLink name="Incendiaria" id="9151-c03f-8297-d212" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trabuco" hidden="false" id="a5f0-d0ff-ae29-49bc" publicationId="6699-072c-136a-7d30" page="45">
@@ -202,7 +202,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <infoLink name="Postas" id="34dd-5e33-b4ab-5e00" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
         <infoLink name="Escasa" id="4706-ef8a-5782-17c8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="A dos manos" id="e088-f899-dafa-26ae" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
-        <infoLink name="Lentorra (1)" id="166e-6d3d-f392-47fd" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra" id="166e-6d3d-f392-47fd" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vaporeta" hidden="false" id="a94f-6fec-c421-f6c9" publicationId="6699-072c-136a-7d30" page="45">

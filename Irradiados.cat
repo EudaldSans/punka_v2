@@ -75,7 +75,7 @@ Modificadores
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Lentorra (2)" id="33ba-58f3-959d-503c" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+        <infoLink name="Lentorra" id="33ba-58f3-959d-503c" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Mamotreto" id="5742-b90b-78b3-faef" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
         <infoLink name="Plantilla" id="e56d-f905-cabd-93c1" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
         <infoLink name="Escasa" id="e985-e8c8-5a42-58dd" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>

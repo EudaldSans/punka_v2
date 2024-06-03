@@ -313,7 +313,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9466-3762-b617-4536" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -377,7 +377,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
                 <modifier type="set" value="Garrapata" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Lentorra (1)" id="38f0-efbf-cc42-8c68" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+            <infoLink name="Lentorra" id="38f0-efbf-cc42-8c68" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6d5-ae4a-b8e9-a9be-min" includeChildSelections="false"/>
@@ -621,7 +621,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8cd-bcd8-3943-64f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -731,7 +731,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Retraso (3)" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+        <infoLink name="Retraso" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a145-1737-3aed-5ffb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1073,7 +1073,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
       <infoLinks>
-        <infoLink name="Lentorra (1)" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Ballesta" id="e381-7884-c7f4-9e58" hidden="false" type="profile" targetId="ab2a-065d-2c7d-a766"/>
       </infoLinks>
       <constraints>
@@ -1425,7 +1425,7 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Impetu (1)" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
+        <infoLink name="Impetu" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e3-9f69-56d3-969e" includeChildSelections="false"/>
@@ -1581,7 +1581,7 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
             <modifier type="set" value="Veneno (2)" field="c498-c631-f4c5-160a"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Veneno (2)" id="d187-d803-86d-6620" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2"/>
+        <infoLink name="Veneno" id="d187-d803-86d-6620" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b582-3e3a-7d55-ca8c"/>
@@ -1980,7 +1980,7 @@ Las bombas suelen tirarse con el brazo y se destruyen al impactar, por lo que ti
     <rule id="232d-9375-2e3c-b51c" name="¡¡¡CATAPUM!!!" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>A la hora de Disparar, un arma o munición con esta regla que saque un resultado de 9 o 10 en la tirada de Impactar sufrirá una explosión interna: el Disparo fallará automáticamente y el arma quedará inutilizada durante el resto de la partida. Si por alguna razón el Impacto fuese automático (por tener una Precisión de 10 gracias a modificadores, por ejemplo), habrá que realizar igualmente la tirada de 1d10 para ver si se aplica esta regla. Con el resto de resultados funcionará normalmente, independientemente de que consiga Impactar o no.</description>
     </rule>
-    <rule id="586b-7fa4-82ed-58d7" name="Combustible (5)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
+    <rule id="586b-7fa4-82ed-58d7" name="Combustible" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
@@ -2003,21 +2003,14 @@ No es posible Apuntar ni Evitar Cobertura con un Tiro parabólico.</description>
     <rule id="9931-0e0e-fa4f-17d8" name="Usar y tirar" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Un arma con esta regla, sólo podrá utilizarse en una única ocasión durante toda la partida.</description>
     </rule>
-    <rule id="77ee-07d8-dd91-def2" name="Impetu (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="77ee-07d8-dd91-def2" name="Impetu" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Obtiene un bonificador a la Penetración y a la Fuerza igual al número entre paréntesis por cada bonificador de +1 al Combate recibido por el Movimiento del Asalto.</description>
-    </rule>
-    <rule id="8837-2aa8-e20e-0ed5" name="Incendiaria (2)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
-      <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
-Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
-Cualquier miniatura que durante el transcurso de una Acción
-contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
-Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
     </rule>
     <rule id="3de3-35e0-04fc-ec2a" name="Infiltración" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Una miniatura con esta regla, no tiene por qué ser desplegada en la zona de despliegue con el resto de miniaturas. En su lugar puedes decidir que avanza secretamente 10 cm por Turno de juego desde el borde de la zona de despliegue propia más cercano al centro de la mesa, pudiendo aparecer en cualquier Turno posterior al primero hasta un máximo del cuarto Turno. Desplegará dentro de esa distancia en cualquier lugar de la mesa, a no menos de 15 cm de cualquier miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.
 En el Turno en que se quiera desplegar la miniatura, debe indicársele al rival al principio de la Ronda de Agilidad que le corresponda y actuará de la misma manera que el resto de miniaturas de esa Ronda de Agilidad.</description>
     </rule>
-    <rule id="ab59-d932-816d-d561" name="Lentorra (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="ab59-d932-816d-d561" name="Lentorra" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
 En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
     </rule>
@@ -2038,7 +2031,7 @@ No podrá usarse Fuego defensivo con un arma con esta regla. Por otra parte, si 
     <rule id="339a-709e-0f9b-718f" name="Raudo" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Hay criaturas más rápidas de lo habitual. Una miniatura con esta regla puede Mover 15 cm en lugar de 10 cm por Acción de Movimiento.</description>
     </rule>
-    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso (2)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
+    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
 A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
@@ -2056,40 +2049,16 @@ Pueden combinarse varias Acciones de Movimiento seguidas en una misma Fase de ac
     <rule id="37eb-d074-791e-032f" name="Trepador" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede Trepar como si fuera por Terreno chachi.</description>
     </rule>
-    <rule id="c1f4-2a2c-c27b-84bc" name="Veneno (4)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
-      <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
-En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
-    </rule>
-    <rule name="Retraso (3)" id="7f50-dcfe-b5d4-5916" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
-      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
-A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
-    </rule>
-    <rule name="Lentorra (2)" id="83d4-6391-9ff1-8fa1" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
-      <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
-En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
-    </rule>
-    <rule name="Combustible (10)" id="acbf-a551-1e92-4dba" hidden="false">
-      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
-Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
-    </rule>
-    <rule name="Incendiaria (3)" id="1874-350f-4460-c2c8" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
+    <rule name="Incendiaria" id="1874-350f-4460-c2c8" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
       <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
 Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
 Cualquier miniatura que durante el transcurso de una Acción
 contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
 Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
     </rule>
-    <rule name="Combustible (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
-      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
-Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
-    </rule>
-    <rule name="Veneno (2)" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
+    <rule name="Veneno" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
       <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
 En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
-    </rule>
-    <rule name="Retraso (1)" id="515b-e451-e3f5-14d0" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
-      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
-A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

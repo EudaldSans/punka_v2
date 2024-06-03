@@ -116,7 +116,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Retraso (1)" id="3b55-be8f-4d5e-8456" hidden="false" type="rule" targetId="515b-e451-e3f5-14d0"/>
+        <infoLink name="Retraso" id="3b55-be8f-4d5e-8456" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blindaje" id="8b1-22bc-fbc9-d63f" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
@@ -275,7 +275,7 @@
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d10a-3aa1-6a34-e3cb" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="f06-f8e0-3a86-ae6b" hidden="false">
@@ -361,7 +361,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Retraso (3)" id="9e56-125c-7665-7dac" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+        <infoLink name="Retraso" id="9e56-125c-7665-7dac" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="dbea-c46e-cc1c-1ae9" hidden="false">

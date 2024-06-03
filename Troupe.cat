@@ -468,7 +468,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
       <infoLinks>
-        <infoLink name="Retraso (3)" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+        <infoLink name="Retraso" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Coche de pachachos" hidden="false" id="9e0d-5257-f4c4-6acb" publicationId="6699-072c-136a-7d30" page="104">
