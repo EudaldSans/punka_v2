@@ -186,15 +186,6 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac2-c281-b95-6381" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Arma Flamígera" hidden="false" id="e4bd-5f5-f8d-cf5">
-      <profiles>
-        <profile name="Arma Flamígera" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="bac2-ef57-6359-b892">
-          <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Piel quemada" hidden="false" id="ce7b-2b98-4276-9744" publicationId="1e5a-2394-b910-b6ad" page="3">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="2"/>
@@ -266,9 +257,21 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Armas" id="af37-1ba0-88ab-e3f0" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Maza Ligera" hidden="false" id="6688-119e-5225-10f3" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-                <entryLink import="true" name="Filo Pequeño" hidden="false" id="37e4-9910-b2e9-9e07" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Maza" hidden="false" id="b3b8-960-508-d87d" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="6688-119e-5225-10f3" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="a9f4-ca82-a4a7-98a0" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="37e4-9910-b2e9-9e07" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="d322-b0e6-803c-8cbc" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Maza" hidden="false" id="b3b8-960-508-d87d" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="e47c-d1f0-ba23-8ef2" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Pistola" hidden="false" id="752f-f0b9-388a-bf6e" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
               </entryLinks>
               <constraints>
@@ -428,9 +431,14 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="568a-d00e-ea5a-efdf" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="568a-d00e-ea5a-efdf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="Ascua" field="name">
           <conditions>
@@ -586,9 +594,21 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Armas" id="8452-512-cb67-78a0" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Maza Ligera" hidden="false" id="843-cf34-2cd7-981a" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-                <entryLink import="true" name="Filo Pequeño" hidden="false" id="de9b-d9c9-adf6-4a7e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Maza" hidden="false" id="b993-d731-561a-d373" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="843-cf34-2cd7-981a" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="9feb-8410-5191-808a" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="de9b-d9c9-adf6-4a7e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="5895-5de5-f150-1cd7" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Maza" hidden="false" id="b993-d731-561a-d373" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+                  <entryLinks>
+                    <entryLink import="true" name="Arma Flamígera" hidden="false" id="5fb5-a54f-6f0c-e5bb" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Pistola" hidden="false" id="2c99-529e-b08d-4c2e" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
               </entryLinks>
               <constraints>
@@ -650,6 +670,11 @@
         <modifier type="set" value="Surtidor (Guardián)" field="name">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -849,9 +874,55 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2347-8b90-4ef6-eb1e" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Maza" hidden="false" id="8ee5-3da7-b4e2-ede7" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="c03f-bc6b-60c4-a1a5" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="45ce-6111-cf76-8282" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Maza" hidden="false" id="8ee5-3da7-b4e2-ede7" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="ab67-144c-ebd9-9cf1" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="flamígera" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="601e-6a87-2e5d-284a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="c03f-bc6b-60c4-a1a5" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="f37c-78ae-241e-2b61" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="45ce-6111-cf76-8282" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="3b98-b65-a7a8-bd32" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="601e-6a87-2e5d-284a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="append" value="flamígero" field="name"/>
+                        <modifier type="replace" value="Flamígera" field="c498-c631-f4c5-160a" arg="-"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </entryLink>
+              </entryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="flamígero" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="601e-6a87-2e5d-284a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipo" id="653-9d22-bb64-5455" hidden="false" sortIndex="2">
@@ -895,9 +966,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -941,11 +1017,27 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9f9-c72e-d192-b168" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Maza" hidden="false" id="ad90-63f9-290a-9e58" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="d9f9-5438-f191-d2d9" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="6d9-5951-4bc0-6df0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Maza" hidden="false" id="ad90-63f9-290a-9e58" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="f7cf-a076-6619-a21b" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="d9f9-5438-f191-d2d9" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="8156-bc70-f156-e3ed" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="6d9-5951-4bc0-6df0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="a725-9a3b-d3a7-5ec3" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
             <entryLink import="true" name="Cócteles Molotov" hidden="false" id="b955-21e7-c518-ce98" type="selectionEntry" targetId="bd62-7744-2142-5e84"/>
-            <entryLink import="true" name="Filo Medio" hidden="false" id="3d34-b88c-6c92-9202" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="3d34-b88c-6c92-9202" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="517f-70c8-ad32-ebe9" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
             <entryLink import="true" name="Lanzallamas" hidden="false" id="af4a-4245-4dc5-91f8" type="selectionEntry" targetId="1859-e45e-f44f-1868"/>
           </entryLinks>
         </selectionEntryGroup>

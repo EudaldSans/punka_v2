@@ -168,6 +168,7 @@
       <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
+    <categoryEntry name="Arma flamígera" id="601e-6a87-2e5d-284a" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -764,13 +765,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           </modifiers>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="Pistola con mira telescópica" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -880,6 +874,18 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
             <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Maza ligera Flamígera" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -897,7 +903,20 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink targetId="6582-5e09-b30b-db5a" id="3371-b95e-17fb-e08b" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0"/>
+        <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+          <modifiers>
+            <modifier type="set" value="Filo Pequeño Flamígero" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
@@ -909,6 +928,18 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
             <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Maza Flamígera" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -977,7 +1008,20 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink targetId="6582-5e09-b30b-db5a" id="81c-378f-98d2-dba8" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8"/>
+        <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
+          <modifiers>
+            <modifier type="set" value="Filo Medio Flamígero" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
@@ -1048,13 +1092,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <infoLink name="Arma de fuego" id="b47a-92e4-f094-2e77" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
         <infoLink name="Escasa" id="fe78-22af-c363-1acf" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="Rifle con mira telescópica" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1807,6 +1844,26 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="9b04-3087-ac5c-b3ff"/>
+    <selectionEntry type="upgrade" import="true" name="Arma Flamígera" hidden="false" id="e4bd-5f5-f8d-cf5">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd07-4092-4530-9da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6184-274f-83b3-bd56" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Arma flamígera" hidden="false" id="755a-6b3-611f-35c4" targetId="601e-6a87-2e5d-284a" primary="false"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Flamígera" id="3d73-a3bc-326c-fc4e" hidden="false">
+          <description>Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
