@@ -75,7 +75,7 @@ La motosierra gasta 1 carga de Combustible por cada Acción en que esté encend
       </costs>
       <infoLinks>
         <infoLink name="Bomba" id="898e-5369-622b-a6cd" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
-        <infoLink name="Incendiaria (3)" id="b344-3672-9cb3-940f" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+        <infoLink name="Incendiaria" id="b344-3672-9cb3-940f" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzallamas" hidden="false" id="1859-e45e-f44f-1868" publicationId="6699-072c-136a-7d30" page="54">
@@ -863,7 +863,7 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
               <infoLinks>
                 <infoLink name="Escasa" id="c84d-b4f1-72e5-1bed" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
                 <infoLink name="Arma de fuego" id="5eeb-a109-53c4-d794" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
-                <infoLink name="Incendiaria (3)" id="1661-ca2c-b33b-933e" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
+                <infoLink name="Incendiaria" id="1661-ca2c-b33b-933e" hidden="false" type="rule" targetId="1874-350f-4460-c2c8"/>
                 <infoLink name="Pistola" id="c143-488f-6300-b472" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
                   <modifiers>
                     <modifier type="set" value="Arma de fuego, Escasa, Incendiaria (3)" field="2ecc-3ee3-2a21-1e6"/>
@@ -1192,17 +1192,12 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
         <categoryLink targetId="9e25-aa8a-c426-a886" id="b0a8-de63-d50e-918f" primary="true" name="Configuración"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false" defaultSelectionEntryId="7e6e-9c2b-c0d1-c9c1">
+        <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false" defaultSelectionEntryId="1838-6e0d-1473-1f3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="7e6e-9c2b-c0d1-c9c1" sortIndex="1">
-              <categoryLinks>
-                <categoryLink targetId="f379-822c-2bc8-527e" id="c33e-b76a-a71d-959e" primary="false" name="Subfacción: Sin subfacción"/>
-              </categoryLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Crematorio" hidden="false" id="568a-d00e-ea5a-efdf" sortIndex="2">
               <categoryLinks>
                 <categoryLink targetId="fd07-4092-4530-9da8" id="c211-7607-f05a-8225" primary="false" name="Subfacción: Crematorio"/>
@@ -1265,6 +1260,9 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
