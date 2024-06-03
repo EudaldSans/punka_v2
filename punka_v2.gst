@@ -899,6 +899,18 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inquisición atómica" hidden="false" id="3473-bdbf-2ba7-27fb">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Inquisición atómica" hidden="false" id="52ff-5e66-7c91-d181" targetId="8056-4585-d83b-1f6" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="17f7-92d1-9c1b-40e8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">

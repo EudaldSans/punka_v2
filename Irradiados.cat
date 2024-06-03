@@ -793,33 +793,6 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="d8d2-b05a-9c30-25c0">
-      <categoryLinks>
-        <categoryLink name="Configuración" hidden="false" id="d0e-84f1-fc96-6158" targetId="9e25-aa8a-c426-a886" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Subfacciones" id="bc62-927a-f25e-3ef2" hidden="false" defaultSelectionEntryId="67d1-8192-fa4f-f824">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="583d-4473-57eb-35aa" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6fb-b8a1-edcb-3796" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Inquisición atómica" hidden="false" id="3473-bdbf-2ba7-27fb">
-              <categoryLinks>
-                <categoryLink name="Subfacción: Inquisición atómica" hidden="false" id="52ff-5e66-7c91-d181" targetId="8056-4585-d83b-1f6" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Sin subfacción" hidden="false" id="67d1-8192-fa4f-f824" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7be-93f-333d-25fe" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9950-e5aa-4838-129c" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="La gran Inquisidora" hidden="false" id="932b-28ff-d613-367c">
       <rules>
         <rule name="Sermón" id="9f1-8515-ec44-2fba" hidden="false">
