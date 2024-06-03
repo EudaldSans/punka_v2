@@ -212,6 +212,14 @@ Si falla la tirada de la tabla, sólo el Ceniza sufrirá ese Impacto y en caso d
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Rugientes</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Motocicleta" hidden="false" id="567-ce48-f78f-a557" subType="mount">
       <profiles>
@@ -265,6 +273,27 @@ La peana del Chispa pasa a ser de 55 mm.</characteristic>
         <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Combustible (5), Escasa. 
 La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté encendida y por tanto se utilice con susestadísticas. Una vez agotada, o si no desean utilizarse cargas, se considera un filo pequeño.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Darle caña" hidden="false" id="cde5-d2c-703b-2333" typeId="8d36-94cc-6c74-8857" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Chispa va montado en una motocicleta, que le confiere las Reglas especiales Combustible (2), Montada y Raudo. Puesto que es posible utilizar partes de la moto para cubrirse de los disparos, la miniatura contará con una Cobertura de Blindaje +3. Además, podrá utilizar la potencia de la moto, gastando 1 carga de Combustible, con los siguientes efectos:
+• Apretar el turbo: el Chispa puede mover hasta el doble (30 cm) en una Acción de Movimiento, pero deberá hacerlo en línea recta, tal como estaba encarada al principio de la Acción y sin poder cambiar su encaramiento en ningún momento.
+• Potencia bruta: el Chispa carga de manera embravecida, otorgando un bonificador adicional de +2 al Combate a un Asalto.
+• Nube de polvo: el Chispa usará las ruedas para levantar una nube de polvo que hace más difícil alcanzarla. Durante lo que resta de ese Turno de juego, todos los disparos contra esta miniatura sufrirán un penalizador de -3 a la Precisión.
+• Cagando leches: si el Chispa está trabado en Combate, y realiza una Acción de Separarse del Combate, se considerará que tiene la Regla especial Escurridizo.</characteristic>
+      </characteristics>
+      <comment>Motocicleta</comment>
+    </profile>
+    <profile name="Darle caña" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="248-a683-d49e-a568">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Chispa va montado en una motocicleta, que le confiere las Reglas especiales Combustible (2), Montada y Raudo. Puesto que es posible utilizar partes de la moto para cubrirse de los disparos, la miniatura contará con una Cobertura de Blindaje +3. Además, podrá utilizar la potencia de la moto, gastando 1 carga de Combustible, con los siguientes efectos:
+• Apretar el turbo: el Chispa puede mover hasta el doble (30 cm) en una Acción de Movimiento, pero deberá hacerlo en línea recta, tal como estaba encarada al principio de la Acción y sin poder cambiar su encaramiento en ningún momento.
+• Potencia bruta: el Chispa carga de manera embravecida, otorgando un bonificador adicional de +2 al Combate a un Asalto.
+• Nube de polvo: el Chispa usará las ruedas para levantar una nube de polvo que hace más difícil alcanzarla. Durante lo que resta de ese Turno de juego, todos los disparos contra esta miniatura sufrirán un penalizador de -3 a la Precisión.
+• Cagando leches: si el Chispa está trabado en Combate, y realiza una Acción de Separarse del Combate, se considerará que tiene la Regla especial Escurridizo.
+• Arrollando: si el Movimiento de una Acción del Chispa le permite atravesar totalmente una miniatura enemiga sin llegar a quedar en contacto con ella, puede decidir arrollarla. La miniatura arrollada debe realizar una tirada de Agilidad. Si la supera no le pasará nada, pero deberá moverse 5 cm hacia una dirección elegida por el jugador del Chispa, siempre que sea posible (porque no haya un muro, Terreno Impasable, etc.) Si no la supera sufrirá un impacto Fuerza 3.</characteristic>
+      </characteristics>
+      <comment>Quad</comment>
     </profile>
   </sharedProfiles>
   <sharedInfoGroups>
@@ -353,14 +382,6 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
         <selectionEntryGroup name="Equipo" id="2bcb-8628-7596-720d" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Lanzatrueno" hidden="false" id="f107-562b-60df-f898" type="selectionEntry" targetId="a6c1-b684-2b57-c5a0">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true"/>
-                  </conditions>
-                  <comment>Rugientes</comment>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5827-57c-fa69-1689" includeChildSelections="false"/>
               </constraints>
@@ -413,6 +434,11 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
               </conditions>
             </modifier>
           </modifiers>
+        </profile>
+        <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="a34c-c646-311-fd83">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Siempre que el Ascua esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con un bonificador de +1 a la Dureza.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -483,11 +509,6 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
         <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="71ef-477c-4a8a-a56c" targetId="73ff-a5cb-afba-6105" primary="false"/>
         <categoryLink name="Miembros de la banda" hidden="false" id="2102-82e4-c7ab-d934" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
-      <rules>
-        <rule name="Bajo la mirada llameante (Ascua)" id="bf92-6ed2-1243-7e99" hidden="false" publicationId="6699-072c-136a-7d30" page="50">
-          <description>Siempre que el Ascua esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con un bonificador de +1 a la Dureza.</description>
-        </rule>
-      </rules>
       <modifiers>
         <modifier type="set" value="E98 (Ascua)" field="name">
           <conditions>
@@ -543,6 +564,11 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
               </conditions>
             </modifier>
           </modifiers>
+        </profile>
+        <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="6dc4-9bed-ffe1-de97">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Una vez durante la partida, si el Chispa está en la Línea de visión de su Guardián de la Llama, la miniatura podrá utilizar 1 carga de Combustible extra. Debe decirse claramente que se ha utilizado la carga que le proporciona Bajo la mirada llameante.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -618,16 +644,28 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Bajo la mirada llameante (Chispa)" id="85a3-c67b-4206-7473" hidden="false" publicationId="6699-072c-136a-7d30" page="51">
-          <description>Una vez durante la partida, si el Chispa está en la Línea de visión de su Guardián de la Llama, la miniatura podrá utilizar 1 carga de Combustible extra. Debe decirse claramente que se ha utilizado la carga que le proporciona Bajo la mirada llameante.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Raudo" id="4ffd-89d0-62-c0ad" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
-        <infoLink name="Darle caña" id="2784-af8d-fd2e-8620" hidden="false" type="rule" targetId="5547-9e02-4695-7624"/>
         <infoLink name="Combustible" id="2950-d13b-54e8-5ab7" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
         <infoLink name="Montada" id="baf4-cdec-95e9-8659" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Darle caña" id="889e-4ff6-ded6-1d60" hidden="false" type="profile" targetId="cde5-d2c-703b-2333">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="732b-7e9e-d463-1a66" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Darle caña" id="3819-5348-ec7d-4310" hidden="false" type="profile" targetId="248-a683-d49e-a568">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="732b-7e9e-d463-1a66" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="Diesel (Chispa)" field="name">
@@ -677,12 +715,12 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Mirada llameante" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7c4b-cbea-a405-6265" page="49" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Guardián de la Llama es capaz de motivar a sus cultistas con su mera mirada. Algunas opciones de tropa tienen una ventaja cuando se encuentran bajo su Línea de visión. Estas se explican en sus respectivas entradas de la Regla especial Bajo la mirada llameante.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Mirada llameante" id="dfb6-4501-ac92-5d72" hidden="false" publicationId="6699-072c-136a-7d30" page="49">
-          <description>El Guardián de la Llama es capaz de motivar a sus cultistas con su mera mirada. Algunas opciones de tropa tienen una ventaja cuando se encuentran bajo su Línea de visión. Estas se explican en sus respectivas entradas de la Regla especial Bajo la mirada llameante.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="10d5-6b7f-7ecd-494f" hidden="false" sortIndex="1">
           <selectionEntryGroups>
@@ -906,20 +944,22 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bomba andante, Nutritora</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bomba andante" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8621-adc2-c3f0-757a">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Momma va cargando con una enorme cantidad de combustible. Si después de ser impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, Momma explotará. No sólo resultará Abatida automáticamente, si no que será como si hubiera impactado un arma con la Regla especial Incendiaria (6).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nutritora" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="89dc-233a-55d8-7662">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si está en contacto con una miniatura amiga con un arma de Combustible o una motocicleta, Momma puede gastar una Acción en rellenar todos los puntos de Combustible (excepto el proporcionado por el Guardián de la Llama con la regla de Bajo la mirada llameante).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="f4bb-37c-b90b-d11d" targetId="6659-5ef7-facd-fab1" primary="false"/>
         <categoryLink name="Personalidades de la banda" hidden="false" id="359-c1ab-94f0-7cf8" targetId="d1a7-5f24-003f-6400" primary="true"/>
         <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="4a10-12a5-847b-9870" targetId="73ff-a5cb-afba-6105" primary="false"/>
       </categoryLinks>
-      <rules>
-        <rule name="Nutritora" id="f17f-84ec-7565-ade5" hidden="false" publicationId="6699-072c-136a-7d30" page="52">
-          <description>Si está en contacto con una miniatura amiga con un arma de Combustible o una motocicleta, Momma puede gastar una Acción en rellenar todos los puntos de Combustible (excepto el proporcionado por el Guardián de la Llama con la regla de Bajo la mirada llameante).</description>
-        </rule>
-        <rule name="Bomba andante" id="1a05-66bf-f800-85c6" hidden="false" publicationId="6699-072c-136a-7d30" page="52">
-          <description>Momma va cargando con una enorme cantidad de combustible. Si después de ser impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, Momma explotará. No sólo resultará Abatida automáticamente, si no que será como si hubiera impactado un arma con la Regla especial Incendiaria (6).</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
@@ -984,7 +1024,17 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">¡Por la Sangre Negra!, Bajo la mirada llameante, Mónguer</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bajo la mirada llameante, Mónguer</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="¡Por la Sangre Negra!" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="81c6-6850-bc39-2bce">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Siempre que esté a 5 cm o menos de una miniatura aliada, un Quemado puede usar su cuerpo para salvarlo cuando haya sido impactado. Se colocará en contacto con la miniatura aliada impactada justo antes de que este tuviera que realizar la tirada enfrentada de Fuerza contra Dureza. Será el Quemado quien use su Dureza para esta tirada, y obviamente, será la miniatura retirada como baja si resulta Abatida. Si el impacto proviniese de un arma de Plantilla o que no necesite tirada para Impactar el Quemado no podrá aplicar esta regla. Si el impacto llega de un Combate cuerpo a cuerpo y el Quemado sobrevive, se considerará en contacto con la miniatura atacante como si hubiera sufrido el Asalto de esta.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="133b-e832-53e0-6647">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Siempre que el Quemado esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con la Regla especial Todoterreno.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1073,14 +1123,6 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
         <categoryLink name="Miembros de la banda" hidden="false" id="7f77-5a2a-e7f5-1283" targetId="84b7-6828-dd10-0280" primary="true"/>
         <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="4a8d-b2b2-1b43-2497" targetId="73ff-a5cb-afba-6105" primary="false"/>
       </categoryLinks>
-      <rules>
-        <rule name="¡Por la Sangre Negra!" id="e2fb-9147-1b23-3393" hidden="false" publicationId="6699-072c-136a-7d30" page="48">
-          <description>Siempre que esté a 5 cm o menos de una miniatura aliada, un Quemado puede usar su cuerpo para salvarlo cuando haya sido impactado. Se colocará en contacto con la miniatura aliada impactada justo antes de que este tuviera que realizar la tirada enfrentada de Fuerza contra Dureza. Será el Quemado quien use su Dureza para esta tirada, y obviamente, será la miniatura retirada como baja si resulta Abatida. Si el impacto proviniese de un arma de Plantilla o que no necesite tirada para Impactar el Quemado no podrá aplicar esta regla. Si el impacto llega de un Combate cuerpo a cuerpo y el Quemado sobrevive, se considerará en contacto con la miniatura atacante como si hubiera sufrido el Asalto de esta.</description>
-        </rule>
-        <rule name="Bajo la mirada llameante (Quemado)" id="7c9-cff8-def4-2d09" hidden="false" publicationId="6699-072c-136a-7d30" page="48">
-          <description>Siempre que el Quemado esté en la Línea de visión de su Guardián de la Llama, la miniatura contará con la Regla especial Todoterreno.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Mónguer" id="3362-499-a363-ff94" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
@@ -1115,18 +1157,20 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Bajo la mirada llameante, Dale calor</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="4c19-801d-309b-e2fa">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Siempre que el Pirómano esté en la Línea de visión de su Guardián de la Llama, su banda obtendrá 2 marcadores de Churruscado en lugar de 1 si este Abate a una miniatura enemiga mediante llamas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dale calor" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="bc73-8516-98d1-c754">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Pirómano puede decidir gastar 1 Acción en prenderse fuego. Al hacerlo perderá 1 punto de Dureza y ganará 1 punto de Combate, de manera permanente. Puede repetir esto hasta que obviamente se quede sin Dureza.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Bajo la mirada llameante (Pirómano)" id="32df-e7a4-2bb9-e0aa" hidden="false" publicationId="1e5a-2394-b910-b6ad" page="2">
-          <description>Siempre que el Pirómano esté en la Línea de visión de su Guardián de la Llama, su banda obtendrá 2 marcadores de Churruscado en lugar de 1 si este Abate a una miniatura enemiga mediante llamas.</description>
-        </rule>
-        <rule name="Dale calor" id="6cb6-65c-90d-3ccd" hidden="false" publicationId="1e5a-2394-b910-b6ad" page="2">
-          <description>Un Pirómano puede decidir gastar 1 Acción en prenderse fuego. Al hacerlo perderá 1 punto de Dureza y ganará 1 punto de Combate, de manera permanente. Puede repetir esto hasta que obviamente se quede sin Dureza.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Bersérker" id="8833-507c-3fe8-7292" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
       </infoLinks>
@@ -1201,17 +1245,17 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Intruder, Chorro flamígero, Darle caña, Raudo,  Montada, Todoterreno, Combustible (3)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Intruder" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="62a7-ccb7-fce7-7954">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Flammeus va montado en un quad llamado Intruder, por lo que tiene las mismas reglas que si fuera en un quad con los siguientes cambios. Tiene 3 cargas de Combustible en lugar de 2. No admite ninguna miniatura de paquete, ya que no permite que algún pringado toque su Intruder. Y además, la Fuerza del Impacto si consigue arrollar a alguien será 5 en lugar de 3.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Intruder" id="6985-a9cb-c5b-ce57" hidden="false">
-          <description>Flammeus va montado en un quad llamado Intruder, por lo que tiene las mismas reglas que si fuera en un quad con los siguientes cambios. Tiene 3 cargas de Combustible en lugar de 2. No admite ninguna miniatura de paquete, ya que no permite que algún pringado toque su Intruder. Y además, la Fuerza del Impacto si consigue arrollar a alguien será 5 en lugar de 3.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink name="Darle caña" id="c110-d943-e7f8-d058" hidden="false" type="rule" targetId="5547-9e02-4695-7624"/>
         <infoLink name="Raudo" id="5722-f4c1-b8a9-9ddb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
         <infoLink name="Combustible" id="ae00-d992-9d22-7511" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
         <infoLink name="Montada" id="95ea-c5e1-3fb1-1b08" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Darle caña" id="c4b0-117f-c53b-23c9" hidden="false" type="profile" targetId="248-a683-d49e-a568"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="34df-5e5-6fd3-1fd7" includeChildSelections="true"/>
@@ -1267,16 +1311,4 @@ La sierra de mano gasta 1 carga de Combustible por cada Acción en que esté enc
       </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
-  <rules>
-    <rule name="Darle caña" id="5547-9e02-4695-7624" hidden="false" publicationId="6699-072c-136a-7d30" page="51">
-      <description>Un Chispa va montado en una motocicleta, que le confiere las Reglas especiales Combustible (2), Montada y Raudo. Puesto que es posible utilizar partes de la moto para cubrirse de los disparos, la miniatura contará con una Cobertura de Blindaje +3. Además, podrá utilizar la potencia de la moto, gastando 1 carga de Combustible, con los siguientes efectos:
-• Apretar el turbo: el Chispa puede mover hasta el doble (30 cm) en una Acción de Movimiento, pero deberá hacerlo en línea recta, tal como estaba encarada al principio de la Acción y sin poder cambiar su encaramiento en ningún momento.
-• Potencia bruta: el Chispa carga de manera embravecida, otorgando un bonificador adicional de +2 al Combate a un Asalto.
-• Nube de polvo: el Chispa usará las ruedas para levantar una nube de polvo que hace más difícil alcanzarla. Durante lo que resta de ese Turno de juego, todos los disparos contra esta miniatura sufrirán un penalizador de -3 a la Precisión.
-• Cagando leches: si el Chispa está trabado en Combate, y realiza una Acción de Separarse del Combate, se considerará que tiene la Regla especial Escurridizo.
-
-Un Chispa en quad puede utilizar este efecto de Darle caña además de los habituales:
-• Arrollando (solo quad): si el Movimiento de una Acción del Chispa le permite atravesar totalmente una miniatura enemiga sin llegar a quedar en contacto con ella, puede decidir arrollarla. La miniatura arrollada debe realizar una tirada de Agilidad. Si la supera no le pasará nada, pero deberá moverse 5 cm hacia una dirección elegida por el jugador del Chispa, siempre que sea posible (porque no haya un muro, Terreno Impasable, etc.) Si no la supera sufrirá un impacto Fuerza 3.</description>
-    </rule>
-  </rules>
 </catalogue>
