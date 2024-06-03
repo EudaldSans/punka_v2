@@ -686,7 +686,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         </profile>
         <profile name="Maestra armera" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4a0b-5d07-a86-1ada">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">A Samantha le gusta la pólvora y se ha entrenado para darle al gatillo. Además se fabrica su propia munición como pasatiempo, por lo que ha alcanzado un gran nivel de excelencia. Las balas apañadas que compre Samantha nunca tendrán la Regla especial ¡¡¡CATAPUM!!!</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">A Samantha le gusta la pólvora y se ha entrenado para darle al gatillo. Además se fabrica su propia munición como pasatiempo, por lo que ha alcanzado un gran nivel de excelencia. Las balas apañadas que compre Samantha nunca tendrán la Regla especial ¡¡¡CATAPUM!!!</characteristic>
           </characteristics>
         </profile>
       </profiles>

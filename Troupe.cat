@@ -17,12 +17,12 @@
         </profile>
         <profile name="Risa difícil" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8160-16b2-d601-9f97" publicationId="6699-072c-136a-7d30" page="97">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Al igual que los típicos payasos de toda la vida, los Pachachos de la Hermandad de la Risa Floja suelen causar emociones polarizadas, o te hacen mucha gracia o los odias a muerte. Luchar contra Pachachos es como tirar una moneda. Cuando una miniatura Dispare o Combata contra un Pachacho tendrá que ver si su tirada de Precisión o Combate (lo que tenga que utilizar) es par o impar. Si fuera par se sumará 2 a la tirada (hasta un resultado máximo de 10) pero con un resultado impar se restará 2 (hasta un mínimo de 1).</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Al igual que los típicos payasos de toda la vida, los Pachachos de la Hermandad de la Risa Floja suelen causar emociones polarizadas, o te hacen mucha gracia o los odias a muerte. Luchar contra Pachachos es como tirar una moneda. Cuando una miniatura Dispare o Combata contra un Pachacho tendrá que ver si su tirada de Precisión o Combate (lo que tenga que utilizar) es par o impar. Si fuera par se sumará 2 a la tirada (hasta un resultado máximo de 10) pero con un resultado impar se restará 2 (hasta un mínimo de 1).</characteristic>
           </characteristics>
         </profile>
         <profile name="Zapatones" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="ab73-5dc0-2c4a-7490" publicationId="6699-072c-136a-7d30" page="97">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Si un Pachacho desea Asaltar a una miniatura enemiga y no llega por una distancia de 2,5 cm o menos, gracias a los zapatones podrá adelantarse esa distancia de manera automática y por tanto podrá Asaltar. Pero cuidado, eso mismo sucederá si le Asaltan a él.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si un Pachacho desea Asaltar a una miniatura enemiga y no llega por una distancia de 2,5 cm o menos, gracias a los zapatones podrá adelantarse esa distancia de manera automática y por tanto podrá Asaltar. Pero cuidado, eso mismo sucederá si le Asaltan a él.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -187,12 +187,12 @@
         </profile>
         <profile name="Avivar" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="56dd-ac78-f89d-6ba5" publicationId="6699-072c-136a-7d30" page="98">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</characteristic>
           </characteristics>
         </profile>
         <profile name="Señor de las bestias" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a39f-26aa-de22-643b" publicationId="6699-072c-136a-7d30" page="98">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Un Domador puede adquirir hasta 2 fieras por +12 puntos cada una. Estas fieras, aunque de diferentes formas y tamaños, deben ir siempre en peana de 40 mm, están armadas con garras y dientes y, chorprecha, tienen la Regla especial Bestia.
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Domador puede adquirir hasta 2 fieras por +12 puntos cada una. Estas fieras, aunque de diferentes formas y tamaños, deben ir siempre en peana de 40 mm, están armadas con garras y dientes y, chorprecha, tienen la Regla especial Bestia.
 Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no pudiendo alejarse más voluntariamente. Si no estuvieran a esa distancia, cuando sea el momento de actuar de las fieras deben usar todas las Acciones necesarias en Mover para cumplir esto. Si su Domador resulta Abatido, antes de comenzar la Fase de activación de las fieras debes tirar 1d10 por cada una en la siguiente tabla para ver cómo actúan ese Turno.
 • 1 - La fiera intentará Asaltar a la miniatura de su propia banda a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.
 • 2-3 - La fiera tratará de huir, avanzando lo máximo posible hacia el borde del tablero más cercano.
@@ -218,7 +218,7 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
         </profile>
         <profile name="Catapulta infernal" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e066-ad88-1496-b5d3">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
 Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</characteristic>
           </characteristics>
         </profile>
@@ -285,12 +285,12 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         </profile>
         <profile name="Bestia parda" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="c53e-41d5-f2b8-6f00" publicationId="6699-072c-136a-7d30" page="100">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</characteristic>
           </characteristics>
         </profile>
         <profile name="Lucimiento" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="6182-bd07-d977-e40b" publicationId="6699-072c-136a-7d30" page="100">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -362,7 +362,7 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         </profile>
         <profile name="El mayor espectaculo del mundo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="948b-210d-c962-4328" publicationId="6699-072c-136a-7d30" page="101">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
 utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
 • Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
 • Presentar a los Pachachos: durante este Turno de juego, la Regla especial Risa difícil de los Pachachos restará o sumará 4 en lugar de 2.
@@ -420,17 +420,17 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
         <profile name="¡Matad a eso!" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a88-bda6-195b-51bc" publicationId="6699-072c-136a-7d30" page="102">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</characteristic>
           </characteristics>
         </profile>
         <profile name="Mimo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="cbf5-7240-67c9-354f" publicationId="6699-072c-136a-7d30" page="102">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</characteristic>
           </characteristics>
         </profile>
         <profile name="Muro imaginario" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="96bd-272c-e00a-68ff" publicationId="6699-072c-136a-7d30" page="102">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -466,12 +466,12 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </profile>
         <profile name="Levitación" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b8a-549d-a14b-c3a5" publicationId="6699-072c-136a-7d30" page="103">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</characteristic>
           </characteristics>
         </profile>
         <profile name="Vidente" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="51a-6174-829f-ee47" publicationId="6699-072c-136a-7d30" page="103">
           <characteristics>
-            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
 
 
 • 1 El Masca. La miniatura tiene un +1 a su Atributo de Acciones (hasta un máximo de 3).

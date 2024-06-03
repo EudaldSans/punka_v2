@@ -40,7 +40,7 @@
     </profileType>
     <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
       <characteristicTypes>
-        <characteristicType id="615a-5192-19d4-fe3c" name="Habilidad"/>
+        <characteristicType id="615a-5192-19d4-fe3c" name="Efecto"/>
       </characteristicTypes>
     </profileType>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
