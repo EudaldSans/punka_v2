@@ -261,7 +261,7 @@
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
