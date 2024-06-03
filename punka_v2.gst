@@ -904,18 +904,28 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       </categoryLinks>
       <infoLinks>
         <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
-          <modifiers>
-            <modifier type="set" value="Filo Pequeño Flamígero" field="name">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Pequeño Flamígero" field="name"/>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+              <comment>Crematorio</comment>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Pequeño Incrustado" field="name"/>
+                <modifier type="set" value="Incrustada" field="c498-c631-f4c5-160a"/>
+              </modifiers>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6aa2-96ec-dc1a-3cb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+              <comment>Idos</comment>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -1021,6 +1031,18 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Medio Incrustado" field="name"/>
+                <modifier type="set" value="Incrustada" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6aa2-96ec-dc1a-3cb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Idos</comment>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -1863,6 +1885,21 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
           <description>Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arma incrustada" hidden="false" id="6aa2-96ec-dc1a-3cb" publicationId="6699-072c-136a-7d30" page="64">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Arma incrustada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="5131-3d05-ef9c-a25f">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Un Ido puede incrustarse una hoz, un filo pequeño o un filo medio que haya adquirido incrementando su valor en 10 puntos. A cambio, obtendrá un bonificador de +1 a Combate, no podrá Rapiñar equipo, no podrá desarmarse de ninguna manera y el arma no podrá ser Rapiñada.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ae-f4ed-804a-ad5f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -27,7 +27,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
       <profiles>
-        <profile name="Hoz" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ba6-75c6-378d-b7d5">
+        <profile name="Hoz incrustada" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ba6-75c6-378d-b7d5">
           <characteristics>
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
@@ -40,6 +40,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <categoryLink targetId="6582-5e09-b30b-db5a" id="68aa-87d3-1537-b69a" primary="false" name="Arma"/>
       </categoryLinks>
       <comment>Arma generica</comment>
+      <modifiers>
+        <modifier type="set" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="4e37-d54e-a829-6cea" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cuero humano" hidden="false" id="d01b-ea85-f31c-ed31" publicationId="6699-072c-136a-7d30" page="64">
       <costs>
@@ -456,7 +463,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
                 <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
                 <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
                 <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
-                <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">A dos manos, incrustada</characteristic>
+                <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Incrustada</characteristic>
               </characteristics>
             </profile>
             <profile name="Torbellino" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8a67-783c-3fc1-f462">
