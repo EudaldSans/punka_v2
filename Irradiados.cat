@@ -96,7 +96,8 @@ Modificadores
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">F del lanzador x 5 cm</characteristic>
-            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Bomba, Escasa, Tiro parabólico, Usar y tirar.
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Bomba, Escasa, Tiro parabólico, Usar y tirar. 
+
 Las granadas santas cubren de elementos radiactivos la zona allí donde impactan. Las granadas santas explotan al impactar, dejando un marcador permanente de Radiación. Toda miniatura impactada por una granada santa deberá realizar inmediatamente una tirada de Radiación.</characteristic>
           </characteristics>
         </profile>
@@ -157,12 +158,12 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Radiado</characteristic>
           </characteristics>
         </profile>
+        <profile name="Radiado" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b52e-1d1e-d8b4-2bcb">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Radiado" id="6d23-e321-76be-ec3" hidden="false">
-          <description>Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2385-d56f-c5a3-1e4a"/>
       </constraints>
@@ -336,15 +337,15 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune, Sermón</characteristic>
           </characteristics>
         </profile>
+        <profile name="Sermón" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="cda9-2702-f243-a85f">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Los cardenales arengan a los Irradiados antes de entrar en combate con distintos sermones con los que los Verdaderos Herederos afrontan aún con más fe las vicisitudes que les aguardan. Después de que las tropas desplieguen, pero antes de comenzar la partida, debes seleccionar UNO de los siguiente sermones que podrás utilizar a lo largo de la partida:
+• Parábola de cómo el Nuevo Hombre salió de un Huevo: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura propia que haya sido impactada.
+• Parábola de cómo la Inteligencia Suprema escogió a los Verdaderos Herederos: una vez durante la partida, puedes repetir una tirada de Precisión.
+• Parábola de cómo el Maná Sagrado nos ha hecho mejores: una vez durante la partida, puedes obligar a repetir al rival una tirada de Radiación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Sermón" id="b090-ef30-9e02-749d" hidden="false">
-          <description>Los cardenales arengan a los Irradiados antes de entrar en combate con distintos sermones con los que los Verdaderos Herederos afrontan aún con más fe las vicisitudes que les aguardan. Después de que las tropas desplieguen, pero antes de comenzar la partida, debes seleccionar UNO de los siguiente sermones que podrás utilizar a lo largo de la partida:
-• Parábola de cómo el Nuevo Hombre salió de un Huevo: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura propia que haya sido impactada.
-• Parábola de cómo la Inteligencia Suprema escogió a los Verdaderos Herederos: una vez durante la partida, puedes repetir una tirada de Precisión.
-• Parábola de cómo el Maná Sagrado nos ha hecho mejores: una vez durante la partida, puedes obligar a repetir al rival una tirada de Radiación.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="f204-483a-5dce-9c42" hidden="false">
           <selectionEntryGroups>
@@ -438,12 +439,12 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune, Todoterreno, Inspirador</characteristic>
           </characteristics>
         </profile>
+        <profile name="Inspirador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="cd2f-c664-e392-fa28">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Si un paladín Abate a un enemigo en Combate, todo Discípulo de la banda que se encuentre 20 cm o menos, con Línea de visión hacia el Paladín y que no esté trabado en Combate, puede realizar inmediatamente una Acción gratuita.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Inspirador" id="cde8-657a-98fb-4be" hidden="false">
-          <description>Si un paladín Abate a un enemigo en Combate, todo Discípulo de la banda que se encuentre 20 cm o menos, con Línea de visión hacia el Paladín y que no esté trabado en Combate, puede realizar inmediatamente una Acción gratuita.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="77c3-a854-4bb2-23ce" hidden="false">
           <entryLinks>
@@ -506,22 +507,23 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Contenedor radiactivo, Radioinmune, Relicario</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Contenedor radiactivo, Radioinmune</characteristic>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule name="Relicario" id="46fb-fa41-49f-8fea" hidden="false" publicationId="6699-072c-136a-7d30" page="72">
-          <description>A modo de estandarte, el Portador de las Reliquias lleva algunas de las reliquias encontradas por los Irradiados a lo largo de los años. En combate puede ser usado con las estadísticas de una maza pesada. Además, el Portador puede usar Acciones (si es más de una deben ser consecutivas, aunque no obligatoriamente en la misma Fase de activación) para alentar a sus compañeros o desmotivar a sus enemigos tal y como se indica en la siguiente tabla.
+        <profile name="Relicario" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2ae-83ee-2659-13ae">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">A modo de estandarte, el Portador de las Reliquias lleva algunas de las reliquias encontradas por los Irradiados a lo largo de los años. En combate puede ser usado con las estadísticas de una maza pesada. Además, el Portador puede usar Acciones (si es más de una deben ser consecutivas, aunque no obligatoriamente en la misma Fase de activación) para alentar a sus compañeros o desmotivar a sus enemigos tal y como se indica en la siguiente tabla.
+
 
 • 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +3 al Combate en su próximo Asalto.
 • 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 en su próxima tirada de Precisión.
-• 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 a la Dureza para la siguiente ocasión en que sea impactada. Tras esto pasará su Dureza se reducirá en 1 punto de manera permanente.
+• 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 a la Dureza para la siguiente ocasión en que sea impactada. Tras esto pasará su Dureza se reducirá en 1 punto de manera permanente.
 • 1 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 en su próxima tirada de Radiación.
 • 2 Una miniatura amiga hasta 30 cm podrá realizar 1 Acción de manera inmediata.
-• 2 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 permanente en sus tiradas de Radiación</description>
-        </rule>
-      </rules>
+• 2 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 permanente en sus tiradas de Radiación</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Relicario" hidden="false" id="782-a4a5-fc1c-b187">
           <profiles>
@@ -582,15 +584,17 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">El Maletín, El fin se acerca, Como una maraca</characteristic>
           </characteristics>
         </profile>
+        <profile name="Como una maraca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2570-6737-58e9-fe79">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Decir que al Guardián de las Llaves le falta una patata para el kilo es quedarse corto. Le patina el coco a lo bestia. No es extraño que te apetezca que haga una cosa y a él le dé por hacer otra muy distinta. Cuando comience su Fase de activación debe tirar 1d10. Con un resultado de 1, será el rival quien maneje la miniatura.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="El fin se acerca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="567a-8f85-b59d-2114">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Si viviera en nuestros días sería el típico loco que estaría en un parque encima de una caja chillando que “el fin se acerca”. Ese entusiasmo se contagia a los Irradiados a los que el mensaje les pone palot. Cualquier Irradiado a 30 cm o menos del Guardián de las Llaves, obtendrá un bonificador de +1 a la Dureza.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="El fin se acerca" id="8dbe-b578-e00b-ee13" hidden="false" publicationId="6699-072c-136a-7d30" page="73">
-          <description>Si viviera en nuestros días sería el típico loco que estaría en un parque encima de una caja chillando que “el fin se acerca”. Ese entusiasmo se contagia a los Irradiados a los que el mensaje les pone palot. Cualquier Irradiado a 30 cm o menos del Guardián de las Llaves, obtendrá un bonificador de +1 a la Dureza.</description>
-        </rule>
-        <rule name="Como una maraca" id="1c54-e8e6-a90c-bc85" hidden="false" publicationId="6699-072c-136a-7d30" page="73">
-          <description>Decir que al Guardián de las Llaves le falta una patata para el kilo es quedarse corto. Le patina el coco a lo bestia. No es extraño que te apetezca que haga una cosa y a él le dé por hacer otra muy distinta. Cuando comience su Fase de activación debe tirar 1d10. Con un resultado de 1, será el rival quien maneje la miniatura.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="c084-10c1-d8bd-fcbb" hidden="false">
           <selectionEntries>
@@ -679,7 +683,17 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Radioinmune, Lealtad, Porteador</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Radioinmune</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lealtad" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a72a-1fc0-e33c-314e">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Si un Paladín a 10 cm o menos de un escudero realiza un Asalto, el Escudero puede realizar una Acción gratuita de movimiento para ponerse en contacto con esa misma miniatura. De esta manera proporcionará el bonificador de Combate Múltiple, pero no actuará hasta que sea su Fase de activación. Sólo un Escudero puede beneficiarse de esta regla por cada Asalto del Paladín. Además, un Escudero se beneficia de la regla Inspirador de los Paladines, al igual que hacen los Discípulos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Porteador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2b41-40dc-85c3-1e23">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">En los escenarios en los que la recogida de objetivos esté limitada a una cantidad, el Escudero siempre podrá cargar un objetivo extra.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -705,14 +719,6 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Lealtad" id="b270-8a91-f638-4832" hidden="false">
-          <description>Si un Paladín a 10 cm o menos de un escudero realiza un Asalto, el Escudero puede realizar una Acción gratuita de movimiento para ponerse en contacto con esa misma miniatura. De esta manera proporcionará el bonificador de Combate Múltiple, pero no actuará hasta que sea su Fase de activación. Sólo un Escudero puede beneficiarse de esta regla por cada Asalto del Paladín. Además, un Escudero se beneficia de la regla Inspirador de los Paladines, al igual que hacen los Discípulos.</description>
-        </rule>
-        <rule name="Porteador" id="418-3f0b-f81a-b7c4" hidden="false">
-          <description>En los escenarios en los que la recogida de objetivos esté limitada a una cantidad, el Escudero siempre podrá cargar un objetivo extra.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
       </costs>
@@ -739,17 +745,10 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Sermón" id="1253-46b8-2080-b489" hidden="false">
-          <description>Un Inquisidor puede utilizar los siguientes sermones:
-• Parábola de cómo la Fe purificará a los impuros: elige una miniatura de tu banda, y una de sus armas pasará a tener la Regla especial Contaminante.
-• Parábola de la cólera nuclear: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura enemiga que haya sido impactada.
-• Parábola del fosforescente destino: Al principio de la partida elige una miniatura de la banda, durante el combate esta obtendrá +1 Blindaje por cada marcador de radiación que le afecte hasta un máximo de +2. Las miniaturas que lleven equipado escudo no pueden beneficiarse de este sermón porque ir con escudo es de cobardes.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Contenedor radiactivo" id="e547-af3c-58ad-71e2" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
         <infoLink name="Radioinmune" id="657a-2149-3837-cbe1" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
+        <infoLink name="Sermón" id="cf3f-5295-9b18-7bf5" hidden="false" type="profile" targetId="91a3-e0ed-fe2-edd8"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="45a1-e151-2f8-4e3d" hidden="false">
@@ -794,20 +793,6 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="La gran Inquisidora" hidden="false" id="932b-28ff-d613-367c">
-      <rules>
-        <rule name="Sermón" id="9f1-8515-ec44-2fba" hidden="false">
-          <description>Un Inquisidor puede utilizar los siguientes sermones:
-• Parábola de cómo la Fe purificará a los impuros: elige una miniatura de tu banda, y una de sus armas pasará a tener la Regla especial Contaminante.
-• Parábola de la cólera nuclear: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura enemiga que haya sido impactada.
-• Parábola del fosforescente destino: Al principio de la partida elige una miniatura de la banda, durante el combate esta obtendrá +1 Blindaje por cada marcador de radiación que le afecte hasta un máximo de +2. Las miniaturas que lleven equipado escudo no pueden beneficiarse de este sermón porque ir con escudo es de cobardes.</description>
-        </rule>
-        <rule name="Presencia siniestra" id="2667-2d4a-4cff-3333" hidden="false">
-          <description>La visión de la Inquisidora te deja claro de que sea cierto o no, está muy convencida de que su misión en la vida es purgar a los herejes, y tú eres un hereje. Estar cerca de esta fanática chunga le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de la Inquisidora y con Línea de visión hacia ella.</description>
-        </rule>
-        <rule name="Portador del don" id="f459-6318-d2ea-384e" hidden="false">
-          <description>Todas las armas que lleve la inquisidora tendrán automáticamente la regla especial Contaminante.</description>
-        </rule>
-      </rules>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -818,6 +803,7 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
       <infoLinks>
         <infoLink name="Radioinmune" id="ecd8-6d75-175e-7597" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
         <infoLink name="Contenedor radiactivo" id="4ca6-4fdb-3754-f03c" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
+        <infoLink name="Sermón" id="14b3-d6d-fda9-35bc" hidden="false" type="profile" targetId="91a3-e0ed-fe2-edd8"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="84b7-6828-dd10-0280" id="6197-2997-91c5-90ff" primary="false" name="Miembros de la banda"/>
@@ -839,7 +825,17 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune, Sermón, Portador del don, Armadura de fe, Presencia siniestra</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Portador del don" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="9648-d757-8aa1-17cd">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Todas las armas que lleve la inquisidora tendrán automáticamente la regla especial Contaminante.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Presencia siniestra" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="c2f9-c0ed-39c2-d14a">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">La visión de la Inquisidora te deja claro de que sea cierto o no, está muy convencida de que su misión en la vida es purgar a los herejes, y tú eres un hereje. Estar cerca de esta fanática chunga le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de la Inquisidora y con Línea de visión hacia ella.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -921,4 +917,15 @@ Las granadas santas cubren de elementos radiactivos la zona allí donde impactan
       </constraints>
     </categoryEntry>
   </categoryEntries>
+  <sharedProfiles>
+    <profile name="Sermón" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="91a3-e0ed-fe2-edd8">
+      <characteristics>
+        <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">Un Inquisidor puede utilizar los siguientes sermones:
+• Parábola de cómo la Fe purificará a los impuros: elige una miniatura de tu banda, y una de sus armas pasará a tener la Regla especial Contaminante.
+• Parábola de la cólera nuclear: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura enemiga que haya sido impactada.
+• Parábola del fosforescente destino: Al principio de la partida elige una miniatura de la banda, durante el combate esta obtendrá +1 Blindaje por cada marcador de radiación que le afecte hasta un máximo de +2. Las miniaturas que lleven equipado escudo no pueden beneficiarse de este sermón porque ir con escudo es de cobardes.</characteristic>
+      </characteristics>
+      <comment>Inquisición</comment>
+    </profile>
+  </sharedProfiles>
 </catalogue>

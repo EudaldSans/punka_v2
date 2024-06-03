@@ -38,7 +38,11 @@
         <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="8d36-94cc-6c74-8857" name="Habilidad"/>
+    <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
+      <characteristicTypes>
+        <characteristicType id="615a-5192-19d4-fe3c" name="Habilidad"/>
+      </characteristicTypes>
+    </profileType>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
