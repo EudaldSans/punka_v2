@@ -314,53 +314,67 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <categoryLink name="Personalidades de la banda" hidden="false" id="8ecc-6dca-22ea-94a0" targetId="d1a7-5f24-003f-6400" primary="true"/>
         <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="aad7-f915-49ae-c4ed" targetId="6659-5ef7-facd-fab1" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bola de dragón" hidden="false" id="cdb8-8f57-46e8-38dd">
-          <entryLinks>
-            <entryLink import="true" name="Bomba incendiaria" hidden="false" id="594f-5669-2816-c668" type="selectionEntry" targetId="b44d-5cc7-268f-1612">
-              <modifiers>
-                <modifier type="set" value="5" field="d7e6-9469-3601-d3da"/>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de60-821a-3c4-b5d6" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d46-522f-6316-6de8" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Vaporeta" id="e6b1-32c3-5b2b-6010" hidden="false" type="infoGroup" targetId="6e43-5974-f2cd-456e"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Bola de dragón" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c85e-937e-663e-26c8">
-              <characteristics>
-                <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Caronte puede decidir gastar 1 Acción en aumentar la presión del lanzabombas, colocando hasta 3 marcadores (a elección del jugador). Cada marcador aumenta +5 cm la distancia a la que se pueden lanzar las bombas, pero aumentando también +2,5 cm la desviación del Tiro parabólico. Cada marcador también aumenta +5 cm la distancia del chorro de la vaporeta, pero sufriendo un penalizador de -1 la Técnica. En sucesivas Acciones puede aumentar la presión de nuevo y añadir más marcadores. Estos marcadores permanecerán activos hasta que Caronte utilice Bola de Dragón (ya sea para lanzar vapor o tirar una bomba) o gaste 1 Acción en vaciar la presión del arma. 
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="bcd0-76b3-85a3-15e1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bola de dragón" hidden="false" id="cdb8-8f57-46e8-38dd">
+              <entryLinks>
+                <entryLink import="true" name="Bomba incendiaria" hidden="false" id="594f-5669-2816-c668" type="selectionEntry" targetId="b44d-5cc7-268f-1612">
+                  <modifiers>
+                    <modifier type="set" value="5" field="d7e6-9469-3601-d3da"/>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de60-821a-3c4-b5d6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d46-522f-6316-6de8" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Vaporeta" id="e6b1-32c3-5b2b-6010" hidden="false" type="infoGroup" targetId="6e43-5974-f2cd-456e"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Bola de dragón" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c85e-937e-663e-26c8">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Caronte puede decidir gastar 1 Acción en aumentar la presión del lanzabombas, colocando hasta 3 marcadores (a elección del jugador). Cada marcador aumenta +5 cm la distancia a la que se pueden lanzar las bombas, pero aumentando también +2,5 cm la desviación del Tiro parabólico. Cada marcador también aumenta +5 cm la distancia del chorro de la vaporeta, pero sufriendo un penalizador de -1 la Técnica. En sucesivas Acciones puede aumentar la presión de nuevo y añadir más marcadores. Estos marcadores permanecerán activos hasta que Caronte utilice Bola de Dragón (ya sea para lanzar vapor o tirar una bomba) o gaste 1 Acción en vaciar la presión del arma. 
 Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguiendo las reglas habituales de Incendiaria, pero añadiendo un bonificador de +1 a la Fuerza por cada marcador de presión que tuviera Caronte.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink name="Arma" hidden="false" id="c073-8e4d-6808-f2d0" targetId="6582-5e09-b30b-db5a" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Carcasa" hidden="false" id="8c87-dbbc-280e-44cc">
-          <profiles>
-            <profile name="Carcasa" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="435d-d570-a956-59ae">
-              <characteristics>
-                <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
-                <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Ignífugo, Escurridizo</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d25-55df-3fd2-1870" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3e2-bda2-fb51-170b" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ea22-6a17-a0bf-7b5e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Arma" hidden="false" id="c073-8e4d-6808-f2d0" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="cb12-acf3-3f01-262" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carcasa" hidden="false" id="8c87-dbbc-280e-44cc">
+              <profiles>
+                <profile name="Carcasa" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="435d-d570-a956-59ae">
+                  <characteristics>
+                    <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+                    <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Ignífugo, Escurridizo</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d25-55df-3fd2-1870" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3e2-bda2-fb51-170b" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Ignífugo" id="f8af-8ec6-ec3e-a6eb" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
+                <infoLink name="Escurridizo" id="4cef-7467-cc54-945d" hidden="false" type="rule" targetId="59a0-f60d-aa37-f759"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="1892-fff6-ddd5-720f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ea22-6a17-a0bf-7b5e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -667,83 +681,104 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Maestra armera</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Maestra armera" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4a0b-5d07-a86-1ada">
+          <characteristics>
+            <characteristic name="Habilidad" typeId="615a-5192-19d4-fe3c">A Samantha le gusta la pólvora y se ha entrenado para darle al gatillo. Además se fabrica su propia munición como pasatiempo, por lo que ha alcanzado un gran nivel de excelencia. Las balas apañadas que compre Samantha nunca tendrán la Regla especial ¡¡¡CATAPUM!!!</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Filo Medio" hidden="false" id="2921-95d4-9cb1-4b55" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="7c9e-839f-85b8-fc53" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Rotocañón" hidden="false" id="1076-3dac-3061-fb9c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a56-71b6-b41f-c524" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a649-47bc-efaf-5419" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Rotocañón - Cazahombres" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="eb43-d7c5-a980-ab01">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
-                <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Rotocañón - Cazabestias" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="7d5b-c909-5e65-1ed0">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">7</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15</characteristic>
-                <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Difícil de usar</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Rotocañón - Cazaalimañas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="5b83-4eb9-16b2-7949">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5/4/3</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5/4/3</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30 cm</characteristic>
-                <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Postas</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Postas" id="7046-3bb3-e34a-b8da" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
-            <infoLink name="Difícil de usar" id="a584-a89a-8aeb-fe77" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink targetId="6582-5e09-b30b-db5a" id="8ed5-1ce1-36ce-1321" primary="false" name="Arma"/>
-          </categoryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <rules>
-        <rule name="Maestra armera" id="fe61-abed-ae99-71ea" hidden="false" publicationId="6699-072c-136a-7d30" page="43">
-          <description>A Samantha le gusta la pólvora y se ha entrenado para darle al gatillo. Además se fabrica su propia munición como pasatiempo, por lo que ha alcanzado un gran nivel de excelencia. Las balas apañadas que compre Samantha nunca tendrán la Regla especial ¡¡¡CATAPUM!!!</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Balas" id="af92-2320-6962-c5e9" hidden="false">
+        <selectionEntryGroup name="Armas" id="b164-acf6-a722-e32a" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Bala" hidden="false" id="92ef-db0c-784e-c4fb" type="selectionEntry" targetId="b7b7-d0a9-69b8-c008"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="2921-95d4-9cb1-4b55" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bala apañada" hidden="false" id="c580-13b6-9845-3712">
-              <costs>
-                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
-              </costs>
+            <selectionEntry type="upgrade" import="true" name="Rotocañón" hidden="false" id="1076-3dac-3061-fb9c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a56-71b6-b41f-c524" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a649-47bc-efaf-5419" includeChildSelections="false"/>
+              </constraints>
               <profiles>
-                <profile name="Bala apañada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="8617-951b-65a2-11a4">
+                <profile name="Rotocañón - Cazahombres" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="eb43-d7c5-a980-ab01">
                   <characteristics>
-                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Bala apañada de Samantha. Sin la Regla especial ¡¡¡CATAPUM!!!</characteristic>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
+                    <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Rotocañón - Cazabestias" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="7d5b-c909-5e65-1ed0">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">7</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15</characteristic>
+                    <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Difícil de usar</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Rotocañón - Cazaalimañas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="5b83-4eb9-16b2-7949">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5/4/3</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5/4/3</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30 cm</characteristic>
+                    <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Postas</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Postas" id="7046-3bb3-e34a-b8da" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+                <infoLink name="Difícil de usar" id="a584-a89a-8aeb-fe77" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Arma" hidden="false" id="8ed5-1ce1-36ce-1321" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Balas" id="af92-2320-6962-c5e9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bala" hidden="false" id="92ef-db0c-784e-c4fb" type="selectionEntry" targetId="b7b7-d0a9-69b8-c008"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bala apañada" hidden="false" id="c580-13b6-9845-3712">
+                  <costs>
+                    <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Bala apañada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="8617-951b-65a2-11a4">
+                      <characteristics>
+                        <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Bala apañada de Samantha. Sin la Regla especial ¡¡¡CATAPUM!!!</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="dcc4-7888-e83f-405d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="7c9e-839f-85b8-fc53" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="597f-303d-97e6-152e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="3fe2-e539-6efc-78ae" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24cf-ae4f-3dba-d71-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24cf-ae4f-3dba-d71-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
