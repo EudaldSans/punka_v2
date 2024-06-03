@@ -178,10 +178,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             </rule>
           </rules>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="90a9-c761-cfbe-92ba" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="2b9c-48da-8eda-26ab" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="df7a-aa81-8ee8-49f1" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
       </costs>
@@ -196,6 +198,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="54cc-a06d-d984-aec3" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="1b24-94-efcb-a387" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="f98f-149e-d16f-3411" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -223,7 +226,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="9805-b074-945a-c53" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <profiles>
         <profile name="Aberración" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="630d-ec80-486-fac">
@@ -254,6 +256,21 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <infoLink name="Mónguer" id="eeda-e537-b44f-45d5" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
         <infoLink name="Raudo" id="2b22-506d-659a-8eb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="968b-d1ce-e519-b8dd" hidden="false"/>
+        <selectionEntryGroup name="Equipo" id="7ca3-8981-3e22-cfb7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="9805-b074-945a-c53" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cosechador" hidden="false" id="184e-83db-c249-9124" publicationId="6699-072c-136a-7d30" page="59">
       <costs>
@@ -294,6 +311,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="178b-445f-66ff-4a56" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="f37b-8fd8-49b9-70a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="dbff-191-2e4c-16f6" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
         <rule name="Mal viaje" id="a780-e522-ceae-a174" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
@@ -307,9 +329,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
 •  10  - 3</description>
         </rule>
       </rules>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="54f3-4751-27ab-9cba" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <profiles>
         <profile name="Cosechador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="63ee-7993-4ab3-7921">
           <characteristics>
@@ -376,10 +395,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e9-c652-95bb-9e6e" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="c1cb-ad80-d8d8-ad81" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="5a83-3303-258e-5e63" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="c828-1d43-e704-5e8e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <rules>
         <rule name="Furia psicópata" id="598f-c0d1-9fa4-2153" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
           <description>Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</description>
@@ -388,6 +409,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <description>En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Glotón" hidden="false" id="1b24-94-efcb-a387" publicationId="6699-072c-136a-7d30" page="61">
       <costs>
@@ -432,10 +460,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5353-b33a-56f4-4829" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="7502-1e59-3ee9-1f0f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="a-f9c7-8518-1e43" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="9d81-3a2f-ac50-bb1f" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <rules>
         <rule name="Devorador" id="56c8-d1ae-d3c6-fa44" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
           <description>Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</description>
@@ -455,29 +485,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="b0a4-4d44-ada9-7969" targetId="6659-5ef7-facd-fab1" primary="false"/>
         <categoryLink name="Personalidades de la banda" hidden="false" id="bf2a-8a01-ac76-e060" targetId="d1a7-5f24-003f-6400" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Torbellino" hidden="false" id="95a7-6a97-c16c-290">
-          <profiles>
-            <profile name="Torbellino" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="1946-897d-dcbc-6267">
-              <characteristics>
-                <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-                <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
-                <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
-                <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Incrustada</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Torbellino" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8a67-783c-3fc1-f462">
-              <characteristics>
-                <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A la hora de atacar, puede hacerlo normalmente, o gastar una Fase de activación completa (usar sus 2 Acciones) en hacer un ataque Torbellino. Puede realizarlo incluso estando trabado en Combate. Si hace esto, toda miniatura en un radio de 5 cm de distancia (amiga o enemiga) deberá superar una tirada de Agilidad o resultará impactada automáticamente (como si lo hubiera sido en Combate).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d95c-92a2-f20-1712" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d5-29d6-6870-c2a5" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <profiles>
         <profile name="Tio" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="cf89-8b1b-a0b9-be84">
           <characteristics>
@@ -497,12 +504,41 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <description>Tío pierde el impulso para utilizar Torbellino y no podrá utilizarlo durante esta Fase de activación.</description>
         </rule>
       </rules>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="64f9-84aa-f04e-baed" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="ee6f-af1b-4c3f-89e8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ac91-4928-2de-bf46" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="779f-b65d-bb72-f5b7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Torbellino" hidden="false" id="95a7-6a97-c16c-290">
+              <profiles>
+                <profile name="Torbellino" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="1946-897d-dcbc-6267">
+                  <characteristics>
+                    <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+                    <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
+                    <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Incrustada</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Torbellino" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8a67-783c-3fc1-f462">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A la hora de atacar, puede hacerlo normalmente, o gastar una Fase de activación completa (usar sus 2 Acciones) en hacer un ataque Torbellino. Puede realizarlo incluso estando trabado en Combate. Si hace esto, toda miniatura en un radio de 5 cm de distancia (amiga o enemiga) deberá superar una tirada de Agilidad o resultará impactada automáticamente (como si lo hubiera sido en Combate).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d95c-92a2-f20-1712" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d5-29d6-6870-c2a5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Madre" hidden="false" id="edb6-24fd-19e1-820" publicationId="6699-072c-136a-7d30" page="63">
       <categoryLinks>
@@ -570,9 +606,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f311-cd92-33b4-f7bd" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="5799-349c-dcd8-5369" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d8b1-1a19-86ae-d322" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Incluir reglas de Ambrosia" hidden="false" id="38f9-9051-16b8-7d27">
       <categoryLinks>
@@ -585,10 +625,130 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <infoLink name="Ambrosía" id="353a-cf75-9e64-70ec" hidden="false" type="rule" targetId="8c10-1203-2c2e-cbef"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Psycho killer" hidden="false" id="f98f-149e-d16f-3411">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="8c53-d573-49a5-d89c" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="28cf-4760-22ce-78b7" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="12ff-b619-49d-ef01" id="763-a7fd-82e8-b8bc" primary="false" name="Subfaction: Slashers"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Psycho killer" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="17-b3d2-31d9-d3f5">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Todoterreno, Sin prisa, Ahora estoy aquí, Mal viaje</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Mal viaje" id="f756-d31b-746b-5d42" hidden="false">
+          <description>Una de las miniaturas enemigas se convertirá en la final girl (o final boy, aunque sea más extraño) de este Psycokiller. Ya sabéis, generalmente la chica que sobrevive a la película y cuenta la historia. El jugador rival elige una de sus miniaturas, que tendrá un +1 al Combate y la Precisión contra este Psycho-killer hasta el final de la partida. Si vuelve a salir el Mal viaje en la misma miniatura, el jugador rival puede decidir cambiar su final girl por otra (perdiendo la primera los bonificadores) o mantener la que tenía. Una misma miniatura puede ser la final girl de distintos Psycho-killers si se diera el caso y el jugador rival así lo quisiera.</description>
+        </rule>
+        <rule name="Ahora estoy aquí" id="12a8-4527-802-e693" hidden="false">
+          <description>Aunque un Psycho-killer parece que no avanza y se queda atrás, de repente suele aparecer justo al lado de su víctima. Una vez por Fase de activación, un Psycho-killer puede gastar una Acción para aparecer automáticamente a una distancia máxima de 30 cm en cualquier lugar de la mesa, a no más de 10 cm de una miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.</description>
+        </rule>
+        <rule name="Sin prisa" id="b9f7-f32-d9d9-6432" hidden="false">
+          <description>Un Psyco-killer va a su ritmo y mueve 5 cm en lugar de los 10 cm habituales, excepto que pueda llegar a Asaltar, en cuyo caso podrá mover 10 cm en la última Acción del Asalto.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Papel" id="ee61-75c0-fac6-e87a" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3883-1a93-e878-3c17-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3883-1a93-e878-3c17-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Imparable" hidden="false" id="414e-fb31-d1a8-512b">
+              <profiles>
+                <profile name="Imparable" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8f9f-f6c7-6ae7-71a1">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Estos Psyco-killers son una auténtica fuerza de la naturaleza. Son una montaña de músculos que avanza inexorablemente hacia sus víctimas. Tienen un punto más en los Atributos de Fuerza y Dureza y la Regla especial Berserker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sobrenatural" hidden="false" id="e18b-2f69-6413-bbb4">
+              <profiles>
+                <profile name="Sobrenatural" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c4fa-258a-62b5-49f0">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Estos Psyco-killers parecen haber salido de las peores pesadillas que atormentan nuestros sueños, no siendo realmente de nuestro mundo. Cualquier miniatura enemiga sufrirá un penalizador -1 a Combate y Fuerza, y considerará el Terreno chachi como Terreno chungo mientras esté a una distancia de 20 cm o menos de este Psyco-killer y con Línea de visión hacia él.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="b7-ba02-85d9-67ac">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Familia" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c3fe-c246-6203-e2ee">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Estos Psyco-killers se caracterizan por ser un núcleo familiar muy cercano (tanto que la endogamia es lo más habitual), cada uno con distintas características. Por cada miembro de la Familia que se adquiera al hacer la banda por encima del primero, se podrá dar un bonificador permanente de +1 a uno de los Atributos de cualquier miniatura de la Familia, exceptuando al de Acciones. Estos bonificadores pueden repartirse de la manera que el jugador prefiera entre estas miniaturas, concentrándolos en una sola miniatura o repartiéndolos a su gusto. El máximo bonificador que se puede dar al Atributo de una sola miniatura es +2.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="2fe0-f10b-2c37-88bf" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo pequeño" hidden="false" id="ebe0-31fd-d754-6a44" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="cd13-ac48-1a5f-38b1" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="a26a-fe16-ef94-6576" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+            <entryLink import="true" name="Filo medio" hidden="false" id="e8e5-5f22-bc62-7ea2" type="selectionEntry" targetId="6398-5711-7901-62bb"/>
+            <entryLink import="true" name="Motosierra" hidden="false" id="3592-92bc-5298-dba7" type="selectionEntry" targetId="d03b-2867-177f-b0db"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4c0-5320-c27d-aafb" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4e81-f76d-e9a-4351" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="bbc3-d366-c871-6a44" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="98fd-95de-946b-7bb4" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="e32c-8421-eb7b-31ab" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="254a-2d45-cd7-b96" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero humano" hidden="false" id="94aa-f917-86bd-98ca" type="selectionEntry" targetId="d01b-ea85-f31c-ed31">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ee-e8f9-1053-db63" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
-  <forceEntries>
-    <forceEntry name="Ambrosia" id="d538-fbd2-5071-5f18" hidden="false"/>
-  </forceEntries>
   <categoryEntries>
     <categoryEntry name="Cosechador" id="519d-1f4f-ea5a-45f6" hidden="true">
       <constraints>
@@ -603,4 +763,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
       </modifiers>
     </categoryEntry>
   </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="e208-3db1-6833-bf05" targetId="82fd-14e9-7e70-88e2"/>
+  </catalogueLinks>
 </catalogue>

@@ -4,6 +4,7 @@
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
     <publication name="GitHub" id="bbc5-28b8-67b7-3c23" hidden="false" publisherUrl="git@github.com:EudaldSans/punka_v2.git"/>
     <publication name="Subfacciones Sangre Negra" id="1e5a-2394-b910-b6ad" hidden="false" publisherUrl="https://www.badrollgames.com/V2/SubfaccionesSangreNegra.pdf" shortName="Subfacciones Sangre Negra" publisher="Subfacciones Sangre Negra"/>
+    <publication name="Subfaccion Idos" id="7576-d113-2899-1c0e" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
@@ -181,6 +182,7 @@
     <categoryEntry name="Subfacción: Fuerte Thule" id="aef4-7192-8994-977d" hidden="false">
       <comment>V Reich</comment>
     </categoryEntry>
+    <categoryEntry name="Subfaction: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -843,9 +845,6 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6" sortIndex="7">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ada-4019-799e-6e53" includeChildSelections="true"/>
-              </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -858,9 +857,6 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1" sortIndex="5">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37b2-1120-c9d2-19cc" includeChildSelections="true"/>
-              </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -873,9 +869,6 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10" sortIndex="6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
-              </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -886,6 +879,18 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               <categoryLinks>
                 <categoryLink targetId="a617-344c-8601-e6a1" id="a92d-9247-db3d-77c3" primary="false" name="Subfacción: Organización Kraken"/>
               </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Slashers" hidden="false" id="6948-6d75-7cd1-25e5" sortIndex="8">
+              <categoryLinks>
+                <categoryLink targetId="12ff-b619-49d-ef01" id="da62-d44d-32a5-dcc6" primary="false" name="Subfaction: Slashers"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5f14-305f-99b6-1077" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
