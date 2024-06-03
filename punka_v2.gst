@@ -193,7 +193,7 @@
         <categoryLink id="9239-8734-b96c-f433" name="Mercenarios" hidden="false" targetId="a4c2-f028-f3ac-8b88" primary="false"/>
         <categoryLink id="3c6c-2bbe-44c0-c1d5" name="Gato parameño" hidden="false" targetId="cd25-e09a-4ac6-8cdc" primary="false"/>
         <categoryLink name="Equipo de la banda" hidden="false" id="f90c-22e0-2884-dc54" targetId="4af8-4d51-42ab-8460"/>
-        <categoryLink name="Configuración" hidden="false" id="90b4-87b0-4e48-1e86" targetId="9e25-aa8a-c426-a886" type="category"/>
+        <categoryLink name="Configuración" hidden="false" id="90b4-87b0-4e48-1e86" targetId="9e25-aa8a-c426-a886"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -891,6 +891,13 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="No estaba muerto" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="d0f7-5bd2-24ce-3f95">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Cada vez que un miembro de la banda consiga Abatir a una miniatura enemiga, adquirirá un marcador de víctima. Si este miembro resulta Abatido, tirará 1d10, y si saca un número igual o menor a los marcadores de víctima que tuviera, regresará de los muertos al principio del siguiente Turno de juego en el mismo lugar donde resultó Abatido y volviendo a jugar normalmente. Solo podrá realizar esta tirada una vez durante la partida.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
