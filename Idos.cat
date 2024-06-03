@@ -6,13 +6,24 @@
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
       <profiles>
-        <profile name="Hoz incrustada" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ba6-75c6-378d-b7d5">
+        <profile name="Hoz" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="ba6-75c6-378d-b7d5">
           <characteristics>
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">3</characteristic>
             <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Hoz incrustada" field="name"/>
+                <modifier type="set" value="Incrustada" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="4e37-d54e-a829-6cea" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <categoryLinks>
@@ -20,12 +31,26 @@
       </categoryLinks>
       <comment>Arma generica</comment>
       <modifiers>
-        <modifier type="set" field="name">
+        <modifier type="set" value="Hoz incrustada" field="name">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="self" childId="4e37-d54e-a829-6cea" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c81-8244-e557-e4f4" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arma incrustada" hidden="false" id="74ff-c6c0-c1ed-9200" type="selectionEntry" targetId="4e37-d54e-a829-6cea">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="4007-565c-10ec-4a8a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cuero humano" hidden="false" id="d01b-ea85-f31c-ed31" publicationId="6699-072c-136a-7d30" page="64">
       <costs>
@@ -58,21 +83,6 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f49a-49ac-2d0b-6b4c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="a6f0-7184-a73a-86d">
-      <entryLinks>
-        <entryLink import="true" name="Hoz" hidden="false" id="258b-29e7-ed22-49ca" type="selectionEntry" targetId="10e3-42f-6178-d1ac">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b93-827c-3032-973b" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db5-254d-b7f2-86b3" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Arma incrustada" hidden="false" id="74ff-c6c0-c1ed-9200" type="selectionEntry" targetId="4e37-d54e-a829-6cea"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35f4-e208-59b1-cd5c" includeChildSelections="false"/>
-      </constraints>
-      <comment>Arma con incrustada</comment>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Filo pequeño" hidden="false" id="d0e9-b698-5bbf-178c">
       <entryLinks>
         <entryLink import="true" name="Filo Pequeño" hidden="false" id="9e27-70c3-c7b5-51e0" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
@@ -101,12 +111,10 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="114b-c54c-48f6-a1f" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <selectionEntries>
     <selectionEntry type="model" import="true" name="Despojo" hidden="false" id="4007-565c-10ec-4a8a" publicationId="6699-072c-136a-7d30" page="57">
       <categoryLinks>
-        <categoryLink targetId="af76-5143-157c-3a3f" id="52ef-33d8-a3bc-c43" primary="false" name="Banda: Idos"/>
-        <categoryLink targetId="84b7-6828-dd10-0280" id="9b46-56d-66c3-2dba" primary="true" name="Miembros de la banda"/>
+        <categoryLink name="Banda: Idos" hidden="false" id="52ef-33d8-a3bc-c43" targetId="af76-5143-157c-3a3f" primary="false"/>
+        <categoryLink name="Miembros de la banda" hidden="false" id="9b46-56d-66c3-2dba" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Despojo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="8cdf-52c-214c-938" publicationId="6699-072c-136a-7d30" page="57">
@@ -118,7 +126,12 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Escoria</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Escoria" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="41f1-eaea-4a31-8a3f">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los despojos no pueden usar dosis de Ambrosia ni usar armas incrustadas</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -181,12 +194,9 @@
           </repeats>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Escoria" id="9838-c45d-c0bb-ec3a" hidden="false">
-          <description>Los despojos no pueden usar dosis de Ambrosia ni usar armas incrustadas</description>
-        </rule>
-      </rules>
     </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
     <selectionEntry type="model" import="true" name="Aberración" hidden="false" id="16ad-7776-78da-499e">
       <categoryLinks>
         <categoryLink targetId="af76-5143-157c-3a3f" id="88e1-4377-d4dd-f4bb" primary="false" name="Banda: Idos"/>
@@ -216,23 +226,25 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Locura, Mal viaje, Mónguer, Raudo, Sobredosis</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer, Raudo</characteristic>
           </characteristics>
         </profile>
-        <profile name="Aberración" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="4413-ef26-214b-f7c8">
+        <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4413-ef26-214b-f7c8" publicationId="6699-072c-136a-7d30" page="58">
           <characteristics>
-            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Locura" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="31ec-e08-9a42-d7a" publicationId="6699-072c-136a-7d30" page="58">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Mirar a la cara de las Aberraciones es mirar a una locura más allá de la humanidad, que difícilmente no te puede afectar. Las miniaturas que las Asalten perderán todos sus bonificadores por el Asalto.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sobredosis" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5373-f601-fbb5-69d2" publicationId="6699-072c-136a-7d30" page="58">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las Aberraciones tienen más problemas para tolerar la Ambrosía y parten con un -2 en la tirada para ver si la droga hace efecto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Locura" id="d909-16bd-72df-8b2f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
-          <description>Mirar a la cara de las Aberraciones es mirar a una locura más allá de la humanidad, que difícilmente no te puede afectar. Las miniaturas que las Asalten perderán todos sus bonificadores por el Asalto.</description>
-        </rule>
-        <rule name="Sobredosis" id="e8ea-975b-d835-bc8f" hidden="false" publicationId="6699-072c-136a-7d30" page="58">
-          <description>Las Aberraciones tienen más problemas para tolerar la Ambrosía y parten con un -2 en la tirada para ver si la droga hace efecto.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Mónguer" id="eeda-e537-b44f-45d5" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
         <infoLink name="Raudo" id="2b22-506d-659a-8eb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
@@ -266,7 +278,7 @@
         <selectionEntryGroup name="Armas" id="596e-cbb-7c4e-d587" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Maza" hidden="false" id="e57f-7620-116c-dd" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-            <entryLink import="true" name="Hoz" hidden="false" id="108c-df55-7de7-bf35" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="108c-df55-7de7-bf35" type="selectionEntry" targetId="10e3-42f-6178-d1ac"/>
             <entryLink import="true" name="Filo pequeño" hidden="false" id="b217-ad27-7ea1-52cb" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
             <entryLink import="true" name="Maza Ligera" hidden="false" id="540c-8b0-ed23-4dcd" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
           </entryLinks>
@@ -298,15 +310,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Cosecha" id="f5e7-99da-517a-b7fe" hidden="false" publicationId="6699-072c-136a-7d30" page="59">
-          <description>Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
-•  1    - Ninguna
-•  2-5 - 1
-•  6-9 - 2
-•  10  - 3</description>
-        </rule>
-      </rules>
       <profiles>
         <profile name="Cosechador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="63ee-7993-4ab3-7921">
           <characteristics>
@@ -317,15 +320,20 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cosecha, Mal viaje</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-
+
+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cosechador" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="4e7d-5e8a-38cd-9b0a">
+        <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4e7d-5e8a-38cd-9b0a">
           <characteristics>
-            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Cosecha" id="e875-527e-4bb5-e6b8" hidden="false" type="profile" targetId="bf9b-938f-35e8-4c5b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Desgarrador" hidden="false" id="54cc-a06d-d984-aec3" publicationId="6699-072c-136a-7d30" page="60">
       <costs>
@@ -345,19 +353,24 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">1</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Furia psicópata, Mal viaje</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Desgarrador" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="aa7d-e908-b395-5f1">
+        <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d0f5-49d3-264d-2f0b" page="60" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Furia psicópata" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2f4a-5a3d-a86e-a0b5">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="92d8-a345-aab1-dbee" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Hoz" hidden="false" id="9e5d-9f84-e4a8-81f4" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="9e5d-9f84-e4a8-81f4" type="selectionEntry" targetId="10e3-42f-6178-d1ac"/>
             <entryLink import="true" name="Filo medio" hidden="false" id="dbef-82b7-cae8-2017" type="selectionEntry" targetId="6398-5711-7901-62bb"/>
             <entryLink import="true" name="Filo pequeño" hidden="false" id="ad82-b376-2abb-a36c" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
           </entryLinks>
@@ -389,11 +402,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Furia psicópata" id="598f-c0d1-9fa4-2153" hidden="false" publicationId="6699-072c-136a-7d30" page="60">
-          <description>Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</description>
-        </rule>
-      </rules>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -419,9 +427,14 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Devorador, Mal viaje</characteristic>
           </characteristics>
         </profile>
-        <profile name="Glotón" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="298d-4807-669c-3e44">
+        <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="716f-b168-a13f-42da" page="61" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devorador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="25c4-9550-cbf1-b13d" page="61" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -456,11 +469,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Devorador" id="56c8-d1ae-d3c6-fa44" hidden="false" publicationId="6699-072c-136a-7d30" page="61">
-          <description>Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink targetId="af76-5143-157c-3a3f" id="56e6-4f17-fb64-8856" primary="false" name="Banda: Idos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="e802-505f-c1e5-a9d3" primary="true" name="Miembros de la banda"/>
@@ -485,7 +493,7 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal viaje</characteristic>
           </characteristics>
         </profile>
-        <profile name="Tio" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="f612-2b94-32ff-9afb">
+        <profile name="Tio" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="f612-2b94-32ff-9afb">
           <characteristics>
             <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">Tío pierde el impulso para utilizar Torbellino y no podrá utilizarlo durante esta Fase de activación.</characteristic>
           </characteristics>
@@ -547,24 +555,30 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cosechadora, Lucidez, Mascota, Presencia perturbadora</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cosechadora" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e99a-d5fb-18e7-253" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Madre puede cosechar al igual que un Cosechador. Hay que tener en cuenta que Madre contará como un Cosechador más para las restricciones de creación de la banda.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Presencia perturbadora" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="52ce-8e5d-ce5a-e6a3" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Es difícil explicar la sensación de ver a Madre. Es como contemplar a una diosa oscura caminando entre nosotros. Cualquier miniatura enemiga que desee Disparar, Asaltar o utilizar cualquier tipo de Acción que pueda dañar a Madre, o a cualquiera de sus miniaturas aliadas a 15 cm o menos de ella, deberá realizar una tirada de Dureza y en caso de fallarla perderá esa Acción.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mascota" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="18e4-b511-3b79-3bf1" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Madre siempre lleva a alguna de sus mascotas a la batalla. Antiguos enemigos a los que ha torturado física y mentalmente hasta convertirlos en perturbadas criaturas sumisas. La mascota no actúa de manera individual, sino que se mueve siempre con Madre. Hasta que la mascota sea Abatida, será esta la que Combata y reciba los impactos de disparos, utilizando sus Atributos. Está armada con garras y dientes.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lucidez" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1bc5-256d-35de-3cbc" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Cualquier Ido de su banda que consuma Ambrosía a 20 cm o menos de Madre no deberá tirar en la Tabla de efecto, consiguiendo siempre que funcione perfectamente. Sin embargo la propia Madre no podrá utilizar nunca Ambrosía.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Cosechadora" id="6de0-3672-ef1e-a7ea" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
-          <description>Madre puede cosechar al igual que un Cosechador. Hay que tener en cuenta que Madre contará como un Cosechador más para las restricciones de creación de la banda.</description>
-        </rule>
-        <rule name="Presencia perturbadora" id="623e-6abb-8849-8c12" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
-          <description>Es difícil explicar la sensación de ver a Madre. Es como contemplar a una diosa oscura caminando entre nosotros. Cualquier miniatura enemiga que desee Disparar, Asaltar o utilizar cualquier tipo de Acción que pueda dañar a Madre, o a cualquiera de sus miniaturas aliadas a 15 cm o menos de ella, deberá realizar una tirada de Dureza y en caso de fallarla perderá esa Acción.</description>
-        </rule>
-        <rule name="Lucidez" id="2f7a-bfa9-8f26-2dc9" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
-          <description>Cualquier Ido de su banda que consuma Ambrosía a 20 cm o menos de Madre no deberá tirar en la Tabla de efecto, consiguiendo siempre que funcione perfectamente. Sin embargo la propia Madre no podrá utilizar nunca Ambrosía.</description>
-        </rule>
-        <rule name="Mascota" id="ea03-9dd-68a5-a598" hidden="false" publicationId="6699-072c-136a-7d30" page="63">
-          <description>Madre siempre lleva a alguna de sus mascotas a la batalla. Antiguos enemigos a los que ha torturado física y mentalmente hasta convertirlos en perturbadas criaturas sumisas. La mascota no actúa de manera individual, sino que se mueve siempre con Madre. Hasta que la mascota sea Abatida, será esta la que Combata y reciba los impactos de disparos, utilizando sus Atributos. Está armada con garras y dientes.</description>
-        </rule>
-      </rules>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mascota" hidden="false" id="d122-2092-7418-15fc">
           <constraints>
@@ -600,6 +614,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Cosecha" id="3852-3eb4-4048-c8cd" hidden="false" type="profile" targetId="bf9b-938f-35e8-4c5b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Incluir reglas de Ambrosia" hidden="false" id="38f9-9051-16b8-7d27">
       <categoryLinks>
@@ -657,20 +674,22 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Todoterreno, Sin prisa, Ahora estoy aquí, Mal viaje</characteristic>
           </characteristics>
         </profile>
-        <profile name="Psycho killer" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="1138-820c-d59-494e">
+        <profile name="Sin prisa" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1138-820c-d59-494e" publicationId="7576-d113-2899-1c0e" page="2">
           <characteristics>
-            <characteristic name="Efectos" typeId="e6f4-7d31-54b3-4815">Una de las miniaturas enemigas se convertirá en la final girl (o final boy, aunque sea más extraño) de este Psycokiller. Ya sabéis, generalmente la chica que sobrevive a la película y cuenta la historia. El jugador rival elige una de sus miniaturas, que tendrá un +1 al Combate y la Precisión contra este Psycho-killer hasta el final de la partida. Si vuelve a salir el Mal viaje en la misma miniatura, el jugador rival puede decidir cambiar su final girl por otra (perdiendo la primera los bonificadores) o mantener la que tenía. Una misma miniatura puede ser la final girl de distintos Psycho-killers si se diera el caso y el jugador rival así lo quisiera.</characteristic>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Psyco-killer va a su ritmo y mueve 5 cm en lugar de los 10 cm habituales, excepto que pueda llegar a Asaltar, en cuyo caso podrá mover 10 cm en la última Acción del Asalto.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="751e-7a57-a659-f76c" publicationId="7576-d113-2899-1c0e" page="2">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una de las miniaturas enemigas se convertirá en la final girl (o final boy, aunque sea más extraño) de este Psycokiller. Ya sabéis, generalmente la chica que sobrevive a la película y cuenta la historia. El jugador rival elige una de sus miniaturas, que tendrá un +1 al Combate y la Precisión contra este Psycho-killer hasta el final de la partida. Si vuelve a salir el Mal viaje en la misma miniatura, el jugador rival puede decidir cambiar su final girl por otra (perdiendo la primera los bonificadores) o mantener la que tenía. Una misma miniatura puede ser la final girl de distintos Psycho-killers si se diera el caso y el jugador rival así lo quisiera.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ahora estoy aquí" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="6c4e-6743-6808-1b61" publicationId="7576-d113-2899-1c0e" page="2">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque un Psycho-killer parece que no avanza y se queda atrás, de repente suele aparecer justo al lado de su víctima. Una vez por Fase de activación, un Psycho-killer puede gastar una Acción para aparecer automáticamente a una distancia máxima de 30 cm en cualquier lugar de la mesa, a no más de 10 cm de una miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Ahora estoy aquí" id="12a8-4527-802-e693" hidden="false">
-          <description>Aunque un Psycho-killer parece que no avanza y se queda atrás, de repente suele aparecer justo al lado de su víctima. Una vez por Fase de activación, un Psycho-killer puede gastar una Acción para aparecer automáticamente a una distancia máxima de 30 cm en cualquier lugar de la mesa, a no más de 10 cm de una miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.</description>
-        </rule>
-        <rule name="Sin prisa" id="b9f7-f32-d9d9-6432" hidden="false">
-          <description>Un Psyco-killer va a su ritmo y mueve 5 cm en lugar de los 10 cm habituales, excepto que pueda llegar a Asaltar, en cuyo caso podrá mover 10 cm en la última Acción del Asalto.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Papel" id="ee61-75c0-fac6-e87a" hidden="false">
           <constraints>
@@ -715,14 +734,11 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <profiles>
-            <profile name="Papel" typeId="5737-7d8d-3ead-133c" typeName="Mal viaje" hidden="false" id="5341-4ff5-9952-a671"/>
-          </profiles>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armas" id="2fe0-f10b-2c37-88bf" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Filo pequeño" hidden="false" id="ebe0-31fd-d754-6a44" type="selectionEntry" targetId="d0e9-b698-5bbf-178c"/>
-            <entryLink import="true" name="Hoz" hidden="false" id="cd13-ac48-1a5f-38b1" type="selectionEntry" targetId="a6f0-7184-a73a-86d"/>
+            <entryLink import="true" name="Hoz" hidden="false" id="cd13-ac48-1a5f-38b1" type="selectionEntry" targetId="10e3-42f-6178-d1ac"/>
             <entryLink import="true" name="Filo Pesado" hidden="false" id="a26a-fe16-ef94-6576" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
             <entryLink import="true" name="Filo medio" hidden="false" id="e8e5-5f22-bc62-7ea2" type="selectionEntry" targetId="6398-5711-7901-62bb"/>
             <entryLink import="true" name="Motosierra" hidden="false" id="3592-92bc-5298-dba7" type="selectionEntry" targetId="d03b-2867-177f-b0db"/>
@@ -777,11 +793,22 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
   <catalogueLinks>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="e208-3db1-6833-bf05" targetId="82fd-14e9-7e70-88e2"/>
   </catalogueLinks>
-  <profileTypes>
-    <profileType name="Mal viaje" id="5737-7d8d-3ead-133c" hidden="false">
-      <characteristicTypes>
-        <characteristicType id="e6f4-7d31-54b3-4815" name="Efectos"/>
-      </characteristicTypes>
-    </profileType>
-  </profileTypes>
+  <sharedProfiles>
+    <profile name="Cosecha" hidden="false" id="bf9b-938f-35e8-4c5b" typeId="8d36-94cc-6c74-8857" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
+• 1 - Ninguna
+• 2-5 - 1
+• 6-9 - 2
+• 10 - 3</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Despojo" hidden="false" id="c521-edbd-42ef-34fb" type="selectionEntry" targetId="4007-565c-10ec-4a8a">
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="1580-3345-dd9e-4edd" primary="false" name="Personalidades de la banda"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>

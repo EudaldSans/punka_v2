@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="d54e-2410-ba49-c376" name="Mutardos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.snas@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
-    <profileType name="Poder psíquico" id="2fda-a429-1c7b-b02c" hidden="false">
+    <profileType name="Poder psíquico" id="2fda-a429-1c7b-b02c" hidden="false" sortIndex="9">
       <characteristicTypes>
         <characteristicType name="Distancia" id="f4dd-af6f-cf42-c54" hidden="false"/>
         <characteristicType name="Regla" id="742a-9af9-288f-176c" hidden="false"/>

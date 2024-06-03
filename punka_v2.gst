@@ -10,7 +10,7 @@
     <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="65f8-965a-8432-c96b" name="Miniatura">
+    <profileType id="65f8-965a-8432-c96b" name="Miniatura" sortIndex="1">
       <characteristicTypes>
         <characteristicType id="d05b-aff7-3ed3-1bb6" name="Acciones"/>
         <characteristicType id="6e27-b2ad-21d6-48f8" name="Combate"/>
@@ -22,7 +22,7 @@
         <characteristicType id="5bd3-a6df-6f70-6df7" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="6023-c682-4678-9510" name="Arma a distancia">
+    <profileType id="6023-c682-4678-9510" name="Arma a distancia" sortIndex="4">
       <characteristicTypes>
         <characteristicType id="8a4a-b45a-10a3-0c7a" name="Fuerza"/>
         <characteristicType id="5980-44ca-27d3-5a03" name="Penetración"/>
@@ -30,7 +30,7 @@
         <characteristicType id="2ecc-3ee3-2a21-1e6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo">
+    <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo" sortIndex="3">
       <characteristicTypes>
         <characteristicType id="7192-0144-704a-b3e6" name="Combate"/>
         <characteristicType id="fa8e-4d55-0d97-e892" name="Fuerza"/>
@@ -38,33 +38,33 @@
         <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
+    <profileType id="8d36-94cc-6c74-8857" name="Habilidad" sortIndex="2">
       <characteristicTypes>
         <characteristicType id="615a-5192-19d4-fe3c" name="Efecto"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
+    <profileType id="db67-24c5-11d4-e09e" name="Blindaje" sortIndex="5">
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
         <characteristicType id="d8ba-fec3-89d1-9634" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="7cc9-89fb-d9b6-2f1a" name="Equipo especial">
+    <profileType id="7cc9-89fb-d9b6-2f1a" name="Equipo especial" sortIndex="6">
       <characteristicTypes>
         <characteristicType id="c2c9-19be-2e75-813a" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="c668-1010-7bd9-fcfd" name="Regla especial">
+    <profileType id="c668-1010-7bd9-fcfd" name="Regla especial" sortIndex="7">
       <characteristicTypes>
         <characteristicType id="f7a5-6337-8cb7-0631" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Mutación" id="6863-db9a-9cab-eabc" hidden="false">
+    <profileType name="Mutación" id="6863-db9a-9cab-eabc" hidden="false" sortIndex="8">
       <characteristicTypes>
         <characteristicType id="fb87-d2c2-bb7e-f5ce" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Reglas de la banda" id="64d2-5b8c-4718-2aad" hidden="false">
+    <profileType name="Reglas de la banda" id="64d2-5b8c-4718-2aad" hidden="false" sortIndex="10">
       <characteristicTypes>
         <characteristicType id="b86f-94a8-ecaa-691b" name="Reglas"/>
       </characteristicTypes>
