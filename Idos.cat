@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="5f14-305f-99b6-1077" name="Idos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <sharedRules>
-    <rule name="Ambrosía" id="8c10-1203-2c2e-cbef" hidden="false" publicationId="6699-072c-136a-7d30" page="56">
-      <description>Las bandas de Idos combaten bajo el efecto de la droga conocida como Ambrosía. Toda banda comienza la partida con una dosis de Ambrosía por cada fracción de 100 puntos. Estas dosis les permitirán realizar proezas extraordinarias, pero a riesgo de tener un mal viaje. Los Cosechadores pueden obtener dosis extra de Ambrosía durante la partida (ver más adelante).
-Antes de que una miniatura comience su Fase de activación, puedes decidir darle UNA dosis de Ambrosía y elegir entre los siguientes efectos, que serán efectivos únicamente durante esa Fase de activación, siempre que la Ambrosía funcione perfectamente:
-• +10 cm al Movimiento durante un solo Asalto.
-• +2 a la Fuerza.
-• +2 a la Dureza.
-• +2 a la Técnica.
-• Obtendrá la Regla especial Todoterreno.
-• Vencerá la Furia psicópata (ignoras esa Regla especial durante esta Fase de activación)
-
-
-Deberás tirar 1d10 para comprobar si la droga funciona como quieres y consultar la siguiente tabla:
-• 1 o menos  - El colocón es muy, muy malo y la miniatura pasa a tener 1 Acción menos durante el resto de la partida. Si las Acciones llegan a 0 la miniatura se consideraría Abatida. Además la droga no tendrá ningún efecto.
-• 2-3              - La Ambrosía afecta a cada tipo de tropa siguiendo sus reglas de Mal viaje durante esa Fase de activación. En caso de estar en Combate, seguirán combatiendo.
-• 4-10            - La Ambrosía funciona perfectamente.
-
-
-Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada dosis de Ambrosía que haya consumido anteriormente.</description>
-    </rule>
-  </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Hoz" hidden="false" id="10e3-42f-6178-d1ac" publicationId="6699-072c-136a-7d30" page="64">
       <costs>
@@ -625,14 +604,38 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
     <selectionEntry type="upgrade" import="true" name="Incluir reglas de Ambrosia" hidden="false" id="38f9-9051-16b8-7d27">
       <categoryLinks>
         <categoryLink targetId="b19d-7b9-3085-7fd4" id="3d77-93a9-971c-7724" primary="false" name="Reglas de la banda"/>
-        <categoryLink targetId="9e25-aa8a-c426-a886" id="b152-acf2-a9cd-4ec0" primary="false" name="Configuración"/>
+        <categoryLink targetId="9e25-aa8a-c426-a886" id="b152-acf2-a9cd-4ec0" primary="true" name="Configuración"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5001-4f54-5b0a-b42b" includeChildSelections="false"/>
       </constraints>
-      <infoLinks>
-        <infoLink name="Ambrosía" id="353a-cf75-9e64-70ec" hidden="false" type="rule" targetId="8c10-1203-2c2e-cbef"/>
-      </infoLinks>
+      <profiles>
+        <profile name="Ambrosía" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="5bb8-d836-488f-3011">
+          <characteristics>
+            <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Las bandas de Idos combaten bajo el efecto de la droga conocida como Ambrosía. Toda banda comienza la partida con una dosis de Ambrosía por cada fracción de 100 puntos. Estas dosis les permitirán realizar proezas extraordinarias, pero a riesgo de tener un mal viaje. Los Cosechadores pueden obtener dosis extra de Ambrosía durante la partida (ver más adelante).
+Antes de que una miniatura comience su Fase de activación, puedes decidir darle UNA dosis de Ambrosía y elegir entre los siguientes efectos, que serán efectivos únicamente durante esa Fase de activación, siempre que la Ambrosía funcione perfectamente:
+• +10 cm al Movimiento durante un solo Asalto.
+• +2 a la Fuerza.
+• +2 a la Dureza.
+• +2 a la Técnica.
+• Obtendrá la Regla especial Todoterreno.
+• Vencerá la Furia psicópata (ignoras esa Regla especial durante esta Fase de activación)
+
+
+
+
+Deberás tirar 1d10 para comprobar si la droga funciona como quieres y consultar la siguiente tabla:
+• 1 o menos - El colocón es muy, muy malo y la miniatura pasa a tener 1 Acción menos durante el resto de la partida. Si las Acciones llegan a 0 la miniatura se consideraría Abatida. Además la droga no tendrá ningún efecto.
+• 2-3 - La Ambrosía afecta a cada tipo de tropa siguiendo sus reglas de Mal viaje durante esa Fase de activación. En caso de estar en Combate, seguirán combatiendo.
+• 4-10 - La Ambrosía funciona perfectamente.
+
+
+
+
+Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada dosis de Ambrosía que haya consumido anteriormente.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Psycho killer" hidden="false" id="f98f-149e-d16f-3411">
       <modifiers>
