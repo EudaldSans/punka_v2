@@ -116,7 +116,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Retraso" id="3b55-be8f-4d5e-8456" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="3b55-be8f-4d5e-8456" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blindaje" id="8b1-22bc-fbc9-d63f" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
@@ -275,7 +279,11 @@
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d10a-3aa1-6a34-e3cb" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Retraso" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="f06-f8e0-3a86-ae6b" hidden="false">
@@ -361,7 +369,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Retraso" id="9e56-125c-7665-7dac" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="9e56-125c-7665-7dac" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="dbea-c46e-cc1c-1ae9" hidden="false">
@@ -436,7 +448,27 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Por un puñado de balas, Imperdonable, Alégrame el dia, El Jinete Paliducho, Retraso (2)</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alégrame el día" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="38a1-8710-e005-c21d">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Cuando Clint se haya quedado sin balas puede intentar una Acción de Disparo de manera normal. Si el resultado en la tirada de Precisión es par, Clint aún tendrá una última bala en el tambor que podrá utilizar normalmente. En caso de ser impar, mala suerte, definitivamente no hay balas. Solo podrá realizar esto una vez durante la partida.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Por un puñado de balas" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e091-924-4dc3-abc8">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Siempre que falle un disparo, el honor de Clint quedará tan tocado que cambiará de bando al principio del siguiente Turno de juego. Esto podrá suceder de nuevo durante la partida.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Imperdonable" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e880-ac57-9ace-1ad9">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">A Clint no le gusta que Lucy tenga competencia. Si llevas a Clint, ninguna otra miniatura de la banda puede estar equipada con un arma con la Regla especial Arma de fuego.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="El Jinete Paliducho" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="96e8-100e-687e-5744">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las miniaturas que disparen a Clint, sufrirán un penalizador de -1 a la Precisión.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -457,20 +489,6 @@
         </entryLink>
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="af23-1ddc-1825-5ffe" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
-      <rules>
-        <rule name="Por un puñado de balas" id="773-4055-f252-e9ea" hidden="false">
-          <description>Siempre que falle un disparo, el honor de Clint quedará tan tocado que cambiará de bando al principio del siguiente Turno de juego. Esto podrá suceder de nuevo durante la partida.</description>
-        </rule>
-        <rule name="Imperdonable" id="844b-9878-78bf-3d02" hidden="false">
-          <description>A Clint no le gusta que Lucy tenga competencia. Si llevas a Clint, ninguna otra miniatura de la banda puede estar equipada con un arma con la Regla especial Arma de fuego.</description>
-        </rule>
-        <rule name="Alégrame el día" id="af49-43c1-2fa6-ca82" hidden="false">
-          <description>Cuando Clint se haya quedado sin balas puede intentar una Acción de Disparo de manera normal. Si el resultado en la tirada de Precisión es par, Clint aún tendrá una última bala en el tambor que podrá utilizar normalmente. En caso de ser impar, mala suerte, definitivamente no hay balas. Solo podrá realizar esto una vez durante la partida.</description>
-        </rule>
-        <rule name="El Jinete Paliducho" id="c2e0-a5de-6e0a-4d07" hidden="false">
-          <description>Las miniaturas que disparen a Clint, sufrirán un penalizador de -1 a la Precisión.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac9-5714-79c8-f794"/>
       </constraints>
@@ -503,6 +521,13 @@
           <comment>No tiene categoria &quot;arma de fuego&quot; para que funcione su límite</comment>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Retraso" id="b52a-7749-6cc7-893e" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Homoeroticus" hidden="false" id="297e-8b5e-d845-999a" publicationId="6699-072c-136a-7d30" page="95">
       <costs>
@@ -524,27 +549,32 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3), Jefe, Nos mola el cuero, Discursitos</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Discursitos" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="53f-323b-9778-fe59">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Lord Homoeroticus tiene una cierta manía a coger un altavoz y soltar discursos bastante insufribles antes de entablar combate. Posiblemente sea que le guste su propia voz, o crea que así es más molón, pero es un auténtico plasta. Los discursos son variados, desde su decepción por el rival, hasta sus habilidades como tapicero. El caso es que a veces hacen mella en el enemigo, a veces todo lo contrario. Justo antes de comenzar el primer Turno de juego debes hacer una tirada en la siguiente tabla para averiguar el efecto que tienen.
+
+
+• 1 - El enemigo no piensa aguantar a ese payaso ni un momento más. Todas las miniaturas de la banda rival tienen la Regla especial Bersérker.
+• 2-4 - Sus hombres se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura en su Fase de activación.
+• 5-6 - Ambos bandos prefieren matarse que tener que aguantar más esto. En caso de empate en las tiradas enfrentadas de Fuerza contra Dureza, la Fuerza tendrá siempre un bonificador de +1.
+• 7-9 - Los enemigos se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura con la Fase de activación.
+• 10 - Mira tú que hoy ha estado fino e inspirador. Todas las miniaturas de su banda tienen la Regla especial Bersérker.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Jefe" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a228-cd24-34d2-10f7">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Lord Homoeroticus es un Jefe Pandillero, por lo que no podrás tener otro en tu banda</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nos mola el cuero" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5426-d808-8502-9d97">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La banda de la Ostra Azul tiene una obsesión por el cuero que salta a la vista, siendo sin lugar a dudas uno de sus rasgos más distintivos. Los Piltrafas, Machacas y los Curtidos de la banda llevan cuero endurecido por defecto en lugar de ropas resistentes, sin coste adicional.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Discursitos" id="8a45-2b01-be6b-fae0" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
-          <description>Lord Homoeroticus tiene una cierta manía a coger un altavoz y soltar discursos bastante insufribles antes de entablar combate. Posiblemente sea que le guste su propia voz, o crea que así es más molón, pero es un auténtico plasta. Los discursos son variados, desde su decepción por el rival, hasta sus habilidades como tapicero. El caso es que a veces hacen mella en el enemigo, a veces todo lo contrario. Justo antes de comenzar el primer Turno de juego debes hacer una tirada en la siguiente tabla para averiguar el efecto que tienen.
-
-• 1     - El enemigo no piensa aguantar a ese payaso ni un momento más. Todas las miniaturas de la banda rival tienen la Regla especial Bersérker.
-• 2-4  - Sus hombres se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura en su Fase de activación.
-• 5-6  - Ambos bandos prefieren matarse que tener que aguantar más esto. En caso de empate en las tiradas enfrentadas de Fuerza contra Dureza, la Fuerza tendrá siempre un bonificador de +1.
-• 7-9  - Los enemigos se preguntan por qué tienen que aguantar estas cosas. Perderán todas las tiradas enfrentadas empatadas que normalmente ganaría la miniatura con la Fase de activación.
-• 10   - Mira tú que hoy ha estado fino e inspirador. Todas las miniaturas de su banda tienen la Regla especial Bersérker.</description>
-        </rule>
-        <rule name="Nos mola el cuero" id="86f7-8612-75fc-f59" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
-          <description>La banda de la Ostra Azul tiene una obsesión por el cuero que salta a la vista, siendo sin lugar a dudas uno de sus rasgos más distintivos. Los Piltrafas, Machacas y los Curtidos de la banda llevan cuero endurecido por defecto en lugar de ropas resistentes, sin coste adicional.</description>
-        </rule>
-        <rule name="Jefe" id="7775-421-1183-d891" hidden="false" publicationId="6699-072c-136a-7d30" page="95">
-          <description>Lord Homoeroticus es un Jefe Pandillero, por lo que no podrás tener otro en tu banda</description>
-        </rule>
-      </rules>
       <entryLinks>
         <entryLink import="true" name="Cuero endurecido" hidden="false" id="861f-197f-1f54-8578" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
           <modifiers>
@@ -587,6 +617,13 @@
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Retraso" id="45f9-b6b0-eb9e-90c6" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>
