@@ -21,6 +21,13 @@
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Ninja negro (Piltrafa)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -41,6 +48,11 @@
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -65,9 +77,24 @@
                 <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="5621-bccf-6250-61e5" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
                 <entryLink import="true" name="Maza Ligera" hidden="false" id="73ff-499d-fe2b-9ef2" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="5cf4-cdef-aa7f-7c71" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="1a06-e70-fdd0-24aa" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="1a06-e70-fdd0-24aa" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Arco" hidden="false" id="39a6-c21-9bb5-5d70" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="f438-fe2b-ba27-56fa">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -91,6 +118,11 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="Ninja negro (Piltrafa)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Machaca" hidden="false" id="3eca-a5cc-961-8004">
@@ -113,6 +145,13 @@
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (1)</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Ninja rojo (Machaca)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -121,8 +160,64 @@
             <modifier type="append" value="(1)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Brinca como un hámster" id="274f-e083-6598-63bb" hidden="false" type="infoGroup" targetId="652-c806-e08-aea9"/>
       </infoLinks>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="2708-cfec-f288-1ac9" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="26e-7732-b0bd-b967" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c92-17d5-ee-8e46" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa57-d587-cb90-fd1c" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="1aaa-11c8-1a62-ef26" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="a235-97a5-2b48-5dfe" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="79ee-8f75-6330-5c2e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="6e26-8c34-fff5-63e7" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Arco" hidden="false" id="1800-24ba-6060-88ea" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
+                <entryLink import="true" name="Maza" hidden="false" id="2e90-73d2-8b99-ebfd" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="f63d-dbf5-d8f7-5813" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="ea86-d08c-53a9-3fda" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Escopeta" hidden="false" id="41b7-205d-9913-8c34" type="selectionEntry" targetId="265c-2979-056d-1a06">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="8c92-17d5-ee-8e46">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="3ec4-24de-cafc-19dc" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Blindaje" id="8b1-22bc-fbc9-d63f" hidden="false" defaultSelectionEntryId="e5cb-fca6-f5c4-bc25">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ae0-8051-3001-1913" includeChildSelections="false"/>
@@ -142,6 +237,11 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -153,34 +253,17 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armas" id="2708-cfec-f288-1ac9" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Armas" id="26e-7732-b0bd-b967" hidden="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c92-17d5-ee-8e46" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa57-d587-cb90-fd1c" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="1aaa-11c8-1a62-ef26" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
-                <entryLink import="true" name="Maza Ligera" hidden="false" id="a235-97a5-2b48-5dfe" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-                <entryLink import="true" name="Filo Pequeño" hidden="false" id="79ee-8f75-6330-5c2e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-                <entryLink import="true" name="Pistola" hidden="false" id="6e26-8c34-fff5-63e7" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
-                <entryLink import="true" name="Arco" hidden="false" id="1800-24ba-6060-88ea" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
-                <entryLink import="true" name="Maza" hidden="false" id="2e90-73d2-8b99-ebfd" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-                <entryLink import="true" name="Filo Medio" hidden="false" id="f63d-dbf5-d8f7-5813" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
-                <entryLink import="true" name="Ballesta" hidden="false" id="ea86-d08c-53a9-3fda" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
-                <entryLink import="true" name="Escopeta" hidden="false" id="41b7-205d-9913-8c34" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Balas" hidden="false" id="3ec4-24de-cafc-19dc" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4cc-7962-594b-b38e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Ninja rojo (Machaca)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bruto" hidden="false" id="3325-84b3-9584-e201">
       <categoryLinks>
@@ -252,6 +335,13 @@
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Curtido" hidden="false" id="fc29-4f2e-1c68-867c">
       <costs>
@@ -273,6 +363,13 @@
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Ninja morado (Curtido)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -284,6 +381,8 @@
             <modifier type="append" value="(2)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Brinca como un hámster" id="878c-32e1-92c8-5b35" hidden="false" type="infoGroup" targetId="652-c806-e08-aea9"/>
+        <infoLink name="Maestro de las artes marciales" id="552e-1cd9-58a5-cfd8" hidden="false" type="profile" targetId="a03a-943-bf5f-f64a"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="f06-f8e0-3a86-ae6b" hidden="false">
@@ -294,14 +393,61 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ed57-1807-136-6e4b" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Pistola" hidden="false" id="ae85-8237-82de-94d9" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="ae85-8237-82de-94d9" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Maza" hidden="false" id="8bd8-5ad9-4098-92d4" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
                 <entryLink import="true" name="Filo Medio" hidden="false" id="f590-91f8-9992-ff38" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
-                <entryLink import="true" name="Ballesta" hidden="false" id="611e-a9ff-4997-d049" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
-                <entryLink import="true" name="Escopeta" hidden="false" id="e11a-2a53-f78e-48e5" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
-                <entryLink import="true" name="Rifle" hidden="false" id="31e1-1f58-220f-d915" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
-                <entryLink import="true" name="Rifle automàtico" hidden="false" id="d2b-36a0-4fb1-b3b3" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="611e-a9ff-4997-d049" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Escopeta" hidden="false" id="e11a-2a53-f78e-48e5" type="selectionEntry" targetId="265c-2979-056d-1a06">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Rifle" hidden="false" id="31e1-1f58-220f-d915" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="d2b-36a0-4fb1-b3b3" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="c246-aecd-16bb-4caf">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -327,11 +473,21 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Armadura metálica" hidden="false" id="8cb8-74cf-b24f-da8f" type="selectionEntry" targetId="d761-5553-4adf-c294">
               <modifiers>
                 <modifier type="set" value="15" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -344,6 +500,13 @@
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="Ninja morado (Curtido)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Jefe" hidden="false" id="8b63-c265-21db-352f">
       <costs>
@@ -366,6 +529,13 @@
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3)</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Ninja blanco (Jefe)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -374,6 +544,9 @@
             <modifier type="append" value="(3)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Brinca como un hámster" id="d4c7-4b26-2f99-2331" hidden="false" type="infoGroup" targetId="652-c806-e08-aea9"/>
+        <infoLink name="Maestro de las artes marciales" id="7948-8034-e9cd-5433" hidden="false" type="profile" targetId="a03a-943-bf5f-f64a"/>
+        <infoLink name="Ahora me ves…" id="53be-2f3e-dd04-130a" hidden="false" type="profile" targetId="4db0-9dd4-cdd7-8670"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="dbea-c46e-cc1c-1ae9" hidden="false">
@@ -384,14 +557,61 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4082-74b2-3771-6e8b" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Pistola" hidden="false" id="93ae-59ac-2935-69f0" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="93ae-59ac-2935-69f0" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Maza" hidden="false" id="1b12-7a20-a019-e792" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
                 <entryLink import="true" name="Filo Medio" hidden="false" id="9ca2-bc64-9bc1-371f" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
-                <entryLink import="true" name="Ballesta" hidden="false" id="8ab-f068-e155-739f" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
-                <entryLink import="true" name="Escopeta" hidden="false" id="2421-5b3b-5582-e3b7" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
-                <entryLink import="true" name="Rifle" hidden="false" id="5831-389-8c37-2da6" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
-                <entryLink import="true" name="Rifle automàtico" hidden="false" id="58d5-bf94-9ae1-4432" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1"/>
+                <entryLink import="true" name="Ballesta" hidden="false" id="8ab-f068-e155-739f" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Escopeta" hidden="false" id="2421-5b3b-5582-e3b7" type="selectionEntry" targetId="265c-2979-056d-1a06">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Rifle" hidden="false" id="5831-389-8c37-2da6" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Rifle automàtico" hidden="false" id="58d5-bf94-9ae1-4432" type="selectionEntry" targetId="88ef-a9c5-7b87-03f1">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="c938-4097-8fe3-b0cf">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -407,16 +627,41 @@
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="ea63-67bc-3ae3-ea2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Armadura metálica" hidden="false" id="399e-34fd-476c-b364" type="selectionEntry" targetId="d761-5553-4adf-c294">
               <modifiers>
                 <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Chaleco antibalas" hidden="false" id="c307-f25f-5f8f-7313" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
               <modifiers>
                 <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="f376-ec0-fe38-5913" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -428,6 +673,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8eb0-60f8-3b59-c10a" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="Ninja blanco (Jefe)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Clint Tirofijo" hidden="false" id="57a1-482e-1e5f-62a4">
       <costs>
@@ -496,6 +748,11 @@
         <modifier type="set" value="0" field="7ac9-5714-79c8-f794">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9e40-76e9-2e11-5819" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -624,6 +881,13 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>
@@ -643,11 +907,40 @@
       <characteristics>
         <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si este Ninja Abate a un enemigo en cuerpo a cuerpo durante su Fase de activación, y no está trabado con más rivales, puede Moverse en ese momento 5 cm de manera gratuita.</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile name="Ahora me ves…" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4db0-9dd4-cdd7-8670">
       <characteristics>
         <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una vez por partida, en el momento en que una miniatura enemiga vaya a Asaltar o Disparar al Ninja blanco, este lanzará un petardo de humo y el jugador podrá colocarlo a una distancia máxima de 10 cm. La miniatura enemiga podrá decidir en ese momento realizar cualquier otra Acción (o la misma si el Ninja blanco sigue estando a su alcance).</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="Brinca como un hámster" id="652-c806-e08-aea9" hidden="false">
+      <infoLinks>
+        <infoLink name="Brinca como un hámster" id="937b-bbc3-3c2e-41b0" hidden="false" type="profile" targetId="5a3-5d7f-32d0-1164"/>
+        <infoLink name="Todoterreno" id="b1ca-6013-661e-ae10" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>

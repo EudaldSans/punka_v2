@@ -946,6 +946,9 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="23f1-68cd-50c-348b" id="f26e-f462-e572-2713" primary="false" name="Subfacción: Flipaos de los ninjas"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fraus" hidden="false" id="3510-86a0-4710-6f3a" sortIndex="11">
               <modifiers>
@@ -958,10 +961,13 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
               <profiles>
                 <profile name="Hasta el coño me tenéis" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="9ae8-6a6c-6475-96a">
                   <characteristics>
-                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Por cada miniatura de las Fraus que resulte Abatida, la banda conseguirá un marcador. Cuando una miniatura Frau comience su Fase de activación y antes de actuar podrá gastar un máximo de tres marcadores, sumando +5 cm a su movimiento por cada uno cuando realice un Asalto. </characteristic>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Por cada miniatura de las Fraus que resulte Abatida, la banda conseguirá un marcador. Cuando una miniatura Frau comience su Fase de activación y antes de actuar podrá gastar un máximo de tres marcadores, sumando +5 cm a su movimiento por cada uno cuando realice un Asalto.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c2ed-3326-aa9d-ad0a" id="c43b-73b3-d6c8-98ef" primary="false" name="Subfacción: Fraus"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="La Ostra Azul" hidden="false" id="7f2b-aa83-f4bf-7f28" sortIndex="9">
               <modifiers>
@@ -985,6 +991,9 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink targetId="82af-9947-6c81-cb4b" id="630-5f9b-eeca-1ae" primary="false" name="Subfacción: La Ostra Azul"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
