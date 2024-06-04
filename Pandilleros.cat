@@ -1241,6 +1241,11 @@
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Montada" id="ef8d-7bb5-6b78-62ab" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Raudo" id="54c-e514-4f06-6b7f" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Salto" id="1b49-48f3-4f7d-6193" hidden="false" type="rule" targetId="23b9-d6a1-e1db-09c4"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>
