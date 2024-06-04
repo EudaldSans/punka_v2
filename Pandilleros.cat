@@ -106,24 +106,29 @@
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="66a6-b4f4-c644-c51" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1327-eccd-baa1-3255" includeChildSelections="false"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1327-eccd-baa1-3255" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="1327-eccd-baa1-3255">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3325-84b3-9584-e201" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8b63-c265-21db-352f" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="set" value="Ninja negro (Piltrafa)" field="name">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="e88b-8dc8-299b-a851" field="category"/>
+            <modifier type="set" value="Ninja negro (Piltrafa)" field="name"/>
+            <modifier type="remove" value="361a-484-9299-9279" field="category"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="361a-484-9299-9279" field="category"/>
+            <modifier type="remove" value="e88b-8dc8-299b-a851" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Machaca" hidden="false" id="3eca-a5cc-961-8004">
       <costs>
@@ -257,13 +262,17 @@
       <entryLinks>
         <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4cc-7962-594b-b38e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="Ninja rojo (Machaca)" field="name">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="d1d2-4e4f-e709-2a7e" field="category"/>
+            <modifier type="set" value="Ninja rojo (Machaca)" field="name"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bruto" hidden="false" id="3325-84b3-9584-e201">
       <categoryLinks>
@@ -500,13 +509,17 @@
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="Ninja morado (Curtido)" field="name">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c837-9256-8079-d26f" field="category"/>
+            <modifier type="set" value="Ninja morado (Curtido)" field="name"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Jefe" hidden="false" id="8b63-c265-21db-352f">
       <costs>
@@ -673,13 +686,17 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8eb0-60f8-3b59-c10a" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="Ninja blanco (Jefe)" field="name">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="5d4a-f830-edf5-17cf" field="category"/>
+            <modifier type="set" value="Ninja blanco (Jefe)" field="name"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Clint Tirofijo" hidden="false" id="57a1-482e-1e5f-62a4">
       <costs>
@@ -895,6 +912,59 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f4c-9dc1-bafe-58fa" includeChildSelections="false"/>
       </constraints>
+    </categoryEntry>
+    <categoryEntry name="Piltrafa" id="361a-484-9299-9279" hidden="false">
+      <modifiers>
+        <modifier type="set" value="1" field="c5e0-ecc0-9e66-39ef">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3325-84b3-9584-e201" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8b63-c265-21db-352f" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c5e0-ecc0-9e66-39ef"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Ninja negro" id="e88b-8dc8-299b-a851" hidden="false"/>
+    <categoryEntry name="Ninja rojo" id="d1d2-4e4f-e709-2a7e" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="1a56-eba6-9d75-97e5" includeChildSelections="true" negative="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="1a56-eba6-9d75-97e5">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="e88b-8dc8-299b-a851" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Ninja morado" id="c837-9256-8079-d26f" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4703-76d9-1408-43a1" includeChildSelections="true" negative="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="4703-76d9-1408-43a1">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="d1d2-4e4f-e709-2a7e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Ninja blanco" id="5d4a-f830-edf5-17cf" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a86f-baf4-de0a-c81c" includeChildSelections="true" negative="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="a86f-baf4-de0a-c81c">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="c837-9256-8079-d26f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </categoryEntry>
   </categoryEntries>
   <sharedProfiles>
