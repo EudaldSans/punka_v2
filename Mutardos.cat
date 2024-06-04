@@ -26,31 +26,10 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer, Cuerpo escombro, Grupal</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Cuerpo escombro" id="8561-3c8b-9faa-347d" hidden="false">
-          <description>Los pochos están tan hechos polvo que no dejan marcador al ser Abatidos, es como si no hubieran existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo.</description>
-        </rule>
-        <rule name="Grupal" id="db73-70df-99a3-680c" hidden="false">
-          <description>Los Pochos tienen cierta mentalidad colectiva que les hace ir en grupo siempre que pueden. Los Pochos deben ir unidos hasta formar un grupo mínimo de 2 y máximo de 5. Por encima de este número formarán otro grupo, y así sucesivamente.
-Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
-
-Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todos los Pochos de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si un Pocho del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de Pochos solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 Pochos su Atributo de Combate será 3. Sin embargo, solo se Abatirá un Pocho por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="a1c6-2692-821c-c89a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86a-1d51-ed28-bef1" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
@@ -182,6 +161,20 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e55-3cfc-7a15-7bf0" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a140-22e3-f5e5-aef" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="4d70-52fa-52f5-f952" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras y dientes" hidden="false" id="a1c6-2692-821c-c89a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86a-1d51-ed28-bef1" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </entryLink>
       </entryLinks>
       <categoryLinks>
@@ -199,6 +192,24 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
           </repeats>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Cuerpo escombro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1c33-98e5-77f0-9f5">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los pochos están tan hechos polvo que no dejan marcador al ser Abatidos, es como si no hubieran existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grupal" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="74a0-6299-acbc-8f3b">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
+
+
+Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todos los Pochos de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si un Pocho del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de Pochos solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 Pochos su Atributo de Combate será 3. Sin embargo, solo se Abatirá un Pocho por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mónguer" id="e4ea-a92-1aae-a72d" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mutante" hidden="false" id="5f32-627d-f830-989c">
       <costs>
@@ -286,15 +297,15 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia, Raudo, Perrete tontico</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia, Raudo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Perrete tontico" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="af92-e0a-9225-f09e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las mentes de los Perromorfos son demasiado primitivas. Un Cabezón no podrá usar ningún Poder psíquico sobre un Perromorfo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Perrete tontico" id="a38a-acdd-41c4-773e" hidden="false">
-          <description>Las mentes de los Perromorfos son demasiado primitivas. Un Cabezón no podrá usar ningún Poder psíquico sobre un Perromorfo.</description>
-        </rule>
-      </rules>
       <entryLinks>
         <entryLink import="true" name="Garras y dientes" hidden="false" id="1968-990-39b5-829a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
           <constraints>
@@ -457,42 +468,54 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Ignífugo, Cuerpo ardiente, Charco de magma, ¡Que se me quema!</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Ignífugo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="¡Que se me quema!" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="866b-6de0-e9af-fec2">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque a pesar de su aspecto pudiera parecer lo contrario, Magmador es un mutardo bastante listo. Sin embargo le es muy complicado interactuar con las cosas... porque se le queman. En los escenarios puede controlar objetivos, pero no interactuar con ellos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Charco de magma" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b21b-997-7edc-5be8">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una vez por partida, Magmador es capaz de expulsar magma de su cuerpo hasta convertir el terreno en un infierno de lava. Si gasta 2 Acciones seguidas (no necesariamente en la misma Fase de activación) Magmador podrá crear un charco de lava de 10x10 cm, que se considerará un zona de Terreno impasable. Debe crearse con un borde tocando su peana, en un espacio a ras de suelo y despejado de cualquier elemento, incluidos objetivos o miniaturas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cuerpo ardiente" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="70d9-bc97-c97d-6de9">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si Magmador es Impactado por un arma en cuerpo a cuerpo, deberá tirarse 1d10. Con un resultado de 6+ el arma habrá quedado destruida, aunque se seguirá produciendo el Impacto normalmente.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ignífugo" id="9af6-39b8-7baf-e54d" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
       </infoLinks>
-      <rules>
-        <rule name="Cuerpo ardiente" id="d534-4f19-7337-7162" hidden="false">
-          <description>Si Magmador es Impactado por un arma en cuerpo a cuerpo, deberá tirarse 1d10. Con un resultado de 6+ el arma habrá quedado destruida, aunque se seguirá produciendo el Impacto normalmente.</description>
-        </rule>
-        <rule name="Charco de magma" id="3431-c4bb-4464-4463" hidden="false">
-          <description>Una vez por partida, Magmador es capaz de expulsar magma de su cuerpo hasta convertir el terreno en un infierno de lava. Si gasta 2 Acciones seguidas (no necesariamente en la misma Fase de activación) Magmador podrá crear un charco de lava de 10x10 cm, que se considerará un zona de Terreno impasable. Debe crearse con un borde tocando su peana, en un espacio a ras de suelo y despejado de cualquier elemento, incluidos objetivos o miniaturas.</description>
-        </rule>
-        <rule name="¡Que se me quema!" id="a638-57c7-3c66-7b71" hidden="false">
-          <description>Aunque a pesar de su aspecto pudiera parecer lo contrario, Magmador es un mutardo bastante listo. Sin embargo le es muy complicado interactuar con las cosas... porque se le queman. En los escenarios puede controlar objetivos, pero no interactuar con ellos.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="a60d-4aa5-1c41-65af" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c9-d240-1b9b-642a" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piel dura 5" hidden="false" id="1b04-9011-efeb-81cb" type="selectionEntry" targetId="423e-a45a-fef-29a3">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-97d5-708a-e77" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c500-f7a0-ae39-d47d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="a60d-4aa5-1c41-65af" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c9-d240-1b9b-642a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="be75-56a6-f3f2-cc12" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Piel dura 5" hidden="false" id="1b04-9011-efeb-81cb" type="selectionEntry" targetId="423e-a45a-fef-29a3">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-97d5-708a-e77" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kim y Fostiador" hidden="false" id="8f2e-323-f3e3-a300">
       <costs>
@@ -513,82 +536,30 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6 (10)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Zasca, Mente ocupada, Odio puro</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mente ocupada" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8d68-655d-2007-2bbf">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El esfuerzo continuo de Kim controlando a Fostiador, hace que la mente de la Bestia del pozo esté demasiado ocupada como para que ningún poder extra le afecte. No podrá lanzarse ningún Poder psíquico sobre Kim y Fostiador.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zasca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="76bc-517e-b518-5c04">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Se trata de una de las armas defensivas del asentamiento donde Kim y Fostiador estuvieron como esclavos, que la bestia arrancó y se llevó. Fostiador usa como proyectil lo primero que arranca por ahí, pero una vez lanzado, debe encontrar algo que usar como munición para recargarlo. Antes de desplegar se colocarán de manera aleatoria 3 marcadores (de la misma manera que se hace con los objetivos). Estos representan algún poste, farola o similar que hay en el suelo. Si está en contactocon uno, Fostiador puede usar 1 Acción para hacerse con él y pasará a tener un nuevo proyectil.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Odio puro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7cee-158b-f218-e649">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El tiempo pasado esclavizada, las vejaciones sufridas... todo eso está dentro de Kim siempre a punto de explotar. Si resulta Abatida, todo ese odio estallará en una onda de energía psíquica. Tira 1d10 para ves las consecuencias:
+
+
+• 1-3 - Todas las miniaturas de la mesa sufren un golpe psíquico tan potente que les hace perder 1 punto de Dureza.
+• 4-7 - Su gente se hace partícipe de su odio. Se considerará como si se hubiera lanzado sobre todas las miniaturas de su banda el Poder psíquico Potenciación al Combate, siguiendo sus mismas reglas y restricciones.
+• 8-10 - La confusión invade todo. Todas las miniaturas de la mesa tendrán 1 Acción menos en su siguiente Fase de activación.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zasca" hidden="false" id="1fae-1487-535c-8e5d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ad-cd83-6a0f-7da3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bba-1f08-fd5a-d3b5" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Zasca" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="50c0-6a85-9b09-8a73">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">9</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
-                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Armatoste, Mamotreto</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Armatoste" id="3eef-7b72-1c2d-291d" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
-            <infoLink name="Mamotreto" id="38f3-7812-2025-ef6d" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Cachas" hidden="false" id="1ed5-2076-f665-49b5" type="selectionEntry" targetId="e8de-ce-8096-f027">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-927d-1369-ddc4" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piel dura 3" hidden="false" id="2fa4-b9db-dc0c-b29e" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee48-77b4-cc2c-dbd0" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Resistente" hidden="false" id="2d53-53d5-28df-5ee1" type="selectionEntry" targetId="275c-4612-4b78-8b82">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2956-926e-4108-2531" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piernas seguras" hidden="false" id="da22-9e4d-f677-1148" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3b-77f1-b5ca-6c69" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <rules>
-        <rule name="Zasca" id="3dd5-9277-c2b5-8f58" hidden="false">
-          <description>Se trata de una de las armas defensivas del asentamiento donde Kim y Fostiador estuvieron como esclavos, que la bestia arrancó y se llevó. Fostiador usa como proyectil lo primero que arranca por ahí, pero una vez lanzado, debe encontrar algo que usar como munición para recargarlo. Antes de desplegar se colocarán de manera aleatoria 3 marcadores (de la misma manera que se hace con los objetivos). Estos representan algún poste, farola o similar que hay en el suelo. Si está en contactocon uno, Fostiador puede usar 1 Acción para hacerse con él y pasará a tener un nuevo proyectil.</description>
-        </rule>
-        <rule name="Mente ocupada" id="c788-3e27-31df-fc64" hidden="false">
-          <description>El esfuerzo continuo de Kim controlando a Fostiador, hace que la mente de la Bestia del pozo esté demasiado ocupada como para que ningún poder extra le afecte. No podrá lanzarse ningún Poder psíquico sobre Kim y Fostiador.</description>
-        </rule>
-        <rule name="Odio puro" id="a837-8fea-6f39-bfb1" hidden="false">
-          <description>El tiempo pasado esclavizada, las vejaciones sufridas... todo eso está dentro de Kim siempre a punto de explotar. Si resulta Abatida, todo ese odio estallará en una onda de energía psíquica. Tira 1d10 para ves las consecuencias:
-
-
-• 1-3   - Todas las miniaturas de la mesa sufren un golpe psíquico tan potente que les hace perder 1 punto de Dureza.
-• 4-7   - Su gente se hace partícipe de su odio. Se considerará como si se hubiera lanzado sobre todas las miniaturas de su banda el Poder psíquico Potenciación al Combate, siguiendo sus mismas reglas y restricciones.
-• 8-10 - La confusión invade todo. Todas las miniaturas de la mesa tendrán 1 Acción menos en su siguiente Fase de activación.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Poderes psíquicos" id="e182-ba3a-c273-4167" hidden="false">
           <entryLinks>
@@ -598,6 +569,66 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <entryLink import="true" name="Absorción vital" hidden="false" id="d5fe-7f44-3431-b2c0" type="selectionEntry" targetId="c086-ba61-cd1c-d4ad"/>
             <entryLink import="true" name="Confusión" hidden="false" id="df07-fa42-4b94-6686" type="selectionEntry" targetId="f88e-122e-bf-43db"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="2c99-f26e-276-7dd9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Resistente" hidden="false" id="2d53-53d5-28df-5ee1" type="selectionEntry" targetId="275c-4612-4b78-8b82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2956-926e-4108-2531" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="da22-9e4d-f677-1148" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3b-77f1-b5ca-6c69" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Piel dura 3" hidden="false" id="2fa4-b9db-dc0c-b29e" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee48-77b4-cc2c-dbd0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cachas" hidden="false" id="1ed5-2076-f665-49b5" type="selectionEntry" targetId="e8de-ce-8096-f027">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-927d-1369-ddc4" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="580b-703e-a72e-681f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Zasca" hidden="false" id="1fae-1487-535c-8e5d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ad-cd83-6a0f-7da3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bba-1f08-fd5a-d3b5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Zasca" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="50c0-6a85-9b09-8a73">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">9</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Armatoste, Mamotreto</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Armatoste" id="3eef-7b72-1c2d-291d" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+                <infoLink name="Mamotreto" id="38f3-7812-2025-ef6d" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
