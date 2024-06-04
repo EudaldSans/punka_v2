@@ -40,20 +40,30 @@
             <entryLink import="true" name="Ropas resistentes" hidden="false" id="77d3-a222-3cf-51eb" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="41dc-5a46-8cd4-a0c2" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </entryLink>
@@ -252,15 +262,25 @@
             <entryLink import="true" name="Ropas resistentes" hidden="false" id="e5cb-fca6-f5c4-bc25" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="ef0e-496a-4442-a14b" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -370,9 +390,14 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -493,20 +518,30 @@
             <entryLink import="true" name="Ropas resistentes" hidden="false" id="dffc-d41d-d6d8-a526" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Cuero endurecido" hidden="false" id="1629-c1ee-88d4-fcd3" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
               <modifiers>
                 <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="297e-8b5e-d845-999a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </entryLink>
@@ -516,6 +551,11 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -688,6 +728,11 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Chaleco antibalas" hidden="false" id="c307-f25f-5f8f-7313" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
@@ -698,6 +743,11 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Ropas resistentes" hidden="false" id="f376-ec0-fe38-5913" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
@@ -706,6 +756,11 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -732,6 +787,13 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="82af-9947-6c81-cb4b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Clint Tirofijo" hidden="false" id="57a1-482e-1e5f-62a4">
       <costs>
@@ -1247,6 +1309,72 @@
         <infoLink name="Salto" id="1b49-48f3-4f7d-6193" hidden="false" type="rule" targetId="23b9-d6a1-e1db-09c4"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mamporrero" hidden="false" id="dd3a-2b33-95a1-86eb">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="1e16-1ab9-8726-bee0" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="eb3f-db84-ec08-f4e9" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="82af-9947-6c81-cb4b" id="d480-2e1f-c4fd-ce8" primary="false" name="Subfacción: La Ostra Azul"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mamporrero" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="37c9-11af-4292-54c9">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dame en el culete" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="fce8-d7b3-e1d2-fdef">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Dame en el culete. Tras sufrir o causar un impacto en Combate deberá tirar inmediatamente en la siguiente tabla y ver qué resultado se aplica a la miniatura:
+
+• 1-2 Gatillazo. No pasa nada.
+• 3-4 Te voy a dar pa que tengas. Obtiene +1 Combate.
+• 5-6 Con to lo gordo, pirata. Obtiene +1 Fuerza.
+• 7-8 Mas fuerte papi. Obtiene +1 Dureza.
+• 9-10 Sabes lo que me gusta. Elige cualquiera de las anteriores.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="47b6-dff3-bd40-a660" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="62b1-fea1-8c2a-5e48" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="fca6-2265-d06b-cc3f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="5d10-ebe-d8bc-9286" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Látigo" hidden="false" id="2bbb-216d-cb13-f0f5" type="selectionEntry" targetId="f46f-fa1d-eb1e-d615"/>
+            <entryLink import="true" name="Fusta" hidden="false" id="50d7-cc50-808f-14b3" type="selectionEntry" targetId="4f3-706e-23f8-5a5e"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5157-d5da-a47-d325" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dc3-64df-a98d-cca8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="60a1-4dc9-cec6-875c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="3058-cd4a-14bd-4aff" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a7-39f9-40e9-e48d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a7-39f9-40e9-e48d-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <categoryEntries>
     <categoryEntry name="Jefe" id="ce1e-6710-6c1-5bca" hidden="false">
@@ -1264,6 +1392,7 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="95-4efc-7ab5-c471" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="dd3a-2b33-95a1-86eb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1398,6 +1527,42 @@
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5158-7380-87ac-2e5e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusta" hidden="false" id="4f3-706e-23f8-5a5e">
+      <profiles>
+        <profile name="Fusta" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="236e-feda-386d-9cc7">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Un Mamporrero que impacte con una fusta, tendrá un +1 a la tirada de Dame en el culete. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b056-2b33-24bc-5ff2" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Látigo" hidden="false" id="f46f-fa1d-eb1e-d615">
+      <profiles>
+        <profile name="Látigo" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="1ec8-91ec-8314-843">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e0f-fa7-a956-edac" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
