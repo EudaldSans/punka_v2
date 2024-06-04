@@ -1557,16 +1557,12 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-6325-0679-6e5c" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="3296-2f9f-73bf-0a3e" name="Cuero endurecido" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
-          <characteristics>
-            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Cuero endurecido" id="f6cb-26e3-2d37-99bb" hidden="false" type="profile" targetId="3296-2f9f-73bf-0a3e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5851-f953-bcb7-91a6" name="Pura chapa" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2496,6 +2492,11 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
       <characteristics>
         <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
         <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cuero endurecido" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="3296-2f9f-73bf-0a3e">
+      <characteristics>
+        <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

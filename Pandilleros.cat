@@ -101,10 +101,12 @@
             <entryLink import="true" name="Balas" hidden="false" id="a6c1-c55a-6bcf-c65f" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="cf36-6511-c8b9-2ed9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="66a6-b4f4-c644-c51" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="66a6-b4f4-c644-c51" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1327-eccd-baa1-3255" includeChildSelections="false"/>
       </constraints>
@@ -258,10 +260,12 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="6b1f-7d3d-1c58-aee" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="120b-afa5-f3b5-a5df" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4cc-7962-594b-b38e" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -336,11 +340,13 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="c372-89e6-bb1d-3431" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4311-d9bb-fbac-d3a5" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Escudo" hidden="false" id="8918-fafd-e0e5-fd66" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Escudo" hidden="false" id="8918-fafd-e0e5-fd66" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4311-d9bb-fbac-d3a5" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
@@ -381,9 +387,6 @@
           </modifiers>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d10a-3aa1-6a34-e3cb" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Retraso" id="1e71-f0d5-d358-7b24" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
           <modifiers>
@@ -507,6 +510,11 @@
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="aa6b-c450-9e60-2ba2" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="81c5-a01a-adf4-9a14" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifierGroups>
@@ -679,10 +687,12 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="cbe-591b-b930-719b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="cb21-8fd0-c16d-1c5d" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f6b5-6b5d-6f1b-ce93" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8eb0-60f8-3b59-c10a" includeChildSelections="true"/>
       </constraints>
@@ -741,23 +751,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="4d69-2359-d0dd-9c2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="af23-1ddc-1825-5ffe" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac9-5714-79c8-f794"/>
       </constraints>
@@ -773,28 +766,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lucy" hidden="false" id="6ba-8515-9aff-c644">
-          <infoLinks>
-            <infoLink name="Pistola" id="958c-edc5-9858-4dde" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
-              <modifiers>
-                <modifier type="set" value="Lucy" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Arma de fuego" id="9bab-bd42-905-381e" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
-            <infoLink name="Escasa" id="7b6c-f879-db6b-8085" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-max" includeChildSelections="false"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink targetId="928d-1317-e533-3df" id="9527-b977-2821-4a22" primary="false" name="Pistola"/>
-            <categoryLink targetId="6582-5e09-b30b-db5a" id="622b-3d50-a5b5-7b7a" primary="false" name="Arma"/>
-          </categoryLinks>
-          <comment>No tiene categoria &quot;arma de fuego&quot; para que funcione su límite</comment>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Retraso" id="b52a-7749-6cc7-893e" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
           <modifiers>
@@ -802,6 +773,57 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="1642-8ca8-8f59-5304" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ee6e-9799-f1a4-50d8" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="69e3-645a-1e92-31c9" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lucy" hidden="false" id="6ba-8515-9aff-c644">
+              <infoLinks>
+                <infoLink name="Pistola" id="958c-edc5-9858-4dde" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+                  <modifiers>
+                    <modifier type="set" value="Lucy" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Arma de fuego" id="9bab-bd42-905-381e" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+                <infoLink name="Escasa" id="7b6c-f879-db6b-8085" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df79-4c01-bf41-5d1a-max" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Pistola" hidden="false" id="9527-b977-2821-4a22" targetId="928d-1317-e533-3df" primary="false"/>
+                <categoryLink name="Arma" hidden="false" id="622b-3d50-a5b5-7b7a" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
+              <comment>No tiene categoria &quot;arma de fuego&quot; para que funcione su límite</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="ab6f-ab80-e371-e81" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="42a4-de18-df0a-5d5e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="4d69-2359-d0dd-9c2e" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8328-5850-81db-535f-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Homoeroticus" hidden="false" id="297e-8b5e-d845-999a" publicationId="6699-072c-136a-7d30" page="95">
       <costs>
@@ -849,48 +871,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="861f-197f-1f54-8578" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="6e36-eafe-9b57-62d0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="da61-b165-a67c-7f13" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Alegradias" hidden="false" id="2ab6-2020-d6f7-ade7">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e329-609a-54f2-7df6" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ef-b4c3-68f0-4814" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Pistola" id="fb86-b68e-7500-c7b9" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
-              <modifiers>
-                <modifier type="set" value="Alegradias" field="name"/>
-                <modifier type="append" value="Mira telescópica" field="2ecc-3ee3-2a21-1e6"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Arma de fuego" id="f562-2671-d785-c04a" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
-            <infoLink name="Escasa" id="a2a2-968c-d051-8ff4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink targetId="9e40-76e9-2e11-5819" id="c342-7605-2924-6dd8" primary="false" name="Arma de fuego"/>
-            <categoryLink targetId="928d-1317-e533-3df" id="c59c-61b4-37bf-a7a9" primary="false" name="Pistola"/>
-            <categoryLink targetId="6582-5e09-b30b-db5a" id="c141-7f26-ccfc-81d8" primary="false" name="Arma"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Mira telescópica" hidden="false" id="4107-22ed-c230-db58" type="selectionEntry" targetId="e215-f5e2-840d-637d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18bb-cbee-9ba9-2b01" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Retraso" id="45f9-b6b0-eb9e-90c6" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
           <modifiers>
@@ -905,6 +885,169 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="1059-faa1-c83f-3758" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alegradias" hidden="false" id="2ab6-2020-d6f7-ade7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e329-609a-54f2-7df6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ef-b4c3-68f0-4814" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Pistola" id="fb86-b68e-7500-c7b9" hidden="false" type="profile" targetId="5e81-f39a-7dbd-a31b">
+                  <modifiers>
+                    <modifier type="set" value="Alegradias" field="name"/>
+                    <modifier type="append" value="Mira telescópica" field="2ecc-3ee3-2a21-1e6"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Arma de fuego" id="f562-2671-d785-c04a" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+                <infoLink name="Escasa" id="a2a2-968c-d051-8ff4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Arma de fuego" hidden="false" id="c342-7605-2924-6dd8" targetId="9e40-76e9-2e11-5819" primary="false"/>
+                <categoryLink name="Pistola" hidden="false" id="c59c-61b4-37bf-a7a9" targetId="928d-1317-e533-3df" primary="false"/>
+                <categoryLink name="Arma" hidden="false" id="c141-7f26-ccfc-81d8" targetId="6582-5e09-b30b-db5a" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Mira telescópica" hidden="false" id="4107-22ed-c230-db58" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18bb-cbee-9ba9-2b01" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="6e36-eafe-9b57-62d0" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="f877-571-959c-40ee" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="861f-197f-1f54-8578" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfcb-644d-ee2e-51b8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfcb-644d-ee2e-51b8-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="305a-87d-c332-1ff7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="305a-87d-c332-1ff7-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="f931-133e-3827-ed45" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="da61-b165-a67c-7f13" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="El Rayao" hidden="false" id="dab0-b23f-83c0-1e3f">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="79a6-c020-1398-bbf4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="ec58-8c3a-fbdc-4ac1" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e559-347f-9be-fdd5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e559-347f-9be-fdd5-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="a4df-bd5e-af67-f784" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b721-3f2e-fbb2-4711-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b721-3f2e-fbb2-4711-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Albornoz costroso" hidden="false" id="af08-e960-618-2336">
+              <infoLinks>
+                <infoLink name="Cuero endurecido" id="27d6-4336-dc78-70a" hidden="false" type="profile" targetId="3296-2f9f-73bf-0a3e">
+                  <modifiers>
+                    <modifier type="set" value="Albornoz costroso" field="name">
+                      <comment>Flipaos de los Ninja</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="3f62-f8e4-f451-8af6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="e408-c634-325d-6d3f" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="El Rayao" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="3397-ba66-338d-364f">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Jinete de la tormenta" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d9ee-fd47-5475-7347">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Rayao puede flotar a un palmo del suelo sosteniéndose con rayos místicos flipantes de la muerte. Ignora cualquier tipo de terreno que esté a ras de suelo, excepto el impasable.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Poder del rayo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="9b5e-8504-331d-501">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Rayao puede lanzar rayos con las manos. Que el apodo no le viene de ahí, sino de que el pavo se raya a la mínima porque tiene una mecha muy corta, pero en fin. Puede hacer un ataque a Distancia por Turno de juego a 30 cm o menos, sin modificadores por distancia, que ignora Blindajes (pero no Coberturas) con Fuerza 4 y Penetración 3.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pausa china" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="f771-b437-e82a-d3fc">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Rayao sabe hacer katas muy chulas, aunque después sea todo pose. Mientras se entretenga haciendo el flipao, sus rivales fliparán con él sin saber muy bien por dónde entrarle. El Rayao puede gastar una Acción para quitarle una Acción de su siguiente Fase de activación a un rival con quien tenga Línea de visión mutua a 25 cm o menos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Los dioses me reclaman" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="6f9d-22ee-7612-f7d1">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si el Rayao pierde un combate y no resulta Abatido, se pirará de la batalla con cualquier excusa barata. Le jode mucho que lo apaleen y gestiona mal sus sentimientos, por lo que su única respuesta es largarse sin decir adiós. Ascenderá en un rayo generado en sus manos, perdiéndose de vista en el cielo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="5b70-98b2-17cb-441d" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="6376-e0b4-d615-2f35" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="9ddb-9b76-7f8a-f1d8" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="23f1-68cd-50c-348b" id="d2cd-4eb2-baa6-a638" primary="false" name="Subfacción: Flipaos de los ninjas"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Retraso" id="c935-1ad6-9736-3698" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>
