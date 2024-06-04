@@ -633,4 +633,21 @@
       </constraints>
     </categoryEntry>
   </categoryEntries>
+  <sharedProfiles>
+    <profile name="Brinca como un hámster" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5a3-5d7f-32d0-1164">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Ninja se mueve y escala como si tuviera un pimiento en el culo. Tiene la Regla especial Todoterreno.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maestro de las artes marciales" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a03a-943-bf5f-f64a">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si este Ninja Abate a un enemigo en cuerpo a cuerpo durante su Fase de activación, y no está trabado con más rivales, puede Moverse en ese momento 5 cm de manera gratuita.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ahora me ves…" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4db0-9dd4-cdd7-8670">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una vez por partida, en el momento en que una miniatura enemiga vaya a Asaltar o Disparar al Ninja blanco, este lanzará un petardo de humo y el jugador podrá colocarlo a una distancia máxima de 10 cm. La miniatura enemiga podrá decidir en ese momento realizar cualquier otra Acción (o la misma si el Ninja blanco sigue estando a su alcance).</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

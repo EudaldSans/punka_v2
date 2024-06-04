@@ -186,7 +186,18 @@
     <categoryEntry name="Subfacción: Fuerte Thule" id="aef4-7192-8994-977d" hidden="false">
       <comment>V Reich</comment>
     </categoryEntry>
-    <categoryEntry name="Subfacción: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1"/>
+    <categoryEntry name="Subfacción: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1">
+      <comment>Idos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Flipaos de los ninjas" id="23f1-68cd-50c-348b" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fraus" id="c2ed-3326-aa9d-ad0a" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: La Ostra Azul" id="82af-9947-6c81-cb4b" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -860,7 +871,7 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                 <categoryLink targetId="aef4-7192-8994-977d" id="913e-4d3-9e0b-15c5" primary="false" name="Subfacción: Fuerte Thule"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1" sortIndex="6">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -872,7 +883,7 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                 <categoryLink targetId="996-60f7-312d-f9f5" id="2fa4-966e-9537-a321" primary="false" name="Subfacción: División cientifica"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10" sortIndex="6">
+            <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10" sortIndex="5">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -884,7 +895,7 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                 <categoryLink targetId="a617-344c-8601-e6a1" id="a92d-9247-db3d-77c3" primary="false" name="Subfacción: Organización Kraken"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Slashers" hidden="false" id="6948-6d75-7cd1-25e5" sortIndex="8">
+            <selectionEntry type="upgrade" import="true" name="Slashers" hidden="false" id="6948-6d75-7cd1-25e5" sortIndex="12">
               <categoryLinks>
                 <categoryLink targetId="12ff-b619-49d-ef01" id="da62-d44d-32a5-dcc6" primary="false" name="Subfacción: Slashers"/>
               </categoryLinks>
@@ -903,7 +914,7 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Inquisición atómica" hidden="false" id="3473-bdbf-2ba7-27fb">
+            <selectionEntry type="upgrade" import="true" name="Inquisición atómica" hidden="false" id="3473-bdbf-2ba7-27fb" sortIndex="8">
               <categoryLinks>
                 <categoryLink name="Subfacción: Inquisición atómica" hidden="false" id="52ff-5e66-7c91-d181" targetId="8056-4585-d83b-1f6" primary="false"/>
               </categoryLinks>
@@ -914,6 +925,66 @@ Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete 
                   </conditions>
                 </modifier>
               </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flipaos de los ninjas" hidden="false" id="f368-21b-d965-b18d" sortIndex="10">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="De uno en uno" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="528-907b-ac6b-5b56">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Flipaos de los Ninjas nunca pueden apoyar un Combate de manera voluntaria. Si un enemigo está combatiendo con uno de los tuyos pues a por otro.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mis puños son armas" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="ec52-9922-a14d-42f0">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Flipaos de los Ninjas saben utilizar sus manos como auténticas armas, así que no tienen ningún penalizador al combate a causa de Combatir desarmados.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fraus" hidden="false" id="3510-86a0-4710-6f3a" sortIndex="11">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hasta el coño me tenéis" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="9ae8-6a6c-6475-96a">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Por cada miniatura de las Fraus que resulte Abatida, la banda conseguirá un marcador. Cuando una miniatura Frau comience su Fase de activación y antes de actuar podrá gastar un máximo de tres marcadores, sumando +5 cm a su movimiento por cada uno cuando realice un Asalto. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="La Ostra Azul" hidden="false" id="7f2b-aa83-f4bf-7f28" sortIndex="9">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Nos mola el cuero" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="3c3c-d794-42f-f954">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">La banda de la Ostra Azul tiene una obsesión por el cuero que salta a la vista, siendo sin lugar a dudas uno de sus rasgos más
+distintivos. Los Piltrafas, Machacas y Curtidos de la banda llevan cuero endurecido por defecto en lugar de ropas resistentes, sin
+coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Puro vicio" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="f0fa-78a0-d549-a938">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Quien dice que esta gente es una panda de degenerados es porque ha cerrado su mente (y otras partes de su cuerpo) a probar sus experiencias. Porque el placer extremo no le desagrada a nadie. Ya sea porque sus pintas te están poniendo burrísimo o porque hacen dudar tus convicciones puritanas, cualquier miniatura que Dispare una miniatura de la Ostra Azul tendrá un penalizador de -1 a la Precisión.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
