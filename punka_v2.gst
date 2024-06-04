@@ -1151,22 +1151,43 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
             <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Maza ligera Flamígera" field="name">
+            <modifier type="set" value="Tomfa" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <comment>Flipaos de los Ninja</comment>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Maza ligera Flamígera" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Crematorio</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="9e73-9c97-c0fe-e459" primary="false" name="Arma"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Tomfa" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1202,8 +1223,24 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
               <comment>Idos</comment>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="Sai" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Sai" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1215,17 +1252,25 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
             <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Maza Flamígera" field="name">
+            <modifier type="set" value="Nunchakus" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <comment>Flipaos de los Ninja</comment>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Maza Flamígera" field="name"/>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <comment>Crematorio</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <costs>
@@ -1237,6 +1282,14 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="1c8d-a2ec-680b-e6ae" primary="false" name="Arma"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Nunchakus" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1296,15 +1349,11 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       <infoLinks>
         <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
           <modifiers>
-            <modifier type="set" value="Filo Medio Flamígero" field="name">
+            <modifier type="set" value="Katana" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <comment>Flipaos de los Ninja</comment>
             </modifier>
           </modifiers>
           <modifierGroups>
@@ -1318,9 +1367,27 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
               </conditions>
               <comment>Idos</comment>
             </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+                <modifier type="set" value="Filo Medio Flamígero" field="name"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Crematorio</comment>
+            </modifierGroup>
           </modifierGroups>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Katana" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninjas</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1331,6 +1398,14 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15 cm</characteristic>
             <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Shuriken" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -1339,6 +1414,14 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dbc-d786-c89c-4924" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="Shuriken" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="485b-43b5-f9fe-c240" name="Ballesta" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1403,9 +1486,26 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-aa9c-51ab-c737" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Arco" id="dcd6-ba0a-5f9b-6fc5" hidden="false" type="profile" targetId="556a-472d-e04d-8778"/>
+        <infoLink name="Arco" id="dcd6-ba0a-5f9b-6fc5" hidden="false" type="profile" targetId="556a-472d-e04d-8778">
+          <modifiers>
+            <modifier type="set" value="Yumi" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Difícil de usar" id="4e4c-deee-b504-a8ee" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Yumi" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
