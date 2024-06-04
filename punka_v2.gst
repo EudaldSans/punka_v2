@@ -1142,14 +1142,19 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-a28b-5464-caf1" includeChildSelections="false"/>
       </constraints>
-      <profiles>
-        <profile name="Maza Ligera" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="8a2b-644f-f363-8c13" publicationId="6699-072c-136a-7d30" page="132">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="9e73-9c97-c0fe-e459" primary="false" name="Arma"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Tomfa" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Maza Ligera" id="8c4f-4af0-1b32-21d0" hidden="false" type="profile" targetId="8a2b-644f-f363-8c13">
           <modifiers>
             <modifier type="set" value="Tomfa" field="name">
               <conditions>
@@ -1175,19 +1180,8 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
               <comment>Crematorio</comment>
             </modifierGroup>
           </modifierGroups>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink targetId="6582-5e09-b30b-db5a" id="9e73-9c97-c0fe-e459" primary="false" name="Arma"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="Tomfa" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-          <comment>Flipaos de los Ninja</comment>
-        </modifier>
-      </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2497,6 +2491,14 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
     <profile name="Cuero endurecido" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="3296-2f9f-73bf-0a3e">
       <characteristics>
         <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maza Ligera" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="8a2b-644f-f363-8c13" publicationId="6699-072c-136a-7d30" page="132">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

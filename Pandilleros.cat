@@ -74,7 +74,15 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d9e8-7dcc-2067-fa17" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="5621-bccf-6250-61e5" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="5621-bccf-6250-61e5" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Maza Ligera" hidden="false" id="73ff-499d-fe2b-9ef2" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="5cf4-cdef-aa7f-7c71" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
                 <entryLink import="true" name="Pistola" hidden="false" id="1a06-e70-fdd0-24aa" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
@@ -87,6 +95,7 @@
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Arco" hidden="false" id="39a6-c21-9bb5-5d70" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
+                <entryLink import="true" name="Honda" hidden="false" id="1c86-eda1-9975-8736" type="selectionEntry" targetId="24d1-1bf-54df-c5a5"/>
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="0" field="f438-fe2b-ba27-56fa">
@@ -178,7 +187,15 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa57-d587-cb90-fd1c" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="1aaa-11c8-1a62-ef26" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="1aaa-11c8-1a62-ef26" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Maza Ligera" hidden="false" id="a235-97a5-2b48-5dfe" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="79ee-8f75-6330-5c2e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
                 <entryLink import="true" name="Pistola" hidden="false" id="6e26-8c34-fff5-63e7" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
@@ -211,6 +228,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Honda" hidden="false" id="29cd-e4e6-958b-f553" type="selectionEntry" targetId="24d1-1bf-54df-c5a5"/>
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="0" field="8c92-17d5-ee-8e46">
@@ -305,7 +323,7 @@
                 <entryLink import="true" name="Maza" hidden="false" id="425a-b548-a217-694f" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
                 <entryLink import="true" name="Escopeta" hidden="false" id="9e32-b812-84f8-14c" type="selectionEntry" targetId="265c-2979-056d-1a06"/>
                 <entryLink import="true" name="Maza Pesada" hidden="false" id="9fb-6aee-2ebc-c44" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
-                <entryLink import="true" name="Filo Pesado" hidden="false" id="6c0b-eaa-413e-8264" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="6c0b-eaa-413e-8264" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="278b-1225-380a-4fe2" includeChildSelections="false"/>
@@ -528,6 +546,13 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Jefe" hidden="false" id="8b63-c265-21db-352f">
       <costs>
@@ -1049,6 +1074,174 @@
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Amacizona" hidden="false" id="95-4efc-7ab5-c471">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="8633-b301-de3c-4ce" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="9ccf-c250-eecf-9ea9" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="abef-250b-66b1-32cc" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Maza" hidden="false" id="c7c0-c82f-b108-3767" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="4406-3813-8c87-2a53" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="eaa0-a129-d7d6-7ef7" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Lanza" hidden="false" id="3f68-da5c-61f0-71ad" type="selectionEntry" targetId="775a-76ea-d5f8-610d"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="d738-bb9c-28bf-9f7" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d336-4e70-e6f2-1f73" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46e1-68eb-e444-7f29" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="9e40-e090-b997-3bb4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="e6ed-f8f1-b37e-e571" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81e9-b86-d28b-ab5d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="2db8-1f9e-fd3a-203c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="fa6d-5c43-65a2-aa5b" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Escudo" hidden="false" id="7709-f33e-91d5-eb15" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Amacizona" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="9d82-30aa-649c-5c13">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3), Montada, Raudo y Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Montada" id="ce6a-d45a-967c-1bd7" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Raudo" id="9ee-c9b4-99fd-46d3" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Todoterreno" id="a2ce-459b-8312-5db4" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
+        <infoLink name="Retraso" id="eb54-6845-a322-c1b8" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="edae-a7fc-26f5-7dea" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="535e-7ebc-e57f-1ca8" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="c2ed-3326-aa9d-ad0a" id="a2bb-ca96-7dad-da7d" primary="false" name="Subfacción: Fraus"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Callisto" hidden="false" id="43e3-c4cc-b8c9-c3c0">
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="76ec-bd43-a694-8b2b" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="4349-95e9-393e-d308" id="23ea-9e25-7b72-903d" primary="false" name="Banda: Pandilleros"/>
+        <categoryLink targetId="c2ed-3326-aa9d-ad0a" id="9686-8438-4f4b-6ebc" primary="false" name="Subfacción: Fraus"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Callisto" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="c7f9-5ccf-d3be-2691">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">6</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">6</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Furor uterino" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="eb07-525-c173-7af8">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si Callisto resulta Abatida, concederá 3 marcadores para la regla de la subfacción Hasta el coño me tenéis.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="ebac-f794-5b17-df7f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ae42-7c20-c7fc-55d8" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="e3d-975-c9a8-82f1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="feaf-942d-6372-de7f" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="355d-5cf9-cf51-3413-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="355d-5cf9-cf51-3413-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chakram" hidden="false" id="d2fb-7935-6bac-59a1">
+              <profiles>
+                <profile name="Chakram" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="9b9f-ccb5-e616-f4b2">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">2</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Si el Chakram impacta en una miniatura (independientemente de que esta resulte Abatida o no), puede rebotar contra una miniatura enemiga a 15 cm contra la que deberá hacerse una nueva Tirada de Precisión. Podrá seguir haciendo esto, hasta que falle en una tirada de Precisión, pero en cada rebote tendrá un penalizador de -1 a la Precisión acumulable. De manera increíble, sea como sea, el Chakram volverá después a las manos de Callisto. No se puede Apuntar ni hacer Fuego defensivo con el Chakram.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e44-8a34-9324-89c6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e44-8a34-9324-89c6-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="424a-65a1-605a-7798" hidden="false" defaultSelectionEntryId="6e18-cdea-53b7-899f">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="66bc-e6b7-2fd-7d3" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c49a-11f9-386e-8208" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9efa-4a68-ecaa-3340" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <categoryEntries>
     <categoryEntry name="Jefe" id="ce1e-6710-6c1-5bca" hidden="false">
@@ -1058,13 +1251,14 @@
     </categoryEntry>
     <categoryEntry name="Piltrafa" id="361a-484-9299-9279" hidden="false">
       <modifiers>
-        <modifier type="set" value="1" field="c5e0-ecc0-9e66-39ef">
+        <modifier type="increment" value="1" field="c5e0-ecc0-9e66-39ef">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3325-84b3-9584-e201" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8b63-c265-21db-352f" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3325-84b3-9584-e201" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8b63-c265-21db-352f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3eca-a5cc-961-8004" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="fc29-4f2e-1c68-867c" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="95-4efc-7ab5-c471" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1156,4 +1350,50 @@
       </modifiers>
     </infoGroup>
   </sharedInfoGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Honda" hidden="false" id="24d1-1bf-54df-c5a5">
+      <profiles>
+        <profile name="Honda" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="d595-b663-ee84-8731">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">F del lanzador/F del lanzador +1/F del lanzador -1</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">1/2/0</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30 cm</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Difícil de usar</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Difícil de usar" id="717f-5eb5-f304-622" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
+      </infoLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f8-39a0-7506-8139" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanza" hidden="false" id="775a-76ea-d5f8-610d">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Maza Ligera" id="c19b-b95c-cdcb-149e" hidden="false" type="profile" targetId="8a2b-644f-f363-8c13">
+          <modifiers>
+            <modifier type="set" value="Lanza" field="name"/>
+            <modifier type="set" value="Durante un Asalto otorga un +2 a Fuerza y 2 puntos de Penetración por cada modificador de +1 al Combate recibido por el Movimiento del Asalto." field="c498-c631-f4c5-160a"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5158-7380-87ac-2e5e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
