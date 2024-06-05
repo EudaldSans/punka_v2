@@ -34,7 +34,7 @@
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+5</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
-            <characteristic name="Reglas" typeId="c498-c631-f4c5-160a">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a"> Escasa, Lentorra (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -49,13 +49,22 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e928-7359-e519-fb70" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Lentorra" id="4771-be20-4b4c-4c1c" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra" id="4771-be20-4b4c-4c1c" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Escasa" id="d078-17aa-810-eda8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -144,7 +153,7 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Armatoste, ¡¡¡CATAPUM!!!, Escasa, Lentorra (2), Mamotreto.</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Armatoste, ¡¡¡CATAPUM!!!, Escasa, Lentorra (2), Mamotreto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -156,13 +165,24 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="691f-11b6-bdc8-47d2" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Lentorra" id="9a28-68a5-4e1-b198" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra" id="9a28-68a5-4e1-b198" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="¡¡¡CATAPUM!!!" id="9976-9917-bf-a57d" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
         <infoLink name="Mamotreto" id="f6d-77a2-a86b-8cff" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
         <infoLink name="Escasa" id="52fe-ecf6-cb88-d5c6" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="A dos manos" id="31c4-9dd5-d834-9e43" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
         <infoLink name="Armatoste" id="4289-a8b3-c3a4-9734" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bombas incendiarias" hidden="false" id="62d3-9592-5791-75e8" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -414,6 +434,159 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d05-3539-fe3f-5d02" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Guante de energía" hidden="false" id="cf0a-237d-3e1c-7932">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
+      </costs>
+      <profiles>
+        <profile name="Guante de energía" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5814-9f3c-b004-cfcf">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">-</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">-</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">1</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Electrificación</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Electrificación" id="e874-f907-9349-52cc" hidden="false" type="rule" targetId="6240-90ca-56c3-21e2"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c2-7517-7163-770a" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Puño balístico acoplado" hidden="false" id="62b5-753c-6da9-e42d">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+      </costs>
+      <profiles>
+        <profile name="Puño balístico acoplado" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="d53a-ea3f-57c1-2678">
+          <characteristics>
+            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
+            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+5</characteristic>
+            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a"> Escasa, Lentorra (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Escasa" id="5003-f81a-fe96-8bbe" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Lentorra" id="feb5-c271-64fd-be34" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c1c-5613-e044-d2d8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanzaarpones acoplado" hidden="false" id="6cec-869a-3115-217" publicationId="6699-072c-136a-7d30" page="44">
+      <categoryLinks>
+        <categoryLink name="A dos manos" hidden="false" id="3139-8469-1bd0-9001" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+        <categoryLink name="Armatoste" hidden="false" id="8d7c-da6c-565f-de6d" targetId="c14e-1660-fbd2-5927" primary="false"/>
+        <categoryLink name="Arma" hidden="false" id="cd5e-f6be-8fb4-977e" targetId="6582-5e09-b30b-db5a" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lanzaarpones acoplado" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="ca68-b6a6-a1ce-2427">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">¡¡¡CATAPUM!!!, Escasa, Lentorra (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="18"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a93-ab8a-d1ca-d3ea" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="84f3-d65a-fa8d-3029" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1007-fafa-1e5d-4a1f" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Lentorra" id="84c0-2678-8ca5-142c" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="¡¡¡CATAPUM!!!" id="8c23-efb4-4b56-a581" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
+        <infoLink name="Escasa" id="92c1-fb8c-47b8-f97a" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanzavapor acoplado" hidden="false" id="f1f7-5325-14ee-7a6c">
+      <profiles>
+        <profile name="Lanzavapor acoplado" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="a180-a9a4-2e9-d327">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">Ignora blindajes</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">Plantilal de lágrima</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Escasa, Lentorra (1), Plantilla, al usar el lanzavapor acoplado se considerará que se ha llegado automáticamente a los 5 marcadores de vapor, y por tanto deberá tirarse en la tabla directamente tras utilizarlo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Escasa" id="4688-e9a9-7073-6d29" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Lentorra" id="d4b3-2943-8272-2506" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Plantilla" id="59ef-8bf0-cdf5-1c18" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
+      </infoLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ed3-b0db-15fa-ae1" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cañón sónico" hidden="false" id="f14e-74ae-53d3-2bf4">
+      <profiles>
+        <profile name="Cañón sónico" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="cc26-9062-6de-a791">
+          <characteristics>
+            <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
+            <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
+            <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">Plantilla de lágrima</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Escasa, Lentorra (1), Plantilla, toda miniatura que toque la plantilla debe realizar una Tirada de Dureza. Si la supera no le ocurrirá nada. Si la falla por una diferencia de 1-3 resultará Tumbada como tras sufrir una Caída. Si la falla por una diferencia de 4 o más resultará Abatida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Plantilla" id="35e-a7c6-5939-4298" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
+        <infoLink name="Escasa" id="62f9-3a3c-ddb7-6949" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Lentorra" id="2ab4-ec5b-5dfe-c64a" hidden="false" type="rule" targetId="ab59-d932-816d-d561">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fd-db34-bb9e-ed65" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exoarmadura" hidden="false" id="d674-bf8a-4df8-e57d">
+      <profiles>
+        <profile name="Exoarmadura" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="5659-9825-4367-89a2">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">La exoarmadura funciona principalmente a vapor, pero los Innovadores no han conseguido aún controlar la presión sin que resulte un peligro. Cada vez que realice una Acción en todo aquello que no sea quedarse parado sin hacer nada, se generará 1 marcador de vapor, pero además algunas de sus armas pueden hacer que incluso genere más (se indica en su entrada).
+También generará 1 marcador de vapor en cada tirada de Combatir que realice durante las Acciones de un oponente, aunque la exoramadura no utilice sus propias Acciones.
+
+• 1-2 Fallo catastrófico en el que el vapor va hacia el Ingenio que está dentro de la exoarmadura, haciendo que sufra un Impacto Fue 6 que ignora Blindajes.
+• 3-5 El vapor sale despedido. El Ingenio que está dentro de la exoarmadura y todas las miniaturas a 5 cm o menos que no estén ocultas por Cobertura, sufren un Impacto de Fue 3 que ignora Blindajes.
+• 6-8 El vapor sale con seguridad, pero gasta la siguiente Acción entera para hacerlo.
+• 9-10 El vapor sale con seguridad y velocidad. La exoarmadura está lista para usarse.
+
+Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor deberá tirar 1d10 en la siguiente tabla: Después se retirarán todos los marcadores y volverá a comenzarse de nuevo (si no resulto Abatida, claro). Cualquier arma con la Regla especial A dos manos pasará a poder usarse a una sola mano, por lo que perderá esta regla.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Dinamo" hidden="false" id="ea3b-14d3-df9-a3a0" publicationId="6699-072c-136a-7d30" page="38">
@@ -435,6 +608,15 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               </constraints>
             </entryLink>
             <entryLink import="true" name="Chasqueador y traje voltaico" hidden="false" id="ad31-64d7-c4f3-7cd7" type="selectionEntry" targetId="d1ed-258e-366-d63b"/>
+            <entryLink import="true" name="Cañón sónico" hidden="false" id="a0a8-1110-4f5f-26c3" type="selectionEntry" targetId="f14e-74ae-53d3-2bf4">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="732-408d-f260-ac66" includeChildSelections="false"/>
@@ -575,6 +757,13 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pistón" hidden="false" id="b696-ef46-271a-5182" publicationId="6699-072c-136a-7d30" page="40">
       <categoryLinks>
@@ -623,6 +812,15 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
                 <entryLink import="true" name="Filo Pequeño" hidden="false" id="c6d6-c603-c197-538" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
                 <entryLink import="true" name="Filo Pesado" hidden="false" id="34bd-eab7-d4fd-23c0" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
                 <entryLink import="true" name="Lanzaarpones" hidden="false" id="7305-9293-1912-63e7" type="selectionEntry" targetId="8faa-1a92-57f3-a4fe"/>
+                <entryLink import="true" name="Guante de energía" hidden="false" id="cadf-2fc1-e26c-67e6" type="selectionEntry" targetId="cf0a-237d-3e1c-7932">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -804,6 +1002,13 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         <infoLink name="Infiltración" id="477a-102b-fa0b-3355" hidden="false" type="rule" targetId="3de3-35e0-04fc-ec2a"/>
         <infoLink name="Camuflaje" id="d1a9-9c0e-60da-dd9d" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Samantha O&apos;Sullivan" hidden="false" id="546c-9fab-b9a-ebc3" publicationId="6699-072c-136a-7d30" page="43">
       <costs>
@@ -1012,6 +1217,61 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a5c-ce57-b697-f69c-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a5c-ce57-b697-f69c-max" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ingenio" hidden="false" id="3124-329e-3a5-b150">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="7f34-2548-ff39-4981" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="476f-664f-cf39-efa5" id="64f5-695c-7fbb-6992" primary="false" name="Banda: Chatarreros"/>
+        <categoryLink targetId="bb2c-20ba-2536-60d5" id="8a90-33ac-71c7-34c" primary="false" name="Subfacción: Innovadores"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c103-c6d6-f530-6cfe" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="c9fb-8bbf-f241-a119" type="selectionEntry" targetId="5424-01db-ff0c-e13a">
+              <modifiers>
+                <modifier type="remove" value="e24d-662f-94ca-ccbe" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="d94e-1add-e77c-d5f2" type="selectionEntry" targetId="4cff-c4a3-65b5-c719">
+              <modifiers>
+                <modifier type="remove" value="e24d-662f-94ca-ccbe" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lanzaarpones acoplado" hidden="false" id="723d-dc9e-efb8-668" type="selectionEntry" targetId="6cec-869a-3115-217"/>
+            <entryLink import="true" name="Lanzavapor acoplado" hidden="false" id="e50-1edd-1aa6-8b84" type="selectionEntry" targetId="f1f7-5325-14ee-7a6c"/>
+            <entryLink import="true" name="Puño balístico acoplado" hidden="false" id="bd48-8d9b-4687-5691" type="selectionEntry" targetId="62b5-753c-6da9-e42d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a203-be87-3fb1-fd4f" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="250a-c993-228f-839c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="33ad-3d70-81d6-d208" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Exoarmadura" hidden="false" id="7f6a-8746-a34-116b" type="selectionEntry" targetId="d674-bf8a-4df8-e57d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2433-fd35-e9c8-995b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2433-fd35-e9c8-995b-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="db9a-8e31-2d-4d60" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="c908-a0d9-e6a4-67ec" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9a8-b4ba-3fe6-4d2c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9a8-b4ba-3fe6-4d2c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
