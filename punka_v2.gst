@@ -198,6 +198,15 @@
     <categoryEntry name="Subfacción: La Ostra Azul" id="82af-9947-6c81-cb4b" hidden="false">
       <comment>Pandilleros</comment>
     </categoryEntry>
+    <categoryEntry name="Subfacción: Carroñeros" id="d7e8-187c-15ed-7724" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Innovadores" id="bb2c-20ba-2536-60d5" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Pioneros" id="2a15-7618-ed9d-48ae" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -994,6 +1003,42 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
               <categoryLinks>
                 <categoryLink targetId="82af-9947-6c81-cb4b" id="630-5f9b-eeca-1ae" primary="false" name="Subfacción: La Ostra Azul"/>
               </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carroñeros" hidden="false" id="be12-9645-ce9a-49ae" sortIndex="15">
+              <categoryLinks>
+                <categoryLink targetId="d7e8-187c-15ed-7724" id="a659-42aa-1fac-a04a" primary="false" name="Subfacción: Carroñeros"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pioneros" hidden="false" id="e544-3705-4479-1ff8" sortIndex="13">
+              <categoryLinks>
+                <categoryLink targetId="2a15-7618-ed9d-48ae" id="5233-fa9-1d1-218c" primary="false" name="Subfacción: Pioneros"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Innovadores" hidden="false" id="1464-cb0e-e77a-204a" sortIndex="14">
+              <categoryLinks>
+                <categoryLink targetId="bb2c-20ba-2536-60d5" id="101-ec68-7c74-548f" primary="false" name="Subfacción: Innovadores"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -2272,29 +2317,34 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="1cdd-1929-bb46-a022" name="Bala" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
-        <entryLink import="true" name="Bala apañada" hidden="true" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
+        <entryLink import="true" name="Bala apañada" hidden="false" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Munición contaminada" hidden="false" id="414a-1e77-d15f-abf8" type="selectionEntry" targetId="5344-f1f1-232b-6a3e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Munición contaminada" hidden="true" id="414a-1e77-d15f-abf8" type="selectionEntry" targetId="5344-f1f1-232b-6a3e">
+        <entryLink import="true" name="Munición irradiada" hidden="false" id="14cb-c41d-5725-feb4" type="selectionEntry" targetId="b4e3-934f-601-8801">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Munición irradiada" hidden="true" id="14cb-c41d-5725-feb4" type="selectionEntry" targetId="b4e3-934f-601-8801">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>

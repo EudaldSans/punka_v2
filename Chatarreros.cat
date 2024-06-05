@@ -52,6 +52,13 @@
         <infoLink name="Lentorra" id="4771-be20-4b4c-4c1c" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Escasa" id="d078-17aa-810-eda8" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bombas de humo" hidden="false" id="f855-3153-f205-53df" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -117,6 +124,13 @@ Un arma con esta regla puede llegar a acumular un máximo de 5 marcadores del m
         <infoLink name="Escasa" id="17e3-daeb-a290-6e42" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
         <infoLink name="A dos manos" id="14cd-4e36-4dc9-1055" hidden="false" type="rule" targetId="3cc2-57bc-f5a7-acbb"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzaarpones" hidden="false" id="8faa-1a92-57f3-a4fe" publicationId="6699-072c-136a-7d30" page="44">
       <categoryLinks>
@@ -376,6 +390,30 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trampa" hidden="false" id="f25e-3d60-9545-81c3">
+      <profiles>
+        <profile name="Trampa" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="c522-ad3c-f083-4808">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Los marcadores de Trampa deben colocarse justo antes de desplegar las miniaturas, en cualquier lugar a ras de suelo fuera de la zona de despliegue enemiga y a un mínimo de 20 cm de distancia entre ellas. La primera vez que una miniatura se acerque a 2,5 cm de un marcador de trampa deberá hacerse una tirada de 1d10 y aplicar el efecto de la siguiente tabla.
+
+• 1-5 La trampa no funciona.
+• 6-7 Debe Dispararse a la miniatura con Precisión 4 (sin modificadores) y Fuerza 3, con la regla especial Veneno (5)
+• 8-9 Se colocará inmediatamente un marcador de Fuego la Regla especial Incendiaria (2) en el lugar donde estaba la trampa .
+• 10 Deberá colocarse la plantilla de lágrima enfocando a la miniatura en el centro de esta. Todas las miniaturas tocadas por la plantilla sufrirán un impacto de Fuerza 5 y Penetración 4.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Veneno" id="b64c-6e09-c5cb-7d49" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2">
+          <modifiers>
+            <modifier type="append" value="(5)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d05-3539-fe3f-5d02" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Dinamo" hidden="false" id="ea3b-14d3-df9-a3a0" publicationId="6699-072c-136a-7d30" page="38">
@@ -386,22 +424,6 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
         <categoryLink targetId="476f-664f-cf39-efa5" id="2cea-3668-f83d-1009" primary="false" name="Banda: Chatarreros"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="d6ea-d3b5-38e7-95e5" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Ropas resistentes" hidden="false" id="83fb-38c1-955a-44da" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8c5-e09a-6d9e-bf99" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Cacharras del oficio" hidden="false" id="a956-91bd-7ff2-4450" type="selectionEntry" targetId="82cc-581b-c16b-22e4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a94a-8b77-7980-94" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f957-a012-91b8-7ffa" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="b69a-6da7-b6d3-7d8d" hidden="false" defaultSelectionEntryId="bad8-8f81-a14-4f93">
           <entryLinks>
@@ -418,6 +440,28 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="732-408d-f260-ac66" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a0-d138-91c-2f9" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="ec85-6023-ca44-302e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f957-a012-91b8-7ffa" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Cacharras del oficio" hidden="false" id="a956-91bd-7ff2-4450" type="selectionEntry" targetId="82cc-581b-c16b-22e4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a94a-8b77-7980-94" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="2d95-bc87-77ee-79db" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="83fb-38c1-955a-44da" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8c5-e09a-6d9e-bf99" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -445,6 +489,11 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="7ea6-da1d-747f-db4" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="c27c-fefc-3a05-ac58" shared="true" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -517,13 +566,15 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <entryLink import="true" name="Balas" hidden="false" id="b771-903e-f734-7209" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="f48d-f5ce-226f-3a06" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="cce4-9480-5096-fcd6" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="cce4-9480-5096-fcd6" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pistón" hidden="false" id="b696-ef46-271a-5182" publicationId="6699-072c-136a-7d30" page="40">
       <categoryLinks>
@@ -579,10 +630,12 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <entryLink import="true" name="Balas" hidden="false" id="78d2-ca79-4b1f-3a44" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="76e5-59c8-e411-216f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="be16-4de4-c266-62a0" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="be16-4de4-c266-62a0" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
-      </entryLinks>
       <profiles>
         <profile name="Pistón" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="978d-364a-7912-8c5c">
           <characteristics>
@@ -615,7 +668,6 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1dd6-c712-88c9-7500" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="57cc-59da-c6b4-b5be" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="1426-fd91-9a1d-2181" hidden="false" defaultSelectionEntryId="7b79-66b3-870d-3164">
@@ -639,6 +691,97 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Habilidades" id="d409-2d7a-2745-2c5" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Acusica" hidden="false" id="f029-20a3-c2dc-7a2d">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Acusica" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="da06-1846-2fa1-7d40">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">En su función de exploración le gusta alertar de donde están los rivales a sus compañeros. Si el Sonda tiene Línea de visión sobre alguna miniatura enemiga, podrá alertar sobre su presencia a las miniaturas de su banda que tengan Línea de visión sobre el propio Sonda, de tal manera que a la hora de Asaltar a esos enemigos se considerará que tiene Línea de visión sobre ellos en todas sus Acciones de Movimiento.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Emboscador" hidden="false" id="2791-57ea-8cfa-8eb5">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+              </costs>
+              <profiles>
+                <profile name="Emboscador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="702d-20a3-1949-fae0">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Está especializado en emboscar a sus enemigos, como si saliese de la nada. Cuando utiliza la Regla especial Infiltración no necesita estar fuera de la Línea de visión de los enemigos para aparecer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Saltador" hidden="false" id="18c7-15fa-46af-3a6c">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Saltador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2b81-c2f4-4b09-8917">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Podría haber competido en salto de longitud. A la hora de Saltar, se considerará que su peana es el doble de grande (50 mm).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Navajero" hidden="false" id="9fbd-f70-91dd-ac9">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Navajero" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e5e1-3317-1ae-476d">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Controla la navaja como si se hubiera criado en un barrio marginal en los 80. Cuando use un filo pequeño lanza dos dados en la tirada de Combate y elige el resultado del dado que prefiera.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infiltrador" hidden="false" id="e247-e718-9375-e53c">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+              </costs>
+              <profiles>
+                <profile name="Infiltrador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e55d-fa41-620e-a76a">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Es capaz de avanzar oculto hasta las últimas consecuencias. Cuando utiliza la Regla especial Infiltración puede aparecer en cualquier Turno de juego, incluidos aquellos más allá del cuarto. Seguirá el resto de reglas a la hora de aparecer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Felino" hidden="false" id="2c59-41da-667e-e5a1">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="4"/>
+              </costs>
+              <profiles>
+                <profile name="Felino" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a35b-71bf-b8ef-4070">
+                  <characteristics>
+                    <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Es como un gato, capaz de acabar siempre de pie. Cuando sufra una Caída o asalte a una miniatura que esté por debajo de su altura podrá realizar una Tirada de Agilidad. Si la supera no quedará Tumbado</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f17-d631-8933-f860" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="46ce-4420-1f9a-d9d6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="57cc-59da-c6b4-b5be" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -779,6 +922,96 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
               </modifiers>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vigía" hidden="false" id="89d0-226e-17ef-2c16">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Vigía" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="4349-7958-55a9-6942">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Preparar el terreno" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="80c0-f1fb-6252-e9f1">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un buen Vigía debe hacer que el terreno favorezca a su banda. Una vez desplegadas las miniaturas puede colocar una barricada casera en cualquier lugar a ras de suelo desde su zona de despliegue hasta la mitad de la mesa. Esta barricada se considera una Cobertura de tamaño 1 y grado de protección ligero y tendrá unas medidas máximas de 5 cm de ancho y 2,5 cm de profundidad.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Retraso" id="9d32-46da-73e6-f298" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="7c66-6fa9-4ced-35f9" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="476f-664f-cf39-efa5" id="d4de-1e73-4e79-8e0e" primary="false" name="Banda: Chatarreros"/>
+        <categoryLink targetId="d7e8-187c-15ed-7724" id="9700-f889-b58a-4e6f" primary="false" name="Subfacción: Carroñeros"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="9855-6807-1bb0-9582" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="5c38-bb8c-e72e-5811" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Pistola" hidden="false" id="a930-7a3b-993f-49a9" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Rifle" hidden="false" id="6a27-d4c7-d1e1-b096" type="selectionEntry" targetId="dad1-9f6c-5b63-0763"/>
+                <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="63cf-bbe9-8613-23b8" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+                <entryLink import="true" name="Maza" hidden="false" id="5453-e14e-2e29-abab" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="eae6-af8c-c351-3f19" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="9b47-8fc6-c4d8-4b37" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5977-aac1-7b35-4851" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4096-6cce-1796-362" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="868a-c580-1034-2e3" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="dff4-59fa-aa9d-a1ae" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="5486-1591-7ecf-84db" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+            <entryLink import="true" name="Trampa" hidden="false" id="b46a-8120-423d-c805" type="selectionEntry" targetId="f25e-3d60-9545-81c3"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="2010-26d9-45c2-39fe" hidden="false" defaultSelectionEntryId="2a28-6ce7-c50c-f8da">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="d843-bc5e-f51f-3e22" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="2a28-6ce7-c50c-f8da" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a5c-ce57-b697-f69c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a5c-ce57-b697-f69c-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
