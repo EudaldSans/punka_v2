@@ -320,9 +320,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-
-
-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4e7d-5e8a-38cd-9b0a">
