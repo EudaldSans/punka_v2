@@ -144,6 +144,25 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ad-5d55-20f8-84b9" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sidekick" hidden="false" id="35e7-b5fc-713f-8de6">
+      <modifiers>
+        <modifier type="increment" value="1" field="e515-0c5b-47aa-1328">
+          <repeats>
+            <repeat value="2" repeats="1" field="e515-0c5b-47aa-1328" scope="parent" childId="upgrade" shared="true" roundUp="true" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Sidekick" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="43e7-8340-d1da-e981">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">No hace falta representarlo con una miniatura, ya que no quita línea de visión ni entorpece el movimiento, aunque quedaría muy molón. Cuando el Mutante integrante de la Fuerza M vaya a ser Abatido, será su secundario el que quedará Abatido de inmediato y no volverá a surtir efecto en la partida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a98c-918e-62d1-aa2b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Grupo de Pochos" hidden="false" id="2745-1277-71a6-df58">
@@ -184,9 +203,14 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
           </repeats>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -322,6 +346,20 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="522d-8cfb-3dd1-8819" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="a5b1-346e-54e6-ff98" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="6" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="baef-b3fd-e022-e917" id="c818-9bd6-fd62-e100" primary="false" name="Banda: Mutardos"/>
@@ -369,6 +407,13 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         <categoryLink targetId="baef-b3fd-e022-e917" id="a316-307a-4d24-b32" primary="false" name="Banda: Mutardos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="9d6d-92ed-cfb9-2463" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bestia del Pozo" hidden="false" id="ddcc-d70b-6ef0-8b20">
       <costs>
@@ -418,6 +463,20 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e929-efae-8d2a-5e24" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f9-b222-ff16-4b97" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="a716-6bef-4568-565e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="147c-c3ad-aeb3-da8f" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="35" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -526,6 +585,20 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
             </modifier>
           </modifiers>
           <comment>Amanecer mutante</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="ab3c-d7d0-b9cb-a093" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="9429-6762-359c-e38b" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="40" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -894,6 +967,212 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         <categoryLink targetId="baef-b3fd-e022-e917" id="8ec4-3130-d57f-d0e8" primary="false" name="Banda: Mutardos"/>
         <categoryLink targetId="ee2d-7444-a4f-ec2e" id="85d7-a6c6-e93-3c4f" primary="false" name="Subfacción: Amanecer mutante"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hilo Anal" hidden="false" id="1d1b-cde1-afa3-590f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="c5e5-dcb0-aa98-d4a1" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="2600-86aa-690-3712" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="78b3-25a9-3221-7f6" id="1e3e-3700-f013-129" primary="false" name="Subfacción: Fuerza M"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="9d95-3edf-d9e0-4417" primary="false" name="Banda: Mutardos"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Hilo Anal" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="d6df-9a9a-d56f-a3a6">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mutaciones" id="cc8b-fb37-4b5a-3638" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras envenenadas" hidden="false" id="398b-4d04-4825-3780" type="selectionEntry" targetId="3b97-85f8-81f6-870b">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4058-c1d5-bc98-9efa-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4058-c1d5-bc98-9efa-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Miembros extra" hidden="false" id="2d73-d880-57e4-cd98" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eea7-87e0-e33e-e3a7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-87e0-e33e-e3a7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sentidos aguzados" hidden="false" id="e006-4bfc-4d14-a17b" type="selectionEntry" targetId="44c1-a042-3be4-e331">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9f5-8802-ae51-aca5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9f5-8802-ae51-aca5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Corredor" hidden="false" id="68b2-9e57-3439-35dc" type="selectionEntry" targetId="d93c-da49-e038-4a80">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56e4-c49-48ea-fdcb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e4-c49-48ea-fdcb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="d643-7c99-30db-dc34" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b751-f499-6c2-5bdd-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b751-f499-6c2-5bdd-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Telaraña" hidden="false" id="ae0d-8eae-cb98-65b9">
+              <profiles>
+                <profile name="Telaraña" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="3cca-8b7a-b076-7036">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Hilo Anal es capaz de lanzar una telaraña desde su culo para atrapar a sus enemigos. Puede gastar una Acción en lanzar el la telaraña, para lo que deberá colocarse la plantilla de lágrima. Toda miniatura tocada por la plantilla quedará atrapada por la telaraña si no supera una tirada de Agilidad. Si queda atrapada deberá gastar su siguiente Acción en realizar una tirada de Fuerza. Si la supera quedará libre y podrá actuar a partir de ese momento normalmente, pero si no lo hace deberá seguir gastando sus Acciones en liberarse hasta que lo consiga. Cualquier miniatura que Dispare o Combata contra una miniatura atrapada, tendrá un bonificador de +2 a sus tiradas de Precisión o Combate, pero en el momento en el que le impacten la telaraña habrá quedado destruida y la miniatura atrapada quedará libre.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b5-5f06-fcce-634-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b5-5f06-fcce-634-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="69a4-49f3-a430-4436" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="884e-3e1-ee53-24ff" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="35" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pajaroto Rojo" hidden="false" id="3c53-f6f-5632-ada5">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="8b05-58f7-334-518d" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="6023-fbbd-a161-1ab0" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Subfacción: Fuerza M" hidden="false" id="41b3-37ba-5be5-9085" targetId="78b3-25a9-3221-7f6" primary="false"/>
+        <categoryLink name="Banda: Mutardos" hidden="false" id="7a99-762d-9f4a-d97f" targetId="baef-b3fd-e022-e917" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="52c6-b803-cd59-af94" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="1c3d-64b2-33cc-3169" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="214b-f530-70f2-17c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="214b-f530-70f2-17c7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="d46a-b01c-deb6-db7d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Espinas" hidden="false" id="13d8-13d3-e97c-dfac" type="selectionEntry" targetId="7e7b-807a-28ad-30bf">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc76-7abb-5826-df55-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc76-7abb-5826-df55-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Danza de apareamiento" hidden="false" id="dc8d-1531-43ff-b400">
+              <profiles>
+                <profile name="Danza de apareamiento" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="881b-49f4-8f5a-c851">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Pajaroto Rojo puede gastar una Acción en realizar su famosa Danza de Apareamiento. Todas las miniaturas enemigas con Línea de visión sobre Pajaroto Rojo, deberán encararse en ese momento hacia él.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8647-7dda-484-ea9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8647-7dda-484-ea9f-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="7562-b2a2-cc6b-74b5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="8481-93e1-9de8-7bcf" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Pajaroto Rojo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="23df-767e-ad84-7f2b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Colorido" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a041-5ad-2b08-325e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El plumaje de Pajaroto Rojo destaca por encima de todo lo demás. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de Pajaroto Rojo, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra Pajaroto Rojo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

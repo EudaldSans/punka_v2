@@ -1072,6 +1072,25 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Para que no me disparen" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="1133-c762-5488-20b3">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Cada Mutante puede llevar un acompañante secundario (Sidekick) vestido con colores chillones para que se lleve los tiros de los malosos. Este secundario tiene un valor en puntos igual a la mitad del valor total del Mutardo una vez equipado y con sus mutaciones, redondeando hacia arriba. Aunque en teoría siempre se mueve con él, no hace falta representarlo con una miniatura, ya que no quita línea de visión ni entorpece el movimiento, aunque quedaría muy molón. Cuando el Mutante integrante de la Fuerza M vaya a ser Abatido, será su secundario el que quedará Abatido de inmediato y no volverá a surtir efecto en la partida.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Súper equipo" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="636d-b22e-6eb-32ab">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Todo el mundo sabe que los súpers funcionan mejor en equipo. Si no son muy conocidos, el grupo les da visibilidad, y si lo son y se juntan en plan evento, entonces ya es la leche. Pero también es muy típico que se den de leches entre ellos. Cuando comience la Fase de activación de un Mutardo de la Fuerza M, deberá tirar en la siguiente tabla por cada otro integrante de la banda que tenga a 5 cm o menos, aplicando el efecto durante esta Fase de activación:
+
+
+• 1-2 Aún os la tengo guardada. Tiene 1 Acción menos.
+• 3-4 Falta de química. No pasa nada especial.
+• 5-6 Mola estar con esta gente. Obtiene +1 a Combate.
+• 7-8 Vosotros me hacéis mejor. Obtiene +1 a Fuerza y Dureza.
+• 9-10 Juntos podemos con todo. Tiene 1 Acción más.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Amanecer mutante" hidden="false" id="b4f5-6e25-85bb-8a46" sortIndex="16">
               <categoryLinks>
