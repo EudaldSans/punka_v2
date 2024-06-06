@@ -8,9 +8,6 @@
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Mutaciones" id="68df-a190-7184-371e" hidden="false"/>
-  </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Poder psíquico" id="d652-cee5-9d2d-70f9" hidden="true"/>
   </categoryEntries>
@@ -64,7 +61,6 @@
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="115-8b33-9ecc-a29" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b103-8994-b83e-5931" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
@@ -81,8 +77,7 @@
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5743-76a6-e8f9-4fdc" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c6b-d609-62be-ed0e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110b-abce-b2fb-cee0" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Confusión" hidden="false" id="f88e-122e-bf-43db">
@@ -113,7 +108,6 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ca8-7c1b-ab7-604f" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2834-fc36-e64a-9900" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Potenciación" hidden="false" id="377e-aa6c-54a0-e678" publicationId="6699-072c-136a-7d30" page="86">
@@ -131,7 +125,6 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el us
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6592-2e22-719c-2572" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1158-704e-74db-68c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Titiritero" hidden="false" id="7372-283d-9bea-df09" publicationId="6699-072c-136a-7d30" page="86">
@@ -149,7 +142,6 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ad-5d55-20f8-84b9" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5bf-2ccc-8c13-f6d7" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -191,6 +183,11 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="8f2e-323-f3e3-a300" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Cuerpo escombro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1c33-98e5-77f0-9f5">
@@ -230,22 +227,6 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="2f48-c0de-96c1-ecc" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bd8-d30e-8bf6-c5b8" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="9e7d-79cd-e44c-91f8" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
-              <entryLinks>
-                <entryLink import="true" name="Maza" hidden="false" id="4a90-d29b-f602-e43" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="1004-6ec3-d63-c590" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="574-d0ff-21d1-11c9" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-            <entryLink import="true" name="Filo Medio" hidden="false" id="8c33-b9b6-7f84-266f" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
-            <entryLink import="true" name="Maza" hidden="false" id="d26b-f845-c3fa-d738" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Mutaciones" id="c7cd-35d1-2c6f-bb7c" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Cachas" hidden="false" id="94ce-b5a6-44cb-b1b4" type="selectionEntry" targetId="e8de-ce-8096-f027"/>
@@ -256,7 +237,11 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
             <entryLink import="true" name="Espinas" hidden="false" id="7cd4-5a95-cffc-d86e" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
             <entryLink import="true" name="Esputo ácido" hidden="false" id="3378-97df-7b9e-4601" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
             <entryLink import="true" name="Extremidad prensil" hidden="false" id="5a21-8bb3-9dbe-6c51" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
-            <entryLink import="true" name="Garras" hidden="false" id="ec9a-5b84-7bba-3ad0" type="selectionEntry" targetId="89ac-b813-922c-11a8"/>
+            <entryLink import="true" name="Garras" hidden="false" id="ec9a-5b84-7bba-3ad0" type="selectionEntry" targetId="89ac-b813-922c-11a8">
+              <categoryLinks>
+                <categoryLink targetId="b9ac-7089-9933-c74b" id="8da4-7788-c8a9-e6c" primary="false" name="Garras"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink import="true" name="Garras envenenadas" hidden="false" id="92cc-d549-7959-3b32" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
             <entryLink import="true" name="Miembros extra" hidden="false" id="44ff-30ce-d0e7-904f" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
             <entryLink import="true" name="Mimetismo" hidden="false" id="2dc0-207e-33c1-9d9f" type="selectionEntry" targetId="d370-d789-b8d7-7f83"/>
@@ -276,6 +261,66 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc02-b77a-dc99-c1f3" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92a8-1b84-5e0d-3e23" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="2c90-7c2c-713f-fd25" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="308c-cb4-973b-526" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="6e30-55bf-ddde-967c" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="4f2-1887-6b90-2bae" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="4995-ef7-2aaa-941e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="ff4-46ec-bbf3-386c" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Arco" hidden="false" id="eeda-8c80-70e7-694d" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e">
+              <modifiers>
+                <modifier type="set" value="20" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Maza" hidden="false" id="2aa4-2811-bd70-99" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="3f13-9f6c-6ada-f42d" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Ballesta" hidden="false" id="606-e3d-b30a-9893" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+              <modifiers>
+                <modifier type="set" value="16" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Escopeta" hidden="false" id="dded-f2d6-ea7c-1623" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <modifiers>
+                <modifier type="set" value="12" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -426,12 +471,61 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         </selectionEntryGroup>
         <selectionEntryGroup name="Poderes psíquicos" id="d52c-407f-8dbf-e03b" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Barrera psíquica" hidden="false" id="dd93-9508-a28c-2690" type="selectionEntry" targetId="f09c-7802-581b-8c7a"/>
-            <entryLink import="true" name="Choque mental" hidden="false" id="2b0d-465f-db75-12ef" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
-            <entryLink import="true" name="Desarme" hidden="false" id="323b-f97-2c09-9d72" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
-            <entryLink import="true" name="Potenciación" hidden="false" id="7860-94ea-b48a-6686" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
-            <entryLink import="true" name="Titiritero" hidden="false" id="604a-d54b-98b3-871c" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="dd93-9508-a28c-2690" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c67-1555-b63-d300" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Choque mental" hidden="false" id="2b0d-465f-db75-12ef" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91f1-3b80-82bb-9171" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Desarme" hidden="false" id="323b-f97-2c09-9d72" type="selectionEntry" targetId="8f39-9f74-ba43-f579">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6a0-75cb-7a70-6143" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Potenciación" hidden="false" id="7860-94ea-b48a-6686" type="selectionEntry" targetId="377e-aa6c-54a0-e678">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69de-526c-fabe-9d14" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="604a-d54b-98b3-871c" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="634f-4b50-f0ec-4e66" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Base</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="c53e-2d36-13d5-e674" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="9d22-835c-e98a-8b2e" type="selectionEntry" targetId="f09c-7802-581b-8c7a"/>
+            <entryLink import="true" name="Choque mental" hidden="false" id="933c-4749-de45-baa9" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
+            <entryLink import="true" name="Desarme" hidden="false" id="61b-434c-b488-4e17" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
+            <entryLink import="true" name="Potenciación" hidden="false" id="11a8-61ca-8d8d-83f4" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
+            <entryLink import="true" name="Titiritero" hidden="false" id="1609-b661-a714-751e" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3165-1434-e37d-36e2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3165-1434-e37d-36e2-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Amanecer mutante</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -448,6 +542,13 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="60" field="e515-0c5b-47aa-1328">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Magmador" hidden="false" id="b00b-91e-3c77-acc9">
       <costs>
@@ -631,6 +732,168 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pretoriano" hidden="false" id="cb72-3cb4-f5c6-1074">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="45"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Pretoriano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e998-1421-aa39-1544">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Libre del yugo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e46f-464-1395-7386">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si Kim es Abatida, las mentes de los Pretorianos se sentirán de repente vacías. Independientemente del resultado al tirar en la tabla de la Regla especial Odio Puro de Kim y Fostiador, para los Pretorianos es como si hubiera salido un 8-10.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Por Kim" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8ed5-c940-f7cd-d33">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Pretorianos están acostumbrados a que Kim los use a su antojo. Si Kim usa el Poder de Absorción vital sobre un Pretoriano, este perderá 1 punto de Dureza en lugar de los 2 habituales.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="b84-e64d-5255-8a24" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="9a8c-1370-f78c-98a7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Maza" hidden="false" id="537-ef2-ad4b-e439" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="ca83-bbd2-5b10-6cad" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+            <entryLink import="true" name="Ballesta" hidden="false" id="2c56-2cfc-b626-2b54" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="bcec-f9c7-174d-ec1a" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="23da-8cff-eb5f-5a2c" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4842-f20-ac41-e4c6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="cf43-3fee-df7f-3dcd" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Escudo" hidden="false" id="3acd-7815-f22f-a00a" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="f07a-7523-b982-cb46" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e209-c6c-f8c0-da88" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88ed-b439-276e-8128" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="10 Puntos" id="7799-d3b0-6d88-db7" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Cachas" hidden="false" id="e35d-a360-175-cf13" type="selectionEntry" targetId="e8de-ce-8096-f027"/>
+                <entryLink import="true" name="Carga brutal" hidden="false" id="db08-2290-dad-a3fe" type="selectionEntry" targetId="b2a2-2d91-379-e2ee"/>
+                <entryLink import="true" name="Cola afilada" hidden="false" id="79ff-ae75-b6b3-b871" type="selectionEntry" targetId="4ca4-fc23-a038-6df7"/>
+                <entryLink import="true" name="Miembros extra" hidden="false" id="356-4de9-70bc-fbb7" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
+                <entryLink import="true" name="Piel dura 3" hidden="false" id="6f02-282f-caec-6f41" type="selectionEntry" targetId="7eca-4fd0-5454-975f"/>
+                <entryLink import="true" name="Proyectil orgánico" hidden="false" id="e17f-1d85-a59-7e3e" type="selectionEntry" targetId="d2e5-1f34-4675-9b90"/>
+                <entryLink import="true" name="Resistente" hidden="false" id="97f8-e42c-69b2-a4f0" type="selectionEntry" targetId="275c-4612-4b78-8b82"/>
+                <entryLink import="true" name="Sentidos aguzados" hidden="false" id="ee68-a4c-7718-f87a" type="selectionEntry" targetId="44c1-a042-3be4-e331"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bca5-54ab-88eb-908f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="2 Puntos" id="921a-e794-33ed-4533" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras" hidden="false" id="18a0-7757-6724-be3f" type="selectionEntry" targetId="89ac-b813-922c-11a8"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147e-f4af-3f17-ab55" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="4 Puntos" id="b3dc-dcd2-a35a-1dfb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Pegajoso" hidden="false" id="1253-c16-ce3b-9067" type="selectionEntry" targetId="258f-5e74-27c-5f8b"/>
+                <entryLink import="true" name="Piel dura 1" hidden="false" id="5ba-8c74-75a7-1507" type="selectionEntry" targetId="4916-1692-b826-c903"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af75-d43c-227f-bd7a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="5 Puntos" id="a8f2-4520-d495-ab5f" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Mimetismo" hidden="false" id="b07b-10e-b818-b25a" type="selectionEntry" targetId="d370-d789-b8d7-7f83"/>
+                <entryLink import="true" name="Extremidad prensil" hidden="false" id="3f33-90fe-1299-e618" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d21-b014-397c-b25a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="6 Puntos" id="4788-1359-588e-52bb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Sónar" hidden="false" id="e85d-7bc0-772d-720d" type="selectionEntry" targetId="a0d1-a53c-c996-b5ac"/>
+                <entryLink import="true" name="Esputo ácido" hidden="false" id="703-42ce-6447-e113" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
+                <entryLink import="true" name="Espinas" hidden="false" id="6ebf-954c-daf-3ca1" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cfc-ea74-b98e-f963" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="8 Puntos" id="e9da-23dc-6c63-d4c0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras envenenadas" hidden="false" id="51df-8c06-9c31-bc2" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
+                <entryLink import="true" name="Piernas seguras" hidden="false" id="4010-1fa1-464f-483b" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb4-458a-e5c6-4b7f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="12 Puntos" id="965e-7982-b8de-2f19" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Corredor" hidden="false" id="882d-e69b-e7a5-e9e8" type="selectionEntry" targetId="d93c-da49-e038-4a80"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b7-f4e0-d8d-902b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="16 Puntos" id="3bf3-4d6b-942b-988" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Rana" hidden="false" id="33e0-ded4-71c9-a058" type="selectionEntry" targetId="2859-b06f-6ebb-573"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69d4-f9bf-8c28-6ad6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="20 Puntos" id="2f63-2a2f-d738-e731" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Resonancia psíquica" hidden="false" id="5f86-a044-aadf-a967" type="selectionEntry" targetId="ada2-bc43-71c5-6428"/>
+                <entryLink import="true" name="Piel dura 5" hidden="false" id="4093-f189-8f06-50a2" type="selectionEntry" targetId="423e-a45a-fef-29a3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fa-afb6-9db3-d8ea" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="25 Puntos" id="c5ee-cdff-5376-18aa" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Capacitado" hidden="false" id="1749-9f3-4bf4-1557" type="selectionEntry" targetId="4f7e-d6f9-32ae-9ffc"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b23f-85af-79cb-57fc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="252f-99bf-47ef-3b4d" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="8ec4-3130-d57f-d0e8" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="ee2d-7444-a4f-ec2e" id="85d7-a6c6-e93-3c4f" primary="false" name="Subfacción: Amanecer mutante"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

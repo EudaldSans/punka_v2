@@ -207,6 +207,15 @@
     <categoryEntry name="Subfacción: Pioneros" id="2a15-7618-ed9d-48ae" hidden="false">
       <comment>Chatarreros</comment>
     </categoryEntry>
+    <categoryEntry name="Subfacción: Amanecer mutante" id="ee2d-7444-a4f-ec2e" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fuerza M" id="78b3-25a9-3221-7f6" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Macumba" id="a62b-96dc-fdc0-b760" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -1036,6 +1045,42 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Macumba" hidden="false" id="86dd-1f9f-5916-ec61" sortIndex="18">
+              <categoryLinks>
+                <categoryLink targetId="a62b-96dc-fdc0-b760" id="e8a1-1085-d5fd-eecf" primary="false" name="Subfacción: Macumba"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fuerza M" hidden="false" id="999f-f92c-1fd8-5467" sortIndex="17">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Macumba" hidden="false" id="cd8b-dcff-209b-d341" targetId="a62b-96dc-fdc0-b760" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Amanecer mutante" hidden="false" id="b4f5-6e25-85bb-8a46" sortIndex="16">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Macumba" hidden="false" id="e052-22a3-c1ef-38d5" targetId="a62b-96dc-fdc0-b760" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1968,9 +2013,9 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         <categoryLink targetId="b9ac-7089-9933-c74b" id="fe35-9feb-8517-222a" primary="false" name="Garras"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
+        <modifier type="set" value="0" field="d246-5a46-904-3e51">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2005,7 +2050,7 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
       <modifiers>
         <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
