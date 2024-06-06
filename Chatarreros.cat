@@ -34,7 +34,7 @@
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+5</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a"> Escasa, Lentorra (2)</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Escasa, Lentorra (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -465,7 +465,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
             <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+2</characteristic>
             <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+5</characteristic>
             <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a"> Escasa, Lentorra (1)</characteristic>
+            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Escasa, Lentorra (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -586,6 +586,65 @@ Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor de
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ciclocohete" hidden="false" id="6795-9d4d-bfff-3e5a">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Ciclocohete" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="a0f7-ae93-6c7d-96fc">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Combustible (3), Escasa, Montada, Raudo.
+Una miniatura montada en ciclohete puede utilizarlo para los siguientes efectos gastando las cargas de Combustible indicadas. Sin embargo también deberá hacer una tirada de 1d10 y sacar más del número indicado para que la mochila no falle y tenga que tirar en la Tabla de fallos coheteros.
+• Apretar el turbo. La miniatura puede mover hasta el doble (30 cm) en una Acción de Movimiento, pero deberá hacerlo en línea recta, tal como estaba encarada al principio de la Acción y sin poder cambiar su encaramiento en ningún momento. Combustible: 1 carga. Funciona con: 3+.
+• Potencia bruta: La miniatura carga de manera embravecida, otorgando un bonificador adicional de +2 al Combate a un Asalto. Combustible: 1 carga. Funciona con: 4+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab9f-c4bb-2c5f-fb93" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="efd1-819c-5499-6c0" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Montada" id="b2f6-d3a6-be7-f215" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Raudo" id="f38a-f6ce-70f1-8740" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Escasa" id="5c00-2a6e-9be-9d59" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Combustible" id="52b0-7b5-cabe-5140" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fallos coheteros" id="b660-4ddc-e028-e069" hidden="false" type="rule" targetId="56-bcee-f183-8de1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mochila cohete" hidden="false" id="c6bb-5e58-8199-27d6">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <profiles>
+        <profile name="Mochila cohete" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="dd40-75c3-f61b-9d78">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Combustible (5), Escasa.
+Una miniatura con mochila cohete puede utilizarla para los siguientes efectos gastando las cargas de Combustible indicadas. Sin embargo también deberá hacer una tirada de 1d10 y sacar más del número indicado para que la mochila no falle y tenga que tirar en la tabla de fallos coheteros.
+• Asalto propulsado. La miniatura usa la mochila para impulsarse a la carga, otorgando un bonificador adicional de +2 al Combate a un Asalto, aunque sólo podrá hacerlo en línea recta (aunque puede encarase al principio). Combustible: 1carga. Funciona con: 3+.
+• Chorro de llamas. La miniatura puede lanzar un chorro de llamas desde su mochila gastando 1 Acción. Se colocará la plantilla de lágrimas que sale recto desde el centro de su espalda y toda miniatura tocada (ignorando Coberturas) sufrirá un Impacto de Fuerza 4 y Penetración 3. Combustible: 2 cargas. Funciona con: 3+. Salto. La miniatura pasa a tener las Reglas especiales Raudo y Salto durante esta Fase de activación. Combustible: 1 carga. Funciona con: 3+.
+• Surcar los cielos. La miniatura pasa a volar por encima de la mesa y a efectos prácticos es como si no estuviera en ella. Al iniciar su siguiente Fase de activación puede colocarse en cualquier punto de la mesa a 10 cm o más de cualquier miniatura enemiga. Combustible: 2 cargas. Funciona con: 5+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9cf5-8425-5f79-f140" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11eb-a2c5-f087-6fa2" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Escasa" id="4640-1096-e18c-23cc" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Combustible" id="67b5-f04c-778f-e93b" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7">
+          <modifiers>
+            <modifier type="append" value="(5)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fallos coheteros" id="cdbc-9a55-96b8-6ba1" hidden="false" type="rule" targetId="56-bcee-f183-8de1"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -848,6 +907,13 @@ Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor de
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e544-3705-4479-1ff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sonda" hidden="false" id="7ea6-da1d-747f-db4" publicationId="6699-072c-136a-7d30" page="41">
       <categoryLinks>
@@ -1129,6 +1195,13 @@ Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor de
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e544-3705-4479-1ff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vigía" hidden="false" id="89d0-226e-17ef-2c16">
       <modifiers>
@@ -1274,6 +1347,110 @@ Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor de
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <profiles>
+        <profile name="Ingenio" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a770-3ef8-ef59-d91c">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cohetero" hidden="false" id="ecdb-af-fcab-3d15">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="35"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="5ae9-2eda-525a-aea4" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="476f-664f-cf39-efa5" id="4c4c-2fab-361a-b312" primary="false" name="Banda: Chatarreros"/>
+        <categoryLink targetId="2a15-7618-ed9d-48ae" id="46d6-8f6a-3125-d5a" primary="false" name="Subfacción: Pioneros"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cohetero" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a72c-a14b-7c2f-790e">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="3da2-1914-11d1-2636" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="ba91-36d0-d7c3-ac0c" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Maza Ligera" hidden="false" id="cd38-27d6-d354-4009" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+                <entryLink import="true" name="Filo Pequeño" hidden="false" id="9971-5d73-4395-3cc5" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+                <entryLink import="true" name="Maza" hidden="false" id="abaa-f1f4-c789-9c4b" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+                <entryLink import="true" name="Pistola" hidden="false" id="6e88-763-67e7-8061" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+                <entryLink import="true" name="Trabuco" hidden="false" id="793f-4020-b385-5404" type="selectionEntry" targetId="a5f0-d0ff-ae29-49bc"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="c1ce-c527-6a1a-228e" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="9441-5f74-f36d-9f32" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="b383-745a-a469-146f" hidden="false" defaultSelectionEntryId="d001-66a2-2c10-ec4b">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="d001-66a2-2c10-ec4b" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="90ab-eaf4-2e1-a177" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44-2bb1-34ec-bdce-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44-2bb1-34ec-bdce-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="b20d-2a99-77a0-a65a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="6427-982c-46aa-6547" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="759a-c28d-9284-8f29-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="759a-c28d-9284-8f29-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ciclocohete" hidden="false" id="80a9-2594-8c39-61d6" type="selectionEntry" targetId="6795-9d4d-bfff-3e5a"/>
+            <entryLink import="true" name="Mochila cohete" hidden="false" id="1c37-dc5e-d639-e17" type="selectionEntry" targetId="c6bb-5e58-8199-27d6"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="e544-3705-4479-1ff8" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedInfoGroups>
@@ -1305,7 +1482,15 @@ La vaporeta ignora totalmente los Blindajes y Coberturas parciales.</characteri
     </infoGroup>
   </sharedInfoGroups>
   <entryLinks>
-    <entryLink import="true" name="Caronte" hidden="false" id="be52-f40c-bbe1-27" type="selectionEntry" targetId="3ca9-c94c-5bf-b11e"/>
+    <entryLink import="true" name="Caronte" hidden="false" id="be52-f40c-bbe1-27" type="selectionEntry" targetId="3ca9-c94c-5bf-b11e">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e544-3705-4479-1ff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Vaporeta" id="5ad4-7221-325-6009" hidden="false">
@@ -1314,4 +1499,11 @@ La vaporeta ignora totalmente los Blindajes y Coberturas parciales.</characteri
       </constraints>
     </categoryEntry>
   </categoryEntries>
+  <sharedRules>
+    <rule name="Fallos coheteros" id="56-bcee-f183-8de1" hidden="false">
+      <description>• 1-2 El cohete explota a lo bestia. La miniatura queda Abatida, pero no se dejará un marcador en la posición donde resultó Abatida, por lo que no podrá ser rapiñada, cosechada, etc. Además todas las miniaturas en un radio de 5 cm sufrirán un impacto de Fuerza 7 y Penetración 5.
+• 3-6 El cohete hace un ruidito y no funciona. Se habrá gastado igualmente la carga de Combustible.
+• 7-10 Gasta el doble de las cargas de Combustible indicadas. Si no tuviera las suficientes, no funcionará y gastará lo que le quede igualmente.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
