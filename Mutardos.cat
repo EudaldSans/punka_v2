@@ -163,6 +163,36 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a98c-918e-62d1-aa2b" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Empochizar" hidden="false" id="0106-f14b-d329-2ebf">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ce-be2a-bdc1-1ae9-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ce-be2a-bdc1-1ae9-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Empochizar" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="40d0-2ad2-8aad-8c10">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede volver a levantar a una miniatura caída como Pocho. Puede gastar una de sus Acciones en hacer que una miniatura Abatida con peana de 25 mm se convierta en un Pocho de su propia banda. Al contrario que en sus reglas normales, estos Pochos pueden ir individualmente, aunque si están a la distancia de otros Pochos pueden unirse y formar un grupo siguiendo la Regla especial Grupal. Una vez unidos no podrán separarse de nuevo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Muñeco vudú" hidden="false" id="7ca9-1762-ad71-406d">
+      <profiles>
+        <profile name="Muñeco vudú" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="387f-6669-7d3a-99cb">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón utiliza un muñeco para representar a uno de sus enemigos e interactuar con él a través del muñeco. Puede gastar una de sus Acciones en hacer que una miniatura enemiga en Línea de visión sufra uno de los siguientes percances:
+• Le obliga a hacer una Acción de Movimiento inmediata y gratuita hacia la dirección que el Cabezón quiera.
+• Le causa un dolor espantoso por el que tendrá un penalizador de -2 al Combate y Precisión en su siguiente Fase de activación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b941-7ee7-699c-6881-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b941-7ee7-699c-6881-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Grupo de Pochos" hidden="false" id="2745-1277-71a6-df58">
@@ -412,6 +442,13 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+          <comment>Fuerza M</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Macumba</comment>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -509,6 +546,13 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         <categoryLink targetId="baef-b3fd-e022-e917" id="f788-b6de-5703-3573" primary="false" name="Banda: Mutardos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="469-8c21-9640-6f19" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cabezón" hidden="false" id="6ec3-8616-70a-e889">
       <costs>
@@ -562,6 +606,12 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Macumba</comment>
+            </modifier>
           </modifiers>
           <comment>Base</comment>
         </selectionEntryGroup>
@@ -598,6 +648,35 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
                 <modifier type="increment" value="40" field="e515-0c5b-47aa-1328"/>
               </modifiers>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="cb83-c360-dd90-1557" hidden="false">
+          <comment>Macumba</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="2441-b91d-b582-a8cc" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3243-973d-7ef9-0dff" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Potenciación" hidden="false" id="39a5-3a4c-6992-b3f2" type="selectionEntry" targetId="377e-aa6c-54a0-e678">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c34-e675-0f61-05c7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="f87d-4c1a-b091-b897" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="456e-94ef-555d-8bda" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empochizar" hidden="false" id="69b1-a246-1a70-e353" type="selectionEntry" targetId="0106-f14b-d329-2ebf"/>
+            <entryLink import="true" name="Muñeco vudú" hidden="false" id="35a8-d0c8-adce-5d6a" type="selectionEntry" targetId="7ca9-1762-ad71-406d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1173,6 +1252,300 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Caimanomorfo" hidden="false" id="1d8b-7aa9-50f4-e526">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="c811-c927-85b5-68c8" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="dbb5-6b4e-2088-8d17" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="e858-8376-0f8d-341c" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Caimanomorfo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e3dd-3987-ccb3-22bb">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sangre fría" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2adf-8fd5-0d2c-01fd">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c"> Un cabezón no podrá usar ningún Poder Psíquico sobre un Caimanomorfo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Desgarro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8401-055d-2d98-519f">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las mandíbulas de los Caimanomorfos son poderosas y sus dientes afilados. Un Caimanomorfo que realice un Impacto en cuerpo a cuerpo reducirá permanentemente el Blindaje del rival en 1, aunque falle la tirada de Fuerza contra Dureza</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="81e7-ec85-c387-6da9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="1b9b-00bb-41ce-7ff9" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f7-65bd-8da8-9ffe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f7-65bd-8da8-9ffe-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="37d1-eb9e-a916-db10" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Piel escamosa" hidden="false" id="3657-d6a8-95c5-5e82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162e-40d9-fa34-ec2e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="162e-40d9-fa34-ec2e-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Piel escamosa" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="dc13-ef3e-8281-2160">
+                  <characteristics>
+                    <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+                    <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Espíritu del pantano" hidden="false" id="311d-fc18-1879-a7bd">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="2396-e9c6-1a36-f1c5" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="e88d-590c-6c6e-8995" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="07a5-d784-35f2-5f57" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Espíritu del pantano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e050-fa3f-61fd-7b4b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="4996-8e36-e695-a0ac" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="5577-5001-b73b-7f96" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8b-97ca-a748-df42-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8b-97ca-a748-df42-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="4c80-5d22-8060-b956" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Piel dura 3" hidden="false" id="484e-b52f-4141-6bdc" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0fe-ee2f-095d-92fb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0fe-ee2f-095d-92fb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Espinas" hidden="false" id="0756-94c7-7ec2-c089" type="selectionEntry" targetId="7e7b-807a-28ad-30bf">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c64b-a22d-2b4a-98c5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c64b-a22d-2b4a-98c5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="882c-18a0-46f2-b782" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0a1-bb2f-0841-6afe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a1-bb2f-0841-6afe-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="f05d-ca1b-5833-b0b6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ataque verde" hidden="false" id="1956-ed08-377e-49c6">
+              <profiles>
+                <profile name="Ataque verde" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="f7ce-22cc-3161-22a6">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Unas ramas salen del suelo atacando a una miniatura enemiga. A efectos prácticos, se considera un arma a distancia (pero sin poder Apuntar ni hacer Fuego defensivo) con las siguientes estadísticas, dependiendo del número de Acciones que utilice:
+• 1 Acción: Fue 3, Pen 3, 15/30/45 cm.
+• 2 Acciones: Fue 5, Pen 5, 20/40/60 cm. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2940-2776-1695-4461-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2940-2776-1695-4461-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Muro de zarzas" hidden="false" id="5836-df1a-5faa-82dd">
+              <profiles>
+                <profile name="Muro de zarzas" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="4037-0817-c1b8-448b">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Unas enormes plantas salen del suelo cubriendo parcialmente la visión. Podrá colocar un marcador de 2 cm de largo x 10 cm de ancho en cualquier zona despejada del terreno de juego a ras de suelo. Se considera una Cobertura de tamaño 1. Si se utiliza 1 Acción se considerará que tiene un grado de protección ligero y podrá colocarla a un máximo de 25 cm. Si se utilizan 2 Acciones se considerará que tiene un grado de protección medio y podrá colocarla a un máximo de 50 cm.
+Solo puede haber en la mesa un muro de zarzas en la partida por cada Espíritu del pantano. Si un Espíritu del pantano invoca uno habiendo llegado a ese máxim, deberá retirar otro a su elección.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4192-46a0-b567-e0e7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4192-46a0-b567-e0e7-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Invocar al pantano" hidden="false" id="d858-ba1c-1ef3-e576">
+              <profiles>
+                <profile name="Invocar al pantano" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="30e9-451b-cf9d-570c">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Una zona pantanosa se crea de la nada saliendo del mismísimo suelo. Gastando 1 Acción podrá colocar un marcador de un diámetro de 10 cm en cualquier zona despejada del terreno de juego a ras de suelo. Este tendrá las reglas de Terreno contaminado y Terreno chungo. Solo puede Invocarse un pantano en la partida por cada Espíritu del pantano.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79a7-a260-732c-4257-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a7-a260-732c-4257-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mamá Guedé" hidden="false" id="3152-42be-fd76-a6d4">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="6696-ef34-a21a-ce7e" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="cda9-389d-6a08-160c" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="4262-754d-0dc7-b961" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="13e9-ffe3-f5ec-b279" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mamá Guedé" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="710a-262b-3abc-d308">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Polvo vudú" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="0538-8363-d1c8-7104">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque podáis ser malpensados, nos referimos a unos polvos místicos que utiliza Mamá Guedé. Esta puede gastar una Acción en lanzar los polvos sobre un enemigo a una distancia máxima de 10 cm. En su siguiente Fase de Activación, este no podrá Moverse y además sufrirá un penalizador de -3 a cualquier tirada de Combate o Precisión que realice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Poderes psíquicos" id="5785-0fc9-df0d-f049" hidden="false">
+          <comment>Macumba</comment>
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="7da2-e1c2-0ccf-e71b" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bd3-a2c3-1bea-e3b3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="46bd-6973-2fd9-307e" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e706-e30c-ef5b-2610" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empochizar" hidden="false" id="2d4e-609d-9168-e64a" type="selectionEntry" targetId="0106-f14b-d329-2ebf"/>
+            <entryLink import="true" name="Muñeco vudú" hidden="false" id="f523-a735-ac9e-c6c0" type="selectionEntry" targetId="7ca9-1762-ad71-406d"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sacrificio" hidden="false" id="3fda-8334-9935-3f43">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2be8-f403-aa13-fd28" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f65-5c6f-1c68-f6fc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sacrificio" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="35dc-5a4e-5549-8d3b">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Mamá Guedé puede gastar una Acción en sacrificar un Mutante de su banda con el que esté en contacto. Este resultará inmediatamente Abatido, pero permitirá mejorar los Atributos (excepto Acciones) de Mamá Guedé. Podrá subir el valor de un Atributo en 1 por cada fracción de 10 puntos del valor de la miniatura sacrificada, hasta un máximo de 3 mejoras por Atributo.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="4e8f-7112-9ce2-ff13" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="434e-2e31-3610-cd37">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64e6-8091-cc4e-6859-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64e6-8091-cc4e-6859-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Maza" id="b3f8-6bc5-84f4-4be3" hidden="false" type="profile" targetId="5f7a-14f0-0f0f-5999">
+                  <modifiers>
+                    <modifier type="set" value="Báculo de los muertos" field="name"/>
+                    <modifier type="set" value="Si consigue Abatir a un enemigo atrapa su esencia vital permitiendo a Mamá Guedé lanzar uno de sus poderes de manera inmediata, sin gastar ninguna Acción." field="c498-c631-f4c5-160a"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="9d60-2486-84f4-2d37" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="c894-e8d5-001f-d97b" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7fa-6acd-91d4-deee-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fa-6acd-91d4-deee-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

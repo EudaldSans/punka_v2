@@ -1346,14 +1346,25 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
       </modifiers>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="5f7a-14f0-0f0f-5999" name="Maza" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb-cb0e-6a26-c9d1" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6582-5e09-b30b-db5a" id="1c8d-a2ec-680b-e6ae" primary="false" name="Arma"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Nunchakus" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Maza" id="61d1-07d8-31d5-cf5a" hidden="false" type="profile" targetId="5f7a-14f0-0f0f-5999">
           <modifiers>
             <modifier type="set" value="Nunchakus" field="name">
               <conditions>
@@ -1374,25 +1385,8 @@ coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido
               </conditions>
             </modifierGroup>
           </modifierGroups>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
-      </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb-cb0e-6a26-c9d1" includeChildSelections="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="6582-5e09-b30b-db5a" id="1c8d-a2ec-680b-e6ae" primary="false" name="Arma"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="Nunchakus" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-          <comment>Flipaos de los Ninja</comment>
-        </modifier>
-      </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2612,6 +2606,14 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
         <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
         <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
         <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maza" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5f7a-14f0-0f0f-5999">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
         <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
       </characteristics>
     </profile>
