@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5595-2b7d-6fea-0903" name="Troupe Freak Show" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Acróbata" hidden="false" id="29ae-69e8-6e60-aa6f" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
+      <entryLinks>
+        <entryLink import="true" name="Rarezas" hidden="false" id="126b-00c0-ae1a-c6b5" type="selectionEntryGroup" targetId="972c-3f37-3001-5b24">
+          <constraints>
+            <constraint type="max" value="15" field="e515-0c5b-47aa-1328" scope="parent" shared="true" id="4105-be4a-d28a-b6c7"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="ad84-af0a-21ca-f24a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="a6a1-7ae1-7886-2495" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Forzudo" hidden="false" id="9d00-4fb5-6aef-fedc" type="selectionEntry" targetId="d4ab-e726-8812-6dcb">
+      <modifiers>
+        <modifier type="increment" value="1" field="858b-386a-ad81-5d03">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="a6a1-7ae1-7886-2495" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Domador" hidden="false" id="4d3d-2e28-687f-7041" type="selectionEntry" targetId="33fc-b625-188c-08b5">
+      <modifiers>
+        <modifier type="increment" value="1" field="6b42-4f06-87ff-70ad">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="a6a1-7ae1-7886-2495" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Jefe de pista" hidden="false" id="e18a-8d85-13e0-8f90" type="selectionEntry" targetId="3092-b1ed-b961-7988"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Troupe Library" id="a5d7-56f6-c928-def0" targetId="2e39-db91-d813-6cef"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfacción: Freak Show" hidden="false" id="7ce8-d925-cb11-09b8">
+      <categoryLinks>
+        <categoryLink targetId="d93e-761f-ea8b-93ec" id="43e9-77a5-0328-a368" primary="false" name="Subfacción: Freak Show"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="58bf-3e6a-26b0-16c4-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="58bf-3e6a-26b0-16c4-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bicho Raro" hidden="false" id="a6a1-7ae1-7886-2495">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+      </costs>
+      <profiles>
+        <profile name="Bicho Raro" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="02d1-f52e-e3d1-8304">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Hermanos de desgracias</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Hermanos de desgracias" id="2c4b-5aa9-7856-911d" hidden="false">
+          <description>Los Bichos raros son una gente muy unida entre sí, que se apoyan sin dudarlo, pero que sienten sus pérdidas como nadie. Un Bicho raro obtendrá un bonificador de +1 al Combate por cada Bicho raro que tenga a una distancia de 10 cm o menos, hasta un máximo de +3. Sin embargo también tendrá un penalizador de -1 al Combate porcada Bicho raroAbatido que tenga a 10 cm o menos.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="61f3-82cb-f191-2a13" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="cb1c-7c51-c4fb-672a" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Maza" hidden="false" id="b774-56a5-1fee-332a" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="f1da-2488-2dc0-dc7e" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="4678-f0ce-5364-6b64" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="ac2f-a999-fa2a-9da8" type="selectionEntry" targetId="34b3-8c91-7e61-40ce"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="2b0c-7624-3b72-d3ea" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a413-7a2d-6f1c-d1e5" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a848-cd3a-a4e9-a62d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="0d45-86bd-8ce5-ec11" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="cf0a-5781-181f-3309" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="3a9c-a132-864f-f19a" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af28-b47a-8444-a8ff" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="428f-e31e-b4fd-f8d7" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Subfacción: Freak Show" hidden="false" id="2acb-7b82-2327-16a7" targetId="d93e-761f-ea8b-93ec" primary="false"/>
+        <categoryLink name="Banda: Troupe" hidden="false" id="5251-8dfc-76c8-1412" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rarezas" id="972c-3f37-3001-5b24" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ancas" hidden="false" id="0e58-af13-acc7-b393">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="16"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b218-ae4c-316c-b9f9" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Salto" id="e77f-23e6-a16d-8552" hidden="false" type="rule" targetId="23b9-d6a1-e1db-09c4"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ancas" typeId="8cc8-6e76-94b0-8f9e" typeName="Rareza" hidden="false" id="df70-3a84-b3b8-3e02">
+              <characteristics>
+                <characteristic name="Reglas" typeId="406e-1bd4-3c50-efaf">La miniatura tiene unas piernas que parecen ancas, otorgándole la Regla especial Salto.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enanismo" hidden="false" id="5881-24a1-ef75-9f2e">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0904-aac1-3e99-d003" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Enanismo" typeId="8cc8-6e76-94b0-8f9e" typeName="Rareza" hidden="false" id="4250-0fef-24be-0cc1">
+              <characteristics>
+                <characteristic name="Reglas" typeId="406e-1bd4-3c50-efaf">La miniatura es más pequeña de lo habitual, por lo que considera las Coberturas de tamaño 1 como si fueran de tamaño 2. No combinable con Gigantismo.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="0" field="0904-aac1-3e99-d003">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ee56-4909-18b2-2894" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gordérrimo" hidden="false" id="f64c-b452-139a-8d90">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ab-052f-d768-5ca4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gordérrimo" typeId="8cc8-6e76-94b0-8f9e" typeName="Rareza" hidden="false" id="4d38-a3d5-34e8-de15">
+              <characteristics>
+                <characteristic name="Reglas" typeId="406e-1bd4-3c50-efaf">Si esta miniatura es Abatida en cuerpo a cuerpo, caerá encima de la miniatura que la haya Abatido. Esta deberá superar una tirada de Agilidad o quedará atrapada hasta que gaste 2 Acciones en apartar la mole que tiene encima. Mientras esté atrapada es como si no existiera, de manera que no se la podrá atacar, disparar etc., pero tampoco podrá controlar objetivos, etc.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Faquir" hidden="false" id="f6dd-71d1-b30e-3b7f">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad1-db8f-ac4d-5e92" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Faquir" typeId="8cc8-6e76-94b0-8f9e" typeName="Rareza" hidden="false" id="6e1d-cf65-6544-a629">
+              <characteristics>
+                <characteristic name="Reglas" typeId="406e-1bd4-3c50-efaf">La miniatura es experta en ser agujereada. Ignora la
+Penetración de las armas con la palabra filo (filo pequeño, filo
+medio y filo pesado)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gigantismo" hidden="false" id="ee56-4909-18b2-2894">
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75c1-a247-46d1-0434" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gigantismo" typeId="8cc8-6e76-94b0-8f9e" typeName="Rareza" hidden="false" id="25eb-9ba3-6727-68f3">
+              <characteristics>
+                <characteristic name="Reglas" typeId="406e-1bd4-3c50-efaf">La miniatura es más grande lo habitual, obteniendo un bonificador de +2 a la Fuerza, pero también un penalizador de -1 a la Agilidad. No combinable con Enanismo.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="0" field="75c1-a247-46d1-0434">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5881-24a1-ef75-9f2e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <profileTypes>
+    <profileType name="Rareza" id="8cc8-6e76-94b0-8f9e" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Reglas" id="406e-1bd4-3c50-efaf"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+</catalogue>

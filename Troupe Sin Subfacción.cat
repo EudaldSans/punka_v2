@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="8a16-4a9c-b9b0-b8cf" name="Troupe Sin Subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Madame destino" hidden="false" id="543e-e475-5ac6-bbea" publicationId="6699-072c-136a-7d30" page="103" collective="false">
+      <profiles>
+        <profile name="Madame destino" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="2bb1-f54e-059a-6ae5">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Levitación, Retraso (3), Vidente</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Levitación" id="70a0-a53d-f619-af2d" hidden="false" publicationId="6699-072c-136a-7d30" page="103">
+          <description>A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</description>
+        </rule>
+        <rule name="Vidente" id="2d42-8a7b-01d6-3104" hidden="false" publicationId="6699-072c-136a-7d30" page="103">
+          <description>Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
+
+• 1 El Masca. La miniatura tiene un +1 a su Atributo de Acciones (hasta un máximo de 3).
+• 2 El Pirao. Desaparece un arma al azar de la miniatura.
+• 3 El Sol. La miniatura tiene un -2 a su Atributo de Precisión (hasta un mínimo de 1).
+• 4 La Luna. La miniatura tiene un -2 a su Atributo de Combate (hasta un mínimo de 1).
+• 5 El Buga. La miniatura obtiene la Regla especial Raudo.
+• 6 El Engranaje. La miniatura tiene un -2 a su Atributo de Dureza (hasta un mínimo de 1).
+• 7 El Páramo. La miniatura tiene un -2 a su Atributo de Agilidad (hasta un mínimo de 1).
+• 8 La Torre. La miniatura tiene un +2 a su Atributo de Dureza.
+• 9 El Memonio. La miniatura tiene un -1 a su Atributo de Acciones (hasta un mínimo de 1).
+• 10 La Muerte. La miniatura debe superar una tirada de Dureza o resultar Abatida.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Banda: Troupe" hidden="false" id="d06f-fa90-dbe7-b858" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="3efd-ef0d-a88f-5818" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="f846-f496-57fe-d738" targetId="6659-5ef7-facd-fab1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="8bb2-b0b7-ad53-58f0" collective="false" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+        <entryLink import="true" name="Filo Pequeño" hidden="false" id="2a18-3816-9bf4-175c" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="125e-7d07-2119-bf41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0ae-14ab-685f-e705" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Retraso (3)" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="François el mimo" hidden="false" id="2e5b-8dda-560e-8d63" collective="false">
+      <profiles>
+        <profile name="François el mimo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="32b8-b752-3fe0-045b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">¡Matad a eso!, Mimo, Muro imaginario</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="¡Matad a eso!" id="a3b6-8cbf-ef30-d221" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
+          <description>Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</description>
+        </rule>
+        <rule name="Muro imaginario" id="ae50-8ea0-721d-794e" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
+          <description>A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</description>
+        </rule>
+        <rule name="Mimo" id="81b4-ca62-9032-0314" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
+          <description>François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Banda: Troupe" hidden="false" id="61f6-eec2-e7fd-30df" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="9eb1-e586-6ef3-3e7a" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="c24f-8960-d5a5-624" targetId="6659-5ef7-facd-fab1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="c393-5bf3-c9fc-6622" collective="false" targetId="19f2-5137-907f-980b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Troupe Library" id="8234-447f-dc88-ad92" targetId="2e39-db91-d813-6cef"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Acróbata" hidden="false" id="7037-9815-b912-c3d6" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
+      <modifiers>
+        <modifier type="increment" value="1" field="ad84-af0a-21ca-f24a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Cañón lanzador" hidden="false" id="641c-3d3c-c2e9-26a2" type="selectionEntry" targetId="58ad-d371-aa8b-a05d"/>
+    <entryLink import="true" name="Coche de pachachos" hidden="false" id="85f6-591d-585e-c980" type="selectionEntry" targetId="9e0d-5257-f4c4-6acb"/>
+    <entryLink import="true" name="Forzudo" hidden="false" id="b12d-bc61-aecd-12f5" type="selectionEntry" targetId="d4ab-e726-8812-6dcb">
+      <modifiers>
+        <modifier type="increment" value="1" field="858b-386a-ad81-5d03">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Domador" hidden="false" id="ead8-68d7-6d55-c13e" type="selectionEntry" targetId="33fc-b625-188c-08b5">
+      <modifiers>
+        <modifier type="set" value="1" field="6b42-4f06-87ff-70ad">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Jefe de pista" hidden="false" id="18aa-68ee-290a-81c8" type="selectionEntry" targetId="3092-b1ed-b961-7988"/>
+    <entryLink import="true" name="Pachacho" hidden="false" id="00e6-6c8d-1296-8e6d" type="selectionEntry" targetId="3a98-6dc4-91e7-cc07"/>
+  </entryLinks>
+</catalogue>

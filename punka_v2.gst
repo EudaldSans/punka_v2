@@ -168,6 +168,8 @@
       <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
+    <categoryEntry name="Subfacción: Freak Show" id="d93e-761f-ea8b-93ec" hidden="false"/>
+    <categoryEntry name="Subfacción: Ilusionistas" id="4350-1b95-6825-f692" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
