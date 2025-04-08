@@ -116,9 +116,6 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fb7-044a-20d8-a2cc" includeChildSelections="true"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>

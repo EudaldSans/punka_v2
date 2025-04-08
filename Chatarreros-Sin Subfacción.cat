@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b12d-de18-9c47-baaf" name="Chatarreros - Sin Subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Dinamo" hidden="false" id="c680-8bab-82ac-eeb0" type="selectionEntry" targetId="ea3b-14d3-df9-a3a0"/>
+    <entryLink import="true" name="Engranaje" hidden="false" id="6517-143d-c12e-69cb" type="selectionEntry" targetId="c27c-fefc-3a05-ac58"/>
+    <entryLink import="true" name="Pistón" hidden="false" id="c9c1-33ee-c212-7d94" type="selectionEntry" targetId="b696-ef46-271a-5182"/>
+    <entryLink import="true" name="Sonda" hidden="false" id="f21e-416d-aef4-13d0" type="selectionEntry" targetId="7ea6-da1d-747f-db4"/>
+    <entryLink import="true" name="Caronte" hidden="false" id="dd4e-8c31-e644-2b60" type="selectionEntry" targetId="3ca9-c94c-5bf-b11e"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Chatarreros Library" id="4a37-0aa6-aed3-9f1b" targetId="1dde-4fe6-a131-8b45"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Samantha O&apos;Sullivan" hidden="false" id="1916-3bdb-b68a-f0c4">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4522-f091-b9d7-dddf" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+        <entryLink import="true" name="Cacharras del oficio" hidden="false" id="0804-526e-7b42-5c16" type="selectionEntry" targetId="82cc-581b-c16b-22e4">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3298-cbce-813d-c1d1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3298-cbce-813d-c1d1-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cuero endurecido" hidden="false" id="4849-124c-b61a-efca" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+          <modifiers>
+            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdae-bf90-f66b-6577-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdae-bf90-f66b-6577-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bala apañada" hidden="false" id="76dc-ce37-4e0f-83d6" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Samantha O&apos;Sullivan" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a861-21a6-4e2d-694b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (5)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (5)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Postas" id="85c1-64af-df14-bf53" hidden="false" type="rule" targetId="f977-1a8f-2209-a20e"/>
+        <infoLink name="Difícil de usar" id="83b5-c062-92c2-bea6" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rotocañón" hidden="false" id="dfbb-3b1c-4f16-a84c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c4-a44d-e21d-6d97-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c4-a44d-e21d-6d97-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Rotocañón Cazaalimañas" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="39e1-c118-2f20-335e">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5/4/3</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5/4/3</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30cm</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Postas, arma de fuego</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rotocañón Cazabestias" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="cb1e-180b-dcb6-64e7">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">7</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">75</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15cm</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Cifícil de usar, arma de fuego</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rotocañón Cazahombres" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="2c73-66d5-361e-1ecf">
+              <characteristics>
+                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">5</characteristic>
+                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
+                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60cm</characteristic>
+                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Arma de fuego</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Arma de fuego" hidden="false" id="9a32-1d4b-0891-4e0f" targetId="9e40-76e9-2e11-5819" primary="false"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Arma de fuego" id="04e8-ed25-ed2b-7d5c" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Banda: Chatarreros" hidden="false" id="eee6-29e9-59e1-edb0" targetId="476f-664f-cf39-efa5" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="068e-254b-d5d2-7a04" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="4b02-96c3-d09a-3ed4" targetId="6659-5ef7-facd-fab1" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

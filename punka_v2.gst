@@ -173,11 +173,8 @@
       <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
-<<<<<<< HEAD
-    <categoryEntry name="Subfacción: Freak Show" id="d93e-761f-ea8b-93ec" hidden="false"/>
     <categoryEntry name="Subfacción: Ilusionistas" id="4350-1b95-6825-f692" hidden="false"/>
     <categoryEntry name="Subfacción: Cirque du no se que" id="3d3e-cfff-95d3-9d2e" hidden="false"/>
-=======
     <categoryEntry name="Arma flamígera" id="601e-6a87-2e5d-284a" hidden="false"/>
     <categoryEntry name="Subfacción: Inquisición atómica" id="8056-4585-d83b-1f6" hidden="false">
       <comment>Irradiados</comment>
@@ -221,7 +218,6 @@
     <categoryEntry name="Subfacción: Macumba" id="a62b-96dc-fdc0-b760" hidden="false">
       <comment>Mutardos</comment>
     </categoryEntry>
->>>>>>> b0aa87b06b2682dc4ef334c1d547cc06da84b77e
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
@@ -1784,10 +1780,25 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
           <characteristics>
             <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">¡¡¡CATAPUM!!!</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="-" field="c2c9-19be-2e75-813a">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="1916-3bdb-b68a-f0c4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="¡¡¡CATAPUM!!!" id="9c86-9a10-341-eead" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c"/>
+        <infoLink name="¡¡¡CATAPUM!!!" id="9c86-9a10-341-eead" hidden="false" type="rule" targetId="232d-9375-2e3c-b51c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="1916-3bdb-b68a-f0c4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Munición contaminada" hidden="false" id="5344-f1f1-232b-6a3e" publicationId="6699-072c-136a-7d30" page="74">
@@ -2388,7 +2399,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e6a6-d918-dc91-bde8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2417,7 +2428,7 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="model" childId="9e40-76e9-2e11-5819" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="9e40-76e9-2e11-5819" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
