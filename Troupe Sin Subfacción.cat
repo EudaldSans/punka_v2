@@ -108,15 +108,6 @@
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacción: Sin subfacción" hidden="true" id="6150-74d6-3fdf-b6c2">
-      <categoryLinks>
-        <categoryLink name="Subfacción: Sin subfacción" hidden="false" id="b633-cf2f-2a0e-b7c0" targetId="f379-822c-2bc8-527e" primary="false"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34ca-9dcf-ebdd-d9b2-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ca-9dcf-ebdd-d9b2-max" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Troupe Library" id="8234-447f-dc88-ad92" targetId="2e39-db91-d813-6cef"/>

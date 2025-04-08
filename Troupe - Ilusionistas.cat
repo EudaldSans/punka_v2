@@ -96,15 +96,6 @@
         <infoLink name="Y cortamos por la mitad" id="7c82-2e58-18ee-8cf9" hidden="false" type="profile" targetId="4166-3e54-8267-b50e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacción: Ilusionistas" hidden="false" id="4e9c-97e0-595d-ff65">
-      <categoryLinks>
-        <categoryLink targetId="4350-1b95-6825-f692" id="b8c3-2fb8-90e2-e4b0" primary="false" name="Subfacción: Ilusionistas"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="83a0-0acc-facc-c902" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="80a9-ddfc-e19c-9cdd" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
   </selectionEntries>
   <profileTypes>
     <profileType name="Truco" id="0761-c508-e4fc-4f65" hidden="false">

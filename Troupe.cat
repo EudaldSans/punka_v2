@@ -482,6 +482,19 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
 • Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
 • Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+• Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
+• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.
+• Presentar a los Bichos raros. Si en tu banda llevas un Jefe de pista, este podrá usar su Regla especial de El mayor espectáculo del mundo para presentar a esta tropa. Durante este Turno de juego la Regla especial Hermanos de desgracias funcionará a 20 cm en lugar de 10 cm." field="77d2-f29c-19a6-819c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5595-2b7d-6fea-0903" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
