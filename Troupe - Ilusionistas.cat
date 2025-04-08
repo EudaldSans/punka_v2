@@ -39,14 +39,14 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">La Senda de la ilusión, Observen atentamente</characteristic>
           </characteristics>
         </profile>
-        <profile name="La Senda de la Ilusión" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="dfa2-01f5-8c6f-e12f">
+        <profile name="Observen atentamente" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="4ad6-f798-81bc-f316">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un Artista puede gastar Acciones en usar su labia y capacidad de asombrar para generar Puntos de Truco para su banda. Generará 1 Punto de truco por Acción utilizada.</characteristic>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Un Artista conoce todos los Trucos mostrados en la página siguiente. Cada artista genera al comenzar la partida 3 Puntos de Truco para su banda. Puede gastar 1 Acción en utilizar uno de sus Trucos gastando los Puntos de Truco correspondientes.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Observen atentamente" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4ad6-f798-81bc-f316">
+        <profile name="La Senda de la Ilusión" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="fdba-c666-04bf-334d">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un Artista conoce todos los Trucos mostrados en la página siguiente. Cada artista genera al comenzar la partida 3 Puntos de Truco para su banda. Puede gastar 1 Acción en utilizar uno de sus Trucos gastando los Puntos de Truco correspondientes.</characteristic>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Un Artista conoce todos los Trucos mostrados en la página siguiente. Cada artista genera al comenzar la partida 3 Puntos de Truco para su banda. Puede gastar 1 Acción en utilizar uno de sus Trucos gastando los Puntos de Truco correspondientes. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -60,11 +60,11 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="273b-1bd9-888a-a0fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Maza" hidden="false" id="7d5b-ad5d-dc44-8256" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="c2d3-0220-3613-b410" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
-            <entryLink import="true" name="Pistola" hidden="false" id="158f-e7c5-d8c6-c1b3" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
-            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="deb4-eb45-c839-a81a" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="6438-c285-b619-36b8" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Maza" hidden="false" id="7d5b-ad5d-dc44-8256" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry" sortIndex="4"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="c2d3-0220-3613-b410" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry" sortIndex="3"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="158f-e7c5-d8c6-c1b3" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry" sortIndex="5"/>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="deb4-eb45-c839-a81a" type="selectionEntry" targetId="f19a-c771-9682-f4c5" sortIndex="2"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="6438-c285-b619-36b8" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2" sortIndex="1"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
