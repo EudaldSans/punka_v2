@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e5ea-adbf-9faf-dadf" name="Troupe - Cirque du no-sé" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Acróbata" hidden="false" id="6857-11b9-6e67-dd2c" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Reglas especiales" id="3fd3-9b93-f80f-dd23" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Acròbata" hidden="false" id="da97-fb85-7298-f28e">
+              <profiles>
+                <profile name="Catapulta infernal" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="e960-c70c-f77f-e7e5">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
+Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="5990-7e24-f7a6-54f1" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Funambulista" hidden="false" id="d72d-0bc8-d496-aad6">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="12"/>
+              </costs>
+              <profiles>
+                <profile name="Pértiga" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="46f1-1312-8f6e-41e1">
+                  <characteristics>
+                    <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+                    <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+3</characteristic>
+                    <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Funambulista" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="16f1-e363-d3b8-d8c7">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Utiliza su pértiga en Combate. Puede utilizarlo contra una miniatura enemiga a 5 cm o menos en Línea de visión y que no se encuentre tras Cobertura de ningún tipo ni trabada en Combate. Funciona como un ataque en cuerpo a cuerpo, incluyendo los bonificadores por el Asalto, pero sin que la miniatura llegue a estar en contacto con el enemigo. Si el funambulista gana o empata el Combate, Impactará de la manera habitual. Si lo pierde o empata, su rival simplemente no hará nada. El arma tiene Fuerza 3 y Penetración 1. Si llegara a ponerse en contacto con un enemigo, se consideraría un arma improvisada debido a su aparatosidad en las cercanías. No puede equiparse con ningún otro arma.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="358c-31f2-5715-3cee" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lanzador de cuchillos" hidden="false" id="7bd4-3551-7a75-b9dc">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+              </costs>
+              <profiles>
+                <profile name="Lanzador de cuchillos" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="5f0b-91d3-6b1d-e575">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Tiene un bonificador de +1 a la Precisión y +1 a la Fuerza cuando lanza cuchillos arrojadizos.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1f8c-2fb7-8291-16e2" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Malabarista" hidden="false" id="7ccc-bfc6-33a8-77c2">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Malabarista" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="3893-075d-71f7-4b3f">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Si en su Fase de activación el malabarista gasta 1 Acción en hacer malabares, el ataque a distancia posterior en esa misma Fase de activación tendrá un bonificador de +2 a la Fuerza.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bolos" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="0968-843a-7b78-db31">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">2</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">0</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/15/20</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="206c-6a87-5652-e444" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Saltimbanqui" hidden="false" id="44b8-7c35-bf04-02b6">
+              <profiles>
+                <profile name="Saltimbanqui" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="ee63-af0b-76eb-aed6">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Es capaz de confundir a los rivales atrayendo su atención. Puede repetir una tirada durante la partida.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5f19-6f5f-f55a-9310" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tragafuegos" hidden="false" id="35ae-929d-193d-1a23">
+              <costs>
+                <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Tragafuegos" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="5bdf-9d17-b3d0-ebc2">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Es un artista de circo capaz de expulsar fuego por la boca. Pasará a tener un ataque a distancia de Fuerza 3 y Penetración 2 que utiliza la plantilla de lágrima. Al realizarlo debe tirar 1d10. Con un resultado de 1-8 funcionará perfectamente, pero con un 9-10 no sólo el ataque no funcionará, sino que será él el que reciba el daño.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Tragafuegos" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="dcbd-2556-a07e-ba81">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">2</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">3</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">Lágrima</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Plantilla</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fb7-044a-20d8-a2cc" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8152-1e13-de3b-922c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8152-1e13-de3b-922c-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="35" field="e515-0c5b-47aa-1328"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Jefe de pista" hidden="false" id="a9fe-3fd6-0830-71ef" type="selectionEntry" targetId="3092-b1ed-b961-7988">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="22fd-7215-24f9-166e" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Troupe Library" id="2b0d-2f42-9b84-d0c9" targetId="2e39-db91-d813-6cef"/>
+  </catalogueLinks>
+</catalogue>

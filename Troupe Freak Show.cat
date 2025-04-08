@@ -12,6 +12,9 @@
           </repeats>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad84-af0a-21ca-f24a"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Forzudo" hidden="false" id="9d00-4fb5-6aef-fedc" type="selectionEntry" targetId="d4ab-e726-8812-6dcb">
       <modifiers>

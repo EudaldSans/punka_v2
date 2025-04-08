@@ -115,12 +115,15 @@
   <entryLinks>
     <entryLink import="true" name="Acróbata" hidden="false" id="7037-9815-b912-c3d6" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
       <modifiers>
-        <modifier type="increment" value="1" field="ad84-af0a-21ca-f24a">
+        <modifier type="increment" value="1" field="69ef-f7ba-01c7-5e54">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="3a98-6dc4-91e7-cc07" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="69ef-f7ba-01c7-5e54"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Cañón lanzador" hidden="false" id="641c-3d3c-c2e9-26a2" type="selectionEntry" targetId="58ad-d371-aa8b-a05d"/>
     <entryLink import="true" name="Coche de pachachos" hidden="false" id="85f6-591d-585e-c980" type="selectionEntry" targetId="9e0d-5257-f4c4-6acb"/>

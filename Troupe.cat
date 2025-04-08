@@ -219,6 +219,13 @@
             <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
 Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e5ea-adbf-9faf-dadf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -237,6 +244,28 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
             <entryLink import="true" name="Filo Medio" hidden="false" id="e8fe-ac72-8405-27f4" collective="false" targetId="d385-422c-97e9-fd5f" type="selectionEntry" sortIndex="4"/>
             <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="164e-dcde-3e5c-2d98" collective="false" targetId="f19a-c771-9682-f4c5" type="selectionEntry" sortIndex="1"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="644e-32da-94c7-4e52">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d72d-0bc8-d496-aad6" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ccc-bfc6-33a8-77c2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="36c2-c48d-78db-9a55">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d72d-0bc8-d496-aad6" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ccc-bfc6-33a8-77c2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -255,9 +284,6 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <infoLink name="Escurridizo" id="c167-4d7-bbc2-26f6" hidden="false" type="rule" targetId="59a0-f60d-aa37-f759"/>
         <infoLink name="Todoterreno" id="1b9d-272b-170a-1cd0" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
       </infoLinks>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad84-af0a-21ca-f24a"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cañón lanzador" hidden="false" id="58ad-d371-aa8b-a05d" publicationId="6699-072c-136a-7d30" page="104">
       <costs>
@@ -502,6 +528,15 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
 • Presentar a los Artistas. Si en tu banda llevas un Jefe de pista, este podrá usar su Regla especial de El mayor espectáculo del mundo para presentar a esta tropa. El Jefe de Pista elige a un Artista, que doblará los Puntos de Trucos que genere este Turno de juego con la Regla especial Observen atentamente." field="77d2-f29c-19a6-819c">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6a86-2a94-7ff2-3731" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+" field="77d2-f29c-19a6-819c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e5ea-adbf-9faf-dadf" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>

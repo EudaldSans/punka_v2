@@ -15,12 +15,15 @@
     </entryLink>
     <entryLink import="true" name="Acróbata" hidden="false" id="fc64-4882-2329-acdb" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
       <modifiers>
-        <modifier type="increment" value="1" field="ad84-af0a-21ca-f24a">
+        <modifier type="increment" value="1" field="c1bd-3f95-677b-aaac">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="b546-4954-19aa-fb17" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="c1bd-3f95-677b-aaac"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Jefe de pista" hidden="false" id="6de5-252c-99b6-92e9" type="selectionEntry" targetId="3092-b1ed-b961-7988"/>
   </entryLinks>
