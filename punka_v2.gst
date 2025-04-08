@@ -38,21 +38,12 @@
         <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-<<<<<<< HEAD
     <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
       <characteristicTypes>
         <characteristicType name="Reglas" id="77d2-f29c-19a6-819c"/>
       </characteristicTypes>
     </profileType>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
-=======
-    <profileType id="8d36-94cc-6c74-8857" name="Habilidad" sortIndex="2">
-      <characteristicTypes>
-        <characteristicType id="615a-5192-19d4-fe3c" name="Efecto"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="db67-24c5-11d4-e09e" name="Blindaje" sortIndex="5">
->>>>>>> b0aa87b06b2682dc4ef334c1d547cc06da84b77e
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
         <characteristicType id="d8ba-fec3-89d1-9634" name="Reglas"/>
