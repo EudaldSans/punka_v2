@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5595-2b7d-6fea-0903" name="Troupe Freak Show" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5595-2b7d-6fea-0903" name="Troupe - Freak Show" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Acróbata" hidden="false" id="29ae-69e8-6e60-aa6f" type="selectionEntry" targetId="1b99-d4be-4cdc-ddbf">
       <entryLinks>
@@ -43,7 +43,7 @@
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Subfacción: Freak Show" hidden="false" id="7ce8-d925-cb11-09b8">
       <categoryLinks>
-        <categoryLink targetId="d93e-761f-ea8b-93ec" id="43e9-77a5-0328-a368" primary="false" name="Subfacción: Freak Show"/>
+        <categoryLink name="Subfacción: Freak Show" hidden="false" id="1025-3da7-9682-53c7" targetId="a3ac-8bd8-ab6b-7228" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="58bf-3e6a-26b0-16c4-min" includeChildSelections="false"/>
@@ -108,9 +108,12 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Miembros de la banda" hidden="false" id="428f-e31e-b4fd-f8d7" targetId="84b7-6828-dd10-0280" primary="true"/>
-        <categoryLink name="Subfacción: Freak Show" hidden="false" id="2acb-7b82-2327-16a7" targetId="d93e-761f-ea8b-93ec" primary="false"/>
         <categoryLink name="Banda: Troupe" hidden="false" id="5251-8dfc-76c8-1412" targetId="297e-53dd-3c0d-5c82" primary="false"/>
+        <categoryLink name="Subfacción: Freak Show" hidden="false" id="ef48-060d-be5f-9002" targetId="a3ac-8bd8-ab6b-7228" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rarezas" hidden="false" id="a2a6-1394-252b-c778" type="selectionEntryGroup" targetId="972c-3f37-3001-5b24"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -220,4 +223,7 @@ medio y filo pesado)</characteristic>
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <categoryEntries>
+    <categoryEntry name="Subfacción: Freak Show" id="a3ac-8bd8-ab6b-7228" hidden="false"/>
+  </categoryEntries>
 </catalogue>

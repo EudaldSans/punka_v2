@@ -51,7 +51,6 @@
     <selectionEntry id="ee3d-6737-8a3a-0ded" name="Bocina" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d502-d06d-86ba-9035" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-a950-5880-3cac" type="max"/>
       </constraints>
       <profiles>
         <profile id="55f2-b8de-e579-a075" name="Bocina" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -67,7 +66,6 @@
     <selectionEntry id="80d4-f0bc-e827-feba" name="Bomba fétida" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d8-e586-2c0a-62f0" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d4b-c1e6-65a7-ffe4" type="max"/>
       </constraints>
       <profiles>
         <profile id="fc06-5475-efc0-e0d8" name="Bomba fétida" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -83,7 +81,7 @@
     <selectionEntry id="a82b-b25f-ef11-1633" name="Cojín de pedos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e8-4b0f-0777-a0a5" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd70-ddf8-8669-7ce7" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd70-ddf8-8669-7ce7" type="max"/>
       </constraints>
       <profiles>
         <profile id="1c0b-feda-9e1a-1539" name="Cojín de pedos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -99,7 +97,7 @@
     <selectionEntry id="2bab-d8ee-71e9-fa8f" name="Flor escupe agua" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e01-a7d7-189e-1bca" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c83-fe96-c9bf-7209" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c83-fe96-c9bf-7209" type="max"/>
       </constraints>
       <profiles>
         <profile id="91dc-cd3e-b532-fd4c" name="Flor escupe agua" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -115,7 +113,7 @@
     <selectionEntry id="10b9-0730-a404-4d10" name="Globo que flota" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fdb-c2b0-6613-fc6a" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ad-20b4-29fe-feb3" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21ad-20b4-29fe-feb3" type="max"/>
       </constraints>
       <profiles>
         <profile id="4d5f-e130-83b0-d1c9" name="Globo que flota" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -131,7 +129,7 @@
     <selectionEntry id="0cae-77fe-946f-ff88" name="Guante con descarga" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f4-54da-23ba-909a" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a501-1615-ece4-3c96" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a501-1615-ece4-3c96" type="max"/>
       </constraints>
       <profiles>
         <profile id="0e31-1eea-8ce6-c539" name="Guante con descarga" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -153,7 +151,7 @@
     <selectionEntry id="47f1-c9c2-81c9-4f89" name="Pañuelos infinitos" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c1-c597-d539-e054" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-d608-6d66-f611" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1cc0-d608-6d66-f611" type="max"/>
       </constraints>
       <profiles>
         <profile id="e995-92fa-b9d5-a632" name="Pañuelos infinitos" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -169,7 +167,7 @@
     <selectionEntry id="1157-b977-dba1-42f8" name="Zurullo" publicationId="6699-072c-136a-7d30" page="105" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ad-3c3e-5f4e-d0ec" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7b-5cf6-826d-1a4a" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be7b-5cf6-826d-1a4a" type="max"/>
       </constraints>
       <profiles>
         <profile id="943d-9e09-383a-2600" name="Zurullo" hidden="false" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial">
@@ -213,12 +211,12 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Catapulta infernal, Escurridizo, Raudo, Todoterreno</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Escurridizo, Raudo, Todoterreno</characteristic>
           </characteristics>
         </profile>
-        <profile name="Catapulta infernal" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="f8a9-2659-c42b-61fd">
+        <profile name="Catapulta infernal" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="f8a9-2659-c42b-61fd">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
 Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</characteristic>
           </characteristics>
         </profile>
@@ -228,16 +226,16 @@ Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará
         <categoryLink name="Miembros de la banda" hidden="false" id="45c3-ab26-84eb-6720" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="a1ed-e644-c823-057b" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armas" id="a1ed-e644-c823-057b" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f35-061e-9831-e0b3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="644e-32da-94c7-4e52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="36c2-c48d-78db-9a55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="9f35-061e-9831-e0b3" collective="false" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="e7b1-6545-bd69-6ea6" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Medio" hidden="false" id="e8fe-ac72-8405-27f4" collective="false" targetId="d385-422c-97e9-fd5f" type="selectionEntry"/>
-            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="164e-dcde-3e5c-2d98" collective="false" targetId="f19a-c771-9682-f4c5" type="selectionEntry"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="9f35-061e-9831-e0b3" collective="false" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry" sortIndex="2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="e7b1-6545-bd69-6ea6" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry" sortIndex="3"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="e8fe-ac72-8405-27f4" collective="false" targetId="d385-422c-97e9-fd5f" type="selectionEntry" sortIndex="4"/>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="164e-dcde-3e5c-2d98" collective="false" targetId="f19a-c771-9682-f4c5" type="selectionEntry" sortIndex="1"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -348,14 +346,14 @@ Resultado necesario:
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="246d-9640-9c7e-5978" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armas" id="246d-9640-9c7e-5978" hidden="false" collective="false" import="true" defaultSelectionEntryId="405b-1509-bc6c-c718">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8df3-e550-334e-d2d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b682-16d0-4df5-0f33" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Látigo" hidden="false" id="405b-1509-bc6c-c718" collective="false" targetId="1f7f-c5df-1420-185d" type="selectionEntry"/>
-            <entryLink import="true" name="Maza" hidden="false" id="f657-8dcf-ac1f-4f93" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
+            <entryLink import="true" name="Látigo" hidden="false" id="405b-1509-bc6c-c718" collective="false" targetId="1f7f-c5df-1420-185d" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Maza" hidden="false" id="f657-8dcf-ac1f-4f93" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry" sortIndex="2"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -369,7 +367,7 @@ Resultado necesario:
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6b42-4f06-87ff-70ad"/>
       </constraints>
       <profiles>
-        <profile name="Avivar" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1ae0-350-470b-37a5">
+        <profile name="Domador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1ae0-350-470b-37a5">
           <characteristics>
             <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
             <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
@@ -378,17 +376,22 @@ Resultado necesario:
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Avivar, Señor de las bestias</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Armas" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="0b5d-67b4-ed6d-ba80">
+        <profile name="Avivar" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8d21-f07b-c494-dff4">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Avivar" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="9785-263e-11ee-45cc">
+        <profile name="Señor de las bestias" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="3946-b826-ef1a-4c8e">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</characteristic>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no pudiendo alejarse más voluntariamente. Si no estuvieran a esa distancia, cuando sea el momento de actuar de las fieras deben usar todas las Acciones necesarias en Mover para cumplir esto. Si su Domador resulta Abatido, antes de comenzar la Fase de activación de las fieras debes tirar 1d10 por cada una en la siguiente tabla para ver cómo actúan ese Turno.
+
+• 1 La fiera intentará Asaltar a la miniatura de su propia banda a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.
+• 2-3 La fiera tratará de huir, avanzando lo máximo posible hacia el borde del tablero más cercano.
+• 4-6 La fiera se quedará en el sitio atontada.
+• 7 o más La fiera intentará Asaltar a la miniatura de la banda rival a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -404,24 +407,17 @@ Resultado necesario:
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia parda, Lucimiento</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Lucimiento" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d10a-a247-8c63-3e6b">
+        <profile name="Lucimiento" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="d10a-a247-8c63-3e6b">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</characteristic>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Bestia parda" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a78e-89a8-ac3c-0f58">
+        <profile name="Bestia parda" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="a78e-89a8-ac3c-0f58">
           <characteristics>
-            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
-            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
-            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
-            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
-            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
-            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
-            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia parda, Lucimiento</characteristic>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -436,9 +432,9 @@ Resultado necesario:
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95b0-0298-175e-7d56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Maza" hidden="false" id="6fad-fb22-06ec-0b28" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
-            <entryLink import="true" name="Maza Pesada" hidden="false" id="a233-df3f-d612-ae89" collective="false" targetId="5424-01db-ff0c-e13a" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Pesado" hidden="false" id="a74d-24c1-d199-f491" collective="false" targetId="4cff-c4a3-65b5-c719" type="selectionEntry"/>
+            <entryLink import="true" name="Maza" hidden="false" id="6fad-fb22-06ec-0b28" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="a233-df3f-d612-ae89" collective="false" targetId="5424-01db-ff0c-e13a" type="selectionEntry" sortIndex="2"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="a74d-24c1-d199-f491" collective="false" targetId="4cff-c4a3-65b5-c719" type="selectionEntry" sortIndex="3"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -473,7 +469,7 @@ Resultado necesario:
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">El mayor espectaculo del mundo</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
         <profile name="El mayor espectaculo del mundo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5aaf-9492-1afb-74fa">
@@ -486,39 +482,6 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
 • Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
 • Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
-utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
-• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
-• Presentar a los Pachachos: durante este Turno de juego, la Regla especial Risa difícil de los Pachachos restará o sumará 4 en lugar de 2.
-• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
-• Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
-• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.
-• Presentar a los Bichos raros: Si en tu banda llevas un Jefe de pista, este podrá usar su Regla especial de El mayor espectáculo del mundo para presentar a esta tropa. Durante este Turno de juego la Regla especial Hermanos de desgracias funcionará a 20 cm en lugar de 10 cm." field="77d2-f29c-19a6-819c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d93e-761f-ea8b-93ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
-utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
-• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
-• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
-• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.
-• Presentar a los Artistas:  El Jefe de Pista elige a un Artista, que doblará los Puntos de Trucos que genere este Turno de juego con la Regla especial Observen atentamente." field="77d2-f29c-19a6-819c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4350-1b95-6825-f692" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
-utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
-• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
-• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
-" field="77d2-f29c-19a6-819c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3d3e-cfff-95d3-9d2e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -526,15 +489,15 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         <categoryLink name="Miembros de la banda" hidden="false" id="57ec-fc46-ffa2-488a" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="c08f-2b02-76fa-87e1" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armas" id="c08f-2b02-76fa-87e1" hidden="false" collective="false" import="true" defaultSelectionEntryId="d768-5916-31b3-6bb4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69b0-4e47-4665-cbd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f62d-7e26-89a2-60ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="d768-5916-31b3-6bb4" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Medio" hidden="false" id="edc2-8dbd-db30-b0e9" collective="false" targetId="d385-422c-97e9-fd5f" type="selectionEntry"/>
-            <entryLink import="true" name="Pistola" hidden="false" id="bebe-5d80-5ed5-10f8" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="d768-5916-31b3-6bb4" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="edc2-8dbd-db30-b0e9" collective="false" targetId="d385-422c-97e9-fd5f" type="selectionEntry" sortIndex="3"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="bebe-5d80-5ed5-10f8" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry" sortIndex="2"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -545,6 +508,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
             <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="4e20-fccc-ee0b-f822" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
       </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
@@ -564,15 +528,17 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7"/>
           </characteristics>
         </profile>
+        <profile name="Risa difícil" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="a360-e30a-a643-f715" publicationId="6699-072c-136a-7d30" page="97">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Al igual que los típicos payasos de toda la vida, los Pachachos de la Hermandad de la Risa Floja suelen causar emociones polarizadas, o te hacen mucha gracia o los odias a muerte. Luchar contra Pachachos es como tirar una moneda. Cuando una miniatura Dispare o Combata contra un Pachacho tendrá que ver si su tirada de Precisión o Combate (lo que tenga que utilizar) es par o impar. Si fuera par se sumará 2 a la tirada (hasta un resultado máximo de 10) pero con un resultado impar se restará 2 (hasta un mínimo de 1).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zapatones" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="5415-38e0-4d4d-93e8" publicationId="6699-072c-136a-7d30" page="97">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Si un Pachacho desea Asaltar a una miniatura enemiga y no llega por una distancia de 2,5 cm o menos, gracias a los zapatones podrá adelantarse esa distancia de manera automática y por tanto podrá Asaltar. Pero cuidado, eso mismo sucederá si le Asaltan a él.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Risa difícil" id="777e-13a1-32b8-37c5" hidden="false" publicationId="6699-072c-136a-7d30" page="97">
-          <description>Al igual que los típicos payasos de toda la vida, los Pachachos de la Hermandad de la Risa Floja suelen causar emociones polarizadas, o te hacen mucha gracia o los odias a muerte. Luchar contra Pachachos es como tirar una moneda. Cuando una miniatura Dispare o Combata contra un Pachacho tendrá que ver si su tirada de Precisión o Combate (lo que tenga que utilizar) es par o impar. Si fuera par se sumará 2 a la tirada (hasta un resultado máximo de 10) pero con un resultado impar se restará 2 (hasta un mínimo de 1).</description>
-        </rule>
-        <rule name="Zapatones" id="466d-dc23-00d2-fefd" hidden="false" publicationId="6699-072c-136a-7d30" page="97">
-          <description>Si un Pachacho desea Asaltar a una miniatura enemiga y no llega por una distancia de 2,5 cm o menos, gracias a los zapatones podrá adelantarse esa distancia de manera automática y por tanto podrá Asaltar. Pero cuidado, eso mismo sucederá si le Asaltan a él.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink name="Miembros de la banda" hidden="false" id="dfeb-3ffe-bdc9-ed4d" targetId="84b7-6828-dd10-0280" primary="true"/>
       </categoryLinks>
@@ -592,19 +558,19 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="2360-c592-bdbc-4389" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armas" id="2360-c592-bdbc-4389" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e8d-2b9b-2c1c-ff3b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="270a-316b-630b-bb59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fff5-b403-5c12-7b91" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Pistola" hidden="false" id="9c02-0ca3-1540-49ae" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry"/>
-            <entryLink import="true" name="Maza" hidden="false" id="6897-ad43-ec74-2a43" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry"/>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="1e8d-2b9b-2c1c-ff3b" collective="false" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="c92e-49e9-8d4f-924e" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry"/>
-            <entryLink import="true" name="Cañón de confeti" hidden="false" id="c88b-69a7-c030-201f" collective="false" targetId="289c-5da0-d8ad-f6b7" type="selectionEntry"/>
-            <entryLink import="true" name="Escopeta" hidden="false" id="503b-3f06-75a0-f877" collective="false" targetId="265c-2979-056d-1a06" type="selectionEntry"/>
-            <entryLink import="true" name="Guante de boxeo extensible" hidden="false" id="6958-f141-f2b3-c9b3" collective="false" targetId="4c92-ac20-c805-f270" type="selectionEntry"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="9c02-0ca3-1540-49ae" collective="false" targetId="34b3-8c91-7e61-40ce" type="selectionEntry" sortIndex="5"/>
+            <entryLink import="true" name="Maza" hidden="false" id="6897-ad43-ec74-2a43" collective="false" targetId="407f-7985-410e-2a9f" type="selectionEntry" sortIndex="4"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="1e8d-2b9b-2c1c-ff3b" collective="false" targetId="ba9b-1c69-5fbe-8bc2" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="c92e-49e9-8d4f-924e" collective="false" targetId="b754-fc6a-16eb-b3fe" type="selectionEntry" sortIndex="2"/>
+            <entryLink import="true" name="Cañón de confeti" hidden="false" id="c88b-69a7-c030-201f" collective="false" targetId="289c-5da0-d8ad-f6b7" type="selectionEntry" sortIndex="6"/>
+            <entryLink import="true" name="Escopeta" hidden="false" id="503b-3f06-75a0-f877" collective="false" targetId="265c-2979-056d-1a06" type="selectionEntry" sortIndex="7"/>
+            <entryLink import="true" name="Guante de boxeo extensible" hidden="false" id="6958-f141-f2b3-c9b3" collective="false" targetId="4c92-ac20-c805-f270" type="selectionEntry" sortIndex="3"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Blindaje" id="84b0-6526-6eee-438f" hidden="false" collective="false" import="true" defaultSelectionEntryId="a16f-161b-c877-28fa">
@@ -643,8 +609,16 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cbf9-9153-7f30-9704" name="Articulos de coña" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="9e5a-46dc-606f-9e1f" name="Bocina" hidden="false" collective="false" import="true" targetId="ee3d-6737-8a3a-0ded" type="selectionEntry"/>
-        <entryLink id="8986-b7a9-2f8a-2cc0" name="Bomba fétida" hidden="false" collective="false" import="true" targetId="80d4-f0bc-e827-feba" type="selectionEntry"/>
+        <entryLink id="9e5a-46dc-606f-9e1f" name="Bocina" hidden="false" collective="false" import="true" targetId="ee3d-6737-8a3a-0ded" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="4d1e-a5a0-119c-7580" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8986-b7a9-2f8a-2cc0" name="Bomba fétida" hidden="false" collective="false" import="true" targetId="80d4-f0bc-e827-feba" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="846e-9771-e3f7-17a0" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
         <entryLink id="6c27-5e4e-60df-f39c" name="Cojín de pedos" hidden="false" collective="false" import="true" targetId="a82b-b25f-ef11-1633" type="selectionEntry"/>
         <entryLink id="6777-d0fe-1416-2475" name="Flor escupe agua" hidden="false" collective="false" import="true" targetId="2bab-d8ee-71e9-fa8f" type="selectionEntry"/>
         <entryLink id="ee88-0122-60a0-5a17" name="Globo que flota" hidden="false" collective="false" import="true" targetId="10b9-0730-a404-4d10" type="selectionEntry"/>
@@ -655,7 +629,7 @@ utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d93e-761f-ea8b-93ec" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="8a16-4a9c-b9b0-b8cf" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>

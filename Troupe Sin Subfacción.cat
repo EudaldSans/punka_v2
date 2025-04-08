@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8a16-4a9c-b9b0-b8cf" name="Troupe Sin Subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8a16-4a9c-b9b0-b8cf" name="Troupe - Sin Subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Madame destino" hidden="false" id="543e-e475-5ac6-bbea" publicationId="6699-072c-136a-7d30" page="103" collective="false">
       <profiles>
@@ -12,21 +12,18 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Levitación, Retraso (3), Vidente</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (3)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Protección contra la contaminación" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="7461-04fa-bcc0-4e77">
+        <profile name="Levitación" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="4d49-3881-aca6-22ec" publicationId="6699-072c-136a-7d30" page="103">
           <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631"/>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</characteristic>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule name="Levitación" id="70a0-a53d-f619-af2d" hidden="false" publicationId="6699-072c-136a-7d30" page="103">
-          <description>A Madame Destino le da por ir por ahí levitando aunque sin despegarse mucho del suelo. Ignora cualquier tipo de terreno que esté a ras de suelo, incluso el impasable, ya que realmente nunca llega a posarse sobre él.</description>
-        </rule>
-        <rule name="Vidente" id="2d42-8a7b-01d6-3104" hidden="false" publicationId="6699-072c-136a-7d30" page="103">
-          <description>Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
+        <profile name="Vidente" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="eded-5e8b-859f-6b9f" publicationId="6699-072c-136a-7d30" page="103">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Madame Destino es capaz de leer el destino a través de las cartas del Tarot. Puede revelar una carta a una miniatura enemiga en Línea de visión y hasta 45 cm durante el Turno de juego 1 o 2, otra durante el 3 o 4 y otra durante el 5 o 6, gastando 1 Acción. Sí, 3 cartas en total. Cuando lo haga debes tirar 1d10 en la siguiente tabla repitiendo si sale una carta repetida, o utilizar las cartas que puedes descargar en nuestra web, y aplicar el resultado de manera permanente sobre la miniatura.
+
 
 • 1 El Masca. La miniatura tiene un +1 a su Atributo de Acciones (hasta un máximo de 3).
 • 2 El Pirao. Desaparece un arma al azar de la miniatura.
@@ -37,9 +34,10 @@
 • 7 El Páramo. La miniatura tiene un -2 a su Atributo de Agilidad (hasta un mínimo de 1).
 • 8 La Torre. La miniatura tiene un +2 a su Atributo de Dureza.
 • 9 El Memonio. La miniatura tiene un -1 a su Atributo de Acciones (hasta un mínimo de 1).
-• 10 La Muerte. La miniatura debe superar una tirada de Dureza o resultar Abatida.</description>
-        </rule>
-      </rules>
+• 10 La Muerte. La miniatura debe superar una tirada de Dureza o resultar Abatida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="d06f-fa90-dbe7-b858" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Personalidades de la banda" hidden="false" id="3efd-ef0d-a88f-5818" targetId="d1a7-5f24-003f-6400" primary="true"/>
@@ -61,7 +59,11 @@
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
       </costs>
       <infoLinks>
-        <infoLink name="Retraso (3)" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+        <infoLink name="Retraso" id="e312-de3e-ef5a-583f" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7">
+          <modifiers>
+            <modifier type="append" value="(1)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="François el mimo" hidden="false" id="2e5b-8dda-560e-8d63" collective="false">
@@ -75,21 +77,25 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">¡Matad a eso!, Mimo, Muro imaginario</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="¡Matad a eso!" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="03ce-f1c5-0eb3-c65c" publicationId="6699-072c-136a-7d30" page="102">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mimo" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8353-0b73-2590-3dbd" page="102" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Muro imaginario" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="db59-ee89-6b36-8025" publicationId="6699-072c-136a-7d30" page="102">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="¡Matad a eso!" id="a3b6-8cbf-ef30-d221" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
-          <description>Es imposible concentrarse en liquidar a nadie más si François está cerca. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de François, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra François.</description>
-        </rule>
-        <rule name="Muro imaginario" id="ae50-8ea0-721d-794e" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
-          <description>A François le mola mucho hacer gestitos con las manos como si tuviera un muro delante hasta el punto de que realmente funciona. François puede gastar una Acción en crear un muro que le proporciona a él y solo él un bonificador de Cobertura de +6 por el frente (en su Línea de visión). Sin embargo, en cuanto se mueva de ese lugar el muro perderá su efecto.</description>
-        </rule>
-        <rule name="Mimo" id="81b4-ca62-9032-0314" hidden="false" publicationId="6699-072c-136a-7d30" page="102">
-          <description>François se puede poner en plan pesado imitando a alguien hasta el mínimo detalle. Si François está a 30 cm o menos de una miniatura enemiga no Abatida en peana de 25 mm y forma humana en Línea de visión, puede gastar una Acción y pasará a tener todos los Atributos y equipo de esa miniatura. Será como un clon, vamos. Podrá mantenerse así mientras se sigan manteniendo todas las condiciones anteriores.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="61f6-eec2-e7fd-30df" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Personalidades de la banda" hidden="false" id="9eb1-e586-6ef3-3e7a" targetId="d1a7-5f24-003f-6400" primary="true"/>
@@ -101,6 +107,15 @@
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subfacción: Sin subfacción" hidden="true" id="6150-74d6-3fdf-b6c2">
+      <categoryLinks>
+        <categoryLink name="Subfacción: Sin subfacción" hidden="false" id="b633-cf2f-2a0e-b7c0" targetId="f379-822c-2bc8-527e" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34ca-9dcf-ebdd-d9b2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ca-9dcf-ebdd-d9b2-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
