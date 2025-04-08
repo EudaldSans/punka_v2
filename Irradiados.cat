@@ -70,12 +70,12 @@ Modificadores
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">7</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">Plantilla lágrima</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">A dos manos, Contaminante, Escasa, Lentorra (2), Mamotreto, Plantilla</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6"/>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Lentorra (2)" id="33ba-58f3-959d-503c" hidden="false" type="rule" targetId="83d4-6391-9ff1-8fa1"/>
+        <infoLink name="Lentorra" id="33ba-58f3-959d-503c" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Mamotreto" id="5742-b90b-78b3-faef" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
         <infoLink name="Plantilla" id="e56d-f905-cabd-93c1" hidden="false" type="rule" targetId="79b1-d8ca-c434-cbe1"/>
         <infoLink name="Escasa" id="e985-e8c8-5a42-58dd" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
@@ -96,24 +96,19 @@ Modificadores
             <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">-</characteristic>
             <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">-</characteristic>
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">F del lanzador x 5 cm</characteristic>
-            <characteristic name="Reglas" typeId="2ecc-3ee3-2a21-1e6">Bomba, escasa</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Granada santa" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="390f-96a3-128b-effe">
-          <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Las granadas santas cubren de elementos radiactivos la zona allí donde impactan. Las granadas santas explotan al impactar, dejando un marcador permanente de Radiación. Toda miniatura impactada por una granada santa deberá realizar inmediatamente una tirada de Radiación.</characteristic>
+            <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Bomba, Escasa, Tiro parabólico, Usar y tirar. 
+
+Las granadas santas cubren de elementos radiactivos la zona allí donde impactan. Las granadas santas explotan al impactar, dejando un marcador permanente de Radiación. Toda miniatura impactada por una granada santa deberá realizar inmediatamente una tirada de Radiación.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
-        <infoLink name="Bomba" id="19c9-790c-89af-3ea1" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
+        <infoLink name="Bomba" id="1880-6684-19c4-7d32" hidden="false" type="infoGroup" targetId="c02c-e834-3f2b-6982"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Granadas santas" hidden="false" id="3e58-a78a-6e92-c6a3">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c429-bfa5-f6aa-5262" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d9f2-e49d-e760-4c90" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Granada santa" hidden="false" id="4be9-3a54-f93a-8af7" type="selectionEntry" targetId="e04a-d803-de33-f967">
@@ -125,6 +120,7 @@ Modificadores
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="c9d9-4f-1108-1108" primary="false" name="Arma"/>
+        <categoryLink targetId="558a-c74a-773d-f434" id="48ff-fd4f-e46e-876f" primary="false" name="Granadas santas"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -162,12 +158,12 @@ Modificadores
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Radiado</characteristic>
           </characteristics>
         </profile>
+        <profile name="Radiado" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b52e-1d1e-d8b4-2bcb">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Radiado" id="6d23-e321-76be-ec3" hidden="false">
-          <description>Los Mártires se consideran una fuente de Radiación para las reglas de Radiación, tanto antes como después de ser Abatidos. Incluso ellos mismos se verán afectados por su propia Radiación por lo que todos los Turnos deberán realizar la tirada con las reglas habituales. Además, están tan sumamente contaminados, que al morir dejarán dos marcadores de Radiación.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2385-d56f-c5a3-1e4a"/>
       </constraints>
@@ -179,6 +175,8 @@ Modificadores
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="ce3e-c487-ade6-ce36" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="4b1-2801-cb86-24bd" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="f5cd-e2b0-9a4f-4b1a" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="7de1-3a72-5d55-af6f" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -253,6 +251,13 @@ Modificadores
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8056-4585-d83b-1f6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Penitente" hidden="false" id="4b1-2801-cb86-24bd" publicationId="6699-072c-136a-7d30" page="69">
       <costs>
@@ -332,15 +337,15 @@ Modificadores
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune, Sermón</characteristic>
           </characteristics>
         </profile>
+        <profile name="Sermón" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="cda9-2702-f243-a85f">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los cardenales arengan a los Irradiados antes de entrar en combate con distintos sermones con los que los Verdaderos Herederos afrontan aún con más fe las vicisitudes que les aguardan. Después de que las tropas desplieguen, pero antes de comenzar la partida, debes seleccionar UNO de los siguiente sermones que podrás utilizar a lo largo de la partida:
+• Parábola de cómo el Nuevo Hombre salió de un Huevo: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura propia que haya sido impactada.
+• Parábola de cómo la Inteligencia Suprema escogió a los Verdaderos Herederos: una vez durante la partida, puedes repetir una tirada de Precisión.
+• Parábola de cómo el Maná Sagrado nos ha hecho mejores: una vez durante la partida, puedes obligar a repetir al rival una tirada de Radiación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Sermón" id="b090-ef30-9e02-749d" hidden="false">
-          <description>Los cardenales arengan a los Irradiados antes de entrar en combate con distintos sermones con los que los Verdaderos Herederos afrontan aún con más fe las vicisitudes que les aguardan. Después de que las tropas desplieguen, pero antes de comenzar la partida, debes seleccionar UNO de los siguiente sermones que podrás utilizar a lo largo de la partida:
-• Parábola de cómo el Nuevo Hombre salió de un Huevo: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura propia que haya sido impactada.
-• Parábola de cómo la Inteligencia Suprema escogió a los Verdaderos Herederos: una vez durante la partida, puedes repetir una tirada de Precisión.
-• Parábola de cómo el Maná Sagrado nos ha hecho mejores: una vez durante la partida, puedes obligar a repetir al rival una tirada de Radiación.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="f204-483a-5dce-9c42" hidden="false">
           <selectionEntryGroups>
@@ -405,6 +410,13 @@ Modificadores
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b5a6-7f4a-586-5d01" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8056-4585-d83b-1f6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Paladín" hidden="false" id="ce3e-c487-ade6-ce36" publicationId="6699-072c-136a-7d30" page="71">
       <costs>
@@ -427,12 +439,12 @@ Modificadores
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune, Todoterreno, Inspirador</characteristic>
           </characteristics>
         </profile>
+        <profile name="Inspirador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="cd2f-c664-e392-fa28">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si un paladín Abate a un enemigo en Combate, todo Discípulo de la banda que se encuentre 20 cm o menos, con Línea de visión hacia el Paladín y que no esté trabado en Combate, puede realizar inmediatamente una Acción gratuita.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Inspirador" id="cde8-657a-98fb-4be" hidden="false">
-          <description>Si un paladín Abate a un enemigo en Combate, todo Discípulo de la banda que se encuentre 20 cm o menos, con Línea de visión hacia el Paladín y que no esté trabado en Combate, puede realizar inmediatamente una Acción gratuita.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="77c3-a854-4bb2-23ce" hidden="false">
           <entryLinks>
@@ -464,10 +476,12 @@ Modificadores
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="4f4e-2e99-5687-15d8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Escudo" hidden="false" id="c0a1-342e-5ebf-9271" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Escudo" hidden="false" id="c0a1-342e-5ebf-9271" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Todoterreno" id="e571-b733-ad6f-32e6" hidden="false" type="rule" targetId="09af-565c-8edf-ab67"/>
         <infoLink name="Contenedor radiactivo" id="de4d-3e35-b92e-a48f" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
@@ -493,22 +507,23 @@ Modificadores
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Contenedor radiactivo, Radioinmune, Relicario</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker, Contenedor radiactivo, Radioinmune</characteristic>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule name="Relicario" id="46fb-fa41-49f-8fea" hidden="false" publicationId="6699-072c-136a-7d30" page="72">
-          <description>A modo de estandarte, el Portador de las Reliquias lleva algunas de las reliquias encontradas por los Irradiados a lo largo de los años. En combate puede ser usado con las estadísticas de una maza pesada. Además, el Portador puede usar Acciones (si es más de una deben ser consecutivas, aunque no obligatoriamente en la misma Fase de activación) para alentar a sus compañeros o desmotivar a sus enemigos tal y como se indica en la siguiente tabla.
+        <profile name="Relicario" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2ae-83ee-2659-13ae">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">A modo de estandarte, el Portador de las Reliquias lleva algunas de las reliquias encontradas por los Irradiados a lo largo de los años. En combate puede ser usado con las estadísticas de una maza pesada. Además, el Portador puede usar Acciones (si es más de una deben ser consecutivas, aunque no obligatoriamente en la misma Fase de activación) para alentar a sus compañeros o desmotivar a sus enemigos tal y como se indica en la siguiente tabla.
+
 
 • 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +3 al Combate en su próximo Asalto.
 • 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 en su próxima tirada de Precisión.
-• 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 a la Dureza para la siguiente ocasión en que sea impactada. Tras esto pasará su Dureza se reducirá en 1 punto de manera permanente.
+• 1 Una miniatura amiga hasta 30 cm obtiene un bonificador de +2 a la Dureza para la siguiente ocasión en que sea impactada. Tras esto pasará su Dureza se reducirá en 1 punto de manera permanente.
 • 1 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 en su próxima tirada de Radiación.
 • 2 Una miniatura amiga hasta 30 cm podrá realizar 1 Acción de manera inmediata.
-• 2 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 permanente en sus tiradas de Radiación</description>
-        </rule>
-      </rules>
+• 2 Una miniatura enemiga hasta 30 cm sufrirá un penalizador de -2 permanente en sus tiradas de Radiación</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Relicario" hidden="false" id="782-a4a5-fc1c-b187">
           <profiles>
@@ -542,6 +557,10 @@ Modificadores
           </modifiers>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="ad0a-56a0-a2d8-8dea" hidden="false"/>
+        <selectionEntryGroup name="Equipo" id="eae-8a25-5a97-4ea9" hidden="false"/>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="El guardián de las llaves" hidden="false" id="d548-749c-9783-bf3b" publicationId="6699-072c-136a-7d30" page="73">
       <costs>
@@ -565,64 +584,348 @@ Modificadores
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">El Maletín, El fin se acerca, Como una maraca</characteristic>
           </characteristics>
         </profile>
+        <profile name="Como una maraca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2570-6737-58e9-fe79">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Decir que al Guardián de las Llaves le falta una patata para el kilo es quedarse corto. Le patina el coco a lo bestia. No es extraño que te apetezca que haga una cosa y a él le dé por hacer otra muy distinta. Cuando comience su Fase de activación debe tirar 1d10. Con un resultado de 1, será el rival quien maneje la miniatura.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="El fin se acerca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="567a-8f85-b59d-2114">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si viviera en nuestros días sería el típico loco que estaría en un parque encima de una caja chillando que “el fin se acerca”. Ese entusiasmo se contagia a los Irradiados a los que el mensaje les pone palot. Cualquier Irradiado a 30 cm o menos del Guardián de las Llaves, obtendrá un bonificador de +1 a la Dureza.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Pistola de aire comprimido" hidden="false" id="2ceb-c57a-760b-3fb8">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c084-10c1-d8bd-fcbb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistola de aire comprimido" hidden="false" id="2ceb-c57a-760b-3fb8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4314-8fea-727b-7bf7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc9-23d6-44b6-89a9" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pistola de aire comprimido" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="1f0a-b1f9-20ff-b7c9">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">4</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">1</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="8c3-4767-bd71-a1c7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="d985-3753-d0e2-a098" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ec5-682a-abc3-22ac" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="99df-fcc0-ba9e-64fb" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f0b6-9d54-f74f-817c" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c39-e7c6-fda7-5aaf" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="El maletín" hidden="false" id="e433-2927-4208-2326">
+              <profiles>
+                <profile name="El maletín" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="6fb8-d584-f3cd-fa86" publicationId="6699-072c-136a-7d30" page="73">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Guardián de las Llaves lleva consigo un maletín que en sus tiempos servía para activar el arsenal nuclear, pero que ahora difícilmente estará funcional (o sí, a saber). Sin embargo, sus compañeros Irradiados confían plenamente en que desatará la Gran Purga. Una vez por partida, si el Guardián de las Llaves gasta 1 Acción en activar el maletín, todas las tiradas de Radiación tendrán un penalizador de -2 hasta el comienzo de su siguiente Fase de activación o el momento en que resulte Abatido, lo que suceda antes.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea2-c04f-a1f1-e322" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e5-d2ce-8825-14de" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Escudero" hidden="false" id="f5cd-e2b0-9a4f-4b1a">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="a1c0-2573-7d43-3460" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="2" field="a1c0-2573-7d43-3460">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="ce3e-c487-ade6-ce36" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="8056-4585-d83b-1f6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Escudero" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="472c-cbbb-1358-98aa">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">2</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Radioinmune</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lealtad" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a72a-1fc0-e33c-314e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si un Paladín a 10 cm o menos de un escudero realiza un Asalto, el Escudero puede realizar una Acción gratuita de movimiento para ponerse en contacto con esa misma miniatura. De esta manera proporcionará el bonificador de Combate Múltiple, pero no actuará hasta que sea su Fase de activación. Sólo un Escudero puede beneficiarse de esta regla por cada Asalto del Paladín. Además, un Escudero se beneficia de la regla Inspirador de los Paladines, al igual que hacen los Discípulos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Porteador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2b41-40dc-85c3-1e23">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">En los escenarios en los que la recogida de objetivos esté limitada a una cantidad, el Escudero siempre podrá cargar un objetivo extra.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Radioinmune" id="86dc-f697-8d75-b3ae" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="192-a176-8a5-9010" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="71ce-1b00-66d0-dfd9" id="f397-f23b-3fba-3da2" primary="false" name="Banda: Irradiados"/>
+        <categoryLink targetId="8056-4585-d83b-1f6" id="8e59-339e-9fd6-5375" primary="false" name="Subfacción: Inquisición atómica"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="727-e89a-8679-de58" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Arco" hidden="false" id="a339-c032-d274-18fa" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e"/>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="2d02-4016-bac5-8250" type="selectionEntry" targetId="f19a-c771-9682-f4c5"/>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="90b6-62f0-4389-24a9" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="85e1-b9a0-885e-cbc1" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+          </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4314-8fea-727b-7bf7" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc9-23d6-44b6-89a9" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1fe4-44d4-68ca-8229" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe3c-ae8a-e19a-da77" includeChildSelections="false"/>
           </constraints>
-          <profiles>
-            <profile name="Pistola de aire comprimido" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="1f0a-b1f9-20ff-b7c9">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">4</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">1</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">10/20/30</characteristic>
-                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="El maletín" hidden="false" id="e433-2927-4208-2326">
-          <profiles>
-            <profile name="El maletín" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="6fb8-d584-f3cd-fa86" publicationId="6699-072c-136a-7d30" page="73">
-              <characteristics>
-                <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">El Guardián de las Llaves lleva consigo un maletín que en sus tiempos servía para activar el arsenal nuclear, pero que ahora difícilmente estará funcional (o sí, a saber). Sin embargo, sus compañeros Irradiados confían plenamente en que desatará la Gran Purga. Una vez por partida, si el Guardián de las Llaves gasta 1 Acción en activar el maletín, todas las tiradas de Radiación tendrán un penalizador de -2 hasta el comienzo de su siguiente Fase de activación o el momento en que resulte Abatido, lo que suceda antes.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Inquisidor" hidden="false" id="7de1-3a72-5d55-af6f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="8056-4585-d83b-1f6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Inquisidor" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="83ef-307e-72b8-6992">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Contenedor radiactivo" id="e547-af3c-58ad-71e2" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
+        <infoLink name="Radioinmune" id="657a-2149-3837-cbe1" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
+        <infoLink name="Sermón" id="cf3f-5295-9b18-7bf5" hidden="false" type="profile" targetId="91a3-e0ed-fe2-edd8"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="45a1-e151-2f8-4e3d" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea2-c04f-a1f1-e322" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e5-d2ce-8825-14de" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a0c8-52d6-a22c-41ce" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65ba-b1-5c-8c33" includeChildSelections="false"/>
           </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <rules>
-        <rule name="El fin se acerca" id="8dbe-b578-e00b-ee13" hidden="false" publicationId="6699-072c-136a-7d30" page="73">
-          <description>Si viviera en nuestros días sería el típico loco que estaría en un parque encima de una caja chillando que “el fin se acerca”. Ese entusiasmo se contagia a los Irradiados a los que el mensaje les pone palot. Cualquier Irradiado a 30 cm o menos del Guardián de las Llaves, obtendrá un bonificador de +1 a la Dureza.</description>
-        </rule>
-        <rule name="Como una maraca" id="1c54-e8e6-a90c-bc85" hidden="false" publicationId="6699-072c-136a-7d30" page="73">
-          <description>Decir que al Guardián de las Llaves le falta una patata para el kilo es quedarse corto. Le patina el coco a lo bestia. No es extraño que te apetezca que haga una cosa y a él le dé por hacer otra muy distinta. Cuando comience su Fase de activación debe tirar 1d10. Con un resultado de 1, será el rival quien maneje la miniatura.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Ropas resistentes" hidden="false" id="d985-3753-d0e2-a098" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+          <entryLinks>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="56f3-42a2-6660-3689" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="612a-466e-95da-ed3f" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Granadas santas" hidden="false" id="169b-f8ab-fd72-63ab" type="selectionEntry" targetId="3e58-a78a-6e92-c6a3"/>
+            <entryLink import="true" name="Maza" hidden="false" id="4205-8ee3-6ac1-f838" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="87c3-5d01-8163-b144" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="fd24-4cee-27f2-baee" hidden="false" defaultSelectionEntryId="a365-2e69-7b2d-6711">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ec5-682a-abc3-22ac" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf8d-2d06-d694-a863-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf8d-2d06-d694-a863-max" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="f0b6-9d54-f74f-817c" type="selectionEntry" targetId="19f2-5137-907f-980b">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c39-e7c6-fda7-5aaf" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="a365-2e69-7b2d-6711" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="cda5-45f4-559-861d" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="7926-7796-afeb-973d" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="71ce-1b00-66d0-dfd9" id="a810-7a65-5fd5-bf61" primary="false" name="Banda: Irradiados"/>
+        <categoryLink targetId="8056-4585-d83b-1f6" id="b378-5e50-5210-7d00" primary="false" name="Subfacción: Inquisición atómica"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="La gran Inquisidora" hidden="false" id="932b-28ff-d613-367c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="8056-4585-d83b-1f6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Radioinmune" id="ecd8-6d75-175e-7597" hidden="false" type="rule" targetId="fcaf-7b15-a1ed-a03c"/>
+        <infoLink name="Contenedor radiactivo" id="4ca6-4fdb-3754-f03c" hidden="false" type="rule" targetId="77bd-cff6-3501-a2db"/>
+        <infoLink name="Sermón" id="14b3-d6d-fda9-35bc" hidden="false" type="profile" targetId="91a3-e0ed-fe2-edd8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="6197-2997-91c5-90ff" primary="false" name="Miembros de la banda"/>
+        <categoryLink targetId="71ce-1b00-66d0-dfd9" id="7199-272c-63b3-f454" primary="false" name="Banda: Irradiados"/>
+        <categoryLink targetId="8056-4585-d83b-1f6" id="8716-3002-2415-7528" primary="false" name="Subfacción: Inquisición atómica"/>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="422f-a997-fdc5-b32d" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="3312-98-d6d7-7a2d" primary="false" name="Mercenarios y personalidades de la banda"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e068-f6b0-2888-1567" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="La gran Inquisidora" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="6340-4da9-d67-3189">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">2</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Contenedor radiactivo, Radioinmune</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Portador del don" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="9648-d757-8aa1-17cd">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Todas las armas que lleve la inquisidora tendrán automáticamente la regla especial Contaminante.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Presencia siniestra" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="c2f9-c0ed-39c2-d14a">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La visión de la Inquisidora te deja claro de que sea cierto o no, está muy convencida de que su misión en la vida es purgar a los herejes, y tú eres un hereje. Estar cerca de esta fanática chunga le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de la Inquisidora y con Línea de visión hacia ella.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="111b-c98d-b70e-9a96" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="d460-580a-a5be-4851" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ab-f1c1-1bfe-d6af-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ab-f1c1-1bfe-d6af-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="dc1b-c3f4-7bf9-ea30" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3a3-1ff3-59f6-863f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3a3-1ff3-59f6-863f-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Granadas santas" hidden="false" id="a86b-ad38-2cad-3975">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb74-25e3-b475-462a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9043-76a-bd71-2d05-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9043-76a-bd71-2d05-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Granada santa" hidden="false" id="7151-d31e-c90-5d38" type="selectionEntry" targetId="e04a-d803-de33-f967">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f715-dcab-9e4e-dc74" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f1d6-3ee5-4219-8f60" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Arma" hidden="false" id="595c-65a6-1c8a-3f3f" targetId="6582-5e09-b30b-db5a" primary="false"/>
+                <categoryLink name="Granadas santas" hidden="false" id="bf37-7d5f-acfe-a576" targetId="558a-c74a-773d-f434" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="8f3d-da70-c71a-5cdf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armadura de fe" hidden="false" id="b42d-3e90-c82b-962c">
+              <profiles>
+                <profile name="Armadura de fe" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="44a1-16ef-aebf-9df2">
+                  <characteristics>
+                    <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">2</characteristic>
+                    <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">De algún modo pese a ir con ropa “normalita” un poder divino vela por ella evitándole heridas que normalmente serían fatales. La Armadura de Fe otorga Blindaje 2 que no puede reducirse con la penetración normal de un arma ni tampoco saquearse.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8287-108e-142-841a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8287-108e-142-841a-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Granadas santas" id="558a-c74a-773d-f434" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d9f2-e49d-e760-4c90" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
+  <sharedProfiles>
+    <profile name="Sermón" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="91a3-e0ed-fe2-edd8">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Inquisidor puede utilizar los siguientes sermones:
+• Parábola de cómo la Fe purificará a los impuros: elige una miniatura de tu banda, y una de sus armas pasará a tener la Regla especial Contaminante.
+• Parábola de la cólera nuclear: una vez durante la partida, puedes repetir la tirada enfrentada de Fuerza contra Dureza de una miniatura enemiga que haya sido impactada.
+• Parábola del fosforescente destino: Al principio de la partida elige una miniatura de la banda, durante el combate esta obtendrá +1 Blindaje por cada marcador de radiación que le afecte hasta un máximo de +2. Las miniaturas que lleven equipado escudo no pueden beneficiarse de este sermón porque ir con escudo es de cobardes.</characteristic>
+      </characteristics>
+      <comment>Inquisición</comment>
+    </profile>
+  </sharedProfiles>
 </catalogue>

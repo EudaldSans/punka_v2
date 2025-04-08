@@ -17,8 +17,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -72,7 +72,18 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Primeros auxilios</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Primeros auxilios" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7702-22ab-78f5-ec06">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Sanitario puede intentar parchear a una miniatura Abatida aliada, para que siga luchando un poco más. Tendrá que ponerse en contacto con la miniatura Abatida, gastar una Acción para curarle las heridas más graves y tirar en la siguiente tabla. No puede volver a usarse Primeros auxilios en una miniatura que ya hubiera sido parcheada.
+
+
+• 1 - La miniatura está más allá de toda recuperación y no solo no se recupera sino que no podrá volver a intentar recuperarse en toda la partida.
+• 2-3 - La miniatura no consigue reanimarse, pero podrás volver a intentarlo.
+• 4-8 - La miniatura Abatida podrá volver a entrar en juego a partir de su Fase de activación siguiente, pero aplicando un penalizador -1 a sus Atributos físicos (Agilidad, Fuerza y Dureza) por el trauma sufrido y la debilidad causada por sus heridas, golpes o pérdida de sangre.
+• 9-10 - La miniatura Abatida podrá volver a entrar en juego en su siguiente Fase de activación con sus Atributos intactos.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -120,21 +131,10 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Primeros auxilios" id="ad94-f068-69bb-ec46" hidden="false">
-          <description>Un Sanitario puede intentar parchear a una miniatura Abatida aliada, para que siga luchando un poco más. Tendrá que ponerse en contacto con la miniatura Abatida, gastar una Acción para curarle las heridas más graves y tirar en la siguiente tabla. No puede volver a usarse Primeros auxilios en una miniatura que ya hubiera sido parcheada.
-
-
-• 1      - La miniatura está más allá de toda recuperación y no solo no se recupera sino que no podrá volver a intentar recuperarse en toda la partida.
-• 2-3   - La miniatura no consigue reanimarse, pero podrás volver a intentarlo.
-• 4-8   - La miniatura Abatida podrá volver a entrar en juego a partir de su Fase de activación siguiente, pero aplicando un penalizador -1 a sus Atributos físicos (Agilidad, Fuerza y Dureza) por el trauma sufrido y la debilidad causada por sus heridas, golpes o pérdida de sangre.
-• 9-10 - La miniatura Abatida podrá volver a entrar en juego en su siguiente Fase de activación con sus Atributos intactos.</description>
-        </rule>
-      </rules>
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <modifiers>
             <modifier type="set" value="true" field="hidden"/>
@@ -164,7 +164,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mastín</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -216,7 +216,7 @@
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <modifiers>
             <modifier type="set" value="true" field="hidden"/>
@@ -261,7 +261,7 @@
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -306,7 +306,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -319,7 +319,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -346,7 +346,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -409,7 +409,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Cadena de mando" id="d998-556e-5f05-f01d" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+        <infoLink name="Cadena de mando" id="77f5-779c-ba9c-9a98" hidden="false" type="profile" targetId="6e05-5c55-4abe-9745"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ilse, la loba del V Reich" hidden="false" id="8a55-436f-b441-1800" publicationId="6699-072c-136a-7d30" page="112">
@@ -431,15 +431,15 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cazadora de Mutardos</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cazadora de Mutardos" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e2f8-efc-cfb1-2af0">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Cazadora de Mutardos" id="323d-fb9b-bc02-fc2f" hidden="false">
-          <description>La loba del V Reich tiene predilección por enfrentarse a los desechos mutados del Páramo, y lo dará todo por acabar con ellos. Cuando se utilice en una partida contra Mutardos, contará con las Reglas especiales Bersérker y Sed de sangre.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="e23c-6b35-3522-bbe4" hidden="false" sortIndex="1">
           <selectionEntries>
@@ -514,22 +514,24 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Montada, Raudo, Cadena de mando, Maestro estratega, Amado líder</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Montada, Raudo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Amado líder" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="dd92-f5b3-4c3f-2181">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aaron es el líder del V Reich y defraudarlo es algo impensable. Si Aaron es Abatido y un Sanitario intenta usar su Regla especial Primeros auxilios sobre él tendrá un bonificador de +3 en la tirada de la tabla.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Maestro estratega" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1317-9229-cfa8-7039">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aaron no sólo se considera Mariscal en su banda del V Reich, por lo que podrá usar la regla especial Cadena de Mando, si no que además, una vez por Turno de juego, una de sus órdenes a través del Walkie-talkie servirá para que la miniatura receptora pueda utilizar dos Acciones en lugar de una.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Maestro estratega" id="6b18-a9d5-2211-7698" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
-          <description>Aaron no sólo se considera Mariscal en su banda del V Reich, por lo que podrá usar la regla especial Cadena de Mando, si no que además, una vez por Turno de juego, una de sus órdenes a través del Walkie-talkie servirá para que la miniatura receptora pueda utilizar dos Acciones en lugar de una.</description>
-        </rule>
-        <rule name="Amado líder" id="354c-ee9f-4e99-a21f" hidden="false" publicationId="6699-072c-136a-7d30" page="113">
-          <description>Aaron es el líder del V Reich y defraudarlo es algo impensable. Si Aaron es Abatido y un Sanitario intenta usar su Regla especial Primeros auxilios sobre él tendrá un bonificador de +3 en la tirada de la tabla.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink name="Cadena de mando" id="71b2-3019-4252-b66e" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
         <infoLink name="Montada" id="3fbc-b027-f5ec-94f7" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
         <infoLink name="Raudo" id="2a10-c71d-ed57-6218" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Cadena de mando" id="7775-1638-42b3-5d24" hidden="false" type="profile" targetId="6e05-5c55-4abe-9745"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="5711-6e96-f39e-ac4b" hidden="false">
@@ -601,21 +603,23 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Táctico, Bombona de butano</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bombona de butano" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="3065-c248-78bc-c8a1">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Edward lleva a su espalda una bombona de butano para poder respirar, debido a sus lesiones del sistema respiratorio. Si Berhart resulta Abatido, la bombona estallará. Pon una plantilla circular de 5 cm de radio centrada en la posición de la miniatura Abatida. Todas las miniaturas tocadas aunque sea parcialmente por la plantilla, sufren un impacto de Penetración 3 y Fuerza 3 de inmediato, sin bonificaciones por Cobertura.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Táctico" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="d732-df8b-4c36-8bc4">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Edward Berhart tiene una gran memoria sobre los combates de la Segunda Guerra Mundial que tanto estudió en su anterior vida. Por ello tiene unos conocimientos de táctica militar por encima de la media, que emplea con sus hombres en el campo de batalla. Una vez terminados los despliegues de los dos jugadores, puede recolocar hasta dos miniaturas de su banda, siempre dentro de su zona de despliegue.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Cadena de mando" id="74ab-2550-524d-b973" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+        <infoLink name="Cadena de mando" id="3822-1fa7-b188-8f1e" hidden="false" type="profile" targetId="6e05-5c55-4abe-9745"/>
       </infoLinks>
-      <rules>
-        <rule name="Táctico" id="6258-95d8-d1c5-f8d6" hidden="false" publicationId="6699-072c-136a-7d30" page="114">
-          <description>Edward Berhart tiene una gran memoria sobre los combates de la Segunda Guerra Mundial que tanto estudió en su anterior vida. Por ello tiene unos conocimientos de táctica militar por encima de la media, que emplea con sus hombres en el campo de batalla. Una vez terminados los despliegues de los dos jugadores, puede recolocar hasta dos miniaturas de su banda, siempre dentro de su zona de despliegue.</description>
-        </rule>
-        <rule name="Bombona de butano" id="7c00-bddd-56ab-87f8" hidden="false" publicationId="6699-072c-136a-7d30" page="114">
-          <description>Edward lleva a su espalda una bombona de butano para poder respirar, debido a sus lesiones del sistema respiratorio. Si Berhart resulta Abatido, la bombona estallará. Pon una plantilla circular de 5 cm de radio centrada en la posición de la miniatura Abatida. Todas las miniaturas tocadas aunque sea parcialmente por la plantilla, sufren un impacto de Penetración 3 y Fuerza 3 de inmediato, sin bonificaciones por Cobertura.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="65ca-6eae-284b-43d8" hidden="false" sortIndex="1">
           <entryLinks>
@@ -690,33 +694,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Subfacción" hidden="false" id="9481-e0f0-b549-7aa4">
-      <categoryLinks>
-        <categoryLink targetId="9e25-aa8a-c426-a886" id="300e-9a63-2ef7-aeb2" primary="true" name="Configuración"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c97-201a-51bf-ead9-max" includeChildSelections="true"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Subfacciones" id="38a9-80f8-2bcf-71bb" hidden="false" defaultSelectionEntryId="dfcc-94a2-2634-5d3f">
-          <entryLinks>
-            <entryLink import="true" name="Sin subfacción" hidden="false" id="dfcc-94a2-2634-5d3f" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e7-44ae-2fa2-3871" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="División cientifica" hidden="false" id="80a1-3e9f-765d-b5b" type="selectionEntry" targetId="620f-6156-2c08-115b" sortIndex="2"/>
-            <entryLink import="true" name="Fuerte Thule" hidden="false" id="defe-ade2-9132-d00a" type="selectionEntry" targetId="d8ef-8dda-a0ea-68dd" sortIndex="3"/>
-            <entryLink import="true" name="Organización Kraken" hidden="false" id="fa14-4452-fea8-bf61" type="selectionEntry" targetId="a7d7-5934-ab89-8517" sortIndex="4"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef94-3ea1-7a79-72d3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d56-7eb5-3576-766f" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Engendro" hidden="false" id="8890-d182-1335-6d0a" publicationId="5478-7d5e-bc66-ffc" page="2">
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
@@ -735,18 +712,18 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">8</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer Desmadrado</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Desmadrado" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4fe3-98a2-dd82-825e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Al principio de su Fase de activación, si está a 15 cm o menos de un Tierdoktor actuará de manera normal. En caso contrario se desmadrará y si tiene a una miniatura amiga o enemiga con las que se cumplan las condiciones para poder Asaltarla deberá hacerlo, o directamente atacarla si ya estuviera en contacto con ella. Además, como es lógico, no pueden utilizar Walkie-talkie.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Mónguer" id="f27e-c88f-9bd6-4fda" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
       </infoLinks>
-      <rules>
-        <rule name="Desmadrado" id="ed7-f596-acf0-90d5" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="2">
-          <description>Al principio de su Fase de activación, si está a 15 cm o menos de un Tierdoktor actuará de manera normal. En caso contrario se desmadrará y si tiene a una miniatura amiga o enemiga con las que se cumplan las condiciones para poder Asaltarla deberá hacerlo, o directamente atacarla si ya estuviera en contacto con ella. Además, como es lógico, no pueden utilizar Walkie-talkie.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a9a9-1fc1-5e0a-91ac"/>
       </constraints>
@@ -757,7 +734,7 @@
             <modifier type="set" value="0" field="a9a9-1fc1-5e0a-91ac"/>
           </modifiers>
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -805,7 +782,9 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>División científica</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -953,18 +932,18 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Azuzar</characteristic>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule name="Azuzar" id="a66a-228f-9332-dd31" hidden="false">
-          <description>Un Tierdoktor que se encuentre en contacto con un Subhumano o un Engendro puede gastar una Acción en azuzar a esa criatura. Deberás tirar 1d10 en la siguiente tabla y aplicar el resultado.
+        <profile name="Azuzar" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d9f7-25b4-296f-6e0b">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Tierdoktor que se encuentre en contacto con un Subhumano o un Engendro puede gastar una Acción en azuzar a esa criatura. Deberás tirar 1d10 en la siguiente tabla y aplicar el resultado.
 
 
-• 1    - La criatura no se lo toma demasiado bien y se revuelve contra el Tierkdoktor realizando un Ataque gratuito contra él de manera inmediata.
+• 1 - La criatura no se lo toma demasiado bien y se revuelve contra el Tierkdoktor realizando un Ataque gratuito contra él de manera inmediata.
 • 2-5 - La criatura simplemente nota unas ligeras cosquillas y no sucede nada.
 • 6-9 - La criatura espabila repentinamente y puede realizar una Acción gratuita de manera inmediata.
-• 10  - La criatura se vuelve aún más furiosa y obtiene un bonificador de +2 a los Atributos de Fuerza y Combate que duran hasta que finalice su siguiente Fase de activación.</description>
-        </rule>
-      </rules>
+• 10 - La criatura se vuelve aún más furiosa y obtiene un bonificador de +2 a los Atributos de Fuerza y Combate que duran hasta que finalice su siguiente Fase de activación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -972,7 +951,7 @@
             <modifier type="set" value="0" field="50f6-5bb3-1678-77e9"/>
           </modifiers>
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="620f-6156-2c08-115b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="996-60f7-312d-f9f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -998,14 +977,19 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Inexperto</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Inexperto" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b2a7-d76-d283-6a0">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque el Páramo es un lugar chungo, los reclutas suelen ser seleccionados entre la escoria más deprimente, por lo que no han combatido antes en serio y no aguantan demasiado la presión. Si un miembro de la banda que no sea un Recluta resulta Abatido, cualquier Recluta hasta 30 cm de este, y que no esté trabado en Combate, realizará un movimiento inmediato y gratuito de 10 cm hacia su zona de despliegue, ignorando las reglas de Terreno chungo y pila chungo y siguiendo el camino por el que pueda avanzar la mayor distancia.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="b8bb-117a-5a66-bdb8">
@@ -1015,11 +999,6 @@
           </repeats>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Inexperto" id="531e-7079-24ca-b1ee" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="7">
-          <description>Aunque el Páramo es un lugar chungo, los reclutas suelen ser seleccionados entre la escoria más deprimente, por lo que no han combatido antes en serio y no aguantan demasiado la presión. Si un miembro de la banda que no sea un Recluta resulta Abatido, cualquier Recluta hasta 30 cm de este, y que no esté trabado en Combate, realizará un movimiento inmediato y gratuito de 10 cm hacia su zona de despliegue, ignorando las reglas de Terreno chungo y pila chungo y siguiendo el camino por el que pueda avanzar la mayor distancia.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="fc5d-7937-a6c1-8504" hidden="false" sortIndex="1">
           <entryLinks>
@@ -1089,21 +1068,23 @@
                 <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
                 <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
                 <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Ejemplar, Poderes, Choque mental, Desarme</characteristic>
+                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ejemplar" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7234-57fd-f862-d37d">
+              <characteristics>
+                <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Eva predica con el ejemplo y siempre debe ser la primera miniatura en actuar de su banda.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Poderes" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e3b5-b336-912e-5f51">
+              <characteristics>
+                <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Sin que nadie lo sepa (bueno, vosotros sí porque ya os lo hemos contado en el libro de El Ascenso del V Reich), Eva es en realidad un Cabezón con apariencia totalmente humana. Puede usar los Poderes Choque mental y Desarme de la página 86 del Reglamento. Además puede influir de manera sutil y sin tener que gastar ninguna Acción para insuflar una buena dosis de confianza directamente en la mente de los Reclutas, de tal manera que cualquier Recluta a 15 cm de ella no sufrirá la Regla especial Inexperto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cadena de mando" id="3090-1239-5084-1c44" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+            <infoLink name="Cadena de mando" id="6e03-f1b4-5c5-b660" hidden="false" type="profile" targetId="6e05-5c55-4abe-9745"/>
           </infoLinks>
-          <rules>
-            <rule name="Ejemplar" id="8374-68ae-d6fd-34d8" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="8">
-              <description>Eva predica con el ejemplo y siempre debe ser la primera miniatura en actuar de su banda.</description>
-            </rule>
-            <rule name="Poderes" id="b78d-a1c2-ca80-b777" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="9">
-              <description>Sin que nadie lo sepa (bueno, vosotros sí porque ya os lo hemos contado en el libro de El Ascenso del V Reich), Eva es en realidad un Cabezón con apariencia totalmente humana. Puede usar los Poderes Choque mental y Desarme de la página 86 del Reglamento. Además puede influir de manera sutil y sin tener que gastar ninguna Acción para insuflar una buena dosis de confianza directamente en la mente de los Reclutas, de tal manera que cualquier Recluta a 15 cm de ella no sufrirá la Regla especial Inexperto.</description>
-            </rule>
-          </rules>
           <selectionEntryGroups>
             <selectionEntryGroup name="Armas" id="7f1d-d66c-8acd-e57f" hidden="false" sortIndex="1">
               <entryLinks>
@@ -1168,18 +1149,18 @@
                 <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
                 <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
                 <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
-                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer Guardaespaldas</characteristic>
+                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Guardaespaldas" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d8e-6a03-82ee-6d94">
+              <characteristics>
+                <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La finalidad de UNO es proteger a Eva y siempre debe tratar de estar a un máximo de 10 cm de ella. Cuando sea el momento de actuar de UNO debe usar todas las Acciones necesarias en Mover para cumplir esto. Si estuviera trabado en Combate deberá obligatoriamente tratar de Separse del Combate para intentar llegar a la distancia máxima de 10 cm de Eva. Además, si se encuentra a 5 cm o menos de Eva y ella resulta Impactada por una miniatura enemiga (tanto en Disparo como en Combate), UNO debe usar su cuerpo para salvarla, siempre que no esté trabado en Combate. En ese momento se colocará en contacto con Eva justo antes de que ella tuviera que realizar la tirada enfrentada de Fuerza contra Dureza (este Movimiento es gratuito). Será UNO quien usé su Dureza y Blindaje para esta tirada, y obviamente, sería la miniatura que resultaría Abatida en caso de perder la tirada enfrentada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Mónguer" id="612e-cad4-26f9-6a5c" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
           </infoLinks>
-          <rules>
-            <rule name="Guardaespaldas" id="d6be-9b5d-9456-1c0b" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="9">
-              <description>La finalidad de UNO es proteger a Eva y siempre debe tratar de estar a un máximo de 10 cm de ella. Cuando sea el momento de actuar de UNO debe usar todas las Acciones necesarias en Mover para cumplir esto. Si estuviera trabado en Combate deberá obligatoriamente tratar de Separse del Combate para intentar llegar a la distancia máxima de 10 cm de Eva. Además, si se encuentra a 5 cm o menos de Eva y ella resulta Impactada por una miniatura enemiga (tanto en Disparo como en Combate), UNO debe usar su cuerpo para salvarla, siempre que no esté trabado en Combate. En ese momento se colocará en contacto con Eva justo antes de que ella tuviera que realizar la tirada enfrentada de Fuerza contra Dureza (este Movimiento es gratuito). Será UNO quien usé su Dureza y Blindaje para esta tirada, y obviamente, sería la miniatura que resultaría Abatida en caso de perder la tirada enfrentada.</description>
-            </rule>
-          </rules>
           <selectionEntryGroups>
             <selectionEntryGroup name="Armas" id="e812-b0ac-5240-6d4a" hidden="false">
               <entryLinks>
@@ -1227,7 +1208,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8ef-8dda-a0ea-68dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="aef4-7192-8994-977d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1279,10 +1260,24 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Ingeniero" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="106d-60be-87f8-f475">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Gólem" hidden="false" id="84a2-23cb-44e3-5553" publicationId="5478-7d5e-bc66-ffc" page="12">
       <costs>
@@ -1332,7 +1327,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1371,7 +1366,7 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1445,28 +1440,32 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Cadena de mando, Casco Rojo, Liberad al Kraken, Odio al Capitán Hammerica</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Casco Rojo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="ac34-5b51-300e-c59d">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Casco Rojo no se quita la protección que le da su apodo en ningún momento. Hay rumores de que la lleva fusionada de alguna forma con su propio cráneo y forma parte de su ser, mientras algunos dicen haber visto arder llamas infernales en las oscuras cuencas de su máscara. Sea como sea estar cerca de este fanático imponente le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de Casco Rojo y con Línea de visión hacia él.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Odio al Capitán Hammerica" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8ebf-c911-2924-faa3">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Capitán Hammerica es la única prueba válida del suero de los Übersoldats que robó uno de sus científicos y que iba a ser destinado a Casco Rojo, y encima anda por ahí luciéndolo. Si Casco Rojo se enfrenta una banda con el Capitán Hammerica y consigue Abatirlo, conseguirá 3 puntos de victoria extra para su banda.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Liberad al Kraken" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="ddd0-5aca-14ef-ef89">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Casco Rojo puede gastar 1 Acción en arengar a sus tropas de élite. Si hace esto, aquellos Golems que actúen en ese mismo Turno de juego, obtendrán un bonificador de +1 al Combate y la Precisión. Esta regla puede usarse una sola vez durante toda la partida.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Casco Rojo" id="b03e-cd2b-1b42-ed67" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
-          <description>Casco Rojo no se quita la protección que le da su apodo en ningún momento. Hay rumores de que la lleva fusionada de alguna forma con su propio cráneo y forma parte de su ser, mientras algunos dicen haber visto arder llamas infernales en las oscuras cuencas de su máscara. Sea como sea estar cerca de este fanático imponente le da cagalera a cualquiera, así que cualquier miniatura enemiga sufrirá un penalizador -1 a Combate, Agilidad y Fuerza mientras esté a una distancia de 20 cm o menos de Casco Rojo y con Línea de visión hacia él.</description>
-        </rule>
-        <rule name="Liberad al Kraken" id="a39e-3f2d-1add-8cd4" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
-          <description>Casco Rojo puede gastar 1 Acción en arengar a sus tropas de élite. Si hace esto, aquellos Golems que actúen en ese mismo Turno de juego, obtendrán un bonificador de +1 al Combate y la Precisión. Esta regla puede usarse una sola vez durante toda la partida.</description>
-        </rule>
-        <rule name="Odio al Capitán Hammerica" id="a8d-57b2-177f-3e81" hidden="false" publicationId="5478-7d5e-bc66-ffc" page="13">
-          <description>El Capitán Hammerica es la única prueba válida del suero de los Übersoldats que robó uno de sus científicos y que iba a ser destinado a Casco Rojo, y encima anda por ahí luciéndolo. Si Casco Rojo se enfrenta una banda con el Capitán Hammerica y consigue Abatirlo, conseguirá 3 puntos de victoria extra para su banda.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink name="Cadena de mando" id="6372-89ae-c809-51ce" hidden="false" type="rule" targetId="171a-5fbc-2f0d-4312"/>
+        <infoLink name="Cadena de mando" id="f1da-81db-4a22-ffb5" hidden="false" type="profile" targetId="6e05-5c55-4abe-9745"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a7d7-5934-ab89-8517" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a617-344c-8601-e6a1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1501,21 +1500,6 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636d-a752-a81f-f245" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37b2-1120-c9d2-19cc" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ada-4019-799e-6e53" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e454-6d3d-ab4c-13" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Manostijeras" hidden="false" id="59a1-9871-cf6e-3147" publicationId="5478-7d5e-bc66-ffc" page="3">
@@ -1642,4 +1626,11 @@ La Campana cuenta como un elemento de terreno que proporciona un Blindaje +8.</c
   <catalogueLinks>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="a1f4-e38a-e315-e9c6" targetId="d54e-2410-ba49-c376"/>
   </catalogueLinks>
+  <sharedProfiles>
+    <profile name="Cadena de mando" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="6e05-5c55-4abe-9745">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El Mariscal puede impartir órdenes con su walkie-talkie a cualquier otra miniatura de su banda que esté equipada también con uno de estos artilugios y no esté trabada en Combate. Al hacerlo, le cederá una de sus Acciones para esa Fase de activación, que esa miniatura deberá realizar de inmediato nada más recibir la orden. La Acción de activar el walkietalkie es la misma que se cede a la otra miniatura, por lo que el Mariscal podrá utilizar esta Regla especial hasta tres veces en su Fase de activación. No se pueden dar dos órdenes a la misma miniatura en la misma Fase de activación.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

@@ -4,12 +4,13 @@
     <publication id="6699-072c-136a-7d30" name="Punkapocalyptic V2" shortName="punkapocalyptic V2" publisher="ISBN 978-84-09-59577-8" publicationDate="2024" publisherUrl="https://www.badrollgames.com/"/>
     <publication name="GitHub" id="bbc5-28b8-67b7-3c23" hidden="false" publisherUrl="git@github.com:EudaldSans/punka_v2.git"/>
     <publication name="Subfacciones Sangre Negra" id="1e5a-2394-b910-b6ad" hidden="false" publisherUrl="https://www.badrollgames.com/V2/SubfaccionesSangreNegra.pdf" shortName="Subfacciones Sangre Negra" publisher="Subfacciones Sangre Negra"/>
+    <publication name="Subfaccion Idos" id="7576-d113-2899-1c0e" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="e515-0c5b-47aa-1328" name="Puntos" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="65f8-965a-8432-c96b" name="Miniatura">
+    <profileType id="65f8-965a-8432-c96b" name="Miniatura" sortIndex="1">
       <characteristicTypes>
         <characteristicType id="d05b-aff7-3ed3-1bb6" name="Acciones"/>
         <characteristicType id="6e27-b2ad-21d6-48f8" name="Combate"/>
@@ -21,7 +22,7 @@
         <characteristicType id="5bd3-a6df-6f70-6df7" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="6023-c682-4678-9510" name="Arma a distancia">
+    <profileType id="6023-c682-4678-9510" name="Arma a distancia" sortIndex="4">
       <characteristicTypes>
         <characteristicType id="8a4a-b45a-10a3-0c7a" name="Fuerza"/>
         <characteristicType id="5980-44ca-27d3-5a03" name="Penetración"/>
@@ -29,7 +30,7 @@
         <characteristicType id="2ecc-3ee3-2a21-1e6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo">
+    <profileType id="1ec3-c3f3-6299-ebe5" name="Arma cuerpo a cuerpo" sortIndex="3">
       <characteristicTypes>
         <characteristicType id="7192-0144-704a-b3e6" name="Combate"/>
         <characteristicType id="fa8e-4d55-0d97-e892" name="Fuerza"/>
@@ -37,33 +38,42 @@
         <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
+<<<<<<< HEAD
     <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
       <characteristicTypes>
         <characteristicType name="Reglas" id="77d2-f29c-19a6-819c"/>
       </characteristicTypes>
     </profileType>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
+=======
+    <profileType id="8d36-94cc-6c74-8857" name="Habilidad" sortIndex="2">
+      <characteristicTypes>
+        <characteristicType id="615a-5192-19d4-fe3c" name="Efecto"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="db67-24c5-11d4-e09e" name="Blindaje" sortIndex="5">
+>>>>>>> b0aa87b06b2682dc4ef334c1d547cc06da84b77e
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
         <characteristicType id="d8ba-fec3-89d1-9634" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="7cc9-89fb-d9b6-2f1a" name="Equipo especial">
+    <profileType id="7cc9-89fb-d9b6-2f1a" name="Equipo especial" sortIndex="6">
       <characteristicTypes>
         <characteristicType id="c2c9-19be-2e75-813a" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="c668-1010-7bd9-fcfd" name="Regla especial">
+    <profileType id="c668-1010-7bd9-fcfd" name="Regla especial" sortIndex="7">
       <characteristicTypes>
         <characteristicType id="f7a5-6337-8cb7-0631" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Mutación" id="6863-db9a-9cab-eabc" hidden="false">
+    <profileType name="Mutación" id="6863-db9a-9cab-eabc" hidden="false" sortIndex="8">
       <characteristicTypes>
         <characteristicType id="fb87-d2c2-bb7e-f5ce" name="Reglas"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Reglas de la banda" id="64d2-5b8c-4718-2aad" hidden="false">
+    <profileType name="Reglas de la banda" id="64d2-5b8c-4718-2aad" hidden="false" sortIndex="10">
       <characteristicTypes>
         <characteristicType id="b86f-94a8-ecaa-691b" name="Reglas"/>
       </characteristicTypes>
@@ -172,14 +182,60 @@
       <comment>Hijos de la sangre negra</comment>
     </categoryEntry>
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
+<<<<<<< HEAD
     <categoryEntry name="Subfacción: Freak Show" id="d93e-761f-ea8b-93ec" hidden="false"/>
     <categoryEntry name="Subfacción: Ilusionistas" id="4350-1b95-6825-f692" hidden="false"/>
     <categoryEntry name="Subfacción: Cirque du no se que" id="3d3e-cfff-95d3-9d2e" hidden="false"/>
+=======
+    <categoryEntry name="Arma flamígera" id="601e-6a87-2e5d-284a" hidden="false"/>
+    <categoryEntry name="Subfacción: Inquisición atómica" id="8056-4585-d83b-1f6" hidden="false">
+      <comment>Irradiados</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Organización Kraken" id="a617-344c-8601-e6a1" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: División cientifica" id="996-60f7-312d-f9f5" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fuerte Thule" id="aef4-7192-8994-977d" hidden="false">
+      <comment>V Reich</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Slashers" id="12ff-b619-49d-ef01" hidden="false" publicationId="7576-d113-2899-1c0e" page="1">
+      <comment>Idos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Flipaos de los ninjas" id="23f1-68cd-50c-348b" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fraus" id="c2ed-3326-aa9d-ad0a" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: La Ostra Azul" id="82af-9947-6c81-cb4b" hidden="false">
+      <comment>Pandilleros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Carroñeros" id="d7e8-187c-15ed-7724" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Innovadores" id="bb2c-20ba-2536-60d5" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Pioneros" id="2a15-7618-ed9d-48ae" hidden="false">
+      <comment>Chatarreros</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Amanecer mutante" id="ee2d-7444-a4f-ec2e" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Fuerza M" id="78b3-25a9-3221-7f6" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
+    <categoryEntry name="Subfacción: Macumba" id="a62b-96dc-fdc0-b760" hidden="false">
+      <comment>Mutardos</comment>
+    </categoryEntry>
+>>>>>>> b0aa87b06b2682dc4ef334c1d547cc06da84b77e
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuración" hidden="false" id="1138-ba4c-1116-58b3" targetId="9e25-aa8a-c426-a886"/>
+        <categoryLink name="Configuración" hidden="false" id="90b4-87b0-4e48-1e86" targetId="9e25-aa8a-c426-a886"/>
         <categoryLink name="Reglas de la banda" hidden="false" id="d37d-2a4-759c-646" targetId="b19d-7b9-3085-7fd4"/>
         <categoryLink id="1a89-87d4-bc28-883a" name="Personalidades de la banda" hidden="false" targetId="d1a7-5f24-003f-6400" primary="false"/>
         <categoryLink id="9a8b-786a-cf20-e2d9" name="Miembros de la banda" hidden="false" targetId="84b7-6828-dd10-0280" primary="false"/>
@@ -319,7 +375,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
       </costs>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="3629-8d66-57f-e354" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9466-3762-b617-4536" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -383,7 +439,7 @@ Si lo ha adquirido, esa banda podrá repetir una vez por partida una de sus tira
                 <modifier type="set" value="Garrapata" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Lentorra (1)" id="38f0-efbf-cc42-8c68" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+            <infoLink name="Lentorra" id="38f0-efbf-cc42-8c68" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6d5-ae4a-b8e9-a9be-min" includeChildSelections="false"/>
@@ -627,7 +683,7 @@ Además, Albóndiga es capaz de despistar a los enemigo que lo atacan, por lo qu
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="3b5c-7aad-25a2-af4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8cd-bcd8-3943-64f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -737,10 +793,348 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Retraso (3)" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="7f50-dcfe-b5d4-5916"/>
+        <infoLink name="Retraso" id="9196-bded-6d12-80e0" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a145-1737-3aed-5ffb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subfacciones" hidden="false" id="507c-48dd-9c79-aea1" flatten="false">
+      <categoryLinks>
+        <categoryLink name="Configuración" hidden="false" id="b0a8-de63-d50e-918f" targetId="9e25-aa8a-c426-a886" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Subfacciones" id="9a41-be80-6de4-152" hidden="false" defaultSelectionEntryId="1838-6e0d-1473-1f3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f99-7d5c-1fd-dc7f-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crematorio" hidden="false" id="568a-d00e-ea5a-efdf" sortIndex="2">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Crematorio" hidden="false" id="c211-7607-f05a-8225" targetId="fd07-4092-4530-9da8" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="El poder del fuego" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="1e56-a0ae-b8e-cb82">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Ya lo hemos mencionado, pero a esta gente les pone mazo el olor a carne churruscada. Tanto que cuanto más gente muera así (da igual si son enemigos o de su propia banda), más se motivan. Cada vez que durante la partida una miniatura resulte Abatida a causa de las llamas (por un lanzallamas, un cóctel Molotov, un arma flamígera, un marcador de Fuego, etc...) la banda de Crematorio obtendrá un marcador de Churruscado.
+Al principio del Turno de juego puedes utilizar marcadores de Churruscado para adelantar la Ronda de Agilidad en que actúe una miniatura. Por cada marcador que utilices en una miniatura, este podrá actuar en una Ronda de Agilidad superior a la que le corresponde. Puedes repartir los marcadores a tu gusto entre las miniaturas o no utilizar alguno si lo prefieres.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nuevos Hijos" hidden="false" id="a840-e780-8c20-3ae4" sortIndex="3">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Nuevos Hijos" hidden="false" id="a6ee-a988-e55-adbd" targetId="debf-2887-31ab-af12" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Será por perres" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="5a60-f042-2544-dd85">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Nuevos Hijos se están forrando cosa fina. Todo el mundo se pone palote con la idea de conseguir combustible y son la única opción disponible. Sus líderes han descubierto que como sustituto de la amenaza de ser quemados vivos, tan típica de Cunnilingus, funciona perfectamente la prima el ofrecer un extra de balas para motivar a sus tropas. A la hora de hacer la banda puedes reserva un máximo de 50 puntos sin gastar, pero que podrás utilizar durante la partida. Al principio de la Fase de activación de una miniatura, puedes decidir gastar parte de estos puntos en ella en un máximo de dos de estos beneficios, que sólo tendrá durante esa Fase de activación. 
+
+PUNTOS - EFECTO
+•    5         - La miniatura obtiene la Regla especial Raudo.
+•    5         - La miniatura obtiene la Regla especial Todoterreno.
+•    8         - La miniatura obtiene un bonificador de +2 al Combate.
+•    8         - La miniatura obtiene un bonificador de +2 a la Fuerza.
+•    8         - La miniatura obtiene un bonificador de +2 a la Dureza.
+•    15       - La miniatura obtiene un bonificador de +1 a las Acciones.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rugientes" hidden="false" id="e94a-c248-365d-82eb" sortIndex="4">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Rugientes" hidden="false" id="3008-d8fc-4638-95d0" targetId="2aa0-728b-e07f-69b" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Motorizados" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="7bcb-a4fd-65df-396a">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="De paquete" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="36f4-e10a-76e5-41e6">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Chispas de los Rugientes pueden llevar de paquete a un Ceniza. Mientras esté de paquete, un Ceniza no puede hacer nada, excepto usar una lanzatrueno (ver Equipo de los Rugientes), hasta que se baje.
+Durante su Fase de activación, un Ceniza de paquete puede gastar una Acción en bajarse, colocándose en contacto con cualquier parte de la peana del Chispa. Si el Chispa estuviera trabado en Combate, un Ceniza que baje sólo podrá ponerse en contacto con una de las miniaturas enemigas que estén Combatiendo con el Chispa. Sin embargo, si el Chispa ha movido durante ese Turno de juego, esto puede no resultar tan sencillo, por lo que deberá seguirse la siguiente tabla:
+
+MOVIMIENTO          -         EFECTO PARA EL CENIZA
+• No ha movido         -         El Ceniza baja sin problemas.
+• Hasta 15 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 2.
+• Hasta 30 cm           -         El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 4.
+• Más de 30 cm        -          El Ceniza debe superar una tirada de Agilidad o sufrir un Impacto de Fuerza 6.
+
+Sin embargo, el Ceniza puede decidir utilizar una Acción más, y entonces mover una fila hacia arriba en la tabla.
+Si un Chispa es Abatido llevando a un Ceniza de paquete, se considerará que el Ceniza ha bajado inmediatamente, siguiendo las reglas anteriores, pero lógicamente sin poder gastar ninguna Acción extra, ya que no está en su Fase de activación.
+Un Ceniza que no esté de paquete, puede gastar una Acción en subir de paquete si está en contacto con un Chispa que no estétrabado en Combate y que tenga el hueco libre.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="82fd-14e9-7e70-88e2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fuerte Thule" hidden="false" id="d8ef-8dda-a0ea-68dd" publicationId="5478-7d5e-bc66-ffc" page="6" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="aef4-7192-8994-977d" id="913e-4d3-9e0b-15c5" primary="false" name="Subfacción: Fuerte Thule"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="División cientifica" hidden="false" id="620f-6156-2c08-115b" publicationId="5478-7d5e-bc66-ffc" page="1" sortIndex="6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="996-60f7-312d-f9f5" id="2fa4-966e-9537-a321" primary="false" name="Subfacción: División cientifica"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Organización Kraken" hidden="false" id="a7d7-5934-ab89-8517" publicationId="5478-7d5e-bc66-ffc" page="10" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f71-a07f-828e-4c18" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="a617-344c-8601-e6a1" id="a92d-9247-db3d-77c3" primary="false" name="Subfacción: Organización Kraken"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Slashers" hidden="false" id="6948-6d75-7cd1-25e5" sortIndex="12">
+              <categoryLinks>
+                <categoryLink targetId="12ff-b619-49d-ef01" id="da62-d44d-32a5-dcc6" primary="false" name="Subfacción: Slashers"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5f14-305f-99b6-1077" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="No estaba muerto" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="d0f7-5bd2-24ce-3f95">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Cada vez que un miembro de la banda consiga Abatir a una miniatura enemiga, adquirirá un marcador de víctima. Si este miembro resulta Abatido, tirará 1d10, y si saca un número igual o menor a los marcadores de víctima que tuviera, regresará de los muertos al principio del siguiente Turno de juego en el mismo lugar donde resultó Abatido y volviendo a jugar normalmente. Solo podrá realizar esta tirada una vez durante la partida.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inquisición atómica" hidden="false" id="3473-bdbf-2ba7-27fb" sortIndex="8">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Inquisición atómica" hidden="false" id="52ff-5e66-7c91-d181" targetId="8056-4585-d83b-1f6" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="17f7-92d1-9c1b-40e8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flipaos de los ninjas" hidden="false" id="f368-21b-d965-b18d" sortIndex="10">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="De uno en uno" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="528-907b-ac6b-5b56">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Flipaos de los Ninjas nunca pueden apoyar un Combate de manera voluntaria. Si un enemigo está combatiendo con uno de los tuyos pues a por otro.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mis puños son armas" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="ec52-9922-a14d-42f0">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Los Flipaos de los Ninjas saben utilizar sus manos como auténticas armas, así que no tienen ningún penalizador al combate a causa de Combatir desarmados.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="23f1-68cd-50c-348b" id="f26e-f462-e572-2713" primary="false" name="Subfacción: Flipaos de los ninjas"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fraus" hidden="false" id="3510-86a0-4710-6f3a" sortIndex="11">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hasta el coño me tenéis" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="9ae8-6a6c-6475-96a">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Por cada miniatura de las Fraus que resulte Abatida, la banda conseguirá un marcador. Cuando una miniatura Frau comience su Fase de activación y antes de actuar podrá gastar un máximo de tres marcadores, sumando +5 cm a su movimiento por cada uno cuando realice un Asalto.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="c2ed-3326-aa9d-ad0a" id="c43b-73b3-d6c8-98ef" primary="false" name="Subfacción: Fraus"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="La Ostra Azul" hidden="false" id="7f2b-aa83-f4bf-7f28" sortIndex="9">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25d3-2bc1-a365-d5de" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Nos mola el cuero" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="3c3c-d794-42f-f954">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">La banda de la Ostra Azul tiene una obsesión por el cuero que salta a la vista, siendo sin lugar a dudas uno de sus rasgos más
+distintivos. Los Piltrafas, Machacas y Curtidos de la banda llevan cuero endurecido por defecto en lugar de ropas resistentes, sin
+coste adicional. Pero nadie puede equiparse con nada que no sea cuero endurecido.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Puro vicio" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="f0fa-78a0-d549-a938">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Quien dice que esta gente es una panda de degenerados es porque ha cerrado su mente (y otras partes de su cuerpo) a probar sus experiencias. Porque el placer extremo no le desagrada a nadie. Ya sea porque sus pintas te están poniendo burrísimo o porque hacen dudar tus convicciones puritanas, cualquier miniatura que Dispare una miniatura de la Ostra Azul tendrá un penalizador de -1 a la Precisión.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="82af-9947-6c81-cb4b" id="630-5f9b-eeca-1ae" primary="false" name="Subfacción: La Ostra Azul"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carroñeros" hidden="false" id="be12-9645-ce9a-49ae" sortIndex="15">
+              <categoryLinks>
+                <categoryLink targetId="d7e8-187c-15ed-7724" id="a659-42aa-1fac-a04a" primary="false" name="Subfacción: Carroñeros"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pioneros" hidden="false" id="e544-3705-4479-1ff8" sortIndex="13">
+              <categoryLinks>
+                <categoryLink targetId="2a15-7618-ed9d-48ae" id="5233-fa9-1d1-218c" primary="false" name="Subfacción: Pioneros"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Innovadores" hidden="false" id="1464-cb0e-e77a-204a" sortIndex="14">
+              <categoryLinks>
+                <categoryLink targetId="bb2c-20ba-2536-60d5" id="101-ec68-7c74-548f" primary="false" name="Subfacción: Innovadores"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1dde-4fe6-a131-8b45" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Macumba" hidden="false" id="86dd-1f9f-5916-ec61" sortIndex="18">
+              <categoryLinks>
+                <categoryLink targetId="a62b-96dc-fdc0-b760" id="e8a1-1085-d5fd-eecf" primary="false" name="Subfacción: Macumba"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fuerza M" hidden="false" id="999f-f92c-1fd8-5467" sortIndex="17">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Macumba" hidden="false" id="cd8b-dcff-209b-d341" targetId="a62b-96dc-fdc0-b760" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Para que no me disparen" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="1133-c762-5488-20b3">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Cada Mutante puede llevar un acompañante secundario (Sidekick) vestido con colores chillones para que se lleve los tiros de los malosos. Este secundario tiene un valor en puntos igual a la mitad del valor total del Mutardo una vez equipado y con sus mutaciones, redondeando hacia arriba. Aunque en teoría siempre se mueve con él, no hace falta representarlo con una miniatura, ya que no quita línea de visión ni entorpece el movimiento, aunque quedaría muy molón. Cuando el Mutante integrante de la Fuerza M vaya a ser Abatido, será su secundario el que quedará Abatido de inmediato y no volverá a surtir efecto en la partida.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Súper equipo" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="636d-b22e-6eb-32ab">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Todo el mundo sabe que los súpers funcionan mejor en equipo. Si no son muy conocidos, el grupo les da visibilidad, y si lo son y se juntan en plan evento, entonces ya es la leche. Pero también es muy típico que se den de leches entre ellos. Cuando comience la Fase de activación de un Mutardo de la Fuerza M, deberá tirar en la siguiente tabla por cada otro integrante de la banda que tenga a 5 cm o menos, aplicando el efecto durante esta Fase de activación:
+
+
+• 1-2 Aún os la tengo guardada. Tiene 1 Acción menos.
+• 3-4 Falta de química. No pasa nada especial.
+• 5-6 Mola estar con esta gente. Obtiene +1 a Combate.
+• 7-8 Vosotros me hacéis mejor. Obtiene +1 a Fuerza y Dureza.
+• 9-10 Juntos podemos con todo. Tiene 1 Acción más.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Amanecer mutante" hidden="false" id="b4f5-6e25-85bb-8a46" sortIndex="16">
+              <categoryLinks>
+                <categoryLink name="Subfacción: Macumba" hidden="false" id="e052-22a3-c1ef-38d5" targetId="a62b-96dc-fdc0-b760" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54e-2410-ba49-c376" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Sin subfacción" hidden="false" id="1838-6e0d-1473-1f3" type="selectionEntry" targetId="9b04-3087-ac5c-b3ff" sortIndex="1">
+              <categoryLinks>
+                <categoryLink targetId="f379-822c-2bc8-527e" id="2aca-db06-3bfe-a13c" primary="false" name="Subfacción: Sin subfacción"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="9e25-aa8a-c426-a886" id="409f-41f-3f92-241f" primary="true" name="Configuración"/>
+          </categoryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d28c-3d4e-27e9-779-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
@@ -771,13 +1165,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
           </modifiers>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="Pistola con mira telescópica" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="b7b7-d0a9-69b8-c008" name="Bala" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -879,19 +1266,46 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-a28b-5464-caf1" includeChildSelections="false"/>
       </constraints>
-      <profiles>
-        <profile name="Maza Ligera" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="8a2b-644f-f363-8c13" publicationId="6699-072c-136a-7d30" page="132">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="9e73-9c97-c0fe-e459" primary="false" name="Arma"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Tomfa" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Maza Ligera" id="8c4f-4af0-1b32-21d0" hidden="false" type="profile" targetId="8a2b-644f-f363-8c13">
+          <modifiers>
+            <modifier type="set" value="Tomfa" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Maza ligera Flamígera" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Crematorio</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="b754-fc6a-16eb-b3fe" name="Filo Pequeño" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -904,20 +1318,49 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink targetId="6582-5e09-b30b-db5a" id="3371-b95e-17fb-e08b" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0"/>
+        <infoLink name="Filo Pequeño" id="9ef0-7ae9-ed3b-3590" hidden="false" type="profile" targetId="5b4b-6e8c-d054-89a0">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Pequeño Flamígero" field="name"/>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Crematorio</comment>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Pequeño Incrustado" field="name"/>
+                <modifier type="set" value="Incrustada" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6aa2-96ec-dc1a-3cb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Idos</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="Sai" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Sai" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="407f-7985-410e-2a9f" name="Maza" publicationId="6699-072c-136a-7d30" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="5f7a-14f0-0f0f-5999" name="Maza" hidden="false" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo">
-          <characteristics>
-            <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
-            <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
-            <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
-            <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
       </costs>
@@ -927,6 +1370,38 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <categoryLinks>
         <categoryLink targetId="6582-5e09-b30b-db5a" id="1c8d-a2ec-680b-e6ae" primary="false" name="Arma"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Nunchakus" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Maza" id="61d1-07d8-31d5-cf5a" hidden="false" type="profile" targetId="5f7a-14f0-0f0f-5999">
+          <modifiers>
+            <modifier type="set" value="Nunchakus" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Maza Flamígera" field="name"/>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <comment>Crematorio</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5424-01db-ff0c-e13a" name="Maza Pesada" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -984,8 +1459,47 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <categoryLink targetId="6582-5e09-b30b-db5a" id="81c-378f-98d2-dba8" primary="false" name="Arma"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8"/>
+        <infoLink name="Filo Medio" id="197b-8097-8b24-7d21" hidden="false" type="profile" targetId="b4b1-c92d-ceb8-efb8">
+          <modifiers>
+            <modifier type="set" value="Katana" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Filo Medio Incrustado" field="name"/>
+                <modifier type="set" value="Incrustada" field="c498-c631-f4c5-160a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6aa2-96ec-dc1a-3cb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Idos</comment>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Flamígera" field="c498-c631-f4c5-160a"/>
+                <modifier type="set" value="Filo Medio Flamígero" field="name"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="e4bd-5f5-f8d-cf5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Crematorio</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Katana" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninjas</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f19a-c771-9682-f4c5" name="Cuchillos arrojadizos" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -996,6 +1510,14 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
             <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">5/10/15 cm</characteristic>
             <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Shuriken" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -1004,6 +1526,14 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dbc-d786-c89c-4924" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="Shuriken" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="485b-43b5-f9fe-c240" name="Ballesta" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1014,7 +1544,7 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
       </costs>
       <infoLinks>
-        <infoLink name="Lentorra (1)" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
+        <infoLink name="Lentorra" id="6b9-969e-c501-49d0" hidden="false" type="rule" targetId="ab59-d932-816d-d561"/>
         <infoLink name="Ballesta" id="e381-7884-c7f4-9e58" hidden="false" type="profile" targetId="ab2a-065d-2c7d-a766"/>
       </infoLinks>
       <constraints>
@@ -1055,13 +1585,6 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <infoLink name="Arma de fuego" id="b47a-92e4-f094-2e77" hidden="false" type="rule" targetId="967b-e5a1-f60c-8b02"/>
         <infoLink name="Escasa" id="fe78-22af-c363-1acf" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="Rifle con mira telescópica" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="e215-f5e2-840d-637d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="3d7e-8220-e1a2-ec7e" name="Arco" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1075,9 +1598,26 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-aa9c-51ab-c737" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Arco" id="dcd6-ba0a-5f9b-6fc5" hidden="false" type="profile" targetId="556a-472d-e04d-8778"/>
+        <infoLink name="Arco" id="dcd6-ba0a-5f9b-6fc5" hidden="false" type="profile" targetId="556a-472d-e04d-8778">
+          <modifiers>
+            <modifier type="set" value="Yumi" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Flipaos de los Ninja</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Difícil de usar" id="4e4c-deee-b504-a8ee" hidden="false" type="rule" targetId="ed27-30aa-1dca-2614"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Yumi" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="23f1-68cd-50c-348b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Flipaos de los Ninja</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="88ef-a9c5-7b87-03f1" name="Rifle automàtico" publicationId="6699-072c-136a-7d30" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1129,16 +1669,12 @@ Por supuesto, esa enorme montaña de músculos también es capaz de atacar a sus
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-6325-0679-6e5c" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="3296-2f9f-73bf-0a3e" name="Cuero endurecido" hidden="false" typeId="db67-24c5-11d4-e09e" typeName="Blindaje">
-          <characteristics>
-            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="3"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Cuero endurecido" id="f6cb-26e3-2d37-99bb" hidden="false" type="profile" targetId="3296-2f9f-73bf-0a3e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5851-f953-bcb7-91a6" name="Pura chapa" publicationId="6699-072c-136a-7d30" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1373,7 +1909,7 @@ rangos de distancia, que pasan a ser -1/+2/+1.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Impetu (1)" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
+        <infoLink name="Impetu" id="75e1-e24e-5316-754" hidden="false" type="rule" targetId="77ee-07d8-dd91-def2"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e3-9f69-56d3-969e" includeChildSelections="false"/>
@@ -1505,9 +2041,9 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
         <categoryLink targetId="b9ac-7089-9933-c74b" id="fe35-9feb-8517-222a" primary="false" name="Garras"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
+        <modifier type="set" value="0" field="d246-5a46-904-3e51">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1529,7 +2065,7 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
             <modifier type="set" value="Veneno (2)" field="c498-c631-f4c5-160a"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Veneno (2)" id="d187-d803-86d-6620" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2"/>
+        <infoLink name="Veneno" id="d187-d803-86d-6620" hidden="false" type="rule" targetId="f90c-ac20-5a41-a8f2"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b582-3e3a-7d55-ca8c"/>
@@ -1542,7 +2078,7 @@ Este disparo carece de modificadores por distancia y/o por Cobertura, excepto si
       <modifiers>
         <modifier type="set" value="0" field="b582-3e3a-7d55-ca8c">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6582-5e09-b30b-db5a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1814,34 +2350,74 @@ El Mutardo tiene un ángulo de visión completo de 360° (en lugar de los 180°
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sin subfacción" hidden="false" id="9b04-3087-ac5c-b3ff"/>
+    <selectionEntry type="upgrade" import="true" name="Arma Flamígera" hidden="false" id="e4bd-5f5-f8d-cf5">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd07-4092-4530-9da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6184-274f-83b3-bd56" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Arma flamígera" hidden="false" id="755a-6b3-611f-35c4" targetId="601e-6a87-2e5d-284a" primary="false"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Flamígera" id="3d73-a3bc-326c-fc4e" hidden="false">
+          <description>Si la miniatura equipada con el arma flamígera impacta a una miniatura en Combate pero esta no resulta Abatida, esta tendrá un penalizador acumulativo de -1 a la Dureza en cualquier tirada (ya sea una tirada de Atributo o enfrentada) contra cualquier tipo de llamas (marcadores de Fuego, lanzallamas, armas flamígeras, etc...). Sin embargo, la miniatura equipada con este arma también sufrirá un penalizador de -1 a Combate.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arma incrustada" hidden="false" id="6aa2-96ec-dc1a-3cb" publicationId="6699-072c-136a-7d30" page="64">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Arma incrustada" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="5131-3d05-ef9c-a25f">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">Un Ido puede incrustarse una hoz, un filo pequeño o un filo medio que haya adquirido incrementando su valor en 10 puntos. A cambio, obtendrá un bonificador de +1 a Combate, no podrá Rapiñar equipo, no podrá desarmarse de ninguna manera y el arma no podrá ser Rapiñada.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ae-f4ed-804a-ad5f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1727-ba78-e35c-e399" name="Balas" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="1cdd-1929-bb46-a022" name="Bala" hidden="false" collective="false" import="true" targetId="b7b7-d0a9-69b8-c008" type="selectionEntry"/>
-        <entryLink import="true" name="Bala apañada" hidden="true" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
+        <entryLink import="true" name="Bala apañada" hidden="false" id="244f-45e9-f24a-f478" type="selectionEntry" targetId="9aa3-b5a1-c176-a5e">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="be12-9645-ce9a-49ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Munición contaminada" hidden="false" id="414a-1e77-d15f-abf8" type="selectionEntry" targetId="5344-f1f1-232b-6a3e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="476f-664f-cf39-efa5" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Munición contaminada" hidden="true" id="414a-1e77-d15f-abf8" type="selectionEntry" targetId="5344-f1f1-232b-6a3e">
+        <entryLink import="true" name="Munición irradiada" hidden="false" id="14cb-c41d-5725-feb4" type="selectionEntry" targetId="b4e3-934f-601-8801">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Munición irradiada" hidden="true" id="14cb-c41d-5725-feb4" type="selectionEntry" targetId="b4e3-934f-601-8801">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="71ce-1b00-66d0-dfd9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1893,7 +2469,7 @@ Las bombas suelen tirarse con el brazo y se destruyen al impactar, por lo que ti
     <rule id="232d-9375-2e3c-b51c" name="¡¡¡CATAPUM!!!" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>A la hora de Disparar, un arma o munición con esta regla que saque un resultado de 9 o 10 en la tirada de Impactar sufrirá una explosión interna: el Disparo fallará automáticamente y el arma quedará inutilizada durante el resto de la partida. Si por alguna razón el Impacto fuese automático (por tener una Precisión de 10 gracias a modificadores, por ejemplo), habrá que realizar igualmente la tirada de 1d10 para ver si se aplica esta regla. Con el resto de resultados funcionará normalmente, independientemente de que consiga Impactar o no.</description>
     </rule>
-    <rule id="586b-7fa4-82ed-58d7" name="Combustible (5)" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
+    <rule id="586b-7fa4-82ed-58d7" name="Combustible" publicationId="6699-072c-136a-7d30" page="31" hidden="false">
       <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
 Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
     </rule>
@@ -1916,21 +2492,14 @@ No es posible Apuntar ni Evitar Cobertura con un Tiro parabólico.</description>
     <rule id="9931-0e0e-fa4f-17d8" name="Usar y tirar" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Un arma con esta regla, sólo podrá utilizarse en una única ocasión durante toda la partida.</description>
     </rule>
-    <rule id="77ee-07d8-dd91-def2" name="Impetu (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="77ee-07d8-dd91-def2" name="Impetu" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Obtiene un bonificador a la Penetración y a la Fuerza igual al número entre paréntesis por cada bonificador de +1 al Combate recibido por el Movimiento del Asalto.</description>
-    </rule>
-    <rule id="8837-2aa8-e20e-0ed5" name="Incendiaria (2)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
-      <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
-Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
-Cualquier miniatura que durante el transcurso de una Acción
-contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
-Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
     </rule>
     <rule id="3de3-35e0-04fc-ec2a" name="Infiltración" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Una miniatura con esta regla, no tiene por qué ser desplegada en la zona de despliegue con el resto de miniaturas. En su lugar puedes decidir que avanza secretamente 10 cm por Turno de juego desde el borde de la zona de despliegue propia más cercano al centro de la mesa, pudiendo aparecer en cualquier Turno posterior al primero hasta un máximo del cuarto Turno. Desplegará dentro de esa distancia en cualquier lugar de la mesa, a no menos de 15 cm de cualquier miniatura enemiga, y en un lugar donde ninguna miniatura enemiga tenga Línea de visión sobre ella.
 En el Turno en que se quiera desplegar la miniatura, debe indicársele al rival al principio de la Ronda de Agilidad que le corresponda y actuará de la misma manera que el resto de miniaturas de esa Ronda de Agilidad.</description>
     </rule>
-    <rule id="ab59-d932-816d-d561" name="Lentorra (1)" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
+    <rule id="ab59-d932-816d-d561" name="Lentorra" publicationId="6699-072c-136a-7d30" page="32" hidden="false">
       <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
 En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
     </rule>
@@ -1951,7 +2520,7 @@ No podrá usarse Fuego defensivo con un arma con esta regla. Por otra parte, si 
     <rule id="339a-709e-0f9b-718f" name="Raudo" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Hay criaturas más rápidas de lo habitual. Una miniatura con esta regla puede Mover 15 cm en lugar de 10 cm por Acción de Movimiento.</description>
     </rule>
-    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso (2)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
+    <rule id="1d8a-9fa1-9a2d-eeb7" name="Retraso" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
 A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
@@ -1969,40 +2538,16 @@ Pueden combinarse varias Acciones de Movimiento seguidas en una misma Fase de ac
     <rule id="37eb-d074-791e-032f" name="Trepador" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
       <description>Una miniatura con esta regla puede Trepar como si fuera por Terreno chachi.</description>
     </rule>
-    <rule id="c1f4-2a2c-c27b-84bc" name="Veneno (4)" publicationId="6699-072c-136a-7d30" page="33" hidden="false">
-      <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
-En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
-    </rule>
-    <rule name="Retraso (3)" id="7f50-dcfe-b5d4-5916" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
-      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
-A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
-    </rule>
-    <rule name="Lentorra (2)" id="83d4-6391-9ff1-8fa1" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
-      <description>Un arma con esta regla, necesita que se gaste un número de Acciones, indicadas por el número entre paréntesis, para ser recargada después de Disparar. Estas armas comienzan la partida cargadas. Si el arma fuese de cuerpo a cuerpo, los bonificadores del arma se aplican a la primera Acción de Combate que consiga Impactar. Acto seguido, este arma contará como descargada.
-En las siguientes Acciones de Combate de la Fase de activación se podrán aplicar los modificadores de cualquier otro arma que posea la miniatura (contraviniendo las reglas habituales por poseer dos armas en un Combate) o de arma improvisada si este arma ya descargada fuese la única que pueda o quiera emplear.</description>
-    </rule>
-    <rule name="Combustible (10)" id="acbf-a551-1e92-4dba" hidden="false">
-      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
-Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
-    </rule>
-    <rule name="Incendiaria (3)" id="1874-350f-4460-c2c8" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
+    <rule name="Incendiaria" id="1874-350f-4460-c2c8" hidden="false" publicationId="6699-072c-136a-7d30" page="32">
       <description>Las armas con esta regla cubren de llamas la zona allí donde impactan, obligando a los rivales a salir de cobertura o haciendo muy arriesgado cruzar ciertas zonas. Estas armas dejan un marcador permanente de Fuego de 5 cm de radio
 Toda miniatura impactada con un arma con la regla Incendiaria (X) recibirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis, que ignora cualquier tipo de bonificación por Cobertura. Si sobrevive deberá desplazarse inmediatamente fuera del marcador de Fuego en sentido contrario al rival que ha efectuado el ataque. Tras esto las miniaturas podrán entrar y quedarse dentro de los marcadores de Fuego bajo su riesgo.
 Cualquier miniatura que durante el transcurso de una Acción
 contacte con un marcador de Fuego sufrirá un Impacto con un valor de Penetración y Fuerza indicado por el número entre paréntesis. Una miniatura sufrirá los efectos del fuego sólo una vez por Acción, que será el más potente, independientemente de que al moverse salga y entre en un marcador o atraviese más de un marcador.
 Por otra parte, si una miniatura tiene algún arma con esta regla y resulta Abatida, estas armas detonarán, centrando el área de explosión sobre la peana de la miniatura Abatida. Deberán seguirse las mismas reglas que si el arma hubiera impactado, pero añadiendo un bonificador de +1 a la Fuerza por cada arma incendiaria equipada tras la primera. Además, el equipo que lleve habrá resultado destruido y no podrá ser usado por otra miniatura.</description>
     </rule>
-    <rule name="Combustible (2)" id="fecc-30e-9355-c512" hidden="false" publicationId="6699-072c-136a-7d30" page="31">
-      <description>El equipo con esta regla necesita de cargas de combustible para funcionar. El equipo comienza con X cargas, pero cada vez que se realice un Disparo, ataque o utilice, gastará las cargas indicadas, hasta quedar agotada y dejar de funcionar.
-Pero llevar ese combustible es peligroso, así que si una miniatura con un equipo con esta regla es Impactada puede llegar a explosionar. Si después de ser Impactada, en la tirada enfrentada de Fuerza contra Dureza el atacante saca una tirada de 1, habrá una explosión. La miniatura que porte el equipo, y cualquier miniatura en contacto con ella, sufrirá un impacto de tanta Fuerza como cargas le queden al equipo y Penetración 3.</description>
-    </rule>
-    <rule name="Veneno (2)" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
+    <rule name="Veneno" id="f90c-ac20-5a41-a8f2" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
       <description>Cuando una miniatura es impactada por otra miniatura o arma con esta regla podrá sufrir daño incluso tras haber superado su tirada de Dureza.
 En su Fase de activación posterior, justo antes de realizar sus Acciones, deberá superar una tirada enfrentada de Dureza contra la potencia del Veneno, indicado por el número entre paréntesis, o habrá sido Abatida.</description>
-    </rule>
-    <rule name="Retraso (1)" id="515b-e451-e3f5-14d0" hidden="false" publicationId="6699-072c-136a-7d30" page="33">
-      <description>Una miniatura con esta regla puede elegir retrasar su Fase de activación una vez por Turno de juego hasta tantas Rondas de Agilidad como el número entre paréntesis. Cuando llegue su momento de actuar, podrá declarar que actuará en una Ronda de Agilidad posterior dentro de ese margen.
-A la hora de actuar se seguirán las reglas habituales de orden de actuación, como si la miniatura con esta regla tuviera la misma Agilidad que el resto de miniaturas que deben actuar en esa Ronda de Agilidad.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2066,9 +2611,37 @@ A la hora de actuar se seguirán las reglas habituales de orden de actuación, c
         <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Armatoste</characteristic>
       </characteristics>
     </profile>
+    <profile name="Cuero endurecido" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="3296-2f9f-73bf-0a3e">
+      <characteristics>
+        <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maza Ligera" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="8a2b-644f-f363-8c13" publicationId="6699-072c-136a-7d30" page="132">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+1</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">0</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maza" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="5f7a-14f0-0f0f-5999">
+      <characteristics>
+        <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+        <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+2</characteristic>
+        <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+1</characteristic>
+        <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup name="Arco" id="3dde-d497-4bc9-2c08" hidden="false"/>
     <infoGroup name="Ballesta" id="fa25-237c-d4a6-c35e" hidden="false"/>
+    <infoGroup name="Bomba" id="c02c-e834-3f2b-6982" hidden="false">
+      <infoLinks>
+        <infoLink name="Escasa" id="ffd2-8aab-da70-60b4" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
+        <infoLink name="Usar y tirar" id="939-ff44-83b1-6abf" hidden="false" type="rule" targetId="9931-0e0e-fa4f-17d8"/>
+        <infoLink name="Bomba" id="232a-c8d4-c397-2933" hidden="false" type="rule" targetId="d4d7-8245-ed66-4269"/>
+      </infoLinks>
+    </infoGroup>
   </sharedInfoGroups>
 </gameSystem>

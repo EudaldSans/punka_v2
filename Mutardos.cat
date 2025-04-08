@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="d54e-2410-ba49-c376" name="Mutardos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.snas@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
-    <profileType name="Poder psíquico" id="2fda-a429-1c7b-b02c" hidden="false">
+    <profileType name="Poder psíquico" id="2fda-a429-1c7b-b02c" hidden="false" sortIndex="9">
       <characteristicTypes>
         <characteristicType name="Distancia" id="f4dd-af6f-cf42-c54" hidden="false"/>
         <characteristicType name="Regla" id="742a-9af9-288f-176c" hidden="false"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Mutaciones" id="68df-a190-7184-371e" hidden="false"/>
-  </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Poder psíquico" id="d652-cee5-9d2d-70f9" hidden="true"/>
   </categoryEntries>
@@ -26,31 +23,10 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer, Cuerpo escombro, Grupal</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Cuerpo escombro" id="8561-3c8b-9faa-347d" hidden="false">
-          <description>Los pochos están tan hechos polvo que no dejan marcador al ser Abatidos, es como si no hubieran existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo.</description>
-        </rule>
-        <rule name="Grupal" id="db73-70df-99a3-680c" hidden="false">
-          <description>Los Pochos tienen cierta mentalidad colectiva que les hace ir en grupo siempre que pueden. Los Pochos deben ir unidos hasta formar un grupo mínimo de 2 y máximo de 5. Por encima de este número formarán otro grupo, y así sucesivamente.
-Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
-
-Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todos los Pochos de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si un Pocho del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de Pochos solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 Pochos su Atributo de Combate será 3. Sin embargo, solo se Abatirá un Pocho por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="a1c6-2692-821c-c89a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86a-1d51-ed28-bef1" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="6"/>
       </costs>
@@ -85,7 +61,6 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="115-8b33-9ecc-a29" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b103-8994-b83e-5931" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
@@ -102,8 +77,7 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5743-76a6-e8f9-4fdc" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c6b-d609-62be-ed0e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110b-abce-b2fb-cee0" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Confusión" hidden="false" id="f88e-122e-bf-43db">
@@ -134,7 +108,6 @@ Los grupos se consideran una sola miniatura para la mayoría de los efectos de j
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ca8-7c1b-ab7-604f" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2834-fc36-e64a-9900" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Potenciación" hidden="false" id="377e-aa6c-54a0-e678" publicationId="6699-072c-136a-7d30" page="86">
@@ -152,7 +125,6 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el us
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6592-2e22-719c-2572" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1158-704e-74db-68c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Titiritero" hidden="false" id="7372-283d-9bea-df09" publicationId="6699-072c-136a-7d30" page="86">
@@ -170,7 +142,55 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ad-5d55-20f8-84b9" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5bf-2ccc-8c13-f6d7" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sidekick" hidden="false" id="35e7-b5fc-713f-8de6">
+      <modifiers>
+        <modifier type="increment" value="1" field="e515-0c5b-47aa-1328">
+          <repeats>
+            <repeat value="2" repeats="1" field="e515-0c5b-47aa-1328" scope="parent" childId="upgrade" shared="true" roundUp="true" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Sidekick" typeId="7cc9-89fb-d9b6-2f1a" typeName="Equipo especial" hidden="false" id="43e7-8340-d1da-e981">
+          <characteristics>
+            <characteristic name="Reglas" typeId="c2c9-19be-2e75-813a">No hace falta representarlo con una miniatura, ya que no quita línea de visión ni entorpece el movimiento, aunque quedaría muy molón. Cuando el Mutante integrante de la Fuerza M vaya a ser Abatido, será su secundario el que quedará Abatido de inmediato y no volverá a surtir efecto en la partida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a98c-918e-62d1-aa2b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Empochizar" hidden="false" id="0106-f14b-d329-2ebf">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ce-be2a-bdc1-1ae9-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ce-be2a-bdc1-1ae9-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Empochizar" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="40d0-2ad2-8aad-8c10">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">30 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón puede volver a levantar a una miniatura caída como Pocho. Puede gastar una de sus Acciones en hacer que una miniatura Abatida con peana de 25 mm se convierta en un Pocho de su propia banda. Al contrario que en sus reglas normales, estos Pochos pueden ir individualmente, aunque si están a la distancia de otros Pochos pueden unirse y formar un grupo siguiendo la Regla especial Grupal. Una vez unidos no podrán separarse de nuevo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Muñeco vudú" hidden="false" id="7ca9-1762-ad71-406d">
+      <profiles>
+        <profile name="Muñeco vudú" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="387f-6669-7d3a-99cb">
+          <characteristics>
+            <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+            <characteristic name="Regla" typeId="742a-9af9-288f-176c">El Cabezón utiliza un muñeco para representar a uno de sus enemigos e interactuar con él a través del muñeco. Puede gastar una de sus Acciones en hacer que una miniatura enemiga en Línea de visión sufra uno de los siguientes percances:
+• Le obliga a hacer una Acción de Movimiento inmediata y gratuita hacia la dirección que el Cabezón quiera.
+• Le causa un dolor espantoso por el que tendrá un penalizador de -2 al Combate y Precisión en su siguiente Fase de activación.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b941-7ee7-699c-6881-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b941-7ee7-699c-6881-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -182,6 +202,20 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e55-3cfc-7a15-7bf0" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a140-22e3-f5e5-aef" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="4d70-52fa-52f5-f952" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras y dientes" hidden="false" id="a1c6-2692-821c-c89a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86a-1d51-ed28-bef1" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </entryLink>
       </entryLinks>
       <categoryLinks>
@@ -198,7 +232,35 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="8f2e-323-f3e3-a300" shared="true" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Cuerpo escombro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1c33-98e5-77f0-9f5">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los pochos están tan hechos polvo que no dejan marcador al ser Abatidos, es como si no hubieran existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grupal" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="74a0-6299-acbc-8f3b">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
+
+
+Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todos los Pochos de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si un Pocho del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de Pochos solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 Pochos su Atributo de Combate será 3. Sin embargo, solo se Abatirá un Pocho por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mónguer" id="e4ea-a92-1aae-a72d" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mutante" hidden="false" id="5f32-627d-f830-989c">
       <costs>
@@ -219,22 +281,6 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armas" id="2f48-c0de-96c1-ecc" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bd8-d30e-8bf6-c5b8" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="9e7d-79cd-e44c-91f8" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
-              <entryLinks>
-                <entryLink import="true" name="Maza" hidden="false" id="4a90-d29b-f602-e43" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Maza Ligera" hidden="false" id="1004-6ec3-d63-c590" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
-            <entryLink import="true" name="Filo Pequeño" hidden="false" id="574-d0ff-21d1-11c9" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
-            <entryLink import="true" name="Filo Medio" hidden="false" id="8c33-b9b6-7f84-266f" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
-            <entryLink import="true" name="Maza" hidden="false" id="d26b-f845-c3fa-d738" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Mutaciones" id="c7cd-35d1-2c6f-bb7c" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Cachas" hidden="false" id="94ce-b5a6-44cb-b1b4" type="selectionEntry" targetId="e8de-ce-8096-f027"/>
@@ -245,7 +291,11 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <entryLink import="true" name="Espinas" hidden="false" id="7cd4-5a95-cffc-d86e" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
             <entryLink import="true" name="Esputo ácido" hidden="false" id="3378-97df-7b9e-4601" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
             <entryLink import="true" name="Extremidad prensil" hidden="false" id="5a21-8bb3-9dbe-6c51" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
-            <entryLink import="true" name="Garras" hidden="false" id="ec9a-5b84-7bba-3ad0" type="selectionEntry" targetId="89ac-b813-922c-11a8"/>
+            <entryLink import="true" name="Garras" hidden="false" id="ec9a-5b84-7bba-3ad0" type="selectionEntry" targetId="89ac-b813-922c-11a8">
+              <categoryLinks>
+                <categoryLink targetId="b9ac-7089-9933-c74b" id="8da4-7788-c8a9-e6c" primary="false" name="Garras"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink import="true" name="Garras envenenadas" hidden="false" id="92cc-d549-7959-3b32" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
             <entryLink import="true" name="Miembros extra" hidden="false" id="44ff-30ce-d0e7-904f" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
             <entryLink import="true" name="Mimetismo" hidden="false" id="2dc0-207e-33c1-9d9f" type="selectionEntry" targetId="d370-d789-b8d7-7f83"/>
@@ -265,6 +315,80 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc02-b77a-dc99-c1f3" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92a8-1b84-5e0d-3e23" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="2c90-7c2c-713f-fd25" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="308c-cb4-973b-526" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cuchillos arrojadizos" hidden="false" id="6e30-55bf-ddde-967c" type="selectionEntry" targetId="f19a-c771-9682-f4c5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2ed-3326-aa9d-ad0a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="4f2-1887-6b90-2bae" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="4995-ef7-2aaa-941e" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Pistola" hidden="false" id="ff4-46ec-bbf3-386c" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <modifiers>
+                <modifier type="set" value="10" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Arco" hidden="false" id="eeda-8c80-70e7-694d" type="selectionEntry" targetId="3d7e-8220-e1a2-ec7e">
+              <modifiers>
+                <modifier type="set" value="20" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Maza" hidden="false" id="2aa4-2811-bd70-99" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="3f13-9f6c-6ada-f42d" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+            <entryLink import="true" name="Ballesta" hidden="false" id="606-e3d-b30a-9893" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+              <modifiers>
+                <modifier type="set" value="16" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Escopeta" hidden="false" id="dded-f2d6-ea7c-1623" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <modifiers>
+                <modifier type="set" value="12" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="522d-8cfb-3dd1-8819" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="a5b1-346e-54e6-ff98" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="6" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -286,15 +410,15 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia, Raudo, Perrete tontico</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia, Raudo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Perrete tontico" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="af92-e0a-9225-f09e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las mentes de los Perromorfos son demasiado primitivas. Un Cabezón no podrá usar ningún Poder psíquico sobre un Perromorfo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Perrete tontico" id="a38a-acdd-41c4-773e" hidden="false">
-          <description>Las mentes de los Perromorfos son demasiado primitivas. Un Cabezón no podrá usar ningún Poder psíquico sobre un Perromorfo.</description>
-        </rule>
-      </rules>
       <entryLinks>
         <entryLink import="true" name="Garras y dientes" hidden="false" id="1968-990-39b5-829a" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
           <constraints>
@@ -313,6 +437,20 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         <categoryLink targetId="baef-b3fd-e022-e917" id="a316-307a-4d24-b32" primary="false" name="Banda: Mutardos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="9d6d-92ed-cfb9-2463" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Fuerza M</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Macumba</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bestia del Pozo" hidden="false" id="ddcc-d70b-6ef0-8b20">
       <costs>
@@ -363,6 +501,20 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f9-b222-ff16-4b97" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="a716-6bef-4568-565e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="147c-c3ad-aeb3-da8f" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="35" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Piel dura 3" hidden="false" id="5474-9e0-6a1c-73b8" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
@@ -394,6 +546,13 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         <categoryLink targetId="baef-b3fd-e022-e917" id="f788-b6de-5703-3573" primary="false" name="Banda: Mutardos"/>
         <categoryLink targetId="84b7-6828-dd10-0280" id="469-8c21-9640-6f19" primary="true" name="Miembros de la banda"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cabezón" hidden="false" id="6ec3-8616-70a-e889">
       <costs>
@@ -415,11 +574,109 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
         </selectionEntryGroup>
         <selectionEntryGroup name="Poderes psíquicos" id="d52c-407f-8dbf-e03b" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Barrera psíquica" hidden="false" id="dd93-9508-a28c-2690" type="selectionEntry" targetId="f09c-7802-581b-8c7a"/>
-            <entryLink import="true" name="Choque mental" hidden="false" id="2b0d-465f-db75-12ef" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
-            <entryLink import="true" name="Desarme" hidden="false" id="323b-f97-2c09-9d72" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
-            <entryLink import="true" name="Potenciación" hidden="false" id="7860-94ea-b48a-6686" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
-            <entryLink import="true" name="Titiritero" hidden="false" id="604a-d54b-98b3-871c" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="dd93-9508-a28c-2690" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c67-1555-b63-d300" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Choque mental" hidden="false" id="2b0d-465f-db75-12ef" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91f1-3b80-82bb-9171" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Desarme" hidden="false" id="323b-f97-2c09-9d72" type="selectionEntry" targetId="8f39-9f74-ba43-f579">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6a0-75cb-7a70-6143" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Potenciación" hidden="false" id="7860-94ea-b48a-6686" type="selectionEntry" targetId="377e-aa6c-54a0-e678">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69de-526c-fabe-9d14" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="604a-d54b-98b3-871c" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="634f-4b50-f0ec-4e66" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Macumba</comment>
+            </modifier>
+          </modifiers>
+          <comment>Base</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="c53e-2d36-13d5-e674" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="9d22-835c-e98a-8b2e" type="selectionEntry" targetId="f09c-7802-581b-8c7a"/>
+            <entryLink import="true" name="Choque mental" hidden="false" id="933c-4749-de45-baa9" type="selectionEntry" targetId="fc4e-7d9d-ff7f-c3d"/>
+            <entryLink import="true" name="Desarme" hidden="false" id="61b-434c-b488-4e17" type="selectionEntry" targetId="8f39-9f74-ba43-f579"/>
+            <entryLink import="true" name="Potenciación" hidden="false" id="11a8-61ca-8d8d-83f4" type="selectionEntry" targetId="377e-aa6c-54a0-e678"/>
+            <entryLink import="true" name="Titiritero" hidden="false" id="1609-b661-a714-751e" type="selectionEntry" targetId="7372-283d-9bea-df09"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3165-1434-e37d-36e2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3165-1434-e37d-36e2-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Amanecer mutante</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="ab3c-d7d0-b9cb-a093" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="9429-6762-359c-e38b" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="40" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="cb83-c360-dd90-1557" hidden="false">
+          <comment>Macumba</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="2441-b91d-b582-a8cc" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3243-973d-7ef9-0dff" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Potenciación" hidden="false" id="39a5-3a4c-6992-b3f2" type="selectionEntry" targetId="377e-aa6c-54a0-e678">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c34-e675-0f61-05c7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="f87d-4c1a-b091-b897" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="456e-94ef-555d-8bda" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empochizar" hidden="false" id="69b1-a246-1a70-e353" type="selectionEntry" targetId="0106-f14b-d329-2ebf"/>
+            <entryLink import="true" name="Muñeco vudú" hidden="false" id="35a8-d0c8-adce-5d6a" type="selectionEntry" targetId="7ca9-1762-ad71-406d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -437,6 +694,13 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="60" field="e515-0c5b-47aa-1328">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Magmador" hidden="false" id="b00b-91e-3c77-acc9">
       <costs>
@@ -457,42 +721,54 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Ignífugo, Cuerpo ardiente, Charco de magma, ¡Que se me quema!</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Ignífugo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="¡Que se me quema!" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="866b-6de0-e9af-fec2">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque a pesar de su aspecto pudiera parecer lo contrario, Magmador es un mutardo bastante listo. Sin embargo le es muy complicado interactuar con las cosas... porque se le queman. En los escenarios puede controlar objetivos, pero no interactuar con ellos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Charco de magma" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="b21b-997-7edc-5be8">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una vez por partida, Magmador es capaz de expulsar magma de su cuerpo hasta convertir el terreno en un infierno de lava. Si gasta 2 Acciones seguidas (no necesariamente en la misma Fase de activación) Magmador podrá crear un charco de lava de 10x10 cm, que se considerará un zona de Terreno impasable. Debe crearse con un borde tocando su peana, en un espacio a ras de suelo y despejado de cualquier elemento, incluidos objetivos o miniaturas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cuerpo ardiente" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="70d9-bc97-c97d-6de9">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si Magmador es Impactado por un arma en cuerpo a cuerpo, deberá tirarse 1d10. Con un resultado de 6+ el arma habrá quedado destruida, aunque se seguirá produciendo el Impacto normalmente.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ignífugo" id="9af6-39b8-7baf-e54d" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
       </infoLinks>
-      <rules>
-        <rule name="Cuerpo ardiente" id="d534-4f19-7337-7162" hidden="false">
-          <description>Si Magmador es Impactado por un arma en cuerpo a cuerpo, deberá tirarse 1d10. Con un resultado de 6+ el arma habrá quedado destruida, aunque se seguirá produciendo el Impacto normalmente.</description>
-        </rule>
-        <rule name="Charco de magma" id="3431-c4bb-4464-4463" hidden="false">
-          <description>Una vez por partida, Magmador es capaz de expulsar magma de su cuerpo hasta convertir el terreno en un infierno de lava. Si gasta 2 Acciones seguidas (no necesariamente en la misma Fase de activación) Magmador podrá crear un charco de lava de 10x10 cm, que se considerará un zona de Terreno impasable. Debe crearse con un borde tocando su peana, en un espacio a ras de suelo y despejado de cualquier elemento, incluidos objetivos o miniaturas.</description>
-        </rule>
-        <rule name="¡Que se me quema!" id="a638-57c7-3c66-7b71" hidden="false">
-          <description>Aunque a pesar de su aspecto pudiera parecer lo contrario, Magmador es un mutardo bastante listo. Sin embargo le es muy complicado interactuar con las cosas... porque se le queman. En los escenarios puede controlar objetivos, pero no interactuar con ellos.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Garras y dientes" hidden="false" id="a60d-4aa5-1c41-65af" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c9-d240-1b9b-642a" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piel dura 5" hidden="false" id="1b04-9011-efeb-81cb" type="selectionEntry" targetId="423e-a45a-fef-29a3">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-97d5-708a-e77" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c500-f7a0-ae39-d47d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="a60d-4aa5-1c41-65af" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c9-d240-1b9b-642a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="be75-56a6-f3f2-cc12" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Piel dura 5" hidden="false" id="1b04-9011-efeb-81cb" type="selectionEntry" targetId="423e-a45a-fef-29a3">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-97d5-708a-e77" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kim y Fostiador" hidden="false" id="8f2e-323-f3e3-a300">
       <costs>
@@ -513,82 +789,30 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6 (10)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Zasca, Mente ocupada, Odio puro</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mente ocupada" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8d68-655d-2007-2bbf">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El esfuerzo continuo de Kim controlando a Fostiador, hace que la mente de la Bestia del pozo esté demasiado ocupada como para que ningún poder extra le afecte. No podrá lanzarse ningún Poder psíquico sobre Kim y Fostiador.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zasca" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="76bc-517e-b518-5c04">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Se trata de una de las armas defensivas del asentamiento donde Kim y Fostiador estuvieron como esclavos, que la bestia arrancó y se llevó. Fostiador usa como proyectil lo primero que arranca por ahí, pero una vez lanzado, debe encontrar algo que usar como munición para recargarlo. Antes de desplegar se colocarán de manera aleatoria 3 marcadores (de la misma manera que se hace con los objetivos). Estos representan algún poste, farola o similar que hay en el suelo. Si está en contactocon uno, Fostiador puede usar 1 Acción para hacerse con él y pasará a tener un nuevo proyectil.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Odio puro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7cee-158b-f218-e649">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El tiempo pasado esclavizada, las vejaciones sufridas... todo eso está dentro de Kim siempre a punto de explotar. Si resulta Abatida, todo ese odio estallará en una onda de energía psíquica. Tira 1d10 para ves las consecuencias:
+
+
+• 1-3 - Todas las miniaturas de la mesa sufren un golpe psíquico tan potente que les hace perder 1 punto de Dureza.
+• 4-7 - Su gente se hace partícipe de su odio. Se considerará como si se hubiera lanzado sobre todas las miniaturas de su banda el Poder psíquico Potenciación al Combate, siguiendo sus mismas reglas y restricciones.
+• 8-10 - La confusión invade todo. Todas las miniaturas de la mesa tendrán 1 Acción menos en su siguiente Fase de activación.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zasca" hidden="false" id="1fae-1487-535c-8e5d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ad-cd83-6a0f-7da3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bba-1f08-fd5a-d3b5" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Zasca" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="50c0-6a85-9b09-8a73">
-              <characteristics>
-                <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">9</characteristic>
-                <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
-                <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
-                <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Armatoste, Mamotreto</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Armatoste" id="3eef-7b72-1c2d-291d" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
-            <infoLink name="Mamotreto" id="38f3-7812-2025-ef6d" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Cachas" hidden="false" id="1ed5-2076-f665-49b5" type="selectionEntry" targetId="e8de-ce-8096-f027">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-927d-1369-ddc4" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piel dura 3" hidden="false" id="2fa4-b9db-dc0c-b29e" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee48-77b4-cc2c-dbd0" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Resistente" hidden="false" id="2d53-53d5-28df-5ee1" type="selectionEntry" targetId="275c-4612-4b78-8b82">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2956-926e-4108-2531" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Piernas seguras" hidden="false" id="da22-9e4d-f677-1148" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3b-77f1-b5ca-6c69" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <rules>
-        <rule name="Zasca" id="3dd5-9277-c2b5-8f58" hidden="false">
-          <description>Se trata de una de las armas defensivas del asentamiento donde Kim y Fostiador estuvieron como esclavos, que la bestia arrancó y se llevó. Fostiador usa como proyectil lo primero que arranca por ahí, pero una vez lanzado, debe encontrar algo que usar como munición para recargarlo. Antes de desplegar se colocarán de manera aleatoria 3 marcadores (de la misma manera que se hace con los objetivos). Estos representan algún poste, farola o similar que hay en el suelo. Si está en contactocon uno, Fostiador puede usar 1 Acción para hacerse con él y pasará a tener un nuevo proyectil.</description>
-        </rule>
-        <rule name="Mente ocupada" id="c788-3e27-31df-fc64" hidden="false">
-          <description>El esfuerzo continuo de Kim controlando a Fostiador, hace que la mente de la Bestia del pozo esté demasiado ocupada como para que ningún poder extra le afecte. No podrá lanzarse ningún Poder psíquico sobre Kim y Fostiador.</description>
-        </rule>
-        <rule name="Odio puro" id="a837-8fea-6f39-bfb1" hidden="false">
-          <description>El tiempo pasado esclavizada, las vejaciones sufridas... todo eso está dentro de Kim siempre a punto de explotar. Si resulta Abatida, todo ese odio estallará en una onda de energía psíquica. Tira 1d10 para ves las consecuencias:
-
-
-• 1-3   - Todas las miniaturas de la mesa sufren un golpe psíquico tan potente que les hace perder 1 punto de Dureza.
-• 4-7   - Su gente se hace partícipe de su odio. Se considerará como si se hubiera lanzado sobre todas las miniaturas de su banda el Poder psíquico Potenciación al Combate, siguiendo sus mismas reglas y restricciones.
-• 8-10 - La confusión invade todo. Todas las miniaturas de la mesa tendrán 1 Acción menos en su siguiente Fase de activación.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Poderes psíquicos" id="e182-ba3a-c273-4167" hidden="false">
           <entryLinks>
@@ -599,7 +823,729 @@ Los Pochos tienen una mente más débil y más fácilmente influenciable, el ga
             <entryLink import="true" name="Confusión" hidden="false" id="df07-fa42-4b94-6686" type="selectionEntry" targetId="f88e-122e-bf-43db"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="2c99-f26e-276-7dd9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Resistente" hidden="false" id="2d53-53d5-28df-5ee1" type="selectionEntry" targetId="275c-4612-4b78-8b82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2956-926e-4108-2531" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="da22-9e4d-f677-1148" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3b-77f1-b5ca-6c69" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Piel dura 3" hidden="false" id="2fa4-b9db-dc0c-b29e" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee48-77b4-cc2c-dbd0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cachas" hidden="false" id="1ed5-2076-f665-49b5" type="selectionEntry" targetId="e8de-ce-8096-f027">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-927d-1369-ddc4" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="580b-703e-a72e-681f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Zasca" hidden="false" id="1fae-1487-535c-8e5d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ad-cd83-6a0f-7da3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bba-1f08-fd5a-d3b5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Zasca" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="50c0-6a85-9b09-8a73">
+                  <characteristics>
+                    <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">9</characteristic>
+                    <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">10</characteristic>
+                    <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">25/50/75 cm</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Armatoste, Mamotreto</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Armatoste" id="3eef-7b72-1c2d-291d" hidden="false" type="rule" targetId="e424-ab96-2797-07e5"/>
+                <infoLink name="Mamotreto" id="38f3-7812-2025-ef6d" hidden="false" type="rule" targetId="b7fb-1d56-a83d-601a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pretoriano" hidden="false" id="cb72-3cb4-f5c6-1074">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="45"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="b4f5-6e25-85bb-8a46" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Pretoriano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e998-1421-aa39-1544">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Libre del yugo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e46f-464-1395-7386">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Si Kim es Abatida, las mentes de los Pretorianos se sentirán de repente vacías. Independientemente del resultado al tirar en la tabla de la Regla especial Odio Puro de Kim y Fostiador, para los Pretorianos es como si hubiera salido un 8-10.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Por Kim" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8ed5-c940-f7cd-d33">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los Pretorianos están acostumbrados a que Kim los use a su antojo. Si Kim usa el Poder de Absorción vital sobre un Pretoriano, este perderá 1 punto de Dureza en lugar de los 2 habituales.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="b84-e64d-5255-8a24" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="9a8c-1370-f78c-98a7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe"/>
+            <entryLink import="true" name="Maza" hidden="false" id="537-ef2-ad4b-e439" type="selectionEntry" targetId="407f-7985-410e-2a9f"/>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="ca83-bbd2-5b10-6cad" type="selectionEntry" targetId="5424-01db-ff0c-e13a"/>
+            <entryLink import="true" name="Ballesta" hidden="false" id="2c56-2cfc-b626-2b54" type="selectionEntry" targetId="485b-43b5-f9fe-c240"/>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="bcec-f9c7-174d-ec1a" type="selectionEntry" targetId="4cff-c4a3-65b5-c719"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="23da-8cff-eb5f-5a2c" type="selectionEntry" targetId="d385-422c-97e9-fd5f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4842-f20-ac41-e4c6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="cf43-3fee-df7f-3dcd" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Escudo" hidden="false" id="3acd-7815-f22f-a00a" type="selectionEntry" targetId="496a-3c88-4eb3-fd08"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="f07a-7523-b982-cb46" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e209-c6c-f8c0-da88" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88ed-b439-276e-8128" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="10 Puntos" id="7799-d3b0-6d88-db7" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Cachas" hidden="false" id="e35d-a360-175-cf13" type="selectionEntry" targetId="e8de-ce-8096-f027"/>
+                <entryLink import="true" name="Carga brutal" hidden="false" id="db08-2290-dad-a3fe" type="selectionEntry" targetId="b2a2-2d91-379-e2ee"/>
+                <entryLink import="true" name="Cola afilada" hidden="false" id="79ff-ae75-b6b3-b871" type="selectionEntry" targetId="4ca4-fc23-a038-6df7"/>
+                <entryLink import="true" name="Miembros extra" hidden="false" id="356-4de9-70bc-fbb7" type="selectionEntry" targetId="a4ad-9205-fdd1-8994"/>
+                <entryLink import="true" name="Piel dura 3" hidden="false" id="6f02-282f-caec-6f41" type="selectionEntry" targetId="7eca-4fd0-5454-975f"/>
+                <entryLink import="true" name="Proyectil orgánico" hidden="false" id="e17f-1d85-a59-7e3e" type="selectionEntry" targetId="d2e5-1f34-4675-9b90"/>
+                <entryLink import="true" name="Resistente" hidden="false" id="97f8-e42c-69b2-a4f0" type="selectionEntry" targetId="275c-4612-4b78-8b82"/>
+                <entryLink import="true" name="Sentidos aguzados" hidden="false" id="ee68-a4c-7718-f87a" type="selectionEntry" targetId="44c1-a042-3be4-e331"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bca5-54ab-88eb-908f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="2 Puntos" id="921a-e794-33ed-4533" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras" hidden="false" id="18a0-7757-6724-be3f" type="selectionEntry" targetId="89ac-b813-922c-11a8"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147e-f4af-3f17-ab55" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="4 Puntos" id="b3dc-dcd2-a35a-1dfb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Pegajoso" hidden="false" id="1253-c16-ce3b-9067" type="selectionEntry" targetId="258f-5e74-27c-5f8b"/>
+                <entryLink import="true" name="Piel dura 1" hidden="false" id="5ba-8c74-75a7-1507" type="selectionEntry" targetId="4916-1692-b826-c903"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af75-d43c-227f-bd7a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="5 Puntos" id="a8f2-4520-d495-ab5f" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Mimetismo" hidden="false" id="b07b-10e-b818-b25a" type="selectionEntry" targetId="d370-d789-b8d7-7f83"/>
+                <entryLink import="true" name="Extremidad prensil" hidden="false" id="3f33-90fe-1299-e618" type="selectionEntry" targetId="cbda-380a-4e58-ee65"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d21-b014-397c-b25a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="6 Puntos" id="4788-1359-588e-52bb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Sónar" hidden="false" id="e85d-7bc0-772d-720d" type="selectionEntry" targetId="a0d1-a53c-c996-b5ac"/>
+                <entryLink import="true" name="Esputo ácido" hidden="false" id="703-42ce-6447-e113" type="selectionEntry" targetId="3941-f852-37ea-685b"/>
+                <entryLink import="true" name="Espinas" hidden="false" id="6ebf-954c-daf-3ca1" type="selectionEntry" targetId="7e7b-807a-28ad-30bf"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cfc-ea74-b98e-f963" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="8 Puntos" id="e9da-23dc-6c63-d4c0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras envenenadas" hidden="false" id="51df-8c06-9c31-bc2" type="selectionEntry" targetId="3b97-85f8-81f6-870b"/>
+                <entryLink import="true" name="Piernas seguras" hidden="false" id="4010-1fa1-464f-483b" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb4-458a-e5c6-4b7f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="12 Puntos" id="965e-7982-b8de-2f19" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Corredor" hidden="false" id="882d-e69b-e7a5-e9e8" type="selectionEntry" targetId="d93c-da49-e038-4a80"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b7-f4e0-d8d-902b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="16 Puntos" id="3bf3-4d6b-942b-988" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Rana" hidden="false" id="33e0-ded4-71c9-a058" type="selectionEntry" targetId="2859-b06f-6ebb-573"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69d4-f9bf-8c28-6ad6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="20 Puntos" id="2f63-2a2f-d738-e731" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Resonancia psíquica" hidden="false" id="5f86-a044-aadf-a967" type="selectionEntry" targetId="ada2-bc43-71c5-6428"/>
+                <entryLink import="true" name="Piel dura 5" hidden="false" id="4093-f189-8f06-50a2" type="selectionEntry" targetId="423e-a45a-fef-29a3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fa-afb6-9db3-d8ea" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="25 Puntos" id="c5ee-cdff-5376-18aa" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Capacitado" hidden="false" id="1749-9f3-4bf4-1557" type="selectionEntry" targetId="4f7e-d6f9-32ae-9ffc"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b23f-85af-79cb-57fc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="252f-99bf-47ef-3b4d" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="8ec4-3130-d57f-d0e8" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="ee2d-7444-a4f-ec2e" id="85d7-a6c6-e93-3c4f" primary="false" name="Subfacción: Amanecer mutante"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hilo Anal" hidden="false" id="1d1b-cde1-afa3-590f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="c5e5-dcb0-aa98-d4a1" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="2600-86aa-690-3712" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="78b3-25a9-3221-7f6" id="1e3e-3700-f013-129" primary="false" name="Subfacción: Fuerza M"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="9d95-3edf-d9e0-4417" primary="false" name="Banda: Mutardos"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Hilo Anal" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="d6df-9a9a-d56f-a3a6">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mutaciones" id="cc8b-fb37-4b5a-3638" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras envenenadas" hidden="false" id="398b-4d04-4825-3780" type="selectionEntry" targetId="3b97-85f8-81f6-870b">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4058-c1d5-bc98-9efa-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4058-c1d5-bc98-9efa-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Miembros extra" hidden="false" id="2d73-d880-57e4-cd98" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eea7-87e0-e33e-e3a7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-87e0-e33e-e3a7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sentidos aguzados" hidden="false" id="e006-4bfc-4d14-a17b" type="selectionEntry" targetId="44c1-a042-3be4-e331">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9f5-8802-ae51-aca5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9f5-8802-ae51-aca5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Corredor" hidden="false" id="68b2-9e57-3439-35dc" type="selectionEntry" targetId="d93c-da49-e038-4a80">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56e4-c49-48ea-fdcb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e4-c49-48ea-fdcb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="d643-7c99-30db-dc34" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b751-f499-6c2-5bdd-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b751-f499-6c2-5bdd-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Telaraña" hidden="false" id="ae0d-8eae-cb98-65b9">
+              <profiles>
+                <profile name="Telaraña" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="3cca-8b7a-b076-7036">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Hilo Anal es capaz de lanzar una telaraña desde su culo para atrapar a sus enemigos. Puede gastar una Acción en lanzar el la telaraña, para lo que deberá colocarse la plantilla de lágrima. Toda miniatura tocada por la plantilla quedará atrapada por la telaraña si no supera una tirada de Agilidad. Si queda atrapada deberá gastar su siguiente Acción en realizar una tirada de Fuerza. Si la supera quedará libre y podrá actuar a partir de ese momento normalmente, pero si no lo hace deberá seguir gastando sus Acciones en liberarse hasta que lo consiga. Cualquier miniatura que Dispare o Combata contra una miniatura atrapada, tendrá un bonificador de +2 a sus tiradas de Precisión o Combate, pero en el momento en el que le impacten la telaraña habrá quedado destruida y la miniatura atrapada quedará libre.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b5-5f06-fcce-634-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b5-5f06-fcce-634-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="69a4-49f3-a430-4436" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="884e-3e1-ee53-24ff" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="35" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pajaroto Rojo" hidden="false" id="3c53-f6f-5632-ada5">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="8b05-58f7-334-518d" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="6023-fbbd-a161-1ab0" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Subfacción: Fuerza M" hidden="false" id="41b3-37ba-5be5-9085" targetId="78b3-25a9-3221-7f6" primary="false"/>
+        <categoryLink name="Banda: Mutardos" hidden="false" id="7a99-762d-9f4a-d97f" targetId="baef-b3fd-e022-e917" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="20"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="52c6-b803-cd59-af94" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="1c3d-64b2-33cc-3169" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="214b-f530-70f2-17c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="214b-f530-70f2-17c7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="d46a-b01c-deb6-db7d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Espinas" hidden="false" id="13d8-13d3-e97c-dfac" type="selectionEntry" targetId="7e7b-807a-28ad-30bf">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc76-7abb-5826-df55-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc76-7abb-5826-df55-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Danza de apareamiento" hidden="false" id="dc8d-1531-43ff-b400">
+              <profiles>
+                <profile name="Danza de apareamiento" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="881b-49f4-8f5a-c851">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Pajaroto Rojo puede gastar una Acción en realizar su famosa Danza de Apareamiento. Todas las miniaturas enemigas con Línea de visión sobre Pajaroto Rojo, deberán encararse en ese momento hacia él.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8647-7dda-484-ea9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8647-7dda-484-ea9f-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="7562-b2a2-cc6b-74b5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sidekick" hidden="false" id="8481-93e1-9de8-7bcf" type="selectionEntry" targetId="35e7-b5fc-713f-8de6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="999f-f92c-1fd8-5467" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="10" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Pajaroto Rojo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="23df-767e-ad84-7f2b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3 (4)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Colorido" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="a041-5ad-2b08-325e">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">El plumaje de Pajaroto Rojo destaca por encima de todo lo demás. Si un enemigo quiere Asaltar o Disparar a una miniatura de la banda de Pajaroto Rojo, y este pudiera ser también blanco de esos ataques, está obligado a hacerlo contra Pajaroto Rojo.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Caimanomorfo" hidden="false" id="1d8b-7aa9-50f4-e526">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="c811-c927-85b5-68c8" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="dbb5-6b4e-2088-8d17" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="e858-8376-0f8d-341c" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Caimanomorfo" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e3dd-3987-ccb3-22bb">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sangre fría" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2adf-8fd5-0d2c-01fd">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c"> Un cabezón no podrá usar ningún Poder Psíquico sobre un Caimanomorfo</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Desgarro" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8401-055d-2d98-519f">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Las mandíbulas de los Caimanomorfos son poderosas y sus dientes afilados. Un Caimanomorfo que realice un Impacto en cuerpo a cuerpo reducirá permanentemente el Blindaje del rival en 1, aunque falle la tirada de Fuerza contra Dureza</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="81e7-ec85-c387-6da9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="1b9b-00bb-41ce-7ff9" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f7-65bd-8da8-9ffe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f7-65bd-8da8-9ffe-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="37d1-eb9e-a916-db10" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Piel escamosa" hidden="false" id="3657-d6a8-95c5-5e82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162e-40d9-fa34-ec2e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="162e-40d9-fa34-ec2e-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Piel escamosa" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="dc13-ef3e-8281-2160">
+                  <characteristics>
+                    <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">3</characteristic>
+                    <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Espíritu del pantano" hidden="false" id="311d-fc18-1879-a7bd">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="84b7-6828-dd10-0280" id="2396-e9c6-1a36-f1c5" primary="true" name="Miembros de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="e88d-590c-6c6e-8995" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="07a5-d784-35f2-5f57" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Espíritu del pantano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e050-fa3f-61fd-7b4b">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="4996-8e36-e695-a0ac" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="5577-5001-b73b-7f96" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8b-97ca-a748-df42-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8b-97ca-a748-df42-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="4c80-5d22-8060-b956" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Piel dura 3" hidden="false" id="484e-b52f-4141-6bdc" type="selectionEntry" targetId="7eca-4fd0-5454-975f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0fe-ee2f-095d-92fb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0fe-ee2f-095d-92fb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Espinas" hidden="false" id="0756-94c7-7ec2-c089" type="selectionEntry" targetId="7e7b-807a-28ad-30bf">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c64b-a22d-2b4a-98c5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c64b-a22d-2b4a-98c5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Piernas seguras" hidden="false" id="882c-18a0-46f2-b782" type="selectionEntry" targetId="b12e-ad7f-e2ce-61bb">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0a1-bb2f-0841-6afe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a1-bb2f-0841-6afe-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Poderes psíquicos" id="f05d-ca1b-5833-b0b6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ataque verde" hidden="false" id="1956-ed08-377e-49c6">
+              <profiles>
+                <profile name="Ataque verde" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="f7ce-22cc-3161-22a6">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Unas ramas salen del suelo atacando a una miniatura enemiga. A efectos prácticos, se considera un arma a distancia (pero sin poder Apuntar ni hacer Fuego defensivo) con las siguientes estadísticas, dependiendo del número de Acciones que utilice:
+• 1 Acción: Fue 3, Pen 3, 15/30/45 cm.
+• 2 Acciones: Fue 5, Pen 5, 20/40/60 cm. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2940-2776-1695-4461-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2940-2776-1695-4461-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Muro de zarzas" hidden="false" id="5836-df1a-5faa-82dd">
+              <profiles>
+                <profile name="Muro de zarzas" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="4037-0817-c1b8-448b">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Unas enormes plantas salen del suelo cubriendo parcialmente la visión. Podrá colocar un marcador de 2 cm de largo x 10 cm de ancho en cualquier zona despejada del terreno de juego a ras de suelo. Se considera una Cobertura de tamaño 1. Si se utiliza 1 Acción se considerará que tiene un grado de protección ligero y podrá colocarla a un máximo de 25 cm. Si se utilizan 2 Acciones se considerará que tiene un grado de protección medio y podrá colocarla a un máximo de 50 cm.
+Solo puede haber en la mesa un muro de zarzas en la partida por cada Espíritu del pantano. Si un Espíritu del pantano invoca uno habiendo llegado a ese máxim, deberá retirar otro a su elección.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4192-46a0-b567-e0e7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4192-46a0-b567-e0e7-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Invocar al pantano" hidden="false" id="d858-ba1c-1ef3-e576">
+              <profiles>
+                <profile name="Invocar al pantano" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="30e9-451b-cf9d-570c">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">45 cm</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Una zona pantanosa se crea de la nada saliendo del mismísimo suelo. Gastando 1 Acción podrá colocar un marcador de un diámetro de 10 cm en cualquier zona despejada del terreno de juego a ras de suelo. Este tendrá las reglas de Terreno contaminado y Terreno chungo. Solo puede Invocarse un pantano en la partida por cada Espíritu del pantano.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79a7-a260-732c-4257-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a7-a260-732c-4257-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mamá Guedé" hidden="false" id="3152-42be-fd76-a6d4">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d1a7-5f24-003f-6400" id="6696-ef34-a21a-ce7e" primary="true" name="Personalidades de la banda"/>
+        <categoryLink targetId="6659-5ef7-facd-fab1" id="cda9-389d-6a08-160c" primary="false" name="Mercenarios y personalidades de la banda"/>
+        <categoryLink targetId="baef-b3fd-e022-e917" id="4262-754d-0dc7-b961" primary="false" name="Banda: Mutardos"/>
+        <categoryLink targetId="a62b-96dc-fdc0-b760" id="13e9-ffe3-f5ec-b279" primary="false" name="Subfacción: Macumba"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mamá Guedé" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="710a-262b-3abc-d308">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Polvo vudú" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="0538-8363-d1c8-7104">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Aunque podáis ser malpensados, nos referimos a unos polvos místicos que utiliza Mamá Guedé. Esta puede gastar una Acción en lanzar los polvos sobre un enemigo a una distancia máxima de 10 cm. En su siguiente Fase de Activación, este no podrá Moverse y además sufrirá un penalizador de -3 a cualquier tirada de Combate o Precisión que realice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Poderes psíquicos" id="5785-0fc9-df0d-f049" hidden="false">
+          <comment>Macumba</comment>
+          <entryLinks>
+            <entryLink import="true" name="Barrera psíquica" hidden="false" id="7da2-e1c2-0ccf-e71b" type="selectionEntry" targetId="f09c-7802-581b-8c7a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bd3-a2c3-1bea-e3b3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titiritero" hidden="false" id="46bd-6973-2fd9-307e" type="selectionEntry" targetId="7372-283d-9bea-df09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e706-e30c-ef5b-2610" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empochizar" hidden="false" id="2d4e-609d-9168-e64a" type="selectionEntry" targetId="0106-f14b-d329-2ebf"/>
+            <entryLink import="true" name="Muñeco vudú" hidden="false" id="f523-a735-ac9e-c6c0" type="selectionEntry" targetId="7ca9-1762-ad71-406d"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sacrificio" hidden="false" id="3fda-8334-9935-3f43">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2be8-f403-aa13-fd28" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f65-5c6f-1c68-f6fc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sacrificio" typeId="2fda-a429-1c7b-b02c" typeName="Poder psíquico" hidden="false" id="35dc-5a4e-5549-8d3b">
+                  <characteristics>
+                    <characteristic name="Distancia" typeId="f4dd-af6f-cf42-c54">-</characteristic>
+                    <characteristic name="Regla" typeId="742a-9af9-288f-176c">Mamá Guedé puede gastar una Acción en sacrificar un Mutante de su banda con el que esté en contacto. Este resultará inmediatamente Abatido, pero permitirá mejorar los Atributos (excepto Acciones) de Mamá Guedé. Podrá subir el valor de un Atributo en 1 por cada fracción de 10 puntos del valor de la miniatura sacrificada, hasta un máximo de 3 mejoras por Atributo.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="4e8f-7112-9ce2-ff13" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="434e-2e31-3610-cd37">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64e6-8091-cc4e-6859-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64e6-8091-cc4e-6859-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Maza" id="b3f8-6bc5-84f4-4be3" hidden="false" type="profile" targetId="5f7a-14f0-0f0f-5999">
+                  <modifiers>
+                    <modifier type="set" value="Báculo de los muertos" field="name"/>
+                    <modifier type="set" value="Si consigue Abatir a un enemigo atrapa su esencia vital permitiendo a Mamá Guedé lanzar uno de sus poderes de manera inmediata, sin gastar ninguna Acción." field="c498-c631-f4c5-160a"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="9d60-2486-84f4-2d37" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="c894-e8d5-001f-d97b" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7fa-6acd-91d4-deee-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fa-6acd-91d4-deee-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="86dd-1f9f-5916-ec61" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

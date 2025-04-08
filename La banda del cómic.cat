@@ -37,62 +37,70 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Chorrazo de tinta,  Extremidad prensil, Miembros extra, Asco de vida</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Asco de vida" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7905-a46f-dc86-39ba">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">La vida de Paul ha sido una puta mierda, así de sencillo. Está tan acostumbrado a perder que un empate ya es una victoria. Paul ganará cualquier tirada enfrentada que acabe en empate y que habitualmente ganaría la miniatura en su Fase de activación.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Extremidad prensil" hidden="false" id="57e6-7095-1c00-8384" type="selectionEntry" targetId="cbda-380a-4e58-ee65">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Miembros extra" hidden="false" id="588d-e191-f096-ff15" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Filo Pequeño" hidden="false" id="32ff-e147-ed3a-2aa7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Chorrazo de tinta" hidden="false" id="cb54-dcc2-51b1-19fd">
-          <categoryLinks>
-            <categoryLink targetId="6337-d3da-3855-7b50" id="f452-78d5-f03f-520b" primary="false" name="Mutación"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Chorrazo de tinta" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="8d1d-79c3-a9b-bdb3">
-              <characteristics>
-                <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Paul es capaz de lanzar un potente chorro de tinta a través de su ojete con el objetivo de incapacitar a sus enemigos. Puede gastar una Acción en lanzar el chorro, para lo que deberá colocarse la plantilla de lágrima. Toda miniatura tocada por la plantilla sufrirá un penalizador de -2 a las tiradas de Combate, Precisión y Agilidad. Las miniaturas podrán gastar Acciones en limpiarse la tinta, quitando un penalizador de -1 por cada Acción que gasten.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <rules>
-        <rule name="New Rule" id="cf26-9261-4a4f-514b" hidden="false">
-          <description>La vida de Paul ha sido una puta mierda, así de sencillo. Está tan acostumbrado a perder que un empate ya es una victoria. Paul ganará cualquier tirada enfrentada que acabe en empate y que habitualmente ganaría la miniatura en su Fase de activación.</description>
-        </rule>
-      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="1a65-89ec-58c-8a9e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="32ff-e147-ed3a-2aa7" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4777-864e-a1f7-bf93-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mutaciones" id="4e3d-c40a-4cb1-a589" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Miembros extra" hidden="false" id="588d-e191-f096-ff15" type="selectionEntry" targetId="a4ad-9205-fdd1-8994">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5c-98c7-b1ca-8996-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Extremidad prensil" hidden="false" id="57e6-7095-1c00-8384" type="selectionEntry" targetId="cbda-380a-4e58-ee65">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37c1-2816-36bf-913e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chorrazo de tinta" hidden="false" id="cb54-dcc2-51b1-19fd">
+              <categoryLinks>
+                <categoryLink name="Mutación" hidden="false" id="f452-78d5-f03f-520b" targetId="6337-d3da-3855-7b50" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Chorrazo de tinta" typeId="6863-db9a-9cab-eabc" typeName="Mutación" hidden="false" id="8d1d-79c3-a9b-bdb3">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="fb87-d2c2-bb7e-f5ce">Paul es capaz de lanzar un potente chorro de tinta a través de su ojete con el objetivo de incapacitar a sus enemigos. Puede gastar una Acción en lanzar el chorro, para lo que deberá colocarse la plantilla de lágrima. Toda miniatura tocada por la plantilla sufrirá un penalizador de -2 a las tiradas de Combate, Precisión y Agilidad. Las miniaturas podrán gastar Acciones en limpiarse la tinta, quitando un penalizador de -1 por cada Acción que gasten.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a813-e7c1-ee6a-3443-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dan novato" hidden="false" id="5263-d238-6298-bb48">
       <costs>
@@ -112,33 +120,15 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Demasiado honorable, Compañerismo</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Chaleco antibalas" hidden="false" id="a3be-203f-a282-233e" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Escopeta" hidden="false" id="3448-d5a0-832b-c0aa" type="selectionEntry" targetId="265c-2979-056d-1a06">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="824b-1e6d-ae12-ca52" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b3c-124d-3993-1862" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Compañerismo" id="3605-7768-c8f3-1025" hidden="false" type="rule" targetId="e882-2fd4-4805-ef66"/>
+        <infoLink name="Compañerismo" id="23d3-f805-68f4-b1df" hidden="false" type="profile" targetId="58a1-6c7a-fac6-1728"/>
       </infoLinks>
       <rules>
         <rule name="Demasiado honorable" id="8133-e0a4-b605-ae7a" hidden="false" publicationId="6699-072c-136a-7d30" page="126">
@@ -152,6 +142,32 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="8a96-8b9f-8e27-e424" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="824b-1e6d-ae12-ca52" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+            <entryLink import="true" name="Escopeta" hidden="false" id="3448-d5a0-832b-c0aa" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-4f93-a62-f2be-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="ac4b-c689-2ba6-7f49" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chaleco antibalas" hidden="false" id="a3be-203f-a282-233e" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce3e-6d24-5f79-9cd4-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nicole" hidden="false" id="8b24-4b85-a366-f237" publicationId="6699-072c-136a-7d30" page="127">
       <categoryLinks>
@@ -171,42 +187,52 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Voluntariosa, Fuego malo</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fuego malo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="8c05-c945-3586-78b4" page="127" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Nicole tiene malas experiencias con el fuego y le afecta especialmente. Nunca atravesará voluntariamente un marcador de Fuego.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Voluntariosa" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e97-45af-dfda-c3b5" page="127" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Nicole ha vivido muchas desgracias y ha sobrevivido a todas ellas con una voluntad inquebrantable. Puede decidir gastar una Acción y obtener un bonificador de +1 a la Dureza. Podrá hacer esto durante más Acciones hasta conseguir un máximo de +3. Tras la primera ocasión en que tenga que realizar una Tirada de su Dureza contra la Fuerza de algún ataque, el bonificador total que tuviera en ese momento se perderá. Después de esto, si lo desea, puede volver a repetir el proceso.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Escopeta" hidden="false" id="d0cc-f77c-178-a383" type="selectionEntry" targetId="265c-2979-056d-1a06">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Ropas resistentes" hidden="false" id="be6f-3932-efc0-614c" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Balas" hidden="false" id="6a14-a80f-f006-76a6" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
-      </entryLinks>
-      <rules>
-        <rule name="Voluntariosa" id="a49f-cf38-e9a5-c319" hidden="false" publicationId="6699-072c-136a-7d30" page="127">
-          <description>Nicole ha vivido muchas desgracias y ha sobrevivido a todas ellas con una voluntad inquebrantable. Puede decidir gastar una Acción y obtener un bonificador de +1 a la Dureza. Podrá hacer esto durante más Acciones hasta conseguir un máximo de +3. Tras la primera ocasión en que tenga que realizar una Tirada de su Dureza contra la Fuerza de algún ataque, el bonificador total que tuviera en ese momento se perderá. Después de esto, si lo desea, puede volver a repetir el proceso.</description>
-        </rule>
-        <rule name="Fuego malo" id="788a-555b-5db7-b159" hidden="false" publicationId="6699-072c-136a-7d30" page="127">
-          <description>Nicole tiene malas experiencias con el fuego y le afecta especialmente. Nunca atravesará voluntariamente un marcador de Fuego.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aea7-dd23-e34e-8861" includeChildSelections="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="e358-d36-7fd-fcd9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Balas" hidden="false" id="6a14-a80f-f006-76a6" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+            <entryLink import="true" name="Escopeta" hidden="false" id="d0cc-f77c-178-a383" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e8e-ad36-f576-1607-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="3543-8b28-794e-ac6c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="be6f-3932-efc0-614c" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bd2-4be8-eb81-6e03-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Markus" hidden="false" id="9ed7-ab9f-dad8-2c6b" publicationId="6699-072c-136a-7d30" page="128">
       <costs>
@@ -226,41 +252,52 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (5)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal encarado, Trucos sucios</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mal encarado" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="117b-2f07-ad1f-48ee" page="128" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Markus no destaca por su buen carácter y es capaz de insultarte de mil maneras con o sin palabras. Puede decidir gastar una Acción en provocar a una miniatura rival que esté a un máximo de 30 cm de distancia y con Línea de visión sobre él. Esa miniatura estará tan fuera de sí que contará como si tuviese la Regla especial Mónguer hasta final de ese Turno de juego.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trucos sucios" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2134-8697-33b2-8877" page="128" publicationId="6699-072c-136a-7d30">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Markus no desaprovecha cualquier medio para ganar. Cuando dispare a una miniatura sin Línea de visión hacia el propio Markus obtendrá un bonificador de +1 adicional a la Precisión en ese disparo y cuando Asalte a una miniatura sin línea de visión hacia él obtendrá un bonificador de +1 adicional al Combate en ese Asalto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Mal encarado" id="68a1-cd57-3ffe-6a9c" hidden="false" publicationId="6699-072c-136a-7d30" page="128">
-          <description>Markus no destaca por su buen carácter y es capaz de insultarte de mil maneras con o sin palabras. Puede decidir gastar una Acción en provocar a una miniatura rival que esté a un máximo de 30 cm de distancia y con Línea de visión sobre él. Esa miniatura estará tan fuera de sí que contará como si tuviese la Regla especial Mónguer hasta final de ese Turno de juego.</description>
-        </rule>
-        <rule name="Trucos sucios" id="73ca-b892-d470-d604" hidden="false" publicationId="6699-072c-136a-7d30" page="128">
-          <description>Markus no desaprovecha cualquier medio para ganar. Cuando dispare a una miniatura sin Línea de visión hacia el propio Markus obtendrá un bonificador de +1 adicional a la Precisión en ese disparo y cuando Asalte a una miniatura sin línea de visión hacia él obtendrá un bonificador de +1 adicional al Combate en ese Asalto.</description>
-        </rule>
-      </rules>
-      <entryLinks>
-        <entryLink import="true" name="Escopeta" hidden="false" id="131a-db6e-cff5-d57b" type="selectionEntry" targetId="265c-2979-056d-1a06">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="9935-f2d0-b194-cb49" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcd4-c4-f126-357d" includeChildSelections="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="b776-d223-9a7b-d08b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Escopeta" hidden="false" id="131a-db6e-cff5-d57b" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943e-a45c-e532-2d73-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="91aa-e4cb-4715-a689" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="e235-5c27-f739-9d8a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="9935-f2d0-b194-cb49" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56b-38af-7d6d-ca36-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vale" hidden="false" id="555-b3fe-e4b8-95f4" publicationId="6699-072c-136a-7d30" page="129">
       <costs>
@@ -283,61 +320,76 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Le tengo, Ocultación, Camuflaje</characteristic>
           </characteristics>
         </profile>
+        <profile name="Le tengo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d720-dc96-5392-62c7">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Una vez que Vale fija el ojo sobre un objetivo, no lo pierde. Vale puede decidir gastar una Acción de Apuntar a un enemigo concreto, y no perderá el bonificador a la Precisión hasta que no lo Abata, independientemente del Turno de juego que sea. No podrá volver a Apuntar o usar esta regla con otra miniatura hasta que su objetivo seleccionado no haya sido Abatido (por cualquier circunstancia). Al igual que con la regla de Apuntar habitual, no podrá utilizarse ese bonificador durante el Fuego defensivo.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ocultación" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1631-24e7-c74f-4d2a">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Vale es una experta en disparar sin ser detectada. Obtiene la Regla especial Camuflaje y un bonificador de +1 adicional al Blindaje de una Cobertura tras la que esté (si está tras más de una lo aplicará a la de mayor grado).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Le tengo" id="c3b-b387-39e-fe1c" hidden="false">
-          <description>Una vez que Vale fija el ojo sobre un objetivo, no lo pierde. Vale puede decidir gastar una Acción de Apuntar a un enemigo concreto, y no perderá el bonificador a la Precisión hasta que no lo Abata, independientemente del Turno de juego que sea. No podrá volver a Apuntar o usar esta regla con otra miniatura hasta que su objetivo seleccionado no haya sido Abatido (por cualquier circunstancia). Al igual que con la regla de Apuntar habitual, no podrá utilizarse ese bonificador durante el Fuego defensivo.</description>
-        </rule>
-        <rule name="Ocultación" id="8c0c-5105-9f95-d0f9" hidden="false" publicationId="6699-072c-136a-7d30" page="129">
-          <description>Vale es una experta en disparar sin ser detectada. Obtiene la Regla especial Camuflaje y un bonificador de +1 adicional al Blindaje de una Cobertura tras la que esté (si está tras más de una lo aplicará a la de mayor grado).</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Camuflaje" id="2a83-4c9d-a207-b76f" hidden="false" type="rule" targetId="d044-f121-fa5a-1fca"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Rifle" hidden="false" id="d376-cfcf-97cc-325e" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a322-1d48-df6d-79bb" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="8604-f3de-6c9e-d011" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Mira telescópica" hidden="false" id="af90-36fa-bb1c-c095" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+            <entryLink import="true" name="Rifle" hidden="false" id="d376-cfcf-97cc-325e" type="selectionEntry" targetId="dad1-9f6c-5b63-0763">
+              <entryLinks>
+                <entryLink import="true" name="Mira telescópica" hidden="false" id="af90-36fa-bb1c-c095" type="selectionEntry" targetId="e215-f5e2-840d-637d">
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <modifiers>
                 <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54f2-3c27-1ca1-cf1a-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="d141-878d-960e-bbdd" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="a56e-7394-2308-d72" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ropas resistentes" hidden="false" id="201a-e836-a85f-b73e" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7626-5211-cb76-daa-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Ropas resistentes" hidden="false" id="201a-e836-a85f-b73e" type="selectionEntry" targetId="1a91-4787-fe3b-51fd">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f71-1071-1d93-3108-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b331-619-b2b4-f83d" type="selectionEntry" targetId="19f2-5137-907f-980b">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a322-1d48-df6d-79bb" includeChildSelections="true"/>
-      </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="59d2-f55f-e1a4-c5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="b331-619-b2b4-f83d" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-8c5-877-e6f4-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dan" hidden="false" id="1bab-6dea-7c0d-9748" publicationId="6699-072c-136a-7d30" page="130">
       <costs>
@@ -357,30 +409,18 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Reteraso (2), Ensalada de tiros, Compañerismo</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Reteraso (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ensalada de tiros" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="7a43-bfc9-3332-7e24">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Dan puede disparar usando una sola Acción a dos miniaturas distintas (una con cada pistola). Sin embargo, estos disparos tendrán un -1 a Precisión y al hacer esto no se beneficiará de Apuntar ni podrá usarlo en Fuego defensivo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Pistola" hidden="false" id="36bc-6049-f0bc-8be" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-min" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-            <modifier type="set" value="2" field="c1cd-b6c1-602c-8008"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <infoLinks>
-        <infoLink name="Compañerismo" id="aa2a-b23b-c95c-2192" hidden="false" type="rule" targetId="e882-2fd4-4805-ef66"/>
+        <infoLink name="Compañerismo" id="f3f0-2f71-84e7-d3f8" hidden="false" type="profile" targetId="58a1-6c7a-fac6-1728"/>
       </infoLinks>
-      <rules>
-        <rule name="Ensalada de tiros" id="3d27-4bcd-37ed-8d24" hidden="false">
-          <description>Dan puede disparar usando una sola Acción a dos miniaturas distintas (una con cada pistola). Sin embargo, estos disparos tendrán un -1 a Precisión y al hacer esto no se beneficiará de Apuntar ni podrá usarlo en Fuego defensivo.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2980-463f-6b3a-2568" includeChildSelections="true"/>
       </constraints>
@@ -391,6 +431,33 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="208a-5ba8-4f3-d9e0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pistola" hidden="false" id="36bc-6049-f0bc-8be" type="selectionEntry" targetId="34b3-8c91-7e61-40ce">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eb9f-d2be-63e1-3b55-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                <modifier type="set" value="2" field="c1cd-b6c1-602c-8008"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="ac1a-d9dd-fe68-9d53" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="a848-7187-cad2-24fa" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chaleco antibalas" hidden="false" id="7d22-a909-6421-9f77" type="selectionEntry" targetId="c7ab-bf22-707b-5b89">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e6-a262-58d7-c255" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bfc-79db-345-78a4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rita" hidden="false" id="645a-56d7-2389-9a8" publicationId="6699-072c-136a-7d30" page="131">
       <costs>
@@ -400,43 +467,9 @@
         <categoryLink targetId="84b7-6828-dd10-0280" id="e6fe-b352-9f7c-2bf9" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="662c-1d4a-4875-99a6" id="975f-1c68-958b-56e9" primary="false" name="Banda: La banda del Cómic"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Ballesta" hidden="false" id="13d1-87c9-9829-e3ca" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Filo Medio" hidden="false" id="82b6-80fb-8a4a-6538" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Cuero endurecido" hidden="false" id="6a94-73f6-8ac1-ef9f" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
-          <modifiers>
-            <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <infoLinks>
-        <infoLink name="Retraso (2)" id="b38e-14fc-b315-ae4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
+        <infoLink name="Retraso" id="b38e-14fc-b315-ae4" hidden="false" type="rule" targetId="1d8a-9fa1-9a2d-eeb7"/>
       </infoLinks>
-      <rules>
-        <rule name="Recarga en movimiento" id="f665-3879-d323-1f77" hidden="false" publicationId="6699-072c-136a-7d30" page="131">
-          <description>Rita domina el arte de moverse y recargar. Cuando realice una Acción de Movimiento puede realizar gratuitamente una Acción de recargar sobre su ballesta.</description>
-        </rule>
-        <rule name="Molonidad" id="748a-d5c0-3e67-71e5" hidden="false" publicationId="6699-072c-136a-7d30" page="131">
-          <description>Rita desprende molonidad por todos sus poros. De esas cosas que se tienen o no y que dejan a la gente boquiabierta mirando para ella. Si un enemigo se encuentra a 30 cm de Rita cuando ésta haya Abatido a alguien en cuerpo a cuerpo, quedará tan afectado que tendrá un penalizador de -1 a la Precisión y Combate durante su siguiente Fase de activación.</description>
-        </rule>
-      </rules>
       <profiles>
         <profile name="Rita" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="ce1b-1e21-8e3d-2796">
           <characteristics>
@@ -450,20 +483,66 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Retraso (2), Molonidad, Recarga en movimiento</characteristic>
           </characteristics>
         </profile>
+        <profile name="Recarga en movimiento" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="24e-8104-d021-5ab4">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Rita domina el arte de moverse y recargar. Cuando realice una Acción de Movimiento puede realizar gratuitamente una Acción de recargar sobre su ballesta.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Molonidad" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="daaa-58a0-28d2-4147">
+          <characteristics>
+            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Rita desprende molonidad por todos sus poros. De esas cosas que se tienen o no y que dejan a la gente boquiabierta mirando para ella. Si un enemigo se encuentra a 30 cm de Rita cuando ésta haya Abatido a alguien en cuerpo a cuerpo, quedará tan afectado que tendrá un penalizador de -1 a la Precisión y Combate durante su siguiente Fase de activación.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="972-f0f5-ca27-a78c" includeChildSelections="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blindaje" id="8de5-7f-7c23-798b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cuero endurecido" hidden="false" id="6a94-73f6-8ac1-ef9f" type="selectionEntry" targetId="ff92-8214-bc9a-f318">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b04-2715-23aa-2849-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="4afc-57fa-b8f3-3d91" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ballesta" hidden="false" id="13d1-87c9-9829-e3ca" type="selectionEntry" targetId="485b-43b5-f9fe-c240">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c908-ba66-2c4c-c16f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="82b6-80fb-8a4a-6538" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7481-3a88-4740-5036-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
-  <sharedRules>
-    <rule name="Compañerismo" id="e882-2fd4-4805-ef66" hidden="false" publicationId="6699-072c-136a-7d30" page="130">
-      <description>Dan es muy amigo de sus amigos y como algún compañero sufra daño sacará fuerzas de flaqueza. Tendrá los siguientes bonificadores acumulativos por cada miniatura de la propia banda que haya sido Abatida:
+  <sharedProfiles>
+    <profile name="Compañerismo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="58a1-6c7a-fac6-1728">
+      <characteristics>
+        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Dan es muy amigo de sus amigos y como algún compañero sufra daño sacará fuerzas de flaqueza. Tendrá los siguientes bonificadores acumulativos por cada miniatura de la propia banda que haya sido Abatida:
 
-• 1   -&gt; +1 Precisión
-• 2   -&gt; +1 Combate
-• 3   -&gt; +1 Dureza
-• 4+ -&gt; +1 Acciones</description>
-    </rule>
-  </sharedRules>
+• 1 -&gt; +1 Precisión
+• 2 -&gt; +1 Combate
+• 3 -&gt; +1 Dureza
+• 4+ -&gt; +1 Acciones</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
