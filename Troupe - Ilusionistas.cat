@@ -22,14 +22,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Jefe de pista" hidden="false" id="6de5-252c-99b6-92e9" type="selectionEntry" targetId="3092-b1ed-b961-7988">
-      <rules>
-        <rule name="Presentar a los artistas" id="0c11-e3a7-1153-0304" hidden="false">
-          <description>El Jefe de Pista elige a un Artista, que doblará los Puntos de Trucos que genere este Turno
-de juego con la Regla especial Observen atentamente.</description>
-        </rule>
-      </rules>
-    </entryLink>
+    <entryLink import="true" name="Jefe de pista" hidden="false" id="6de5-252c-99b6-92e9" type="selectionEntry" targetId="3092-b1ed-b961-7988"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Artista" hidden="false" id="b546-4954-19aa-fb17">
@@ -46,15 +39,17 @@ de juego con la Regla especial Observen atentamente.</description>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">La Senda de la ilusión, Observen atentamente</characteristic>
           </characteristics>
         </profile>
+        <profile name="La Senda de la Ilusión" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="dfa2-01f5-8c6f-e12f">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un Artista puede gastar Acciones en usar su labia y capacidad de asombrar para generar Puntos de Truco para su banda. Generará 1 Punto de truco por Acción utilizada.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Observen atentamente" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4ad6-f798-81bc-f316">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un Artista conoce todos los Trucos mostrados en la página siguiente. Cada artista genera al comenzar la partida 3 Puntos de Truco para su banda. Puede gastar 1 Acción en utilizar uno de sus Trucos gastando los Puntos de Truco correspondientes.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="La Senda de la Ilusión" id="4a24-5abb-6aee-8d6b" hidden="false">
-          <description>Un Artista conoce todos los Trucos mostrados en la página siguiente. Cada artista genera al comenzar la partida 3 Puntos de Truco para su banda. Puede gastar 1 Acción en utilizar uno de sus Trucos gastando los Puntos de Truco correspondientes. </description>
-        </rule>
-        <rule name="Observen atentamente" id="a844-0e48-fe59-ce1a" hidden="false">
-          <description>Un Artista puede gastar Acciones en usar su labia y capacidad de asombrar para generar Puntos de Truco para su banda. Generará 1 Punto de truco por Acción utilizada. </description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="40"/>
       </costs>
@@ -72,7 +67,6 @@ de juego con la Regla especial Observen atentamente.</description>
             <entryLink import="true" name="Maza Ligera" hidden="false" id="6438-c285-b619-36b8" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Trucos" id="18a0-79a4-ed63-a611" hidden="false"/>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Balas" hidden="false" id="d50f-029e-378e-7558" collective="false" targetId="1727-ba78-e35c-e399" type="selectionEntryGroup"/>
@@ -88,6 +82,19 @@ de juego con la Regla especial Observen atentamente.</description>
         <categoryLink targetId="84b7-6828-dd10-0280" id="d0c4-23d2-db73-14b5" primary="true" name="Miembros de la banda"/>
         <categoryLink targetId="297e-53dd-3c0d-5c82" id="bf2f-c84b-f359-4264" primary="false" name="Banda: Troupe"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="¿Parezco atrapado?" id="8a0b-7f2c-8834-872a" hidden="false" type="profile" targetId="ad60-f7c1-746a-240f"/>
+        <infoLink name="¿Què tienes en la oreja?" id="7594-9ee8-2755-c95b" hidden="false" type="profile" targetId="ff38-0be9-a051-c948"/>
+        <infoLink name="Abracadabra" id="e2db-5244-6357-3481" hidden="false" type="profile" targetId="d03c-bbe3-2578-a157"/>
+        <infoLink name="Ahora me ves" id="4edf-9ed4-ffc4-6c19" hidden="false" type="profile" targetId="e6de-4143-0942-c579"/>
+        <infoLink name="Meto mi mano en la chistera" id="68a6-f5fd-cc4d-ebc6" hidden="false" type="profile" targetId="e448-d38a-1280-b3ac"/>
+        <infoLink name="Nada por aquí" id="238d-b955-01a1-7976" hidden="false" type="profile" targetId="288a-8efd-0433-fa0d"/>
+        <infoLink name="No parpadees" id="bdeb-116a-b5eb-8225" hidden="false" type="profile" targetId="53b5-236a-df07-3021"/>
+        <infoLink name="Quiero un voluntario" id="5261-d494-db83-3ceb" hidden="false" type="profile" targetId="956b-356c-de26-0891"/>
+        <infoLink name="Sigue el reloj con la mirada" id="03f8-ecfc-597b-f031" hidden="false" type="profile" targetId="320e-8909-3e70-7c82"/>
+        <infoLink name="Todo es una ilusión" id="3457-9eb9-00c7-0b25" hidden="false" type="profile" targetId="50bb-6069-609c-9a8b"/>
+        <infoLink name="Y cortamos por la mitad" id="7c82-2e58-18ee-8cf9" hidden="false" type="profile" targetId="4166-3e54-8267-b50e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Subfacción: Ilusionistas" hidden="false" id="4e9c-97e0-595d-ff65">
       <categoryLinks>
@@ -107,162 +114,74 @@ de juego con la Regla especial Observen atentamente.</description>
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Nada por aquí" hidden="false" id="3054-083a-af0d-8808">
-      <profiles>
-        <profile name="Nada por aquí" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="57a1-5488-2db7-28ad">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista hace aparecer una bala de la nada, que se añadirá a su equipo.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be05-7b2d-43af-5816" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c543-5394-9d09-dcb4" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ahora me ves" hidden="false" id="c638-fd14-f429-8abc">
-      <profiles>
-        <profile name="Ahora me ves" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="8bd9-8240-759a-dbd8">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista intercambia su posición con una miniatura aliada que no esté trabada en Combate en un radio de 30 cm.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bce8-f3c1-f0d2-60c1" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd65-d18d-058d-1022" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Meto mi mano en la chistera" hidden="false" id="4c6b-d747-377f-13bf">
-      <profiles>
-        <profile name="Meto mi mano en la chistera" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="fab8-73c4-e226-ac32">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista hace aparecer de la nada un martinejo rabioso. Este pasará a formar parte de la banda con una peana de 25 mm, la Regla especial Bestia, armado con Garras y dientes y los siguientes Atributos: Acciones 2, Combate 2, Fuerza 2 y Dureza 2.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d7f-9053-f655-3eea" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e92c-de98-64ca-d1f8" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="No parpadees" hidden="false" id="e0b6-9bb8-9805-b189">
-      <profiles>
-        <profile name="No parpadees" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="1c6a-8307-fbc5-1da2">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura enemiga a un máximo de 30 cm en Línea de visión y que no esté en Combate. La miniatura no podrá realizar ninguna Acción en su próxima Fase de activación. El Truco se anulará si la miniatura es atacada de cualquier forma.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d21f-e747-2647-07fd" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788d-6900-61a7-3a52" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="¿Parezco atrapado?" hidden="false" id="a584-da53-eb87-46e9">
-      <profiles>
-        <profile name="¿Parezco atrapado?" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="32c4-3727-0cf7-6006">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una miniatura enemiga. El Ilusionista se destrabará automáticamente como si hubiera ganado la tirada enfrentada de Separarse del Combate.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">1 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cda-1d98-5434-dfdd" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3036-d829-4d2d-caf2" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Quiero un voluntario" hidden="false" id="8c89-f35f-5a10-5cd4">
-      <profiles>
-        <profile name="Quiero un voluntario" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="9025-41f2-5f23-177d">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura aliada en un radio de 20 cm. La miniatura tendrá un bonificador de +2 al Combate hasta el final del Turno de juego.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c5e-89e8-2006-3361" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d93f-11e2-a2fa-de0f" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Todo es una ilusión" hidden="false" id="0aa9-a6f8-0ff5-830f">
-      <profiles>
-        <profile name="Todo es una ilusión" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="dc2a-2a16-6c74-611e">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista no podrá ser objetivo de ningún ataque durante este Turno de juego.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5179-e00f-9938-fe52" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02f-7fbc-65d7-20b1" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="¿Què tienes en la oreja?" hidden="false" id="29ef-5883-c640-1fdc">
-      <profiles>
-        <profile name="¿Què tienes en la oreja?" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="6730-abe0-9ce8-20df">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una miniatura enemiga. El Ilusionista le quitará un arma a su oponente y podrá equiparse con ella.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">1 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf03-6673-c616-4fac" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f767-35e4-ea49-ac65" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sigue el reloj con la mirada" hidden="false" id="428f-88b9-0c7f-1972">
-      <profiles>
-        <profile name="Sigue el reloj con la mirada" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="cb1b-e7ff-bc62-7053">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura enemiga a un máximo de 20 cm en Línea de visión. Durante la siguiente Fase de activación de esa miniatura pasará a estar controlada por el jugador del Artista.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">4 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ced-76f9-ef21-fecf" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="facc-f2e8-9384-eed2" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Saca una carta" hidden="false" id="7d80-a172-78c8-1e6f">
-      <profiles>
-        <profile name="Abracadabra" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="c6a5-7318-79d7-06cf">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una
+  <sharedProfiles>
+    <profile name="¿Parezco atrapado?" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="ad60-f7c1-746a-240f">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una miniatura enemiga. El Ilusionista se destrabará automáticamente como si hubiera ganado la tirada enfrentada de Separarse del Combate.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">1 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="¿Què tienes en la oreja?" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="ff38-0be9-a051-c948">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una miniatura enemiga. El Ilusionista le quitará un arma a su oponente y podrá equiparse con ella.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">1 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ahora me ves" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="e6de-4143-0942-c579">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista intercambia su posición con una miniatura aliada que no esté trabada en Combate en un radio de 30 cm.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Meto mi mano en la chistera" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="e448-d38a-1280-b3ac">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista hace aparecer de la nada un martinejo rabioso. Este pasará a formar parte de la banda con una peana de 25 mm, la Regla especial Bestia, armado con Garras y dientes y los siguientes Atributos: Acciones 2, Combate 2, Fuerza 2 y Dureza 2.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Nada por aquí" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="288a-8efd-0433-fa0d">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista hace aparecer una bala de la nada, que se añadirá a su equipo.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="No parpadees" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="53b5-236a-df07-3021">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura enemiga a un máximo de 30 cm en Línea de visión y que no esté en Combate. La miniatura no podrá realizar ninguna Acción en su próxima Fase de activación. El Truco se anulará si la miniatura es atacada de cualquier forma.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">3 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Quiero un voluntario" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="956b-356c-de26-0891">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura aliada en un radio de 20 cm. La miniatura tendrá un bonificador de +2 al Combate hasta el final del Turno de juego.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Abracadabra" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="d03c-bbe3-2578-a157">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">Debe utilizarse estando trabada en Combate con una
 miniatura enemiga. La miniatura enemiga pasará a tener un
 penalizador de -2 al Combate mientras estén trabados.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c84-f5c2-f11d-a478" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab7f-a4c2-cd96-459f" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Y cortamos por la mitad" hidden="false" id="bd6d-cb51-137e-62d9">
-      <profiles>
-        <profile name="Y cortamos por la mitad" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="a4ad-28aa-2228-6092">
-          <characteristics>
-            <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura aliada Abatida en un radio de 20 cm. La miniatura volverá a estar en pie como si no hubiese pasado nada.</characteristic>
-            <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">5 Puntos de truco</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dae-8eab-9b5b-b019" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3faa-1321-90c7-7428" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-  </sharedSelectionEntries>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sigue el reloj con la mirada" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="320e-8909-3e70-7c82">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura enemiga a un máximo de 20 cm en Línea de visión. Durante la siguiente Fase de activación de esa miniatura pasará a estar controlada por el jugador del Artista.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">4 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Todo es una ilusión" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="50bb-6069-609c-9a8b">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista no podrá ser objetivo de ningún ataque durante este Turno de juego.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">2 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Y cortamos por la mitad" typeId="0761-c508-e4fc-4f65" typeName="Truco" hidden="false" id="4166-3e54-8267-b50e">
+      <characteristics>
+        <characteristic name="Regla" typeId="12b2-231b-2a58-14fa">El Artista debe elegir una miniatura aliada Abatida en un radio de 20 cm. La miniatura volverá a estar en pie como si no hubiese pasado nada.</characteristic>
+        <characteristic name="Coste" typeId="af91-18d6-5a58-a6dd">5 Puntos de truco</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

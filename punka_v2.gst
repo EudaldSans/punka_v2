@@ -37,7 +37,11 @@
         <characteristicType id="c498-c631-f4c5-160a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="8d36-94cc-6c74-8857" name="Habilidad"/>
+    <profileType id="8d36-94cc-6c74-8857" name="Habilidad">
+      <characteristicTypes>
+        <characteristicType name="Reglas" id="77d2-f29c-19a6-819c"/>
+      </characteristicTypes>
+    </profileType>
     <profileType id="db67-24c5-11d4-e09e" name="Blindaje">
       <characteristicTypes>
         <characteristicType id="816d-202a-73fa-5fc4" name="Blindaje"/>
@@ -170,6 +174,7 @@
     <categoryEntry name="Subfacción: Sin subfacción" id="f379-822c-2bc8-527e" hidden="false"/>
     <categoryEntry name="Subfacción: Freak Show" id="d93e-761f-ea8b-93ec" hidden="false"/>
     <categoryEntry name="Subfacción: Ilusionistas" id="4350-1b95-6825-f692" hidden="false"/>
+    <categoryEntry name="Subfacción: Cirque du no se que" id="3d3e-cfff-95d3-9d2e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6bd2-44d1-840b-4257" name="Banda" hidden="false">

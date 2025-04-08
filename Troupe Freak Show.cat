@@ -67,12 +67,12 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Hermanos de desgracias</characteristic>
           </characteristics>
         </profile>
+        <profile name="Hermanos de desgracias" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="b5f6-ea55-ae6d-8326">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Bichos raros son una gente muy unida entre sí, que se apoyan sin dudarlo, pero que sienten sus pérdidas como nadie. Un Bicho raro obtendrá un bonificador de +1 al Combate por cada Bicho raro que tenga a una distancia de 10 cm o menos, hasta un máximo de +3. Sin embargo también tendrá un penalizador de -1 al Combate porcada Bicho raroAbatido que tenga a 10 cm o menos.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Hermanos de desgracias" id="2c4b-5aa9-7856-911d" hidden="false">
-          <description>Los Bichos raros son una gente muy unida entre sí, que se apoyan sin dudarlo, pero que sienten sus pérdidas como nadie. Un Bicho raro obtendrá un bonificador de +1 al Combate por cada Bicho raro que tenga a una distancia de 10 cm o menos, hasta un máximo de +3. Sin embargo también tendrá un penalizador de -1 al Combate porcada Bicho raroAbatido que tenga a 10 cm o menos.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="61f3-82cb-f191-2a13" hidden="false">
           <entryLinks>

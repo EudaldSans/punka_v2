@@ -216,13 +216,13 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Catapulta infernal, Escurridizo, Raudo, Todoterreno</characteristic>
           </characteristics>
         </profile>
+        <profile name="Catapulta infernal" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="f8a9-2659-c42b-61fd">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
+Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Catapulta infernal" id="90b6-b73e-b67d-aadc" hidden="false" publicationId="6699-072c-136a-7d30" page="99">
-          <description>Los Acróbatas entrenan en pareja una técnica especial para poder saltar más alto y así evitar obstáculos o abalanzarse contra el enemigo. Al empezar la partida puedes emparejar a tus Acróbatas. Obviamente si no son pares, por lo menos un Acróbata deberá estar sin emparejar.
-Mientras un Acróbata esté en contacto con su pareja (y solo con ella), pasará a tener la Regla especial Salto. Usar uno de estos saltos para Asaltar a un enemigo es siempre peligroso, y la miniatura que lo haga deberá superar una tirada de Agilidad. Si la supera se considerará que la miniatura asaltada está de espaldas (vale, técnicamente estará debajo), pero si la falla, perderá todos los bonificadores del Asalto.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="06f9-cf95-d1b1-d3a7" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Miembros de la banda" hidden="false" id="45c3-ab26-84eb-6720" targetId="84b7-6828-dd10-0280" primary="true"/>
@@ -308,19 +308,6 @@ Resultado necesario:
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Domador" hidden="false" id="33fc-b625-188c-08b5" publicationId="6699-072c-136a-7d30" page="98" collective="false">
-      <rules>
-        <rule name="Avivar" id="bf3f-0d54-0551-1321" hidden="false">
-          <description>Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</description>
-        </rule>
-        <rule name="Señor de las bestias" id="d4a1-648b-95a5-7c5a" hidden="false">
-          <description>Un Domador puede adquirir hasta 2 fieras por +12 puntos cada una. Estas fieras, aunque de diferentes formas y tamaños, deben ir siempre en peana de 40 mm, están armadas con garras y dientes y, chorprecha, tienen la Regla especial Bestia.
-Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no pudiendo alejarse más voluntariamente. Si no estuvieran a esa distancia, cuando sea el momento de actuar de las fieras deben usar todas las Acciones necesarias en Mover para cumplir esto. Si su Domador resulta Abatido, antes de comenzar la Fase de activación de las fieras debes tirar 1d10 por cada una en la siguiente tabla para ver cómo actúan ese Turno.
-1 - La fiera intentará Asaltar a la miniatura de su propia banda a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.
-2-3 - La fiera tratará de huir, avanzando lo máximo posible hacia el borde del tablero más cercano.
-4-6 - La fiera se quedará en el sitio atontada.
-7 o más - La fiera intentará Asaltar a la miniatura de la banda rival a la que llegue más fácilmente. Si no llegara a Asaltar, se acercará lo máximo posible.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="bbef-e16e-3676-45f7" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Miembros de la banda" hidden="false" id="045f-37f4-2f8f-05be" targetId="84b7-6828-dd10-0280" primary="true"/>
@@ -382,7 +369,7 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6b42-4f06-87ff-70ad"/>
       </constraints>
       <profiles>
-        <profile name="Domador" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1ae0-350-470b-37a5">
+        <profile name="Avivar" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="1ae0-350-470b-37a5">
           <characteristics>
             <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
             <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
@@ -392,6 +379,16 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Avivar, Señor de las bestias</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Armas" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="0b5d-67b4-ed6d-ba80">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+        <profile name="Avivar" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="9785-263e-11ee-45cc">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un domador puede usar su látigo para avivar a una fiera. Si está en contacto con una de sus fieras puede usar una Acción y la bestia obtendrá un bonificador de +1 a la Fuerza y Dureza durante lo que queda de ese Turno de juego.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -410,15 +407,24 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia parda, Lucimiento</characteristic>
           </characteristics>
         </profile>
+        <profile name="Lucimiento" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d10a-a247-8c63-3e6b">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bestia parda" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a78e-89a8-ac3c-0f58">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia parda, Lucimiento</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Bestia parda" id="4a30-71c3-f067-f12a" hidden="false" publicationId="6699-072c-136a-7d30" page="100">
-          <description>El Forzudo trabaja literalmente levantando pesos, así que ignora el penalizador de -1 a la Agilidad de la Regla especial Armatoste.</description>
-        </rule>
-        <rule name="Lucimiento" id="face-3dd4-853b-72e5" hidden="false" publicationId="6699-072c-136a-7d30" page="100">
-          <description>El Forzudo puede llevar a cabo grandes hazañas de fuerza. Una vez por partida, al comienzo de un Turno de juego, podrá hacer que su Atributo de Fuerza tenga un bonificador de +2 que durará hasta el final de ese Turno de juego.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="62c3-16e8-0f12-ee72" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Miembros de la banda" hidden="false" id="0cd3-6104-1dfc-a06a" targetId="84b7-6828-dd10-0280" primary="true"/>
@@ -470,25 +476,51 @@ Las fieras siempre deben tratar de estar como máximo a 15 cm de su Domador, no 
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">El mayor espectaculo del mundo</characteristic>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule name="El mayor espectaculo del mundo" id="eb8f-dc60-f378-1b54" hidden="false">
-          <description>El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+        <profile name="El mayor espectaculo del mundo" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5aaf-9492-1afb-74fa">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
 utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
 • Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
 • Presentar a los Pachachos: durante este Turno de juego, la Regla especial Risa difícil de los Pachachos restará o sumará 4 en lugar de 2.
 • Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
 • Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
-• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.</description>
+• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.</characteristic>
+          </characteristics>
           <modifiers>
-            <modifier type="append" value="Presentar a los Bichos raros. Si en tu banda llevas un Jefe de pista, este podrá usar su Regla especial de El mayor espectáculo del mundo para presentar a esta tropa. Durante este Turno de juego la Regla especial Hermanos de desgracias funcionará a 20 cm en lugar de 10 cm." field="description">
+            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Pachachos: durante este Turno de juego, la Regla especial Risa difícil de los Pachachos restará o sumará 4 en lugar de 2.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+• Presentar a los Forzudos: la próxima vez que utilices la Regla especial Lucimiento de un Forzudo, el bonificador de +2 se aplicará también al Combate.
+• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.
+• Presentar a los Bichos raros: Si en tu banda llevas un Jefe de pista, este podrá usar su Regla especial de El mayor espectáculo del mundo para presentar a esta tropa. Durante este Turno de juego la Regla especial Hermanos de desgracias funcionará a 20 cm en lugar de 10 cm." field="77d2-f29c-19a6-819c">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d93e-761f-ea8b-93ec" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d93e-761f-ea8b-93ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+• Presentar a los Domadores: durante este Turno de juego las fieras podrán alejarse hasta 30 cm de los Domadores en lugar de los 15 cm habituales.
+• Presentar a los Artistas:  El Jefe de Pista elige a un Artista, que doblará los Puntos de Trucos que genere este Turno de juego con la Regla especial Observen atentamente." field="77d2-f29c-19a6-819c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4350-1b95-6825-f692" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="El mayor espectáculo del mundo. El Jefe de pista es un maestro de ceremonias experto, capaz de encandilar a niños y mayores por igual, dejándolos boquiabiertos mientras su Troupe hace de las suyas. Durante su Fase de activación, el Jefe de pista puede
+utilizar su altavoz y gastar 1 Acción para lograr uno de los siguientes efectos, no pudiendo repetir el mismo dos veces durante la partida.
+• Reclamar la atención: todas las miniaturas enemigas que no están trabadas en Combate deberán girarse inmediatamente para mirar de frente al Jefe de pista.
+• Presentar a los Acróbatas: la próxima vez que utilices la Regla especial Catapulta infernal de un Acróbata, podrá sumar 10 cm a un súper salto (por lo que podría ser de hasta 40 cm).
+" field="77d2-f29c-19a6-819c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3d3e-cfff-95d3-9d2e" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
-        </rule>
-      </rules>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink name="Banda: Troupe" hidden="false" id="b487-eadf-9967-752f" targetId="297e-53dd-3c0d-5c82" primary="false"/>
         <categoryLink name="Miembros de la banda" hidden="false" id="57ec-fc46-ffa2-488a" targetId="84b7-6828-dd10-0280" primary="true"/>

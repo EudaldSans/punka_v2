@@ -15,6 +15,11 @@
             <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Levitación, Retraso (3), Vidente</characteristic>
           </characteristics>
         </profile>
+        <profile name="Protección contra la contaminación" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="7461-04fa-bcc0-4e77">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631"/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Levitación" id="70a0-a53d-f619-af2d" hidden="false" publicationId="6699-072c-136a-7d30" page="103">
