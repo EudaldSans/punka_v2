@@ -79,4 +79,24 @@
       </profiles>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Exoarmadura" hidden="false" id="d674-bf8a-4df8-e57d">
+      <profiles>
+        <profile name="Exoarmadura" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="5659-9825-4367-89a2">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">5</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">La exoarmadura funciona principalmente a vapor, pero los Innovadores no han conseguido aún controlar la presión sin que resulte un peligro. Cada vez que realice una Acción en todo aquello que no sea quedarse parado sin hacer nada, se generará 1 marcador de vapor, pero además algunas de sus armas pueden hacer que incluso genere más (se indica en su entrada).
+También generará 1 marcador de vapor en cada tirada de Combatir que realice durante las Acciones de un oponente, aunque la exoramadura no utilice sus propias Acciones.
+
+• 1-2 Fallo catastrófico en el que el vapor va hacia el Ingenio que está dentro de la exoarmadura, haciendo que sufra un Impacto Fue 6 que ignora Blindajes.
+• 3-5 El vapor sale despedido. El Ingenio que está dentro de la exoarmadura y todas las miniaturas a 5 cm o menos que no estén ocultas por Cobertura, sufren un Impacto de Fue 3 que ignora Blindajes.
+• 6-8 El vapor sale con seguridad, pero gasta la siguiente Acción entera para hacerlo.
+• 9-10 El vapor sale con seguridad y velocidad. La exoarmadura está lista para usarse.
+
+Tras realizar la Acción que le lleve a alcanzar 5 o más marcadores de vapor deberá tirar 1d10 en la siguiente tabla: Después se retirarán todos los marcadores y volverá a comenzarse de nuevo (si no resulto Abatida, claro). Cualquier arma con la Regla especial A dos manos pasará a poder usarse a una sola mano, por lo que perderá esta regla.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
