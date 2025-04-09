@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4606-c423-c023-a6ad" name="Hijos de la sangre negra - Crematorio" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Pirómano" hidden="false" id="a9d4-eaeb-2d5e-badd">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="030d-a1fa-54f6-0dd5" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="4501-ea7d-8597-46e4" targetId="73ff-a5cb-afba-6105" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pirómano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="76db-03ea-55d6-5143">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bersérker</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="5e80-b05e-d6c8-ffd1">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Siempre que el Pirómano esté en la Línea de visión de su Guardián de la Llama, su banda obtendrá 2 marcadores de Churruscado en lugar de 1 si este Abate a una miniatura enemiga mediante llamas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dale calor" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="84b6-0175-d730-8494">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bersérker" id="3068-e601-a60b-d9f3" hidden="false" type="rule" targetId="8959-4f9f-67c3-fdde"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="8f9c-da5e-a8fb-0aa6" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a96f-9c4d-8cf1-542c" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0725-9574-2681-f050" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Maza" hidden="false" id="7023-a8f7-d316-9dab" type="selectionEntry" targetId="407f-7985-410e-2a9f">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="b863-b2db-16d6-f4b7" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Maza Ligera" hidden="false" id="9142-975d-fa80-ddee" type="selectionEntry" targetId="ba9b-1c69-5fbe-8bc2">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="59fa-936e-03d8-957a" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Filo Pequeño" hidden="false" id="f947-c6ce-a834-386f" type="selectionEntry" targetId="b754-fc6a-16eb-b3fe">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="a382-4c9c-8341-c3d3" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Cócteles Molotov" hidden="false" id="7518-e733-e02e-0135" type="selectionEntry" targetId="bd62-7744-2142-5e84"/>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="93f2-af83-f1f1-86a8" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <entryLinks>
+                <entryLink import="true" name="Arma Flamígera" hidden="false" id="62b6-142a-7aec-1d25" type="selectionEntry" targetId="e4bd-5f5-f8d-cf5"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Lanzallamas" hidden="false" id="60ea-1ebe-cd98-5924" type="selectionEntry" targetId="1859-e45e-f44f-1868"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="cf3f-5206-163e-d935" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61db-8e82-31ea-d3e0" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Piel quemada" hidden="false" id="a281-1aa2-ba79-b358" type="selectionEntry" targetId="ce7b-2b98-4276-9744">
+              <modifiers>
+                <modifier type="set" value="5" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="d25d-b243-9cc7-d435" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="2fc0-c50f-9a59-3405" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="c00c-8656-4849-e61b" targetId="82fd-14e9-7e70-88e2"/>
+  </catalogueLinks>
+</catalogue>

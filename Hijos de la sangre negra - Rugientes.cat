@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b802-dd85-112f-6b33" name="Hijos de la sangre negra - Rugientes" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Flammeus Asinum" hidden="false" id="1432-a4e5-3eee-a758">
+      <profiles>
+        <profile name="Flammeus Asinum" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="20bd-cb2e-5eaa-7729">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5 (6)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">4</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">6 (4)</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Intruder, Chorro flamígero, Darle caña, Raudo,  Montada, Todoterreno, Combustible (3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Intruder" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="62a7-ccb7-fce7-7954">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Raudo" id="5722-f4c1-b8a9-9ddb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
+        <infoLink name="Combustible" id="ae00-d992-9d22-7511" hidden="false" type="rule" targetId="586b-7fa4-82ed-58d7"/>
+        <infoLink name="Montada" id="95ea-c5e1-3fb1-1b08" hidden="false" type="rule" targetId="045b-f2ae-d9de-8d43"/>
+        <infoLink name="Darle caña" id="c4b0-117f-c53b-23c9" hidden="false" type="profile" targetId="248-a683-d49e-a568"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="34df-5e5-6fd3-1fd7" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="446f-af21-89dd-748d" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="92ed-7ed4-ef3d-bf34" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="7ab6-c726-1103-57f" targetId="d1a7-5f24-003f-6400" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2aa0-728b-e07f-69b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="dbad-ffdc-f82b-37f8" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Filo Medio" hidden="false" id="d9c3-dade-df0b-6775" type="selectionEntry" targetId="d385-422c-97e9-fd5f">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec2-6447-887d-a426-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec2-6447-887d-a426-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Escopeta" hidden="false" id="8aae-a88e-a43b-3bf9" type="selectionEntry" targetId="265c-2979-056d-1a06">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2546-50ce-f5ff-8ed1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2546-50ce-f5ff-8ed1-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Balas" hidden="false" id="fdc3-71b4-b038-4291" type="selectionEntryGroup" targetId="1727-ba78-e35c-e399"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="9511-23f7-9501-234a" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="aa59-5591-57b5-4719" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <categoryLinks>
+                <categoryLink name="A dos manos" hidden="false" id="def2-7bc1-95-859c" targetId="e24d-662f-94ca-ccbe" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="dec1-e83a-260e-2dd1" targetId="82fd-14e9-7e70-88e2"/>
+  </catalogueLinks>
+</catalogue>
