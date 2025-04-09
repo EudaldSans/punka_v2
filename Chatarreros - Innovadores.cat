@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1a58-3207-4e8d-27eb" name="Chatarreros - Innovadores" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Pistón" hidden="false" id="ab78-bf86-f510-4dcd" type="selectionEntry" targetId="b696-ef46-271a-5182"/>
+    <entryLink import="true" name="Dinamo" hidden="false" id="cfa3-1463-3858-2e10" type="selectionEntry" targetId="ea3b-14d3-df9-a3a0"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Chatarreros Library" id="3d2c-da31-5334-7335" targetId="1dde-4fe6-a131-8b45"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Ingenio" hidden="false" id="3124-329e-3a5-b150">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="7f34-2548-ff39-4981" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Banda: Chatarreros" hidden="false" id="64f5-695c-7fbb-6992" targetId="476f-664f-cf39-efa5" primary="false"/>
+        <categoryLink name="Subfacción: Innovadores" hidden="false" id="8a90-33ac-71c7-34c" targetId="bb2c-20ba-2536-60d5" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="c103-c6d6-f530-6cfe" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Maza Pesada" hidden="false" id="c9fb-8bbf-f241-a119" type="selectionEntry" targetId="5424-01db-ff0c-e13a">
+              <modifiers>
+                <modifier type="remove" value="e24d-662f-94ca-ccbe" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Filo Pesado" hidden="false" id="d94e-1add-e77c-d5f2" type="selectionEntry" targetId="4cff-c4a3-65b5-c719">
+              <modifiers>
+                <modifier type="remove" value="e24d-662f-94ca-ccbe" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lanzaarpones acoplado" hidden="false" id="723d-dc9e-efb8-668" type="selectionEntry" targetId="6cec-869a-3115-217"/>
+            <entryLink import="true" name="Lanzavapor acoplado" hidden="false" id="e50-1edd-1aa6-8b84" type="selectionEntry" targetId="f1f7-5325-14ee-7a6c"/>
+            <entryLink import="true" name="Puño balístico acoplado" hidden="false" id="bd48-8d9b-4687-5691" type="selectionEntry" targetId="62b5-753c-6da9-e42d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a203-be87-3fb1-fd4f" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="250a-c993-228f-839c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blindaje" id="33ad-3d70-81d6-d208" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Exoarmadura" hidden="false" id="7f6a-8746-a34-116b" type="selectionEntry" targetId="d674-bf8a-4df8-e57d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f727-ed58-56c5-7d83-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f727-ed58-56c5-7d83-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo" id="db9a-8e31-2d-4d60" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="c908-a0d9-e6a4-67ec" type="selectionEntry" targetId="19f2-5137-907f-980b">
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9a8-b4ba-3fe6-4d2c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9a8-b4ba-3fe6-4d2c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Ingenio" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="a770-3ef8-ef59-d91c">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">3</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">2</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

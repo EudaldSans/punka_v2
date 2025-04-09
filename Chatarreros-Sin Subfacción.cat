@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="b12d-de18-9c47-baaf" name="Chatarreros - Sin Subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorName="Eudald Sans" authorContact="eudald.sans@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink import="true" name="Dinamo" hidden="false" id="c680-8bab-82ac-eeb0" type="selectionEntry" targetId="ea3b-14d3-df9-a3a0"/>
+    <entryLink import="true" name="Dinamo" hidden="false" id="c680-8bab-82ac-eeb0" type="selectionEntry" targetId="ea3b-14d3-df9-a3a0">
+      <modifiers>
+        <modifier type="increment" value="1" field="bd63-cd88-187c-18f7">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="6659-5ef7-facd-fab1" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="b696-ef46-271a-5182" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="7ea6-da1d-747f-db4" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="c27c-fefc-3a05-ac58" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bd63-cd88-187c-18f7"/>
+      </constraints>
+    </entryLink>
     <entryLink import="true" name="Engranaje" hidden="false" id="6517-143d-c12e-69cb" type="selectionEntry" targetId="c27c-fefc-3a05-ac58"/>
     <entryLink import="true" name="Pistón" hidden="false" id="c9c1-33ee-c212-7d94" type="selectionEntry" targetId="b696-ef46-271a-5182"/>
     <entryLink import="true" name="Sonda" hidden="false" id="f21e-416d-aef4-13d0" type="selectionEntry" targetId="7ea6-da1d-747f-db4"/>
