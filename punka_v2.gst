@@ -2249,9 +2249,9 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
     </profile>
     <profile name="Arco" typeId="6023-c682-4678-9510" typeName="Arma a distancia" hidden="false" id="556a-472d-e04d-8778" publicationId="6699-072c-136a-7d30" page="133">
       <characteristics>
-        <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">6</characteristic>
-        <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">5</characteristic>
-        <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cmc</characteristic>
+        <characteristic name="Fuerza" typeId="8a4a-b45a-10a3-0c7a">3</characteristic>
+        <characteristic name="Penetración" typeId="5980-44ca-27d3-5a03">2</characteristic>
+        <characteristic name="Distancia" typeId="9f41-1f3c-dd68-ea0d">20/40/60 cm</characteristic>
         <characteristic name="Reglas especiales" typeId="2ecc-3ee3-2a21-1e6">Difícil de usar</characteristic>
       </characteristics>
     </profile>
