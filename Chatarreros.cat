@@ -45,7 +45,7 @@
         <categoryLink targetId="6582-5e09-b30b-db5a" id="7a7c-f5da-712f-123a" primary="false" name="Arma"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa8-c54b-befa-22b6" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfa8-c54b-befa-22b6" includeChildSelections="false"/>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e928-7359-e519-fb70" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
@@ -739,10 +739,9 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
                 </entryLink>
                 <entryLink import="true" name="Escopeta" hidden="false" id="a0ea-dc51-43de-2aae" type="selectionEntry" targetId="265c-2979-056d-1a06" sortIndex="3"/>
                 <entryLink import="true" name="Maza Pesada" hidden="false" id="a695-4c50-4fca-a3f0" type="selectionEntry" targetId="5424-01db-ff0c-e13a" sortIndex="4"/>
-                <entryLink import="true" name="Puño balístico" hidden="false" id="e8e6-e74b-65d6-4502" type="selectionEntry" targetId="c903-18c3-3e9a-6519" sortIndex="5"/>
-                <entryLink import="true" name="Filo Pesado" hidden="false" id="34bd-eab7-d4fd-23c0" type="selectionEntry" targetId="4cff-c4a3-65b5-c719" sortIndex="6"/>
-                <entryLink import="true" name="Lanzaarpones" hidden="false" id="7305-9293-1912-63e7" type="selectionEntry" targetId="8faa-1a92-57f3-a4fe" sortIndex="8"/>
-                <entryLink import="true" name="Guante de energía" hidden="false" id="cadf-2fc1-e26c-67e6" type="selectionEntry" targetId="cf0a-237d-3e1c-7932" sortIndex="9">
+                <entryLink import="true" name="Filo Pesado" hidden="false" id="34bd-eab7-d4fd-23c0" type="selectionEntry" targetId="4cff-c4a3-65b5-c719" sortIndex="7"/>
+                <entryLink import="true" name="Lanzaarpones" hidden="false" id="7305-9293-1912-63e7" type="selectionEntry" targetId="8faa-1a92-57f3-a4fe" sortIndex="9"/>
+                <entryLink import="true" name="Guante de energía" hidden="false" id="cadf-2fc1-e26c-67e6" type="selectionEntry" targetId="cf0a-237d-3e1c-7932" sortIndex="10">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -751,7 +750,8 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Filo Medio" hidden="false" id="ca37-119b-5843-992d" type="selectionEntry" targetId="d385-422c-97e9-fd5f" sortIndex="7"/>
+                <entryLink import="true" name="Filo Medio" hidden="false" id="ca37-119b-5843-992d" type="selectionEntry" targetId="d385-422c-97e9-fd5f" sortIndex="8"/>
+                <entryLink import="true" name="Puño balístico" hidden="false" id="e2f2-3141-1430-3c74" type="selectionEntry" targetId="c903-18c3-3e9a-6519" sortIndex="6"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
