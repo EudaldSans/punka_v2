@@ -20,7 +20,7 @@
         <infoLink name="Escasa" id="cac3-b48e-c819-dc67" hidden="false" type="rule" targetId="cc87-2fc3-e766-7629"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b231-e56d-773a-a3ed" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b231-e56d-773a-a3ed" includeChildSelections="false"/>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bd08-3564-3db8-ca76" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
