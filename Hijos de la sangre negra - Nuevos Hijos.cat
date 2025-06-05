@@ -16,7 +16,6 @@
           <characteristics>
             <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Nuevos Hijos se están forrando cosa fina. Todo el mundo se pone palote con la idea de conseguir combustible y son la única opción disponible. Sus líderes han descubierto que como sustituto de la amenaza de ser quemados vivos, tan típica de Cunnilingus, funciona perfectamente la prima el ofrecer un extra de balas para motivar a sus tropas. A la hora de hacer la banda puedes reserva un máximo de 50 puntos sin gastar, pero que podrás utilizar durante la partida. Al principio de la Fase de activación de una miniatura, puedes decidir gastar parte de estos puntos en ella en un máximo de dos de estos beneficios, que sólo tendrá durante esa Fase de activación. 
 
-
 PUNTOS - EFECTO
              5 - La miniatura obtiene la Regla especial Raudo.
              5 - La miniatura obtiene la Regla especial Todoterreno.
@@ -24,8 +23,6 @@ PUNTOS - EFECTO
              8 - La miniatura obtiene un bonificador de +2 a la Fuerza.
              8 - La miniatura obtiene un bonificador de +2 a la Dureza.
            15 - La miniatura obtiene un bonificador de +1 a las Acciones.
-
-
 </characteristic>
           </characteristics>
         </profile>
@@ -38,6 +35,10 @@ PUNTOS - EFECTO
         <categoryLink name="Reglas de la banda" hidden="false" id="ed70-a63c-6e4a-7d74" targetId="b19d-7b9-3085-7fd4" primary="true"/>
         <categoryLink name="Subfacción: Nuevos Hijos" hidden="false" id="61d0-b130-2cef-4446" targetId="debf-2887-31ab-af12" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="f88d-d3ea-d77d-17f9-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f88d-d3ea-d77d-17f9-max" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

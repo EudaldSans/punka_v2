@@ -199,7 +199,7 @@ Si falla la tirada de la tabla, sólo el Ceniza sufrirá ese Impacto y en caso d
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b802-dd85-112f-6b33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b802-dd85-112f-6b33" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <comment>Rugientes</comment>
         </modifier>

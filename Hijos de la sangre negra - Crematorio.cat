@@ -104,6 +104,10 @@ Al principio del Turno de juego puedes utilizar marcadores de Churruscado para a
         <categoryLink name="Reglas de la banda" hidden="false" id="0255-91b2-5d16-4e3a" targetId="b19d-7b9-3085-7fd4" primary="true"/>
         <categoryLink name="Subfacción: Crematorio" hidden="false" id="4b82-30ff-989a-9ab2" targetId="fd07-4092-4530-9da8" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="6845-be99-fc10-61ad-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6845-be99-fc10-61ad-max" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>

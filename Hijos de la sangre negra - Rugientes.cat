@@ -34,6 +34,7 @@
         <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="446f-af21-89dd-748d" targetId="73ff-a5cb-afba-6105" primary="false"/>
         <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="92ed-7ed4-ef3d-bf34" targetId="6659-5ef7-facd-fab1" primary="false"/>
         <categoryLink name="Personalidades de la banda" hidden="false" id="7ab6-c726-1103-57f" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Subfacción: Rugientes" hidden="false" id="16ac-f6f3-ecff-8cea" targetId="2aa0-728b-e07f-69b" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="100"/>
@@ -80,8 +81,54 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Motorizados" hidden="false" id="c69d-00f4-11fd-4045">
+      <profiles>
+        <profile name="Motorizados" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="008d-5e16-72db-4067">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="088e-8148-87bd-c1d5" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="db49-452f-6d9f-9436" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink name="Subfacción: Rugientes" hidden="false" id="b2fc-6fe7-305d-2801" targetId="2aa0-728b-e07f-69b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="f5a1-8d21-82da-290b-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5a1-8d21-82da-290b-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Motorizados" hidden="false" id="839c-f9d3-8644-88b7">
+      <profiles>
+        <profile name="Motorizados" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c322-c1d0-09fb-8018">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="0f0a-654a-a5a5-8aca" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="b719-d411-ed12-4ed9" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink name="Subfacción: Rugientes" hidden="false" id="3da1-7c47-3a99-2605" targetId="2aa0-728b-e07f-69b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="2644-6d8c-4fd5-8418-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2644-6d8c-4fd5-8418-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="dec1-e83a-260e-2dd1" targetId="82fd-14e9-7e70-88e2"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Ceniza" hidden="false" id="17fa-64f7-3778-bcb0" type="selectionEntry" targetId="b81f-51d6-1884-8994"/>
+    <entryLink import="true" name="Chispa" hidden="false" id="0257-eca5-7bb6-8628" type="selectionEntry" targetId="8efb-7132-b084-71e9"/>
+  </entryLinks>
 </catalogue>
