@@ -23,3 +23,23 @@ __I found a bug!__ / *I have another request*
 Great, thank you! Please [create an issue](https://github.com/EudaldSans/punka_v2/issues/new/choose) - you can also suggest 
 enhancements and raise other issues there. You can even track the progress and know when the issue/suggestion
 has been solved/implemented.
+
+-----------------------------------------------------------------------
+
+## Visión general
+
+__¿Qué es esto?__
+
+Este es un repositorio de archivos de datos en GitHub. Contiene toda la información necesaria para crear listas de Punkapocalyptic en 
+[New Recruit](https://www.newrecruit.eu). Ha sido creado y es mantenido por la comunidad, sin ningún tipo de respaldo oficial por parte de ninguna 
+empresa/editorial.
+
+¿Quieres usarlo? ¡Genial! ¡Ya puedes encontrarlo en New Recruit! Échale un vistazo al 
+[generador de listas](https://www.newrecruit.eu/app/MySystems), selecciona "Add or Remove games" y busca 
+punka_v2. Por ahora la aplicación no soporta el Español.
+
+__¡He encontrado un error!__ / *Tengo otra sugerencia*
+
+¡Perfecto, gracias! Por favor, [crea un issue](https://github.com/EudaldSans/punka_v2/issues/new/choose) – también puedes sugerir 
+mejoras y reportar otros problemas de este modo. Incluso puedes seguir el progreso y saber cuándo el error/sugerencia
+ha sido resuelto/implementado.
