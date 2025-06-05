@@ -564,6 +564,9 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9e6-6cf2-bbb5-b7c5-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9e6-6cf2-bbb5-b7c5-max" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

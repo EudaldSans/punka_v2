@@ -8,6 +8,7 @@
       <categoryLinks>
         <categoryLink name="Miembros de la banda" hidden="false" id="030d-a1fa-54f6-0dd5" targetId="84b7-6828-dd10-0280" primary="true"/>
         <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="4501-ea7d-8597-46e4" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Subfacción: Crematorio" hidden="false" id="e26a-46db-7ee3-e983" targetId="fd07-4092-4530-9da8" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Pirómano" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="76db-03ea-55d6-5143">
@@ -86,8 +87,31 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="El poder del fuego" hidden="false" id="31db-6ccb-0574-9365">
+      <profiles>
+        <profile name="El poder del fuego" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="c034-2329-546d-741c">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Cada vez que durante la partida una miniatura resulte Abatida a causa de las llamas (por un lanzallamas, un cóctel Molotov, un arma flamígera, un marcador de Fuego, etc...) la banda de Crematorio obtendrá un marcador de Churruscado.
+Al principio del Turno de juego puedes utilizar marcadores de Churruscado para adelantar la Ronda de Agilidad en que actúe una miniatura. Por cada marcador que utilices en una miniatura, este podrá actuar en una Ronda de Agilidad superior a la que le corresponde. Puedes repartir los marcadores a tu gusto entre las miniaturas o no utilizar alguno si lo prefieres.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="17f4-8b0e-c8c3-de4c" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="0255-91b2-5d16-4e3a" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink name="Subfacción: Crematorio" hidden="false" id="4b82-30ff-989a-9ab2" targetId="fd07-4092-4530-9da8" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="c00c-8656-4849-e61b" targetId="82fd-14e9-7e70-88e2"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Ceniza" hidden="false" id="9363-c11c-9926-9a3a" type="selectionEntry" targetId="b81f-51d6-1884-8994"/>
+    <entryLink import="true" name="Quemado" hidden="false" id="baa5-3071-1308-f008" type="selectionEntry" targetId="8dce-ed5f-5381-650c"/>
+    <entryLink import="true" name="Guardian de la llama" hidden="false" id="cb12-2859-806a-6203" type="selectionEntry" targetId="a2d7-ff55-be87-8d82"/>
+  </entryLinks>
 </catalogue>

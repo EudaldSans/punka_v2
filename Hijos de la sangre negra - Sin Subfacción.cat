@@ -12,7 +12,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4 (6)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">7</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7"> - </characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Bomba andante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="e48e-b791-7db1-511e">
@@ -88,7 +88,7 @@
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (7)</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">5</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7"> - </characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Por el Sumo Guardián" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="51d7-071e-2454-2735" publicationId="6699-072c-136a-7d30" page="53">

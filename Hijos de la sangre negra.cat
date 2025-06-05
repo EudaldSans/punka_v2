@@ -282,7 +282,7 @@ La peana del Chispa pasa a ser de 55 mm.</characteristic>
         </profile>
         <profile name="¡Por la Sangre Negra!" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="81c6-6850-bc39-2bce">
           <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631"/>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Siempre que esté a 5 cm o menos de una miniatura aliada, un Quemado puede usar su cuerpo para salvarlo cuando haya sido impactado. Se colocará en contacto con la miniatura aliada impactada justo antes de que este tuviera que realizar la tirada enfrentada de Fuerza contra Dureza. Será el Quemado quien use su Dureza para esta tirada, y obviamente, será la miniatura retirada como baja si resulta Abatida. Si el impacto proviniese de un arma de Plantilla o que no necesite tirada para Impactar el Quemado no podrá aplicar esta regla. Si el impacto llega de un Combate cuerpo a cuerpo y el Quemado sobrevive, se considerará en contacto con la miniatura atacante como si hubiera sufrido el Asalto de esta.</characteristic>
           </characteristics>
         </profile>
         <profile name="Bajo la mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="133b-e832-53e0-6647">
@@ -772,7 +772,7 @@ La peana del Chispa pasa a ser de 55 mm.</characteristic>
         </profile>
         <profile name="Mirada llameante" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="4529-6be2-e319-53e5" page="49" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631"/>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">El Guardián de la Llama es capaz de motivar a sus cultistas con su mera mirada. Algunas opciones de tropa tienen una ventaja cuando se encuentran bajo su Línea de visión. Estas se explican en sus respectivas entradas de la Regla especial Bajo la mirada llameante.</characteristic>
           </characteristics>
         </profile>
       </profiles>
