@@ -94,7 +94,7 @@
       <modifiers>
         <modifier type="set" value="2" field="d12a-f092-5bf5-54f2">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="62a0-4425-d6e6-d4dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -128,7 +128,7 @@
       <modifiers>
         <modifier type="set" value="2" field="d4c7-31b2-c171-867c">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="debf-2887-31ab-af12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="62a0-4425-d6e6-d4dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>

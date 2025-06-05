@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="62a0-4425-d6e6-d4dd" name="Hijos de la sangre negra - Nuevos Hijos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="62a0-4425-d6e6-d4dd" name="Hijos de la sangre negra - Nuevos Hijos" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Ascua" hidden="false" id="0c6b-4cbe-e9fa-6463" type="selectionEntry" targetId="861f-1eab-c0bc-237e"/>
+    <entryLink import="true" name="Ceniza" hidden="false" id="da83-4e5b-b47e-90bc" type="selectionEntry" targetId="b81f-51d6-1884-8994"/>
+    <entryLink import="true" name="Chispa" hidden="false" id="d04c-f34a-1f06-3516" type="selectionEntry" targetId="8efb-7132-b084-71e9"/>
+    <entryLink import="true" name="Guardian de la llama" hidden="false" id="4142-2f76-db07-2144" type="selectionEntry" targetId="a2d7-ff55-be87-8d82"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Hijos de la sangre negra - Library" id="3376-b3d2-f1a6-af03" targetId="82fd-14e9-7e70-88e2"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Será por perres" hidden="false" id="b796-cd75-6a79-1d02">
+      <profiles>
+        <profile name="Será por perres" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="e217-ee43-9916-ef3f">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Los Nuevos Hijos se están forrando cosa fina. Todo el mundo se pone palote con la idea de conseguir combustible y son la única opción disponible. Sus líderes han descubierto que como sustituto de la amenaza de ser quemados vivos, tan típica de Cunnilingus, funciona perfectamente la prima el ofrecer un extra de balas para motivar a sus tropas. A la hora de hacer la banda puedes reserva un máximo de 50 puntos sin gastar, pero que podrás utilizar durante la partida. Al principio de la Fase de activación de una miniatura, puedes decidir gastar parte de estos puntos en ella en un máximo de dos de estos beneficios, que sólo tendrá durante esa Fase de activación. 
+
+
+PUNTOS - EFECTO
+             5 - La miniatura obtiene la Regla especial Raudo.
+             5 - La miniatura obtiene la Regla especial Todoterreno.
+             8 - La miniatura obtiene un bonificador de +2 al Combate.
+             8 - La miniatura obtiene un bonificador de +2 a la Fuerza.
+             8 - La miniatura obtiene un bonificador de +2 a la Dureza.
+           15 - La miniatura obtiene un bonificador de +1 a las Acciones.
+
+
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="6641-a3dc-70c1-9949" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="ed70-a63c-6e4a-7d74" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink name="Subfacción: Nuevos Hijos" hidden="false" id="61d0-b130-2cef-4446" targetId="debf-2887-31ab-af12" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
