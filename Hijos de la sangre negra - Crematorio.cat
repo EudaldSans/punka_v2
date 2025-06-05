@@ -114,4 +114,22 @@ Al principio del Turno de juego puedes utilizar marcadores de Churruscado para a
     <entryLink import="true" name="Quemado" hidden="false" id="baa5-3071-1308-f008" type="selectionEntry" targetId="8dce-ed5f-5381-650c"/>
     <entryLink import="true" name="Guardian de la llama" hidden="false" id="cb12-2859-806a-6203" type="selectionEntry" targetId="a2d7-ff55-be87-8d82"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Piel quemada" hidden="false" id="ce7b-2b98-4276-9744" publicationId="1e5a-2394-b910-b6ad" page="3">
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Piel quemada" typeId="db67-24c5-11d4-e09e" typeName="Blindaje" hidden="false" id="a852-d9b-26d6-9fba">
+          <characteristics>
+            <characteristic name="Blindaje" typeId="816d-202a-73fa-5fc4">2</characteristic>
+            <characteristic name="Reglas" typeId="d8ba-fec3-89d1-9634">Ignífugo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignífugo" id="d92f-1a56-b712-d1bf" hidden="false" type="rule" targetId="ad29-9e42-9e31-5a12"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
