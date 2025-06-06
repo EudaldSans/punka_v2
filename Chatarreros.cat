@@ -745,7 +745,7 @@ Además, si Caronte es Abatido y aún le quedan bombas, estas detonarán siguien
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1464-cb0e-e77a-204a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1a58-3207-4e8d-27eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
