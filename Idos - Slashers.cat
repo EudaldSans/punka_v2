@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="d383-b2e2-a6c6-ae96" name="Idos - Slashers" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sns@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="No estaba muerto" hidden="false" id="a16c-55fd-5e60-ee5e">
+      <profiles>
+        <profile name="No estaba muerto" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="9164-d00c-a87e-eef6">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Cada vez que un miembro de la banda consiga Abatir a una miniatura enemiga, adquirirá un marcador de víctima. Si estemiembro resulta Abatido, tirará 1d10, y si saca un número igual o menor a los marcadores de víctima que tuviera, regresará delos muertos al principio del siguiente Turno de juego en el mismo lugar donde resultó Abatido y volviendo a jugar normalmente.Solo podrá realizar esta tirada una vez durante la partida.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Banda: Hijos de la sangre negra" hidden="false" id="5d49-b98d-e34c-c309" targetId="73ff-a5cb-afba-6105" primary="false"/>
+        <categoryLink name="Reglas de la banda" hidden="false" id="fae3-51d5-5cb2-b219" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink name="Subfacción: Rugientes" hidden="false" id="d0dc-edc2-7da8-6c52" targetId="2aa0-728b-e07f-69b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="adb8-7e02-5ff1-8a9c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9bf5-cb94-8845-abc6" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Idos - Library" id="9b2c-532f-eb0e-4e39" targetId="5f14-305f-99b6-1077" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="New Entry (link)" hidden="false" id="e9c5-1ac9-8a68-fd16" type="selectionEntry"/>
+    <entryLink import="true" name="Psycho killer" hidden="false" id="d0bd-4f1f-c727-8e14" type="selectionEntry" targetId="f98f-149e-d16f-3411"/>
+    <entryLink import="true" name="Cosechador" hidden="false" id="3228-1b56-09d6-ce5b" type="selectionEntry" targetId="184e-83db-c249-9124"/>
+    <entryLink import="true" name="Incluir reglas de Ambrosia" hidden="false" id="7e05-0999-1403-f8aa" type="selectionEntry" targetId="38f9-9051-16b8-7d27"/>
+    <entryLink import="true" name="Glotón" hidden="false" id="384f-9ab1-9805-a4c3" type="selectionEntry" targetId="1b24-94-efcb-a387"/>
+    <entryLink import="true" name="Despojo" hidden="false" id="8d0a-7a8a-c204-208c" type="selectionEntry" targetId="4007-565c-10ec-4a8a"/>
   </entryLinks>
 </catalogue>

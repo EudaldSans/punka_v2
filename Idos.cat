@@ -196,13 +196,6 @@
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Psycho killer" hidden="false" id="f98f-149e-d16f-3411">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Miembros de la banda" hidden="false" id="8c53-d573-49a5-d89c" targetId="84b7-6828-dd10-0280" primary="true"/>
         <categoryLink name="Banda: Idos" hidden="false" id="28cf-4760-22ce-78b7" targetId="af76-5143-157c-3a3f" primary="false"/>
@@ -268,7 +261,7 @@
                 <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="15"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="b7-ba02-85d9-67ac">
+            <selectionEntry type="upgrade" import="true" name="Familia" hidden="false" id="b7-ba02-85d9-67ac">
               <costs>
                 <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="5"/>
               </costs>
