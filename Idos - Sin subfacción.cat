@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e211-4053-ba6b-7a7c" name="Idos - Sin subfacción" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Madre" hidden="false" id="edb6-24fd-19e1-820" publicationId="6699-072c-136a-7d30" page="63">
+      <categoryLinks>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="3f69-839e-148-3738" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="f0b4-5710-9719-15e4" targetId="d1a7-5f24-003f-6400" primary="true"/>
+        <categoryLink name="Banda: Idos" hidden="false" id="523b-a1e6-f4f8-d20e" targetId="af76-5143-157c-3a3f" primary="false"/>
+        <categoryLink name="Cosechador" hidden="false" id="7759-fc74-39a2-7841" targetId="519d-1f4f-ea5a-45f6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="90"/>
+      </costs>
+      <profiles>
+        <profile name="Madre" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="bb15-74e4-f05c-65c4">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">3</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4 (2)</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">3</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">5</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">3</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">3</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">6</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cosechadora" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="e99a-d5fb-18e7-253" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+        <profile name="Presencia perturbadora" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="52ce-8e5d-ce5a-e6a3" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+        <profile name="Mascota" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="18e4-b511-3b79-3bf1" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+        <profile name="Lucidez" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="1bc5-256d-35de-3cbc" publicationId="6699-072c-136a-7d30" page="63">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mascota" hidden="false" id="d122-2092-7418-15fc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90e1-243e-f230-e004" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e6c-4461-1b93-1e06" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mascota" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="24e6-9c16-3604-bf2">
+              <characteristics>
+                <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">-</characteristic>
+                <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+                <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+                <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">-</characteristic>
+                <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
+                <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">4</characteristic>
+                <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Garras y dientes" hidden="false" id="a0c9-1d29-8657-6698" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4526-1ca0-8f70-1905" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="5799-349c-dcd8-5369" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="d8b1-1a19-86ae-d322" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Cosecha" id="3852-3eb4-4048-c8cd" hidden="false" type="profile" targetId="bf9b-938f-35e8-4c5b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tio" hidden="false" id="e115-5524-7171-f76e" publicationId="6699-072c-136a-7d30" page="62">
+      <categoryLinks>
+        <categoryLink name="Banda: Idos" hidden="false" id="e9a1-cbc2-eb42-d42c" targetId="af76-5143-157c-3a3f" primary="false"/>
+        <categoryLink name="Mercenarios y personalidades de la banda" hidden="false" id="b0a4-4d44-ada9-7969" targetId="6659-5ef7-facd-fab1" primary="false"/>
+        <categoryLink name="Personalidades de la banda" hidden="false" id="bf2a-8a01-ac76-e060" targetId="d1a7-5f24-003f-6400" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tio" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="cf89-8b1b-a0b9-be84">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">5</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">4</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">5 (9)</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">6</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">2</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mal viaje</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tio" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="f612-2b94-32ff-9afb">
+          <characteristics>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="70"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="ee6f-af1b-4c3f-89e8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Protección contra la contaminación" hidden="false" id="ac91-4928-2de-bf46" type="selectionEntry" targetId="19f2-5137-907f-980b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="779f-b65d-bb72-f5b7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Torbellino" hidden="false" id="95a7-6a97-c16c-290">
+              <profiles>
+                <profile name="Torbellino" typeId="1ec3-c3f3-6299-ebe5" typeName="Arma cuerpo a cuerpo" hidden="false" id="1946-897d-dcbc-6267">
+                  <characteristics>
+                    <characteristic name="Combate" typeId="7192-0144-704a-b3e6">+0</characteristic>
+                    <characteristic name="Fuerza" typeId="fa8e-4d55-0d97-e892">+4</characteristic>
+                    <characteristic name="Penetración" typeId="2c81-28ec-adf8-2c60">+2</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">Incrustada</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Torbellino" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="8a67-783c-3fc1-f462">
+                  <characteristics>
+                    <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">A la hora de atacar, puede hacerlo normalmente, o gastar una Fase de activación completa (usar sus 2 Acciones) en hacer un ataque Torbellino. Puede realizarlo incluso estando trabado en Combate. Si hace esto, toda miniatura en un radio de 5 cm de distancia (amiga o enemiga) deberá superar una tirada de Agilidad o resultará impactada automáticamente (como si lo hubiera sido en Combate).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d95c-92a2-f20-1712" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d5-29d6-6870-c2a5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Despojo" hidden="false" id="746a-5e08-23b2-31c7" type="selectionEntry" targetId="4007-565c-10ec-4a8a"/>
+    <entryLink import="true" name="Incluir reglas de Ambrosia" hidden="false" id="186b-b26c-0118-c3ad" type="selectionEntry" targetId="38f9-9051-16b8-7d27"/>
+    <entryLink import="true" name="Aberración" hidden="false" id="7d6d-05ef-d016-24ae" type="selectionEntry" targetId="16ad-7776-78da-499e"/>
+    <entryLink import="true" name="Cosechador" hidden="false" id="8305-23ba-1f40-9e75" type="selectionEntry" targetId="184e-83db-c249-9124"/>
+    <entryLink import="true" name="Desgarrador" hidden="false" id="eda2-3a2e-27f2-09e6" type="selectionEntry" targetId="54cc-a06d-d984-aec3"/>
+    <entryLink import="true" name="Glotón" hidden="false" id="6fa2-8256-e779-2d97" type="selectionEntry" targetId="1b24-94-efcb-a387"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Idos - Library" id="a667-4524-beae-d13a" targetId="5f14-305f-99b6-1077"/>
+  </catalogueLinks>
+</catalogue>

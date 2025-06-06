@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="d383-b2e2-a6c6-ae96" name="Idos - Slashers" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sns@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Idos - Library" id="9b2c-532f-eb0e-4e39" targetId="5f14-305f-99b6-1077" importRootEntries="true"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="New Entry (link)" hidden="false" id="e9c5-1ac9-8a68-fd16" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
