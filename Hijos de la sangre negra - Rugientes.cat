@@ -81,9 +81,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Motorizados" hidden="false" id="c69d-00f4-11fd-4045">
+    <selectionEntry type="model" import="true" name="De paquete" hidden="false" id="c69d-00f4-11fd-4045">
       <profiles>
-        <profile name="Motorizados" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="008d-5e16-72db-4067">
+        <profile name="De paquete" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="008d-5e16-72db-4067">
           <characteristics>
             <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Todas las miniaturas de la banda deben comenzar la partida montadas en un vehículo. Por lo tanto sólo puedes empezar con Chispas o Cenizas que vayan de paquete con estos</characteristic>
           </characteristics>
