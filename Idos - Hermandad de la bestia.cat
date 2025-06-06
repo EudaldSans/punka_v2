@@ -1,2 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7115-6223-bcd4-51ed" name="Idos - Hermandad de la bestia" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="7115-6223-bcd4-51ed" name="Idos - Hermandad de la bestia" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Idos - Library" id="8f35-2efe-2482-44c4" targetId="5f14-305f-99b6-1077"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Aberración" hidden="false" id="a9a1-1023-686c-debe" type="selectionEntry" targetId="16ad-7776-78da-499e"/>
+    <entryLink import="true" name="Desgarrador" hidden="false" id="80cc-bc2a-a6d5-3e5c" type="selectionEntry" targetId="54cc-a06d-d984-aec3">
+      <infoLinks>
+        <infoLink name="Locura" id="7a72-50d4-613f-2959" hidden="false" type="profile" targetId="31ec-e08-9a42-d7a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Cosechador" hidden="false" id="2b40-4f1a-d107-da57" type="selectionEntry" targetId="184e-83db-c249-9124">
+      <infoLinks>
+        <infoLink name="Locura" id="ca6e-f4b2-6cf9-04b6" hidden="false" type="profile" targetId="31ec-e08-9a42-d7a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Glotón" hidden="false" id="0b0b-e9b0-35f3-c5f9" type="selectionEntry" targetId="1b24-94-efcb-a387">
+      <infoLinks>
+        <infoLink name="Locura" id="10c1-5052-b59e-52f0" hidden="false" type="profile" targetId="31ec-e08-9a42-d7a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+  </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Abominación" hidden="false" id="ce26-7b63-131b-a60a">
+      <profiles>
+        <profile name="Abominación" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="e28c-f710-5b40-7977">
+          <characteristics>
+            <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">2</characteristic>
+            <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">4</characteristic>
+            <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+            <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">3</characteristic>
+            <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">6</characteristic>
+            <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
+            <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Bestia</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Monstruosidad tentacular" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="1c4f-21de-3c77-6e40">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">En el Páramo te puedes encontrar cosas muy chungas, pero pocas que den tanto canguelo y repelús como una Abominación. Las miniaturas que las Asalten perderán todos sus bonificadores por el Asalto. Además, si una miniatura rival intenta Separarse del Combate con una Abominación, sufrirá un penalizador de -3 a su tirada enfrentada de Agilidad por culpa de los tentáculos.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="No entra más" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="64d7-1e13-e3c3-240e">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Las Abominaciones han consumido tanta Ambrosía que no toleran más. No pueden utilizar dosis de Ambrosía.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bestia" id="9e3c-6598-de9b-5e6d" hidden="false" type="rule" targetId="e9cf-fed3-0a23-ac43"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

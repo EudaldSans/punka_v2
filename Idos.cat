@@ -359,17 +359,17 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">4</characteristic>
             <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">5</characteristic>
             <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">3</characteristic>
-            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Devorador, Mal viaje</characteristic>
+            <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="716f-b168-a13f-42da" page="61" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</characteristic>
           </characteristics>
         </profile>
         <profile name="Devorador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="25c4-9550-cbf1-b13d" page="61" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Los Glotones pueden devorar partes de los cuerpos de los Abatidos para conseguir volverse más poderosos. Un Glotón puede gastar una Acción en Devorar a una miniatura Abatida en contacto (amiga o enemiga) para conseguir un bonificador de +1 al Combate, Fuerza y Dureza. Se podrá utilizar máximo una Acción de devorar por miniatura Abatida, tras lo que se retirará el marcador de la mesa y por lo tanto no podrá ser rapiñada, cosechada, curada por un Sanitario, etc.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -400,6 +400,18 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a253-1bbc-2fb0-5031" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5353-b33a-56f4-4829" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="a253-1bbc-2fb0-5031">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipo" id="7502-1e59-3ee9-1f0f" hidden="false">
           <entryLinks>
@@ -435,12 +447,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         </profile>
         <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="d0f5-49d3-264d-2f0b" page="60" publicationId="6699-072c-136a-7d30">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
           </characteristics>
         </profile>
         <profile name="Furia psicópata" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2f4a-5a3d-a86e-a0b5">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Los Desgarradores sólo piensan en ir a rajar a sus enemigos. Avanzarán hacia el enemigo al que lleguen más rápidamente (independientemente de la Línea de visión). Normalmente esto es el más cercano, pero habrá casos donde puede tener un enemigo cerca encima de un edificio, o tras Terreno pila chungo, y sin embargo puede cubrir más terreno avanzando hacia otro enemigo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -472,6 +484,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e9-c652-95bb-9e6e" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipo" id="c1cb-ad80-d8d8-ad81" hidden="false">
           <entryLinks>
@@ -479,13 +498,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cosechador" hidden="false" id="184e-83db-c249-9124" publicationId="6699-072c-136a-7d30" page="59">
       <costs>
@@ -526,6 +538,18 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="178b-445f-66ff-4a56" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7479-df7b-5065-ddb2" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="178b-445f-66ff-4a56">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7115-6223-bcd4-51ed" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipo" id="f37b-8fd8-49b9-70a" hidden="false">
           <entryLinks>
@@ -548,7 +572,7 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         </profile>
         <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4e7d-5e8a-38cd-9b0a">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El Cosechador tiene la mente demasiado dispersa y no podrá cosechar.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -590,17 +614,12 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         </profile>
         <profile name="Mal viaje" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="4413-ef26-214b-f7c8" publicationId="6699-072c-136a-7d30" page="58">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
-          </characteristics>
-        </profile>
-        <profile name="Locura" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="31ec-e08-9a42-d7a" publicationId="6699-072c-136a-7d30" page="58">
-          <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará.</characteristic>
           </characteristics>
         </profile>
         <profile name="Sobredosis" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5373-f601-fbb5-69d2" publicationId="6699-072c-136a-7d30" page="58">
           <characteristics>
-            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c"/>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Las Aberraciones tienen más problemas para tolerar la Ambrosía y parten con un -2 en la tirada para ver si la droga hace efecto.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -645,11 +664,19 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
   <sharedProfiles>
     <profile name="Cosecha" hidden="false" id="bf9b-938f-35e8-4c5b" typeId="8d36-94cc-6c74-8857" typeName="Habilidad">
       <characteristics>
-        <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
-• 1 - Ninguna
-• 2-5 - 1
-• 6-9 - 2
-• 10 - 3</characteristic>
+        <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Un Cosechador puede gastar 1 Acción en cosechar a un enemigo Abatido (ningún Abatido puede ser cosechado más de una vez), extrayendo el líquido de su hipotálamo. La cantidad de Ambrosía cosechada dependerá del grado de terror de la víctima. Deberás tirar en la siguiente tabla para comprobar cuantas dosis de Ambrosía ha cosechado para la banda, que podrá utilizar de manera habitual:
+
+
+1D10 - DOSIS
+       1 - Ninguna
+   2-5 - 1
+   6-9 - 2
+    10 - 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Locura" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="31ec-e08-9a42-d7a" publicationId="6699-072c-136a-7d30" page="58">
+      <characteristics>
+        <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Mirar a la cara de las Aberraciones es mirar a una locura más allá de la humanidad, que difícilmente no te puede afectar. Las miniaturas que las Asalten perderán todos sus bonificadores por el Asalto.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

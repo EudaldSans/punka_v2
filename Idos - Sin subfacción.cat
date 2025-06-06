@@ -150,7 +150,11 @@
   <entryLinks>
     <entryLink import="true" name="Despojo" hidden="false" id="746a-5e08-23b2-31c7" type="selectionEntry" targetId="4007-565c-10ec-4a8a"/>
     <entryLink import="true" name="Incluir reglas de Ambrosia" hidden="false" id="186b-b26c-0118-c3ad" type="selectionEntry" targetId="38f9-9051-16b8-7d27"/>
-    <entryLink import="true" name="Aberración" hidden="false" id="7d6d-05ef-d016-24ae" type="selectionEntry" targetId="16ad-7776-78da-499e"/>
+    <entryLink import="true" name="Aberración" hidden="false" id="7d6d-05ef-d016-24ae" type="selectionEntry" targetId="16ad-7776-78da-499e">
+      <infoLinks>
+        <infoLink name="Locura" id="8e9d-5652-8421-e1c1" hidden="false" type="profile" targetId="31ec-e08-9a42-d7a"/>
+      </infoLinks>
+    </entryLink>
     <entryLink import="true" name="Cosechador" hidden="false" id="8305-23ba-1f40-9e75" type="selectionEntry" targetId="184e-83db-c249-9124"/>
     <entryLink import="true" name="Desgarrador" hidden="false" id="eda2-3a2e-27f2-09e6" type="selectionEntry" targetId="54cc-a06d-d984-aec3"/>
     <entryLink import="true" name="Glotón" hidden="false" id="6fa2-8256-e779-2d97" type="selectionEntry" targetId="1b24-94-efcb-a387"/>
