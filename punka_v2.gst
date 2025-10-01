@@ -2296,6 +2296,18 @@ En su Fase de activación posterior, justo antes de realizar sus Acciones, deber
         <characteristic name="Reglas especiales" typeId="c498-c631-f4c5-160a">-</characteristic>
       </characteristics>
     </profile>
+    <profile name="Cuerpo escombro" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="0b6d-2b01-cebc-d5ab">
+      <characteristics>
+        <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Esta miniatura está tan hecha polvo que no deja marcador al ser Abatida, es como si no hubiera existido. Su cuerpo se mimetiza tanto con el páramo que no está feo pisarlos, es más, alguna gente obtiene placer de hacerlo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grupal" typeId="64d2-5b8c-4718-2aad" typeName="Reglas de la banda" hidden="false" id="dfa4-f443-16d6-3de4">
+      <characteristics>
+        <characteristic name="Reglas" typeId="b86f-94a8-ecaa-691b">Estas miniaturas tienen cierta mentalidad colectiva que les hace ir en grupo siempre que pueden. Deben ir unidas hasta formar un grupo mínimo de 2 y máximo de 5. Por encima de este número formarán otro grupo, y así sucesivamente.
+Al terminar su Fase de activación, ninguna miniatura de un grupo debe estar separada más de 5 cm de la más cercana ni más de 15 cm de la más lejana cualesquiera. Si por alguna circunstancia esto ocurriera (como que una miniatura del grupo resultara Abatida), el grupo que haya quedado con menos miniaturas separadas debe gastar sus siguientes Acciones únicamente en intentar unirse de nuevo al grupo más numeroso.
+Los grupos se consideran una sola miniatura para la mayoría de los efectos de juego, como el máximo de miniaturas, el despliegue o el Movimiento. De esta manera, cuando llegue su Fase de activación, moverán todas las miniaturas de un grupo a la vez, por lo que no se podrá empezar la Fase de activación de otra miniatura hasta que el grupo al completo haya realizado sus Acciones. Si una miniatura del grupo está involucrado en un Combate, se considerará que todo el grupo participa en ese Combate como si de una única miniatura se tratara. El grupo de solo realizará un ataque, con un Atributo de Combate que será igual al número de miembros del grupo. De esta manera si el grupo tiene 3 miniaturas, su Atributo de Combate será 3. Sin embargo, solo se Abatirá una miniatura por cada Impacto recibido, o en el caso de plantillas, solo aquellos que sean tocados por esta.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup name="Arco" id="3dde-d497-4bc9-2c08" hidden="false"/>
