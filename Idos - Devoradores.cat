@@ -1,2 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="24e3-78bf-65cc-876f" name="Idos - Devoradores" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="24e3-78bf-65cc-876f" name="Idos - Devoradores" gameSystemId="0853-e2c8-30ee-34a3" gameSystemRevision="1" revision="1" authorContact="eudald.sans@gmail.com" authorName="Eudald Sans" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Aberración" hidden="false" id="3b61-81ac-38f0-de5b" type="selectionEntry" targetId="16ad-7776-78da-499e"/>
+    <entryLink import="true" name="Glotón" hidden="false" id="7f74-3b8a-722d-70ab" type="selectionEntry" targetId="1b24-94-efcb-a387"/>
+    <entryLink import="true" name="Despojo" hidden="false" id="29a6-5662-98f3-093f" type="selectionEntry" targetId="4007-565c-10ec-4a8a"/>
+    <entryLink import="true" name="Desgarrador" hidden="false" id="83c2-b205-1d23-3362" type="selectionEntry" targetId="54cc-a06d-d984-aec3"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Idos - Library" id="b7c0-c3db-21db-b92e" targetId="5f14-305f-99b6-1077"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Canibalismo" hidden="false" id="007f-0ada-24bb-b15c">
+      <profiles>
+        <profile name="Canibalismo" typeId="c668-1010-7bd9-fcfd" typeName="Regla especial" hidden="false" id="769f-43a4-f518-df1f">
+          <characteristics>
+            <characteristic name="Reglas" typeId="f7a5-6337-8cb7-0631">Ningún Devorador puede utilizar Ambrosía. Además, las Aberraciones, Desgarradores y Necrófagos de la banda pueden devorar cadáveres de manera parecida a los Glotones, pero sin embargo, no lo han perfeccionado de la misma manera, y en lugar de adquirir directamente unos bonificadores, deberán tirar en la siguiente tabla y aplicar el efecto (en el caso de los Necrófagos, se aplicará a todo el grupo):
+
+
+RESULTADO EFECTO
+          1           El cuerpo no reacciona nada bien a esta carne. La miniatura (o grupo de Necr´ófagos) pasa a tener 1 Acción menos durante el resto de la partida. Si las Acciones llegan a 0 la miniatura se consideraría Abatida.
+          2-3        No ocurre nada. Seguro que el cadáver tomaba leche de soja o similar.
+          4-5         La miniatura obtiene un +1 a su Atributo de Combate.
+          6-7         La miniatura obtiene un +1 a su Atributo de Fuerza.
+          8-9         La miniatura obtiene un +1 a su Atributo de Dureza.
+          10          La carne estaba sabrosona. La miniatura obtiene un +1 a su Atributo de Acciones.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Reglas de la banda" hidden="false" id="b28b-9ef7-5f56-8e3b" targetId="b19d-7b9-3085-7fd4" primary="true"/>
+        <categoryLink targetId="af76-5143-157c-3a3f" id="9c11-7ff3-63ab-3d35" primary="false" name="Banda: Idos"/>
+        <categoryLink targetId="a6f6-035f-c9e7-fce6" id="08be-4f54-069b-a578" primary="false" name="Idos: Devoradores"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="0edb-51c6-16b9-309a" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e583-e347-d35f-6480" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grupo de Necrofagos" hidden="false" id="76dd-41ad-ffda-6403">
+      <categoryLinks>
+        <categoryLink name="Miembros de la banda" hidden="false" id="4e7d-7469-8537-26ae" targetId="84b7-6828-dd10-0280" primary="true"/>
+        <categoryLink name="Banda: Mutardos" hidden="false" id="012e-80e0-ef6e-c0bf" targetId="baef-b3fd-e022-e917" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bf30-be26-2f73-594e"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="bf30-be26-2f73-594e">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="1b24-94-efcb-a387" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Mónguer" id="8aaa-0fae-b2d3-3139" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
+        <infoLink name="Cuerpo escombro" id="dceb-1b76-8d42-b886" hidden="false" type="profile" targetId="0b6d-2b01-cebc-d5ab"/>
+        <infoLink name="Grupal" id="45b1-b35e-73f1-e222" hidden="false" type="profile" targetId="dfa4-f443-16d6-3de4"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Necrofago" hidden="false" id="555c-b420-e4e5-e962">
+          <profiles>
+            <profile name="Necrofago" typeId="65f8-965a-8432-c96b" typeName="Miniatura" hidden="false" id="6728-8869-52cc-abf6">
+              <characteristics>
+                <characteristic name="Acciones" typeId="d05b-aff7-3ed3-1bb6">1</characteristic>
+                <characteristic name="Combate" typeId="6e27-b2ad-21d6-48f8">X</characteristic>
+                <characteristic name="Precisión" typeId="e6d1-88f1-a754-97f8">-</characteristic>
+                <characteristic name="Agilidad" typeId="d694-bee3-55d3-e72d">1</characteristic>
+                <characteristic name="Fuerza" typeId="2d74-3b7d-9026-8589">2</characteristic>
+                <characteristic name="Dureza" typeId="4d6d-8434-a7e9-b05c">2</characteristic>
+                <characteristic name="Técnica" typeId="fd4f-5253-7b3f-737f">-</characteristic>
+                <characteristic name="Reglas especiales" typeId="5bd3-a6df-6f70-6df7">Mónguer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Puntos" typeId="e515-0c5b-47aa-1328" value="8"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68b6-a1b5-fdbe-7df1"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="57d7-ffdc-19e7-dd8c"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armas" id="b004-ac65-6a1e-dbe3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Garras y dientes" hidden="false" id="b59b-df01-8dfd-78dd" type="selectionEntry" targetId="f83c-ca91-70cb-4742">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fe7-b592-cac3-107b" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="e515-0c5b-47aa-1328"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Idos: Devoradores" id="a6f6-035f-c9e7-fce6" hidden="false"/>
+  </categoryEntries>
+</catalogue>

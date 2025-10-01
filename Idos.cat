@@ -131,7 +131,7 @@
         </profile>
         <profile name="Escoria" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="41f1-eaea-4a31-8a3f">
           <characteristics>
-            <characteristic name="Efecto" typeId="615a-5192-19d4-fe3c">Los despojos no pueden usar dosis de Ambrosia ni usar armas incrustadas</characteristic>
+            <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">Los Despojos no pueden utilizar dosis de Ambrosía ni utilizar armas incrustadas.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -366,6 +366,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <characteristics>
             <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">El Glotón se deja llevar por su glotonería y avanzará hacia la miniatura Abatida, y no devorada ya, más cercana (en caso de haber alguna), devorándola si llega a ella. Si estaba ya en contacto con una miniatura devorada, no se moverá recordando su maravilloso sabor.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="24e3-78bf-65cc-876f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Devorador" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="25c4-9550-cbf1-b13d" page="61" publicationId="6699-072c-136a-7d30">
           <characteristics>
@@ -449,6 +456,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <characteristics>
             <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">En caso de tener a distancia de Asalto a alguna miniatura, el Desgarrador la Asaltará independientemente de que sea amiga o enemiga.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="24e3-78bf-65cc-876f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Furia psicópata" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="2f4a-5a3d-a86e-a0b5">
           <characteristics>
@@ -616,6 +630,13 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
           <characteristics>
             <characteristic name="Reglas" typeId="77d2-f29c-19a6-819c">La Aberración moverá de manera aleatoria siguiendo la dirección de 1d10. Si hay algún obstáculo se parará.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="24e3-78bf-65cc-876f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Sobredosis" typeId="8d36-94cc-6c74-8857" typeName="Habilidad" hidden="false" id="5373-f601-fbb5-69d2" publicationId="6699-072c-136a-7d30" page="58">
           <characteristics>
@@ -627,13 +648,6 @@ Toda miniatura tendrá un penalizador de -1 al resultado de la tirada por cada d
         <infoLink name="Mónguer" id="eeda-e537-b44f-45d5" hidden="false" type="rule" targetId="4d73-cb7f-74b2-8882"/>
         <infoLink name="Raudo" id="2b22-506d-659a-8eb" hidden="false" type="rule" targetId="339a-709e-0f9b-718f"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="12ff-b619-49d-ef01" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="968b-d1ce-e519-b8dd" hidden="false"/>
         <selectionEntryGroup name="Equipo" id="7ca3-8981-3e22-cfb7" hidden="false">
